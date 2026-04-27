@@ -1,0 +1,23 @@
+{
+  "name": "Build Your Legend",
+  "short_name": "Build Your Legend",
+  "description": "Fantasy text-based RPG with race evolution, job mastery, skills, spells, recruits, and roguelike maps.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
