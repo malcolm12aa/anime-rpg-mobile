@@ -1,0 +1,84 @@
+# Build Your Legend
+
+A modular, static, mobile-friendly text RPG foundation for GitHub Pages.
+
+## Important setup
+
+For GitHub Pages, `index.html` must be at the **root of your repository**. This fixed ZIP is already arranged that way:
+
+```text
+index.html
+css/styles.css
+js/main.js
+js/core/...
+js/data/...
+js/systems/...
+js/ui/...
+```
+
+Do **not** upload the whole ZIP as one file. Unzip it first, then upload the files and folders inside it.
+
+## Local testing note
+
+This version uses JavaScript modules. Many browsers block module imports when you double-click `index.html` from your computer or phone files. It should work normally on GitHub Pages. For local testing, use a simple web server, such as:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Current systems included
+
+- Main menu, new game, load, save, delete save
+- Mobile-first RPG interface
+- Browser save/load through `localStorage`
+- 10 starting races
+- 10 starting jobs
+- Total Level = Race Levels + Job Levels
+- Overlord/YGGDRASIL-inspired class caps:
+  - Base: 15
+  - Advanced: 10
+  - Specialist: 10
+  - Rare: 5
+  - Hidden: 5
+- Race/job stat bonuses, starting skills, descriptions, strengths, weaknesses, and unlock paths
+- Turn-based battle system
+- HP, mana, stamina
+- Physical skills use stamina
+- Magic spells use mana
+- Skill cooldowns
+- Elements, weaknesses, resistances
+- Status effects
+- Random encounters
+- Random events
+- Procedural dungeon floor progression
+- Shops, elites, bosses, rewards
+- Recruit/party support
+- Defeat penalty: lose current dungeon run and a little gold
+- Permanent growth: XP, class points, relic dust, boss kill progress
+
+## Files to edit later
+
+- `js/data/races.js` — races and race evolution paths
+- `js/data/jobs.js` — jobs and job class paths
+- `js/data/skills.js` — physical skills and magic spells
+- `js/data/enemies.js` — normal enemies, elites, bosses
+- `js/data/items.js` — consumables and equipment
+- `js/data/shops.js` — shop stock
+- `js/data/events.js` — random dungeon events
+- `js/data/recruits.js` — party members
+- `js/systems/battle.js` — combat rules
+- `js/systems/leveling.js` — XP, class levels, unlock requirements
+- `js/systems/map.js` — dungeon floor logic
+- `js/ui/screens.js` — screen layouts
+- `css/styles.css` — visual design
+
+## What was fixed in this package
+
+- Added `index.html` directly at the ZIP root so GitHub Pages can find it.
+- Added a loading screen instead of a blank page.
+- Added an on-screen error panel for JavaScript errors.
+- Added a warning if the game is opened directly from files instead of hosted.
+- Hardened save/load/delete save against blocked `localStorage`.
+- Re-tested the main flow: menu → character creation → hub → status/progression/skills/inventory/shop/map → dungeon → battle.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14111f" />
+  <title>Build Your Legend</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <noscript>This game needs JavaScript enabled.</noscript>
+  <main id="app" class="app-shell" aria-live="polite">
+    <section class="screen">
+      <div class="hero">
+        <h1 class="title">Build Your Legend</h1>
+        <p class="subtitle">Loading game files...</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    window.__BYL_MODULE_LOADED__ = false;
+    setTimeout(function () {
+      if (!window.__BYL_MODULE_LOADED__) {
+        var root = document.querySelector("#app");
+        if (root) {
+          root.innerHTML = '<section class="screen"><div class="hero"><h1>Build Your Legend</h1><p class="subtitle">The game files did not load yet.</p></div><section class="card danger-card"><p><strong>Most common cause:</strong> index.html was opened directly from your device files. This project uses browser JavaScript modules, so test it on GitHub Pages or with a local web server.</p><p>GitHub Pages setup: put index.html at the root of the repository, then enable Pages for the main branch.</p></section></section>';
+        }
+      }
+    }, 2500);
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
