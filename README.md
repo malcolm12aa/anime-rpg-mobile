@@ -1,6 +1,21 @@
 # Build Your Legend
 
-A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data and Character Creation filters.
+A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
+
+## v0.3.2 New Game Menu Filters
+
+Added the race/job filter system directly to the Main Menu so players can browse and select a starting build before opening the full New Game builder.
+
+New Main Menu features:
+
+- New Game Quick Builder panel
+- Character name input on the Main Menu
+- Race search, category, tier, and build-focus filters
+- Job search, category, tier, and build-focus filters
+- Compact race/job result cards
+- Build preview from the selected race + job
+- Start Selected Build button
+- Open Full Builder button for the larger Character Creation screen
 
 ## v0.3.1 Race & Job Filter Update
 

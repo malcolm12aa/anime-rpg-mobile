@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.3.2 — New Game Menu Filters",
+    date: "2026-05-03",
+    notes: [
+      "Added the race and job filter system directly to the Main Menu as a New Game Quick Builder.",
+      "You can now search and filter races/jobs before opening the full character creation screen.",
+      "Added compact race/job result cards on the Main Menu so the imported Excel list is easier to browse.",
+      "Added a quick build preview and Start Selected Build button on the Main Menu.",
+      "Kept the full Character Creation and Class Registry filter systems for deeper browsing."
+    ]
+  },
+  {
     version: "v0.3.1 — Race & Job Filter Update",
     date: "2026-05-03",
     notes: [

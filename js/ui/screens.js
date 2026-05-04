@@ -45,12 +45,13 @@ export function mainMenu(state) {
       <h1 class="title">${CONFIG.title}</h1>
       <p class="subtitle">An original fantasy text RPG with light anime-style class progression, roguelike dungeon runs, and YGGDRASIL-inspired race/job levels.</p>
       <div class="actions">
-        ${button("New Game", "newGame")}
+        ${button("Open Full New Game Builder", "go", "character-create")}
         ${button("Load Game", "openLoadMenu", "", "secondary")}
         ${button("Class Registry", "go", "class-registry", "secondary")}
         ${button("Update Notes", "go", "updates", "secondary")}
       </div>
     </div>
+    ${newGameQuickBuilder(state)}
     ${newsCard()}
   </section>`;
 }
@@ -60,6 +61,67 @@ function newsCard() {
     <h2>Improvement Build</h2>
     <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, and update notes.</p>
   </section>`;
+}
+
+function newGameQuickBuilder(state) {
+  // This is the same filter system used by Character Creation, exposed directly on
+  // the Main Menu so players can find a race/job before committing to New Game.
+  const cc = state.characterCreation;
+  const filters = { ...CREATION_FILTER_DEFAULTS, ...(state.ui.creationFilters ?? {}) };
+  const filteredRaces = filterCreationChoices(RACES, filters, "race");
+  const filteredJobs = filterCreationChoices(JOBS, filters, "job");
+  const raceLimit = 8;
+  const jobLimit = 8;
+  const selectedRaceVisible = filteredRaces.some(item => item.id === cc.raceId);
+  const selectedJobVisible = filteredJobs.some(item => item.id === cc.jobId);
+
+  return `<section class="card new-game-quick-builder">
+    <div class="row between">
+      <div>
+        <h2>New Game Quick Builder</h2>
+        <p class="small">Search and filter the imported Excel races/jobs before starting. The Main Menu shows compact results; open the full builder for larger cards and more detail.</p>
+      </div>
+      <span class="pill">Selected build ready</span>
+    </div>
+    <section class="grid two">
+      <div class="card"><label>Character Name</label><input data-input="characterName" value="${escapeHtml(cc.name)}" maxlength="24" /></div>
+      ${creationPreview(cc)}
+    </section>
+    <section class="card quick-filter-card">
+      <div class="row between"><h3>Race Filters</h3><span class="pill">${filteredRaces.length}/${RACES.length} shown</span></div>
+      ${creationFilterPanel("race", filters, filteredRaces.length, RACES.length)}
+    </section>
+    ${selectedRaceVisible ? "" : selectedChoiceNotice("race", cc.raceId, RACES)}
+    <div class="grid auto compact-choice-grid">
+      ${filteredRaces.slice(0, raceLimit).map(compactChoiceCard(cc.raceId, "selectRace", "race")).join("") || emptyFilterCard("races")}
+    </div>
+    ${filteredRaces.length > raceLimit ? `<p class="small">Showing first ${raceLimit} race matches on the Main Menu. Use search/filter more or open the full builder to browse everything.</p>` : ""}
+    <section class="card quick-filter-card">
+      <div class="row between"><h3>Job Filters</h3><span class="pill">${filteredJobs.length}/${JOBS.length} shown</span></div>
+      ${creationFilterPanel("job", filters, filteredJobs.length, JOBS.length)}
+    </section>
+    ${selectedJobVisible ? "" : selectedChoiceNotice("job", cc.jobId, JOBS)}
+    <div class="grid auto compact-choice-grid">
+      ${filteredJobs.slice(0, jobLimit).map(compactChoiceCard(cc.jobId, "selectJob", "job")).join("") || emptyFilterCard("jobs")}
+    </div>
+    ${filteredJobs.length > jobLimit ? `<p class="small">Showing first ${jobLimit} job matches on the Main Menu. Use search/filter more or open the full builder to browse everything.</p>` : ""}
+    <div class="actions">
+      ${button("Start Selected Build", "startCharacter")}
+      ${button("Open Full Builder", "go", "character-create", "secondary")}
+      ${button("Reset Filters", "resetCreationFilters", "", "ghost")}
+    </div>
+  </section>`;
+}
+
+function compactChoiceCard(selectedId, action, type) {
+  return item => `<article class="card compact-choice ${selectedId === item.id ? "selected" : ""}">
+    <div>
+      <h3>${escapeHtml(item.name)}</h3>
+      <p><span class="pill">${escapeHtml(item.category ?? "Uncategorized")}</span> <span class="pill">${escapeHtml(titleCase(item.tier ?? "base"))}</span> <span class="pill">Focus: ${titleCase(getBuildFocus(item))}</span></p>
+      <p class="small">${escapeHtml(item.description ?? `${titleCase(type)} option from the imported data.`)}</p>
+    </div>
+    ${button(selectedId === item.id ? "Selected" : `Choose ${titleCase(type)}`, action, item.id, selectedId === item.id ? "ghost" : "secondary")}
+  </article>`;
 }
 
 export function saveMenu(state) {
