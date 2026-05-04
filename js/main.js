@@ -55,14 +55,18 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("input", (event) => {
+function handleDataInputEvent(event) {
   const input = event.target.closest("[data-input]");
   if (!input) return;
   try {
     state = handleInput(state, input.dataset.input, input.value);
+    if (input.dataset.input?.startsWith("registry.")) rerender();
   } catch (error) {
     showBootError(error);
   }
-});
+}
+
+document.addEventListener("input", handleDataInputEvent);
+document.addEventListener("change", handleDataInputEvent);
 
 rerender();

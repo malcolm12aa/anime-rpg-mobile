@@ -13,6 +13,7 @@ export function nav(state) {
     ${button("Hub", "go", "hub", "secondary")}
     ${button("Status", "go", "status", "secondary")}
     ${button("Race/Job", "go", "progression", "secondary")}
+    ${button("Registry", "go", "class-registry", "secondary")}
     ${button("Skills", "go", "skills", "secondary")}
     ${button("Inventory", "go", "inventory", "secondary")}
     ${button("Shop", "go", "shop", "secondary")}

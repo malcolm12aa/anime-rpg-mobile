@@ -19,7 +19,7 @@ export function createInitialState() {
     player: null,
     run: null,
     combat: null,
-    ui: { selectedShop: "general_store", lastReward: null, saveMenuMode: "load", currentEvent: null, offeredRecruit: null },
+    ui: { selectedShop: "general_store", lastReward: null, saveMenuMode: "load", currentEvent: null, offeredRecruit: null, registryFilters: { search: "", kind: "all", category: "all", tier: "all" } },
     meta: baseMeta(),
     log: []
   };

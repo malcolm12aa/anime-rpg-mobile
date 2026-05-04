@@ -122,6 +122,9 @@ export function handleAction(state, action, value) {
       }
       break;
     }
+    case "resetRegistryFilters":
+      state.ui.registryFilters = { search: "", kind: "all", category: "all", tier: "all" };
+      break;
     default:
       console.warn("Unknown action", action, value);
   }
@@ -131,5 +134,10 @@ export function handleAction(state, action, value) {
 
 export function handleInput(state, name, value) {
   if (name === "characterName") state.characterCreation.name = value;
+  if (name?.startsWith("registry.")) {
+    const key = name.split(".")[1];
+    state.ui.registryFilters ??= { search: "", kind: "all", category: "all", tier: "all" };
+    state.ui.registryFilters[key] = value;
+  }
   return state;
 }

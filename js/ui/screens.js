@@ -7,6 +7,7 @@ import { SHOPS } from "../data/shops.js";
 import { MAPS } from "../data/maps.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
 import { UPDATE_NOTES } from "../data/updates.js";
+import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, REGISTRY_TIERS } from "../data/class-registry.js";
 import { getSaveSlots } from "../core/save.js";
 import { byId, titleCase, formatStat } from "../core/utils.js";
 import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvailableAdvancements, getActiveSynergies, getEquippedSetBonuses } from "../systems/leveling.js";
@@ -24,6 +25,7 @@ export function mainMenu(state) {
       <div class="actions">
         ${button("New Game", "newGame")}
         ${button("Load Game", "openLoadMenu", "", "secondary")}
+        ${button("Class Registry", "go", "class-registry", "secondary")}
         ${button("Update Notes", "go", "updates", "secondary")}
       </div>
     </div>
@@ -34,7 +36,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, and update notes.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, and update notes.</p>
   </section>`;
 }
 
@@ -202,6 +204,72 @@ function classTree(baseList, paths, knownLevels) {
     </div>`;
   }).join("")}</div>`;
 }
+
+
+function selectField(label, inputName, values, selected) {
+  return `<label>${label}<select data-input="${inputName}">${values.map(value => `<option value="${escapeHtml(value)}" ${String(value) === String(selected) ? "selected" : ""}>${escapeHtml(value === "all" ? "All" : titleCase(value))}</option>`).join("")}</select></label>`;
+}
+
+function registryRequirementText(entry) {
+  const req = entry.requirements ?? {};
+  const parts = [];
+  if (req.classLevel) parts.push(`source level ${req.classLevel}`);
+  if (req.gold) parts.push(`${req.gold} gold`);
+  if (req.bossKills) parts.push(`${req.bossKills} boss kills`);
+  if (req.relicDust) parts.push(`${req.relicDust} relic dust`);
+  if (!parts.length && entry.registryRequirement) parts.push("Excel requirement stored for v0.4 conversion");
+  return parts.join(", ") || "none";
+}
+
+function registryStatsText(entry) {
+  const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id);
+  return statsText(data?.stats ?? {});
+}
+
+function registryCard(entry) {
+  return `<article class="card registry-card">
+    <div class="row between"><h3>${escapeHtml(entry.name)}</h3><span class="pill">Excel ${entry.excelId}</span></div>
+    <p><span class="pill">${escapeHtml(entry.kind)}</span> <span class="pill">${escapeHtml(titleCase(entry.tier))}</span> <span class="pill">${escapeHtml(entry.category)}</span> <span class="pill">Cap ${entry.maxLevel}</span></p>
+    <p>${escapeHtml(entry.description)}</p>
+    <p class="small"><strong>Stats:</strong> ${escapeHtml(registryStatsText(entry))}</p>
+    <p class="small"><strong>Strengths:</strong> ${escapeHtml((entry.strengths ?? []).join(", ") || "Flexible")}</p>
+    <p class="small"><strong>Weaknesses:</strong> ${escapeHtml((entry.weaknesses ?? []).join(", ") || "Needs specialization")}</p>
+    <p class="small"><strong>Requirement:</strong> ${escapeHtml(registryRequirementText(entry))}</p>
+  </article>`;
+}
+
+export function classRegistryScreen(state) {
+  const filters = { search: "", kind: "all", category: "all", tier: "all", ...(state.ui.registryFilters ?? {}) };
+  const search = filters.search.trim().toLowerCase();
+  const filtered = CLASS_REGISTRY.filter(entry => {
+    if (filters.kind !== "all" && entry.kind !== filters.kind) return false;
+    if (filters.category !== "all" && entry.category !== filters.category) return false;
+    if (filters.tier !== "all" && entry.tier !== filters.tier) return false;
+    if (search) {
+      const haystack = `${entry.name} ${entry.category} ${entry.kind} ${entry.tier} ${entry.description}`.toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+    return true;
+  });
+  const visible = filtered.slice(0, 120);
+  const backTarget = state.player ? "hub" : "main-menu";
+  return `<section class="screen">${nav(state)}
+    <div class="hero"><h1>Class Registry</h1><p class="subtitle">Excel import loaded: <span class="kpi">${REGISTRY_TOTALS.races}</span> races, <span class="kpi">${REGISTRY_TOTALS.racePaths}</span> race evolutions, <span class="kpi">${REGISTRY_TOTALS.baseJobs}</span> base jobs, and <span class="kpi">${REGISTRY_TOTALS.jobPaths}</span> job paths. Showing ${visible.length} of ${filtered.length} matching entries.</p></div>
+    <section class="card">
+      <h2>Filters</h2>
+      <div class="filter-grid">
+        <label>Search<input data-input="registry.search" value="${escapeHtml(filters.search)}" placeholder="Search race, job, category, tier..." /></label>
+        ${selectField("Type", "registry.kind", REGISTRY_KINDS, filters.kind)}
+        ${selectField("Tier", "registry.tier", REGISTRY_TIERS, filters.tier)}
+        ${selectField("Category / World", "registry.category", REGISTRY_CATEGORIES, filters.category)}
+      </div>
+      <div class="actions">${button("Reset Filters", "resetRegistryFilters", "", "secondary")} ${button("Back", "go", backTarget, "ghost")}</div>
+    </section>
+    ${filtered.length > visible.length ? `<section class="card"><p class="small">Large result set capped at 120 cards for mobile performance. Use search or filters to narrow the registry.</p></section>` : ""}
+    <section class="grid auto">${visible.map(registryCard).join("") || `<article class="card"><h3>No matches</h3><p>Try a different search or reset the filters.</p></article>`}</section>
+  </section>`;
+}
+
 
 export function skillsScreen(state) {
   return `<section class="screen">${nav(state)}<div class="hero"><h1>Skills & Spells</h1><p class="subtitle">Physical skills use stamina. Magic spells use mana. Cooldowns matter in long boss fights.</p></div>${skillList(state.player)}</section>`;

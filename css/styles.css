@@ -199,3 +199,56 @@ pre {
   background: rgba(0, 0, 0, 0.25);
   font-size: 0.8rem;
 }
+
+
+.filter-grid {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  align-items: end;
+}
+.filter-grid label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-weight: 700;
+}
+.registry-card {
+  min-height: 260px;
+}
+.registry-card h3 {
+  margin: 0;
+}
+.locked-card {
+  opacity: .72;
+}
+.mini-card {
+  background: #100d18;
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 14px;
+  padding: 10px;
+}
+.tree-list {
+  display: grid;
+  gap: 10px;
+  max-height: 520px;
+  overflow: auto;
+  padding-right: 4px;
+}
+.tree-node, .tree-child {
+  border-left: 3px solid rgba(255,255,255,.12);
+  padding: 8px 10px;
+  background: rgba(16,13,24,.72);
+  border-radius: 12px;
+}
+.tree-node.known, .tree-child.known {
+  border-left-color: var(--good);
+}
+.tree-child.locked {
+  opacity: .8;
+}
+.tree-children {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}

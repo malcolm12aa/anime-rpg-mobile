@@ -1,6 +1,22 @@
 # Build Your Legend
 
-A modular, static, mobile-friendly text RPG foundation for GitHub Pages.
+A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race and job registry data.
+
+
+## v0.3.0 Excel Data Import
+
+This package imports the uploaded Excel race/job registry into the game foundation.
+
+Included data import:
+
+- 69 base races from `Races Summary`
+- 552 race evolution paths from Excel race-evolution rows
+- 73 base starting jobs from `Jobs Summary`
+- 584 advanced/specialist/rare/hidden job paths
+- A new in-game Class Registry screen
+- Search, type, tier, and category/world filters for browsing large class lists
+
+The full unlock conversion is intentionally staged for v0.4.0 so the game does not become unstable from all 1,209 job rows at once.
 
 ## Important setup
 

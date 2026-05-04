@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.3.0 — Excel Data Import",
+    date: "2026-05-03",
+    notes: [
+      "Imported 69 races from the Excel race summary.",
+      "Imported 73 base jobs and 584 job progression paths from the Excel job summary.",
+      "Imported 552 race evolution paths from the Excel race-evolution rows.",
+      "Added a Class Registry screen with search, type, category/world, and tier filters.",
+      "Kept the imported data modular so v0.4.0 can convert more Excel requirements into full unlock logic."
+    ]
+  },
+  {
     version: "v0.2.0 — Improvement Pass",
     date: "2026-05-03",
     notes: [
