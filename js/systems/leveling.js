@@ -5,6 +5,7 @@ import { ITEMS, SET_BONUSES } from "../data/items.js";
 import { SKILLS } from "../data/skills.js";
 import { SYNERGIES } from "../data/synergies.js";
 import { addLog, byId, clamp } from "../core/utils.js";
+import { canUnlockPath, getUnlockableAdvancements, getUnlockStatus, getClassDataById } from "./unlocks.js";
 
 export function getTotalLevel(player) {
   if (!player) return 0;
@@ -21,7 +22,7 @@ function allClassData() {
 }
 
 function getClassData(id) {
-  return byId(allClassData(), id);
+  return getClassDataById(id);
 }
 
 function addStats(target, source = {}, multiplier = 1) {
@@ -151,34 +152,11 @@ export function unlockClassSkills(state, classId, level) {
   }
 }
 
-function meetsRequirements(state, path, currentClass) {
-  const req = path.requirements ?? {};
-  if (req.classLevel && currentClass.level < req.classLevel) return false;
-  if (req.gold && state.player.gold < req.gold) return false;
-  if (req.bossKills && state.meta.bossKills < req.bossKills) return false;
-  if (req.relicDust && state.meta.relicDust < req.relicDust) return false;
-  return true;
-}
-
 export function getAvailableAdvancements(state, trackName) {
-  const player = state.player;
-  if (!player) return [];
-  const track = trackName === "race" ? player.raceLevels : player.jobLevels;
-  const paths = trackName === "race" ? RACE_PATHS : JOB_PATHS;
-  const unlocked = [];
-  for (const cls of track) {
-    const classPaths = paths.filter(path => path.from === cls.id && !track.some(existing => existing.id === path.id));
-    for (const path of classPaths) {
-      unlocked.push({ ...path, sourceName: cls.name, canUnlock: meetsRequirements(state, path, cls), sourceLevel: cls.level });
-    }
-  }
-  for (const path of paths.filter(p => p.tier === "hidden" && !track.some(existing => existing.id === p.id))) {
-    const source = track.find(cls => cls.id === path.from) ?? track.at(-1);
-    if (state.meta.bossKills > 0 || state.meta.relicDust > 0) {
-      unlocked.push({ ...path, sourceName: source?.name ?? "Unknown", canUnlock: meetsRequirements(state, path, source ?? { level: 0 }), sourceLevel: source?.level ?? 0 });
-    }
-  }
-  return unlocked;
+  // v0.4.0: progression now shows only class/race paths that are actually valid
+  // to unlock right now. Locked future paths remain in the Registry/Tree, while
+  // hidden paths stay concealed until their requirements are fully satisfied.
+  return getUnlockableAdvancements(state, trackName);
 }
 
 export function addAdvancedClass(state, trackName, pathId) {
@@ -187,9 +165,19 @@ export function addAdvancedClass(state, trackName, pathId) {
   const track = trackName === "race" ? player.raceLevels : player.jobLevels;
   const path = byId(paths, pathId);
   if (!path) return;
-  const source = track.find(cls => cls.id === path.from) ?? track.at(-1);
-  if (!meetsRequirements(state, path, source ?? { level: 0 })) {
-    addLog(state, "Requirements are not met for that class path yet.");
+  const source = track.find(cls => cls.id === path.from);
+  const status = getUnlockStatus(state, trackName, path);
+  if (!source) {
+    addLog(state, "That path belongs to a class you do not own yet.");
+    return;
+  }
+  if (track.some(cls => cls.id === path.id)) {
+    addLog(state, `${path.name} is already part of your build.`);
+    return;
+  }
+  if (!canUnlockPath(state, trackName, path)) {
+    const missing = status.missing?.map(item => item.label).join(", ") || "unknown requirement";
+    addLog(state, `Requirements are not met for ${path.name}: ${missing}.`);
     return;
   }
   if (path.requirements?.gold) player.gold -= path.requirements.gold;

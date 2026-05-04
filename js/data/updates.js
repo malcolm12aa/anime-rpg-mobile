@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.4.0 — Unlock System",
+    date: "2026-05-04",
+    notes: [
+      "Converted imported Excel class requirements into real unlock checks.",
+      "Progression now only shows race/job upgrades that are valid to unlock right now.",
+      "Hidden and secret race/job paths are concealed until their requirements are met.",
+      "Unlock attempts now verify source class ownership, source class level, boss kills, Relic Dust, gold, floor/runs/kills, achievements, and other structured requirement fields.",
+      "Class trees now focus on the player’s current build instead of flooding the screen with every imported class."
+    ]
+  },
+  {
     version: "v0.3.2 — New Game Menu Filters",
     date: "2026-05-03",
     notes: [

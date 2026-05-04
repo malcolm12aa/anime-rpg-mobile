@@ -11,6 +11,7 @@ import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, R
 import { getSaveSlots } from "../core/save.js";
 import { byId, titleCase, formatStat } from "../core/utils.js";
 import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvailableAdvancements, getActiveSynergies, getEquippedSetBonuses } from "../systems/leveling.js";
+import { canSeeRegistryEntry, getRequirementText, getUnlockRequirementMarkup, getUnlockStatus, getVisibleTreeForPlayer } from "../systems/unlocks.js";
 import { isAchievementUnlocked } from "../systems/achievements.js";
 import { prepareRecruitOffer } from "../systems/party.js";
 import { button, nav, bar, statGrid, statusPills, inventoryList, skillList, combatLog } from "./components.js";
@@ -59,7 +60,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, and update notes.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, and v0.4.0 real unlock conditions.</p>
   </section>`;
 }
 
@@ -362,8 +363,8 @@ export function progressionScreen(state) {
       <div class="card"><h2>Job Unlocks</h2>${advancementRows(jobAdv, "job")}</div>
     </section>
     <section class="grid two">
-      <div class="card"><h2>Race Evolution Tree</h2>${classTree(RACES, RACE_PATHS, p.raceLevels)}</div>
-      <div class="card"><h2>Job Class Tree</h2>${classTree(JOBS, JOB_PATHS, p.jobLevels)}</div>
+      <div class="card"><h2>Race Evolution Tree</h2>${classTree(state, "race")}</div>
+      <div class="card"><h2>Job Class Tree</h2>${classTree(state, "job")}</div>
     </section>
   </section>`;
 }
@@ -376,29 +377,34 @@ function progressRows(classes, track) {
 }
 
 function reqText(req = {}) {
-  const parts = [];
-  if (req.classLevel) parts.push(`source level ${req.classLevel}`);
-  if (req.gold) parts.push(`${req.gold} gold`);
-  if (req.bossKills) parts.push(`${req.bossKills} boss kills`);
-  if (req.relicDust) parts.push(`${req.relicDust} relic dust`);
-  return parts.join(", ") || "none";
+  return getRequirementText(req);
 }
 
 function advancementRows(paths, track) {
-  if (!paths.length) return `<p class="small">No visible paths yet. Max your current classes or defeat bosses to reveal more.</p>`;
-  return paths.map(path => `<article class="card">
-    <h3>${path.name} <span class="pill">${path.tier}</span></h3><p>${path.description}</p>
-    <p class="small">From: ${path.sourceName} · Requirements: ${reqText(path.requirements)}</p>
-    ${button(path.canUnlock ? "Unlock Path" : "Locked", "addClass", `${track}:${path.id}`, path.canUnlock ? "" : "ghost")}
+  if (!paths.length) return `<p class="small">No valid upgrades right now. Level your current ${track} classes to their requirement caps, defeat bosses, or gather Relic Dust to reveal more paths.</p>`;
+  return paths.map(path => `<article class="card unlock-card">
+    <h3>${escapeHtml(path.name)} <span class="pill">${escapeHtml(path.tier)}</span></h3><p>${escapeHtml(path.description)}</p>
+    <p class="small">From: ${escapeHtml(path.sourceName)} · Requirements: ${escapeHtml(reqText(path.requirements))}</p>
+    <div class="requirement-list">${getUnlockRequirementMarkup(path.unlockStatus)}</div>
+    ${button("Unlock Path", "addClass", `${track}:${path.id}`)}
   </article>`).join("");
 }
 
-function classTree(baseList, paths, knownLevels) {
-  const known = new Set((knownLevels ?? []).map(cls => cls.id));
-  return `<div class="tree-list">${baseList.map(base => {
-    const children = paths.filter(path => path.from === base.id);
-    return `<div class="tree-node ${known.has(base.id) ? "known" : ""}"><strong>${base.name}</strong> <span class="pill">${base.tier}</span>
-      <div class="tree-children">${children.map(child => `<div class="tree-child ${known.has(child.id) ? "known" : "locked"}">↳ ${child.name} <span class="pill">${child.tier}</span><div class="small">Req: ${reqText(child.requirements)}</div></div>`).join("") || `<div class="small">No listed path yet.</div>`}</div>
+
+function classTree(state, track) {
+  const rows = getVisibleTreeForPlayer(state, track);
+  if (!rows.length) return `<p class="small">No class tree available yet.</p>`;
+  return `<div class="tree-list current-tree">${rows.map(node => {
+    const sourceData = node.data ?? {};
+    const children = node.children ?? [];
+    return `<div class="tree-node known"><strong>${escapeHtml(node.name)}</strong> <span class="pill">${escapeHtml(node.tier)}</span><div class="small">Level ${node.level}/${node.maxLevel}</div>
+      <div class="tree-children">
+        ${children.length ? children.map(child => {
+          if (child.mystery) return `<div class="tree-child secret locked">↳ ???? <span class="pill">Hidden</span><div class="small">${escapeHtml(child.requirement)}</div></div>`;
+          const status = child.unlockStatus ?? getUnlockStatus(state, track, child);
+          return `<div class="tree-child ${status.met ? "unlockable" : "locked"}">↳ ${escapeHtml(child.name)} <span class="pill">${escapeHtml(child.tier)}</span><div class="small">${status.met ? "Ready to unlock" : `Req: ${escapeHtml(reqText(child.requirements))}`}</div></div>`;
+        }).join("") : `<div class="small">No visible path from this class yet.</div>`}
+      </div>
     </div>`;
   }).join("")}</div>`;
 }
@@ -410,14 +416,10 @@ function selectField(label, inputName, values, selected) {
 
 function registryRequirementText(entry) {
   const req = entry.requirements ?? {};
-  const parts = [];
-  if (req.classLevel) parts.push(`source level ${req.classLevel}`);
-  if (req.gold) parts.push(`${req.gold} gold`);
-  if (req.bossKills) parts.push(`${req.bossKills} boss kills`);
-  if (req.relicDust) parts.push(`${req.relicDust} relic dust`);
-  if (!parts.length && entry.registryRequirement) parts.push("Excel requirement stored for v0.4 conversion");
-  return parts.join(", ") || "none";
+  const text = getRequirementText(req, { fallback: "Excel requirement converted into v0.4 unlock checks" });
+  return text || "none";
 }
+
 
 function registryStatsText(entry) {
   const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id);
@@ -439,7 +441,9 @@ function registryCard(entry) {
 export function classRegistryScreen(state) {
   const filters = { search: "", kind: "all", category: "all", tier: "all", ...(state.ui.registryFilters ?? {}) };
   const search = filters.search.trim().toLowerCase();
+  const hiddenTotal = CLASS_REGISTRY.filter(entry => String(entry.tier).toLowerCase() === "hidden").length;
   const filtered = CLASS_REGISTRY.filter(entry => {
+    if (!canSeeRegistryEntry(state, entry)) return false;
     if (filters.kind !== "all" && entry.kind !== filters.kind) return false;
     if (filters.category !== "all" && entry.category !== filters.category) return false;
     if (filters.tier !== "all" && entry.tier !== filters.tier) return false;
@@ -452,7 +456,7 @@ export function classRegistryScreen(state) {
   const visible = filtered.slice(0, 120);
   const backTarget = state.player ? "hub" : "main-menu";
   return `<section class="screen">${nav(state)}
-    <div class="hero"><h1>Class Registry</h1><p class="subtitle">Excel import loaded: <span class="kpi">${REGISTRY_TOTALS.races}</span> races, <span class="kpi">${REGISTRY_TOTALS.racePaths}</span> race evolutions, <span class="kpi">${REGISTRY_TOTALS.baseJobs}</span> base jobs, and <span class="kpi">${REGISTRY_TOTALS.jobPaths}</span> job paths. Showing ${visible.length} of ${filtered.length} matching entries.</p></div>
+    <div class="hero"><h1>Class Registry</h1><p class="subtitle">Excel import loaded: <span class="kpi">${REGISTRY_TOTALS.races}</span> races, <span class="kpi">${REGISTRY_TOTALS.racePaths}</span> race evolutions, <span class="kpi">${REGISTRY_TOTALS.baseJobs}</span> base jobs, and <span class="kpi">${REGISTRY_TOTALS.jobPaths}</span> job paths. Showing ${visible.length} of ${filtered.length} matching entries. Hidden/secret classes stay concealed until their unlock requirements are met. Concealed hidden entries: <span class="kpi">${hiddenTotal}</span>.</p></div>
     <section class="card">
       <h2>Filters</h2>
       <div class="filter-grid">

@@ -2,7 +2,7 @@
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
 
-## v0.3.2 New Game Menu Filters
+## v0.4.0 New Game Menu Filters
 
 Added the race/job filter system directly to the Main Menu so players can browse and select a starting build before opening the full New Game builder.
 
@@ -148,3 +148,11 @@ Upload/replace the files in your GitHub repository root the same way as before. 
 - Added a warning if the game is opened directly from files instead of hosted.
 - Hardened save/load/delete save against blocked `localStorage`.
 - Re-tested the main flow: menu → character creation → hub → status/progression/skills/inventory/shop/map → dungeon → battle.
+
+
+## v0.4.0 Unlock System
+
+- Converted imported Excel class requirements into real unlock checks.
+- Progression only shows valid race/job upgrades.
+- Hidden and secret classes are concealed until requirements are met.
+- Source class ownership and class level requirements are enforced before unlocks.

@@ -319,3 +319,36 @@ pre {
     grid-template-columns: 1fr;
   }
 }
+
+/* v0.4.0 Unlock System */
+.unlock-card {
+  border-color: rgba(114, 223, 159, 0.28);
+}
+.requirement-list {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+}
+.requirement-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 7px 9px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.requirement-row.met { color: var(--good); }
+.requirement-row.missing { color: var(--danger); }
+.tree-child.unlockable {
+  border-left: 3px solid var(--good);
+  padding-left: 8px;
+}
+.tree-child.secret {
+  opacity: .75;
+  letter-spacing: .02em;
+}
+.current-tree .tree-node {
+  margin-bottom: 12px;
+}
