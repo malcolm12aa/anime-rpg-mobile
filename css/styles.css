@@ -474,3 +474,81 @@ pre {
   margin: 8px 0 12px;
 }
 .derived-grid { margin-top: 8px; }
+
+
+/* v0.6.3 Race / Job text layout */
+.class-profile-card {
+  display: grid;
+  gap: 10px;
+}
+.class-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.class-profile-header h3 {
+  margin: 2px 0 0;
+}
+.layout-label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .72rem;
+  font-weight: 900;
+}
+.class-profile-meta {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.class-profile-section {
+  background: rgba(16, 13, 24, .78);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 13px;
+  padding: 9px 10px;
+}
+.class-profile-section strong,
+.class-profile-traits strong {
+  color: var(--text);
+}
+.class-profile-section p {
+  margin: 5px 0 0;
+}
+.class-profile-traits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.class-profile-traits > div {
+  background: rgba(16, 13, 24, .78);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 13px;
+  padding: 9px 10px;
+}
+.class-profile-traits ul {
+  margin-top: 6px;
+}
+.class-row-stack {
+  display: grid;
+  gap: 12px;
+}
+.linked-abilities-note {
+  margin: -6px 0 6px;
+  padding: 0 4px;
+}
+.registry-card > .class-profile-card {
+  margin-top: 8px;
+  background: rgba(16,13,24,.45);
+}
+@media (max-width: 760px) {
+  .class-profile-traits {
+    grid-template-columns: 1fr;
+  }
+  .class-profile-meta {
+    justify-content: flex-start;
+  }
+}

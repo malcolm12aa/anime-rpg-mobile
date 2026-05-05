@@ -1,5 +1,15 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.6.3 — Race / Job Text Layout Update",
+    date: "2026-05-05",
+    notes: [
+      "Redesigned race cards to show Race, Max Level, Status, Tags, Unique Description, Strengths, and Weaknesses.",
+      "Redesigned job cards to show Job, Max Level, Status, Weapon/s, Tags, Unique Description, Strengths, and Weaknesses.",
+      "Added job weapon recommendations based on each job name, category, strengths, and description.",
+      "Updated current build and Class Registry cards to use the new structured race/job layout."
+    ]
+  },
+  {
     version: "v0.6.2.1 — Data Restore Hotfix",
     date: "2026-05-05",
     notes: [

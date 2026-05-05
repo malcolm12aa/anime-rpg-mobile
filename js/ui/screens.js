@@ -60,7 +60,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished evolution names, ability names, shop tabs, and scroll behavior.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished naming/shop tabs, v0.6.2 Basic Abilities, and v0.6.3 race/job layout polish.</p>
   </section>`;
 }
 
@@ -115,14 +115,107 @@ function newGameQuickBuilder(state) {
 }
 
 function compactChoiceCard(selectedId, action, type) {
-  return item => `<article class="card compact-choice ${selectedId === item.id ? "selected" : ""}">
-    <div>
-      <h3>${escapeHtml(item.name)}</h3>
-      <p><span class="pill">${escapeHtml(item.category ?? "Uncategorized")}</span> <span class="pill">${escapeHtml(titleCase(item.tier ?? "base"))}</span> <span class="pill">Focus: ${titleCase(getBuildFocus(item))}</span></p>
-      <p class="small">${escapeHtml(item.description ?? `${titleCase(type)} option from the imported data.`)}</p>
+  return item => classProfileCard(item, {
+    type,
+    selected: selectedId === item.id,
+    compact: true,
+    action,
+    actionLabel: selectedId === item.id ? "Selected" : `Choose ${titleCase(type)}`
+  });
+}
+
+function classProfileCard(item, { type = "race", selected = false, compact = false, action = "", actionLabel = "Choose", level = null } = {}) {
+  const isJob = type === "job" || String(item.kind ?? "").toLowerCase().includes("job");
+  const headingLabel = isJob ? "Job" : "Race";
+  const tags = getDisplayTags(item, isJob);
+  const maxLevel = item.maxLevel ?? item.maxLv ?? "?";
+  const description = item.description || `${headingLabel} option from the imported class data.`;
+  const status = getStatusSummary(item);
+  const weapons = isJob ? getWeaponOptions(item) : "";
+  const strengths = formatTraitList(item.strengths, isJob ? "Specializes in a focused combat role." : "Flexible growth path with clear identity.");
+  const weaknesses = formatTraitList(item.weaknesses, isJob ? "Requires the right weapons and resource support." : "Needs careful class pairing to cover weak points.");
+  const levelLine = level ? `<span class="pill">Level ${level.level}/${level.maxLevel}</span>` : "";
+  const actionButton = action ? button(actionLabel, action, item.id, selected ? "ghost" : "secondary") : "";
+  return `<article class="card class-profile-card ${compact ? "compact-choice" : ""} ${selected ? "selected" : ""}">
+    <div class="class-profile-header">
+      <div><span class="layout-label">${headingLabel}</span><h3>${escapeHtml(item.name)}</h3></div>
+      <div class="class-profile-meta"><span class="pill">Max Level ${escapeHtml(maxLevel)}</span>${levelLine}</div>
     </div>
-    ${button(selectedId === item.id ? "Selected" : `Choose ${titleCase(type)}`, action, item.id, selectedId === item.id ? "ghost" : "secondary")}
+    <div class="class-profile-section"><strong>Status</strong><p>${escapeHtml(status)}</p></div>
+    ${isJob ? `<div class="class-profile-section"><strong>Weapon/s</strong><p>${escapeHtml(weapons)}</p></div>` : ""}
+    <div class="class-profile-section"><strong>Tags</strong><p>${tags}</p></div>
+    <div class="class-profile-section"><strong>Unique Description</strong><p>${escapeHtml(description)}</p></div>
+    <div class="class-profile-traits">
+      <div><strong>Strengths</strong><ul>${strengths}</ul></div>
+      <div><strong>Weaknesses</strong><ul>${weaknesses}</ul></div>
+    </div>
+    ${actionButton}
   </article>`;
+}
+
+function formatTraitList(list = [], fallback = "None listed.") {
+  const values = (list ?? []).filter(Boolean);
+  return (values.length ? values : [fallback]).map(text => `<li>${escapeHtml(text)}</li>`).join("");
+}
+
+function getDisplayTags(item, isJob) {
+  const tags = [
+    item.category ?? "Uncategorized",
+    titleCase(item.tier ?? "base"),
+    `Focus: ${titleCase(getBuildFocus(item))}`,
+    item.balanceTemplate ? `Template: ${titleCase(item.balanceTemplate)}` : "",
+    item.roleIdentity ? `Role: ${titleCase(item.roleIdentity)}` : "",
+    item.overlapGroup ? `Group: ${titleCase(item.overlapGroup)}` : "",
+    isJob ? "Weapon Locked" : "Bloodline / Species"
+  ].filter(Boolean);
+  return tags.slice(0, 7).map(tag => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ");
+}
+
+function getStatusSummary(item) {
+  const scores = getBasicAbilityBias(item);
+  const top = Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  const labelMap = { strength: "Strength", endurance: "Endurance", dexterity: "Dexterity", agility: "Agility", magic: "Magic" };
+  const topText = top.map(([key, value]) => `${labelMap[key]} +${value}`).join(" · ");
+  const legacy = statsText(item.stats ?? {});
+  return `${topText || "Balanced Basic Ability growth"}${legacy !== "None" ? ` | Legacy bias: ${legacy}` : ""}`;
+}
+
+function getBasicAbilityBias(item) {
+  const stats = item.stats ?? {};
+  const growth = item.levelGrowth ?? {};
+  const source = {
+    str: (stats.str ?? 0) + (growth.str ?? 0) * 3,
+    dex: (stats.dex ?? 0) + (growth.dex ?? 0) * 3,
+    int: (stats.int ?? 0) + (growth.int ?? 0) * 3,
+    wis: (stats.wis ?? 0) + (growth.wis ?? 0) * 3,
+    con: (stats.con ?? 0) + (growth.con ?? 0) * 3,
+    cha: (stats.cha ?? 0) + (growth.cha ?? 0) * 3
+  };
+  return {
+    strength: Math.max(0, Math.floor(source.str * 36 + source.con * 8 + source.dex * 5 + source.cha * 2)),
+    endurance: Math.max(0, Math.floor(source.con * 42 + source.str * 8 + source.wis * 5)),
+    dexterity: Math.max(0, Math.floor(source.dex * 36 + source.str * 6 + source.int * 5 + source.wis * 2)),
+    agility: Math.max(0, Math.floor(source.dex * 28 + source.cha * 8 + source.wis * 5 + source.str * 2)),
+    magic: Math.max(0, Math.floor(source.int * 34 + source.wis * 18 + source.cha * 5))
+  };
+}
+
+function getWeaponOptions(item) {
+  const text = `${item.name} ${item.category ?? ""} ${item.description ?? ""} ${(item.strengths ?? []).join(" ")} ${(item.tags ?? []).join(" ")}`.toLowerCase();
+  if (text.match(/(berserker|barbarian|brute|crusher|destroyer|titan|giant|maul|rage)/)) return "Greatsword, Greataxe, Maul, Heavy Club";
+  if (text.match(/(knight|paladin|guardian|sentinel|fortress|shield|defender|templar)/)) return "Sword, Mace, Spear, Shield";
+  if (text.match(/(ranger|archer|sniper|hunter|bow|marksman|scout)/)) return "Bow, Crossbow, Dagger, Shortsword";
+  if (text.match(/(rogue|assassin|thief|ninja|shadow|trickster|duelist)/)) return "Dagger, Shortsword, Rapier, Throwing Knives";
+  if (text.match(/(monk|martial|ki|fist|open hand|brawler|pugilist)/)) return "Unarmed, Fist Wraps, Quarterstaff, Prayer Beads";
+  if (text.match(/(alchemist|plague|doctor|bomb|potion|chemist|artificer|engineer)/)) return "Dagger, Alchemy Tools, Bomb Satchel, Catalyst";
+  if (text.match(/(bard|skald|singer|song|dancer|performer|lore keeper)/)) return "Rapier, Dagger, Instrument, Light Crossbow";
+  if (text.match(/(cleric|priest|bishop|oracle|healer|exorcist|saint|holy)/)) return "Mace, Staff, Wand, Holy Catalyst, Shield";
+  if (text.match(/(mage|wizard|sorcerer|arcanist|witch|warlock|sage|necromancer|elementalist|spell|caster)/)) return "Staff, Wand, Grimoire, Catalyst";
+  if (text.match(/(spellblade|rune knight|hex|aether|samurai|magic sword|arcane blade)/)) return "Sword, Katana, Dagger, Wand, Catalyst";
+  if (text.match(/(tamer|summoner|beast master|pack|companion)/)) return "Whip, Staff, Dagger, Taming Charm";
+  if (text.match(/(death|grave|lich|reaper|undead|dark)/)) return "Scythe, Staff, Dagger, Dark Catalyst";
+  if (text.match(/(fighter|warrior|soldier|weapon|mercenary|vanguard)/)) return "Sword, Axe, Spear, Shield";
+  return "Simple Weapons, Dagger, Staff, Sidearm";
 }
 
 export function saveMenu(state) {
@@ -301,15 +394,22 @@ function emptyFilterCard(label) {
 }
 
 function raceCard(selectedId, action) {
-  return item => `<article class="card ${selectedId === item.id ? "selected" : ""}">
-    <h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.description)}</p>
-    <p><span class="pill">${escapeHtml(item.category ?? "Uncategorized")}</span> <span class="pill">${escapeHtml(titleCase(item.tier ?? "base"))}</span> <span class="pill">Cap ${item.maxLevel}</span> <span class="pill">Focus: ${titleCase(getBuildFocus(item))}</span></p>
-    <p class="small"><strong>Strong:</strong> ${escapeHtml((item.strengths ?? []).join(", ") || "Flexible growth")}</p>
-    <p class="small"><strong>Weak:</strong> ${escapeHtml((item.weaknesses ?? []).join(", ") || "Needs specialization")}</p>
-    ${button(selectedId === item.id ? "Selected" : "Choose", action, item.id, selectedId === item.id ? "ghost" : "secondary")}
-  </article>`;
+  return item => classProfileCard(item, {
+    type: "race",
+    selected: selectedId === item.id,
+    action,
+    actionLabel: selectedId === item.id ? "Selected" : "Choose Race"
+  });
 }
-const jobCard = raceCard;
+
+function jobCard(selectedId, action) {
+  return item => classProfileCard(item, {
+    type: "job",
+    selected: selectedId === item.id,
+    action,
+    actionLabel: selectedId === item.id ? "Selected" : "Choose Job"
+  });
+}
 
 export function hub(state) {
   const p = state.player;
@@ -366,14 +466,15 @@ export function statusScreen(state) {
 }
 
 function classRows(classes, label) {
-  return `<h3>${label} Levels</h3>${classes.map(cls => {
-    const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === cls.id);
+  const type = label.toLowerCase() === "job" ? "job" : "race";
+  return `<h3>${label} Levels</h3><div class="class-row-stack">${classes.map(cls => {
+    const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === cls.id) ?? cls;
     const abilityNames = [
       ...(data?.startingSkills ?? []),
       ...(data?.learns ?? []).map(learn => learn.skillId)
-    ].slice(0, 5).map(id => byId(SKILLS, id)?.name ?? titleCase(id)).join(", ");
-    return `<div class="class-row"><div><strong>${cls.name}</strong> <span class="pill">${cls.tier}</span> ${data?.balanceTemplate ? `<span class="pill">${escapeHtml(data.balanceTemplate)}</span>` : ""}<div class="small">Level ${cls.level}/${cls.maxLevel}</div><div class="small">${escapeHtml(data?.description ?? "")}</div><div class="small"><strong>Strong:</strong> ${escapeHtml((data?.strengths ?? []).join("; ") || "None listed")}</div><div class="small"><strong>Weak:</strong> ${escapeHtml((data?.weaknesses ?? []).join("; ") || "None listed")}</div><div class="small"><strong>Linked abilities:</strong> ${escapeHtml(abilityNames || "None")}</div></div></div>`;
-  }).join("")}`;
+    ].slice(0, 6).map(id => byId(SKILLS, id)?.name ?? titleCase(id)).join(", ");
+    return `${classProfileCard({ ...data, name: cls.name, tier: cls.tier, maxLevel: cls.maxLevel }, { type, level: cls })}<div class="linked-abilities-note small"><strong>Linked abilities:</strong> ${escapeHtml(abilityNames || "None")}</div>`;
+  }).join("")}</div>`;
 }
 
 export function progressionScreen(state) {
@@ -450,14 +551,12 @@ function registryAbilityText(entry) {
 }
 
 function registryCard(entry) {
+  const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id) ?? entry;
+  const isJob = entry.track === "job" || String(entry.kind).toLowerCase().includes("job");
   return `<article class="card registry-card">
-    <div class="row between"><h3>${escapeHtml(entry.name)}</h3><span class="pill">Excel ${entry.excelId}</span></div>
-    <p><span class="pill">${escapeHtml(entry.kind)}</span> <span class="pill">${escapeHtml(titleCase(entry.tier))}</span> <span class="pill">${escapeHtml(entry.category)}</span> <span class="pill">Cap ${entry.maxLevel}</span></p>
-    <p>${escapeHtml(entry.description)}</p>
-    <p class="small"><strong>Stats:</strong> ${escapeHtml(registryStatsText(entry))}</p>
+    <div class="row between"><span class="pill">Excel ${escapeHtml(entry.excelId)}</span><span class="pill">${escapeHtml(entry.kind)}</span></div>
+    ${classProfileCard({ ...entry, ...data, kind: entry.kind }, { type: isJob ? "job" : "race" })}
     <p class="small"><strong>Abilities:</strong> ${escapeHtml(registryAbilityText(entry))}</p>
-    <p class="small"><strong>Strengths:</strong> ${escapeHtml((entry.strengths ?? []).join(", ") || "Flexible")}</p>
-    <p class="small"><strong>Weaknesses:</strong> ${escapeHtml((entry.weaknesses ?? []).join(", ") || "Needs specialization")}</p>
     <p class="small"><strong>Requirement:</strong> ${escapeHtml(registryRequirementText(entry))}</p>
   </article>`;
 }

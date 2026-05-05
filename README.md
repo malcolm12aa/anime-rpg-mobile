@@ -195,3 +195,10 @@ Upload/replace the files in your GitHub repository root the same way as before. 
 - Visible Basic Abilities reset to I 0 when a new race evolution or job upgrade stage starts.
 - Hidden stacked totals remain in the background and power derived combat stats.
 - HP, mana, stamina, attack, spell power, defense, and speed now scale from Basic Ability totals.
+
+## v0.6.3 — Race / Job Text Layout Update
+
+- Race cards now use the requested layout: Race, Max Level, Status, Tags, Unique Description, Strengths, and Weaknesses.
+- Job cards now use the requested layout: Job, Max Level, Status, Weapon/s, Tags, Unique Description, Strengths, and Weaknesses.
+- Job weapon recommendations are generated from each job name/category/description so weapon restrictions match the role.
+- Current Build and Class Registry screens now use the same cleaner layout.
