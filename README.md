@@ -2,7 +2,7 @@
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
 
-## v0.5.0 Ability Linking
+## v0.5.1 Shop Filter & Ability Descriptions
 
 Added in this package:
 

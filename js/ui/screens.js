@@ -60,7 +60,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.5.0 ability linking with skill/spell shops.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.5.1 skill/spell shop filter fix and detailed ability descriptions.</p>
   </section>`;
 }
 
@@ -251,8 +251,13 @@ function normalizeSearchText(text = "") {
 function matchesSearchText(haystack, search) {
   const normalizedSearch = normalizeSearchText(search).replace(/[^a-z0-9]+/g, " ").trim();
   if (!normalizedSearch) return true;
-  const tokens = normalizeSearchText(haystack).replace(/[^a-z0-9]+/g, " ").split(/\s+/).filter(Boolean);
-  return tokens.some(token => token === normalizedSearch || token.startsWith(normalizedSearch));
+  const normalizedHaystack = normalizeSearchText(haystack).replace(/[^a-z0-9]+/g, " ").trim();
+  if (normalizedHaystack.includes(normalizedSearch)) return true;
+  const tokens = normalizedHaystack.split(/\s+/).filter(Boolean);
+  const searchTokens = normalizedSearch.split(/\s+/).filter(Boolean);
+  return searchTokens.every(searchToken =>
+    tokens.some(token => token === searchToken || token.startsWith(searchToken))
+  );
 }
 
 export function getBuildFocus(item) {
@@ -537,15 +542,15 @@ function abilityShopSection(state) {
   const stockIds = new Set(SKILL_SHOP_LIBRARIES
     .filter(lib => filters.library === "all" || lib.id === filters.library)
     .flatMap(lib => lib.stock ?? []));
-  const search = String(filters.search ?? "").trim().toLowerCase();
+  const search = String(filters.search ?? "").trim();
   const filtered = SKILLS.filter(skill => {
     if (!stockIds.has(skill.id)) return false;
     if (Number(skill.price ?? 0) <= 0) return false;
     if (filters.kind !== "all" && skill.kind !== filters.kind) return false;
     if (filters.rank !== "all" && skill.rank !== filters.rank) return false;
     if (search) {
-      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${skill.description} ${(skill.tags ?? []).join(" ")}`.toLowerCase();
-      if (!haystack.includes(search)) return false;
+      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${skill.description} ${skill.source ?? ""} ${(skill.tags ?? []).join(" ")}`;
+      if (!matchesSearchText(haystack, search)) return false;
     }
     return true;
   });
@@ -559,6 +564,7 @@ function abilityShopSection(state) {
       ${selectField("Rank", "ability.rank", rankOptions, filters.rank)}
     </div>
     <div class="actions">${button("Reset Ability Filters", "resetAbilityFilters", "", "secondary")}</div>
+    <p class="small"><strong>Active filters:</strong> Search “${escapeHtml(filters.search || "any")}” · Library ${escapeHtml(titleCase(filters.library))} · Kind ${escapeHtml(titleCase(filters.kind))} · Rank ${escapeHtml(titleCase(filters.rank))}</p>
     ${filtered.length > visible.length ? `<p class="small">Large ability list capped at 80 cards for mobile performance. Use filters to narrow it down.</p>` : ""}
     <div class="grid auto">${visible.map(skill => abilityShopCard(skill, state.player)).join("") || `<article class="card"><h3>No abilities found</h3><p>Try a different search, library, kind, or rank filter.</p></article>`}</div>
   </section>`;

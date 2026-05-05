@@ -60,7 +60,7 @@ function handleDataInputEvent(event) {
   if (!input) return;
   try {
     state = handleInput(state, input.dataset.input, input.value);
-    if (input.dataset.input?.startsWith("registry.") || input.dataset.input?.startsWith("creation.")) rerender();
+    if (input.dataset.input?.startsWith("registry.") || input.dataset.input?.startsWith("creation.") || input.dataset.input?.startsWith("ability.")) rerender();
   } catch (error) {
     showBootError(error);
   }

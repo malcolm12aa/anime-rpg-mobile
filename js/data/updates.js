@@ -1,5 +1,15 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.5.1 — Shop Filter & Ability Description Fix",
+    date: "2026-05-04",
+    notes: [
+      "Fixed the Skill / Spell Shop filters so search, library, kind, and rank update the shop results immediately.",
+      "Improved search matching so multi-word ability searches and partial terms work more reliably.",
+      "Rewrote all active ability descriptions with more detailed, unique mechanical and flavor text.",
+      "Added an active-filter summary under the shop filters so testers can see exactly what is being applied."
+    ]
+  },
+  {
     version: "v0.5.0 — Ability Linking",
     date: "2026-05-04",
     notes: [
