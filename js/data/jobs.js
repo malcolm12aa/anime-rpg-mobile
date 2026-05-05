@@ -1,6 +1,4 @@
-// Auto-generated from Excel import and updated in v0.6.0.
-// JOBS contains base starting jobs. JOB_PATHS contains advanced/specialist/rare/hidden paths.
-// v0.6.0 applies category stat templates, unique descriptions, strengths, weaknesses, and duplicate cleanup metadata.
+// Auto-polished for v0.6.1 Naming Pass.
 
 export const JOBS = [
   {
@@ -49,7 +47,7 @@ export const JOBS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warrior \u2014 heavy melee"
+    "roleIdentity": "Warrior — heavy melee"
   },
   {
     "id": "job_1001_swordsman",
@@ -99,7 +97,7 @@ export const JOBS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Swordsman \u2014 blade duelist"
+    "roleIdentity": "Swordsman — blade duelist"
   },
   {
     "id": "guardian",
@@ -148,7 +146,7 @@ export const JOBS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Knight \u2014 defender"
+    "roleIdentity": "Knight — defender"
   },
   {
     "id": "job_1003_paladin",
@@ -197,7 +195,7 @@ export const JOBS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Paladin \u2014 defender"
+    "roleIdentity": "Paladin — defender"
   },
   {
     "id": "fighter",
@@ -245,7 +243,7 @@ export const JOBS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fighter \u2014 heavy melee"
+    "roleIdentity": "Fighter — heavy melee"
   },
   {
     "id": "job_1005_spearman",
@@ -295,7 +293,7 @@ export const JOBS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spearman \u2014 reach fighter"
+    "roleIdentity": "Spearman — reach fighter"
   },
   {
     "id": "job_1006_lancer",
@@ -345,7 +343,7 @@ export const JOBS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lancer \u2014 reach fighter"
+    "roleIdentity": "Lancer — reach fighter"
   },
   {
     "id": "monk",
@@ -395,7 +393,7 @@ export const JOBS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Monk \u2014 martial artist"
+    "roleIdentity": "Monk — martial artist"
   },
   {
     "id": "job_1008_berserker",
@@ -443,7 +441,7 @@ export const JOBS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Berserker \u2014 heavy melee"
+    "roleIdentity": "Berserker — heavy melee"
   },
   {
     "id": "mage",
@@ -492,7 +490,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mage \u2014 arcane caster"
+    "roleIdentity": "Mage — arcane caster"
   },
   {
     "id": "job_1010_wizard",
@@ -541,7 +539,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wizard \u2014 arcane caster"
+    "roleIdentity": "Wizard — arcane caster"
   },
   {
     "id": "job_1011_sorcerer",
@@ -590,7 +588,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sorcerer \u2014 arcane caster"
+    "roleIdentity": "Sorcerer — arcane caster"
   },
   {
     "id": "job_1012_elementalist",
@@ -639,7 +637,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elementalist \u2014 arcane caster"
+    "roleIdentity": "Elementalist — arcane caster"
   },
   {
     "id": "job_1013_witch",
@@ -688,7 +686,7 @@ export const JOBS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Witch \u2014 curse caster"
+    "roleIdentity": "Witch — curse caster"
   },
   {
     "id": "job_1014_summoner",
@@ -736,7 +734,7 @@ export const JOBS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Summoner \u2014 summoner tamer"
+    "roleIdentity": "Summoner — summoner tamer"
   },
   {
     "id": "job_1015_barrier_mage",
@@ -785,7 +783,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Barrier Mage \u2014 arcane caster"
+    "roleIdentity": "Barrier Mage — arcane caster"
   },
   {
     "id": "job_1016_healer",
@@ -833,7 +831,7 @@ export const JOBS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Healer \u2014 holy support"
+    "roleIdentity": "Healer — holy support"
   },
   {
     "id": "cleric",
@@ -882,7 +880,7 @@ export const JOBS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cleric \u2014 holy support"
+    "roleIdentity": "Cleric — holy support"
   },
   {
     "id": "job_1018_priest",
@@ -931,7 +929,7 @@ export const JOBS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Priest \u2014 holy support"
+    "roleIdentity": "Priest — holy support"
   },
   {
     "id": "bard",
@@ -979,7 +977,7 @@ export const JOBS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bard \u2014 performer support"
+    "roleIdentity": "Bard — performer support"
   },
   {
     "id": "job_1020_dancer",
@@ -1027,7 +1025,7 @@ export const JOBS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dancer \u2014 misc support"
+    "roleIdentity": "Dancer — misc support"
   },
   {
     "id": "job_1021_strategist",
@@ -1075,7 +1073,7 @@ export const JOBS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Strategist \u2014 misc support"
+    "roleIdentity": "Strategist — misc support"
   },
   {
     "id": "job_1022_cook",
@@ -1127,7 +1125,7 @@ export const JOBS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cook \u2014 crafting utility"
+    "roleIdentity": "Cook — crafting utility"
   },
   {
     "id": "job_1023_buffer",
@@ -1175,7 +1173,7 @@ export const JOBS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Buffer \u2014 misc support"
+    "roleIdentity": "Buffer — misc support"
   },
   {
     "id": "job_1024_archer",
@@ -1223,7 +1221,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Archer \u2014 ranged striker"
+    "roleIdentity": "Archer — ranged striker"
   },
   {
     "id": "job_1025_hunter",
@@ -1271,7 +1269,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hunter \u2014 ranged striker"
+    "roleIdentity": "Hunter — ranged striker"
   },
   {
     "id": "ranger",
@@ -1319,7 +1317,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ranger \u2014 ranged striker"
+    "roleIdentity": "Ranger — ranged striker"
   },
   {
     "id": "job_1027_sniper",
@@ -1367,7 +1365,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sniper \u2014 ranged striker"
+    "roleIdentity": "Sniper — ranged striker"
   },
   {
     "id": "job_1028_gunslinger",
@@ -1415,7 +1413,7 @@ export const JOBS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gunslinger \u2014 misc ranged"
+    "roleIdentity": "Gunslinger — misc ranged"
   },
   {
     "id": "job_1029_magic_gunner",
@@ -1463,7 +1461,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Magic Gunner \u2014 ranged striker"
+    "roleIdentity": "Magic Gunner — ranged striker"
   },
   {
     "id": "rogue",
@@ -1511,7 +1509,7 @@ export const JOBS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rogue \u2014 stealth striker"
+    "roleIdentity": "Rogue — stealth striker"
   },
   {
     "id": "job_1031_thief",
@@ -1559,7 +1557,7 @@ export const JOBS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Thief \u2014 stealth striker"
+    "roleIdentity": "Thief — stealth striker"
   },
   {
     "id": "job_1032_assassin",
@@ -1607,7 +1605,7 @@ export const JOBS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Assassin \u2014 stealth striker"
+    "roleIdentity": "Assassin — stealth striker"
   },
   {
     "id": "job_1033_ninja",
@@ -1655,7 +1653,7 @@ export const JOBS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ninja \u2014 stealth striker"
+    "roleIdentity": "Ninja — stealth striker"
   },
   {
     "id": "job_1034_scout",
@@ -1703,7 +1701,7 @@ export const JOBS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Scout \u2014 misc rogue"
+    "roleIdentity": "Scout — misc rogue"
   },
   {
     "id": "job_1035_spy",
@@ -1751,7 +1749,7 @@ export const JOBS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spy \u2014 misc rogue"
+    "roleIdentity": "Spy — misc rogue"
   },
   {
     "id": "job_1036_trickster",
@@ -1799,7 +1797,7 @@ export const JOBS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trickster \u2014 misc rogue"
+    "roleIdentity": "Trickster — misc rogue"
   },
   {
     "id": "job_1037_blacksmith",
@@ -1850,7 +1848,7 @@ export const JOBS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blacksmith \u2014 crafting utility"
+    "roleIdentity": "Blacksmith — crafting utility"
   },
   {
     "id": "alchemist",
@@ -1901,7 +1899,7 @@ export const JOBS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Alchemist \u2014 crafting utility"
+    "roleIdentity": "Alchemist — crafting utility"
   },
   {
     "id": "job_1039_enchanter",
@@ -1951,7 +1949,7 @@ export const JOBS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Enchanter \u2014 misc crafting"
+    "roleIdentity": "Enchanter — misc crafting"
   },
   {
     "id": "job_1040_engineer",
@@ -2002,7 +2000,7 @@ export const JOBS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Engineer \u2014 crafting utility"
+    "roleIdentity": "Engineer — crafting utility"
   },
   {
     "id": "job_1041_tailor",
@@ -2052,7 +2050,7 @@ export const JOBS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tailor \u2014 misc crafting"
+    "roleIdentity": "Tailor — misc crafting"
   },
   {
     "id": "job_1042_chef",
@@ -2102,7 +2100,7 @@ export const JOBS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Chef \u2014 misc crafting"
+    "roleIdentity": "Chef — misc crafting"
   },
   {
     "id": "job_1043_appraiser",
@@ -2152,7 +2150,7 @@ export const JOBS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Appraiser \u2014 misc crafting"
+    "roleIdentity": "Appraiser — misc crafting"
   },
   {
     "id": "job_1044_merchant",
@@ -2203,7 +2201,7 @@ export const JOBS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merchant \u2014 crafting utility"
+    "roleIdentity": "Merchant — crafting utility"
   },
   {
     "id": "job_1045_saint",
@@ -2252,7 +2250,7 @@ export const JOBS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Saint \u2014 misc holy"
+    "roleIdentity": "Saint — misc holy"
   },
   {
     "id": "job_1046_exorcist",
@@ -2301,7 +2299,7 @@ export const JOBS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Exorcist \u2014 misc holy"
+    "roleIdentity": "Exorcist — misc holy"
   },
   {
     "id": "job_1047_templar",
@@ -2350,7 +2348,7 @@ export const JOBS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Templar \u2014 misc holy"
+    "roleIdentity": "Templar — misc holy"
   },
   {
     "id": "job_1048_oracle",
@@ -2399,7 +2397,7 @@ export const JOBS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oracle \u2014 misc holy"
+    "roleIdentity": "Oracle — misc holy"
   },
   {
     "id": "job_1049_necromancer",
@@ -2450,7 +2448,7 @@ export const JOBS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Necromancer \u2014 death magic"
+    "roleIdentity": "Necromancer — death magic"
   },
   {
     "id": "job_1050_warlock",
@@ -2499,7 +2497,7 @@ export const JOBS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warlock \u2014 curse caster"
+    "roleIdentity": "Warlock — curse caster"
   },
   {
     "id": "job_1051_dark_knight",
@@ -2549,7 +2547,7 @@ export const JOBS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Knight \u2014 defender"
+    "roleIdentity": "Dark Knight — defender"
   },
   {
     "id": "job_1052_curse_mage",
@@ -2597,7 +2595,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Curse Mage \u2014 arcane caster"
+    "roleIdentity": "Curse Mage — arcane caster"
   },
   {
     "id": "job_1053_blood_mage",
@@ -2645,7 +2643,7 @@ export const JOBS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blood Mage \u2014 arcane caster"
+    "roleIdentity": "Blood Mage — arcane caster"
   },
   {
     "id": "job_1054_reaper",
@@ -2694,7 +2692,7 @@ export const JOBS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Reaper \u2014 misc dark"
+    "roleIdentity": "Reaper — misc dark"
   },
   {
     "id": "job_1055_demon_lord",
@@ -2743,7 +2741,7 @@ export const JOBS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demon Lord \u2014 misc monster"
+    "roleIdentity": "Demon Lord — misc monster"
   },
   {
     "id": "job_1056_vampire_lord",
@@ -2792,7 +2790,7 @@ export const JOBS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Lord \u2014 misc monster"
+    "roleIdentity": "Vampire Lord — misc monster"
   },
   {
     "id": "job_1057_oni_warrior",
@@ -2841,7 +2839,7 @@ export const JOBS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Warrior \u2014 heavy melee"
+    "roleIdentity": "Oni Warrior — heavy melee"
   },
   {
     "id": "job_1058_goblin_champion",
@@ -2890,7 +2888,7 @@ export const JOBS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Champion \u2014 misc monster"
+    "roleIdentity": "Goblin Champion — misc monster"
   },
   {
     "id": "job_1059_slime_predator",
@@ -2939,7 +2937,7 @@ export const JOBS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Predator \u2014 misc monster"
+    "roleIdentity": "Slime Predator — misc monster"
   },
   {
     "id": "job_1060_dragon_apostle",
@@ -2988,7 +2986,7 @@ export const JOBS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Apostle \u2014 misc monster"
+    "roleIdentity": "Dragon Apostle — misc monster"
   },
   {
     "id": "job_1061_samurai",
@@ -3039,7 +3037,7 @@ export const JOBS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Samurai \u2014 blade duelist"
+    "roleIdentity": "Samurai — blade duelist"
   },
   {
     "id": "job_1062_onmyoji",
@@ -3088,7 +3086,7 @@ export const JOBS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Onmyoji \u2014 misc japanese fantasy"
+    "roleIdentity": "Onmyoji — misc japanese fantasy"
   },
   {
     "id": "job_1063_miko",
@@ -3137,7 +3135,7 @@ export const JOBS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Miko \u2014 misc japanese fantasy"
+    "roleIdentity": "Miko — misc japanese fantasy"
   },
   {
     "id": "job_1064_cultivator",
@@ -3187,7 +3185,7 @@ export const JOBS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cultivator \u2014 misc cultivation murim"
+    "roleIdentity": "Cultivator — misc cultivation murim"
   },
   {
     "id": "job_1065_esper",
@@ -3235,7 +3233,7 @@ export const JOBS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Esper \u2014 misc modern fantasy"
+    "roleIdentity": "Esper — misc modern fantasy"
   },
   {
     "id": "job_1066_hero_student",
@@ -3283,7 +3281,7 @@ export const JOBS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hero Student \u2014 misc modern fantasy"
+    "roleIdentity": "Hero Student — misc modern fantasy"
   },
   {
     "id": "job_1067_pro_hero",
@@ -3331,7 +3329,7 @@ export const JOBS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Pro Hero \u2014 misc modern fantasy"
+    "roleIdentity": "Pro Hero — misc modern fantasy"
   },
   {
     "id": "job_1068_adventurer",
@@ -3381,7 +3379,7 @@ export const JOBS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Adventurer \u2014 misc guild jobs"
+    "roleIdentity": "Adventurer — misc guild jobs"
   },
   {
     "id": "job_1069_villager",
@@ -3431,7 +3429,7 @@ export const JOBS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Villager \u2014 misc guild jobs"
+    "roleIdentity": "Villager — misc guild jobs"
   },
   {
     "id": "job_1070_farmer",
@@ -3481,7 +3479,7 @@ export const JOBS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Farmer \u2014 misc guild jobs"
+    "roleIdentity": "Farmer — misc guild jobs"
   },
   {
     "id": "job_1071_mercenary",
@@ -3531,7 +3529,7 @@ export const JOBS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mercenary \u2014 misc guild jobs"
+    "roleIdentity": "Mercenary — misc guild jobs"
   },
   {
     "id": "job_1072_bounty_hunter",
@@ -3581,7 +3579,7 @@ export const JOBS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bounty Hunter \u2014 ranged striker"
+    "roleIdentity": "Bounty Hunter — ranged striker"
   }
 ];
 
@@ -3589,12 +3587,12 @@ export const JOB_PATHS = [
   {
     "id": "job_path_1073_warrior_vanguard",
     "excelId": 1073,
-    "name": "Warrior Vanguard",
+    "name": "Warrior Iron Banner",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1000_warrior",
-    "description": "Warrior Vanguard is a advanced Combat class path branching from job 1000 warrior. It sharpens STR, CON, adds a mirror-step combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Warrior Iron Banner is a distinct advanced job upgrade for Warrior. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -3607,12 +3605,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Warrior Vanguard-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Warrior Iron Banner focuses on heavy melee",
+      "Adds a specialized route for Warrior without copying nearby jobs",
+      "Warrior Vanguard-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Warrior Vanguard suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Warrior Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Warrior Vanguard suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -3639,7 +3639,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warrior Vanguard \u2014 heavy melee"
+    "roleIdentity": "Warrior Vanguard — heavy melee"
   },
   {
     "id": "job_path_1074_warrior_paragon",
@@ -3694,7 +3694,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warrior Paragon \u2014 heavy melee"
+    "roleIdentity": "Warrior Paragon — heavy melee"
   },
   {
     "id": "job_path_1075_warrior_sovereign",
@@ -3749,7 +3749,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warrior Sovereign \u2014 heavy melee"
+    "roleIdentity": "Warrior Sovereign — heavy melee"
   },
   {
     "id": "job_path_1076_world_crowned_warrior",
@@ -3806,17 +3806,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Warrior \u2014 heavy melee"
+    "roleIdentity": "World-Crowned Warrior — heavy melee"
   },
   {
     "id": "job_path_1077_warrior_adept",
     "excelId": 1077,
-    "name": "Warrior Adept",
+    "name": "Warrior Deep Focus",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1000_warrior",
-    "description": "Warrior Adept is a advanced Combat class path branching from job 1000 warrior. It sharpens STR, CON, adds a ash-crowned combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Warrior Deep Focus is a distinct advanced job upgrade for Warrior. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -3829,12 +3829,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Warrior Adept-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Warrior Deep Focus focuses on heavy melee",
+      "Adds a specialized route for Warrior without copying nearby jobs",
+      "Warrior Adept-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Warrior Adept suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Warrior Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Warrior Adept suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -3861,7 +3863,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warrior Adept \u2014 heavy melee"
+    "roleIdentity": "Warrior Adept — heavy melee"
   },
   {
     "id": "job_path_1078_eclipse_warrior",
@@ -3916,7 +3918,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Warrior \u2014 heavy melee"
+    "roleIdentity": "Eclipse Warrior — heavy melee"
   },
   {
     "id": "job_path_1079_mythic_warrior",
@@ -3971,7 +3973,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Warrior \u2014 heavy melee"
+    "roleIdentity": "Mythic Warrior — heavy melee"
   },
   {
     "id": "job_path_1080_hidden_origin_warrior",
@@ -4028,17 +4030,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Warrior \u2014 heavy melee"
+    "roleIdentity": "Hidden Origin Warrior — heavy melee"
   },
   {
     "id": "job_path_1081_swordsman_vanguard",
     "excelId": 1081,
-    "name": "Swordsman Vanguard",
+    "name": "Swordsman Sunbreaker Form",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1001_swordsman",
-    "description": "Swordsman Vanguard is a advanced Combat class path branching from job 1001 swordsman. It sharpens STR, DEX, adds a rune-laced combat rhythm, and focuses on weapon-form precision; its balancing drawback is resource loss in long fights. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Swordsman Sunbreaker Form is a distinct advanced job upgrade for Swordsman. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "con": 3,
@@ -4053,12 +4055,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Swordsman Vanguard-specific weapon pressure through weapon-form precision",
-      "Strong accuracy and evasion within Combat builds"
+      "Swordsman Sunbreaker Form focuses on blade duelist",
+      "Adds a specialized route for Swordsman without copying nearby jobs",
+      "Swordsman Vanguard-specific weapon pressure through weapon-form precision"
     ],
     "weaknesses": [
-      "Swordsman Vanguard suffers from resource loss in long fights",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Swordsman Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Swordsman Vanguard suffers from resource loss in long fights"
     ],
     "requirements": {
       "classLevel": 15
@@ -4085,7 +4089,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Swordsman Vanguard \u2014 blade duelist"
+    "roleIdentity": "Swordsman Vanguard — blade duelist"
   },
   {
     "id": "job_path_1082_swordsman_paragon",
@@ -4142,7 +4146,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Swordsman Paragon \u2014 blade duelist"
+    "roleIdentity": "Swordsman Paragon — blade duelist"
   },
   {
     "id": "job_path_1083_swordsman_sovereign",
@@ -4199,7 +4203,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Swordsman Sovereign \u2014 blade duelist"
+    "roleIdentity": "Swordsman Sovereign — blade duelist"
   },
   {
     "id": "job_path_1084_world_crowned_swordsman",
@@ -4258,17 +4262,17 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Swordsman \u2014 blade duelist"
+    "roleIdentity": "World-Crowned Swordsman — blade duelist"
   },
   {
     "id": "job_path_1085_swordsman_adept",
     "excelId": 1085,
-    "name": "Swordsman Adept",
+    "name": "Swordsman Perfected Course",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1001_swordsman",
-    "description": "Swordsman Adept is a advanced Combat class path branching from job 1001 swordsman. It sharpens STR, DEX, adds a mirror-step combat rhythm, and focuses on weapon-form precision; its balancing drawback is resource loss in long fights. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Swordsman Perfected Course is a distinct advanced job upgrade for Swordsman. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "con": 3,
@@ -4283,12 +4287,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Swordsman Adept-specific weapon pressure through weapon-form precision",
-      "Strong accuracy and evasion within Combat builds"
+      "Swordsman Perfected Course focuses on blade duelist",
+      "Adds a specialized route for Swordsman without copying nearby jobs",
+      "Swordsman Adept-specific weapon pressure through weapon-form precision"
     ],
     "weaknesses": [
-      "Swordsman Adept suffers from resource loss in long fights",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Swordsman Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Swordsman Adept suffers from resource loss in long fights"
     ],
     "requirements": {
       "classLevel": 15
@@ -4315,7 +4321,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Swordsman Adept \u2014 blade duelist"
+    "roleIdentity": "Swordsman Adept — blade duelist"
   },
   {
     "id": "job_path_1086_eclipse_swordsman",
@@ -4372,7 +4378,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Swordsman \u2014 blade duelist"
+    "roleIdentity": "Eclipse Swordsman — blade duelist"
   },
   {
     "id": "job_path_1087_mythic_swordsman",
@@ -4429,7 +4435,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Swordsman \u2014 blade duelist"
+    "roleIdentity": "Mythic Swordsman — blade duelist"
   },
   {
     "id": "job_path_1088_hidden_origin_swordsman",
@@ -4488,17 +4494,17 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Swordsman \u2014 blade duelist"
+    "roleIdentity": "Hidden Origin Swordsman — blade duelist"
   },
   {
     "id": "job_path_1089_knight_vanguard",
     "excelId": 1089,
-    "name": "Knight Vanguard",
+    "name": "Knight Dragonstep Method",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "guardian",
-    "description": "Knight Vanguard is a advanced Combat class path branching from guardian. It sharpens CON, STR, adds a mirror-step combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Knight Dragonstep Method is a distinct advanced job upgrade for Knight. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 4,
       "con": 6,
@@ -4512,12 +4518,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Knight Vanguard-specific durability through defensive formation play",
-      "Strong break damage within Combat builds"
+      "Knight Dragonstep Method focuses on defender",
+      "Adds a specialized route for Knight without copying nearby jobs",
+      "Knight Vanguard-specific durability through defensive formation play"
     ],
     "weaknesses": [
-      "Knight Vanguard suffers from slower clear speed",
-      "Needs support when fights demand the opposite of durability"
+      "Knight Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Knight Vanguard suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -4544,7 +4552,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Knight Vanguard \u2014 defender"
+    "roleIdentity": "Knight Vanguard — defender"
   },
   {
     "id": "job_path_1090_knight_paragon",
@@ -4600,7 +4608,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Knight Paragon \u2014 defender"
+    "roleIdentity": "Knight Paragon — defender"
   },
   {
     "id": "job_path_1091_knight_sovereign",
@@ -4656,7 +4664,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Knight Sovereign \u2014 defender"
+    "roleIdentity": "Knight Sovereign — defender"
   },
   {
     "id": "job_path_1092_world_crowned_knight",
@@ -4714,17 +4722,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Knight \u2014 defender"
+    "roleIdentity": "World-Crowned Knight — defender"
   },
   {
     "id": "job_path_1093_knight_adept",
     "excelId": 1093,
-    "name": "Knight Adept",
+    "name": "Knight Secret Tempo",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "guardian",
-    "description": "Knight Adept is a advanced Combat class path branching from guardian. It sharpens CON, STR, adds a iron-tempo combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Knight Secret Tempo is a distinct advanced job upgrade for Knight. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 4,
       "con": 6,
@@ -4738,12 +4746,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Knight Adept-specific durability through defensive formation play",
-      "Strong break damage within Combat builds"
+      "Knight Secret Tempo focuses on defender",
+      "Adds a specialized route for Knight without copying nearby jobs",
+      "Knight Adept-specific durability through defensive formation play"
     ],
     "weaknesses": [
-      "Knight Adept suffers from slower clear speed",
-      "Needs support when fights demand the opposite of durability"
+      "Knight Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Knight Adept suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -4770,7 +4780,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Knight Adept \u2014 defender"
+    "roleIdentity": "Knight Adept — defender"
   },
   {
     "id": "job_path_1094_eclipse_knight",
@@ -4826,7 +4836,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Knight \u2014 defender"
+    "roleIdentity": "Eclipse Knight — defender"
   },
   {
     "id": "job_path_1095_mythic_knight",
@@ -4882,7 +4892,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Knight \u2014 defender"
+    "roleIdentity": "Mythic Knight — defender"
   },
   {
     "id": "job_path_1096_hidden_origin_knight",
@@ -4940,17 +4950,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Knight \u2014 defender"
+    "roleIdentity": "Hidden Origin Knight — defender"
   },
   {
     "id": "job_path_1097_paladin_vanguard",
     "excelId": 1097,
-    "name": "Paladin Vanguard",
+    "name": "Paladin Iron Banner",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1003_paladin",
-    "description": "Paladin Vanguard is a advanced Holy class path branching from job 1003 paladin. It sharpens WIS, CON, adds a beast-call combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Paladin Iron Banner is a distinct advanced job upgrade for Paladin. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 5,
       "cha": 1,
@@ -4964,12 +4974,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Paladin Vanguard-specific recovery/control through defensive formation play",
-      "Strong defensive uptime within Holy builds"
+      "Paladin Iron Banner focuses on defender",
+      "Adds a specialized route for Paladin without copying nearby jobs",
+      "Paladin Vanguard-specific recovery/control through defensive formation play"
     ],
     "weaknesses": [
-      "Paladin Vanguard suffers from slower clear speed",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Paladin Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Paladin Vanguard suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -4996,7 +5008,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Paladin Vanguard \u2014 defender"
+    "roleIdentity": "Paladin Vanguard — defender"
   },
   {
     "id": "job_path_1098_paladin_paragon",
@@ -5052,7 +5064,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Paladin Paragon \u2014 defender"
+    "roleIdentity": "Paladin Paragon — defender"
   },
   {
     "id": "job_path_1099_paladin_sovereign",
@@ -5108,7 +5120,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Paladin Sovereign \u2014 defender"
+    "roleIdentity": "Paladin Sovereign — defender"
   },
   {
     "id": "job_path_1100_world_crowned_paladin",
@@ -5166,17 +5178,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Paladin \u2014 defender"
+    "roleIdentity": "World-Crowned Paladin — defender"
   },
   {
     "id": "job_path_1101_paladin_adept",
     "excelId": 1101,
-    "name": "Paladin Adept",
+    "name": "Paladin Deep Focus",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1003_paladin",
-    "description": "Paladin Adept is a advanced Holy class path branching from job 1003 paladin. It sharpens WIS, CON, adds a oathbound combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Paladin Deep Focus is a distinct advanced job upgrade for Paladin. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 5,
       "cha": 1,
@@ -5190,12 +5202,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Paladin Adept-specific recovery/control through defensive formation play",
-      "Strong defensive uptime within Holy builds"
+      "Paladin Deep Focus focuses on defender",
+      "Adds a specialized route for Paladin without copying nearby jobs",
+      "Paladin Adept-specific recovery/control through defensive formation play"
     ],
     "weaknesses": [
-      "Paladin Adept suffers from slower clear speed",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Paladin Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Paladin Adept suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -5222,7 +5236,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Paladin Adept \u2014 defender"
+    "roleIdentity": "Paladin Adept — defender"
   },
   {
     "id": "job_path_1102_eclipse_paladin",
@@ -5278,7 +5292,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Paladin \u2014 defender"
+    "roleIdentity": "Eclipse Paladin — defender"
   },
   {
     "id": "job_path_1103_mythic_paladin",
@@ -5334,7 +5348,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Paladin \u2014 defender"
+    "roleIdentity": "Mythic Paladin — defender"
   },
   {
     "id": "job_path_1104_hidden_origin_paladin",
@@ -5392,17 +5406,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Paladin \u2014 defender"
+    "roleIdentity": "Hidden Origin Paladin — defender"
   },
   {
     "id": "job_path_1105_fighter_vanguard",
     "excelId": 1105,
-    "name": "Fighter Vanguard",
+    "name": "Fighter Sunbreaker Form",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "fighter",
-    "description": "Fighter Vanguard is a advanced Combat class path branching from fighter. It sharpens STR, CON, adds a iron-tempo combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Fighter Sunbreaker Form is a distinct advanced job upgrade for Fighter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -5415,12 +5429,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Fighter Vanguard-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Fighter Sunbreaker Form focuses on heavy melee",
+      "Adds a specialized route for Fighter without copying nearby jobs",
+      "Fighter Vanguard-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Fighter Vanguard suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Fighter Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Fighter Vanguard suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -5447,7 +5463,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fighter Vanguard \u2014 heavy melee"
+    "roleIdentity": "Fighter Vanguard — heavy melee"
   },
   {
     "id": "job_path_1106_fighter_paragon",
@@ -5502,7 +5518,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fighter Paragon \u2014 heavy melee"
+    "roleIdentity": "Fighter Paragon — heavy melee"
   },
   {
     "id": "job_path_1107_fighter_sovereign",
@@ -5557,7 +5573,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fighter Sovereign \u2014 heavy melee"
+    "roleIdentity": "Fighter Sovereign — heavy melee"
   },
   {
     "id": "job_path_1108_world_crowned_fighter",
@@ -5614,17 +5630,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Fighter \u2014 heavy melee"
+    "roleIdentity": "World-Crowned Fighter — heavy melee"
   },
   {
     "id": "job_path_1109_fighter_adept",
     "excelId": 1109,
-    "name": "Fighter Adept",
+    "name": "Fighter Perfected Course",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "fighter",
-    "description": "Fighter Adept is a advanced Combat class path branching from fighter. It sharpens STR, CON, adds a iron-tempo combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Fighter Perfected Course is a distinct advanced job upgrade for Fighter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -5637,12 +5653,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Fighter Adept-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Fighter Perfected Course focuses on heavy melee",
+      "Adds a specialized route for Fighter without copying nearby jobs",
+      "Fighter Adept-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Fighter Adept suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Fighter Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Fighter Adept suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -5669,7 +5687,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fighter Adept \u2014 heavy melee"
+    "roleIdentity": "Fighter Adept — heavy melee"
   },
   {
     "id": "job_path_1110_eclipse_fighter",
@@ -5724,7 +5742,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Fighter \u2014 heavy melee"
+    "roleIdentity": "Eclipse Fighter — heavy melee"
   },
   {
     "id": "job_path_1111_mythic_fighter",
@@ -5779,7 +5797,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Fighter \u2014 heavy melee"
+    "roleIdentity": "Mythic Fighter — heavy melee"
   },
   {
     "id": "job_path_1112_hidden_origin_fighter",
@@ -5836,17 +5854,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Fighter \u2014 heavy melee"
+    "roleIdentity": "Hidden Origin Fighter — heavy melee"
   },
   {
     "id": "job_path_1113_spearman_vanguard",
     "excelId": 1113,
-    "name": "Spearman Vanguard",
+    "name": "Spearman Dragonstep Method",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1005_spearman",
-    "description": "Spearman Vanguard is a advanced Combat class path branching from job 1005 spearman. It sharpens STR, CON, adds a iron-tempo combat rhythm, and focuses on reach control; its balancing drawback is weak close-range recovery. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Spearman Dragonstep Method is a distinct advanced job upgrade for Spearman. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 3,
@@ -5861,12 +5879,14 @@ export const JOB_PATHS = [
       "v50_spear_1"
     ],
     "strengths": [
-      "Spearman Vanguard-specific weapon pressure through reach control",
-      "Strong defensive uptime within Combat builds"
+      "Spearman Dragonstep Method focuses on reach fighter",
+      "Adds a specialized route for Spearman without copying nearby jobs",
+      "Spearman Vanguard-specific weapon pressure through reach control"
     ],
     "weaknesses": [
-      "Spearman Vanguard suffers from weak close-range recovery",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Spearman Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Spearman Vanguard suffers from weak close-range recovery"
     ],
     "requirements": {
       "classLevel": 15
@@ -5893,7 +5913,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spearman Vanguard \u2014 reach fighter"
+    "roleIdentity": "Spearman Vanguard — reach fighter"
   },
   {
     "id": "job_path_1114_spearman_paragon",
@@ -5950,7 +5970,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spearman Paragon \u2014 reach fighter"
+    "roleIdentity": "Spearman Paragon — reach fighter"
   },
   {
     "id": "job_path_1115_spearman_sovereign",
@@ -6007,7 +6027,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spearman Sovereign \u2014 reach fighter"
+    "roleIdentity": "Spearman Sovereign — reach fighter"
   },
   {
     "id": "job_path_1116_world_crowned_spearman",
@@ -6066,17 +6086,17 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Spearman \u2014 reach fighter"
+    "roleIdentity": "World-Crowned Spearman — reach fighter"
   },
   {
     "id": "job_path_1117_spearman_adept",
     "excelId": 1117,
-    "name": "Spearman Adept",
+    "name": "Spearman Secret Tempo",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1005_spearman",
-    "description": "Spearman Adept is a advanced Combat class path branching from job 1005 spearman. It sharpens STR, CON, adds a void-breath combat rhythm, and focuses on reach control; its balancing drawback is weak close-range recovery. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Spearman Secret Tempo is a distinct advanced job upgrade for Spearman. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 3,
@@ -6091,12 +6111,14 @@ export const JOB_PATHS = [
       "v50_spear_1"
     ],
     "strengths": [
-      "Spearman Adept-specific weapon pressure through reach control",
-      "Strong defensive uptime within Combat builds"
+      "Spearman Secret Tempo focuses on reach fighter",
+      "Adds a specialized route for Spearman without copying nearby jobs",
+      "Spearman Adept-specific weapon pressure through reach control"
     ],
     "weaknesses": [
-      "Spearman Adept suffers from weak close-range recovery",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Spearman Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Spearman Adept suffers from weak close-range recovery"
     ],
     "requirements": {
       "classLevel": 15
@@ -6123,7 +6145,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spearman Adept \u2014 reach fighter"
+    "roleIdentity": "Spearman Adept — reach fighter"
   },
   {
     "id": "job_path_1118_eclipse_spearman",
@@ -6180,7 +6202,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Spearman \u2014 reach fighter"
+    "roleIdentity": "Eclipse Spearman — reach fighter"
   },
   {
     "id": "job_path_1119_mythic_spearman",
@@ -6237,7 +6259,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Spearman \u2014 reach fighter"
+    "roleIdentity": "Mythic Spearman — reach fighter"
   },
   {
     "id": "job_path_1120_hidden_origin_spearman",
@@ -6296,17 +6318,17 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Spearman \u2014 reach fighter"
+    "roleIdentity": "Hidden Origin Spearman — reach fighter"
   },
   {
     "id": "job_path_1121_lancer_vanguard",
     "excelId": 1121,
-    "name": "Lancer Vanguard",
+    "name": "Lancer Iron Banner",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1006_lancer",
-    "description": "Lancer Vanguard is a advanced Combat class path branching from job 1006 lancer. It sharpens STR, CON, adds a thorn-script combat rhythm, and focuses on reach control; its balancing drawback is weak close-range recovery. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Lancer Iron Banner is a distinct advanced job upgrade for Lancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 3,
@@ -6321,12 +6343,14 @@ export const JOB_PATHS = [
       "v50_spear_1"
     ],
     "strengths": [
-      "Lancer Vanguard-specific weapon pressure through reach control",
-      "Strong defensive uptime within Combat builds"
+      "Lancer Iron Banner focuses on reach fighter",
+      "Adds a specialized route for Lancer without copying nearby jobs",
+      "Lancer Vanguard-specific weapon pressure through reach control"
     ],
     "weaknesses": [
-      "Lancer Vanguard suffers from weak close-range recovery",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Lancer Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Lancer Vanguard suffers from weak close-range recovery"
     ],
     "requirements": {
       "classLevel": 15
@@ -6353,7 +6377,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lancer Vanguard \u2014 reach fighter"
+    "roleIdentity": "Lancer Vanguard — reach fighter"
   },
   {
     "id": "job_path_1122_lancer_paragon",
@@ -6410,7 +6434,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lancer Paragon \u2014 reach fighter"
+    "roleIdentity": "Lancer Paragon — reach fighter"
   },
   {
     "id": "job_path_1123_lancer_sovereign",
@@ -6467,7 +6491,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lancer Sovereign \u2014 reach fighter"
+    "roleIdentity": "Lancer Sovereign — reach fighter"
   },
   {
     "id": "job_path_1124_world_crowned_lancer",
@@ -6526,17 +6550,17 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Lancer \u2014 reach fighter"
+    "roleIdentity": "World-Crowned Lancer — reach fighter"
   },
   {
     "id": "job_path_1125_lancer_adept",
     "excelId": 1125,
-    "name": "Lancer Adept",
+    "name": "Lancer Deep Focus",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1006_lancer",
-    "description": "Lancer Adept is a advanced Combat class path branching from job 1006 lancer. It sharpens STR, CON, adds a stormline combat rhythm, and focuses on reach control; its balancing drawback is weak close-range recovery. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Lancer Deep Focus is a distinct advanced job upgrade for Lancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 3,
@@ -6551,12 +6575,14 @@ export const JOB_PATHS = [
       "v50_spear_1"
     ],
     "strengths": [
-      "Lancer Adept-specific weapon pressure through reach control",
-      "Strong defensive uptime within Combat builds"
+      "Lancer Deep Focus focuses on reach fighter",
+      "Adds a specialized route for Lancer without copying nearby jobs",
+      "Lancer Adept-specific weapon pressure through reach control"
     ],
     "weaknesses": [
-      "Lancer Adept suffers from weak close-range recovery",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Lancer Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Lancer Adept suffers from weak close-range recovery"
     ],
     "requirements": {
       "classLevel": 15
@@ -6583,7 +6609,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lancer Adept \u2014 reach fighter"
+    "roleIdentity": "Lancer Adept — reach fighter"
   },
   {
     "id": "job_path_1126_eclipse_lancer",
@@ -6640,7 +6666,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Lancer \u2014 reach fighter"
+    "roleIdentity": "Eclipse Lancer — reach fighter"
   },
   {
     "id": "job_path_1127_mythic_lancer",
@@ -6697,7 +6723,7 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Lancer \u2014 reach fighter"
+    "roleIdentity": "Mythic Lancer — reach fighter"
   },
   {
     "id": "job_path_1128_hidden_origin_lancer",
@@ -6756,17 +6782,17 @@ export const JOB_PATHS = [
     "overlapGroup": "reach_fighter",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Lancer \u2014 reach fighter"
+    "roleIdentity": "Hidden Origin Lancer — reach fighter"
   },
   {
     "id": "job_path_1129_monk_vanguard",
     "excelId": 1129,
-    "name": "Monk Vanguard",
+    "name": "Monk Sunbreaker Form",
     "category": "Martial Arts",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "monk",
-    "description": "Monk Vanguard is a advanced Martial Arts class path branching from monk. It sharpens STR, DEX, adds a beast-call combat rhythm, and focuses on stamina-efficient chains; its balancing drawback is limited weapon scaling. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Monk Sunbreaker Form is a distinct advanced job upgrade for Monk. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "dex": 5,
@@ -6781,12 +6807,14 @@ export const JOB_PATHS = [
       "v50_unarmed_1"
     ],
     "strengths": [
-      "Monk Vanguard-specific weapon pressure through stamina-efficient chains",
-      "Strong accuracy and evasion within Martial Arts builds"
+      "Monk Sunbreaker Form focuses on martial artist",
+      "Adds a specialized route for Monk without copying nearby jobs",
+      "Monk Vanguard-specific weapon pressure through stamina-efficient chains"
     ],
     "weaknesses": [
-      "Monk Vanguard suffers from limited weapon scaling",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Monk Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Monk Vanguard suffers from limited weapon scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -6813,7 +6841,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Monk Vanguard \u2014 martial artist"
+    "roleIdentity": "Monk Vanguard — martial artist"
   },
   {
     "id": "job_path_1130_monk_paragon",
@@ -6870,7 +6898,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Monk Paragon \u2014 martial artist"
+    "roleIdentity": "Monk Paragon — martial artist"
   },
   {
     "id": "job_path_1131_monk_sovereign",
@@ -6927,7 +6955,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Monk Sovereign \u2014 martial artist"
+    "roleIdentity": "Monk Sovereign — martial artist"
   },
   {
     "id": "job_path_1132_world_crowned_monk",
@@ -6986,17 +7014,17 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Monk \u2014 martial artist"
+    "roleIdentity": "World-Crowned Monk — martial artist"
   },
   {
     "id": "job_path_1133_monk_adept",
     "excelId": 1133,
-    "name": "Monk Adept",
+    "name": "Monk Perfected Course",
     "category": "Martial Arts",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "monk",
-    "description": "Monk Adept is a advanced Martial Arts class path branching from monk. It sharpens STR, DEX, adds a grave-marked combat rhythm, and focuses on stamina-efficient chains; its balancing drawback is limited weapon scaling. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Monk Perfected Course is a distinct advanced job upgrade for Monk. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "dex": 5,
@@ -7011,12 +7039,14 @@ export const JOB_PATHS = [
       "v50_unarmed_1"
     ],
     "strengths": [
-      "Monk Adept-specific weapon pressure through stamina-efficient chains",
-      "Strong accuracy and evasion within Martial Arts builds"
+      "Monk Perfected Course focuses on martial artist",
+      "Adds a specialized route for Monk without copying nearby jobs",
+      "Monk Adept-specific weapon pressure through stamina-efficient chains"
     ],
     "weaknesses": [
-      "Monk Adept suffers from limited weapon scaling",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Monk Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Monk Adept suffers from limited weapon scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -7043,7 +7073,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Monk Adept \u2014 martial artist"
+    "roleIdentity": "Monk Adept — martial artist"
   },
   {
     "id": "job_path_1134_eclipse_monk",
@@ -7100,7 +7130,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Monk \u2014 martial artist"
+    "roleIdentity": "Eclipse Monk — martial artist"
   },
   {
     "id": "job_path_1135_mythic_monk",
@@ -7157,7 +7187,7 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Monk \u2014 martial artist"
+    "roleIdentity": "Mythic Monk — martial artist"
   },
   {
     "id": "job_path_1136_hidden_origin_monk",
@@ -7216,17 +7246,17 @@ export const JOB_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Monk \u2014 martial artist"
+    "roleIdentity": "Hidden Origin Monk — martial artist"
   },
   {
     "id": "job_path_1137_berserker_vanguard",
     "excelId": 1137,
-    "name": "Berserker Vanguard",
+    "name": "Berserker Dragonstep Method",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1008_berserker",
-    "description": "Berserker Vanguard is a advanced Combat class path branching from job 1008 berserker. It sharpens STR, CON, adds a ash-crowned combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Berserker Dragonstep Method is a distinct advanced job upgrade for Berserker. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -7239,12 +7269,14 @@ export const JOB_PATHS = [
       "v50_axe_1"
     ],
     "strengths": [
-      "Berserker Vanguard-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Berserker Dragonstep Method focuses on heavy melee",
+      "Adds a specialized route for Berserker without copying nearby jobs",
+      "Berserker Vanguard-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Berserker Vanguard suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Berserker Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Berserker Vanguard suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -7271,7 +7303,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Berserker Vanguard \u2014 heavy melee"
+    "roleIdentity": "Berserker Vanguard — heavy melee"
   },
   {
     "id": "job_path_1138_berserker_paragon",
@@ -7326,7 +7358,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Berserker Paragon \u2014 heavy melee"
+    "roleIdentity": "Berserker Paragon — heavy melee"
   },
   {
     "id": "job_path_1139_berserker_sovereign",
@@ -7381,7 +7413,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Berserker Sovereign \u2014 heavy melee"
+    "roleIdentity": "Berserker Sovereign — heavy melee"
   },
   {
     "id": "job_path_1140_world_crowned_berserker",
@@ -7438,17 +7470,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Berserker \u2014 heavy melee"
+    "roleIdentity": "World-Crowned Berserker — heavy melee"
   },
   {
     "id": "job_path_1141_berserker_adept",
     "excelId": 1141,
-    "name": "Berserker Adept",
+    "name": "Berserker Secret Tempo",
     "category": "Combat",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1008_berserker",
-    "description": "Berserker Adept is a advanced Combat class path branching from job 1008 berserker. It sharpens STR, CON, adds a beast-call combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Berserker Secret Tempo is a distinct advanced job upgrade for Berserker. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 6,
       "con": 4
@@ -7461,12 +7493,14 @@ export const JOB_PATHS = [
       "v50_axe_1"
     ],
     "strengths": [
-      "Berserker Adept-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Combat builds"
+      "Berserker Secret Tempo focuses on heavy melee",
+      "Adds a specialized route for Berserker without copying nearby jobs",
+      "Berserker Adept-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Berserker Adept suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Berserker Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Berserker Adept suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -7493,7 +7527,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Berserker Adept \u2014 heavy melee"
+    "roleIdentity": "Berserker Adept — heavy melee"
   },
   {
     "id": "job_path_1142_eclipse_berserker",
@@ -7548,7 +7582,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Berserker \u2014 heavy melee"
+    "roleIdentity": "Eclipse Berserker — heavy melee"
   },
   {
     "id": "job_path_1143_mythic_berserker",
@@ -7603,7 +7637,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Berserker \u2014 heavy melee"
+    "roleIdentity": "Mythic Berserker — heavy melee"
   },
   {
     "id": "job_path_1144_hidden_origin_berserker",
@@ -7660,17 +7694,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Berserker \u2014 heavy melee"
+    "roleIdentity": "Hidden Origin Berserker — heavy melee"
   },
   {
     "id": "job_path_1145_mage_vanguard",
     "excelId": 1145,
-    "name": "Mage Vanguard",
+    "name": "Mage Iron Banner",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "mage",
-    "description": "Mage Vanguard is a advanced Magic class path branching from mage. It sharpens INT, WIS, adds a quickdraw combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Mage Iron Banner is a distinct advanced job upgrade for Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -7684,12 +7718,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Mage Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Mage Iron Banner focuses on arcane caster",
+      "Adds a specialized route for Mage without copying nearby jobs",
+      "Mage Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Mage Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Mage Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Mage Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -7716,7 +7752,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mage Vanguard \u2014 arcane caster"
+    "roleIdentity": "Mage Vanguard — arcane caster"
   },
   {
     "id": "job_path_1146_mage_paragon",
@@ -7772,7 +7808,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mage Paragon \u2014 arcane caster"
+    "roleIdentity": "Mage Paragon — arcane caster"
   },
   {
     "id": "job_path_1147_mage_sovereign",
@@ -7828,7 +7864,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mage Sovereign \u2014 arcane caster"
+    "roleIdentity": "Mage Sovereign — arcane caster"
   },
   {
     "id": "job_path_1148_world_crowned_mage",
@@ -7886,17 +7922,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Mage \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Mage — arcane caster"
   },
   {
     "id": "job_path_1149_mage_adept",
     "excelId": 1149,
-    "name": "Mage Adept",
+    "name": "Mage Deep Focus",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "mage",
-    "description": "Mage Adept is a advanced Magic class path branching from mage. It sharpens INT, WIS, adds a beast-call combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Mage Deep Focus is a distinct advanced job upgrade for Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -7910,12 +7946,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Mage Adept-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Mage Deep Focus focuses on arcane caster",
+      "Adds a specialized route for Mage without copying nearby jobs",
+      "Mage Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Mage Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Mage Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Mage Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -7942,7 +7980,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mage Adept \u2014 arcane caster"
+    "roleIdentity": "Mage Adept — arcane caster"
   },
   {
     "id": "job_path_1150_eclipse_mage",
@@ -7998,7 +8036,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Mage \u2014 arcane caster"
+    "roleIdentity": "Eclipse Mage — arcane caster"
   },
   {
     "id": "job_path_1151_mythic_mage",
@@ -8054,7 +8092,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Mage \u2014 arcane caster"
+    "roleIdentity": "Mythic Mage — arcane caster"
   },
   {
     "id": "job_path_1152_hidden_origin_mage",
@@ -8112,17 +8150,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Mage \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Mage — arcane caster"
   },
   {
     "id": "job_path_1153_wizard_vanguard",
     "excelId": 1153,
-    "name": "Wizard Vanguard",
+    "name": "Wizard Sunbreaker Form",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1010_wizard",
-    "description": "Wizard Vanguard is a advanced Magic class path branching from job 1010 wizard. It sharpens INT, WIS, adds a thorn-script combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Wizard Sunbreaker Form is a distinct advanced job upgrade for Wizard. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -8136,12 +8174,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Wizard Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Wizard Sunbreaker Form focuses on arcane caster",
+      "Adds a specialized route for Wizard without copying nearby jobs",
+      "Wizard Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Wizard Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Wizard Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Wizard Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -8168,7 +8208,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wizard Vanguard \u2014 arcane caster"
+    "roleIdentity": "Wizard Vanguard — arcane caster"
   },
   {
     "id": "job_path_1154_wizard_paragon",
@@ -8224,7 +8264,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wizard Paragon \u2014 arcane caster"
+    "roleIdentity": "Wizard Paragon — arcane caster"
   },
   {
     "id": "job_path_1155_wizard_sovereign",
@@ -8280,7 +8320,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wizard Sovereign \u2014 arcane caster"
+    "roleIdentity": "Wizard Sovereign — arcane caster"
   },
   {
     "id": "job_path_1156_world_crowned_wizard",
@@ -8338,17 +8378,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Wizard \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Wizard — arcane caster"
   },
   {
     "id": "job_path_1157_wizard_adept",
     "excelId": 1157,
-    "name": "Wizard Adept",
+    "name": "Wizard Perfected Course",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1010_wizard",
-    "description": "Wizard Adept is a advanced Magic class path branching from job 1010 wizard. It sharpens INT, WIS, adds a void-breath combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Wizard Perfected Course is a distinct advanced job upgrade for Wizard. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -8362,12 +8402,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Wizard Adept-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Wizard Perfected Course focuses on arcane caster",
+      "Adds a specialized route for Wizard without copying nearby jobs",
+      "Wizard Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Wizard Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Wizard Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Wizard Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -8394,7 +8436,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wizard Adept \u2014 arcane caster"
+    "roleIdentity": "Wizard Adept — arcane caster"
   },
   {
     "id": "job_path_1158_eclipse_wizard",
@@ -8450,7 +8492,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Wizard \u2014 arcane caster"
+    "roleIdentity": "Eclipse Wizard — arcane caster"
   },
   {
     "id": "job_path_1159_mythic_wizard",
@@ -8506,7 +8548,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Wizard \u2014 arcane caster"
+    "roleIdentity": "Mythic Wizard — arcane caster"
   },
   {
     "id": "job_path_1160_hidden_origin_wizard",
@@ -8564,17 +8606,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Wizard \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Wizard — arcane caster"
   },
   {
     "id": "job_path_1161_sorcerer_vanguard",
     "excelId": 1161,
-    "name": "Sorcerer Vanguard",
+    "name": "Sorcerer Dragonstep Method",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1011_sorcerer",
-    "description": "Sorcerer Vanguard is a advanced Magic class path branching from job 1011 sorcerer. It sharpens INT, WIS, adds a mirror-step combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Sorcerer Dragonstep Method is a distinct advanced job upgrade for Sorcerer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -8588,12 +8630,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Sorcerer Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Sorcerer Dragonstep Method focuses on arcane caster",
+      "Adds a specialized route for Sorcerer without copying nearby jobs",
+      "Sorcerer Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Sorcerer Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Sorcerer Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Sorcerer Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -8620,7 +8664,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sorcerer Vanguard \u2014 arcane caster"
+    "roleIdentity": "Sorcerer Vanguard — arcane caster"
   },
   {
     "id": "job_path_1162_sorcerer_paragon",
@@ -8676,7 +8720,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sorcerer Paragon \u2014 arcane caster"
+    "roleIdentity": "Sorcerer Paragon — arcane caster"
   },
   {
     "id": "job_path_1163_sorcerer_sovereign",
@@ -8732,7 +8776,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sorcerer Sovereign \u2014 arcane caster"
+    "roleIdentity": "Sorcerer Sovereign — arcane caster"
   },
   {
     "id": "job_path_1164_world_crowned_sorcerer",
@@ -8790,17 +8834,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Sorcerer \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Sorcerer — arcane caster"
   },
   {
     "id": "job_path_1165_sorcerer_adept",
     "excelId": 1165,
-    "name": "Sorcerer Adept",
+    "name": "Sorcerer Secret Tempo",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1011_sorcerer",
-    "description": "Sorcerer Adept is a advanced Magic class path branching from job 1011 sorcerer. It sharpens INT, WIS, adds a grave-marked combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Sorcerer Secret Tempo is a distinct advanced job upgrade for Sorcerer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -8814,12 +8858,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Sorcerer Adept-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Sorcerer Secret Tempo focuses on arcane caster",
+      "Adds a specialized route for Sorcerer without copying nearby jobs",
+      "Sorcerer Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Sorcerer Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Sorcerer Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Sorcerer Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -8846,7 +8892,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sorcerer Adept \u2014 arcane caster"
+    "roleIdentity": "Sorcerer Adept — arcane caster"
   },
   {
     "id": "job_path_1166_eclipse_sorcerer",
@@ -8902,7 +8948,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Sorcerer \u2014 arcane caster"
+    "roleIdentity": "Eclipse Sorcerer — arcane caster"
   },
   {
     "id": "job_path_1167_mythic_sorcerer",
@@ -8958,7 +9004,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Sorcerer \u2014 arcane caster"
+    "roleIdentity": "Mythic Sorcerer — arcane caster"
   },
   {
     "id": "job_path_1168_hidden_origin_sorcerer",
@@ -9016,17 +9062,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Sorcerer \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Sorcerer — arcane caster"
   },
   {
     "id": "job_path_1169_elementalist_vanguard",
     "excelId": 1169,
-    "name": "Elementalist Vanguard",
+    "name": "Elementalist Iron Banner",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1012_elementalist",
-    "description": "Elementalist Vanguard is a advanced Magic class path branching from job 1012 elementalist. It sharpens INT, WIS, adds a oathbound combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Elementalist Iron Banner is a distinct advanced job upgrade for Elementalist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -9040,12 +9086,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Elementalist Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Elementalist Iron Banner focuses on arcane caster",
+      "Adds a specialized route for Elementalist without copying nearby jobs",
+      "Elementalist Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Elementalist Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Elementalist Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Elementalist Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -9072,7 +9120,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elementalist Vanguard \u2014 arcane caster"
+    "roleIdentity": "Elementalist Vanguard — arcane caster"
   },
   {
     "id": "job_path_1170_elementalist_paragon",
@@ -9128,7 +9176,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elementalist Paragon \u2014 arcane caster"
+    "roleIdentity": "Elementalist Paragon — arcane caster"
   },
   {
     "id": "job_path_1171_elementalist_sovereign",
@@ -9184,7 +9232,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elementalist Sovereign \u2014 arcane caster"
+    "roleIdentity": "Elementalist Sovereign — arcane caster"
   },
   {
     "id": "job_path_1172_world_crowned_elementalist",
@@ -9242,17 +9290,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Elementalist \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Elementalist — arcane caster"
   },
   {
     "id": "job_path_1173_elementalist_adept",
     "excelId": 1173,
-    "name": "Elementalist Adept",
+    "name": "Elementalist Deep Focus",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1012_elementalist",
-    "description": "Elementalist Adept is a advanced Magic class path branching from job 1012 elementalist. It sharpens INT, WIS, adds a stormline combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Elementalist Deep Focus is a distinct advanced job upgrade for Elementalist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -9266,12 +9314,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Elementalist Adept-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Elementalist Deep Focus focuses on arcane caster",
+      "Adds a specialized route for Elementalist without copying nearby jobs",
+      "Elementalist Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Elementalist Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Elementalist Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Elementalist Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -9298,7 +9348,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elementalist Adept \u2014 arcane caster"
+    "roleIdentity": "Elementalist Adept — arcane caster"
   },
   {
     "id": "job_path_1174_eclipse_elementalist",
@@ -9354,7 +9404,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Elementalist \u2014 arcane caster"
+    "roleIdentity": "Eclipse Elementalist — arcane caster"
   },
   {
     "id": "job_path_1175_mythic_elementalist",
@@ -9410,7 +9460,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Elementalist \u2014 arcane caster"
+    "roleIdentity": "Mythic Elementalist — arcane caster"
   },
   {
     "id": "job_path_1176_hidden_origin_elementalist",
@@ -9468,17 +9518,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Elementalist \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Elementalist — arcane caster"
   },
   {
     "id": "job_path_1177_witch_vanguard",
     "excelId": 1177,
-    "name": "Witch Vanguard",
+    "name": "Witch Sunbreaker Form",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1013_witch",
-    "description": "Witch Vanguard is a advanced Dark class path branching from job 1013 witch. It sharpens INT, CHA, adds a thorn-script combat rhythm, and focuses on curse stacking; its balancing drawback is holy counters. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Witch Sunbreaker Form is a distinct advanced job upgrade for Witch. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 5,
@@ -9492,12 +9542,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Witch Vanguard-specific spell scaling through curse stacking",
-      "Strong buff/debuff leverage within Dark builds"
+      "Witch Sunbreaker Form focuses on curse caster",
+      "Adds a specialized route for Witch without copying nearby jobs",
+      "Witch Vanguard-specific spell scaling through curse stacking"
     ],
     "weaknesses": [
-      "Witch Vanguard suffers from holy counters",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Witch Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Witch Vanguard suffers from holy counters"
     ],
     "requirements": {
       "classLevel": 15
@@ -9524,7 +9576,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Witch Vanguard \u2014 curse caster"
+    "roleIdentity": "Witch Vanguard — curse caster"
   },
   {
     "id": "job_path_1178_witch_paragon",
@@ -9580,7 +9632,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Witch Paragon \u2014 curse caster"
+    "roleIdentity": "Witch Paragon — curse caster"
   },
   {
     "id": "job_path_1179_witch_sovereign",
@@ -9636,7 +9688,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Witch Sovereign \u2014 curse caster"
+    "roleIdentity": "Witch Sovereign — curse caster"
   },
   {
     "id": "job_path_1180_world_crowned_witch",
@@ -9694,17 +9746,17 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Witch \u2014 curse caster"
+    "roleIdentity": "World-Crowned Witch — curse caster"
   },
   {
     "id": "job_path_1181_witch_adept",
     "excelId": 1181,
-    "name": "Witch Adept",
+    "name": "Witch Perfected Course",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1013_witch",
-    "description": "Witch Adept is a advanced Dark class path branching from job 1013 witch. It sharpens INT, CHA, adds a rune-laced combat rhythm, and focuses on curse stacking; its balancing drawback is holy counters. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Witch Perfected Course is a distinct advanced job upgrade for Witch. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 5,
@@ -9718,12 +9770,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Witch Adept-specific spell scaling through curse stacking",
-      "Strong buff/debuff leverage within Dark builds"
+      "Witch Perfected Course focuses on curse caster",
+      "Adds a specialized route for Witch without copying nearby jobs",
+      "Witch Adept-specific spell scaling through curse stacking"
     ],
     "weaknesses": [
-      "Witch Adept suffers from holy counters",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Witch Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Witch Adept suffers from holy counters"
     ],
     "requirements": {
       "classLevel": 15
@@ -9750,7 +9804,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Witch Adept \u2014 curse caster"
+    "roleIdentity": "Witch Adept — curse caster"
   },
   {
     "id": "job_path_1182_eclipse_witch",
@@ -9806,7 +9860,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Witch \u2014 curse caster"
+    "roleIdentity": "Eclipse Witch — curse caster"
   },
   {
     "id": "job_path_1183_mythic_witch",
@@ -9862,7 +9916,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Witch \u2014 curse caster"
+    "roleIdentity": "Mythic Witch — curse caster"
   },
   {
     "id": "job_path_1184_hidden_origin_witch",
@@ -9920,17 +9974,17 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Witch \u2014 curse caster"
+    "roleIdentity": "Hidden Origin Witch — curse caster"
   },
   {
     "id": "job_path_1185_summoner_vanguard",
     "excelId": 1185,
-    "name": "Summoner Vanguard",
+    "name": "Summoner Dragonstep Method",
     "category": "Summoner / Tamer",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1014_summoner",
-    "description": "Summoner Vanguard is a advanced Summoner / Tamer class path branching from job 1014 summoner. It sharpens CHA, WIS, adds a grave-marked combat rhythm, and focuses on companion scaling; its balancing drawback is weak solo turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Summoner Dragonstep Method is a distinct advanced job upgrade for Summoner. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 5,
       "cha": 6
@@ -9943,12 +9997,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Summoner Vanguard-specific party tempo through companion scaling",
-      "Strong sustain tools within Summoner / Tamer builds"
+      "Summoner Dragonstep Method focuses on summoner tamer",
+      "Adds a specialized route for Summoner without copying nearby jobs",
+      "Summoner Vanguard-specific party tempo through companion scaling"
     ],
     "weaknesses": [
-      "Summoner Vanguard suffers from weak solo turns",
-      "Needs support when fights demand the opposite of party tempo"
+      "Summoner Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Summoner Vanguard suffers from weak solo turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -9975,7 +10031,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Summoner Vanguard \u2014 summoner tamer"
+    "roleIdentity": "Summoner Vanguard — summoner tamer"
   },
   {
     "id": "job_path_1186_summoner_paragon",
@@ -10030,7 +10086,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Summoner Paragon \u2014 summoner tamer"
+    "roleIdentity": "Summoner Paragon — summoner tamer"
   },
   {
     "id": "job_path_1187_summoner_sovereign",
@@ -10085,7 +10141,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Summoner Sovereign \u2014 summoner tamer"
+    "roleIdentity": "Summoner Sovereign — summoner tamer"
   },
   {
     "id": "job_path_1188_world_crowned_summoner",
@@ -10142,17 +10198,17 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Summoner \u2014 summoner tamer"
+    "roleIdentity": "World-Crowned Summoner — summoner tamer"
   },
   {
     "id": "job_path_1189_summoner_adept",
     "excelId": 1189,
-    "name": "Summoner Adept",
+    "name": "Summoner Secret Tempo",
     "category": "Summoner / Tamer",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1014_summoner",
-    "description": "Summoner Adept is a advanced Summoner / Tamer class path branching from job 1014 summoner. It sharpens CHA, WIS, adds a beast-call combat rhythm, and focuses on companion scaling; its balancing drawback is weak solo turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Summoner Secret Tempo is a distinct advanced job upgrade for Summoner. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 5,
       "cha": 6
@@ -10165,12 +10221,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Summoner Adept-specific party tempo through companion scaling",
-      "Strong sustain tools within Summoner / Tamer builds"
+      "Summoner Secret Tempo focuses on summoner tamer",
+      "Adds a specialized route for Summoner without copying nearby jobs",
+      "Summoner Adept-specific party tempo through companion scaling"
     ],
     "weaknesses": [
-      "Summoner Adept suffers from weak solo turns",
-      "Needs support when fights demand the opposite of party tempo"
+      "Summoner Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Summoner Adept suffers from weak solo turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -10197,7 +10255,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Summoner Adept \u2014 summoner tamer"
+    "roleIdentity": "Summoner Adept — summoner tamer"
   },
   {
     "id": "job_path_1190_eclipse_summoner",
@@ -10252,7 +10310,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Summoner \u2014 summoner tamer"
+    "roleIdentity": "Eclipse Summoner — summoner tamer"
   },
   {
     "id": "job_path_1191_mythic_summoner",
@@ -10307,7 +10365,7 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Summoner \u2014 summoner tamer"
+    "roleIdentity": "Mythic Summoner — summoner tamer"
   },
   {
     "id": "job_path_1192_hidden_origin_summoner",
@@ -10364,17 +10422,17 @@ export const JOB_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Summoner \u2014 summoner tamer"
+    "roleIdentity": "Hidden Origin Summoner — summoner tamer"
   },
   {
     "id": "job_path_1193_barrier_mage_vanguard",
     "excelId": 1193,
-    "name": "Barrier Mage Vanguard",
+    "name": "Barrier Mage Iron Banner",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1015_barrier_mage",
-    "description": "Barrier Mage Vanguard is a advanced Magic class path branching from job 1015 barrier mage. It sharpens INT, WIS, adds a mirror-step combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Barrier Mage Iron Banner is a distinct advanced job upgrade for Barrier Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -10388,12 +10446,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Barrier Mage Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Barrier Mage Iron Banner focuses on arcane caster",
+      "Adds a specialized route for Barrier Mage without copying nearby jobs",
+      "Barrier Mage Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Barrier Mage Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Barrier Mage Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Barrier Mage Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -10420,7 +10480,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Barrier Mage Vanguard \u2014 arcane caster"
+    "roleIdentity": "Barrier Mage Vanguard — arcane caster"
   },
   {
     "id": "job_path_1194_barrier_mage_paragon",
@@ -10476,7 +10536,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Barrier Mage Paragon \u2014 arcane caster"
+    "roleIdentity": "Barrier Mage Paragon — arcane caster"
   },
   {
     "id": "job_path_1195_barrier_mage_sovereign",
@@ -10532,7 +10592,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Barrier Mage Sovereign \u2014 arcane caster"
+    "roleIdentity": "Barrier Mage Sovereign — arcane caster"
   },
   {
     "id": "job_path_1196_world_crowned_barrier_mage",
@@ -10590,17 +10650,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Barrier Mage \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Barrier Mage — arcane caster"
   },
   {
     "id": "job_path_1197_barrier_mage_adept",
     "excelId": 1197,
-    "name": "Barrier Mage Adept",
+    "name": "Barrier Mage Deep Focus",
     "category": "Magic",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1015_barrier_mage",
-    "description": "Barrier Mage Adept is a advanced Magic class path branching from job 1015 barrier mage. It sharpens INT, WIS, adds a iron-tempo combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Barrier Mage Deep Focus is a distinct advanced job upgrade for Barrier Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 9,
       "wis": 3,
@@ -10614,12 +10674,14 @@ export const JOB_PATHS = [
       "v50_arcane_1"
     ],
     "strengths": [
-      "Barrier Mage Adept-specific spell scaling through spell burst sequencing",
-      "Strong sustain tools within Magic builds"
+      "Barrier Mage Deep Focus focuses on arcane caster",
+      "Adds a specialized route for Barrier Mage without copying nearby jobs",
+      "Barrier Mage Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Barrier Mage Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Barrier Mage Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Barrier Mage Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -10646,7 +10708,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Barrier Mage Adept \u2014 arcane caster"
+    "roleIdentity": "Barrier Mage Adept — arcane caster"
   },
   {
     "id": "job_path_1198_eclipse_barrier_mage",
@@ -10702,7 +10764,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Barrier Mage \u2014 arcane caster"
+    "roleIdentity": "Eclipse Barrier Mage — arcane caster"
   },
   {
     "id": "job_path_1199_mythic_barrier_mage",
@@ -10758,7 +10820,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Barrier Mage \u2014 arcane caster"
+    "roleIdentity": "Mythic Barrier Mage — arcane caster"
   },
   {
     "id": "job_path_1200_hidden_origin_barrier_mage",
@@ -10816,17 +10878,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Barrier Mage \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Barrier Mage — arcane caster"
   },
   {
     "id": "job_path_1201_healer_vanguard",
     "excelId": 1201,
-    "name": "Healer Vanguard",
+    "name": "Healer Sunbreaker Form",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1016_healer",
-    "description": "Healer Vanguard is a advanced Support class path branching from job 1016 healer. It sharpens WIS, CHA, adds a starfall combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Healer Sunbreaker Form is a distinct advanced job upgrade for Healer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 5,
       "wis": 6
@@ -10839,12 +10901,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Healer Vanguard-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Support builds"
+      "Healer Sunbreaker Form focuses on holy support",
+      "Adds a specialized route for Healer without copying nearby jobs",
+      "Healer Vanguard-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Healer Vanguard suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Healer Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Healer Vanguard suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -10871,7 +10935,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Healer Vanguard \u2014 holy support"
+    "roleIdentity": "Healer Vanguard — holy support"
   },
   {
     "id": "job_path_1202_healer_paragon",
@@ -10926,7 +10990,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Healer Paragon \u2014 holy support"
+    "roleIdentity": "Healer Paragon — holy support"
   },
   {
     "id": "job_path_1203_healer_sovereign",
@@ -10981,7 +11045,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Healer Sovereign \u2014 holy support"
+    "roleIdentity": "Healer Sovereign — holy support"
   },
   {
     "id": "job_path_1204_world_crowned_healer",
@@ -11038,17 +11102,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Healer \u2014 holy support"
+    "roleIdentity": "World-Crowned Healer — holy support"
   },
   {
     "id": "job_path_1205_healer_adept",
     "excelId": 1205,
-    "name": "Healer Adept",
+    "name": "Healer Perfected Course",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1016_healer",
-    "description": "Healer Adept is a advanced Support class path branching from job 1016 healer. It sharpens WIS, CHA, adds a grave-marked combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Healer Perfected Course is a distinct advanced job upgrade for Healer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 5,
       "wis": 6
@@ -11061,12 +11125,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Healer Adept-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Support builds"
+      "Healer Perfected Course focuses on holy support",
+      "Adds a specialized route for Healer without copying nearby jobs",
+      "Healer Adept-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Healer Adept suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Healer Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Healer Adept suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -11093,7 +11159,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Healer Adept \u2014 holy support"
+    "roleIdentity": "Healer Adept — holy support"
   },
   {
     "id": "job_path_1206_eclipse_healer",
@@ -11148,7 +11214,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Healer \u2014 holy support"
+    "roleIdentity": "Eclipse Healer — holy support"
   },
   {
     "id": "job_path_1207_mythic_healer",
@@ -11203,7 +11269,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Healer \u2014 holy support"
+    "roleIdentity": "Mythic Healer — holy support"
   },
   {
     "id": "job_path_1208_hidden_origin_healer",
@@ -11260,17 +11326,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Healer \u2014 holy support"
+    "roleIdentity": "Hidden Origin Healer — holy support"
   },
   {
     "id": "job_path_1209_cleric_vanguard",
     "excelId": 1209,
-    "name": "Cleric Vanguard",
+    "name": "Cleric Dragonstep Method",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "cleric",
-    "description": "Cleric Vanguard is a advanced Holy class path branching from cleric. It sharpens WIS, CHA, adds a gold-thread combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cleric Dragonstep Method is a distinct advanced job upgrade for Cleric. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 8,
       "cha": 3,
@@ -11284,12 +11350,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Cleric Vanguard-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Holy builds"
+      "Cleric Dragonstep Method focuses on holy support",
+      "Adds a specialized route for Cleric without copying nearby jobs",
+      "Cleric Vanguard-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Cleric Vanguard suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Cleric Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cleric Vanguard suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -11316,7 +11384,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cleric Vanguard \u2014 holy support"
+    "roleIdentity": "Cleric Vanguard — holy support"
   },
   {
     "id": "job_path_1210_cleric_paragon",
@@ -11372,7 +11440,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cleric Paragon \u2014 holy support"
+    "roleIdentity": "Cleric Paragon — holy support"
   },
   {
     "id": "job_path_1211_cleric_sovereign",
@@ -11428,7 +11496,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cleric Sovereign \u2014 holy support"
+    "roleIdentity": "Cleric Sovereign — holy support"
   },
   {
     "id": "job_path_1212_world_crowned_cleric",
@@ -11486,17 +11554,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Cleric \u2014 holy support"
+    "roleIdentity": "World-Crowned Cleric — holy support"
   },
   {
     "id": "job_path_1213_cleric_adept",
     "excelId": 1213,
-    "name": "Cleric Adept",
+    "name": "Cleric Secret Tempo",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "cleric",
-    "description": "Cleric Adept is a advanced Holy class path branching from cleric. It sharpens WIS, CHA, adds a sunbrand combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cleric Secret Tempo is a distinct advanced job upgrade for Cleric. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 8,
       "cha": 3,
@@ -11510,12 +11578,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Cleric Adept-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Holy builds"
+      "Cleric Secret Tempo focuses on holy support",
+      "Adds a specialized route for Cleric without copying nearby jobs",
+      "Cleric Adept-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Cleric Adept suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Cleric Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cleric Adept suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -11542,7 +11612,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cleric Adept \u2014 holy support"
+    "roleIdentity": "Cleric Adept — holy support"
   },
   {
     "id": "job_path_1214_eclipse_cleric",
@@ -11598,7 +11668,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Cleric \u2014 holy support"
+    "roleIdentity": "Eclipse Cleric — holy support"
   },
   {
     "id": "job_path_1215_mythic_cleric",
@@ -11654,7 +11724,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Cleric \u2014 holy support"
+    "roleIdentity": "Mythic Cleric — holy support"
   },
   {
     "id": "job_path_1216_hidden_origin_cleric",
@@ -11712,17 +11782,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Cleric \u2014 holy support"
+    "roleIdentity": "Hidden Origin Cleric — holy support"
   },
   {
     "id": "job_path_1217_priest_vanguard",
     "excelId": 1217,
-    "name": "Priest Vanguard",
+    "name": "Priest Iron Banner",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1018_priest",
-    "description": "Priest Vanguard is a advanced Holy class path branching from job 1018 priest. It sharpens WIS, CHA, adds a grave-marked combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Priest Iron Banner is a distinct advanced job upgrade for Priest. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 8,
       "cha": 3,
@@ -11736,12 +11806,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Priest Vanguard-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Holy builds"
+      "Priest Iron Banner focuses on holy support",
+      "Adds a specialized route for Priest without copying nearby jobs",
+      "Priest Vanguard-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Priest Vanguard suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Priest Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Priest Vanguard suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -11768,7 +11840,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Priest Vanguard \u2014 holy support"
+    "roleIdentity": "Priest Vanguard — holy support"
   },
   {
     "id": "job_path_1218_priest_paragon",
@@ -11824,7 +11896,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Priest Paragon \u2014 holy support"
+    "roleIdentity": "Priest Paragon — holy support"
   },
   {
     "id": "job_path_1219_priest_sovereign",
@@ -11880,7 +11952,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Priest Sovereign \u2014 holy support"
+    "roleIdentity": "Priest Sovereign — holy support"
   },
   {
     "id": "job_path_1220_world_crowned_priest",
@@ -11938,17 +12010,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Priest \u2014 holy support"
+    "roleIdentity": "World-Crowned Priest — holy support"
   },
   {
     "id": "job_path_1221_priest_adept",
     "excelId": 1221,
-    "name": "Priest Adept",
+    "name": "Priest Deep Focus",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1018_priest",
-    "description": "Priest Adept is a advanced Holy class path branching from job 1018 priest. It sharpens WIS, CHA, adds a sunbrand combat rhythm, and focuses on recovery safety; its balancing drawback is low burst damage. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Priest Deep Focus is a distinct advanced job upgrade for Priest. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 8,
       "cha": 3,
@@ -11962,12 +12034,14 @@ export const JOB_PATHS = [
       "v50_healing_1"
     ],
     "strengths": [
-      "Priest Adept-specific recovery/control through recovery safety",
-      "Strong buff/debuff leverage within Holy builds"
+      "Priest Deep Focus focuses on holy support",
+      "Adds a specialized route for Priest without copying nearby jobs",
+      "Priest Adept-specific recovery/control through recovery safety"
     ],
     "weaknesses": [
-      "Priest Adept suffers from low burst damage",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Priest Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Priest Adept suffers from low burst damage"
     ],
     "requirements": {
       "classLevel": 15
@@ -11994,7 +12068,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Priest Adept \u2014 holy support"
+    "roleIdentity": "Priest Adept — holy support"
   },
   {
     "id": "job_path_1222_eclipse_priest",
@@ -12050,7 +12124,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Priest \u2014 holy support"
+    "roleIdentity": "Eclipse Priest — holy support"
   },
   {
     "id": "job_path_1223_mythic_priest",
@@ -12106,7 +12180,7 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Priest \u2014 holy support"
+    "roleIdentity": "Mythic Priest — holy support"
   },
   {
     "id": "job_path_1224_hidden_origin_priest",
@@ -12164,17 +12238,17 @@ export const JOB_PATHS = [
     "overlapGroup": "holy_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Priest \u2014 holy support"
+    "roleIdentity": "Hidden Origin Priest — holy support"
   },
   {
     "id": "job_path_1225_bard_vanguard",
     "excelId": 1225,
-    "name": "Bard Vanguard",
+    "name": "Bard Sunbreaker Form",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "bard",
-    "description": "Bard Vanguard is a advanced Support class path branching from bard. It sharpens CHA, WIS, adds a mirror-step combat rhythm, and focuses on team-wide tempo; its balancing drawback is requires party synergy. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Bard Sunbreaker Form is a distinct advanced job upgrade for Bard. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 9,
       "wis": 3
@@ -12187,12 +12261,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Bard Vanguard-specific party tempo through team-wide tempo",
-      "Strong sustain tools within Support builds"
+      "Bard Sunbreaker Form focuses on performer support",
+      "Adds a specialized route for Bard without copying nearby jobs",
+      "Bard Vanguard-specific party tempo through team-wide tempo"
     ],
     "weaknesses": [
-      "Bard Vanguard suffers from requires party synergy",
-      "Needs support when fights demand the opposite of party tempo"
+      "Bard Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Bard Vanguard suffers from requires party synergy"
     ],
     "requirements": {
       "classLevel": 15
@@ -12219,7 +12295,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bard Vanguard \u2014 performer support"
+    "roleIdentity": "Bard Vanguard — performer support"
   },
   {
     "id": "job_path_1226_bard_paragon",
@@ -12274,7 +12350,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bard Paragon \u2014 performer support"
+    "roleIdentity": "Bard Paragon — performer support"
   },
   {
     "id": "job_path_1227_bard_sovereign",
@@ -12329,7 +12405,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bard Sovereign \u2014 performer support"
+    "roleIdentity": "Bard Sovereign — performer support"
   },
   {
     "id": "job_path_1228_world_crowned_bard",
@@ -12386,17 +12462,17 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Bard \u2014 performer support"
+    "roleIdentity": "World-Crowned Bard — performer support"
   },
   {
     "id": "job_path_1229_bard_adept",
     "excelId": 1229,
-    "name": "Bard Adept",
+    "name": "Bard Perfected Course",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "bard",
-    "description": "Bard Adept is a advanced Support class path branching from bard. It sharpens CHA, WIS, adds a mirror-step combat rhythm, and focuses on team-wide tempo; its balancing drawback is requires party synergy. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Bard Perfected Course is a distinct advanced job upgrade for Bard. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 9,
       "wis": 3
@@ -12409,12 +12485,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Bard Adept-specific party tempo through team-wide tempo",
-      "Strong sustain tools within Support builds"
+      "Bard Perfected Course focuses on performer support",
+      "Adds a specialized route for Bard without copying nearby jobs",
+      "Bard Adept-specific party tempo through team-wide tempo"
     ],
     "weaknesses": [
-      "Bard Adept suffers from requires party synergy",
-      "Needs support when fights demand the opposite of party tempo"
+      "Bard Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Bard Adept suffers from requires party synergy"
     ],
     "requirements": {
       "classLevel": 15
@@ -12441,7 +12519,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bard Adept \u2014 performer support"
+    "roleIdentity": "Bard Adept — performer support"
   },
   {
     "id": "job_path_1230_eclipse_bard",
@@ -12496,7 +12574,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Bard \u2014 performer support"
+    "roleIdentity": "Eclipse Bard — performer support"
   },
   {
     "id": "job_path_1231_mythic_bard",
@@ -12551,7 +12629,7 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Bard \u2014 performer support"
+    "roleIdentity": "Mythic Bard — performer support"
   },
   {
     "id": "job_path_1232_hidden_origin_bard",
@@ -12608,17 +12686,17 @@ export const JOB_PATHS = [
     "overlapGroup": "performer_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Bard \u2014 performer support"
+    "roleIdentity": "Hidden Origin Bard — performer support"
   },
   {
     "id": "job_path_1233_dancer_vanguard",
     "excelId": 1233,
-    "name": "Dancer Vanguard",
+    "name": "Dancer Dragonstep Method",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1020_dancer",
-    "description": "Dancer Vanguard is a advanced Support class path branching from job 1020 dancer. It sharpens CHA, WIS, adds a starfall combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dancer Dragonstep Method is a distinct advanced job upgrade for Dancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -12631,12 +12709,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Dancer Vanguard-specific party tempo through critical timing",
-      "Strong sustain tools within Support builds"
+      "Dancer Dragonstep Method focuses on misc support",
+      "Adds a specialized route for Dancer without copying nearby jobs",
+      "Dancer Vanguard-specific party tempo through critical timing"
     ],
     "weaknesses": [
-      "Dancer Vanguard suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of party tempo"
+      "Dancer Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dancer Vanguard suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -12663,7 +12743,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dancer Vanguard \u2014 misc support"
+    "roleIdentity": "Dancer Vanguard — misc support"
   },
   {
     "id": "job_path_1234_dancer_paragon",
@@ -12718,7 +12798,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dancer Paragon \u2014 misc support"
+    "roleIdentity": "Dancer Paragon — misc support"
   },
   {
     "id": "job_path_1235_dancer_sovereign",
@@ -12773,7 +12853,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dancer Sovereign \u2014 misc support"
+    "roleIdentity": "Dancer Sovereign — misc support"
   },
   {
     "id": "job_path_1236_world_crowned_dancer",
@@ -12830,17 +12910,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Dancer \u2014 misc support"
+    "roleIdentity": "World-Crowned Dancer — misc support"
   },
   {
     "id": "job_path_1237_dancer_adept",
     "excelId": 1237,
-    "name": "Dancer Adept",
+    "name": "Dancer Secret Tempo",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1020_dancer",
-    "description": "Dancer Adept is a advanced Support class path branching from job 1020 dancer. It sharpens CHA, WIS, adds a mirror-step combat rhythm, and focuses on elite control; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dancer Secret Tempo is a distinct advanced job upgrade for Dancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -12853,12 +12933,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Dancer Adept-specific party tempo through long-run stability",
-      "Strong sustain tools within Support builds"
+      "Dancer Secret Tempo focuses on misc support",
+      "Adds a specialized route for Dancer without copying nearby jobs",
+      "Dancer Adept-specific party tempo through long-run stability"
     ],
     "weaknesses": [
-      "Dancer Adept suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of party tempo"
+      "Dancer Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dancer Adept suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -12885,7 +12967,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dancer Adept \u2014 misc support"
+    "roleIdentity": "Dancer Adept — misc support"
   },
   {
     "id": "job_path_1238_eclipse_dancer",
@@ -12940,7 +13022,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Dancer \u2014 misc support"
+    "roleIdentity": "Eclipse Dancer — misc support"
   },
   {
     "id": "job_path_1239_mythic_dancer",
@@ -12995,7 +13077,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dancer \u2014 misc support"
+    "roleIdentity": "Mythic Dancer — misc support"
   },
   {
     "id": "job_path_1240_hidden_origin_dancer",
@@ -13052,17 +13134,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Dancer \u2014 misc support"
+    "roleIdentity": "Hidden Origin Dancer — misc support"
   },
   {
     "id": "job_path_1241_strategist_vanguard",
     "excelId": 1241,
-    "name": "Strategist Vanguard",
+    "name": "Strategist Iron Banner",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1021_strategist",
-    "description": "Strategist Vanguard is a advanced Support class path branching from job 1021 strategist. It sharpens CHA, WIS, adds a mirror-step combat rhythm, and focuses on elite control; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Strategist Iron Banner is a distinct advanced job upgrade for Strategist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -13075,12 +13157,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Strategist Vanguard-specific party tempo through shop/event efficiency",
-      "Strong sustain tools within Support builds"
+      "Strategist Iron Banner focuses on misc support",
+      "Adds a specialized route for Strategist without copying nearby jobs",
+      "Strategist Vanguard-specific party tempo through shop/event efficiency"
     ],
     "weaknesses": [
-      "Strategist Vanguard suffers from high resource demand",
-      "Needs support when fights demand the opposite of party tempo"
+      "Strategist Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Strategist Vanguard suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -13107,7 +13191,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Strategist Vanguard \u2014 misc support"
+    "roleIdentity": "Strategist Vanguard — misc support"
   },
   {
     "id": "job_path_1242_strategist_paragon",
@@ -13162,7 +13246,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Strategist Paragon \u2014 misc support"
+    "roleIdentity": "Strategist Paragon — misc support"
   },
   {
     "id": "job_path_1243_strategist_sovereign",
@@ -13217,7 +13301,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Strategist Sovereign \u2014 misc support"
+    "roleIdentity": "Strategist Sovereign — misc support"
   },
   {
     "id": "job_path_1244_world_crowned_strategist",
@@ -13274,17 +13358,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Strategist \u2014 misc support"
+    "roleIdentity": "World-Crowned Strategist — misc support"
   },
   {
     "id": "job_path_1245_strategist_adept",
     "excelId": 1245,
-    "name": "Strategist Adept",
+    "name": "Strategist Deep Focus",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1021_strategist",
-    "description": "Strategist Adept is a advanced Support class path branching from job 1021 strategist. It sharpens CHA, WIS, adds a eclipse-cut combat rhythm, and focuses on floor-clearing consistency; its balancing drawback is bad matchups into its counter element. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Strategist Deep Focus is a distinct advanced job upgrade for Strategist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -13297,12 +13381,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Strategist Adept-specific party tempo through boss safety",
-      "Strong sustain tools within Support builds"
+      "Strategist Deep Focus focuses on misc support",
+      "Adds a specialized route for Strategist without copying nearby jobs",
+      "Strategist Adept-specific party tempo through boss safety"
     ],
     "weaknesses": [
-      "Strategist Adept suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of party tempo"
+      "Strategist Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Strategist Adept suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -13329,7 +13415,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Strategist Adept \u2014 misc support"
+    "roleIdentity": "Strategist Adept — misc support"
   },
   {
     "id": "job_path_1246_eclipse_strategist",
@@ -13384,7 +13470,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Strategist \u2014 misc support"
+    "roleIdentity": "Eclipse Strategist — misc support"
   },
   {
     "id": "job_path_1247_mythic_strategist",
@@ -13439,7 +13525,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Strategist \u2014 misc support"
+    "roleIdentity": "Mythic Strategist — misc support"
   },
   {
     "id": "job_path_1248_hidden_origin_strategist",
@@ -13496,17 +13582,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Strategist \u2014 misc support"
+    "roleIdentity": "Hidden Origin Strategist — misc support"
   },
   {
     "id": "job_path_1249_cook_vanguard",
     "excelId": 1249,
-    "name": "Cook Vanguard",
+    "name": "Cook Sunbreaker Form",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1022_cook",
-    "description": "Cook Vanguard is a advanced Support class path branching from job 1022 cook. It sharpens CHA, WIS, adds a sunbrand combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cook Sunbreaker Form is a distinct advanced job upgrade for Cook. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 5,
       "wis": 3,
@@ -13523,12 +13609,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Cook Vanguard-specific party tempo through prepared item advantage",
-      "Strong sustain tools within Support builds"
+      "Cook Sunbreaker Form focuses on crafting utility",
+      "Adds a specialized route for Cook without copying nearby jobs",
+      "Cook Vanguard-specific party tempo through prepared item advantage"
     ],
     "weaknesses": [
-      "Cook Vanguard suffers from needs setup time",
-      "Needs support when fights demand the opposite of party tempo"
+      "Cook Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cook Vanguard suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -13555,7 +13643,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cook Vanguard \u2014 crafting utility"
+    "roleIdentity": "Cook Vanguard — crafting utility"
   },
   {
     "id": "job_path_1250_cook_paragon",
@@ -13614,7 +13702,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cook Paragon \u2014 crafting utility"
+    "roleIdentity": "Cook Paragon — crafting utility"
   },
   {
     "id": "job_path_1251_cook_sovereign",
@@ -13673,7 +13761,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cook Sovereign \u2014 crafting utility"
+    "roleIdentity": "Cook Sovereign — crafting utility"
   },
   {
     "id": "job_path_1252_world_crowned_cook",
@@ -13734,17 +13822,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Cook \u2014 crafting utility"
+    "roleIdentity": "World-Crowned Cook — crafting utility"
   },
   {
     "id": "job_path_1253_cook_adept",
     "excelId": 1253,
-    "name": "Cook Adept",
+    "name": "Cook Perfected Course",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1022_cook",
-    "description": "Cook Adept is a advanced Support class path branching from job 1022 cook. It sharpens CHA, WIS, adds a iron-tempo combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cook Perfected Course is a distinct advanced job upgrade for Cook. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 5,
       "wis": 3,
@@ -13761,12 +13849,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Cook Adept-specific party tempo through prepared item advantage",
-      "Strong sustain tools within Support builds"
+      "Cook Perfected Course focuses on crafting utility",
+      "Adds a specialized route for Cook without copying nearby jobs",
+      "Cook Adept-specific party tempo through prepared item advantage"
     ],
     "weaknesses": [
-      "Cook Adept suffers from needs setup time",
-      "Needs support when fights demand the opposite of party tempo"
+      "Cook Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cook Adept suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -13793,7 +13883,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cook Adept \u2014 crafting utility"
+    "roleIdentity": "Cook Adept — crafting utility"
   },
   {
     "id": "job_path_1254_eclipse_cook",
@@ -13852,7 +13942,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Cook \u2014 crafting utility"
+    "roleIdentity": "Eclipse Cook — crafting utility"
   },
   {
     "id": "job_path_1255_mythic_cook",
@@ -13911,7 +14001,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Cook \u2014 crafting utility"
+    "roleIdentity": "Mythic Cook — crafting utility"
   },
   {
     "id": "job_path_1256_hidden_origin_cook",
@@ -13972,17 +14062,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Cook \u2014 crafting utility"
+    "roleIdentity": "Hidden Origin Cook — crafting utility"
   },
   {
     "id": "job_path_1257_buffer_vanguard",
     "excelId": 1257,
-    "name": "Buffer Vanguard",
+    "name": "Buffer Dragonstep Method",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1023_buffer",
-    "description": "Buffer Vanguard is a advanced Support class path branching from job 1023 buffer. It sharpens CHA, WIS, adds a grave-marked combat rhythm, and focuses on elite control; its balancing drawback is bad matchups into its counter element. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Buffer Dragonstep Method is a distinct advanced job upgrade for Buffer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -13995,12 +14085,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Buffer Vanguard-specific party tempo through floor-clearing consistency",
-      "Strong sustain tools within Support builds"
+      "Buffer Dragonstep Method focuses on misc support",
+      "Adds a specialized route for Buffer without copying nearby jobs",
+      "Buffer Vanguard-specific party tempo through floor-clearing consistency"
     ],
     "weaknesses": [
-      "Buffer Vanguard suffers from high resource demand",
-      "Needs support when fights demand the opposite of party tempo"
+      "Buffer Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Buffer Vanguard suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -14027,7 +14119,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Buffer Vanguard \u2014 misc support"
+    "roleIdentity": "Buffer Vanguard — misc support"
   },
   {
     "id": "job_path_1258_buffer_paragon",
@@ -14082,7 +14174,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Buffer Paragon \u2014 misc support"
+    "roleIdentity": "Buffer Paragon — misc support"
   },
   {
     "id": "job_path_1259_buffer_sovereign",
@@ -14137,7 +14229,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Buffer Sovereign \u2014 misc support"
+    "roleIdentity": "Buffer Sovereign — misc support"
   },
   {
     "id": "job_path_1260_world_crowned_buffer",
@@ -14194,17 +14286,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Buffer \u2014 misc support"
+    "roleIdentity": "World-Crowned Buffer — misc support"
   },
   {
     "id": "job_path_1261_buffer_adept",
     "excelId": 1261,
-    "name": "Buffer Adept",
+    "name": "Buffer Secret Tempo",
     "category": "Support",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1023_buffer",
-    "description": "Buffer Adept is a advanced Support class path branching from job 1023 buffer. It sharpens CHA, WIS, adds a rune-laced combat rhythm, and focuses on elite control; its balancing drawback is slow early progression. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Buffer Secret Tempo is a distinct advanced job upgrade for Buffer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 4,
       "wis": 3
@@ -14217,12 +14309,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Buffer Adept-specific party tempo through defensive uptime",
-      "Strong sustain tools within Support builds"
+      "Buffer Secret Tempo focuses on misc support",
+      "Adds a specialized route for Buffer without copying nearby jobs",
+      "Buffer Adept-specific party tempo through defensive uptime"
     ],
     "weaknesses": [
-      "Buffer Adept suffers from inconsistent damage without setup",
-      "Needs support when fights demand the opposite of party tempo"
+      "Buffer Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Buffer Adept suffers from inconsistent damage without setup"
     ],
     "requirements": {
       "classLevel": 15
@@ -14249,7 +14343,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Buffer Adept \u2014 misc support"
+    "roleIdentity": "Buffer Adept — misc support"
   },
   {
     "id": "job_path_1262_eclipse_buffer",
@@ -14304,7 +14398,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Buffer \u2014 misc support"
+    "roleIdentity": "Eclipse Buffer — misc support"
   },
   {
     "id": "job_path_1263_mythic_buffer",
@@ -14359,7 +14453,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Buffer \u2014 misc support"
+    "roleIdentity": "Mythic Buffer — misc support"
   },
   {
     "id": "job_path_1264_hidden_origin_buffer",
@@ -14416,17 +14510,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_support",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Buffer \u2014 misc support"
+    "roleIdentity": "Hidden Origin Buffer — misc support"
   },
   {
     "id": "job_path_1265_archer_vanguard",
     "excelId": 1265,
-    "name": "Archer Vanguard",
+    "name": "Archer Iron Banner",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1024_archer",
-    "description": "Archer Vanguard is a advanced Ranged class path branching from job 1024 archer. It sharpens DEX, WIS, adds a void-breath combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Archer Iron Banner is a distinct advanced job upgrade for Archer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -14439,12 +14533,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Archer Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Archer Iron Banner focuses on ranged striker",
+      "Adds a specialized route for Archer without copying nearby jobs",
+      "Archer Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Archer Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Archer Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Archer Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -14471,7 +14567,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Archer Vanguard \u2014 ranged striker"
+    "roleIdentity": "Archer Vanguard — ranged striker"
   },
   {
     "id": "job_path_1266_archer_paragon",
@@ -14526,7 +14622,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Archer Paragon \u2014 ranged striker"
+    "roleIdentity": "Archer Paragon — ranged striker"
   },
   {
     "id": "job_path_1267_archer_sovereign",
@@ -14581,7 +14677,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Archer Sovereign \u2014 ranged striker"
+    "roleIdentity": "Archer Sovereign — ranged striker"
   },
   {
     "id": "job_path_1268_world_crowned_archer",
@@ -14638,17 +14734,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Archer \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Archer — ranged striker"
   },
   {
     "id": "job_path_1269_archer_adept",
     "excelId": 1269,
-    "name": "Archer Adept",
+    "name": "Archer Deep Focus",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1024_archer",
-    "description": "Archer Adept is a advanced Ranged class path branching from job 1024 archer. It sharpens DEX, WIS, adds a clockwork combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Archer Deep Focus is a distinct advanced job upgrade for Archer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -14661,12 +14757,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Archer Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Archer Deep Focus focuses on ranged striker",
+      "Adds a specialized route for Archer without copying nearby jobs",
+      "Archer Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Archer Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Archer Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Archer Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -14693,7 +14791,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Archer Adept \u2014 ranged striker"
+    "roleIdentity": "Archer Adept — ranged striker"
   },
   {
     "id": "job_path_1270_eclipse_archer",
@@ -14748,7 +14846,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Archer \u2014 ranged striker"
+    "roleIdentity": "Eclipse Archer — ranged striker"
   },
   {
     "id": "job_path_1271_mythic_archer",
@@ -14803,7 +14901,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Archer \u2014 ranged striker"
+    "roleIdentity": "Mythic Archer — ranged striker"
   },
   {
     "id": "job_path_1272_hidden_origin_archer",
@@ -14860,17 +14958,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Archer \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Archer — ranged striker"
   },
   {
     "id": "job_path_1273_hunter_vanguard",
     "excelId": 1273,
-    "name": "Hunter Vanguard",
+    "name": "Hunter Sunbreaker Form",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1025_hunter",
-    "description": "Hunter Vanguard is a advanced Ranged class path branching from job 1025 hunter. It sharpens DEX, WIS, adds a mirror-step combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Hunter Sunbreaker Form is a distinct advanced job upgrade for Hunter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -14883,12 +14981,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Hunter Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Hunter Sunbreaker Form focuses on ranged striker",
+      "Adds a specialized route for Hunter without copying nearby jobs",
+      "Hunter Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Hunter Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Hunter Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Hunter Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -14915,7 +15015,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hunter Vanguard \u2014 ranged striker"
+    "roleIdentity": "Hunter Vanguard — ranged striker"
   },
   {
     "id": "job_path_1274_hunter_paragon",
@@ -14970,7 +15070,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hunter Paragon \u2014 ranged striker"
+    "roleIdentity": "Hunter Paragon — ranged striker"
   },
   {
     "id": "job_path_1275_hunter_sovereign",
@@ -15025,7 +15125,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hunter Sovereign \u2014 ranged striker"
+    "roleIdentity": "Hunter Sovereign — ranged striker"
   },
   {
     "id": "job_path_1276_world_crowned_hunter",
@@ -15082,17 +15182,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Hunter \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Hunter — ranged striker"
   },
   {
     "id": "job_path_1277_hunter_adept",
     "excelId": 1277,
-    "name": "Hunter Adept",
+    "name": "Hunter Perfected Course",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1025_hunter",
-    "description": "Hunter Adept is a advanced Ranged class path branching from job 1025 hunter. It sharpens DEX, WIS, adds a sunbrand combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Hunter Perfected Course is a distinct advanced job upgrade for Hunter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -15105,12 +15205,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Hunter Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Hunter Perfected Course focuses on ranged striker",
+      "Adds a specialized route for Hunter without copying nearby jobs",
+      "Hunter Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Hunter Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Hunter Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Hunter Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -15137,7 +15239,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hunter Adept \u2014 ranged striker"
+    "roleIdentity": "Hunter Adept — ranged striker"
   },
   {
     "id": "job_path_1278_eclipse_hunter",
@@ -15192,7 +15294,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Hunter \u2014 ranged striker"
+    "roleIdentity": "Eclipse Hunter — ranged striker"
   },
   {
     "id": "job_path_1279_mythic_hunter",
@@ -15247,7 +15349,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Hunter \u2014 ranged striker"
+    "roleIdentity": "Mythic Hunter — ranged striker"
   },
   {
     "id": "job_path_1280_hidden_origin_hunter",
@@ -15304,17 +15406,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Hunter \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Hunter — ranged striker"
   },
   {
     "id": "job_path_1281_ranger_vanguard",
     "excelId": 1281,
-    "name": "Ranger Vanguard",
+    "name": "Ranger Dragonstep Method",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "ranger",
-    "description": "Ranger Vanguard is a advanced Ranged class path branching from ranger. It sharpens DEX, WIS, adds a eclipse-cut combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Ranger Dragonstep Method is a distinct advanced job upgrade for Ranger. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -15327,12 +15429,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Ranger Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Ranger Dragonstep Method focuses on ranged striker",
+      "Adds a specialized route for Ranger without copying nearby jobs",
+      "Ranger Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Ranger Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Ranger Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Ranger Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -15359,7 +15463,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ranger Vanguard \u2014 ranged striker"
+    "roleIdentity": "Ranger Vanguard — ranged striker"
   },
   {
     "id": "job_path_1282_ranger_paragon",
@@ -15414,7 +15518,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ranger Paragon \u2014 ranged striker"
+    "roleIdentity": "Ranger Paragon — ranged striker"
   },
   {
     "id": "job_path_1283_ranger_sovereign",
@@ -15469,7 +15573,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ranger Sovereign \u2014 ranged striker"
+    "roleIdentity": "Ranger Sovereign — ranged striker"
   },
   {
     "id": "job_path_1284_world_crowned_ranger",
@@ -15526,17 +15630,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Ranger \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Ranger — ranged striker"
   },
   {
     "id": "job_path_1285_ranger_adept",
     "excelId": 1285,
-    "name": "Ranger Adept",
+    "name": "Ranger Secret Tempo",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "ranger",
-    "description": "Ranger Adept is a advanced Ranged class path branching from ranger. It sharpens DEX, WIS, adds a iron-tempo combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Ranger Secret Tempo is a distinct advanced job upgrade for Ranger. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -15549,12 +15653,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Ranger Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Ranger Secret Tempo focuses on ranged striker",
+      "Adds a specialized route for Ranger without copying nearby jobs",
+      "Ranger Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Ranger Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Ranger Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Ranger Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -15581,7 +15687,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ranger Adept \u2014 ranged striker"
+    "roleIdentity": "Ranger Adept — ranged striker"
   },
   {
     "id": "job_path_1286_eclipse_ranger",
@@ -15636,7 +15742,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Ranger \u2014 ranged striker"
+    "roleIdentity": "Eclipse Ranger — ranged striker"
   },
   {
     "id": "job_path_1287_mythic_ranger",
@@ -15691,7 +15797,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Ranger \u2014 ranged striker"
+    "roleIdentity": "Mythic Ranger — ranged striker"
   },
   {
     "id": "job_path_1288_hidden_origin_ranger",
@@ -15748,17 +15854,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Ranger \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Ranger — ranged striker"
   },
   {
     "id": "job_path_1289_sniper_vanguard",
     "excelId": 1289,
-    "name": "Sniper Vanguard",
+    "name": "Sniper Iron Banner",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1027_sniper",
-    "description": "Sniper Vanguard is a advanced Ranged class path branching from job 1027 sniper. It sharpens DEX, WIS, adds a oathbound combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Sniper Iron Banner is a distinct advanced job upgrade for Sniper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -15771,12 +15877,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Sniper Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Sniper Iron Banner focuses on ranged striker",
+      "Adds a specialized route for Sniper without copying nearby jobs",
+      "Sniper Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Sniper Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Sniper Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Sniper Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -15803,7 +15911,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sniper Vanguard \u2014 ranged striker"
+    "roleIdentity": "Sniper Vanguard — ranged striker"
   },
   {
     "id": "job_path_1290_sniper_paragon",
@@ -15858,7 +15966,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sniper Paragon \u2014 ranged striker"
+    "roleIdentity": "Sniper Paragon — ranged striker"
   },
   {
     "id": "job_path_1291_sniper_sovereign",
@@ -15913,7 +16021,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sniper Sovereign \u2014 ranged striker"
+    "roleIdentity": "Sniper Sovereign — ranged striker"
   },
   {
     "id": "job_path_1292_world_crowned_sniper",
@@ -15970,17 +16078,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Sniper \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Sniper — ranged striker"
   },
   {
     "id": "job_path_1293_sniper_adept",
     "excelId": 1293,
-    "name": "Sniper Adept",
+    "name": "Sniper Deep Focus",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1027_sniper",
-    "description": "Sniper Adept is a advanced Ranged class path branching from job 1027 sniper. It sharpens DEX, WIS, adds a ash-crowned combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Sniper Deep Focus is a distinct advanced job upgrade for Sniper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -15993,12 +16101,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Sniper Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Sniper Deep Focus focuses on ranged striker",
+      "Adds a specialized route for Sniper without copying nearby jobs",
+      "Sniper Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Sniper Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Sniper Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Sniper Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -16025,7 +16135,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Sniper Adept \u2014 ranged striker"
+    "roleIdentity": "Sniper Adept — ranged striker"
   },
   {
     "id": "job_path_1294_eclipse_sniper",
@@ -16080,7 +16190,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Sniper \u2014 ranged striker"
+    "roleIdentity": "Eclipse Sniper — ranged striker"
   },
   {
     "id": "job_path_1295_mythic_sniper",
@@ -16135,7 +16245,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Sniper \u2014 ranged striker"
+    "roleIdentity": "Mythic Sniper — ranged striker"
   },
   {
     "id": "job_path_1296_hidden_origin_sniper",
@@ -16192,17 +16302,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Sniper \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Sniper — ranged striker"
   },
   {
     "id": "job_path_1297_gunslinger_vanguard",
     "excelId": 1297,
-    "name": "Gunslinger Vanguard",
+    "name": "Gunslinger Sunbreaker Form",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1028_gunslinger",
-    "description": "Gunslinger Vanguard is a advanced Ranged class path branching from job 1028 gunslinger. It sharpens DEX, WIS, adds a beast-call combat rhythm, and focuses on resource recycling; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Gunslinger Sunbreaker Form is a distinct advanced job upgrade for Gunslinger. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "wis": 3
@@ -16215,12 +16325,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Gunslinger Vanguard-specific turn speed through counterattacks",
-      "Strong sustain tools within Ranged builds"
+      "Gunslinger Sunbreaker Form focuses on misc ranged",
+      "Adds a specialized route for Gunslinger without copying nearby jobs",
+      "Gunslinger Vanguard-specific turn speed through counterattacks"
     ],
     "weaknesses": [
-      "Gunslinger Vanguard suffers from inconsistent damage without setup",
-      "Needs support when fights demand the opposite of turn speed"
+      "Gunslinger Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Gunslinger Vanguard suffers from inconsistent damage without setup"
     ],
     "requirements": {
       "classLevel": 15
@@ -16247,7 +16359,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gunslinger Vanguard \u2014 misc ranged"
+    "roleIdentity": "Gunslinger Vanguard — misc ranged"
   },
   {
     "id": "job_path_1298_gunslinger_paragon",
@@ -16302,7 +16414,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gunslinger Paragon \u2014 misc ranged"
+    "roleIdentity": "Gunslinger Paragon — misc ranged"
   },
   {
     "id": "job_path_1299_gunslinger_sovereign",
@@ -16357,7 +16469,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gunslinger Sovereign \u2014 misc ranged"
+    "roleIdentity": "Gunslinger Sovereign — misc ranged"
   },
   {
     "id": "job_path_1300_world_crowned_gunslinger",
@@ -16414,17 +16526,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Gunslinger \u2014 misc ranged"
+    "roleIdentity": "World-Crowned Gunslinger — misc ranged"
   },
   {
     "id": "job_path_1301_gunslinger_adept",
     "excelId": 1301,
-    "name": "Gunslinger Adept",
+    "name": "Gunslinger Perfected Course",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1028_gunslinger",
-    "description": "Gunslinger Adept is a advanced Ranged class path branching from job 1028 gunslinger. It sharpens DEX, WIS, adds a gold-thread combat rhythm, and focuses on long-run stability; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Gunslinger Perfected Course is a distinct advanced job upgrade for Gunslinger. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "wis": 3
@@ -16437,12 +16549,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Gunslinger Adept-specific turn speed through pre-battle setup",
-      "Strong sustain tools within Ranged builds"
+      "Gunslinger Perfected Course focuses on misc ranged",
+      "Adds a specialized route for Gunslinger without copying nearby jobs",
+      "Gunslinger Adept-specific turn speed through pre-battle setup"
     ],
     "weaknesses": [
-      "Gunslinger Adept suffers from low control resistance",
-      "Needs support when fights demand the opposite of turn speed"
+      "Gunslinger Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Gunslinger Adept suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -16469,7 +16583,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gunslinger Adept \u2014 misc ranged"
+    "roleIdentity": "Gunslinger Adept — misc ranged"
   },
   {
     "id": "job_path_1302_eclipse_gunslinger",
@@ -16524,7 +16638,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Gunslinger \u2014 misc ranged"
+    "roleIdentity": "Eclipse Gunslinger — misc ranged"
   },
   {
     "id": "job_path_1303_mythic_gunslinger",
@@ -16579,7 +16693,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Gunslinger \u2014 misc ranged"
+    "roleIdentity": "Mythic Gunslinger — misc ranged"
   },
   {
     "id": "job_path_1304_hidden_origin_gunslinger",
@@ -16636,17 +16750,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_ranged",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Gunslinger \u2014 misc ranged"
+    "roleIdentity": "Hidden Origin Gunslinger — misc ranged"
   },
   {
     "id": "job_path_1305_magic_gunner_vanguard",
     "excelId": 1305,
-    "name": "Magic Gunner Vanguard",
+    "name": "Magic Gunner Dragonstep Method",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1029_magic_gunner",
-    "description": "Magic Gunner Vanguard is a advanced Ranged class path branching from job 1029 magic gunner. It sharpens DEX, WIS, adds a rune-laced combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Magic Gunner Dragonstep Method is a distinct advanced job upgrade for Magic Gunner. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -16659,12 +16773,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Magic Gunner Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Magic Gunner Dragonstep Method focuses on ranged striker",
+      "Adds a specialized route for Magic Gunner without copying nearby jobs",
+      "Magic Gunner Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Magic Gunner Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Magic Gunner Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Magic Gunner Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -16691,7 +16807,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Magic Gunner Vanguard \u2014 ranged striker"
+    "roleIdentity": "Magic Gunner Vanguard — ranged striker"
   },
   {
     "id": "job_path_1306_magic_gunner_paragon",
@@ -16746,7 +16862,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Magic Gunner Paragon \u2014 ranged striker"
+    "roleIdentity": "Magic Gunner Paragon — ranged striker"
   },
   {
     "id": "job_path_1307_magic_gunner_sovereign",
@@ -16801,7 +16917,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Magic Gunner Sovereign \u2014 ranged striker"
+    "roleIdentity": "Magic Gunner Sovereign — ranged striker"
   },
   {
     "id": "job_path_1308_world_crowned_magic_gunner",
@@ -16858,17 +16974,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Magic Gunner \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Magic Gunner — ranged striker"
   },
   {
     "id": "job_path_1309_magic_gunner_adept",
     "excelId": 1309,
-    "name": "Magic Gunner Adept",
+    "name": "Magic Gunner Secret Tempo",
     "category": "Ranged",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1029_magic_gunner",
-    "description": "Magic Gunner Adept is a advanced Ranged class path branching from job 1029 magic gunner. It sharpens DEX, WIS, adds a grave-marked combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Magic Gunner Secret Tempo is a distinct advanced job upgrade for Magic Gunner. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 8,
       "wis": 4
@@ -16881,12 +16997,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Magic Gunner Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Ranged builds"
+      "Magic Gunner Secret Tempo focuses on ranged striker",
+      "Adds a specialized route for Magic Gunner without copying nearby jobs",
+      "Magic Gunner Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Magic Gunner Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Magic Gunner Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Magic Gunner Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -16913,7 +17031,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Magic Gunner Adept \u2014 ranged striker"
+    "roleIdentity": "Magic Gunner Adept — ranged striker"
   },
   {
     "id": "job_path_1310_eclipse_magic_gunner",
@@ -16968,7 +17086,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Magic Gunner \u2014 ranged striker"
+    "roleIdentity": "Eclipse Magic Gunner — ranged striker"
   },
   {
     "id": "job_path_1311_mythic_magic_gunner",
@@ -17023,7 +17141,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Magic Gunner \u2014 ranged striker"
+    "roleIdentity": "Mythic Magic Gunner — ranged striker"
   },
   {
     "id": "job_path_1312_hidden_origin_magic_gunner",
@@ -17080,17 +17198,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Magic Gunner \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Magic Gunner — ranged striker"
   },
   {
     "id": "job_path_1313_rogue_vanguard",
     "excelId": 1313,
-    "name": "Rogue Vanguard",
+    "name": "Rogue Iron Banner",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "rogue",
-    "description": "Rogue Vanguard is a advanced Rogue class path branching from rogue. It sharpens DEX, STR, adds a ash-crowned combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Rogue Iron Banner is a distinct advanced job upgrade for Rogue. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -17103,12 +17221,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Rogue Vanguard-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Rogue Iron Banner focuses on stealth striker",
+      "Adds a specialized route for Rogue without copying nearby jobs",
+      "Rogue Vanguard-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Rogue Vanguard suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Rogue Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Rogue Vanguard suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -17135,7 +17255,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rogue Vanguard \u2014 stealth striker"
+    "roleIdentity": "Rogue Vanguard — stealth striker"
   },
   {
     "id": "job_path_1314_rogue_paragon",
@@ -17190,7 +17310,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rogue Paragon \u2014 stealth striker"
+    "roleIdentity": "Rogue Paragon — stealth striker"
   },
   {
     "id": "job_path_1315_rogue_sovereign",
@@ -17245,7 +17365,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rogue Sovereign \u2014 stealth striker"
+    "roleIdentity": "Rogue Sovereign — stealth striker"
   },
   {
     "id": "job_path_1316_world_crowned_rogue",
@@ -17302,17 +17422,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Rogue \u2014 stealth striker"
+    "roleIdentity": "World-Crowned Rogue — stealth striker"
   },
   {
     "id": "job_path_1317_rogue_adept",
     "excelId": 1317,
-    "name": "Rogue Adept",
+    "name": "Rogue Deep Focus",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "rogue",
-    "description": "Rogue Adept is a advanced Rogue class path branching from rogue. It sharpens DEX, STR, adds a grave-marked combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Rogue Deep Focus is a distinct advanced job upgrade for Rogue. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -17325,12 +17445,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Rogue Adept-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Rogue Deep Focus focuses on stealth striker",
+      "Adds a specialized route for Rogue without copying nearby jobs",
+      "Rogue Adept-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Rogue Adept suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Rogue Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Rogue Adept suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -17357,7 +17479,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rogue Adept \u2014 stealth striker"
+    "roleIdentity": "Rogue Adept — stealth striker"
   },
   {
     "id": "job_path_1318_eclipse_rogue",
@@ -17412,7 +17534,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Rogue \u2014 stealth striker"
+    "roleIdentity": "Eclipse Rogue — stealth striker"
   },
   {
     "id": "job_path_1319_mythic_rogue",
@@ -17467,7 +17589,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Rogue \u2014 stealth striker"
+    "roleIdentity": "Mythic Rogue — stealth striker"
   },
   {
     "id": "job_path_1320_hidden_origin_rogue",
@@ -17524,17 +17646,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Rogue \u2014 stealth striker"
+    "roleIdentity": "Hidden Origin Rogue — stealth striker"
   },
   {
     "id": "job_path_1321_thief_vanguard",
     "excelId": 1321,
-    "name": "Thief Vanguard",
+    "name": "Thief Sunbreaker Form",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1031_thief",
-    "description": "Thief Vanguard is a advanced Rogue class path branching from job 1031 thief. It sharpens DEX, STR, adds a sunbrand combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Thief Sunbreaker Form is a distinct advanced job upgrade for Thief. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -17547,12 +17669,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Thief Vanguard-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Thief Sunbreaker Form focuses on stealth striker",
+      "Adds a specialized route for Thief without copying nearby jobs",
+      "Thief Vanguard-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Thief Vanguard suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Thief Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Thief Vanguard suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -17579,7 +17703,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Thief Vanguard \u2014 stealth striker"
+    "roleIdentity": "Thief Vanguard — stealth striker"
   },
   {
     "id": "job_path_1322_thief_paragon",
@@ -17634,7 +17758,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Thief Paragon \u2014 stealth striker"
+    "roleIdentity": "Thief Paragon — stealth striker"
   },
   {
     "id": "job_path_1323_thief_sovereign",
@@ -17689,7 +17813,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Thief Sovereign \u2014 stealth striker"
+    "roleIdentity": "Thief Sovereign — stealth striker"
   },
   {
     "id": "job_path_1324_world_crowned_thief",
@@ -17746,17 +17870,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Thief \u2014 stealth striker"
+    "roleIdentity": "World-Crowned Thief — stealth striker"
   },
   {
     "id": "job_path_1325_thief_adept",
     "excelId": 1325,
-    "name": "Thief Adept",
+    "name": "Thief Perfected Course",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1031_thief",
-    "description": "Thief Adept is a advanced Rogue class path branching from job 1031 thief. It sharpens DEX, STR, adds a stormline combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Thief Perfected Course is a distinct advanced job upgrade for Thief. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -17769,12 +17893,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Thief Adept-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Thief Perfected Course focuses on stealth striker",
+      "Adds a specialized route for Thief without copying nearby jobs",
+      "Thief Adept-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Thief Adept suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Thief Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Thief Adept suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -17801,7 +17927,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Thief Adept \u2014 stealth striker"
+    "roleIdentity": "Thief Adept — stealth striker"
   },
   {
     "id": "job_path_1326_eclipse_thief",
@@ -17856,7 +17982,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Thief \u2014 stealth striker"
+    "roleIdentity": "Eclipse Thief — stealth striker"
   },
   {
     "id": "job_path_1327_mythic_thief",
@@ -17911,7 +18037,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Thief \u2014 stealth striker"
+    "roleIdentity": "Mythic Thief — stealth striker"
   },
   {
     "id": "job_path_1328_hidden_origin_thief",
@@ -17968,17 +18094,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Thief \u2014 stealth striker"
+    "roleIdentity": "Hidden Origin Thief — stealth striker"
   },
   {
     "id": "job_path_1329_assassin_vanguard",
     "excelId": 1329,
-    "name": "Assassin Vanguard",
+    "name": "Assassin Dragonstep Method",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1032_assassin",
-    "description": "Assassin Vanguard is a advanced Rogue class path branching from job 1032 assassin. It sharpens DEX, STR, adds a iron-tempo combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Assassin Dragonstep Method is a distinct advanced job upgrade for Assassin. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -17991,12 +18117,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Assassin Vanguard-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Assassin Dragonstep Method focuses on stealth striker",
+      "Adds a specialized route for Assassin without copying nearby jobs",
+      "Assassin Vanguard-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Assassin Vanguard suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Assassin Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Assassin Vanguard suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -18023,7 +18151,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Assassin Vanguard \u2014 stealth striker"
+    "roleIdentity": "Assassin Vanguard — stealth striker"
   },
   {
     "id": "job_path_1330_assassin_paragon",
@@ -18078,7 +18206,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Assassin Paragon \u2014 stealth striker"
+    "roleIdentity": "Assassin Paragon — stealth striker"
   },
   {
     "id": "job_path_1331_assassin_sovereign",
@@ -18133,7 +18261,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Assassin Sovereign \u2014 stealth striker"
+    "roleIdentity": "Assassin Sovereign — stealth striker"
   },
   {
     "id": "job_path_1332_world_crowned_assassin",
@@ -18190,17 +18318,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Assassin \u2014 stealth striker"
+    "roleIdentity": "World-Crowned Assassin — stealth striker"
   },
   {
     "id": "job_path_1333_assassin_adept",
     "excelId": 1333,
-    "name": "Assassin Adept",
+    "name": "Assassin Secret Tempo",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1032_assassin",
-    "description": "Assassin Adept is a advanced Rogue class path branching from job 1032 assassin. It sharpens DEX, STR, adds a stormline combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Assassin Secret Tempo is a distinct advanced job upgrade for Assassin. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -18213,12 +18341,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Assassin Adept-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Assassin Secret Tempo focuses on stealth striker",
+      "Adds a specialized route for Assassin without copying nearby jobs",
+      "Assassin Adept-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Assassin Adept suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Assassin Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Assassin Adept suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -18245,7 +18375,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Assassin Adept \u2014 stealth striker"
+    "roleIdentity": "Assassin Adept — stealth striker"
   },
   {
     "id": "job_path_1334_eclipse_assassin",
@@ -18300,7 +18430,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Assassin \u2014 stealth striker"
+    "roleIdentity": "Eclipse Assassin — stealth striker"
   },
   {
     "id": "job_path_1335_mythic_assassin",
@@ -18355,7 +18485,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Assassin \u2014 stealth striker"
+    "roleIdentity": "Mythic Assassin — stealth striker"
   },
   {
     "id": "job_path_1336_hidden_origin_assassin",
@@ -18412,17 +18542,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Assassin \u2014 stealth striker"
+    "roleIdentity": "Hidden Origin Assassin — stealth striker"
   },
   {
     "id": "job_path_1337_ninja_vanguard",
     "excelId": 1337,
-    "name": "Ninja Vanguard",
+    "name": "Ninja Iron Banner",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1033_ninja",
-    "description": "Ninja Vanguard is a advanced Rogue class path branching from job 1033 ninja. It sharpens DEX, STR, adds a gold-thread combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Ninja Iron Banner is a distinct advanced job upgrade for Ninja. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -18435,12 +18565,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Ninja Vanguard-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Ninja Iron Banner focuses on stealth striker",
+      "Adds a specialized route for Ninja without copying nearby jobs",
+      "Ninja Vanguard-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Ninja Vanguard suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Ninja Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Ninja Vanguard suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -18467,7 +18599,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ninja Vanguard \u2014 stealth striker"
+    "roleIdentity": "Ninja Vanguard — stealth striker"
   },
   {
     "id": "job_path_1338_ninja_paragon",
@@ -18522,7 +18654,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ninja Paragon \u2014 stealth striker"
+    "roleIdentity": "Ninja Paragon — stealth striker"
   },
   {
     "id": "job_path_1339_ninja_sovereign",
@@ -18577,7 +18709,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ninja Sovereign \u2014 stealth striker"
+    "roleIdentity": "Ninja Sovereign — stealth striker"
   },
   {
     "id": "job_path_1340_world_crowned_ninja",
@@ -18634,17 +18766,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Ninja \u2014 stealth striker"
+    "roleIdentity": "World-Crowned Ninja — stealth striker"
   },
   {
     "id": "job_path_1341_ninja_adept",
     "excelId": 1341,
-    "name": "Ninja Adept",
+    "name": "Ninja Deep Focus",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1033_ninja",
-    "description": "Ninja Adept is a advanced Rogue class path branching from job 1033 ninja. It sharpens DEX, STR, adds a eclipse-cut combat rhythm, and focuses on ambush and critical tempo; its balancing drawback is fragile if pinned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Ninja Deep Focus is a distinct advanced job upgrade for Ninja. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 10,
       "str": 3
@@ -18657,12 +18789,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Ninja Adept-specific turn speed through ambush and critical tempo",
-      "Strong break damage within Rogue builds"
+      "Ninja Deep Focus focuses on stealth striker",
+      "Adds a specialized route for Ninja without copying nearby jobs",
+      "Ninja Adept-specific turn speed through ambush and critical tempo"
     ],
     "weaknesses": [
-      "Ninja Adept suffers from fragile if pinned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Ninja Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Ninja Adept suffers from fragile if pinned"
     ],
     "requirements": {
       "classLevel": 15
@@ -18689,7 +18823,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ninja Adept \u2014 stealth striker"
+    "roleIdentity": "Ninja Adept — stealth striker"
   },
   {
     "id": "job_path_1342_eclipse_ninja",
@@ -18744,7 +18878,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Ninja \u2014 stealth striker"
+    "roleIdentity": "Eclipse Ninja — stealth striker"
   },
   {
     "id": "job_path_1343_mythic_ninja",
@@ -18799,7 +18933,7 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Ninja \u2014 stealth striker"
+    "roleIdentity": "Mythic Ninja — stealth striker"
   },
   {
     "id": "job_path_1344_hidden_origin_ninja",
@@ -18856,17 +18990,17 @@ export const JOB_PATHS = [
     "overlapGroup": "stealth_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Ninja \u2014 stealth striker"
+    "roleIdentity": "Hidden Origin Ninja — stealth striker"
   },
   {
     "id": "job_path_1345_scout_vanguard",
     "excelId": 1345,
-    "name": "Scout Vanguard",
+    "name": "Scout Sunbreaker Form",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1034_scout",
-    "description": "Scout Vanguard is a advanced Rogue class path branching from job 1034 scout. It sharpens DEX, STR, adds a starfall combat rhythm, and focuses on counterattacks; its balancing drawback is dependency on gear slots. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Scout Sunbreaker Form is a distinct advanced job upgrade for Scout. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -18879,12 +19013,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Scout Vanguard-specific turn speed through element swapping",
-      "Strong break damage within Rogue builds"
+      "Scout Sunbreaker Form focuses on misc rogue",
+      "Adds a specialized route for Scout without copying nearby jobs",
+      "Scout Vanguard-specific turn speed through element swapping"
     ],
     "weaknesses": [
-      "Scout Vanguard suffers from inconsistent damage without setup",
-      "Needs support when fights demand the opposite of turn speed"
+      "Scout Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Scout Vanguard suffers from inconsistent damage without setup"
     ],
     "requirements": {
       "classLevel": 15
@@ -18911,7 +19047,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Scout Vanguard \u2014 misc rogue"
+    "roleIdentity": "Scout Vanguard — misc rogue"
   },
   {
     "id": "job_path_1346_scout_paragon",
@@ -18966,7 +19102,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Scout Paragon \u2014 misc rogue"
+    "roleIdentity": "Scout Paragon — misc rogue"
   },
   {
     "id": "job_path_1347_scout_sovereign",
@@ -19021,7 +19157,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Scout Sovereign \u2014 misc rogue"
+    "roleIdentity": "Scout Sovereign — misc rogue"
   },
   {
     "id": "job_path_1348_world_crowned_scout",
@@ -19078,17 +19214,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Scout \u2014 misc rogue"
+    "roleIdentity": "World-Crowned Scout — misc rogue"
   },
   {
     "id": "job_path_1349_scout_adept",
     "excelId": 1349,
-    "name": "Scout Adept",
+    "name": "Scout Perfected Course",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1034_scout",
-    "description": "Scout Adept is a advanced Rogue class path branching from job 1034 scout. It sharpens DEX, STR, adds a stormline combat rhythm, and focuses on party enabling; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Scout Perfected Course is a distinct advanced job upgrade for Scout. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -19101,12 +19237,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Scout Adept-specific turn speed through element swapping",
-      "Strong break damage within Rogue builds"
+      "Scout Perfected Course focuses on misc rogue",
+      "Adds a specialized route for Scout without copying nearby jobs",
+      "Scout Adept-specific turn speed through element swapping"
     ],
     "weaknesses": [
-      "Scout Adept suffers from limited party independence",
-      "Needs support when fights demand the opposite of turn speed"
+      "Scout Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Scout Adept suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -19133,7 +19271,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Scout Adept \u2014 misc rogue"
+    "roleIdentity": "Scout Adept — misc rogue"
   },
   {
     "id": "job_path_1350_eclipse_scout",
@@ -19188,7 +19326,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Scout \u2014 misc rogue"
+    "roleIdentity": "Eclipse Scout — misc rogue"
   },
   {
     "id": "job_path_1351_mythic_scout",
@@ -19243,7 +19381,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Scout \u2014 misc rogue"
+    "roleIdentity": "Mythic Scout — misc rogue"
   },
   {
     "id": "job_path_1352_hidden_origin_scout",
@@ -19300,17 +19438,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Scout \u2014 misc rogue"
+    "roleIdentity": "Hidden Origin Scout — misc rogue"
   },
   {
     "id": "job_path_1353_spy_vanguard",
     "excelId": 1353,
-    "name": "Spy Vanguard",
+    "name": "Spy Dragonstep Method",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1035_spy",
-    "description": "Spy Vanguard is a advanced Rogue class path branching from job 1035 spy. It sharpens DEX, STR, adds a void-breath combat rhythm, and focuses on party enabling; its balancing drawback is dependency on gear slots. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Spy Dragonstep Method is a distinct advanced job upgrade for Spy. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -19323,12 +19461,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Spy Vanguard-specific turn speed through shop/event efficiency",
-      "Strong break damage within Rogue builds"
+      "Spy Dragonstep Method focuses on misc rogue",
+      "Adds a specialized route for Spy without copying nearby jobs",
+      "Spy Vanguard-specific turn speed through shop/event efficiency"
     ],
     "weaknesses": [
-      "Spy Vanguard suffers from bad matchups into its counter element",
-      "Needs support when fights demand the opposite of turn speed"
+      "Spy Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Spy Vanguard suffers from bad matchups into its counter element"
     ],
     "requirements": {
       "classLevel": 15
@@ -19355,7 +19495,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spy Vanguard \u2014 misc rogue"
+    "roleIdentity": "Spy Vanguard — misc rogue"
   },
   {
     "id": "job_path_1354_spy_paragon",
@@ -19410,7 +19550,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spy Paragon \u2014 misc rogue"
+    "roleIdentity": "Spy Paragon — misc rogue"
   },
   {
     "id": "job_path_1355_spy_sovereign",
@@ -19465,7 +19605,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spy Sovereign \u2014 misc rogue"
+    "roleIdentity": "Spy Sovereign — misc rogue"
   },
   {
     "id": "job_path_1356_world_crowned_spy",
@@ -19522,17 +19662,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Spy \u2014 misc rogue"
+    "roleIdentity": "World-Crowned Spy — misc rogue"
   },
   {
     "id": "job_path_1357_spy_adept",
     "excelId": 1357,
-    "name": "Spy Adept",
+    "name": "Spy Secret Tempo",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1035_spy",
-    "description": "Spy Adept is a advanced Rogue class path branching from job 1035 spy. It sharpens DEX, STR, adds a starfall combat rhythm, and focuses on status exploitation; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Spy Secret Tempo is a distinct advanced job upgrade for Spy. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -19545,12 +19685,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Spy Adept-specific turn speed through boss safety",
-      "Strong break damage within Rogue builds"
+      "Spy Secret Tempo focuses on misc rogue",
+      "Adds a specialized route for Spy without copying nearby jobs",
+      "Spy Adept-specific turn speed through boss safety"
     ],
     "weaknesses": [
-      "Spy Adept suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of turn speed"
+      "Spy Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Spy Adept suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -19577,7 +19719,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spy Adept \u2014 misc rogue"
+    "roleIdentity": "Spy Adept — misc rogue"
   },
   {
     "id": "job_path_1358_eclipse_spy",
@@ -19632,7 +19774,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Spy \u2014 misc rogue"
+    "roleIdentity": "Eclipse Spy — misc rogue"
   },
   {
     "id": "job_path_1359_mythic_spy",
@@ -19687,7 +19829,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Spy \u2014 misc rogue"
+    "roleIdentity": "Mythic Spy — misc rogue"
   },
   {
     "id": "job_path_1360_hidden_origin_spy",
@@ -19744,17 +19886,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Spy \u2014 misc rogue"
+    "roleIdentity": "Hidden Origin Spy — misc rogue"
   },
   {
     "id": "job_path_1361_trickster_vanguard",
     "excelId": 1361,
-    "name": "Trickster Vanguard",
+    "name": "Trickster Iron Banner",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1036_trickster",
-    "description": "Trickster Vanguard is a advanced Rogue class path branching from job 1036 trickster. It sharpens DEX, STR, adds a beast-call combat rhythm, and focuses on boss safety; its balancing drawback is costly class-path requirements. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Trickster Iron Banner is a distinct advanced job upgrade for Trickster. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -19767,12 +19909,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Trickster Vanguard-specific turn speed through long-run stability",
-      "Strong break damage within Rogue builds"
+      "Trickster Iron Banner focuses on misc rogue",
+      "Adds a specialized route for Trickster without copying nearby jobs",
+      "Trickster Vanguard-specific turn speed through long-run stability"
     ],
     "weaknesses": [
-      "Trickster Vanguard suffers from slow early progression",
-      "Needs support when fights demand the opposite of turn speed"
+      "Trickster Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Trickster Vanguard suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -19799,7 +19943,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trickster Vanguard \u2014 misc rogue"
+    "roleIdentity": "Trickster Vanguard — misc rogue"
   },
   {
     "id": "job_path_1362_trickster_paragon",
@@ -19854,7 +19998,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trickster Paragon \u2014 misc rogue"
+    "roleIdentity": "Trickster Paragon — misc rogue"
   },
   {
     "id": "job_path_1363_trickster_sovereign",
@@ -19909,7 +20053,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trickster Sovereign \u2014 misc rogue"
+    "roleIdentity": "Trickster Sovereign — misc rogue"
   },
   {
     "id": "job_path_1364_world_crowned_trickster",
@@ -19966,17 +20110,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Trickster \u2014 misc rogue"
+    "roleIdentity": "World-Crowned Trickster — misc rogue"
   },
   {
     "id": "job_path_1365_trickster_adept",
     "excelId": 1365,
-    "name": "Trickster Adept",
+    "name": "Trickster Deep Focus",
     "category": "Rogue",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1036_trickster",
-    "description": "Trickster Adept is a advanced Rogue class path branching from job 1036 trickster. It sharpens DEX, STR, adds a rune-laced combat rhythm, and focuses on boss safety; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Trickster Deep Focus is a distinct advanced job upgrade for Trickster. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "str": 1
@@ -19989,12 +20133,14 @@ export const JOB_PATHS = [
       "v50_dagger_1"
     ],
     "strengths": [
-      "Trickster Adept-specific turn speed through long-run stability",
-      "Strong break damage within Rogue builds"
+      "Trickster Deep Focus focuses on misc rogue",
+      "Adds a specialized route for Trickster without copying nearby jobs",
+      "Trickster Adept-specific turn speed through long-run stability"
     ],
     "weaknesses": [
-      "Trickster Adept suffers from costly class-path requirements",
-      "Needs support when fights demand the opposite of turn speed"
+      "Trickster Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Trickster Adept suffers from costly class-path requirements"
     ],
     "requirements": {
       "classLevel": 15
@@ -20021,7 +20167,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trickster Adept \u2014 misc rogue"
+    "roleIdentity": "Trickster Adept — misc rogue"
   },
   {
     "id": "job_path_1366_eclipse_trickster",
@@ -20076,7 +20222,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Trickster \u2014 misc rogue"
+    "roleIdentity": "Eclipse Trickster — misc rogue"
   },
   {
     "id": "job_path_1367_mythic_trickster",
@@ -20131,7 +20277,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Trickster \u2014 misc rogue"
+    "roleIdentity": "Mythic Trickster — misc rogue"
   },
   {
     "id": "job_path_1368_hidden_origin_trickster",
@@ -20188,17 +20334,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_rogue",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Trickster \u2014 misc rogue"
+    "roleIdentity": "Hidden Origin Trickster — misc rogue"
   },
   {
     "id": "job_path_1369_blacksmith_vanguard",
     "excelId": 1369,
-    "name": "Blacksmith Vanguard",
+    "name": "Blacksmith Sunbreaker Form",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1037_blacksmith",
-    "description": "Blacksmith Vanguard is a advanced Crafting class path branching from job 1037 blacksmith. It sharpens INT, DEX, adds a sunbrand combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Blacksmith Sunbreaker Form is a distinct advanced job upgrade for Blacksmith. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -20214,12 +20360,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Blacksmith Vanguard-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Blacksmith Sunbreaker Form focuses on crafting utility",
+      "Adds a specialized route for Blacksmith without copying nearby jobs",
+      "Blacksmith Vanguard-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Blacksmith Vanguard suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Blacksmith Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Blacksmith Vanguard suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -20246,7 +20394,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blacksmith Vanguard \u2014 crafting utility"
+    "roleIdentity": "Blacksmith Vanguard — crafting utility"
   },
   {
     "id": "job_path_1370_blacksmith_paragon",
@@ -20304,7 +20452,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blacksmith Paragon \u2014 crafting utility"
+    "roleIdentity": "Blacksmith Paragon — crafting utility"
   },
   {
     "id": "job_path_1371_blacksmith_sovereign",
@@ -20362,7 +20510,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blacksmith Sovereign \u2014 crafting utility"
+    "roleIdentity": "Blacksmith Sovereign — crafting utility"
   },
   {
     "id": "job_path_1372_world_crowned_blacksmith",
@@ -20422,17 +20570,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Blacksmith \u2014 crafting utility"
+    "roleIdentity": "World-Crowned Blacksmith — crafting utility"
   },
   {
     "id": "job_path_1373_blacksmith_adept",
     "excelId": 1373,
-    "name": "Blacksmith Adept",
+    "name": "Blacksmith Perfected Course",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1037_blacksmith",
-    "description": "Blacksmith Adept is a advanced Crafting class path branching from job 1037 blacksmith. It sharpens INT, DEX, adds a sunbrand combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Blacksmith Perfected Course is a distinct advanced job upgrade for Blacksmith. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -20448,12 +20596,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Blacksmith Adept-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Blacksmith Perfected Course focuses on crafting utility",
+      "Adds a specialized route for Blacksmith without copying nearby jobs",
+      "Blacksmith Adept-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Blacksmith Adept suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Blacksmith Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Blacksmith Adept suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -20480,7 +20630,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blacksmith Adept \u2014 crafting utility"
+    "roleIdentity": "Blacksmith Adept — crafting utility"
   },
   {
     "id": "job_path_1374_eclipse_blacksmith",
@@ -20538,7 +20688,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Blacksmith \u2014 crafting utility"
+    "roleIdentity": "Eclipse Blacksmith — crafting utility"
   },
   {
     "id": "job_path_1375_mythic_blacksmith",
@@ -20596,7 +20746,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Blacksmith \u2014 crafting utility"
+    "roleIdentity": "Mythic Blacksmith — crafting utility"
   },
   {
     "id": "job_path_1376_hidden_origin_blacksmith",
@@ -20656,17 +20806,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Blacksmith \u2014 crafting utility"
+    "roleIdentity": "Hidden Origin Blacksmith — crafting utility"
   },
   {
     "id": "job_path_1377_alchemist_vanguard",
     "excelId": 1377,
-    "name": "Alchemist Vanguard",
+    "name": "Alchemist Dragonstep Method",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "alchemist",
-    "description": "Alchemist Vanguard is a advanced Crafting class path branching from alchemist. It sharpens INT, DEX, adds a ash-crowned combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Alchemist Dragonstep Method is a distinct advanced job upgrade for Alchemist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -20682,12 +20832,14 @@ export const JOB_PATHS = [
       "v50_catalyst_1"
     ],
     "strengths": [
-      "Alchemist Vanguard-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Alchemist Dragonstep Method focuses on crafting utility",
+      "Adds a specialized route for Alchemist without copying nearby jobs",
+      "Alchemist Vanguard-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Alchemist Vanguard suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Alchemist Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Alchemist Vanguard suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -20714,7 +20866,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Alchemist Vanguard \u2014 crafting utility"
+    "roleIdentity": "Alchemist Vanguard — crafting utility"
   },
   {
     "id": "job_path_1378_alchemist_paragon",
@@ -20772,7 +20924,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Alchemist Paragon \u2014 crafting utility"
+    "roleIdentity": "Alchemist Paragon — crafting utility"
   },
   {
     "id": "job_path_1379_alchemist_sovereign",
@@ -20830,7 +20982,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Alchemist Sovereign \u2014 crafting utility"
+    "roleIdentity": "Alchemist Sovereign — crafting utility"
   },
   {
     "id": "job_path_1380_world_crowned_alchemist",
@@ -20890,17 +21042,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Alchemist \u2014 crafting utility"
+    "roleIdentity": "World-Crowned Alchemist — crafting utility"
   },
   {
     "id": "job_path_1381_alchemist_adept",
     "excelId": 1381,
-    "name": "Alchemist Adept",
+    "name": "Alchemist Secret Tempo",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "alchemist",
-    "description": "Alchemist Adept is a advanced Crafting class path branching from alchemist. It sharpens INT, DEX, adds a rune-laced combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Alchemist Secret Tempo is a distinct advanced job upgrade for Alchemist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -20916,12 +21068,14 @@ export const JOB_PATHS = [
       "v50_catalyst_1"
     ],
     "strengths": [
-      "Alchemist Adept-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Alchemist Secret Tempo focuses on crafting utility",
+      "Adds a specialized route for Alchemist without copying nearby jobs",
+      "Alchemist Adept-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Alchemist Adept suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Alchemist Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Alchemist Adept suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -20948,7 +21102,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Alchemist Adept \u2014 crafting utility"
+    "roleIdentity": "Alchemist Adept — crafting utility"
   },
   {
     "id": "job_path_1382_eclipse_alchemist",
@@ -21006,7 +21160,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Alchemist \u2014 crafting utility"
+    "roleIdentity": "Eclipse Alchemist — crafting utility"
   },
   {
     "id": "job_path_1383_mythic_alchemist",
@@ -21064,7 +21218,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Alchemist \u2014 crafting utility"
+    "roleIdentity": "Mythic Alchemist — crafting utility"
   },
   {
     "id": "job_path_1384_hidden_origin_alchemist",
@@ -21124,17 +21278,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Alchemist \u2014 crafting utility"
+    "roleIdentity": "Hidden Origin Alchemist — crafting utility"
   },
   {
     "id": "job_path_1385_enchanter_vanguard",
     "excelId": 1385,
-    "name": "Enchanter Vanguard",
+    "name": "Enchanter Iron Banner",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1039_enchanter",
-    "description": "Enchanter Vanguard is a advanced Crafting class path branching from job 1039 enchanter. It sharpens INT, DEX, adds a eclipse-cut combat rhythm, and focuses on status exploitation; its balancing drawback is slow early progression. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Enchanter Iron Banner is a distinct advanced job upgrade for Enchanter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -21149,12 +21303,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Enchanter Vanguard-specific spell scaling through counterattacks",
-      "Strong accuracy and evasion within Crafting builds"
+      "Enchanter Iron Banner focuses on misc crafting",
+      "Adds a specialized route for Enchanter without copying nearby jobs",
+      "Enchanter Vanguard-specific spell scaling through counterattacks"
     ],
     "weaknesses": [
-      "Enchanter Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Enchanter Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Enchanter Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -21181,7 +21337,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Enchanter Vanguard \u2014 misc crafting"
+    "roleIdentity": "Enchanter Vanguard — misc crafting"
   },
   {
     "id": "job_path_1386_enchanter_paragon",
@@ -21238,7 +21394,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Enchanter Paragon \u2014 misc crafting"
+    "roleIdentity": "Enchanter Paragon — misc crafting"
   },
   {
     "id": "job_path_1387_enchanter_sovereign",
@@ -21295,7 +21451,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Enchanter Sovereign \u2014 misc crafting"
+    "roleIdentity": "Enchanter Sovereign — misc crafting"
   },
   {
     "id": "job_path_1388_world_crowned_enchanter",
@@ -21354,17 +21510,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Enchanter \u2014 misc crafting"
+    "roleIdentity": "World-Crowned Enchanter — misc crafting"
   },
   {
     "id": "job_path_1389_enchanter_adept",
     "excelId": 1389,
-    "name": "Enchanter Adept",
+    "name": "Enchanter Deep Focus",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1039_enchanter",
-    "description": "Enchanter Adept is a advanced Crafting class path branching from job 1039 enchanter. It sharpens INT, DEX, adds a starfall combat rhythm, and focuses on status exploitation; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Enchanter Deep Focus is a distinct advanced job upgrade for Enchanter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -21379,12 +21535,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Enchanter Adept-specific spell scaling through single-target burst",
-      "Strong accuracy and evasion within Crafting builds"
+      "Enchanter Deep Focus focuses on misc crafting",
+      "Adds a specialized route for Enchanter without copying nearby jobs",
+      "Enchanter Adept-specific spell scaling through single-target burst"
     ],
     "weaknesses": [
-      "Enchanter Adept suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Enchanter Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Enchanter Adept suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -21411,7 +21569,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Enchanter Adept \u2014 misc crafting"
+    "roleIdentity": "Enchanter Adept — misc crafting"
   },
   {
     "id": "job_path_1390_eclipse_enchanter",
@@ -21468,7 +21626,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Enchanter \u2014 misc crafting"
+    "roleIdentity": "Eclipse Enchanter — misc crafting"
   },
   {
     "id": "job_path_1391_mythic_enchanter",
@@ -21525,7 +21683,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Enchanter \u2014 misc crafting"
+    "roleIdentity": "Mythic Enchanter — misc crafting"
   },
   {
     "id": "job_path_1392_hidden_origin_enchanter",
@@ -21584,17 +21742,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Enchanter \u2014 misc crafting"
+    "roleIdentity": "Hidden Origin Enchanter — misc crafting"
   },
   {
     "id": "job_path_1393_engineer_vanguard",
     "excelId": 1393,
-    "name": "Engineer Vanguard",
+    "name": "Engineer Sunbreaker Form",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1040_engineer",
-    "description": "Engineer Vanguard is a advanced Crafting class path branching from job 1040 engineer. It sharpens INT, DEX, adds a grave-marked combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Engineer Sunbreaker Form is a distinct advanced job upgrade for Engineer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -21610,12 +21768,14 @@ export const JOB_PATHS = [
       "v50_catalyst_1"
     ],
     "strengths": [
-      "Engineer Vanguard-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Engineer Sunbreaker Form focuses on crafting utility",
+      "Adds a specialized route for Engineer without copying nearby jobs",
+      "Engineer Vanguard-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Engineer Vanguard suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Engineer Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Engineer Vanguard suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -21642,7 +21802,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Engineer Vanguard \u2014 crafting utility"
+    "roleIdentity": "Engineer Vanguard — crafting utility"
   },
   {
     "id": "job_path_1394_engineer_paragon",
@@ -21700,7 +21860,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Engineer Paragon \u2014 crafting utility"
+    "roleIdentity": "Engineer Paragon — crafting utility"
   },
   {
     "id": "job_path_1395_engineer_sovereign",
@@ -21758,7 +21918,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Engineer Sovereign \u2014 crafting utility"
+    "roleIdentity": "Engineer Sovereign — crafting utility"
   },
   {
     "id": "job_path_1396_world_crowned_engineer",
@@ -21818,17 +21978,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Engineer \u2014 crafting utility"
+    "roleIdentity": "World-Crowned Engineer — crafting utility"
   },
   {
     "id": "job_path_1397_engineer_adept",
     "excelId": 1397,
-    "name": "Engineer Adept",
+    "name": "Engineer Perfected Course",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1040_engineer",
-    "description": "Engineer Adept is a advanced Crafting class path branching from job 1040 engineer. It sharpens INT, DEX, adds a beast-call combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Engineer Perfected Course is a distinct advanced job upgrade for Engineer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -21844,12 +22004,14 @@ export const JOB_PATHS = [
       "v50_catalyst_1"
     ],
     "strengths": [
-      "Engineer Adept-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Engineer Perfected Course focuses on crafting utility",
+      "Adds a specialized route for Engineer without copying nearby jobs",
+      "Engineer Adept-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Engineer Adept suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Engineer Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Engineer Adept suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -21876,7 +22038,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Engineer Adept \u2014 crafting utility"
+    "roleIdentity": "Engineer Adept — crafting utility"
   },
   {
     "id": "job_path_1398_eclipse_engineer",
@@ -21934,7 +22096,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Engineer \u2014 crafting utility"
+    "roleIdentity": "Eclipse Engineer — crafting utility"
   },
   {
     "id": "job_path_1399_mythic_engineer",
@@ -21992,7 +22154,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Engineer \u2014 crafting utility"
+    "roleIdentity": "Mythic Engineer — crafting utility"
   },
   {
     "id": "job_path_1400_hidden_origin_engineer",
@@ -22052,17 +22214,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Engineer \u2014 crafting utility"
+    "roleIdentity": "Hidden Origin Engineer — crafting utility"
   },
   {
     "id": "job_path_1401_tailor_vanguard",
     "excelId": 1401,
-    "name": "Tailor Vanguard",
+    "name": "Tailor Dragonstep Method",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1041_tailor",
-    "description": "Tailor Vanguard is a advanced Crafting class path branching from job 1041 tailor. It sharpens INT, DEX, adds a clockwork combat rhythm, and focuses on single-target burst; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Tailor Dragonstep Method is a distinct advanced job upgrade for Tailor. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -22077,12 +22239,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Tailor Vanguard-specific spell scaling through summon synergy",
-      "Strong accuracy and evasion within Crafting builds"
+      "Tailor Dragonstep Method focuses on misc crafting",
+      "Adds a specialized route for Tailor without copying nearby jobs",
+      "Tailor Vanguard-specific spell scaling through summon synergy"
     ],
     "weaknesses": [
-      "Tailor Vanguard suffers from slow early progression",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Tailor Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Tailor Vanguard suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -22109,7 +22273,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tailor Vanguard \u2014 misc crafting"
+    "roleIdentity": "Tailor Vanguard — misc crafting"
   },
   {
     "id": "job_path_1402_tailor_paragon",
@@ -22166,7 +22330,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tailor Paragon \u2014 misc crafting"
+    "roleIdentity": "Tailor Paragon — misc crafting"
   },
   {
     "id": "job_path_1403_tailor_sovereign",
@@ -22223,7 +22387,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tailor Sovereign \u2014 misc crafting"
+    "roleIdentity": "Tailor Sovereign — misc crafting"
   },
   {
     "id": "job_path_1404_world_crowned_tailor",
@@ -22282,17 +22446,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Tailor \u2014 misc crafting"
+    "roleIdentity": "World-Crowned Tailor — misc crafting"
   },
   {
     "id": "job_path_1405_tailor_adept",
     "excelId": 1405,
-    "name": "Tailor Adept",
+    "name": "Tailor Secret Tempo",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1041_tailor",
-    "description": "Tailor Adept is a advanced Crafting class path branching from job 1041 tailor. It sharpens INT, DEX, adds a rune-laced combat rhythm, and focuses on single-target burst; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Tailor Secret Tempo is a distinct advanced job upgrade for Tailor. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -22307,12 +22471,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Tailor Adept-specific spell scaling through critical timing",
-      "Strong accuracy and evasion within Crafting builds"
+      "Tailor Secret Tempo focuses on misc crafting",
+      "Adds a specialized route for Tailor without copying nearby jobs",
+      "Tailor Adept-specific spell scaling through critical timing"
     ],
     "weaknesses": [
-      "Tailor Adept suffers from bad matchups into its counter element",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Tailor Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Tailor Adept suffers from bad matchups into its counter element"
     ],
     "requirements": {
       "classLevel": 15
@@ -22339,7 +22505,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tailor Adept \u2014 misc crafting"
+    "roleIdentity": "Tailor Adept — misc crafting"
   },
   {
     "id": "job_path_1406_eclipse_tailor",
@@ -22396,7 +22562,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Tailor \u2014 misc crafting"
+    "roleIdentity": "Eclipse Tailor — misc crafting"
   },
   {
     "id": "job_path_1407_mythic_tailor",
@@ -22453,7 +22619,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Tailor \u2014 misc crafting"
+    "roleIdentity": "Mythic Tailor — misc crafting"
   },
   {
     "id": "job_path_1408_hidden_origin_tailor",
@@ -22512,17 +22678,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Tailor \u2014 misc crafting"
+    "roleIdentity": "Hidden Origin Tailor — misc crafting"
   },
   {
     "id": "job_path_1409_chef_vanguard",
     "excelId": 1409,
-    "name": "Chef Vanguard",
+    "name": "Chef Iron Banner",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1042_chef",
-    "description": "Chef Vanguard is a advanced Crafting class path branching from job 1042 chef. It sharpens INT, DEX, adds a starfall combat rhythm, and focuses on defensive uptime; its balancing drawback is bad matchups into its counter element. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Chef Iron Banner is a distinct advanced job upgrade for Chef. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -22537,12 +22703,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Chef Vanguard-specific spell scaling through long-run stability",
-      "Strong accuracy and evasion within Crafting builds"
+      "Chef Iron Banner focuses on misc crafting",
+      "Adds a specialized route for Chef without copying nearby jobs",
+      "Chef Vanguard-specific spell scaling through long-run stability"
     ],
     "weaknesses": [
-      "Chef Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Chef Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Chef Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -22569,7 +22737,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Chef Vanguard \u2014 misc crafting"
+    "roleIdentity": "Chef Vanguard — misc crafting"
   },
   {
     "id": "job_path_1410_chef_paragon",
@@ -22626,7 +22794,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Chef Paragon \u2014 misc crafting"
+    "roleIdentity": "Chef Paragon — misc crafting"
   },
   {
     "id": "job_path_1411_chef_sovereign",
@@ -22683,7 +22851,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Chef Sovereign \u2014 misc crafting"
+    "roleIdentity": "Chef Sovereign — misc crafting"
   },
   {
     "id": "job_path_1412_world_crowned_chef",
@@ -22742,17 +22910,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Chef \u2014 misc crafting"
+    "roleIdentity": "World-Crowned Chef — misc crafting"
   },
   {
     "id": "job_path_1413_chef_adept",
     "excelId": 1413,
-    "name": "Chef Adept",
+    "name": "Chef Deep Focus",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1042_chef",
-    "description": "Chef Adept is a advanced Crafting class path branching from job 1042 chef. It sharpens INT, DEX, adds a beast-call combat rhythm, and focuses on floor-clearing consistency; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Chef Deep Focus is a distinct advanced job upgrade for Chef. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -22767,12 +22935,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Chef Adept-specific spell scaling through high-risk finishing moves",
-      "Strong accuracy and evasion within Crafting builds"
+      "Chef Deep Focus focuses on misc crafting",
+      "Adds a specialized route for Chef without copying nearby jobs",
+      "Chef Adept-specific spell scaling through high-risk finishing moves"
     ],
     "weaknesses": [
-      "Chef Adept suffers from weak recovery after missed turns",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Chef Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Chef Adept suffers from weak recovery after missed turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -22799,7 +22969,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Chef Adept \u2014 misc crafting"
+    "roleIdentity": "Chef Adept — misc crafting"
   },
   {
     "id": "job_path_1414_eclipse_chef",
@@ -22856,7 +23026,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Chef \u2014 misc crafting"
+    "roleIdentity": "Eclipse Chef — misc crafting"
   },
   {
     "id": "job_path_1415_mythic_chef",
@@ -22913,7 +23083,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Chef \u2014 misc crafting"
+    "roleIdentity": "Mythic Chef — misc crafting"
   },
   {
     "id": "job_path_1416_hidden_origin_chef",
@@ -22972,17 +23142,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Chef \u2014 misc crafting"
+    "roleIdentity": "Hidden Origin Chef — misc crafting"
   },
   {
     "id": "job_path_1417_appraiser_vanguard",
     "excelId": 1417,
-    "name": "Appraiser Vanguard",
+    "name": "Appraiser Sunbreaker Form",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1043_appraiser",
-    "description": "Appraiser Vanguard is a advanced Crafting class path branching from job 1043 appraiser. It sharpens INT, DEX, adds a starfall combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Appraiser Sunbreaker Form is a distinct advanced job upgrade for Appraiser. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -22997,12 +23167,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Appraiser Vanguard-specific spell scaling through critical timing",
-      "Strong accuracy and evasion within Crafting builds"
+      "Appraiser Sunbreaker Form focuses on misc crafting",
+      "Adds a specialized route for Appraiser without copying nearby jobs",
+      "Appraiser Vanguard-specific spell scaling through critical timing"
     ],
     "weaknesses": [
-      "Appraiser Vanguard suffers from slow early progression",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Appraiser Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Appraiser Vanguard suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -23029,7 +23201,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Appraiser Vanguard \u2014 misc crafting"
+    "roleIdentity": "Appraiser Vanguard — misc crafting"
   },
   {
     "id": "job_path_1418_appraiser_paragon",
@@ -23086,7 +23258,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Appraiser Paragon \u2014 misc crafting"
+    "roleIdentity": "Appraiser Paragon — misc crafting"
   },
   {
     "id": "job_path_1419_appraiser_sovereign",
@@ -23143,7 +23315,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Appraiser Sovereign \u2014 misc crafting"
+    "roleIdentity": "Appraiser Sovereign — misc crafting"
   },
   {
     "id": "job_path_1420_world_crowned_appraiser",
@@ -23202,17 +23374,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Appraiser \u2014 misc crafting"
+    "roleIdentity": "World-Crowned Appraiser — misc crafting"
   },
   {
     "id": "job_path_1421_appraiser_adept",
     "excelId": 1421,
-    "name": "Appraiser Adept",
+    "name": "Appraiser Perfected Course",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1043_appraiser",
-    "description": "Appraiser Adept is a advanced Crafting class path branching from job 1043 appraiser. It sharpens INT, DEX, adds a starfall combat rhythm, and focuses on party enabling; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Appraiser Perfected Course is a distinct advanced job upgrade for Appraiser. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 3,
       "dex": 3,
@@ -23227,12 +23399,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Appraiser Adept-specific spell scaling through critical timing",
-      "Strong accuracy and evasion within Crafting builds"
+      "Appraiser Perfected Course focuses on misc crafting",
+      "Adds a specialized route for Appraiser without copying nearby jobs",
+      "Appraiser Adept-specific spell scaling through critical timing"
     ],
     "weaknesses": [
-      "Appraiser Adept suffers from limited party independence",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Appraiser Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Appraiser Adept suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -23259,7 +23433,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Appraiser Adept \u2014 misc crafting"
+    "roleIdentity": "Appraiser Adept — misc crafting"
   },
   {
     "id": "job_path_1422_eclipse_appraiser",
@@ -23316,7 +23490,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Appraiser \u2014 misc crafting"
+    "roleIdentity": "Eclipse Appraiser — misc crafting"
   },
   {
     "id": "job_path_1423_mythic_appraiser",
@@ -23373,7 +23547,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Appraiser \u2014 misc crafting"
+    "roleIdentity": "Mythic Appraiser — misc crafting"
   },
   {
     "id": "job_path_1424_hidden_origin_appraiser",
@@ -23432,17 +23606,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_crafting",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Appraiser \u2014 misc crafting"
+    "roleIdentity": "Hidden Origin Appraiser — misc crafting"
   },
   {
     "id": "job_path_1425_merchant_vanguard",
     "excelId": 1425,
-    "name": "Merchant Vanguard",
+    "name": "Merchant Dragonstep Method",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1044_merchant",
-    "description": "Merchant Vanguard is a advanced Crafting class path branching from job 1044 merchant. It sharpens INT, DEX, adds a mirror-step combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Merchant Dragonstep Method is a distinct advanced job upgrade for Merchant. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -23458,12 +23632,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Merchant Vanguard-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Merchant Dragonstep Method focuses on crafting utility",
+      "Adds a specialized route for Merchant without copying nearby jobs",
+      "Merchant Vanguard-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Merchant Vanguard suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Merchant Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Merchant Vanguard suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -23490,7 +23666,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merchant Vanguard \u2014 crafting utility"
+    "roleIdentity": "Merchant Vanguard — crafting utility"
   },
   {
     "id": "job_path_1426_merchant_paragon",
@@ -23548,7 +23724,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merchant Paragon \u2014 crafting utility"
+    "roleIdentity": "Merchant Paragon — crafting utility"
   },
   {
     "id": "job_path_1427_merchant_sovereign",
@@ -23606,7 +23782,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merchant Sovereign \u2014 crafting utility"
+    "roleIdentity": "Merchant Sovereign — crafting utility"
   },
   {
     "id": "job_path_1428_world_crowned_merchant",
@@ -23666,17 +23842,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Merchant \u2014 crafting utility"
+    "roleIdentity": "World-Crowned Merchant — crafting utility"
   },
   {
     "id": "job_path_1429_merchant_adept",
     "excelId": 1429,
-    "name": "Merchant Adept",
+    "name": "Merchant Secret Tempo",
     "category": "Crafting",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1044_merchant",
-    "description": "Merchant Adept is a advanced Crafting class path branching from job 1044 merchant. It sharpens INT, DEX, adds a ash-crowned combat rhythm, and focuses on prepared item advantage; its balancing drawback is needs setup time. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Merchant Secret Tempo is a distinct advanced job upgrade for Merchant. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 5,
       "dex": 5,
@@ -23692,12 +23868,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Merchant Adept-specific spell scaling through prepared item advantage",
-      "Strong accuracy and evasion within Crafting builds"
+      "Merchant Secret Tempo focuses on crafting utility",
+      "Adds a specialized route for Merchant without copying nearby jobs",
+      "Merchant Adept-specific spell scaling through prepared item advantage"
     ],
     "weaknesses": [
-      "Merchant Adept suffers from needs setup time",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Merchant Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Merchant Adept suffers from needs setup time"
     ],
     "requirements": {
       "classLevel": 15
@@ -23724,7 +23902,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merchant Adept \u2014 crafting utility"
+    "roleIdentity": "Merchant Adept — crafting utility"
   },
   {
     "id": "job_path_1430_eclipse_merchant",
@@ -23782,7 +23960,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Merchant \u2014 crafting utility"
+    "roleIdentity": "Eclipse Merchant — crafting utility"
   },
   {
     "id": "job_path_1431_mythic_merchant",
@@ -23840,7 +24018,7 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Merchant \u2014 crafting utility"
+    "roleIdentity": "Mythic Merchant — crafting utility"
   },
   {
     "id": "job_path_1432_hidden_origin_merchant",
@@ -23900,17 +24078,17 @@ export const JOB_PATHS = [
     "overlapGroup": "crafting_utility",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Merchant \u2014 crafting utility"
+    "roleIdentity": "Hidden Origin Merchant — crafting utility"
   },
   {
     "id": "job_path_1433_saint_vanguard",
     "excelId": 1433,
-    "name": "Saint Vanguard",
+    "name": "Saint Iron Banner",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1045_saint",
-    "description": "Saint Vanguard is a advanced Holy class path branching from job 1045 saint. It sharpens WIS, CON, adds a beast-call combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Saint Iron Banner is a distinct advanced job upgrade for Saint. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -23924,12 +24102,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Saint Vanguard-specific recovery/control through critical timing",
-      "Strong defensive uptime within Holy builds"
+      "Saint Iron Banner focuses on misc holy",
+      "Adds a specialized route for Saint without copying nearby jobs",
+      "Saint Vanguard-specific recovery/control through critical timing"
     ],
     "weaknesses": [
-      "Saint Vanguard suffers from weak recovery after missed turns",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Saint Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Saint Vanguard suffers from weak recovery after missed turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -23956,7 +24136,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Saint Vanguard \u2014 misc holy"
+    "roleIdentity": "Saint Vanguard — misc holy"
   },
   {
     "id": "job_path_1434_saint_paragon",
@@ -24012,7 +24192,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Saint Paragon \u2014 misc holy"
+    "roleIdentity": "Saint Paragon — misc holy"
   },
   {
     "id": "job_path_1435_saint_sovereign",
@@ -24068,7 +24248,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Saint Sovereign \u2014 misc holy"
+    "roleIdentity": "Saint Sovereign — misc holy"
   },
   {
     "id": "job_path_1436_world_crowned_saint",
@@ -24126,17 +24306,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Saint \u2014 misc holy"
+    "roleIdentity": "World-Crowned Saint — misc holy"
   },
   {
     "id": "job_path_1437_saint_adept",
     "excelId": 1437,
-    "name": "Saint Adept",
+    "name": "Saint Deep Focus",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1045_saint",
-    "description": "Saint Adept is a advanced Holy class path branching from job 1045 saint. It sharpens WIS, CON, adds a rune-laced combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is dependency on gear slots. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Saint Deep Focus is a distinct advanced job upgrade for Saint. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -24150,12 +24330,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Saint Adept-specific recovery/control through party enabling",
-      "Strong defensive uptime within Holy builds"
+      "Saint Deep Focus focuses on misc holy",
+      "Adds a specialized route for Saint without copying nearby jobs",
+      "Saint Adept-specific recovery/control through party enabling"
     ],
     "weaknesses": [
-      "Saint Adept suffers from low control resistance",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Saint Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Saint Adept suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -24182,7 +24364,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Saint Adept \u2014 misc holy"
+    "roleIdentity": "Saint Adept — misc holy"
   },
   {
     "id": "job_path_1438_eclipse_saint",
@@ -24238,7 +24420,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Saint \u2014 misc holy"
+    "roleIdentity": "Eclipse Saint — misc holy"
   },
   {
     "id": "job_path_1439_mythic_saint",
@@ -24294,7 +24476,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Saint \u2014 misc holy"
+    "roleIdentity": "Mythic Saint — misc holy"
   },
   {
     "id": "job_path_1440_hidden_origin_saint",
@@ -24352,17 +24534,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Saint \u2014 misc holy"
+    "roleIdentity": "Hidden Origin Saint — misc holy"
   },
   {
     "id": "job_path_1441_exorcist_vanguard",
     "excelId": 1441,
-    "name": "Exorcist Vanguard",
+    "name": "Exorcist Sunbreaker Form",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1046_exorcist",
-    "description": "Exorcist Vanguard is a advanced Holy class path branching from job 1046 exorcist. It sharpens WIS, CON, adds a eclipse-cut combat rhythm, and focuses on resource recycling; its balancing drawback is dependency on gear slots. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Exorcist Sunbreaker Form is a distinct advanced job upgrade for Exorcist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -24376,12 +24558,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Exorcist Vanguard-specific recovery/control through shop/event efficiency",
-      "Strong defensive uptime within Holy builds"
+      "Exorcist Sunbreaker Form focuses on misc holy",
+      "Adds a specialized route for Exorcist without copying nearby jobs",
+      "Exorcist Vanguard-specific recovery/control through shop/event efficiency"
     ],
     "weaknesses": [
-      "Exorcist Vanguard suffers from slow early progression",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Exorcist Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Exorcist Vanguard suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -24408,7 +24592,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Exorcist Vanguard \u2014 misc holy"
+    "roleIdentity": "Exorcist Vanguard — misc holy"
   },
   {
     "id": "job_path_1442_exorcist_paragon",
@@ -24464,7 +24648,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Exorcist Paragon \u2014 misc holy"
+    "roleIdentity": "Exorcist Paragon — misc holy"
   },
   {
     "id": "job_path_1443_exorcist_sovereign",
@@ -24520,7 +24704,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Exorcist Sovereign \u2014 misc holy"
+    "roleIdentity": "Exorcist Sovereign — misc holy"
   },
   {
     "id": "job_path_1444_world_crowned_exorcist",
@@ -24578,17 +24762,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Exorcist \u2014 misc holy"
+    "roleIdentity": "World-Crowned Exorcist — misc holy"
   },
   {
     "id": "job_path_1445_exorcist_adept",
     "excelId": 1445,
-    "name": "Exorcist Adept",
+    "name": "Exorcist Perfected Course",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1046_exorcist",
-    "description": "Exorcist Adept is a advanced Holy class path branching from job 1046 exorcist. It sharpens WIS, CON, adds a rune-laced combat rhythm, and focuses on element swapping; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Exorcist Perfected Course is a distinct advanced job upgrade for Exorcist. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -24602,12 +24786,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Exorcist Adept-specific recovery/control through defensive uptime",
-      "Strong defensive uptime within Holy builds"
+      "Exorcist Perfected Course focuses on misc holy",
+      "Adds a specialized route for Exorcist without copying nearby jobs",
+      "Exorcist Adept-specific recovery/control through defensive uptime"
     ],
     "weaknesses": [
-      "Exorcist Adept suffers from inconsistent damage without setup",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Exorcist Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Exorcist Adept suffers from inconsistent damage without setup"
     ],
     "requirements": {
       "classLevel": 15
@@ -24634,7 +24820,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Exorcist Adept \u2014 misc holy"
+    "roleIdentity": "Exorcist Adept — misc holy"
   },
   {
     "id": "job_path_1446_eclipse_exorcist",
@@ -24690,7 +24876,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Exorcist \u2014 misc holy"
+    "roleIdentity": "Eclipse Exorcist — misc holy"
   },
   {
     "id": "job_path_1447_mythic_exorcist",
@@ -24746,7 +24932,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Exorcist \u2014 misc holy"
+    "roleIdentity": "Mythic Exorcist — misc holy"
   },
   {
     "id": "job_path_1448_hidden_origin_exorcist",
@@ -24804,17 +24990,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Exorcist \u2014 misc holy"
+    "roleIdentity": "Hidden Origin Exorcist — misc holy"
   },
   {
     "id": "job_path_1449_templar_vanguard",
     "excelId": 1449,
-    "name": "Templar Vanguard",
+    "name": "Templar Dragonstep Method",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1047_templar",
-    "description": "Templar Vanguard is a advanced Holy class path branching from job 1047 templar. It sharpens WIS, CON, adds a iron-tempo combat rhythm, and focuses on resource recycling; its balancing drawback is bad matchups into its counter element. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Templar Dragonstep Method is a distinct advanced job upgrade for Templar. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -24828,12 +25014,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Templar Vanguard-specific recovery/control through boss safety",
-      "Strong defensive uptime within Holy builds"
+      "Templar Dragonstep Method focuses on misc holy",
+      "Adds a specialized route for Templar without copying nearby jobs",
+      "Templar Vanguard-specific recovery/control through boss safety"
     ],
     "weaknesses": [
-      "Templar Vanguard suffers from fragility when stunned",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Templar Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Templar Vanguard suffers from fragility when stunned"
     ],
     "requirements": {
       "classLevel": 15
@@ -24860,7 +25048,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Templar Vanguard \u2014 misc holy"
+    "roleIdentity": "Templar Vanguard — misc holy"
   },
   {
     "id": "job_path_1450_templar_paragon",
@@ -24916,7 +25104,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Templar Paragon \u2014 misc holy"
+    "roleIdentity": "Templar Paragon — misc holy"
   },
   {
     "id": "job_path_1451_templar_sovereign",
@@ -24972,7 +25160,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Templar Sovereign \u2014 misc holy"
+    "roleIdentity": "Templar Sovereign — misc holy"
   },
   {
     "id": "job_path_1452_world_crowned_templar",
@@ -25030,17 +25218,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Templar \u2014 misc holy"
+    "roleIdentity": "World-Crowned Templar — misc holy"
   },
   {
     "id": "job_path_1453_templar_adept",
     "excelId": 1453,
-    "name": "Templar Adept",
+    "name": "Templar Secret Tempo",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1047_templar",
-    "description": "Templar Adept is a advanced Holy class path branching from job 1047 templar. It sharpens WIS, CON, adds a grave-marked combat rhythm, and focuses on pre-battle setup; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Templar Secret Tempo is a distinct advanced job upgrade for Templar. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -25054,12 +25242,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Templar Adept-specific recovery/control through elite control",
-      "Strong defensive uptime within Holy builds"
+      "Templar Secret Tempo focuses on misc holy",
+      "Adds a specialized route for Templar without copying nearby jobs",
+      "Templar Adept-specific recovery/control through elite control"
     ],
     "weaknesses": [
-      "Templar Adept suffers from high resource demand",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Templar Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Templar Adept suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -25086,7 +25276,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Templar Adept \u2014 misc holy"
+    "roleIdentity": "Templar Adept — misc holy"
   },
   {
     "id": "job_path_1454_eclipse_templar",
@@ -25142,7 +25332,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Templar \u2014 misc holy"
+    "roleIdentity": "Eclipse Templar — misc holy"
   },
   {
     "id": "job_path_1455_mythic_templar",
@@ -25198,7 +25388,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Templar \u2014 misc holy"
+    "roleIdentity": "Mythic Templar — misc holy"
   },
   {
     "id": "job_path_1456_hidden_origin_templar",
@@ -25256,17 +25446,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Templar \u2014 misc holy"
+    "roleIdentity": "Hidden Origin Templar — misc holy"
   },
   {
     "id": "job_path_1457_oracle_vanguard",
     "excelId": 1457,
-    "name": "Oracle Vanguard",
+    "name": "Oracle Iron Banner",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1048_oracle",
-    "description": "Oracle Vanguard is a advanced Holy class path branching from job 1048 oracle. It sharpens WIS, CON, adds a stormline combat rhythm, and focuses on status exploitation; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Oracle Iron Banner is a distinct advanced job upgrade for Oracle. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -25280,12 +25470,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Oracle Vanguard-specific recovery/control through long-run stability",
-      "Strong defensive uptime within Holy builds"
+      "Oracle Iron Banner focuses on misc holy",
+      "Adds a specialized route for Oracle without copying nearby jobs",
+      "Oracle Vanguard-specific recovery/control through long-run stability"
     ],
     "weaknesses": [
-      "Oracle Vanguard suffers from slow early progression",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Oracle Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Oracle Vanguard suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -25312,7 +25504,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oracle Vanguard \u2014 misc holy"
+    "roleIdentity": "Oracle Vanguard — misc holy"
   },
   {
     "id": "job_path_1458_oracle_paragon",
@@ -25368,7 +25560,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oracle Paragon \u2014 misc holy"
+    "roleIdentity": "Oracle Paragon — misc holy"
   },
   {
     "id": "job_path_1459_oracle_sovereign",
@@ -25424,7 +25616,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oracle Sovereign \u2014 misc holy"
+    "roleIdentity": "Oracle Sovereign — misc holy"
   },
   {
     "id": "job_path_1460_world_crowned_oracle",
@@ -25482,17 +25674,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Oracle \u2014 misc holy"
+    "roleIdentity": "World-Crowned Oracle — misc holy"
   },
   {
     "id": "job_path_1461_oracle_adept",
     "excelId": 1461,
-    "name": "Oracle Adept",
+    "name": "Oracle Deep Focus",
     "category": "Holy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1048_oracle",
-    "description": "Oracle Adept is a advanced Holy class path branching from job 1048 oracle. It sharpens WIS, CON, adds a oathbound combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Oracle Deep Focus is a distinct advanced job upgrade for Oracle. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "wis": 4,
       "cha": 1,
@@ -25506,12 +25698,14 @@ export const JOB_PATHS = [
       "v50_holy_1"
     ],
     "strengths": [
-      "Oracle Adept-specific recovery/control through long-run stability",
-      "Strong defensive uptime within Holy builds"
+      "Oracle Deep Focus focuses on misc holy",
+      "Adds a specialized route for Oracle without copying nearby jobs",
+      "Oracle Adept-specific recovery/control through long-run stability"
     ],
     "weaknesses": [
-      "Oracle Adept suffers from high resource demand",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Oracle Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Oracle Adept suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -25538,7 +25732,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oracle Adept \u2014 misc holy"
+    "roleIdentity": "Oracle Adept — misc holy"
   },
   {
     "id": "job_path_1462_eclipse_oracle",
@@ -25594,7 +25788,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Oracle \u2014 misc holy"
+    "roleIdentity": "Eclipse Oracle — misc holy"
   },
   {
     "id": "job_path_1463_mythic_oracle",
@@ -25650,7 +25844,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Oracle \u2014 misc holy"
+    "roleIdentity": "Mythic Oracle — misc holy"
   },
   {
     "id": "job_path_1464_hidden_origin_oracle",
@@ -25708,17 +25902,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_holy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Oracle \u2014 misc holy"
+    "roleIdentity": "Hidden Origin Oracle — misc holy"
   },
   {
     "id": "job_path_1465_necromancer_vanguard",
     "excelId": 1465,
-    "name": "Necromancer Vanguard",
+    "name": "Necromancer Sunbreaker Form",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1049_necromancer",
-    "description": "Necromancer Vanguard is a advanced Dark class path branching from job 1049 necromancer. It sharpens INT, CHA, adds a sunbrand combat rhythm, and focuses on drain and attrition; its balancing drawback is radiant weakness. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Necromancer Sunbreaker Form is a distinct advanced job upgrade for Necromancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 4,
@@ -25734,12 +25928,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Necromancer Vanguard-specific spell scaling through drain and attrition",
-      "Strong buff/debuff leverage within Dark builds"
+      "Necromancer Sunbreaker Form focuses on death magic",
+      "Adds a specialized route for Necromancer without copying nearby jobs",
+      "Necromancer Vanguard-specific spell scaling through drain and attrition"
     ],
     "weaknesses": [
-      "Necromancer Vanguard suffers from radiant weakness",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Necromancer Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Necromancer Vanguard suffers from radiant weakness"
     ],
     "requirements": {
       "classLevel": 15
@@ -25766,7 +25962,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Necromancer Vanguard \u2014 death magic"
+    "roleIdentity": "Necromancer Vanguard — death magic"
   },
   {
     "id": "job_path_1466_necromancer_paragon",
@@ -25824,7 +26020,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Necromancer Paragon \u2014 death magic"
+    "roleIdentity": "Necromancer Paragon — death magic"
   },
   {
     "id": "job_path_1467_necromancer_sovereign",
@@ -25882,7 +26078,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Necromancer Sovereign \u2014 death magic"
+    "roleIdentity": "Necromancer Sovereign — death magic"
   },
   {
     "id": "job_path_1468_world_crowned_necromancer",
@@ -25942,17 +26138,17 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Necromancer \u2014 death magic"
+    "roleIdentity": "World-Crowned Necromancer — death magic"
   },
   {
     "id": "job_path_1469_necromancer_adept",
     "excelId": 1469,
-    "name": "Necromancer Adept",
+    "name": "Necromancer Perfected Course",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1049_necromancer",
-    "description": "Necromancer Adept is a advanced Dark class path branching from job 1049 necromancer. It sharpens INT, CHA, adds a thorn-script combat rhythm, and focuses on drain and attrition; its balancing drawback is radiant weakness. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Necromancer Perfected Course is a distinct advanced job upgrade for Necromancer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 4,
@@ -25968,12 +26164,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Necromancer Adept-specific spell scaling through drain and attrition",
-      "Strong buff/debuff leverage within Dark builds"
+      "Necromancer Perfected Course focuses on death magic",
+      "Adds a specialized route for Necromancer without copying nearby jobs",
+      "Necromancer Adept-specific spell scaling through drain and attrition"
     ],
     "weaknesses": [
-      "Necromancer Adept suffers from radiant weakness",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Necromancer Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Necromancer Adept suffers from radiant weakness"
     ],
     "requirements": {
       "classLevel": 15
@@ -26000,7 +26198,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Necromancer Adept \u2014 death magic"
+    "roleIdentity": "Necromancer Adept — death magic"
   },
   {
     "id": "job_path_1470_eclipse_necromancer",
@@ -26058,7 +26256,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Necromancer \u2014 death magic"
+    "roleIdentity": "Eclipse Necromancer — death magic"
   },
   {
     "id": "job_path_1471_mythic_necromancer",
@@ -26116,7 +26314,7 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Necromancer \u2014 death magic"
+    "roleIdentity": "Mythic Necromancer — death magic"
   },
   {
     "id": "job_path_1472_hidden_origin_necromancer",
@@ -26176,17 +26374,17 @@ export const JOB_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Necromancer \u2014 death magic"
+    "roleIdentity": "Hidden Origin Necromancer — death magic"
   },
   {
     "id": "job_path_1473_warlock_vanguard",
     "excelId": 1473,
-    "name": "Warlock Vanguard",
+    "name": "Warlock Dragonstep Method",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1050_warlock",
-    "description": "Warlock Vanguard is a advanced Dark class path branching from job 1050 warlock. It sharpens INT, CHA, adds a void-breath combat rhythm, and focuses on curse stacking; its balancing drawback is holy counters. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Warlock Dragonstep Method is a distinct advanced job upgrade for Warlock. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 5,
@@ -26200,12 +26398,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Warlock Vanguard-specific spell scaling through curse stacking",
-      "Strong buff/debuff leverage within Dark builds"
+      "Warlock Dragonstep Method focuses on curse caster",
+      "Adds a specialized route for Warlock without copying nearby jobs",
+      "Warlock Vanguard-specific spell scaling through curse stacking"
     ],
     "weaknesses": [
-      "Warlock Vanguard suffers from holy counters",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Warlock Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Warlock Vanguard suffers from holy counters"
     ],
     "requirements": {
       "classLevel": 15
@@ -26232,7 +26432,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warlock Vanguard \u2014 curse caster"
+    "roleIdentity": "Warlock Vanguard — curse caster"
   },
   {
     "id": "job_path_1474_warlock_paragon",
@@ -26288,7 +26488,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warlock Paragon \u2014 curse caster"
+    "roleIdentity": "Warlock Paragon — curse caster"
   },
   {
     "id": "job_path_1475_warlock_sovereign",
@@ -26344,7 +26544,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warlock Sovereign \u2014 curse caster"
+    "roleIdentity": "Warlock Sovereign — curse caster"
   },
   {
     "id": "job_path_1476_world_crowned_warlock",
@@ -26402,17 +26602,17 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Warlock \u2014 curse caster"
+    "roleIdentity": "World-Crowned Warlock — curse caster"
   },
   {
     "id": "job_path_1477_warlock_adept",
     "excelId": 1477,
-    "name": "Warlock Adept",
+    "name": "Warlock Secret Tempo",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1050_warlock",
-    "description": "Warlock Adept is a advanced Dark class path branching from job 1050 warlock. It sharpens INT, CHA, adds a mirror-step combat rhythm, and focuses on curse stacking; its balancing drawback is holy counters. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Warlock Secret Tempo is a distinct advanced job upgrade for Warlock. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 6,
       "cha": 5,
@@ -26426,12 +26626,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Warlock Adept-specific spell scaling through curse stacking",
-      "Strong buff/debuff leverage within Dark builds"
+      "Warlock Secret Tempo focuses on curse caster",
+      "Adds a specialized route for Warlock without copying nearby jobs",
+      "Warlock Adept-specific spell scaling through curse stacking"
     ],
     "weaknesses": [
-      "Warlock Adept suffers from holy counters",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Warlock Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Warlock Adept suffers from holy counters"
     ],
     "requirements": {
       "classLevel": 15
@@ -26458,7 +26660,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Warlock Adept \u2014 curse caster"
+    "roleIdentity": "Warlock Adept — curse caster"
   },
   {
     "id": "job_path_1478_eclipse_warlock",
@@ -26514,7 +26716,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Warlock \u2014 curse caster"
+    "roleIdentity": "Eclipse Warlock — curse caster"
   },
   {
     "id": "job_path_1479_mythic_warlock",
@@ -26570,7 +26772,7 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Warlock \u2014 curse caster"
+    "roleIdentity": "Mythic Warlock — curse caster"
   },
   {
     "id": "job_path_1480_hidden_origin_warlock",
@@ -26628,17 +26830,17 @@ export const JOB_PATHS = [
     "overlapGroup": "curse_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Warlock \u2014 curse caster"
+    "roleIdentity": "Hidden Origin Warlock — curse caster"
   },
   {
     "id": "job_path_1481_dark_knight_vanguard",
     "excelId": 1481,
-    "name": "Dark Knight Vanguard",
+    "name": "Dark Knight Iron Banner",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1051_dark_knight",
-    "description": "Dark Knight Vanguard is a advanced Dark class path branching from job 1051 dark knight. It sharpens INT, CON, adds a gold-thread combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dark Knight Iron Banner is a distinct advanced job upgrade for Dark Knight. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 4,
       "cha": 3,
@@ -26653,12 +26855,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Dark Knight Vanguard-specific spell scaling through defensive formation play",
-      "Strong defensive uptime within Dark builds"
+      "Dark Knight Iron Banner focuses on defender",
+      "Adds a specialized route for Dark Knight without copying nearby jobs",
+      "Dark Knight Vanguard-specific spell scaling through defensive formation play"
     ],
     "weaknesses": [
-      "Dark Knight Vanguard suffers from slower clear speed",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Dark Knight Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dark Knight Vanguard suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -26685,7 +26889,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Knight Vanguard \u2014 defender"
+    "roleIdentity": "Dark Knight Vanguard — defender"
   },
   {
     "id": "job_path_1482_dark_knight_paragon",
@@ -26742,7 +26946,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Knight Paragon \u2014 defender"
+    "roleIdentity": "Dark Knight Paragon — defender"
   },
   {
     "id": "job_path_1483_dark_knight_sovereign",
@@ -26799,7 +27003,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Knight Sovereign \u2014 defender"
+    "roleIdentity": "Dark Knight Sovereign — defender"
   },
   {
     "id": "job_path_1484_world_crowned_dark_knight",
@@ -26858,17 +27062,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Dark Knight \u2014 defender"
+    "roleIdentity": "World-Crowned Dark Knight — defender"
   },
   {
     "id": "job_path_1485_dark_knight_adept",
     "excelId": 1485,
-    "name": "Dark Knight Adept",
+    "name": "Dark Knight Deep Focus",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1051_dark_knight",
-    "description": "Dark Knight Adept is a advanced Dark class path branching from job 1051 dark knight. It sharpens INT, CON, adds a starfall combat rhythm, and focuses on defensive formation play; its balancing drawback is slower clear speed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dark Knight Deep Focus is a distinct advanced job upgrade for Dark Knight. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 4,
       "cha": 3,
@@ -26883,12 +27087,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Dark Knight Adept-specific spell scaling through defensive formation play",
-      "Strong defensive uptime within Dark builds"
+      "Dark Knight Deep Focus focuses on defender",
+      "Adds a specialized route for Dark Knight without copying nearby jobs",
+      "Dark Knight Adept-specific spell scaling through defensive formation play"
     ],
     "weaknesses": [
-      "Dark Knight Adept suffers from slower clear speed",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Dark Knight Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dark Knight Adept suffers from slower clear speed"
     ],
     "requirements": {
       "classLevel": 15
@@ -26915,7 +27121,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Knight Adept \u2014 defender"
+    "roleIdentity": "Dark Knight Adept — defender"
   },
   {
     "id": "job_path_1486_eclipse_dark_knight",
@@ -26972,7 +27178,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Dark Knight \u2014 defender"
+    "roleIdentity": "Eclipse Dark Knight — defender"
   },
   {
     "id": "job_path_1487_mythic_dark_knight",
@@ -27029,7 +27235,7 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dark Knight \u2014 defender"
+    "roleIdentity": "Mythic Dark Knight — defender"
   },
   {
     "id": "job_path_1488_hidden_origin_dark_knight",
@@ -27088,17 +27294,17 @@ export const JOB_PATHS = [
     "overlapGroup": "defender",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Dark Knight \u2014 defender"
+    "roleIdentity": "Hidden Origin Dark Knight — defender"
   },
   {
     "id": "job_path_1489_curse_mage_vanguard",
     "excelId": 1489,
-    "name": "Curse Mage Vanguard",
+    "name": "Curse Mage Sunbreaker Form",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1052_curse_mage",
-    "description": "Curse Mage Vanguard is a advanced Dark class path branching from job 1052 curse mage. It sharpens INT, CHA, adds a mirror-step combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Curse Mage Sunbreaker Form is a distinct advanced job upgrade for Curse Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 8,
       "cha": 3
@@ -27111,12 +27317,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Curse Mage Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong buff/debuff leverage within Dark builds"
+      "Curse Mage Sunbreaker Form focuses on arcane caster",
+      "Adds a specialized route for Curse Mage without copying nearby jobs",
+      "Curse Mage Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Curse Mage Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Curse Mage Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Curse Mage Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -27143,7 +27351,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Curse Mage Vanguard \u2014 arcane caster"
+    "roleIdentity": "Curse Mage Vanguard — arcane caster"
   },
   {
     "id": "job_path_1490_curse_mage_paragon",
@@ -27198,7 +27406,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Curse Mage Paragon \u2014 arcane caster"
+    "roleIdentity": "Curse Mage Paragon — arcane caster"
   },
   {
     "id": "job_path_1491_curse_mage_sovereign",
@@ -27253,7 +27461,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Curse Mage Sovereign \u2014 arcane caster"
+    "roleIdentity": "Curse Mage Sovereign — arcane caster"
   },
   {
     "id": "job_path_1492_world_crowned_curse_mage",
@@ -27310,17 +27518,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Curse Mage \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Curse Mage — arcane caster"
   },
   {
     "id": "job_path_1493_curse_mage_adept",
     "excelId": 1493,
-    "name": "Curse Mage Adept",
+    "name": "Curse Mage Perfected Course",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1052_curse_mage",
-    "description": "Curse Mage Adept is a advanced Dark class path branching from job 1052 curse mage. It sharpens INT, CHA, adds a sunbrand combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Curse Mage Perfected Course is a distinct advanced job upgrade for Curse Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 8,
       "cha": 3
@@ -27333,12 +27541,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Curse Mage Adept-specific spell scaling through spell burst sequencing",
-      "Strong buff/debuff leverage within Dark builds"
+      "Curse Mage Perfected Course focuses on arcane caster",
+      "Adds a specialized route for Curse Mage without copying nearby jobs",
+      "Curse Mage Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Curse Mage Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Curse Mage Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Curse Mage Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -27365,7 +27575,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Curse Mage Adept \u2014 arcane caster"
+    "roleIdentity": "Curse Mage Adept — arcane caster"
   },
   {
     "id": "job_path_1494_eclipse_curse_mage",
@@ -27420,7 +27630,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Curse Mage \u2014 arcane caster"
+    "roleIdentity": "Eclipse Curse Mage — arcane caster"
   },
   {
     "id": "job_path_1495_mythic_curse_mage",
@@ -27475,7 +27685,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Curse Mage \u2014 arcane caster"
+    "roleIdentity": "Mythic Curse Mage — arcane caster"
   },
   {
     "id": "job_path_1496_hidden_origin_curse_mage",
@@ -27532,17 +27742,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Curse Mage \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Curse Mage — arcane caster"
   },
   {
     "id": "job_path_1497_blood_mage_vanguard",
     "excelId": 1497,
-    "name": "Blood Mage Vanguard",
+    "name": "Blood Mage Dragonstep Method",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1053_blood_mage",
-    "description": "Blood Mage Vanguard is a advanced Dark class path branching from job 1053 blood mage. It sharpens INT, CHA, adds a void-breath combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Blood Mage Dragonstep Method is a distinct advanced job upgrade for Blood Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 8,
       "cha": 3
@@ -27555,12 +27765,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Blood Mage Vanguard-specific spell scaling through spell burst sequencing",
-      "Strong buff/debuff leverage within Dark builds"
+      "Blood Mage Dragonstep Method focuses on arcane caster",
+      "Adds a specialized route for Blood Mage without copying nearby jobs",
+      "Blood Mage Vanguard-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Blood Mage Vanguard suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Blood Mage Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Blood Mage Vanguard suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -27587,7 +27799,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blood Mage Vanguard \u2014 arcane caster"
+    "roleIdentity": "Blood Mage Vanguard — arcane caster"
   },
   {
     "id": "job_path_1498_blood_mage_paragon",
@@ -27642,7 +27854,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blood Mage Paragon \u2014 arcane caster"
+    "roleIdentity": "Blood Mage Paragon — arcane caster"
   },
   {
     "id": "job_path_1499_blood_mage_sovereign",
@@ -27697,7 +27909,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blood Mage Sovereign \u2014 arcane caster"
+    "roleIdentity": "Blood Mage Sovereign — arcane caster"
   },
   {
     "id": "job_path_1500_world_crowned_blood_mage",
@@ -27754,17 +27966,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Blood Mage \u2014 arcane caster"
+    "roleIdentity": "World-Crowned Blood Mage — arcane caster"
   },
   {
     "id": "job_path_1501_blood_mage_adept",
     "excelId": 1501,
-    "name": "Blood Mage Adept",
+    "name": "Blood Mage Secret Tempo",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1053_blood_mage",
-    "description": "Blood Mage Adept is a advanced Dark class path branching from job 1053 blood mage. It sharpens INT, CHA, adds a quickdraw combat rhythm, and focuses on spell burst sequencing; its balancing drawback is low stamina defense. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Blood Mage Secret Tempo is a distinct advanced job upgrade for Blood Mage. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 8,
       "cha": 3
@@ -27777,12 +27989,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Blood Mage Adept-specific spell scaling through spell burst sequencing",
-      "Strong buff/debuff leverage within Dark builds"
+      "Blood Mage Secret Tempo focuses on arcane caster",
+      "Adds a specialized route for Blood Mage without copying nearby jobs",
+      "Blood Mage Adept-specific spell scaling through spell burst sequencing"
     ],
     "weaknesses": [
-      "Blood Mage Adept suffers from low stamina defense",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Blood Mage Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Blood Mage Adept suffers from low stamina defense"
     ],
     "requirements": {
       "classLevel": 15
@@ -27809,7 +28023,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Blood Mage Adept \u2014 arcane caster"
+    "roleIdentity": "Blood Mage Adept — arcane caster"
   },
   {
     "id": "job_path_1502_eclipse_blood_mage",
@@ -27864,7 +28078,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Blood Mage \u2014 arcane caster"
+    "roleIdentity": "Eclipse Blood Mage — arcane caster"
   },
   {
     "id": "job_path_1503_mythic_blood_mage",
@@ -27919,7 +28133,7 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Blood Mage \u2014 arcane caster"
+    "roleIdentity": "Mythic Blood Mage — arcane caster"
   },
   {
     "id": "job_path_1504_hidden_origin_blood_mage",
@@ -27976,17 +28190,17 @@ export const JOB_PATHS = [
     "overlapGroup": "arcane_caster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Blood Mage \u2014 arcane caster"
+    "roleIdentity": "Hidden Origin Blood Mage — arcane caster"
   },
   {
     "id": "job_path_1505_reaper_vanguard",
     "excelId": 1505,
-    "name": "Reaper Vanguard",
+    "name": "Reaper Iron Banner",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1054_reaper",
-    "description": "Reaper Vanguard is a advanced Dark class path branching from job 1054 reaper. It sharpens INT, CHA, adds a void-breath combat rhythm, and focuses on element swapping; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Reaper Iron Banner is a distinct advanced job upgrade for Reaper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 4,
       "cha": 3,
@@ -28000,12 +28214,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Reaper Vanguard-specific spell scaling through high-risk finishing moves",
-      "Strong buff/debuff leverage within Dark builds"
+      "Reaper Iron Banner focuses on misc dark",
+      "Adds a specialized route for Reaper without copying nearby jobs",
+      "Reaper Vanguard-specific spell scaling through high-risk finishing moves"
     ],
     "weaknesses": [
-      "Reaper Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Reaper Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Reaper Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -28032,7 +28248,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Reaper Vanguard \u2014 misc dark"
+    "roleIdentity": "Reaper Vanguard — misc dark"
   },
   {
     "id": "job_path_1506_reaper_paragon",
@@ -28088,7 +28304,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Reaper Paragon \u2014 misc dark"
+    "roleIdentity": "Reaper Paragon — misc dark"
   },
   {
     "id": "job_path_1507_reaper_sovereign",
@@ -28144,7 +28360,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Reaper Sovereign \u2014 misc dark"
+    "roleIdentity": "Reaper Sovereign — misc dark"
   },
   {
     "id": "job_path_1508_world_crowned_reaper",
@@ -28202,17 +28418,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Reaper \u2014 misc dark"
+    "roleIdentity": "World-Crowned Reaper — misc dark"
   },
   {
     "id": "job_path_1509_reaper_adept",
     "excelId": 1509,
-    "name": "Reaper Adept",
+    "name": "Reaper Deep Focus",
     "category": "Dark",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1054_reaper",
-    "description": "Reaper Adept is a advanced Dark class path branching from job 1054 reaper. It sharpens INT, CHA, adds a oathbound combat rhythm, and focuses on counterattacks; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Reaper Deep Focus is a distinct advanced job upgrade for Reaper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "int": 4,
       "cha": 3,
@@ -28226,12 +28442,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Reaper Adept-specific spell scaling through high-risk finishing moves",
-      "Strong buff/debuff leverage within Dark builds"
+      "Reaper Deep Focus focuses on misc dark",
+      "Adds a specialized route for Reaper without copying nearby jobs",
+      "Reaper Adept-specific spell scaling through high-risk finishing moves"
     ],
     "weaknesses": [
-      "Reaper Adept suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of spell scaling"
+      "Reaper Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Reaper Adept suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -28258,7 +28476,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Reaper Adept \u2014 misc dark"
+    "roleIdentity": "Reaper Adept — misc dark"
   },
   {
     "id": "job_path_1510_eclipse_reaper",
@@ -28314,7 +28532,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Reaper \u2014 misc dark"
+    "roleIdentity": "Eclipse Reaper — misc dark"
   },
   {
     "id": "job_path_1511_mythic_reaper",
@@ -28370,7 +28588,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Reaper \u2014 misc dark"
+    "roleIdentity": "Mythic Reaper — misc dark"
   },
   {
     "id": "job_path_1512_hidden_origin_reaper",
@@ -28428,17 +28646,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_dark",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Reaper \u2014 misc dark"
+    "roleIdentity": "Hidden Origin Reaper — misc dark"
   },
   {
     "id": "job_path_1513_demon_lord_vanguard",
     "excelId": 1513,
-    "name": "Demon Lord Vanguard",
+    "name": "Demon Lord Sunbreaker Form",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1055_demon_lord",
-    "description": "Demon Lord Vanguard is a advanced Monster class path branching from job 1055 demon lord. It sharpens CON, STR, adds a grave-marked combat rhythm, and focuses on summon synergy; its balancing drawback is slow early progression. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Demon Lord Sunbreaker Form is a distinct advanced job upgrade for Demon Lord. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -28452,12 +28670,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Demon Lord Vanguard-specific durability through party enabling",
-      "Strong break damage within Monster builds"
+      "Demon Lord Sunbreaker Form focuses on misc monster",
+      "Adds a specialized route for Demon Lord without copying nearby jobs",
+      "Demon Lord Vanguard-specific durability through party enabling"
     ],
     "weaknesses": [
-      "Demon Lord Vanguard suffers from low control resistance",
-      "Needs support when fights demand the opposite of durability"
+      "Demon Lord Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Demon Lord Vanguard suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -28484,7 +28704,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demon Lord Vanguard \u2014 misc monster"
+    "roleIdentity": "Demon Lord Vanguard — misc monster"
   },
   {
     "id": "job_path_1514_demon_lord_paragon",
@@ -28540,7 +28760,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demon Lord Paragon \u2014 misc monster"
+    "roleIdentity": "Demon Lord Paragon — misc monster"
   },
   {
     "id": "job_path_1515_demon_lord_sovereign",
@@ -28596,7 +28816,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demon Lord Sovereign \u2014 misc monster"
+    "roleIdentity": "Demon Lord Sovereign — misc monster"
   },
   {
     "id": "job_path_1516_world_crowned_demon_lord",
@@ -28654,17 +28874,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Demon Lord \u2014 misc monster"
+    "roleIdentity": "World-Crowned Demon Lord — misc monster"
   },
   {
     "id": "job_path_1517_demon_lord_adept",
     "excelId": 1517,
-    "name": "Demon Lord Adept",
+    "name": "Demon Lord Perfected Course",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1055_demon_lord",
-    "description": "Demon Lord Adept is a advanced Monster class path branching from job 1055 demon lord. It sharpens CON, STR, adds a eclipse-cut combat rhythm, and focuses on shop/event efficiency; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Demon Lord Perfected Course is a distinct advanced job upgrade for Demon Lord. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -28678,12 +28898,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Demon Lord Adept-specific durability through elite control",
-      "Strong break damage within Monster builds"
+      "Demon Lord Perfected Course focuses on misc monster",
+      "Adds a specialized route for Demon Lord without copying nearby jobs",
+      "Demon Lord Adept-specific durability through elite control"
     ],
     "weaknesses": [
-      "Demon Lord Adept suffers from low control resistance",
-      "Needs support when fights demand the opposite of durability"
+      "Demon Lord Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Demon Lord Adept suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -28710,7 +28932,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demon Lord Adept \u2014 misc monster"
+    "roleIdentity": "Demon Lord Adept — misc monster"
   },
   {
     "id": "job_path_1518_eclipse_demon_lord",
@@ -28766,7 +28988,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Demon Lord \u2014 misc monster"
+    "roleIdentity": "Eclipse Demon Lord — misc monster"
   },
   {
     "id": "job_path_1519_mythic_demon_lord",
@@ -28822,7 +29044,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Demon Lord \u2014 misc monster"
+    "roleIdentity": "Mythic Demon Lord — misc monster"
   },
   {
     "id": "job_path_1520_hidden_origin_demon_lord",
@@ -28880,17 +29102,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Demon Lord \u2014 misc monster"
+    "roleIdentity": "Hidden Origin Demon Lord — misc monster"
   },
   {
     "id": "job_path_1521_vampire_lord_vanguard",
     "excelId": 1521,
-    "name": "Vampire Lord Vanguard",
+    "name": "Vampire Lord Dragonstep Method",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1056_vampire_lord",
-    "description": "Vampire Lord Vanguard is a advanced Monster class path branching from job 1056 vampire lord. It sharpens CON, STR, adds a gold-thread combat rhythm, and focuses on critical timing; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Vampire Lord Dragonstep Method is a distinct advanced job upgrade for Vampire Lord. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -28904,12 +29126,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Vampire Lord Vanguard-specific durability through floor-clearing consistency",
-      "Strong break damage within Monster builds"
+      "Vampire Lord Dragonstep Method focuses on misc monster",
+      "Adds a specialized route for Vampire Lord without copying nearby jobs",
+      "Vampire Lord Vanguard-specific durability through floor-clearing consistency"
     ],
     "weaknesses": [
-      "Vampire Lord Vanguard suffers from weak recovery after missed turns",
-      "Needs support when fights demand the opposite of durability"
+      "Vampire Lord Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Vampire Lord Vanguard suffers from weak recovery after missed turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -28936,7 +29160,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Lord Vanguard \u2014 misc monster"
+    "roleIdentity": "Vampire Lord Vanguard — misc monster"
   },
   {
     "id": "job_path_1522_vampire_lord_paragon",
@@ -28992,7 +29216,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Lord Paragon \u2014 misc monster"
+    "roleIdentity": "Vampire Lord Paragon — misc monster"
   },
   {
     "id": "job_path_1523_vampire_lord_sovereign",
@@ -29048,7 +29272,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Lord Sovereign \u2014 misc monster"
+    "roleIdentity": "Vampire Lord Sovereign — misc monster"
   },
   {
     "id": "job_path_1524_world_crowned_vampire_lord",
@@ -29106,17 +29330,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Vampire Lord \u2014 misc monster"
+    "roleIdentity": "World-Crowned Vampire Lord — misc monster"
   },
   {
     "id": "job_path_1525_vampire_lord_adept",
     "excelId": 1525,
-    "name": "Vampire Lord Adept",
+    "name": "Vampire Lord Secret Tempo",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1056_vampire_lord",
-    "description": "Vampire Lord Adept is a advanced Monster class path branching from job 1056 vampire lord. It sharpens CON, STR, adds a mirror-step combat rhythm, and focuses on long-run stability; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Vampire Lord Secret Tempo is a distinct advanced job upgrade for Vampire Lord. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -29130,12 +29354,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Vampire Lord Adept-specific durability through party enabling",
-      "Strong break damage within Monster builds"
+      "Vampire Lord Secret Tempo focuses on misc monster",
+      "Adds a specialized route for Vampire Lord without copying nearby jobs",
+      "Vampire Lord Adept-specific durability through party enabling"
     ],
     "weaknesses": [
-      "Vampire Lord Adept suffers from limited party independence",
-      "Needs support when fights demand the opposite of durability"
+      "Vampire Lord Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Vampire Lord Adept suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -29162,7 +29388,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Lord Adept \u2014 misc monster"
+    "roleIdentity": "Vampire Lord Adept — misc monster"
   },
   {
     "id": "job_path_1526_eclipse_vampire_lord",
@@ -29218,7 +29444,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Vampire Lord \u2014 misc monster"
+    "roleIdentity": "Eclipse Vampire Lord — misc monster"
   },
   {
     "id": "job_path_1527_mythic_vampire_lord",
@@ -29274,7 +29500,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Vampire Lord \u2014 misc monster"
+    "roleIdentity": "Mythic Vampire Lord — misc monster"
   },
   {
     "id": "job_path_1528_hidden_origin_vampire_lord",
@@ -29332,17 +29558,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Vampire Lord \u2014 misc monster"
+    "roleIdentity": "Hidden Origin Vampire Lord — misc monster"
   },
   {
     "id": "job_path_1529_oni_warrior_vanguard",
     "excelId": 1529,
-    "name": "Oni Warrior Vanguard",
+    "name": "Oni Warrior Iron Banner",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1057_oni_warrior",
-    "description": "Oni Warrior Vanguard is a advanced Monster class path branching from job 1057 oni warrior. It sharpens STR, CON, adds a void-breath combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Oni Warrior Iron Banner is a distinct advanced job upgrade for Oni Warrior. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "con": 5,
@@ -29356,12 +29582,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Oni Warrior Vanguard-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Monster builds"
+      "Oni Warrior Iron Banner focuses on heavy melee",
+      "Adds a specialized route for Oni Warrior without copying nearby jobs",
+      "Oni Warrior Vanguard-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Oni Warrior Vanguard suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Oni Warrior Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Oni Warrior Vanguard suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -29388,7 +29616,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Warrior Vanguard \u2014 heavy melee"
+    "roleIdentity": "Oni Warrior Vanguard — heavy melee"
   },
   {
     "id": "job_path_1530_oni_warrior_paragon",
@@ -29444,7 +29672,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Warrior Paragon \u2014 heavy melee"
+    "roleIdentity": "Oni Warrior Paragon — heavy melee"
   },
   {
     "id": "job_path_1531_oni_warrior_sovereign",
@@ -29500,7 +29728,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Warrior Sovereign \u2014 heavy melee"
+    "roleIdentity": "Oni Warrior Sovereign — heavy melee"
   },
   {
     "id": "job_path_1532_world_crowned_oni_warrior",
@@ -29558,17 +29786,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Oni Warrior \u2014 heavy melee"
+    "roleIdentity": "World-Crowned Oni Warrior — heavy melee"
   },
   {
     "id": "job_path_1533_oni_warrior_adept",
     "excelId": 1533,
-    "name": "Oni Warrior Adept",
+    "name": "Oni Warrior Deep Focus",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1057_oni_warrior",
-    "description": "Oni Warrior Adept is a advanced Monster class path branching from job 1057 oni warrior. It sharpens STR, CON, adds a clockwork combat rhythm, and focuses on heavy melee assault; its balancing drawback is weak magical reach. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Oni Warrior Deep Focus is a distinct advanced job upgrade for Oni Warrior. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 5,
       "con": 5,
@@ -29582,12 +29810,14 @@ export const JOB_PATHS = [
       "v50_dark_1"
     ],
     "strengths": [
-      "Oni Warrior Adept-specific weapon pressure through heavy melee assault",
-      "Strong defensive uptime within Monster builds"
+      "Oni Warrior Deep Focus focuses on heavy melee",
+      "Adds a specialized route for Oni Warrior without copying nearby jobs",
+      "Oni Warrior Adept-specific weapon pressure through heavy melee assault"
     ],
     "weaknesses": [
-      "Oni Warrior Adept suffers from weak magical reach",
-      "Needs support when fights demand the opposite of weapon pressure"
+      "Oni Warrior Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Oni Warrior Adept suffers from weak magical reach"
     ],
     "requirements": {
       "classLevel": 15
@@ -29614,7 +29844,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Warrior Adept \u2014 heavy melee"
+    "roleIdentity": "Oni Warrior Adept — heavy melee"
   },
   {
     "id": "job_path_1534_eclipse_oni_warrior",
@@ -29670,7 +29900,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Oni Warrior \u2014 heavy melee"
+    "roleIdentity": "Eclipse Oni Warrior — heavy melee"
   },
   {
     "id": "job_path_1535_mythic_oni_warrior",
@@ -29726,7 +29956,7 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Oni Warrior \u2014 heavy melee"
+    "roleIdentity": "Mythic Oni Warrior — heavy melee"
   },
   {
     "id": "job_path_1536_hidden_origin_oni_warrior",
@@ -29784,17 +30014,17 @@ export const JOB_PATHS = [
     "overlapGroup": "heavy_melee",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Oni Warrior \u2014 heavy melee"
+    "roleIdentity": "Hidden Origin Oni Warrior — heavy melee"
   },
   {
     "id": "job_path_1537_goblin_champion_vanguard",
     "excelId": 1537,
-    "name": "Goblin Champion Vanguard",
+    "name": "Goblin Champion Sunbreaker Form",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1058_goblin_champion",
-    "description": "Goblin Champion Vanguard is a advanced Monster class path branching from job 1058 goblin champion. It sharpens CON, STR, adds a thorn-script combat rhythm, and focuses on resource recycling; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Goblin Champion Sunbreaker Form is a distinct advanced job upgrade for Goblin Champion. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -29808,12 +30038,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Goblin Champion Vanguard-specific durability through status exploitation",
-      "Strong break damage within Monster builds"
+      "Goblin Champion Sunbreaker Form focuses on misc monster",
+      "Adds a specialized route for Goblin Champion without copying nearby jobs",
+      "Goblin Champion Vanguard-specific durability through status exploitation"
     ],
     "weaknesses": [
-      "Goblin Champion Vanguard suffers from high resource demand",
-      "Needs support when fights demand the opposite of durability"
+      "Goblin Champion Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Goblin Champion Vanguard suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -29840,7 +30072,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Champion Vanguard \u2014 misc monster"
+    "roleIdentity": "Goblin Champion Vanguard — misc monster"
   },
   {
     "id": "job_path_1538_goblin_champion_paragon",
@@ -29896,7 +30128,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Champion Paragon \u2014 misc monster"
+    "roleIdentity": "Goblin Champion Paragon — misc monster"
   },
   {
     "id": "job_path_1539_goblin_champion_sovereign",
@@ -29952,7 +30184,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Champion Sovereign \u2014 misc monster"
+    "roleIdentity": "Goblin Champion Sovereign — misc monster"
   },
   {
     "id": "job_path_1540_world_crowned_goblin_champion",
@@ -30010,17 +30242,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Goblin Champion \u2014 misc monster"
+    "roleIdentity": "World-Crowned Goblin Champion — misc monster"
   },
   {
     "id": "job_path_1541_goblin_champion_adept",
     "excelId": 1541,
-    "name": "Goblin Champion Adept",
+    "name": "Goblin Champion Perfected Course",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1058_goblin_champion",
-    "description": "Goblin Champion Adept is a advanced Monster class path branching from job 1058 goblin champion. It sharpens CON, STR, adds a ash-crowned combat rhythm, and focuses on summon synergy; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Goblin Champion Perfected Course is a distinct advanced job upgrade for Goblin Champion. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -30034,12 +30266,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Goblin Champion Adept-specific durability through floor-clearing consistency",
-      "Strong break damage within Monster builds"
+      "Goblin Champion Perfected Course focuses on misc monster",
+      "Adds a specialized route for Goblin Champion without copying nearby jobs",
+      "Goblin Champion Adept-specific durability through floor-clearing consistency"
     ],
     "weaknesses": [
-      "Goblin Champion Adept suffers from weak recovery after missed turns",
-      "Needs support when fights demand the opposite of durability"
+      "Goblin Champion Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Goblin Champion Adept suffers from weak recovery after missed turns"
     ],
     "requirements": {
       "classLevel": 15
@@ -30066,7 +30300,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Champion Adept \u2014 misc monster"
+    "roleIdentity": "Goblin Champion Adept — misc monster"
   },
   {
     "id": "job_path_1542_eclipse_goblin_champion",
@@ -30122,7 +30356,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Goblin Champion \u2014 misc monster"
+    "roleIdentity": "Eclipse Goblin Champion — misc monster"
   },
   {
     "id": "job_path_1543_mythic_goblin_champion",
@@ -30178,7 +30412,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Goblin Champion \u2014 misc monster"
+    "roleIdentity": "Mythic Goblin Champion — misc monster"
   },
   {
     "id": "job_path_1544_hidden_origin_goblin_champion",
@@ -30236,17 +30470,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Goblin Champion \u2014 misc monster"
+    "roleIdentity": "Hidden Origin Goblin Champion — misc monster"
   },
   {
     "id": "job_path_1545_slime_predator_vanguard",
     "excelId": 1545,
-    "name": "Slime Predator Vanguard",
+    "name": "Slime Predator Dragonstep Method",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1059_slime_predator",
-    "description": "Slime Predator Vanguard is a advanced Monster class path branching from job 1059 slime predator. It sharpens CON, STR, adds a quickdraw combat rhythm, and focuses on resource recycling; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Slime Predator Dragonstep Method is a distinct advanced job upgrade for Slime Predator. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -30260,12 +30494,14 @@ export const JOB_PATHS = [
       "sk_hunter_step"
     ],
     "strengths": [
-      "Slime Predator Vanguard-specific durability through defensive uptime",
-      "Strong break damage within Monster builds"
+      "Slime Predator Dragonstep Method focuses on misc monster",
+      "Adds a specialized route for Slime Predator without copying nearby jobs",
+      "Slime Predator Vanguard-specific durability through defensive uptime"
     ],
     "weaknesses": [
-      "Slime Predator Vanguard suffers from bad matchups into its counter element",
-      "Needs support when fights demand the opposite of durability"
+      "Slime Predator Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Slime Predator Vanguard suffers from bad matchups into its counter element"
     ],
     "requirements": {
       "classLevel": 15
@@ -30292,7 +30528,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Predator Vanguard \u2014 misc monster"
+    "roleIdentity": "Slime Predator Vanguard — misc monster"
   },
   {
     "id": "job_path_1546_slime_predator_paragon",
@@ -30348,7 +30584,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Predator Paragon \u2014 misc monster"
+    "roleIdentity": "Slime Predator Paragon — misc monster"
   },
   {
     "id": "job_path_1547_slime_predator_sovereign",
@@ -30404,7 +30640,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Predator Sovereign \u2014 misc monster"
+    "roleIdentity": "Slime Predator Sovereign — misc monster"
   },
   {
     "id": "job_path_1548_world_crowned_slime_predator",
@@ -30462,17 +30698,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Slime Predator \u2014 misc monster"
+    "roleIdentity": "World-Crowned Slime Predator — misc monster"
   },
   {
     "id": "job_path_1549_slime_predator_adept",
     "excelId": 1549,
-    "name": "Slime Predator Adept",
+    "name": "Slime Predator Secret Tempo",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1059_slime_predator",
-    "description": "Slime Predator Adept is a advanced Monster class path branching from job 1059 slime predator. It sharpens CON, STR, adds a quickdraw combat rhythm, and focuses on summon synergy; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Slime Predator Secret Tempo is a distinct advanced job upgrade for Slime Predator. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -30486,12 +30722,14 @@ export const JOB_PATHS = [
       "sk_hunter_step"
     ],
     "strengths": [
-      "Slime Predator Adept-specific durability through elite control",
-      "Strong break damage within Monster builds"
+      "Slime Predator Secret Tempo focuses on misc monster",
+      "Adds a specialized route for Slime Predator without copying nearby jobs",
+      "Slime Predator Adept-specific durability through elite control"
     ],
     "weaknesses": [
-      "Slime Predator Adept suffers from inconsistent damage without setup",
-      "Needs support when fights demand the opposite of durability"
+      "Slime Predator Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Slime Predator Adept suffers from inconsistent damage without setup"
     ],
     "requirements": {
       "classLevel": 15
@@ -30518,7 +30756,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Predator Adept \u2014 misc monster"
+    "roleIdentity": "Slime Predator Adept — misc monster"
   },
   {
     "id": "job_path_1550_eclipse_slime_predator",
@@ -30574,7 +30812,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Slime Predator \u2014 misc monster"
+    "roleIdentity": "Eclipse Slime Predator — misc monster"
   },
   {
     "id": "job_path_1551_mythic_slime_predator",
@@ -30630,7 +30868,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Slime Predator \u2014 misc monster"
+    "roleIdentity": "Mythic Slime Predator — misc monster"
   },
   {
     "id": "job_path_1552_hidden_origin_slime_predator",
@@ -30688,17 +30926,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Slime Predator \u2014 misc monster"
+    "roleIdentity": "Hidden Origin Slime Predator — misc monster"
   },
   {
     "id": "job_path_1553_dragon_apostle_vanguard",
     "excelId": 1553,
-    "name": "Dragon Apostle Vanguard",
+    "name": "Dragon Apostle Iron Banner",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1060_dragon_apostle",
-    "description": "Dragon Apostle Vanguard is a advanced Monster class path branching from job 1060 dragon apostle. It sharpens CON, STR, adds a grave-marked combat rhythm, and focuses on party enabling; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dragon Apostle Iron Banner is a distinct advanced job upgrade for Dragon Apostle. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -30712,12 +30950,14 @@ export const JOB_PATHS = [
       "v50_fire_1"
     ],
     "strengths": [
-      "Dragon Apostle Vanguard-specific durability through summon synergy",
-      "Strong break damage within Monster builds"
+      "Dragon Apostle Iron Banner focuses on misc monster",
+      "Adds a specialized route for Dragon Apostle without copying nearby jobs",
+      "Dragon Apostle Vanguard-specific durability through summon synergy"
     ],
     "weaknesses": [
-      "Dragon Apostle Vanguard suffers from bad matchups into its counter element",
-      "Needs support when fights demand the opposite of durability"
+      "Dragon Apostle Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dragon Apostle Vanguard suffers from bad matchups into its counter element"
     ],
     "requirements": {
       "classLevel": 15
@@ -30744,7 +30984,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Apostle Vanguard \u2014 misc monster"
+    "roleIdentity": "Dragon Apostle Vanguard — misc monster"
   },
   {
     "id": "job_path_1554_dragon_apostle_paragon",
@@ -30800,7 +31040,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Apostle Paragon \u2014 misc monster"
+    "roleIdentity": "Dragon Apostle Paragon — misc monster"
   },
   {
     "id": "job_path_1555_dragon_apostle_sovereign",
@@ -30856,7 +31096,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Apostle Sovereign \u2014 misc monster"
+    "roleIdentity": "Dragon Apostle Sovereign — misc monster"
   },
   {
     "id": "job_path_1556_world_crowned_dragon_apostle",
@@ -30914,17 +31154,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Dragon Apostle \u2014 misc monster"
+    "roleIdentity": "World-Crowned Dragon Apostle — misc monster"
   },
   {
     "id": "job_path_1557_dragon_apostle_adept",
     "excelId": 1557,
-    "name": "Dragon Apostle Adept",
+    "name": "Dragon Apostle Deep Focus",
     "category": "Monster",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1060_dragon_apostle",
-    "description": "Dragon Apostle Adept is a advanced Monster class path branching from job 1060 dragon apostle. It sharpens CON, STR, adds a beast-call combat rhythm, and focuses on critical timing; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Dragon Apostle Deep Focus is a distinct advanced job upgrade for Dragon Apostle. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 3,
       "con": 4,
@@ -30938,12 +31178,14 @@ export const JOB_PATHS = [
       "v50_fire_1"
     ],
     "strengths": [
-      "Dragon Apostle Adept-specific durability through long-run stability",
-      "Strong break damage within Monster builds"
+      "Dragon Apostle Deep Focus focuses on misc monster",
+      "Adds a specialized route for Dragon Apostle without copying nearby jobs",
+      "Dragon Apostle Adept-specific durability through long-run stability"
     ],
     "weaknesses": [
-      "Dragon Apostle Adept suffers from low control resistance",
-      "Needs support when fights demand the opposite of durability"
+      "Dragon Apostle Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Dragon Apostle Adept suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -30970,7 +31212,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Apostle Adept \u2014 misc monster"
+    "roleIdentity": "Dragon Apostle Adept — misc monster"
   },
   {
     "id": "job_path_1558_eclipse_dragon_apostle",
@@ -31026,7 +31268,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Dragon Apostle \u2014 misc monster"
+    "roleIdentity": "Eclipse Dragon Apostle — misc monster"
   },
   {
     "id": "job_path_1559_mythic_dragon_apostle",
@@ -31082,7 +31324,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dragon Apostle \u2014 misc monster"
+    "roleIdentity": "Mythic Dragon Apostle — misc monster"
   },
   {
     "id": "job_path_1560_hidden_origin_dragon_apostle",
@@ -31140,17 +31382,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_monster",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Dragon Apostle \u2014 misc monster"
+    "roleIdentity": "Hidden Origin Dragon Apostle — misc monster"
   },
   {
     "id": "job_path_1561_samurai_vanguard",
     "excelId": 1561,
-    "name": "Samurai Vanguard",
+    "name": "Samurai Sunbreaker Form",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1061_samurai",
-    "description": "Samurai Vanguard is a advanced Japanese Fantasy class path branching from job 1061 samurai. It sharpens DEX, WIS, adds a rune-laced combat rhythm, and focuses on weapon-form precision; its balancing drawback is resource loss in long fights. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Samurai Sunbreaker Form is a distinct advanced job upgrade for Samurai. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "wis": 3,
@@ -31166,12 +31408,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Samurai Vanguard-specific turn speed through weapon-form precision",
-      "Strong sustain tools within Japanese Fantasy builds"
+      "Samurai Sunbreaker Form focuses on blade duelist",
+      "Adds a specialized route for Samurai without copying nearby jobs",
+      "Samurai Vanguard-specific turn speed through weapon-form precision"
     ],
     "weaknesses": [
-      "Samurai Vanguard suffers from resource loss in long fights",
-      "Needs support when fights demand the opposite of turn speed"
+      "Samurai Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Samurai Vanguard suffers from resource loss in long fights"
     ],
     "requirements": {
       "classLevel": 15
@@ -31198,7 +31442,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Samurai Vanguard \u2014 blade duelist"
+    "roleIdentity": "Samurai Vanguard — blade duelist"
   },
   {
     "id": "job_path_1562_samurai_paragon",
@@ -31256,7 +31500,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Samurai Paragon \u2014 blade duelist"
+    "roleIdentity": "Samurai Paragon — blade duelist"
   },
   {
     "id": "job_path_1563_samurai_sovereign",
@@ -31314,7 +31558,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Samurai Sovereign \u2014 blade duelist"
+    "roleIdentity": "Samurai Sovereign — blade duelist"
   },
   {
     "id": "job_path_1564_world_crowned_samurai",
@@ -31374,17 +31618,17 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Samurai \u2014 blade duelist"
+    "roleIdentity": "World-Crowned Samurai — blade duelist"
   },
   {
     "id": "job_path_1565_samurai_adept",
     "excelId": 1565,
-    "name": "Samurai Adept",
+    "name": "Samurai Perfected Course",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1061_samurai",
-    "description": "Samurai Adept is a advanced Japanese Fantasy class path branching from job 1061 samurai. It sharpens DEX, WIS, adds a starfall combat rhythm, and focuses on weapon-form precision; its balancing drawback is resource loss in long fights. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Samurai Perfected Course is a distinct advanced job upgrade for Samurai. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 5,
       "wis": 3,
@@ -31400,12 +31644,14 @@ export const JOB_PATHS = [
       "v50_sword_1"
     ],
     "strengths": [
-      "Samurai Adept-specific turn speed through weapon-form precision",
-      "Strong sustain tools within Japanese Fantasy builds"
+      "Samurai Perfected Course focuses on blade duelist",
+      "Adds a specialized route for Samurai without copying nearby jobs",
+      "Samurai Adept-specific turn speed through weapon-form precision"
     ],
     "weaknesses": [
-      "Samurai Adept suffers from resource loss in long fights",
-      "Needs support when fights demand the opposite of turn speed"
+      "Samurai Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Samurai Adept suffers from resource loss in long fights"
     ],
     "requirements": {
       "classLevel": 15
@@ -31432,7 +31678,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Samurai Adept \u2014 blade duelist"
+    "roleIdentity": "Samurai Adept — blade duelist"
   },
   {
     "id": "job_path_1566_eclipse_samurai",
@@ -31490,7 +31736,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Samurai \u2014 blade duelist"
+    "roleIdentity": "Eclipse Samurai — blade duelist"
   },
   {
     "id": "job_path_1567_mythic_samurai",
@@ -31548,7 +31794,7 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Samurai \u2014 blade duelist"
+    "roleIdentity": "Mythic Samurai — blade duelist"
   },
   {
     "id": "job_path_1568_hidden_origin_samurai",
@@ -31608,17 +31854,17 @@ export const JOB_PATHS = [
     "overlapGroup": "blade_duelist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Samurai \u2014 blade duelist"
+    "roleIdentity": "Hidden Origin Samurai — blade duelist"
   },
   {
     "id": "job_path_1569_onmyoji_vanguard",
     "excelId": 1569,
-    "name": "Onmyoji Vanguard",
+    "name": "Onmyoji Dragonstep Method",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1062_onmyoji",
-    "description": "Onmyoji Vanguard is a advanced Japanese Fantasy class path branching from job 1062 onmyoji. It sharpens WIS, DEX, adds a void-breath combat rhythm, and focuses on status exploitation; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Onmyoji Dragonstep Method is a distinct advanced job upgrade for Onmyoji. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 3,
       "wis": 3,
@@ -31632,12 +31878,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Onmyoji Vanguard-specific recovery/control through critical timing",
-      "Strong accuracy and evasion within Japanese Fantasy builds"
+      "Onmyoji Dragonstep Method focuses on misc japanese fantasy",
+      "Adds a specialized route for Onmyoji without copying nearby jobs",
+      "Onmyoji Vanguard-specific recovery/control through critical timing"
     ],
     "weaknesses": [
-      "Onmyoji Vanguard suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Onmyoji Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Onmyoji Vanguard suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -31664,7 +31912,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Onmyoji Vanguard \u2014 misc japanese fantasy"
+    "roleIdentity": "Onmyoji Vanguard — misc japanese fantasy"
   },
   {
     "id": "job_path_1570_onmyoji_paragon",
@@ -31720,7 +31968,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Onmyoji Paragon \u2014 misc japanese fantasy"
+    "roleIdentity": "Onmyoji Paragon — misc japanese fantasy"
   },
   {
     "id": "job_path_1571_onmyoji_sovereign",
@@ -31776,7 +32024,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Onmyoji Sovereign \u2014 misc japanese fantasy"
+    "roleIdentity": "Onmyoji Sovereign — misc japanese fantasy"
   },
   {
     "id": "job_path_1572_world_crowned_onmyoji",
@@ -31834,17 +32082,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Onmyoji \u2014 misc japanese fantasy"
+    "roleIdentity": "World-Crowned Onmyoji — misc japanese fantasy"
   },
   {
     "id": "job_path_1573_onmyoji_adept",
     "excelId": 1573,
-    "name": "Onmyoji Adept",
+    "name": "Onmyoji Secret Tempo",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1062_onmyoji",
-    "description": "Onmyoji Adept is a advanced Japanese Fantasy class path branching from job 1062 onmyoji. It sharpens WIS, DEX, adds a oathbound combat rhythm, and focuses on counterattacks; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Onmyoji Secret Tempo is a distinct advanced job upgrade for Onmyoji. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 3,
       "wis": 3,
@@ -31858,12 +32106,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Onmyoji Adept-specific recovery/control through shop/event efficiency",
-      "Strong accuracy and evasion within Japanese Fantasy builds"
+      "Onmyoji Secret Tempo focuses on misc japanese fantasy",
+      "Adds a specialized route for Onmyoji without copying nearby jobs",
+      "Onmyoji Adept-specific recovery/control through shop/event efficiency"
     ],
     "weaknesses": [
-      "Onmyoji Adept suffers from low control resistance",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Onmyoji Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Onmyoji Adept suffers from low control resistance"
     ],
     "requirements": {
       "classLevel": 15
@@ -31890,7 +32140,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Onmyoji Adept \u2014 misc japanese fantasy"
+    "roleIdentity": "Onmyoji Adept — misc japanese fantasy"
   },
   {
     "id": "job_path_1574_eclipse_onmyoji",
@@ -31946,7 +32196,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Onmyoji \u2014 misc japanese fantasy"
+    "roleIdentity": "Eclipse Onmyoji — misc japanese fantasy"
   },
   {
     "id": "job_path_1575_mythic_onmyoji",
@@ -32002,7 +32252,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Onmyoji \u2014 misc japanese fantasy"
+    "roleIdentity": "Mythic Onmyoji — misc japanese fantasy"
   },
   {
     "id": "job_path_1576_hidden_origin_onmyoji",
@@ -32060,17 +32310,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Onmyoji \u2014 misc japanese fantasy"
+    "roleIdentity": "Hidden Origin Onmyoji — misc japanese fantasy"
   },
   {
     "id": "job_path_1577_miko_vanguard",
     "excelId": 1577,
-    "name": "Miko Vanguard",
+    "name": "Miko Iron Banner",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1063_miko",
-    "description": "Miko Vanguard is a advanced Japanese Fantasy class path branching from job 1063 miko. It sharpens WIS, DEX, adds a quickdraw combat rhythm, and focuses on status exploitation; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Miko Iron Banner is a distinct advanced job upgrade for Miko. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 3,
       "wis": 3,
@@ -32084,12 +32334,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Miko Vanguard-specific recovery/control through party enabling",
-      "Strong accuracy and evasion within Japanese Fantasy builds"
+      "Miko Iron Banner focuses on misc japanese fantasy",
+      "Adds a specialized route for Miko without copying nearby jobs",
+      "Miko Vanguard-specific recovery/control through party enabling"
     ],
     "weaknesses": [
-      "Miko Vanguard suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Miko Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Miko Vanguard suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -32116,7 +32368,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Miko Vanguard \u2014 misc japanese fantasy"
+    "roleIdentity": "Miko Vanguard — misc japanese fantasy"
   },
   {
     "id": "job_path_1578_miko_paragon",
@@ -32172,7 +32424,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Miko Paragon \u2014 misc japanese fantasy"
+    "roleIdentity": "Miko Paragon — misc japanese fantasy"
   },
   {
     "id": "job_path_1579_miko_sovereign",
@@ -32228,7 +32480,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Miko Sovereign \u2014 misc japanese fantasy"
+    "roleIdentity": "Miko Sovereign — misc japanese fantasy"
   },
   {
     "id": "job_path_1580_world_crowned_miko",
@@ -32286,17 +32538,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Miko \u2014 misc japanese fantasy"
+    "roleIdentity": "World-Crowned Miko — misc japanese fantasy"
   },
   {
     "id": "job_path_1581_miko_adept",
     "excelId": 1581,
-    "name": "Miko Adept",
+    "name": "Miko Deep Focus",
     "category": "Japanese Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1063_miko",
-    "description": "Miko Adept is a advanced Japanese Fantasy class path branching from job 1063 miko. It sharpens WIS, DEX, adds a ash-crowned combat rhythm, and focuses on status exploitation; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Miko Deep Focus is a distinct advanced job upgrade for Miko. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 3,
       "wis": 3,
@@ -32310,12 +32562,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Miko Adept-specific recovery/control through single-target burst",
-      "Strong accuracy and evasion within Japanese Fantasy builds"
+      "Miko Deep Focus focuses on misc japanese fantasy",
+      "Adds a specialized route for Miko without copying nearby jobs",
+      "Miko Adept-specific recovery/control through single-target burst"
     ],
     "weaknesses": [
-      "Miko Adept suffers from costly class-path requirements",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Miko Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Miko Adept suffers from costly class-path requirements"
     ],
     "requirements": {
       "classLevel": 15
@@ -32342,7 +32596,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Miko Adept \u2014 misc japanese fantasy"
+    "roleIdentity": "Miko Adept — misc japanese fantasy"
   },
   {
     "id": "job_path_1582_eclipse_miko",
@@ -32398,7 +32652,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Miko \u2014 misc japanese fantasy"
+    "roleIdentity": "Eclipse Miko — misc japanese fantasy"
   },
   {
     "id": "job_path_1583_mythic_miko",
@@ -32454,7 +32708,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Miko \u2014 misc japanese fantasy"
+    "roleIdentity": "Mythic Miko — misc japanese fantasy"
   },
   {
     "id": "job_path_1584_hidden_origin_miko",
@@ -32512,17 +32766,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_japanese_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Miko \u2014 misc japanese fantasy"
+    "roleIdentity": "Hidden Origin Miko — misc japanese fantasy"
   },
   {
     "id": "job_path_1585_cultivator_vanguard",
     "excelId": 1585,
-    "name": "Cultivator Vanguard",
+    "name": "Cultivator Sunbreaker Form",
     "category": "Cultivation / Murim",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1064_cultivator",
-    "description": "Cultivator Vanguard is a advanced Cultivation / Murim class path branching from job 1064 cultivator. It sharpens WIS, STR, adds a quickdraw combat rhythm, and focuses on element swapping; its balancing drawback is poor off-role scaling. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cultivator Sunbreaker Form is a distinct advanced job upgrade for Cultivator. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 1,
       "dex": 1,
@@ -32537,12 +32791,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Cultivator Vanguard-specific recovery/control through counterattacks",
-      "Strong break damage within Cultivation / Murim builds"
+      "Cultivator Sunbreaker Form focuses on misc cultivation murim",
+      "Adds a specialized route for Cultivator without copying nearby jobs",
+      "Cultivator Vanguard-specific recovery/control through counterattacks"
     ],
     "weaknesses": [
-      "Cultivator Vanguard suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Cultivator Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cultivator Vanguard suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -32569,7 +32825,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cultivator Vanguard \u2014 misc cultivation murim"
+    "roleIdentity": "Cultivator Vanguard — misc cultivation murim"
   },
   {
     "id": "job_path_1586_cultivator_paragon",
@@ -32626,7 +32882,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cultivator Paragon \u2014 misc cultivation murim"
+    "roleIdentity": "Cultivator Paragon — misc cultivation murim"
   },
   {
     "id": "job_path_1587_cultivator_sovereign",
@@ -32683,7 +32939,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cultivator Sovereign \u2014 misc cultivation murim"
+    "roleIdentity": "Cultivator Sovereign — misc cultivation murim"
   },
   {
     "id": "job_path_1588_world_crowned_cultivator",
@@ -32742,17 +32998,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Cultivator \u2014 misc cultivation murim"
+    "roleIdentity": "World-Crowned Cultivator — misc cultivation murim"
   },
   {
     "id": "job_path_1589_cultivator_adept",
     "excelId": 1589,
-    "name": "Cultivator Adept",
+    "name": "Cultivator Perfected Course",
     "category": "Cultivation / Murim",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1064_cultivator",
-    "description": "Cultivator Adept is a advanced Cultivation / Murim class path branching from job 1064 cultivator. It sharpens WIS, STR, adds a gold-thread combat rhythm, and focuses on pre-battle setup; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Cultivator Perfected Course is a distinct advanced job upgrade for Cultivator. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "str": 1,
       "dex": 1,
@@ -32767,12 +33023,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Cultivator Adept-specific recovery/control through floor-clearing consistency",
-      "Strong break damage within Cultivation / Murim builds"
+      "Cultivator Perfected Course focuses on misc cultivation murim",
+      "Adds a specialized route for Cultivator without copying nearby jobs",
+      "Cultivator Adept-specific recovery/control through floor-clearing consistency"
     ],
     "weaknesses": [
-      "Cultivator Adept suffers from slow early progression",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Cultivator Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Cultivator Adept suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -32799,7 +33057,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cultivator Adept \u2014 misc cultivation murim"
+    "roleIdentity": "Cultivator Adept — misc cultivation murim"
   },
   {
     "id": "job_path_1590_eclipse_cultivator",
@@ -32856,7 +33114,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Cultivator \u2014 misc cultivation murim"
+    "roleIdentity": "Eclipse Cultivator — misc cultivation murim"
   },
   {
     "id": "job_path_1591_mythic_cultivator",
@@ -32913,7 +33171,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Cultivator \u2014 misc cultivation murim"
+    "roleIdentity": "Mythic Cultivator — misc cultivation murim"
   },
   {
     "id": "job_path_1592_hidden_origin_cultivator",
@@ -32972,17 +33230,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_cultivation_murim",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Cultivator \u2014 misc cultivation murim"
+    "roleIdentity": "Hidden Origin Cultivator — misc cultivation murim"
   },
   {
     "id": "job_path_1593_esper_vanguard",
     "excelId": 1593,
-    "name": "Esper Vanguard",
+    "name": "Esper Dragonstep Method",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1065_esper",
-    "description": "Esper Vanguard is a advanced Modern Fantasy class path branching from job 1065 esper. It sharpens DEX, INT, adds a clockwork combat rhythm, and focuses on single-target burst; its balancing drawback is costly class-path requirements. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Esper Dragonstep Method is a distinct advanced job upgrade for Esper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -32995,12 +33253,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Esper Vanguard-specific turn speed through party enabling",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Esper Dragonstep Method focuses on misc modern fantasy",
+      "Adds a specialized route for Esper without copying nearby jobs",
+      "Esper Vanguard-specific turn speed through party enabling"
     ],
     "weaknesses": [
-      "Esper Vanguard suffers from costly class-path requirements",
-      "Needs support when fights demand the opposite of turn speed"
+      "Esper Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Esper Vanguard suffers from costly class-path requirements"
     ],
     "requirements": {
       "classLevel": 15
@@ -33027,7 +33287,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Esper Vanguard \u2014 misc modern fantasy"
+    "roleIdentity": "Esper Vanguard — misc modern fantasy"
   },
   {
     "id": "job_path_1594_esper_paragon",
@@ -33082,7 +33342,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Esper Paragon \u2014 misc modern fantasy"
+    "roleIdentity": "Esper Paragon — misc modern fantasy"
   },
   {
     "id": "job_path_1595_esper_sovereign",
@@ -33137,7 +33397,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Esper Sovereign \u2014 misc modern fantasy"
+    "roleIdentity": "Esper Sovereign — misc modern fantasy"
   },
   {
     "id": "job_path_1596_world_crowned_esper",
@@ -33194,17 +33454,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Esper \u2014 misc modern fantasy"
+    "roleIdentity": "World-Crowned Esper — misc modern fantasy"
   },
   {
     "id": "job_path_1597_esper_adept",
     "excelId": 1597,
-    "name": "Esper Adept",
+    "name": "Esper Secret Tempo",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1065_esper",
-    "description": "Esper Adept is a advanced Modern Fantasy class path branching from job 1065 esper. It sharpens DEX, INT, adds a rune-laced combat rhythm, and focuses on element swapping; its balancing drawback is poor off-role scaling. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Esper Secret Tempo is a distinct advanced job upgrade for Esper. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -33217,12 +33477,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Esper Adept-specific turn speed through single-target burst",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Esper Secret Tempo focuses on misc modern fantasy",
+      "Adds a specialized route for Esper without copying nearby jobs",
+      "Esper Adept-specific turn speed through single-target burst"
     ],
     "weaknesses": [
-      "Esper Adept suffers from fragility when stunned",
-      "Needs support when fights demand the opposite of turn speed"
+      "Esper Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Esper Adept suffers from fragility when stunned"
     ],
     "requirements": {
       "classLevel": 15
@@ -33249,7 +33511,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Esper Adept \u2014 misc modern fantasy"
+    "roleIdentity": "Esper Adept — misc modern fantasy"
   },
   {
     "id": "job_path_1598_eclipse_esper",
@@ -33304,7 +33566,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Esper \u2014 misc modern fantasy"
+    "roleIdentity": "Eclipse Esper — misc modern fantasy"
   },
   {
     "id": "job_path_1599_mythic_esper",
@@ -33359,7 +33621,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Esper \u2014 misc modern fantasy"
+    "roleIdentity": "Mythic Esper — misc modern fantasy"
   },
   {
     "id": "job_path_1600_hidden_origin_esper",
@@ -33416,17 +33678,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Esper \u2014 misc modern fantasy"
+    "roleIdentity": "Hidden Origin Esper — misc modern fantasy"
   },
   {
     "id": "job_path_1601_hero_student_vanguard",
     "excelId": 1601,
-    "name": "Hero Student Vanguard",
+    "name": "Hero Student Iron Banner",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1066_hero_student",
-    "description": "Hero Student Vanguard is a advanced Modern Fantasy class path branching from job 1066 hero student. It sharpens DEX, INT, adds a iron-tempo combat rhythm, and focuses on defensive uptime; its balancing drawback is poor off-role scaling. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Hero Student Iron Banner is a distinct advanced job upgrade for Hero Student. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -33439,12 +33701,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Hero Student Vanguard-specific turn speed through critical timing",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Hero Student Iron Banner focuses on misc modern fantasy",
+      "Adds a specialized route for Hero Student without copying nearby jobs",
+      "Hero Student Vanguard-specific turn speed through critical timing"
     ],
     "weaknesses": [
-      "Hero Student Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of turn speed"
+      "Hero Student Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Hero Student Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -33471,7 +33735,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hero Student Vanguard \u2014 misc modern fantasy"
+    "roleIdentity": "Hero Student Vanguard — misc modern fantasy"
   },
   {
     "id": "job_path_1602_hero_student_paragon",
@@ -33526,7 +33790,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hero Student Paragon \u2014 misc modern fantasy"
+    "roleIdentity": "Hero Student Paragon — misc modern fantasy"
   },
   {
     "id": "job_path_1603_hero_student_sovereign",
@@ -33581,7 +33845,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hero Student Sovereign \u2014 misc modern fantasy"
+    "roleIdentity": "Hero Student Sovereign — misc modern fantasy"
   },
   {
     "id": "job_path_1604_world_crowned_hero_student",
@@ -33638,17 +33902,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Hero Student \u2014 misc modern fantasy"
+    "roleIdentity": "World-Crowned Hero Student — misc modern fantasy"
   },
   {
     "id": "job_path_1605_hero_student_adept",
     "excelId": 1605,
-    "name": "Hero Student Adept",
+    "name": "Hero Student Deep Focus",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1066_hero_student",
-    "description": "Hero Student Adept is a advanced Modern Fantasy class path branching from job 1066 hero student. It sharpens DEX, INT, adds a oathbound combat rhythm, and focuses on party enabling; its balancing drawback is inconsistent damage without setup. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Hero Student Deep Focus is a distinct advanced job upgrade for Hero Student. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -33661,12 +33925,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Hero Student Adept-specific turn speed through high-risk finishing moves",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Hero Student Deep Focus focuses on misc modern fantasy",
+      "Adds a specialized route for Hero Student without copying nearby jobs",
+      "Hero Student Adept-specific turn speed through high-risk finishing moves"
     ],
     "weaknesses": [
-      "Hero Student Adept suffers from slow early progression",
-      "Needs support when fights demand the opposite of turn speed"
+      "Hero Student Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Hero Student Adept suffers from slow early progression"
     ],
     "requirements": {
       "classLevel": 15
@@ -33693,7 +33959,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hero Student Adept \u2014 misc modern fantasy"
+    "roleIdentity": "Hero Student Adept — misc modern fantasy"
   },
   {
     "id": "job_path_1606_eclipse_hero_student",
@@ -33748,7 +34014,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Hero Student \u2014 misc modern fantasy"
+    "roleIdentity": "Eclipse Hero Student — misc modern fantasy"
   },
   {
     "id": "job_path_1607_mythic_hero_student",
@@ -33803,7 +34069,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Hero Student \u2014 misc modern fantasy"
+    "roleIdentity": "Mythic Hero Student — misc modern fantasy"
   },
   {
     "id": "job_path_1608_hidden_origin_hero_student",
@@ -33860,17 +34126,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Hero Student \u2014 misc modern fantasy"
+    "roleIdentity": "Hidden Origin Hero Student — misc modern fantasy"
   },
   {
     "id": "job_path_1609_pro_hero_vanguard",
     "excelId": 1609,
-    "name": "Pro Hero Vanguard",
+    "name": "Pro Hero Sunbreaker Form",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1067_pro_hero",
-    "description": "Pro Hero Vanguard is a advanced Modern Fantasy class path branching from job 1067 pro hero. It sharpens DEX, INT, adds a mirror-step combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Pro Hero Sunbreaker Form is a distinct advanced job upgrade for Pro Hero. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -33883,12 +34149,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Pro Hero Vanguard-specific turn speed through floor-clearing consistency",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Pro Hero Sunbreaker Form focuses on misc modern fantasy",
+      "Adds a specialized route for Pro Hero without copying nearby jobs",
+      "Pro Hero Vanguard-specific turn speed through floor-clearing consistency"
     ],
     "weaknesses": [
-      "Pro Hero Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of turn speed"
+      "Pro Hero Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Pro Hero Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -33915,7 +34183,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Pro Hero Vanguard \u2014 misc modern fantasy"
+    "roleIdentity": "Pro Hero Vanguard — misc modern fantasy"
   },
   {
     "id": "job_path_1610_pro_hero_paragon",
@@ -33970,7 +34238,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Pro Hero Paragon \u2014 misc modern fantasy"
+    "roleIdentity": "Pro Hero Paragon — misc modern fantasy"
   },
   {
     "id": "job_path_1611_pro_hero_sovereign",
@@ -34025,7 +34293,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Pro Hero Sovereign \u2014 misc modern fantasy"
+    "roleIdentity": "Pro Hero Sovereign — misc modern fantasy"
   },
   {
     "id": "job_path_1612_world_crowned_pro_hero",
@@ -34082,17 +34350,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Pro Hero \u2014 misc modern fantasy"
+    "roleIdentity": "World-Crowned Pro Hero — misc modern fantasy"
   },
   {
     "id": "job_path_1613_pro_hero_adept",
     "excelId": 1613,
-    "name": "Pro Hero Adept",
+    "name": "Pro Hero Perfected Course",
     "category": "Modern Fantasy",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1067_pro_hero",
-    "description": "Pro Hero Adept is a advanced Modern Fantasy class path branching from job 1067 pro hero. It sharpens DEX, INT, adds a rune-laced combat rhythm, and focuses on boss safety; its balancing drawback is limited party independence. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Pro Hero Perfected Course is a distinct advanced job upgrade for Pro Hero. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "dex": 4,
       "int": 3
@@ -34105,12 +34373,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Pro Hero Adept-specific turn speed through summon synergy",
-      "Strong mana conversion within Modern Fantasy builds"
+      "Pro Hero Perfected Course focuses on misc modern fantasy",
+      "Adds a specialized route for Pro Hero without copying nearby jobs",
+      "Pro Hero Adept-specific turn speed through summon synergy"
     ],
     "weaknesses": [
-      "Pro Hero Adept suffers from awkward enemy intent responses",
-      "Needs support when fights demand the opposite of turn speed"
+      "Pro Hero Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Pro Hero Adept suffers from awkward enemy intent responses"
     ],
     "requirements": {
       "classLevel": 15
@@ -34137,7 +34407,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Pro Hero Adept \u2014 misc modern fantasy"
+    "roleIdentity": "Pro Hero Adept — misc modern fantasy"
   },
   {
     "id": "job_path_1614_eclipse_pro_hero",
@@ -34192,7 +34462,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Pro Hero \u2014 misc modern fantasy"
+    "roleIdentity": "Eclipse Pro Hero — misc modern fantasy"
   },
   {
     "id": "job_path_1615_mythic_pro_hero",
@@ -34247,7 +34517,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Pro Hero \u2014 misc modern fantasy"
+    "roleIdentity": "Mythic Pro Hero — misc modern fantasy"
   },
   {
     "id": "job_path_1616_hidden_origin_pro_hero",
@@ -34304,17 +34574,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_modern_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Pro Hero \u2014 misc modern fantasy"
+    "roleIdentity": "Hidden Origin Pro Hero — misc modern fantasy"
   },
   {
     "id": "job_path_1617_adventurer_vanguard",
     "excelId": 1617,
-    "name": "Adventurer Vanguard",
+    "name": "Adventurer Dragonstep Method",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1068_adventurer",
-    "description": "Adventurer Vanguard is a advanced Guild Jobs class path branching from job 1068 adventurer. It sharpens WIS, CHA, adds a oathbound combat rhythm, and focuses on shop/event efficiency; its balancing drawback is high resource demand. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Adventurer Dragonstep Method is a distinct advanced job upgrade for Adventurer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -34329,12 +34599,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Adventurer Vanguard-specific recovery/control through elite control",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Adventurer Dragonstep Method focuses on misc guild jobs",
+      "Adds a specialized route for Adventurer without copying nearby jobs",
+      "Adventurer Vanguard-specific recovery/control through elite control"
     ],
     "weaknesses": [
-      "Adventurer Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Adventurer Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Adventurer Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -34361,7 +34633,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Adventurer Vanguard \u2014 misc guild jobs"
+    "roleIdentity": "Adventurer Vanguard — misc guild jobs"
   },
   {
     "id": "job_path_1618_adventurer_paragon",
@@ -34418,7 +34690,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Adventurer Paragon \u2014 misc guild jobs"
+    "roleIdentity": "Adventurer Paragon — misc guild jobs"
   },
   {
     "id": "job_path_1619_adventurer_sovereign",
@@ -34475,7 +34747,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Adventurer Sovereign \u2014 misc guild jobs"
+    "roleIdentity": "Adventurer Sovereign — misc guild jobs"
   },
   {
     "id": "job_path_1620_world_crowned_adventurer",
@@ -34534,17 +34806,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Adventurer \u2014 misc guild jobs"
+    "roleIdentity": "World-Crowned Adventurer — misc guild jobs"
   },
   {
     "id": "job_path_1621_adventurer_adept",
     "excelId": 1621,
-    "name": "Adventurer Adept",
+    "name": "Adventurer Secret Tempo",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1068_adventurer",
-    "description": "Adventurer Adept is a advanced Guild Jobs class path branching from job 1068 adventurer. It sharpens WIS, CHA, adds a sunbrand combat rhythm, and focuses on summon synergy; its balancing drawback is costly class-path requirements. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Adventurer Secret Tempo is a distinct advanced job upgrade for Adventurer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -34559,12 +34831,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Adventurer Adept-specific recovery/control through element swapping",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Adventurer Secret Tempo focuses on misc guild jobs",
+      "Adds a specialized route for Adventurer without copying nearby jobs",
+      "Adventurer Adept-specific recovery/control through element swapping"
     ],
     "weaknesses": [
-      "Adventurer Adept suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Adventurer Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Adventurer Adept suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -34591,7 +34865,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Adventurer Adept \u2014 misc guild jobs"
+    "roleIdentity": "Adventurer Adept — misc guild jobs"
   },
   {
     "id": "job_path_1622_eclipse_adventurer",
@@ -34648,7 +34922,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Adventurer \u2014 misc guild jobs"
+    "roleIdentity": "Eclipse Adventurer — misc guild jobs"
   },
   {
     "id": "job_path_1623_mythic_adventurer",
@@ -34705,7 +34979,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Adventurer \u2014 misc guild jobs"
+    "roleIdentity": "Mythic Adventurer — misc guild jobs"
   },
   {
     "id": "job_path_1624_hidden_origin_adventurer",
@@ -34764,17 +35038,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Adventurer \u2014 misc guild jobs"
+    "roleIdentity": "Hidden Origin Adventurer — misc guild jobs"
   },
   {
     "id": "job_path_1625_villager_vanguard",
     "excelId": 1625,
-    "name": "Villager Vanguard",
+    "name": "Villager Iron Banner",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1069_villager",
-    "description": "Villager Vanguard is a advanced Guild Jobs class path branching from job 1069 villager. It sharpens WIS, CHA, adds a ash-crowned combat rhythm, and focuses on single-target burst; its balancing drawback is bad matchups into its counter element. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Villager Iron Banner is a distinct advanced job upgrade for Villager. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -34789,12 +35063,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Villager Vanguard-specific recovery/control through long-run stability",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Villager Iron Banner focuses on misc guild jobs",
+      "Adds a specialized route for Villager without copying nearby jobs",
+      "Villager Vanguard-specific recovery/control through long-run stability"
     ],
     "weaknesses": [
-      "Villager Vanguard suffers from limited party independence",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Villager Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Villager Vanguard suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -34821,7 +35097,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Villager Vanguard \u2014 misc guild jobs"
+    "roleIdentity": "Villager Vanguard — misc guild jobs"
   },
   {
     "id": "job_path_1626_villager_paragon",
@@ -34878,7 +35154,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Villager Paragon \u2014 misc guild jobs"
+    "roleIdentity": "Villager Paragon — misc guild jobs"
   },
   {
     "id": "job_path_1627_villager_sovereign",
@@ -34935,7 +35211,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Villager Sovereign \u2014 misc guild jobs"
+    "roleIdentity": "Villager Sovereign — misc guild jobs"
   },
   {
     "id": "job_path_1628_world_crowned_villager",
@@ -34994,17 +35270,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Villager \u2014 misc guild jobs"
+    "roleIdentity": "World-Crowned Villager — misc guild jobs"
   },
   {
     "id": "job_path_1629_villager_adept",
     "excelId": 1629,
-    "name": "Villager Adept",
+    "name": "Villager Deep Focus",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1069_villager",
-    "description": "Villager Adept is a advanced Guild Jobs class path branching from job 1069 villager. It sharpens WIS, CHA, adds a void-breath combat rhythm, and focuses on critical timing; its balancing drawback is low control resistance. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Villager Deep Focus is a distinct advanced job upgrade for Villager. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -35019,12 +35295,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Villager Adept-specific recovery/control through counterattacks",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Villager Deep Focus focuses on misc guild jobs",
+      "Adds a specialized route for Villager without copying nearby jobs",
+      "Villager Adept-specific recovery/control through counterattacks"
     ],
     "weaknesses": [
-      "Villager Adept suffers from limited party independence",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Villager Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Villager Adept suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -35051,7 +35329,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Villager Adept \u2014 misc guild jobs"
+    "roleIdentity": "Villager Adept — misc guild jobs"
   },
   {
     "id": "job_path_1630_eclipse_villager",
@@ -35108,7 +35386,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Villager \u2014 misc guild jobs"
+    "roleIdentity": "Eclipse Villager — misc guild jobs"
   },
   {
     "id": "job_path_1631_mythic_villager",
@@ -35165,7 +35443,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Villager \u2014 misc guild jobs"
+    "roleIdentity": "Mythic Villager — misc guild jobs"
   },
   {
     "id": "job_path_1632_hidden_origin_villager",
@@ -35224,17 +35502,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Villager \u2014 misc guild jobs"
+    "roleIdentity": "Hidden Origin Villager — misc guild jobs"
   },
   {
     "id": "job_path_1633_farmer_vanguard",
     "excelId": 1633,
-    "name": "Farmer Vanguard",
+    "name": "Farmer Sunbreaker Form",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1070_farmer",
-    "description": "Farmer Vanguard is a advanced Guild Jobs class path branching from job 1070 farmer. It sharpens WIS, CHA, adds a ash-crowned combat rhythm, and focuses on high-risk finishing moves; its balancing drawback is weak recovery after missed turns. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Farmer Sunbreaker Form is a distinct advanced job upgrade for Farmer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -35249,12 +35527,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Farmer Vanguard-specific recovery/control through shop/event efficiency",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Farmer Sunbreaker Form focuses on misc guild jobs",
+      "Adds a specialized route for Farmer without copying nearby jobs",
+      "Farmer Vanguard-specific recovery/control through shop/event efficiency"
     ],
     "weaknesses": [
-      "Farmer Vanguard suffers from dependency on gear slots",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Farmer Sunbreaker Form performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Farmer Vanguard suffers from dependency on gear slots"
     ],
     "requirements": {
       "classLevel": 15
@@ -35281,7 +35561,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Farmer Vanguard \u2014 misc guild jobs"
+    "roleIdentity": "Farmer Vanguard — misc guild jobs"
   },
   {
     "id": "job_path_1634_farmer_paragon",
@@ -35338,7 +35618,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Farmer Paragon \u2014 misc guild jobs"
+    "roleIdentity": "Farmer Paragon — misc guild jobs"
   },
   {
     "id": "job_path_1635_farmer_sovereign",
@@ -35395,7 +35675,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Farmer Sovereign \u2014 misc guild jobs"
+    "roleIdentity": "Farmer Sovereign — misc guild jobs"
   },
   {
     "id": "job_path_1636_world_crowned_farmer",
@@ -35454,17 +35734,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Farmer \u2014 misc guild jobs"
+    "roleIdentity": "World-Crowned Farmer — misc guild jobs"
   },
   {
     "id": "job_path_1637_farmer_adept",
     "excelId": 1637,
-    "name": "Farmer Adept",
+    "name": "Farmer Perfected Course",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1070_farmer",
-    "description": "Farmer Adept is a advanced Guild Jobs class path branching from job 1070 farmer. It sharpens WIS, CHA, adds a stormline combat rhythm, and focuses on pre-battle setup; its balancing drawback is awkward enemy intent responses. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Farmer Perfected Course is a distinct advanced job upgrade for Farmer. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -35479,12 +35759,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Farmer Adept-specific recovery/control through high-risk finishing moves",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Farmer Perfected Course focuses on misc guild jobs",
+      "Adds a specialized route for Farmer without copying nearby jobs",
+      "Farmer Adept-specific recovery/control through high-risk finishing moves"
     ],
     "weaknesses": [
-      "Farmer Adept suffers from poor off-role scaling",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Farmer Perfected Course performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Farmer Adept suffers from poor off-role scaling"
     ],
     "requirements": {
       "classLevel": 15
@@ -35511,7 +35793,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Farmer Adept \u2014 misc guild jobs"
+    "roleIdentity": "Farmer Adept — misc guild jobs"
   },
   {
     "id": "job_path_1638_eclipse_farmer",
@@ -35568,7 +35850,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Farmer \u2014 misc guild jobs"
+    "roleIdentity": "Eclipse Farmer — misc guild jobs"
   },
   {
     "id": "job_path_1639_mythic_farmer",
@@ -35625,7 +35907,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Farmer \u2014 misc guild jobs"
+    "roleIdentity": "Mythic Farmer — misc guild jobs"
   },
   {
     "id": "job_path_1640_hidden_origin_farmer",
@@ -35684,17 +35966,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Farmer \u2014 misc guild jobs"
+    "roleIdentity": "Hidden Origin Farmer — misc guild jobs"
   },
   {
     "id": "job_path_1641_mercenary_vanguard",
     "excelId": 1641,
-    "name": "Mercenary Vanguard",
+    "name": "Mercenary Dragonstep Method",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1071_mercenary",
-    "description": "Mercenary Vanguard is a advanced Guild Jobs class path branching from job 1071 mercenary. It sharpens WIS, CHA, adds a stormline combat rhythm, and focuses on boss safety; its balancing drawback is fragility when stunned. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Mercenary Dragonstep Method is a distinct advanced job upgrade for Mercenary. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -35709,12 +35991,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Mercenary Vanguard-specific recovery/control through defensive uptime",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Mercenary Dragonstep Method focuses on misc guild jobs",
+      "Adds a specialized route for Mercenary without copying nearby jobs",
+      "Mercenary Vanguard-specific recovery/control through defensive uptime"
     ],
     "weaknesses": [
-      "Mercenary Vanguard suffers from high resource demand",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Mercenary Dragonstep Method performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Mercenary Vanguard suffers from high resource demand"
     ],
     "requirements": {
       "classLevel": 15
@@ -35741,7 +36025,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mercenary Vanguard \u2014 misc guild jobs"
+    "roleIdentity": "Mercenary Vanguard — misc guild jobs"
   },
   {
     "id": "job_path_1642_mercenary_paragon",
@@ -35798,7 +36082,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mercenary Paragon \u2014 misc guild jobs"
+    "roleIdentity": "Mercenary Paragon — misc guild jobs"
   },
   {
     "id": "job_path_1643_mercenary_sovereign",
@@ -35855,7 +36139,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mercenary Sovereign \u2014 misc guild jobs"
+    "roleIdentity": "Mercenary Sovereign — misc guild jobs"
   },
   {
     "id": "job_path_1644_world_crowned_mercenary",
@@ -35914,17 +36198,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Mercenary \u2014 misc guild jobs"
+    "roleIdentity": "World-Crowned Mercenary — misc guild jobs"
   },
   {
     "id": "job_path_1645_mercenary_adept",
     "excelId": 1645,
-    "name": "Mercenary Adept",
+    "name": "Mercenary Secret Tempo",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1071_mercenary",
-    "description": "Mercenary Adept is a advanced Guild Jobs class path branching from job 1071 mercenary. It sharpens WIS, CHA, adds a iron-tempo combat rhythm, and focuses on floor-clearing consistency; its balancing drawback is dependency on gear slots. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Mercenary Secret Tempo is a distinct advanced job upgrade for Mercenary. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 3,
@@ -35939,12 +36223,14 @@ export const JOB_PATHS = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Mercenary Adept-specific recovery/control through pre-battle setup",
-      "Strong buff/debuff leverage within Guild Jobs builds"
+      "Mercenary Secret Tempo focuses on misc guild jobs",
+      "Adds a specialized route for Mercenary without copying nearby jobs",
+      "Mercenary Adept-specific recovery/control through pre-battle setup"
     ],
     "weaknesses": [
-      "Mercenary Adept suffers from limited party independence",
-      "Needs support when fights demand the opposite of recovery/control"
+      "Mercenary Secret Tempo performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Mercenary Adept suffers from limited party independence"
     ],
     "requirements": {
       "classLevel": 15
@@ -35971,7 +36257,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mercenary Adept \u2014 misc guild jobs"
+    "roleIdentity": "Mercenary Adept — misc guild jobs"
   },
   {
     "id": "job_path_1646_eclipse_mercenary",
@@ -36028,7 +36314,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Mercenary \u2014 misc guild jobs"
+    "roleIdentity": "Eclipse Mercenary — misc guild jobs"
   },
   {
     "id": "job_path_1647_mythic_mercenary",
@@ -36085,7 +36371,7 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Mercenary \u2014 misc guild jobs"
+    "roleIdentity": "Mythic Mercenary — misc guild jobs"
   },
   {
     "id": "job_path_1648_hidden_origin_mercenary",
@@ -36144,17 +36430,17 @@ export const JOB_PATHS = [
     "overlapGroup": "misc_guild_jobs",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Mercenary \u2014 misc guild jobs"
+    "roleIdentity": "Hidden Origin Mercenary — misc guild jobs"
   },
   {
     "id": "job_path_1649_bounty_hunter_vanguard",
     "excelId": 1649,
-    "name": "Bounty Hunter Vanguard",
+    "name": "Bounty Hunter Iron Banner",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1072_bounty_hunter",
-    "description": "Bounty Hunter Vanguard is a advanced Guild Jobs class path branching from job 1072 bounty hunter. It sharpens DEX, WIS, adds a grave-marked combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Bounty Hunter Iron Banner is a distinct advanced job upgrade for Bounty Hunter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 4,
@@ -36169,12 +36455,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Bounty Hunter Vanguard-specific turn speed through ranged precision",
-      "Strong sustain tools within Guild Jobs builds"
+      "Bounty Hunter Iron Banner focuses on ranged striker",
+      "Adds a specialized route for Bounty Hunter without copying nearby jobs",
+      "Bounty Hunter Vanguard-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Bounty Hunter Vanguard suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Bounty Hunter Iron Banner performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Bounty Hunter Vanguard suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -36201,7 +36489,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bounty Hunter Vanguard \u2014 ranged striker"
+    "roleIdentity": "Bounty Hunter Vanguard — ranged striker"
   },
   {
     "id": "job_path_1650_bounty_hunter_paragon",
@@ -36258,7 +36546,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bounty Hunter Paragon \u2014 ranged striker"
+    "roleIdentity": "Bounty Hunter Paragon — ranged striker"
   },
   {
     "id": "job_path_1651_bounty_hunter_sovereign",
@@ -36315,7 +36603,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bounty Hunter Sovereign \u2014 ranged striker"
+    "roleIdentity": "Bounty Hunter Sovereign — ranged striker"
   },
   {
     "id": "job_path_1652_world_crowned_bounty_hunter",
@@ -36374,17 +36662,17 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Crowned Bounty Hunter \u2014 ranged striker"
+    "roleIdentity": "World-Crowned Bounty Hunter — ranged striker"
   },
   {
     "id": "job_path_1653_bounty_hunter_adept",
     "excelId": 1653,
-    "name": "Bounty Hunter Adept",
+    "name": "Bounty Hunter Deep Focus",
     "category": "Guild Jobs",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "job_1072_bounty_hunter",
-    "description": "Bounty Hunter Adept is a advanced Guild Jobs class path branching from job 1072 bounty hunter. It sharpens DEX, WIS, adds a thorn-script combat rhythm, and focuses on ranged precision; its balancing drawback is weak when rushed. The path exists to separate this class from overlapping jobs by giving it a clear tactical purpose.",
+    "description": "Bounty Hunter Deep Focus is a distinct advanced job upgrade for Bounty Hunter. It gives the class a specific tactical identity, progression fantasy, and combat niche instead of being a generic rank-up. Its strengths are meant to shape a build choice, while its weaknesses keep it from replacing every other path.",
     "stats": {
       "cha": 3,
       "wis": 4,
@@ -36399,12 +36687,14 @@ export const JOB_PATHS = [
       "v50_bow_1"
     ],
     "strengths": [
-      "Bounty Hunter Adept-specific turn speed through ranged precision",
-      "Strong sustain tools within Guild Jobs builds"
+      "Bounty Hunter Deep Focus focuses on ranged striker",
+      "Adds a specialized route for Bounty Hunter without copying nearby jobs",
+      "Bounty Hunter Adept-specific turn speed through ranged precision"
     ],
     "weaknesses": [
-      "Bounty Hunter Adept suffers from weak when rushed",
-      "Needs support when fights demand the opposite of turn speed"
+      "Bounty Hunter Deep Focus performs best when paired with matching race growth and equipment",
+      "Less flexible outside its intended combat plan",
+      "Bounty Hunter Adept suffers from weak when rushed"
     ],
     "requirements": {
       "classLevel": 15
@@ -36431,7 +36721,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bounty Hunter Adept \u2014 ranged striker"
+    "roleIdentity": "Bounty Hunter Adept — ranged striker"
   },
   {
     "id": "job_path_1654_eclipse_bounty_hunter",
@@ -36488,7 +36778,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Eclipse Bounty Hunter \u2014 ranged striker"
+    "roleIdentity": "Eclipse Bounty Hunter — ranged striker"
   },
   {
     "id": "job_path_1655_mythic_bounty_hunter",
@@ -36545,7 +36835,7 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Bounty Hunter \u2014 ranged striker"
+    "roleIdentity": "Mythic Bounty Hunter — ranged striker"
   },
   {
     "id": "job_path_1656_hidden_origin_bounty_hunter",
@@ -36604,6 +36894,6 @@ export const JOB_PATHS = [
     "overlapGroup": "ranged_striker",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hidden Origin Bounty Hunter \u2014 ranged striker"
+    "roleIdentity": "Hidden Origin Bounty Hunter — ranged striker"
   }
 ];

@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.6.1 — Naming, Shop Tabs, and Scroll Fix",
+    date: "2026-05-05",
+    notes: [
+      "Renamed generic race evolution names so they no longer use plain Awakened/Bloodline labels.",
+      "Renamed generic job upgrade names so they no longer use plain Vanguard/Adept labels.",
+      "Renamed skills and spells by rank, with Unique, Hidden, Rare, and Ultimate abilities using more legendary naming patterns.",
+      "Moved the Skill / Spell Library into the same shop-tab system as Wayfarer’s General Store, Old Anvil Blacksmith, Blue Candle Arcanist, and Roadside Outfitter.",
+      "Removed forced scroll-to-top behavior after every render so button clicks, filters, purchases, and combat actions keep the current scroll position."
+    ]
+  },
+  {
     version: "v0.6.0 — Balance Pass",
     date: "2026-05-05",
     notes: [

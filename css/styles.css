@@ -419,3 +419,14 @@ pre {
 
 .balance-note, .active-bonus { color: var(--good); }
 .locked-card { opacity: .72; }
+
+
+.shop-tabs {
+  align-items: stretch;
+}
+.shop-tabs button {
+  min-width: 145px;
+}
+.ability-shop .filter-grid {
+  margin-top: 10px;
+}

@@ -1,10 +1,10 @@
-// Auto-generated/merged for v0.5.0 Ability Linking.
-// Includes legacy foundation abilities plus Excel-imported skill/spell shop libraries.
+// Auto-polished for v0.6.1 Skill/Spell Naming Pass.
+// IDs stay the same so saves and class ability links keep working.
 
 export const SKILLS = [
   {
     "id": "human_resolve",
-    "name": "Human Resolve",
+    "name": "Lineage Art: Iron Human Resolve",
     "kind": "intrinsic",
     "rank": "Intrinsic",
     "resource": "stamina",
@@ -13,7 +13,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Human Resolve is an intrinsic bloodline ability with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 55% of the user’s maximum HP; and grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Iron Human Resolve is an intrinsic bloodline ability with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 55% of the user’s maximum HP; and grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "heal",
@@ -25,11 +25,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Human Resolve"
   },
   {
     "id": "elf_spark",
-    "name": "Elf Spark",
+    "name": "Aether Elf Spark",
     "kind": "spell",
     "rank": "Common",
     "resource": "mana",
@@ -38,11 +39,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 11,
-    "description": "Elf Spark is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 11 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Aether Elf Spark is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 11 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Elf Spark"
   },
   {
     "id": "dwarf_guard",
-    "name": "Dwarf Guard",
+    "name": "Fang Dwarf Guard",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -51,7 +53,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Dwarf Guard is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 7 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 2 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Fang Dwarf Guard is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 7 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 2 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -59,11 +61,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Dwarf Guard"
   },
   {
     "id": "beast_claw",
-    "name": "Beast Claw",
+    "name": "Valor Beast Claw",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -72,7 +75,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 12,
-    "description": "Beast Claw is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 35% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Valor Beast Claw is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 35% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -80,11 +83,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 35
       }
-    ]
+    ],
+    "previousName": "Beast Claw"
   },
   {
     "id": "ember_breath",
-    "name": "Ember Breath",
+    "name": "Lineage Art: Solar Ember Breath",
     "kind": "spell",
     "rank": "Intrinsic",
     "resource": "mana",
@@ -93,7 +97,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 14,
-    "description": "Ember Breath is a structured spell formula with a flame-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 35% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Lineage Art: Solar Ember Breath is a structured spell formula with a flame-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 35% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "effects": [
       {
         "type": "status",
@@ -101,11 +105,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 35
       }
-    ]
+    ],
+    "previousName": "Ember Breath"
   },
   {
     "id": "gale_cut",
-    "name": "Gale Cut",
+    "name": "Skyrend Gale Cut",
     "kind": "spell",
     "rank": "Common",
     "resource": "mana",
@@ -114,11 +119,12 @@ export const SKILLS = [
     "element": "wind",
     "target": "enemy",
     "power": 10,
-    "description": "Gale Cut is a structured spell formula with a wind-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Skyrend Gale Cut is a structured spell formula with a wind-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Gale Cut"
   },
   {
     "id": "grave_drain",
-    "name": "Grave Drain",
+    "name": "Lineage Art: Umbral Grave Drain",
     "kind": "spell",
     "rank": "Intrinsic",
     "resource": "mana",
@@ -127,17 +133,18 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 10,
-    "description": "Grave Drain is a structured spell formula with a dark-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also converts about 45% of damage dealt into healing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Umbral Grave Drain is a structured spell formula with a dark-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also converts about 45% of damage dealt into healing. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "drain",
         "ratio": 0.45
       }
-    ]
+    ],
+    "previousName": "Grave Drain"
   },
   {
     "id": "impish_hex",
-    "name": "Impish Hex",
+    "name": "Grave Impish Hex",
     "kind": "spell",
     "rank": "Common",
     "resource": "mana",
@@ -146,7 +153,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 8,
-    "description": "Impish Hex is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 8 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 9 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 60% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Grave Impish Hex is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 8 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 9 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 60% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "effects": [
       {
         "type": "status",
@@ -154,11 +161,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 60
       }
-    ]
+    ],
+    "previousName": "Impish Hex"
   },
   {
     "id": "stone_slam",
-    "name": "Stone Slam",
+    "name": "Granite Stone Slam",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -167,7 +175,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 13,
-    "description": "Stone Slam is a trained combat technique with a earth-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 9 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 25% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Granite Stone Slam is a trained combat technique with a earth-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 9 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 25% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -175,11 +183,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 25
       }
-    ]
+    ],
+    "previousName": "Stone Slam"
   },
   {
     "id": "star_mend",
-    "name": "Star Mend",
+    "name": "Lineage Art: Seraphic Star Mend",
     "kind": "spell",
     "rank": "Intrinsic",
     "resource": "mana",
@@ -188,17 +197,18 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Star Mend is a structured spell formula with a light-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 70% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Lineage Art: Seraphic Star Mend is a structured spell formula with a light-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 70% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
         "scale": 0.7
       }
-    ]
+    ],
+    "previousName": "Star Mend"
   },
   {
     "id": "power_strike",
-    "name": "Power Strike",
+    "name": "Rift Power Strike",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -207,11 +217,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 13,
-    "description": "Power Strike is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Rift Power Strike is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Power Strike"
   },
   {
     "id": "firebolt",
-    "name": "Firebolt",
+    "name": "Ember Firebolt",
     "kind": "spell",
     "rank": "Common",
     "resource": "mana",
@@ -220,7 +231,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 13,
-    "description": "Firebolt is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 9 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 2 turns at 25% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Ember Firebolt is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 13 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 9 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 2 turns at 25% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "effects": [
       {
         "type": "status",
@@ -228,11 +239,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 25
       }
-    ]
+    ],
+    "previousName": "Firebolt"
   },
   {
     "id": "quick_stab",
-    "name": "Quick Stab",
+    "name": "Iron Quick Stab",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -241,11 +253,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Quick Stab is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Iron Quick Stab is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Quick Stab"
   },
   {
     "id": "mend",
-    "name": "Mend",
+    "name": "Halo Mend",
     "kind": "spell",
     "rank": "Common",
     "resource": "mana",
@@ -254,17 +267,18 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Mend is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 65% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Halo Mend is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 65% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
         "scale": 0.65
       }
-    ]
+    ],
+    "previousName": "Mend"
   },
   {
     "id": "aimed_shot",
-    "name": "Aimed Shot",
+    "name": "Fang Aimed Shot",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -273,11 +287,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 12,
-    "description": "Aimed Shot is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Fang Aimed Shot is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Aimed Shot"
   },
   {
     "id": "shield_bash",
-    "name": "Shield Bash",
+    "name": "Valor Shield Bash",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -286,7 +301,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Shield Bash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 30% reliability. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Valor Shield Bash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 8 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 30% reliability. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "status",
@@ -294,11 +309,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 30
       }
-    ]
+    ],
+    "previousName": "Shield Bash"
   },
   {
     "id": "mana_edge",
-    "name": "Mana Edge",
+    "name": "Glyph Mana Edge",
     "kind": "hybrid",
     "rank": "Common",
     "resource": "mana",
@@ -307,11 +323,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 12,
-    "description": "Mana Edge is a hybrid martial-spell technique with a arcane theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Glyph Mana Edge is a hybrid martial-spell technique with a arcane theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 12 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Mana Edge"
   },
   {
     "id": "brew_tonic",
-    "name": "Brew Tonic",
+    "name": "Steel Brew Tonic",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -320,7 +337,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Brew Tonic is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 6 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 50% of the user’s maximum HP; and restores 8 mana. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Steel Brew Tonic is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 6 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 50% of the user’s maximum HP; and restores 8 mana. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
@@ -331,11 +348,12 @@ export const SKILLS = [
         "resource": "mana",
         "amount": 8
       }
-    ]
+    ],
+    "previousName": "Brew Tonic"
   },
   {
     "id": "iron_palm",
-    "name": "Iron Palm",
+    "name": "Blade Iron Palm",
     "kind": "skill",
     "rank": "Common",
     "resource": "stamina",
@@ -344,7 +362,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 11,
-    "description": "Iron Palm is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 11 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 18% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Blade Iron Palm is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets an enemy target, carries 11 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 18% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "effects": [
       {
         "type": "status",
@@ -352,11 +370,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 18
       }
-    ]
+    ],
+    "previousName": "Iron Palm"
   },
   {
     "id": "inspire",
-    "name": "Inspire",
+    "name": "Halo Inspire",
     "kind": "support",
     "rank": "Common",
     "resource": "mana",
@@ -365,7 +384,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Inspire is a tactical support art with a light-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns; and restores 12 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
+    "description": "Halo Inspire is a tactical support art with a light-aspected theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns; and restores 12 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
     "effects": [
       {
         "type": "statusSelf",
@@ -378,11 +397,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 12
       }
-    ]
+    ],
+    "previousName": "Inspire"
   },
   {
     "id": "heroic_surge",
-    "name": "Heroic Surge",
+    "name": "Heroic Surge — Fang Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -391,7 +411,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 18,
-    "description": "Heroic Surge is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 2 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Heroic Surge — Fang Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 2 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "statusSelf",
@@ -399,11 +419,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Heroic Surge"
   },
   {
     "id": "rune_bolt",
-    "name": "Rune Bolt",
+    "name": "Rune Bolt — Mana Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -412,11 +433,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 17,
-    "description": "Rune Bolt is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Rune Bolt — Mana Form is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Rune Bolt"
   },
   {
     "id": "moon_lance",
-    "name": "Moon Lance",
+    "name": "Moon Lance — Sun Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -425,11 +447,12 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 17,
-    "description": "Moon Lance is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Moon Lance — Sun Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Moon Lance"
   },
   {
     "id": "verdant_barrier",
-    "name": "Verdant Barrier",
+    "name": "Verdant Barrier — Obsidian Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -438,7 +461,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "self",
     "power": 0,
-    "description": "Verdant Barrier is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores roughly 35% of the user’s maximum HP. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Verdant Barrier — Obsidian Form is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores roughly 35% of the user’s maximum HP. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -450,11 +473,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.35
       }
-    ]
+    ],
+    "previousName": "Verdant Barrier"
   },
   {
     "id": "rune_guard",
-    "name": "Rune Guard",
+    "name": "Rune Guard — Stone Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -463,7 +487,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "self",
     "power": 0,
-    "description": "Rune Guard is a trained combat technique with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Rune Guard — Stone Form is a trained combat technique with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -471,11 +495,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Rune Guard"
   },
   {
     "id": "forge_roar",
-    "name": "Forge Roar",
+    "name": "Forge Roar — Inferno Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -484,7 +509,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 14,
-    "description": "Forge Roar is a trained combat technique with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 55% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Forge Roar — Inferno Form is a trained combat technique with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 55% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -492,11 +517,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 55
       }
-    ]
+    ],
+    "previousName": "Forge Roar"
   },
   {
     "id": "dire_pounce",
-    "name": "Dire Pounce",
+    "name": "Dire Pounce — Fang Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -505,7 +531,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 18,
-    "description": "Dire Pounce is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 13 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 55% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Dire Pounce — Fang Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 13 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 55% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -513,11 +539,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 55
       }
-    ]
+    ],
+    "previousName": "Dire Pounce"
   },
   {
     "id": "lunar_rend",
-    "name": "Lunar Rend",
+    "name": "Lunar Rend — Seraphic Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -526,11 +553,12 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 16,
-    "description": "Lunar Rend is a trained combat technique with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Lunar Rend — Seraphic Form is a trained combat technique with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Lunar Rend"
   },
   {
     "id": "wyvern_flame",
-    "name": "Wyvern Flame",
+    "name": "Wyvern Flame — Solar Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -539,7 +567,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 20,
-    "description": "Wyvern Flame is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 20 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Wyvern Flame — Solar Form is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 20 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "effects": [
       {
         "type": "status",
@@ -547,11 +575,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Wyvern Flame"
   },
   {
     "id": "scale_aegis",
-    "name": "Scale Aegis",
+    "name": "Scale Aegis — Steel Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -560,7 +589,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Scale Aegis is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Scale Aegis — Steel Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -568,11 +597,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Scale Aegis"
   },
   {
     "id": "storm_jolt",
-    "name": "Storm Jolt",
+    "name": "Storm Jolt — Thunder Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -581,7 +611,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 17,
-    "description": "Storm Jolt is a structured spell formula with a lightning-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 18% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Storm Jolt — Thunder Form is a structured spell formula with a lightning-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 18% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -589,11 +619,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 18
       }
-    ]
+    ],
+    "previousName": "Storm Jolt"
   },
   {
     "id": "mist_step",
-    "name": "Mist Step",
+    "name": "Mist Step — Zephyr Form",
     "kind": "support",
     "rank": "Extra",
     "resource": "stamina",
@@ -602,7 +633,7 @@ export const SKILLS = [
     "element": "wind",
     "target": "self",
     "power": 0,
-    "description": "Mist Step is a tactical support art with a wind-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 3 turns; and grants the user Focus for 2 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Mist Step — Zephyr Form is a tactical support art with a wind-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 3 turns; and grants the user Focus for 2 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "effects": [
       {
         "type": "statusSelf",
@@ -616,11 +647,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Mist Step"
   },
   {
     "id": "soul_leech",
-    "name": "Soul Leech",
+    "name": "Soul Leech — Eclipse Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -629,17 +661,18 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 16,
-    "description": "Soul Leech is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also converts about 65% of damage dealt into healing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Soul Leech — Eclipse Form is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also converts about 65% of damage dealt into healing. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "drain",
         "ratio": 0.65
       }
-    ]
+    ],
+    "previousName": "Soul Leech"
   },
   {
     "id": "grave_charge",
-    "name": "Grave Charge",
+    "name": "Grave Charge — Night Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -648,11 +681,12 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 17,
-    "description": "Grave Charge is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Grave Charge — Night Form is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Grave Charge"
   },
   {
     "id": "hellbrand_mark",
-    "name": "Hellbrand Mark",
+    "name": "Hellbrand Mark — Solar Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -661,7 +695,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 14,
-    "description": "Hellbrand Mark is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 50% reliability; and attempts to inflict Weakened for 3 turns at 50% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Hellbrand Mark — Solar Form is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 50% reliability; and attempts to inflict Weakened for 3 turns at 50% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "effects": [
       {
         "type": "status",
@@ -675,11 +709,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 50
       }
-    ]
+    ],
+    "previousName": "Hellbrand Mark"
   },
   {
     "id": "binding_clause",
-    "name": "Binding Clause",
+    "name": "Binding Clause — Nocturne Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -688,7 +723,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 10,
-    "description": "Binding Clause is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Binding Clause — Nocturne Form is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "effects": [
       {
         "type": "status",
@@ -696,11 +731,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Binding Clause"
   },
   {
     "id": "mithril_pulse",
-    "name": "Mithril Pulse",
+    "name": "Mithril Pulse — Runic Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -709,11 +745,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 16,
-    "description": "Mithril Pulse is a trained combat technique with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Mithril Pulse — Runic Form is a trained combat technique with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Mithril Pulse"
   },
   {
     "id": "colossus_stomp",
-    "name": "Colossus Stomp",
+    "name": "Colossus Stomp — Root Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -722,7 +759,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 19,
-    "description": "Colossus Stomp is a trained combat technique with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 19 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 35% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Colossus Stomp — Root Form is a trained combat technique with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 19 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 35% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -730,11 +767,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 35
       }
-    ]
+    ],
+    "previousName": "Colossus Stomp"
   },
   {
     "id": "seraphic_ray",
-    "name": "Seraphic Ray",
+    "name": "Seraphic Ray — Dawn Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -743,11 +781,12 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 17,
-    "description": "Seraphic Ray is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Seraphic Ray — Dawn Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Seraphic Ray"
   },
   {
     "id": "omen_mend",
-    "name": "Omen Mend",
+    "name": "Omen Mend — Seraphic Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -756,7 +795,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Omen Mend is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 55% of the user’s maximum HP; and grants the user Focus for 2 turns. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Omen Mend — Seraphic Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 55% of the user’s maximum HP; and grants the user Focus for 2 turns. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
@@ -768,11 +807,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Omen Mend"
   },
   {
     "id": "ice_lance",
-    "name": "Ice Lance",
+    "name": "Ice Lance — Crystal Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -781,7 +821,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 16,
-    "description": "Ice Lance is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 1 turns at 22% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Ice Lance — Crystal Form is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 1 turns at 22% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "effects": [
       {
         "type": "status",
@@ -789,11 +829,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 22
       }
-    ]
+    ],
+    "previousName": "Ice Lance"
   },
   {
     "id": "arcane_missile",
-    "name": "Arcane Missile",
+    "name": "Arcane Missile — Starseal Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -802,11 +843,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 15,
-    "description": "Arcane Missile is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Arcane Missile — Starseal Form is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Arcane Missile"
   },
   {
     "id": "mana_shield",
-    "name": "Mana Shield",
+    "name": "Mana Shield — Runic Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -815,7 +857,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "self",
     "power": 0,
-    "description": "Mana Shield is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores 8 stamina. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Mana Shield — Runic Form is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores 8 stamina. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -828,11 +870,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 8
       }
-    ]
+    ],
+    "previousName": "Mana Shield"
   },
   {
     "id": "venom_stab",
-    "name": "Venom Stab",
+    "name": "Venom Stab — Viper Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -841,7 +884,7 @@ export const SKILLS = [
     "element": "poison",
     "target": "enemy",
     "power": 12,
-    "description": "Venom Stab is a trained combat technique with a poison-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 12 base power, and uses toxins, venom pressure, and weakening wounds to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Poison for 4 turns at 65% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Venom Stab — Viper Form is a trained combat technique with a poison-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 12 base power, and uses toxins, venom pressure, and weakening wounds to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Poison for 4 turns at 65% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "effects": [
       {
         "type": "status",
@@ -849,11 +892,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 65
       }
-    ]
+    ],
+    "previousName": "Venom Stab"
   },
   {
     "id": "shadowstep",
-    "name": "Shadowstep",
+    "name": "Shadowstep — Eclipse Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -862,7 +906,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 15,
-    "description": "Shadowstep is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 2 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Shadowstep — Eclipse Form is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 2 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "effects": [
       {
         "type": "statusSelf",
@@ -870,11 +914,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Shadowstep"
   },
   {
     "id": "lucky_find",
-    "name": "Lucky Find",
+    "name": "Oath of the Valor Lucky Find: Support Vow",
     "kind": "support",
     "rank": "Unique",
     "resource": "stamina",
@@ -883,7 +928,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Lucky Find is a tactical support art with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Lucky for 5 turns; and restores 10 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
+    "description": "Oath of the Valor Lucky Find: Support Vow is a tactical support art with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 8 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Lucky for 5 turns; and restores 10 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
     "effects": [
       {
         "type": "statusSelf",
@@ -896,11 +941,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 10
       }
-    ]
+    ],
+    "previousName": "Lucky Find"
   },
   {
     "id": "greater_mend",
-    "name": "Greater Mend",
+    "name": "Greater Mend — Sun Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -909,17 +955,18 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Greater Mend is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 105% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Greater Mend — Sun Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 105% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
         "scale": 1.05
       }
-    ]
+    ],
+    "previousName": "Greater Mend"
   },
   {
     "id": "banish",
-    "name": "Banish",
+    "name": "Banish — Aureate Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -928,11 +975,12 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 18,
-    "description": "Banish is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Banish — Aureate Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 18 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 13 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Banish"
   },
   {
     "id": "radiant_smite",
-    "name": "Radiant Smite",
+    "name": "Radiant Smite — Halo Form",
     "kind": "hybrid",
     "rank": "Extra",
     "resource": "mana",
@@ -941,11 +989,12 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 17,
-    "description": "Radiant Smite is a hybrid martial-spell technique with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Radiant Smite — Halo Form is a hybrid martial-spell technique with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Radiant Smite"
   },
   {
     "id": "piercing_shot",
-    "name": "Piercing Shot",
+    "name": "Piercing Shot — Blade Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -954,11 +1003,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 17,
-    "description": "Piercing Shot is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn."
+    "description": "Piercing Shot — Blade Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 17 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "previousName": "Piercing Shot"
   },
   {
     "id": "pack_call",
-    "name": "Pack Call",
+    "name": "Pack Call — Fang Form",
     "kind": "support",
     "rank": "Extra",
     "resource": "stamina",
@@ -967,7 +1017,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Pack Call is a tactical support art with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Pack Call — Fang Form is a tactical support art with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 10 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "statusSelf",
@@ -975,11 +1025,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Pack Call"
   },
   {
     "id": "thorn_field",
-    "name": "Thorn Field",
+    "name": "Thorn Field — Mountain Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -988,7 +1039,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 14,
-    "description": "Thorn Field is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Thorn Field — Mountain Form is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -996,11 +1047,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Thorn Field"
   },
   {
     "id": "iron_wall",
-    "name": "Iron Wall",
+    "name": "Iron Wall — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1009,7 +1061,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Iron Wall is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Iron Wall — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -1017,11 +1069,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Iron Wall"
   },
   {
     "id": "protective_oath",
-    "name": "Protective Oath",
+    "name": "Oath of the Aureate Protective Oath: Support Vow",
     "kind": "support",
     "rank": "Unique",
     "resource": "mana",
@@ -1030,7 +1083,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Protective Oath is a tactical support art with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and grants the user Focus for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Oath of the Aureate Protective Oath: Support Vow is a tactical support art with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and grants the user Focus for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -1044,11 +1097,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Protective Oath"
   },
   {
     "id": "fire_bomb",
-    "name": "Fire Bomb",
+    "name": "Fire Bomb — Cinder Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1057,7 +1111,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 16,
-    "description": "Fire Bomb is a trained combat technique with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Fire Bomb — Cinder Form is a trained combat technique with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "effects": [
       {
         "type": "status",
@@ -1065,11 +1119,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Fire Bomb"
   },
   {
     "id": "patchwork_aid",
-    "name": "Patchwork Aid",
+    "name": "Patchwork Aid — Aether Form",
     "kind": "support",
     "rank": "Extra",
     "resource": "mana",
@@ -1078,17 +1133,18 @@ export const SKILLS = [
     "element": "arcane",
     "target": "self",
     "power": 0,
-    "description": "Patchwork Aid is a tactical support art with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Patchwork Aid — Aether Form is a tactical support art with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "effects": [
       {
         "type": "heal",
         "scale": 0.6
       }
-    ]
+    ],
+    "previousName": "Patchwork Aid"
   },
   {
     "id": "toxic_cloud",
-    "name": "Toxic Cloud",
+    "name": "Toxic Cloud — Plague Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -1097,7 +1153,7 @@ export const SKILLS = [
     "element": "poison",
     "target": "enemy",
     "power": 13,
-    "description": "Toxic Cloud is a structured spell formula with a poison-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 13 base power, and uses toxins, venom pressure, and weakening wounds to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Poison for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Toxic Cloud — Plague Form is a structured spell formula with a poison-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 13 base power, and uses toxins, venom pressure, and weakening wounds to pressure weaknesses or bypass simple defenses. It costs 14 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Poison for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "status",
@@ -1105,11 +1161,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Toxic Cloud"
   },
   {
     "id": "ki_burst",
-    "name": "Ki Burst",
+    "name": "Ki Burst — Mana Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1118,11 +1175,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 16,
-    "description": "Ki Burst is a trained combat technique with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Ki Burst — Mana Form is a trained combat technique with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 16 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Ki Burst"
   },
   {
     "id": "stunning_palm",
-    "name": "Stunning Palm",
+    "name": "Stunning Palm — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1131,7 +1189,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Stunning Palm is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Stunning Palm — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "effects": [
       {
         "type": "status",
@@ -1139,11 +1197,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Stunning Palm"
   },
   {
     "id": "war_chant",
-    "name": "War Chant",
+    "name": "War Chant — Aureate Form",
     "kind": "support",
     "rank": "Extra",
     "resource": "mana",
@@ -1152,7 +1211,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "War Chant is a tactical support art with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns; and restores 10 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
+    "description": "War Chant — Aureate Form is a tactical support art with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns; and restores 10 stamina. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
     "effects": [
       {
         "type": "statusSelf",
@@ -1165,11 +1224,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 10
       }
-    ]
+    ],
+    "previousName": "War Chant"
   },
   {
     "id": "dirge_of_dread",
-    "name": "Dirge of Dread",
+    "name": "Dirge Of Dread — Umbral Form",
     "kind": "spell",
     "rank": "Extra",
     "resource": "mana",
@@ -1178,7 +1238,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 12,
-    "description": "Dirge of Dread is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 12 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 70% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Dirge Of Dread — Umbral Form is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 12 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 12 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 70% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "effects": [
       {
         "type": "status",
@@ -1186,11 +1246,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 70
       }
-    ]
+    ],
+    "previousName": "Dirge of Dread"
   },
   {
     "id": "exploit_lore",
-    "name": "Exploit Lore",
+    "name": "Oath of the Aether Exploit Lore: Support Vow",
     "kind": "support",
     "rank": "Unique",
     "resource": "mana",
@@ -1199,7 +1260,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 10,
-    "description": "Exploit Lore is a tactical support art with a arcane theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets an enemy target, carries 10 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 60% reliability. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
+    "description": "Oath of the Aether Exploit Lore: Support Vow is a tactical support art with a arcane theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets an enemy target, carries 10 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 10 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 60% reliability. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
     "effects": [
       {
         "type": "status",
@@ -1207,11 +1268,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 60
       }
-    ]
+    ],
+    "previousName": "Exploit Lore"
   },
   {
     "id": "perfect_form",
-    "name": "Perfect Form",
+    "name": "Oath of the Fang Perfect Form: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "resource": "stamina",
@@ -1220,11 +1282,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 22,
-    "description": "Perfect Form is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets an enemy target, carries 22 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity."
+    "description": "Oath of the Fang Perfect Form: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. Mechanically, it targets an enemy target, carries 22 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "previousName": "Perfect Form"
   },
   {
     "id": "rage_cleave",
-    "name": "Rage Cleave",
+    "name": "Rage Cleave — Valor Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1233,11 +1296,12 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 20,
-    "description": "Rage Cleave is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 20 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round."
+    "description": "Rage Cleave — Valor Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 20 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "previousName": "Rage Cleave"
   },
   {
     "id": "guarding_cut",
-    "name": "Guarding Cut",
+    "name": "Guarding Cut — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "resource": "stamina",
@@ -1246,7 +1310,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 15,
-    "description": "Guarding Cut is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 2 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Guarding Cut — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. Mechanically, it targets an enemy target, carries 15 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 2 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "effects": [
       {
         "type": "statusSelf",
@@ -1254,11 +1318,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Guarding Cut"
   },
   {
     "id": "iaido_starfall",
-    "name": "Iaido: Starfall",
+    "name": "Iaido: Starfall of the Starseal Crown",
     "kind": "hybrid",
     "rank": "Rare",
     "resource": "mana",
@@ -1267,11 +1332,12 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 32,
-    "description": "Iaido: Starfall is a hybrid martial-spell technique with a arcane theme. As a Rare ability, it is a rare technique with specialist payoff. Mechanically, it targets an enemy target, carries 32 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears."
+    "description": "Iaido: Starfall of the Starseal Crown is a hybrid martial-spell technique with a arcane theme. As a Rare ability, it is a rare technique with specialist payoff. Mechanically, it targets an enemy target, carries 32 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "previousName": "Iaido: Starfall"
   },
   {
     "id": "void_fist",
-    "name": "Void Fist",
+    "name": "Secret Art: Runic Void Fist",
     "kind": "skill",
     "rank": "Hidden",
     "resource": "stamina",
@@ -1280,7 +1346,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 30,
-    "description": "Void Fist is a trained combat technique with a arcane theme. As a Hidden ability, it is a secret technique with unusual scaling and unlock flavor. Mechanically, it targets an enemy target, carries 30 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 80% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Secret Art: Runic Void Fist is a trained combat technique with a arcane theme. As a Hidden ability, it is a secret technique with unusual scaling and unlock flavor. Mechanically, it targets an enemy target, carries 30 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 80% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "effects": [
       {
         "type": "status",
@@ -1288,11 +1354,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 80
       }
-    ]
+    ],
+    "previousName": "Void Fist"
   },
   {
     "id": "eclipse_edict",
-    "name": "Eclipse Edict",
+    "name": "Secret Art: Aether Eclipse Edict",
     "kind": "spell",
     "rank": "Hidden",
     "resource": "mana",
@@ -1301,7 +1368,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 30,
-    "description": "Eclipse Edict is a structured spell formula with a arcane theme. As a Hidden ability, it is a secret technique with unusual scaling and unlock flavor. Mechanically, it targets an enemy target, carries 30 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 25 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also converts about 50% of damage dealt into healing; and attempts to inflict Weakened for 3 turns at 70% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Secret Art: Aether Eclipse Edict is a structured spell formula with a arcane theme. As a Hidden ability, it is a secret technique with unusual scaling and unlock flavor. Mechanically, it targets an enemy target, carries 30 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 25 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also converts about 50% of damage dealt into healing; and attempts to inflict Weakened for 3 turns at 70% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "drain",
@@ -1313,11 +1380,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 70
       }
-    ]
+    ],
+    "previousName": "Eclipse Edict"
   },
   {
     "id": "basic_focus",
-    "name": "Basic Focus",
+    "name": "Fang Basic Focus",
     "kind": "support",
     "rank": "Common",
     "resource": "stamina",
@@ -1326,7 +1394,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Basic Focus is a tactical support art with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 0 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores 18 stamina; and grants the user Focus for 2 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Fang Basic Focus is a tactical support art with a martial theme. As a Common ability, it is easy to fit into early builds. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 0 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores 18 stamina; and grants the user Focus for 2 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "effects": [
       {
         "type": "restore",
@@ -1339,11 +1407,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Basic Focus"
   },
   {
     "id": "sk_armor_breaker",
-    "name": "Armor Breaker",
+    "name": "Armor Breaker — Valor Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -1353,7 +1422,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Armor Breaker is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Break, Melee, Damage, Vulnerable, Debuff, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 18 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Armor Breaker — Valor Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Break, Melee, Damage, Vulnerable, Debuff, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 18 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Break",
@@ -1373,11 +1442,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Armor Breaker"
   },
   {
     "id": "sk_bleeding_crescent",
-    "name": "Bleeding Crescent",
+    "name": "Bleeding Crescent — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -1387,7 +1457,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Bleeding Crescent is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Weapon Art, Melee, Damage, Bleed, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 18 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Bleeding Crescent — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Weapon Art, Melee, Damage, Bleed, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 18 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 3 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Weapon Art",
@@ -1406,11 +1476,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Bleeding Crescent"
   },
   {
     "id": "sk_war_cry",
-    "name": "War Cry",
+    "name": "War Cry — Steel Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -1420,7 +1491,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "War Cry is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Taunt, Bravery, Buff, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
+    "description": "War Cry — Steel Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Taunt, Bravery, Buff, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It is a strong utility pick for longer dungeon runs where survival and rewards matter as much as raw damage.",
     "tags": [
       "Physical",
       "Taunt",
@@ -1431,11 +1502,12 @@ export const SKILLS = [
     ],
     "source": "Advanced Skill Library",
     "price": 207,
-    "starting": false
+    "starting": false,
+    "previousName": "War Cry"
   },
   {
     "id": "sk_iron_counter",
-    "name": "Iron Counter",
+    "name": "Iron Counter — Blade Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 7,
@@ -1445,7 +1517,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Iron Counter is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Counter, Guard, Defensive, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Iron Counter — Blade Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Counter, Guard, Defensive, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Counter",
@@ -1470,11 +1542,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Iron Counter"
   },
   {
     "id": "sk_twin_fang_rush",
-    "name": "Twin Fang Rush",
+    "name": "Twin Fang Rush — Blade Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 7,
@@ -1484,7 +1557,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 22,
-    "description": "Twin Fang Rush is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Melee, Damage, Multi-Hit, Combo, Active. Mechanically, it targets an enemy target, carries 22 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Twin Fang Rush — Blade Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Skill Library library and is tagged for Physical, Melee, Damage, Multi-Hit, Combo, Active. Mechanically, it targets an enemy target, carries 22 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Melee",
@@ -1495,11 +1568,12 @@ export const SKILLS = [
     ],
     "source": "Advanced Skill Library",
     "price": 197,
-    "starting": false
+    "starting": false,
+    "previousName": "Twin Fang Rush"
   },
   {
     "id": "sp_shadow_mark",
-    "name": "Shadow Mark",
+    "name": "Shadow Mark — Eclipse Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 5,
@@ -1509,7 +1583,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 26,
-    "description": "Shadow Mark is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Dark, Curse, Marked, Vulnerable, Debuff, Active. Mechanically, it targets an enemy target, carries 26 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 23 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 45% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Shadow Mark — Eclipse Form is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Dark, Curse, Marked, Vulnerable, Debuff, Active. Mechanically, it targets an enemy target, carries 26 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 23 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 3 turns at 45% reliability. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "tags": [
       "Magic",
       "Dark",
@@ -1529,11 +1603,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Shadow Mark"
   },
   {
     "id": "sp_chain_lightning",
-    "name": "Chain Lightning",
+    "name": "Chain Lightning — Seraphic Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -1543,7 +1618,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 24,
-    "description": "Chain Lightning is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Lightning, AoE, Damage, Paralysis, Multi-Hit, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Chain Lightning — Seraphic Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Lightning, AoE, Damage, Paralysis, Multi-Hit, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Lightning",
@@ -1563,11 +1638,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Chain Lightning"
   },
   {
     "id": "sp_frost_prison",
-    "name": "Frost Prison",
+    "name": "Frost Prison — Crystal Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -1577,7 +1653,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 24,
-    "description": "Frost Prison is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Ice, Control, Freeze, Debuff, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 22 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 2 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Frost Prison — Crystal Form is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Ice, Control, Freeze, Debuff, Active. Mechanically, it targets an enemy target, carries 24 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 22 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 2 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ice",
@@ -1596,11 +1672,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Frost Prison"
   },
   {
     "id": "sp_regeneration",
-    "name": "Regeneration",
+    "name": "Regeneration — Steel Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -1610,7 +1687,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Regeneration is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Healing, Regeneration, Support, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 20 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Regeneration — Steel Form is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Healing, Regeneration, Support, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 20 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "tags": [
       "Magic",
       "Healing",
@@ -1627,11 +1704,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.6
       }
-    ]
+    ],
+    "previousName": "Regeneration"
   },
   {
     "id": "sp_fireball",
-    "name": "Fireball",
+    "name": "Fireball — Cinder Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 7,
@@ -1641,7 +1719,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 22,
-    "description": "Fireball is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Fire, AoE, Damage, Burn, Burst, Active. Mechanically, it targets an enemy target, carries 22 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 20 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Fireball — Cinder Form is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the Advanced Spell Library library and is tagged for Magic, Fire, AoE, Damage, Burn, Burst, Active. Mechanically, it targets an enemy target, carries 22 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 20 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Fire",
@@ -1661,11 +1739,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Fireball"
   },
   {
     "id": "in_predator_instinct",
-    "name": "Predator Instinct",
+    "name": "Lineage Art: Blade Predator Instinct",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 8,
@@ -1675,7 +1754,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Predator Instinct is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Beastkin Lineage library and is tagged for Intrinsic, Passive, Physical, Critical, Focus. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Blade Predator Instinct is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Beastkin Lineage library and is tagged for Intrinsic, Passive, Physical, Critical, Focus. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Focus for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -1693,11 +1772,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Predator Instinct"
   },
   {
     "id": "sp_abyssal_chain",
-    "name": "Abyssal Chain",
+    "name": "Oath of the Eclipse Abyssal Chain: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 4,
@@ -1707,7 +1787,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 36,
-    "description": "Abyssal Chain is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Dark Magic Requirement library and is tagged for Magic, Dark, Curse, Control, Fear, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Eclipse Abyssal Chain: Spell Vow is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Dark Magic Requirement library and is tagged for Magic, Dark, Curse, Control, Fear, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Dark",
@@ -1727,11 +1807,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Abyssal Chain"
   },
   {
     "id": "in_hellfire_affinity",
-    "name": "Hellfire Affinity",
+    "name": "Lineage Art: Night Hellfire Affinity",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 6,
@@ -1741,7 +1822,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "self",
     "power": 0,
-    "description": "Hellfire Affinity is a passive trait that changes how the build behaves with a dark-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Demon Lineage library and is tagged for Intrinsic, Passive, Fire, Dark, Magic. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also attempts to inflict Weakened for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Lineage Art: Night Hellfire Affinity is a passive trait that changes how the build behaves with a dark-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Demon Lineage library and is tagged for Intrinsic, Passive, Fire, Dark, Magic. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also attempts to inflict Weakened for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -1759,11 +1840,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Hellfire Affinity"
   },
   {
     "id": "in_dragon_breath",
-    "name": "Dragon Breath",
+    "name": "Lineage Art: Solar Dragon Breath",
     "kind": "spell",
     "rank": "Intrinsic",
     "tier": 5,
@@ -1773,7 +1855,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 24,
-    "description": "Dragon Breath is a structured spell formula with a flame-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dragonkin / Dragon Evolution library and is tagged for Intrinsic, Magic, Fire, AoE, Damage, Burn. Mechanically, it targets an enemy target, carries 24 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 28 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Lineage Art: Solar Dragon Breath is a structured spell formula with a flame-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dragonkin / Dragon Evolution library and is tagged for Intrinsic, Magic, Fire, AoE, Damage, Burn. Mechanically, it targets an enemy target, carries 24 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 28 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Intrinsic",
       "Magic",
@@ -1792,11 +1874,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Dragon Breath"
   },
   {
     "id": "in_dragon_scales",
-    "name": "Dragon Scales",
+    "name": "Lineage Art: Steel Dragon Scales",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 6,
@@ -1806,7 +1889,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Dragon Scales is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dragonkin / Dragon Race library and is tagged for Intrinsic, Passive, Dragon, Guard, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Steel Dragon Scales is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dragonkin / Dragon Race library and is tagged for Intrinsic, Passive, Dragon, Guard, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -1824,11 +1907,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Dragon Scales"
   },
   {
     "id": "in_stoneblood",
-    "name": "Stoneblood",
+    "name": "Lineage Art: Stone Stoneblood",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 8,
@@ -1838,7 +1922,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "self",
     "power": 0,
-    "description": "Stoneblood is a passive trait that changes how the build behaves with a earth-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dwarf Lineage library and is tagged for Intrinsic, Passive, Guard, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Stone Stoneblood is a passive trait that changes how the build behaves with a earth-aspected theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Dwarf Lineage library and is tagged for Intrinsic, Passive, Guard, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -1855,11 +1939,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Stoneblood"
   },
   {
     "id": "in_arcane_sight",
-    "name": "Arcane Sight",
+    "name": "Lineage Art: Aether Arcane Sight",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 8,
@@ -1869,7 +1954,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "self",
     "power": 0,
-    "description": "Arcane Sight is a passive trait that changes how the build behaves with a arcane theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Elf Lineage library and is tagged for Intrinsic, Passive, Arcane, Utility. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Aether Arcane Sight is a passive trait that changes how the build behaves with a arcane theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Elf Lineage library and is tagged for Intrinsic, Passive, Arcane, Utility. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -1878,11 +1963,12 @@ export const SKILLS = [
     ],
     "source": "Elf Lineage",
     "price": 0,
-    "starting": false
+    "starting": false,
+    "previousName": "Arcane Sight"
   },
   {
     "id": "sp_world_flame_sigil",
-    "name": "World Flame Sigil",
+    "name": "Oath of the Phoenix World Flame Sigil: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 4,
@@ -1892,7 +1978,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 36,
-    "description": "World Flame Sigil is a structured spell formula with a flame-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Fireball Mastery Requirement library and is tagged for Magic, Fire, Burn, AoE, Curse, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 36 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 4 turns at 75% reliability; and attempts to inflict Weakened for 4 turns at 75% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Oath of the Phoenix World Flame Sigil: Spell Vow is a structured spell formula with a flame-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Fireball Mastery Requirement library and is tagged for Magic, Fire, Burn, AoE, Curse, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 36 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 4 turns at 75% reliability; and attempts to inflict Weakened for 4 turns at 75% reliability. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Fire",
@@ -1918,11 +2004,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "World Flame Sigil"
   },
   {
     "id": "sk_kings_guard",
-    "name": "King’s Guard",
+    "name": "Oath of the Valor King’s Guard: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -1932,7 +2019,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "King’s Guard is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Guardian Path Requirement library and is tagged for Physical, Guard, Counter, Defensive, Unique, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Oath of the Valor King’s Guard: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Guardian Path Requirement library and is tagged for Physical, Guard, Counter, Defensive, Unique, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Guard",
@@ -1951,11 +2038,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "King’s Guard"
   },
   {
     "id": "sk_blood_moon_reaver",
-    "name": "Blood Moon Reaver",
+    "name": "Oath of the Rift Blood Moon Reaver: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -1965,7 +2053,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Blood Moon Reaver is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Hidden Achievement Requirement library and is tagged for Physical, Weapon Art, Bleed, Burst, Unique, Active. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 35 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Rift Blood Moon Reaver: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Hidden Achievement Requirement library and is tagged for Physical, Weapon Art, Bleed, Burst, Unique, Active. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 35 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Bleed for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Weapon Art",
@@ -1984,11 +2072,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Blood Moon Reaver"
   },
   {
     "id": "sp_saints_restoration",
-    "name": "Saint’s Restoration",
+    "name": "Oath of the Aureate Saint’s Restoration: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -1998,7 +2087,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Saint’s Restoration is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Holy Path Requirement library and is tagged for Magic, Holy, Healing, Cleanse, Barrier, Unique, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 40 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns; and restores roughly 85% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Aureate Saint’s Restoration: Spell Vow is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Holy Path Requirement library and is tagged for Magic, Holy, Healing, Cleanse, Barrier, Unique, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 40 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns; and restores roughly 85% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Holy",
@@ -2022,11 +2111,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.85
       }
-    ]
+    ],
+    "previousName": "Saint’s Restoration"
   },
   {
     "id": "sk_soul_bound_blade_art",
-    "name": "Soul-Bound Blade Art",
+    "name": "Oath of the Iron Bound Blade Art: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 2,
@@ -2036,7 +2126,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 40,
-    "description": "Soul-Bound Blade Art is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Rare Class / Special Weapon Requirement library and is tagged for Physical, Weapon Art, True Damage, Burst, Unique, Active. Mechanically, it targets an enemy target, carries 40 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 42 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Iron Bound Blade Art: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Rare Class / Special Weapon Requirement library and is tagged for Physical, Weapon Art, True Damage, Burst, Unique, Active. Mechanically, it targets an enemy target, carries 40 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 42 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Weapon Art",
@@ -2047,11 +2137,12 @@ export const SKILLS = [
     ],
     "source": "Rare Class / Special Weapon Requirement",
     "price": 0,
-    "starting": false
+    "starting": false,
+    "previousName": "Soul-Bound Blade Art"
   },
   {
     "id": "sk_dragon_rend",
-    "name": "Dragon Rend",
+    "name": "Oath of the Blade Dragon Rend: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 4,
@@ -2061,7 +2152,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 36,
-    "description": "Dragon Rend is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Requirement Unlock library and is tagged for Physical, Weapon Art, Burst, Damage, Piercing, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 32 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Oath of the Blade Dragon Rend: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Requirement Unlock library and is tagged for Physical, Weapon Art, Burst, Damage, Piercing, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 32 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Weapon Art",
@@ -2073,11 +2164,12 @@ export const SKILLS = [
     ],
     "source": "Requirement Unlock",
     "price": 0,
-    "starting": false
+    "starting": false,
+    "previousName": "Dragon Rend"
   },
   {
     "id": "sk_phantom_step_art",
-    "name": "Phantom Step Art",
+    "name": "Oath of the Fang Phantom Step Art: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 4,
@@ -2087,7 +2179,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 36,
-    "description": "Phantom Step Art is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Requirement Unlock library and is tagged for Physical, Mobility, Haste, Counter, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 28 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns; and grants the user Haste for 4 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Oath of the Fang Phantom Step Art: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Requirement Unlock library and is tagged for Physical, Mobility, Haste, Counter, Unique, Active. Mechanically, it targets an enemy target, carries 36 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 28 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns; and grants the user Haste for 4 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Physical",
       "Mobility",
@@ -2112,11 +2204,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Phantom Step Art"
   },
   {
     "id": "sp_void_gate",
-    "name": "Void Gate",
+    "name": "Oath of the Night Void Gate: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 2,
@@ -2126,7 +2219,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 40,
-    "description": "Void Gate is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Secret Research Requirement library and is tagged for Magic, Arcane, Dark, Control, Banish, Unique, Active. Mechanically, it targets an enemy target, carries 40 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 48 mana and has a 6-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Night Void Gate: Spell Vow is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Secret Research Requirement library and is tagged for Magic, Arcane, Dark, Control, Banish, Unique, Active. Mechanically, it targets an enemy target, carries 40 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 48 mana and has a 6-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Arcane",
@@ -2138,11 +2231,12 @@ export const SKILLS = [
     ],
     "source": "Secret Research Requirement",
     "price": 0,
-    "starting": false
+    "starting": false,
+    "previousName": "Void Gate"
   },
   {
     "id": "sk_hunter_step",
-    "name": "Hunter Step",
+    "name": "Rift Hunter Step",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -2152,7 +2246,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Hunter Step is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Mobility, Haste, Focus, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns; grants the user Haste for 3 turns; and restores 12 stamina. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Rift Hunter Step is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Mobility, Haste, Focus, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 3 turns; grants the user Haste for 3 turns; and restores 12 stamina. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Physical",
       "Mobility",
@@ -2182,11 +2276,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 12
       }
-    ]
+    ],
+    "previousName": "Hunter Step"
   },
   {
     "id": "sp_mana_shield",
-    "name": "Mana Shield",
+    "name": "Starseal Mana Shield",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -2196,7 +2291,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "self",
     "power": 0,
-    "description": "Mana Shield is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Magic, Arcane, Barrier, Guard, Defensive, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Starseal Mana Shield is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Magic, Arcane, Barrier, Guard, Defensive, Buff, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 14 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Magic",
       "Arcane",
@@ -2216,11 +2311,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Mana Shield"
   },
   {
     "id": "sp_minor_heal",
-    "name": "Minor Heal",
+    "name": "Radiant Minor Heal",
     "kind": "spell",
     "rank": "Common",
     "tier": 9,
@@ -2230,7 +2326,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Minor Heal is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Magic, Holy, Healing, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP; and restores 12 stamina. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Radiant Minor Heal is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Magic, Holy, Healing, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 12 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP; and restores 12 stamina. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "tags": [
       "Magic",
       "Holy",
@@ -2251,11 +2347,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 12
       }
-    ]
+    ],
+    "previousName": "Minor Heal"
   },
   {
     "id": "sk_power_strike",
-    "name": "Power Strike",
+    "name": "Blade Power Strike",
     "kind": "skill",
     "rank": "Common",
     "tier": 9,
@@ -2265,7 +2362,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 12,
-    "description": "Power Strike is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Melee, Damage, Burst, Break, Active. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Blade Power Strike is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Melee, Damage, Burst, Break, Active. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Melee",
@@ -2276,11 +2373,12 @@ export const SKILLS = [
     ],
     "source": "Skill Library",
     "price": 108,
-    "starting": false
+    "starting": false,
+    "previousName": "Power Strike"
   },
   {
     "id": "sk_shield_bash",
-    "name": "Shield Bash",
+    "name": "Fang Shield Bash",
     "kind": "skill",
     "rank": "Common",
     "tier": 9,
@@ -2290,7 +2388,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 12,
-    "description": "Shield Bash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Melee, Damage, Guard, Stun, Control, Active. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability; and grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Fang Shield Bash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Skill Library library and is tagged for Physical, Melee, Damage, Guard, Stun, Control, Active. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability; and grants the user Guard for 3 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Melee",
@@ -2316,11 +2414,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Shield Bash"
   },
   {
     "id": "in_adaptive_body",
-    "name": "Adaptive Body",
+    "name": "Lineage Art: Valor Adaptive Body",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 8,
@@ -2330,7 +2429,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Adaptive Body is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Slime Lineage library and is tagged for Intrinsic, Passive, Slime, Evolution, Utility. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Valor Adaptive Body is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Slime Lineage library and is tagged for Intrinsic, Passive, Slime, Evolution, Utility. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. Its value comes from timing, setup, and the passive pressure it adds to your build rather than direct damage. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -2340,11 +2439,12 @@ export const SKILLS = [
     ],
     "source": "Slime Lineage",
     "price": 0,
-    "starting": false
+    "starting": false,
+    "previousName": "Adaptive Body"
   },
   {
     "id": "sk_guard_stance",
-    "name": "Guard Stance",
+    "name": "Rift Guard Stance",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -2354,7 +2454,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Guard Stance is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Skill / Skill Library library and is tagged for Physical, Stance, Guard, Defensive, Buff, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 4 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores 12 stamina. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Rift Guard Stance is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Skill / Skill Library library and is tagged for Physical, Stance, Guard, Defensive, Buff, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 4 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns; and restores 12 stamina. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Stance",
@@ -2378,11 +2478,12 @@ export const SKILLS = [
         "resource": "stamina",
         "amount": 12
       }
-    ]
+    ],
+    "previousName": "Guard Stance"
   },
   {
     "id": "sk_quick_slash",
-    "name": "Quick Slash",
+    "name": "Steel Quick Slash",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -2392,7 +2493,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Quick Slash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Skill / Skill Library library and is tagged for Physical, Melee, Damage, Weapon Art, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Steel Quick Slash is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Skill / Skill Library library and is tagged for Physical, Melee, Damage, Weapon Art, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 7 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Melee",
@@ -2402,11 +2503,12 @@ export const SKILLS = [
     ],
     "source": "Starter Skill / Skill Library",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Quick Slash"
   },
   {
     "id": "sp_fire_bolt",
-    "name": "Fire Bolt",
+    "name": "Cinder Fire Bolt",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -2416,7 +2518,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 10,
-    "description": "Fire Bolt is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Fire, Ranged, Damage, Burn, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Cinder Fire Bolt is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Fire, Ranged, Damage, Burn, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 3 turns at 45% reliability. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Magic",
       "Fire",
@@ -2435,11 +2537,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Fire Bolt"
   },
   {
     "id": "sp_ice_needle",
-    "name": "Ice Needle",
+    "name": "Glacier Ice Needle",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -2449,7 +2552,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 10,
-    "description": "Ice Needle is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Ice, Ranged, Damage, Freeze, Control, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 2 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Glacier Ice Needle is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Ice, Ranged, Damage, Freeze, Control, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 8 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Freeze for 2 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ice",
@@ -2469,11 +2572,12 @@ export const SKILLS = [
         "duration": 2,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Ice Needle"
   },
   {
     "id": "sp_spark",
-    "name": "Spark",
+    "name": "Dawn Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -2483,7 +2587,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 10,
-    "description": "Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Lightning, Ranged, Damage, Paralysis, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Dawn Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the Starter Spell / Skill Library library and is tagged for Magic, Lightning, Ranged, Damage, Paralysis, Active. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Lightning",
@@ -2502,11 +2606,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Spark"
   },
   {
     "id": "sp_storm_crown_invocation",
-    "name": "Storm Crown Invocation",
+    "name": "Oath of the Seraphic Storm Crown Invocation: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -2516,7 +2621,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 38,
-    "description": "Storm Crown Invocation is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Storm Requirement library and is tagged for Magic, Lightning, AoE, Haste, Paralysis, Unique, Active. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 42 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 65% reliability; and grants the user Haste for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Seraphic Storm Crown Invocation: Spell Vow is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the Storm Requirement library and is tagged for Magic, Lightning, AoE, Haste, Paralysis, Unique, Active. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 42 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 65% reliability; and grants the user Haste for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Lightning",
@@ -2542,11 +2647,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Storm Crown Invocation"
   },
   {
     "id": "sk_aegis_last_king",
-    "name": "Aegis of the Last King",
+    "name": "Final Myth: Rift The Last King: Ultimate Evolution Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -2556,7 +2662,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Aegis of the Last King is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Guard, Counter, Defensive, Thorns, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 60 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Final Myth: Rift The Last King: Ultimate Evolution Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Guard, Counter, Defensive, Thorns, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 60 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -2576,11 +2682,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Aegis of the Last King"
   },
   {
     "id": "sp_astraea_final_benediction",
-    "name": "Astraea’s Final Benediction",
+    "name": "Final Myth: Aureate Astraea’s Final Benediction: Ultimate Evolution Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -2590,7 +2697,7 @@ export const SKILLS = [
     "element": "light",
     "target": "self",
     "power": 0,
-    "description": "Astraea’s Final Benediction is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, Holy, Healing, Cleanse, Barrier, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 85 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns; restores roughly 100% of the user’s maximum HP; and restores 12 stamina. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Aureate Astraea’s Final Benediction: Ultimate Evolution Cataclysm is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, Holy, Healing, Cleanse, Barrier, Support, Active. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 85 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns; restores roughly 100% of the user’s maximum HP; and restores 12 stamina. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -2613,18 +2720,19 @@ export const SKILLS = [
       },
       {
         "type": "heal",
-        "scale": 1.0
+        "scale": 1
       },
       {
         "type": "restore",
         "resource": "stamina",
         "amount": 12
       }
-    ]
+    ],
+    "previousName": "Astraea’s Final Benediction"
   },
   {
     "id": "sp_eclipse_archive_end_names",
-    "name": "Eclipse Archive: End of Names",
+    "name": "Final Myth: Umbral End Of Names: Ultimate Evolution Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -2634,7 +2742,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 54,
-    "description": "Eclipse Archive: End of Names is a structured spell formula with a dark-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, Dark, Arcane, Curse, Weaken, Marked, Damage, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 90 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Umbral End Of Names: Ultimate Evolution Cataclysm is a structured spell formula with a dark-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, Dark, Arcane, Curse, Weaken, Marked, Damage, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 90 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Weakened for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -2656,11 +2764,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Eclipse Archive: End of Names"
   },
   {
     "id": "sk_heaven_splitting_lion_art",
-    "name": "Heaven-Splitting Lion Art",
+    "name": "Final Myth: Blade Splitting Lion Art: Ultimate Evolution Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -2670,7 +2779,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Heaven-Splitting Lion Art is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Weapon Art, Burst, Critical, Piercing, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 70 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Blade Splitting Lion Art: Ultimate Evolution Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Weapon Art, Burst, Critical, Piercing, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 70 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Focus for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -2690,11 +2799,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Heaven-Splitting Lion Art"
   },
   {
     "id": "sp_ragnarok_starfall_cataclysm",
-    "name": "Ragnarok Starfall Cataclysm",
+    "name": "Final Myth: Phoenix Ragnarok Starfall Cataclysm: Ultimate Evolution Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -2704,7 +2814,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 54,
-    "description": "Ragnarok Starfall Cataclysm is a structured spell formula with a flame-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, AoE, Fire, Arcane, Burst, Damage, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 95 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Phoenix Ragnarok Starfall Cataclysm: Ultimate Evolution Cataclysm is a structured spell formula with a flame-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Magic, Ultimate, AoE, Fire, Arcane, Burst, Damage, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 95 mana and has a 9-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Burn for 4 turns at 75% reliability. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -2725,11 +2835,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 75
       }
-    ]
+    ],
+    "previousName": "Ragnarok Starfall Cataclysm"
   },
   {
     "id": "sk_thousand_step_godspeed_reversal",
-    "name": "Thousand-Step Godspeed Reversal",
+    "name": "Final Myth: Valor Step Godspeed Reversal: Ultimate Evolution Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -2739,7 +2850,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Thousand-Step Godspeed Reversal is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Mobility, Counter, Multi-Hit, Haste, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 65 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 4 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Final Myth: Valor Step Godspeed Reversal: Ultimate Evolution Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the Ultimate Evolution library and is tagged for Physical, Ultimate, Mobility, Counter, Multi-Hit, Haste, Active. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 65 stamina and has a 8-turn cooldown, so it should be timed around your resource flow. It also grants the user Haste for 4 turns. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -2759,11 +2870,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Thousand-Step Godspeed Reversal"
   },
   {
     "id": "in_deathless_body",
-    "name": "Deathless Body",
+    "name": "Lineage Art: Rift Deathless Body",
     "kind": "passive",
     "rank": "Intrinsic",
     "tier": 6,
@@ -2773,7 +2885,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Deathless Body is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Undead Lineage library and is tagged for Intrinsic, Passive, Undead, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Lineage Art: Rift Deathless Body is a passive trait that changes how the build behaves with a martial theme. As an Intrinsic ability, it is tied directly to bloodline identity. It comes from the Undead Lineage library and is tagged for Intrinsic, Passive, Undead, Defensive. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It does not spend an active resource and instead functions through build state, positioning, or passive conditions. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Intrinsic",
       "Passive",
@@ -2790,11 +2902,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Deathless Body"
   },
   {
     "id": "sk_arrow_pin",
-    "name": "Arrow Pin",
+    "name": "Steel Arrow Pin",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -2804,7 +2917,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Arrow Pin is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Ranged, Marked, Damage, Control. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Steel Arrow Pin is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Ranged, Marked, Damage, Control. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 12 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ranged",
@@ -2814,11 +2927,12 @@ export const SKILLS = [
     ],
     "source": "v26 Ability Shop",
     "price": 124,
-    "starting": false
+    "starting": false,
+    "previousName": "Arrow Pin"
   },
   {
     "id": "sk_brutal_cleave",
-    "name": "Brutal Cleave",
+    "name": "Iron Brutal Cleave",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -2828,7 +2942,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Brutal Cleave is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Melee, Damage, Break, AoE. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Iron Brutal Cleave is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Melee, Damage, Break, AoE. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 14 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Melee",
@@ -2838,11 +2952,12 @@ export const SKILLS = [
     ],
     "source": "v26 Ability Shop",
     "price": 130,
-    "starting": false
+    "starting": false,
+    "previousName": "Brutal Cleave"
   },
   {
     "id": "sk_open_palm_break",
-    "name": "Open Palm Break",
+    "name": "Blade Open Palm Break",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -2852,7 +2967,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Open Palm Break is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Martial Art, Stun, Break, Melee. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Blade Open Palm Break is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Martial Art, Stun, Break, Melee. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also attempts to inflict Stun for 1 turns at 45% reliability. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Martial Art",
@@ -2870,11 +2985,12 @@ export const SKILLS = [
         "duration": 1,
         "chance": 45
       }
-    ]
+    ],
+    "previousName": "Open Palm Break"
   },
   {
     "id": "sk_piercing_thrust",
-    "name": "Piercing Thrust",
+    "name": "Fang Piercing Thrust",
     "kind": "skill",
     "rank": "Common",
     "tier": 9,
@@ -2884,7 +3000,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 12,
-    "description": "Piercing Thrust is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Melee, Piercing, Damage, Weapon Art. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Fang Piercing Thrust is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v26 Ability Shop library and is tagged for Physical, Melee, Piercing, Damage, Weapon Art. Mechanically, it targets an enemy target, carries 12 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Melee",
@@ -2902,11 +3018,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Piercing Thrust"
   },
   {
     "id": "v50_arcane_2",
-    "name": "Aether Wave",
+    "name": "Mana Aether Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -2916,7 +3033,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 14,
-    "description": "Aether Wave is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Arcane. Mechanically, it targets an enemy target, carries 14 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Mana Aether Wave is a structured spell formula with a arcane theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Arcane. Mechanically, it targets an enemy target, carries 14 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -2924,11 +3041,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Aether Wave"
   },
   {
     "id": "v50_fire_2",
-    "name": "Flame Wave",
+    "name": "Solar Flame Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -2938,7 +3056,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 14,
-    "description": "Flame Wave is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Fire. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Solar Flame Wave is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Fire. Mechanically, it targets an enemy target, carries 14 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Burst",
@@ -2946,11 +3064,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Flame Wave"
   },
   {
     "id": "v50_ice_2",
-    "name": "Frost Wave",
+    "name": "Hoarfrost Frost Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -2960,7 +3079,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 14,
-    "description": "Frost Wave is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Ice. Mechanically, it targets an enemy target, carries 14 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Hoarfrost Frost Wave is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Ice. Mechanically, it targets an enemy target, carries 14 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -2968,11 +3087,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Frost Wave"
   },
   {
     "id": "v50_wind_2",
-    "name": "Gale Wave",
+    "name": "Zephyr Gale Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -2982,7 +3102,7 @@ export const SKILLS = [
     "element": "wind",
     "target": "enemy",
     "power": 14,
-    "description": "Gale Wave is a structured spell formula with a wind-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Wind. Mechanically, it targets an enemy target, carries 14 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Zephyr Gale Wave is a structured spell formula with a wind-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Wind. Mechanically, it targets an enemy target, carries 14 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -2990,11 +3110,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Gale Wave"
   },
   {
     "id": "v50_healing_2",
-    "name": "Mend Wave",
+    "name": "Blade Mend Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3004,7 +3125,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Mend Wave is a structured spell formula with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Blade Mend Wave is a structured spell formula with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "tags": [
       "Magic",
       "Burst",
@@ -3018,11 +3139,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.45
       }
-    ]
+    ],
+    "previousName": "Mend Wave"
   },
   {
     "id": "v50_holy_2",
-    "name": "Radiant Wave",
+    "name": "Dawn Radiant Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3032,7 +3154,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 14,
-    "description": "Radiant Wave is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Holy. Mechanically, it targets an enemy target, carries 14 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Dawn Radiant Wave is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Holy. Mechanically, it targets an enemy target, carries 14 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -3040,11 +3162,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Radiant Wave"
   },
   {
     "id": "v50_dark_2",
-    "name": "Shade Wave",
+    "name": "Night Shade Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3054,7 +3177,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 14,
-    "description": "Shade Wave is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Dark. Mechanically, it targets an enemy target, carries 14 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Night Shade Wave is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Dark. Mechanically, it targets an enemy target, carries 14 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -3062,11 +3185,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Shade Wave"
   },
   {
     "id": "v50_earth_2",
-    "name": "Stone Wave",
+    "name": "Terra Stone Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3076,7 +3200,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 14,
-    "description": "Stone Wave is a structured spell formula with a earth-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Earth. Mechanically, it targets an enemy target, carries 14 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Terra Stone Wave is a structured spell formula with a earth-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Earth. Mechanically, it targets an enemy target, carries 14 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -3084,11 +3208,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Stone Wave"
   },
   {
     "id": "v50_water_2",
-    "name": "Tide Wave",
+    "name": "Steel Tide Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3098,7 +3223,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Tide Wave is a structured spell formula with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Water. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Steel Tide Wave is a structured spell formula with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Water. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -3106,11 +3231,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Tide Wave"
   },
   {
     "id": "v50_lightning_2",
-    "name": "Volt Wave",
+    "name": "Radiant Volt Wave",
     "kind": "spell",
     "rank": "Common",
     "tier": 8,
@@ -3120,7 +3246,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 14,
-    "description": "Volt Wave is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Lightning. Mechanically, it targets an enemy target, carries 14 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Radiant Volt Wave is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Burst, Lightning. Mechanically, it targets an enemy target, carries 14 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 11 mana and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Burst",
@@ -3128,11 +3254,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 121,
-    "starting": false
+    "starting": false,
+    "previousName": "Volt Wave"
   },
   {
     "id": "v50_arcane_1",
-    "name": "Aether Spark",
+    "name": "Thunder Aether Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3142,7 +3269,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 10,
-    "description": "Aether Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Arcane. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Thunder Aether Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Arcane. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3150,11 +3277,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Aether Spark"
   },
   {
     "id": "v50_fire_1",
-    "name": "Flame Spark",
+    "name": "Phoenix Flame Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3164,7 +3292,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 10,
-    "description": "Flame Spark is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Fire. Mechanically, it targets an enemy target, carries 10 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Phoenix Flame Spark is a structured spell formula with a flame-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Fire. Mechanically, it targets an enemy target, carries 10 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Starter",
@@ -3172,11 +3300,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Flame Spark"
   },
   {
     "id": "v50_ice_1",
-    "name": "Frost Spark",
+    "name": "Winter Frost Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3186,7 +3315,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 10,
-    "description": "Frost Spark is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Ice. Mechanically, it targets an enemy target, carries 10 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Winter Frost Spark is a structured spell formula with a ice-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Ice. Mechanically, it targets an enemy target, carries 10 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3194,11 +3323,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Frost Spark"
   },
   {
     "id": "v50_wind_1",
-    "name": "Gale Spark",
+    "name": "Sky Gale Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3208,7 +3338,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 10,
-    "description": "Gale Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Wind. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Sky Gale Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Wind. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3216,11 +3346,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Gale Spark"
   },
   {
     "id": "v50_healing_1",
-    "name": "Mend Spark",
+    "name": "Fulmin Mend Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3230,7 +3361,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "self",
     "power": 0,
-    "description": "Mend Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Fulmin Mend Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It also restores roughly 45% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "tags": [
       "Magic",
       "Starter",
@@ -3244,11 +3375,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.45
       }
-    ]
+    ],
+    "previousName": "Mend Spark"
   },
   {
     "id": "v50_holy_1",
-    "name": "Radiant Spark",
+    "name": "Halo Radiant Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3258,7 +3390,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 10,
-    "description": "Radiant Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Holy. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Halo Radiant Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Holy. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3266,11 +3398,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Radiant Spark"
   },
   {
     "id": "v50_dark_1",
-    "name": "Shade Spark",
+    "name": "Grave Shade Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3280,7 +3413,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 10,
-    "description": "Shade Spark is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Dark. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Grave Shade Spark is a structured spell formula with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Dark. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3288,11 +3421,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Shade Spark"
   },
   {
     "id": "v50_earth_1",
-    "name": "Stone Spark",
+    "name": "Volt Stone Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3302,7 +3436,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 10,
-    "description": "Stone Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Earth. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Volt Stone Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Earth. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3310,11 +3444,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Stone Spark"
   },
   {
     "id": "v50_water_1",
-    "name": "Tide Spark",
+    "name": "Tempest Tide Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3324,7 +3459,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 10,
-    "description": "Tide Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Water. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Tempest Tide Spark is a structured spell formula with a lightning-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Water. Mechanically, it targets an enemy target, carries 10 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3332,11 +3467,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Tide Spark"
   },
   {
     "id": "v50_lightning_1",
-    "name": "Volt Spark",
+    "name": "Sun Volt Spark",
     "kind": "spell",
     "rank": "Common",
     "tier": 10,
@@ -3346,7 +3482,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 10,
-    "description": "Volt Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Lightning. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Sun Volt Spark is a structured spell formula with a light-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Magic Shop library and is tagged for Magic, Starter, Lightning. Mechanically, it targets an enemy target, carries 10 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 7 mana and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Starter",
@@ -3354,11 +3490,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 77,
-    "starting": true
+    "starting": true,
+    "previousName": "Volt Spark"
   },
   {
     "id": "v50_arcane_3",
-    "name": "Aether Sigil",
+    "name": "Aether Sigil — Starseal Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3368,7 +3505,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 24,
-    "description": "Aether Sigil is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Arcane. Mechanically, it targets an enemy target, carries 24 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Aether Sigil — Starseal Form is a structured spell formula with a arcane theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Arcane. Mechanically, it targets an enemy target, carries 24 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3376,11 +3513,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Aether Sigil"
   },
   {
     "id": "v50_fire_3",
-    "name": "Flame Sigil",
+    "name": "Flame Sigil — Cinder Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3390,7 +3528,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 24,
-    "description": "Flame Sigil is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Fire. Mechanically, it targets an enemy target, carries 24 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Flame Sigil — Cinder Form is a structured spell formula with a flame-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Fire. Mechanically, it targets an enemy target, carries 24 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Extra",
@@ -3398,11 +3536,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Flame Sigil"
   },
   {
     "id": "v50_ice_3",
-    "name": "Frost Sigil",
+    "name": "Frost Sigil — Glacier Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3412,7 +3551,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 24,
-    "description": "Frost Sigil is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Ice. Mechanically, it targets an enemy target, carries 24 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Frost Sigil — Glacier Form is a structured spell formula with a ice-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Ice. Mechanically, it targets an enemy target, carries 24 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3420,11 +3559,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Frost Sigil"
   },
   {
     "id": "v50_wind_3",
-    "name": "Gale Sigil",
+    "name": "Gale Sigil — Cyclone Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3434,7 +3574,7 @@ export const SKILLS = [
     "element": "wind",
     "target": "enemy",
     "power": 24,
-    "description": "Gale Sigil is a structured spell formula with a wind-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Wind. Mechanically, it targets an enemy target, carries 24 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Gale Sigil — Cyclone Form is a structured spell formula with a wind-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Wind. Mechanically, it targets an enemy target, carries 24 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3442,11 +3582,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Gale Sigil"
   },
   {
     "id": "v50_healing_3",
-    "name": "Mend Sigil",
+    "name": "Mend Sigil — Valor Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3456,7 +3597,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Mend Sigil is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
+    "description": "Mend Sigil — Valor Form is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It also restores roughly 60% of the user’s maximum HP. It is strongest when saved for a dangerous turn instead of being spent as soon as damage appears.",
     "tags": [
       "Magic",
       "Extra",
@@ -3470,11 +3611,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.6
       }
-    ]
+    ],
+    "previousName": "Mend Sigil"
   },
   {
     "id": "v50_holy_3",
-    "name": "Radiant Sigil",
+    "name": "Radiant Sigil — Sun Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3484,7 +3626,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 24,
-    "description": "Radiant Sigil is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Holy. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Radiant Sigil — Sun Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Holy. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3492,11 +3634,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Radiant Sigil"
   },
   {
     "id": "v50_dark_3",
-    "name": "Shade Sigil",
+    "name": "Shade Sigil — Nocturne Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3506,7 +3649,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 24,
-    "description": "Shade Sigil is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Dark. Mechanically, it targets an enemy target, carries 24 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Shade Sigil — Nocturne Form is a structured spell formula with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Dark. Mechanically, it targets an enemy target, carries 24 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3514,11 +3657,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Shade Sigil"
   },
   {
     "id": "v50_earth_3",
-    "name": "Stone Sigil",
+    "name": "Stone Sigil — Root Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3528,7 +3672,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 24,
-    "description": "Stone Sigil is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Earth. Mechanically, it targets an enemy target, carries 24 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Stone Sigil — Root Form is a structured spell formula with a earth-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Earth. Mechanically, it targets an enemy target, carries 24 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3536,11 +3680,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Stone Sigil"
   },
   {
     "id": "v50_water_3",
-    "name": "Tide Sigil",
+    "name": "Tide Sigil — Blade Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3550,7 +3695,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Tide Sigil is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Water. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Tide Sigil — Blade Form is a structured spell formula with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Water. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3558,11 +3703,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Tide Sigil"
   },
   {
     "id": "v50_lightning_3",
-    "name": "Volt Sigil",
+    "name": "Volt Sigil — Dawn Form",
     "kind": "spell",
     "rank": "Extra",
     "tier": 6,
@@ -3572,7 +3718,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 24,
-    "description": "Volt Sigil is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Lightning. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Volt Sigil — Dawn Form is a structured spell formula with a light-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Magic Shop library and is tagged for Magic, Extra, Lightning. Mechanically, it targets an enemy target, carries 24 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 16 mana and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Extra",
@@ -3580,11 +3726,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 213,
-    "starting": false
+    "starting": false,
+    "previousName": "Volt Sigil"
   },
   {
     "id": "v50_ice_5",
-    "name": "Eternal Glacier Palace",
+    "name": "Final Myth: Winter Eternal Glacier Palace: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3594,7 +3741,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 54,
-    "description": "Eternal Glacier Palace is a structured spell formula with a ice-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Ice. Mechanically, it targets an enemy target, carries 54 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Winter Eternal Glacier Palace: V50 Magic Cataclysm is a structured spell formula with a ice-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Ice. Mechanically, it targets an enemy target, carries 54 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3602,11 +3749,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Eternal Glacier Palace"
   },
   {
     "id": "v50_healing_5",
-    "name": "Legend Rebirth Canon",
+    "name": "Final Myth: Rift Legend Rebirth Canon: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3616,7 +3764,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Legend Rebirth Canon is a structured spell formula with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also restores roughly 100% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Rift Legend Rebirth Canon: V50 Magic Cataclysm is a structured spell formula with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It also restores roughly 100% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3628,13 +3776,14 @@ export const SKILLS = [
     "effects": [
       {
         "type": "heal",
-        "scale": 1.0
+        "scale": 1
       }
-    ]
+    ],
+    "previousName": "Legend Rebirth Canon"
   },
   {
     "id": "v50_dark_5",
-    "name": "Night Emperor Cataclysm",
+    "name": "Final Myth: Nocturne Night Emperor Cataclysm: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3644,7 +3793,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 54,
-    "description": "Night Emperor Cataclysm is a structured spell formula with a dark-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Dark. Mechanically, it targets an enemy target, carries 54 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Nocturne Night Emperor Cataclysm: V50 Magic Cataclysm is a structured spell formula with a dark-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Dark. Mechanically, it targets an enemy target, carries 54 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3652,11 +3801,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Night Emperor Cataclysm"
   },
   {
     "id": "v50_water_5",
-    "name": "Ocean Throne Deluge",
+    "name": "Final Myth: Iron Ocean Throne Deluge: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3666,7 +3816,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Ocean Throne Deluge is a structured spell formula with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Water. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Iron Ocean Throne Deluge: V50 Magic Cataclysm is a structured spell formula with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Water. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3674,11 +3824,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Ocean Throne Deluge"
   },
   {
     "id": "v50_fire_5",
-    "name": "Phoenix Crown Apocalypse",
+    "name": "Final Myth: Inferno Phoenix Crown Apocalypse: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3688,7 +3839,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 54,
-    "description": "Phoenix Crown Apocalypse is a structured spell formula with a flame-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Fire. Mechanically, it targets an enemy target, carries 54 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Inferno Phoenix Crown Apocalypse: V50 Magic Cataclysm is a structured spell formula with a flame-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Fire. Mechanically, it targets an enemy target, carries 54 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3696,11 +3847,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Phoenix Crown Apocalypse"
   },
   {
     "id": "v50_wind_5",
-    "name": "Sky Dominion Hurricane",
+    "name": "Final Myth: Cyclone Sky Dominion Hurricane: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3710,7 +3862,7 @@ export const SKILLS = [
     "element": "wind",
     "target": "enemy",
     "power": 54,
-    "description": "Sky Dominion Hurricane is a structured spell formula with a wind-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Wind. Mechanically, it targets an enemy target, carries 54 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Cyclone Sky Dominion Hurricane: V50 Magic Cataclysm is a structured spell formula with a wind-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Wind. Mechanically, it targets an enemy target, carries 54 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3718,11 +3870,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Sky Dominion Hurricane"
   },
   {
     "id": "v50_lightning_5",
-    "name": "Storm Kingdom Descent",
+    "name": "Final Myth: Seraphic Storm Kingdom Descent: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3732,7 +3885,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 54,
-    "description": "Storm Kingdom Descent is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Lightning. Mechanically, it targets an enemy target, carries 54 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Seraphic Storm Kingdom Descent: V50 Magic Cataclysm is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Lightning. Mechanically, it targets an enemy target, carries 54 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3740,11 +3893,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "Storm Kingdom Descent"
   },
   {
     "id": "v50_holy_5",
-    "name": "World Cathedral Miracle",
+    "name": "Final Myth: Sun World Cathedral Miracle: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3754,7 +3908,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 54,
-    "description": "World Cathedral Miracle is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Holy. Mechanically, it targets an enemy target, carries 54 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Sun World Cathedral Miracle: V50 Magic Cataclysm is a structured spell formula with a light-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Holy. Mechanically, it targets an enemy target, carries 54 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3762,11 +3916,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "World Cathedral Miracle"
   },
   {
     "id": "v50_earth_5",
-    "name": "World Pillar Genesis",
+    "name": "Final Myth: Obsidian World Pillar Genesis: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3776,7 +3931,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 54,
-    "description": "World Pillar Genesis is a structured spell formula with a earth-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Earth. Mechanically, it targets an enemy target, carries 54 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Obsidian World Pillar Genesis: V50 Magic Cataclysm is a structured spell formula with a earth-aspected theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Earth. Mechanically, it targets an enemy target, carries 54 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3784,11 +3939,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "World Pillar Genesis"
   },
   {
     "id": "v50_arcane_5",
-    "name": "World Script Overwrite",
+    "name": "Final Myth: Runic World Script Overwrite: V50 Magic Cataclysm",
     "kind": "spell",
     "rank": "Ultimate",
     "tier": 1,
@@ -3798,7 +3954,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 54,
-    "description": "World Script Overwrite is a structured spell formula with a arcane theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Arcane. Mechanically, it targets an enemy target, carries 54 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Runic World Script Overwrite: V50 Magic Cataclysm is a structured spell formula with a arcane theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Magic Shop library and is tagged for Magic, Ultimate, Arcane. Mechanically, it targets an enemy target, carries 54 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 34 mana and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Ultimate",
@@ -3806,11 +3962,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 662,
-    "starting": false
+    "starting": false,
+    "previousName": "World Script Overwrite"
   },
   {
     "id": "v50_ice_4",
-    "name": "Absolute Zero Seal",
+    "name": "Oath of the Glacier Absolute Zero Seal: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3820,7 +3977,7 @@ export const SKILLS = [
     "element": "ice",
     "target": "enemy",
     "power": 38,
-    "description": "Absolute Zero Seal is a structured spell formula with a ice-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Ice. Mechanically, it targets an enemy target, carries 38 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Glacier Absolute Zero Seal: Spell Vow is a structured spell formula with a ice-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Ice. Mechanically, it targets an enemy target, carries 38 base power, and uses cold, binding force, and brittle control to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3828,11 +3985,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Absolute Zero Seal"
   },
   {
     "id": "v50_dark_4",
-    "name": "Abyss Sovereign Mark",
+    "name": "Oath of the Eclipse Abyss Sovereign Mark: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3842,7 +4000,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 38,
-    "description": "Abyss Sovereign Mark is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Dark. Mechanically, it targets an enemy target, carries 38 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It rewards players who weaken the target first, then follow up with a heavier class skill.",
+    "description": "Oath of the Eclipse Abyss Sovereign Mark: Spell Vow is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Dark. Mechanically, it targets an enemy target, carries 38 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It rewards players who weaken the target first, then follow up with a heavier class skill.",
     "tags": [
       "Magic",
       "Unique",
@@ -3850,11 +4008,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Abyss Sovereign Mark"
   },
   {
     "id": "v50_water_4",
-    "name": "Abyssal Fountain Rite",
+    "name": "Oath of the Night Abyssal Fountain Rite: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3864,7 +4023,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 38,
-    "description": "Abyssal Fountain Rite is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Water. Mechanically, it targets an enemy target, carries 38 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Night Abyssal Fountain Rite: Spell Vow is a structured spell formula with a dark-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Water. Mechanically, it targets an enemy target, carries 38 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3872,11 +4031,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Abyssal Fountain Rite"
   },
   {
     "id": "v50_arcane_4",
-    "name": "Astral Code Archive",
+    "name": "Oath of the Glyph Astral Code Archive: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3886,7 +4046,7 @@ export const SKILLS = [
     "element": "arcane",
     "target": "enemy",
     "power": 38,
-    "description": "Astral Code Archive is a structured spell formula with a arcane theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Arcane. Mechanically, it targets an enemy target, carries 38 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Glyph Astral Code Archive: Spell Vow is a structured spell formula with a arcane theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Arcane. Mechanically, it targets an enemy target, carries 38 base power, and uses runes, mana geometry, and raw spell formulae to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3894,11 +4054,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Astral Code Archive"
   },
   {
     "id": "v50_lightning_4",
-    "name": "Emperor Thunder Circuit",
+    "name": "Oath of the Aureate Emperor Thunder Circuit: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3908,7 +4069,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 38,
-    "description": "Emperor Thunder Circuit is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Lightning. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Aureate Emperor Thunder Circuit: Spell Vow is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Lightning. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3916,11 +4077,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Emperor Thunder Circuit"
   },
   {
     "id": "v50_healing_4",
-    "name": "Grand Vital Liturgy",
+    "name": "Oath of the Iron Grand Vital Liturgy: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3930,7 +4092,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "self",
     "power": 0,
-    "description": "Grand Vital Liturgy is a structured spell formula with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 85% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Iron Grand Vital Liturgy: Spell Vow is a structured spell formula with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Healing. Mechanically, it targets the user as a non-damaging setup tool focused on tempo, survival, or follow-up advantage. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It also restores roughly 85% of the user’s maximum HP. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3944,11 +4106,12 @@ export const SKILLS = [
         "type": "heal",
         "scale": 0.85
       }
-    ]
+    ],
+    "previousName": "Grand Vital Liturgy"
   },
   {
     "id": "v50_earth_4",
-    "name": "Kingdom Bedrock Ward",
+    "name": "Oath of the Root Kingdom Bedrock Ward: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3958,7 +4121,7 @@ export const SKILLS = [
     "element": "earth",
     "target": "enemy",
     "power": 38,
-    "description": "Kingdom Bedrock Ward is a structured spell formula with a earth-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Earth. Mechanically, it targets an enemy target, carries 38 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Root Kingdom Bedrock Ward: Spell Vow is a structured spell formula with a earth-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Earth. Mechanically, it targets an enemy target, carries 38 base power, and uses stone weight, roots, armor, and grounded force to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -3966,11 +4129,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Kingdom Bedrock Ward"
   },
   {
     "id": "v50_wind_4",
-    "name": "Phantom Tempest Step",
+    "name": "Oath of the Cyclone Phantom Tempest Step: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -3980,7 +4144,7 @@ export const SKILLS = [
     "element": "wind",
     "target": "enemy",
     "power": 38,
-    "description": "Phantom Tempest Step is a structured spell formula with a wind-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Wind. Mechanically, it targets an enemy target, carries 38 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Oath of the Cyclone Phantom Tempest Step: Spell Vow is a structured spell formula with a wind-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Wind. Mechanically, it targets an enemy target, carries 38 base power, and uses footwork, cutting air, and sudden movement to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Magic",
       "Unique",
@@ -3988,11 +4152,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Phantom Tempest Step"
   },
   {
     "id": "v50_holy_4",
-    "name": "Saint Halo Decree",
+    "name": "Oath of the Seraphic Saint Halo Decree: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -4002,7 +4167,7 @@ export const SKILLS = [
     "element": "light",
     "target": "enemy",
     "power": 38,
-    "description": "Saint Halo Decree is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Holy. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Seraphic Saint Halo Decree: Spell Vow is a structured spell formula with a light-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Holy. Mechanically, it targets an enemy target, carries 38 base power, and uses radiance, protection, purification, and resolve to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Magic",
       "Unique",
@@ -4010,11 +4175,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "Saint Halo Decree"
   },
   {
     "id": "v50_fire_4",
-    "name": "World Flame Sigil",
+    "name": "Oath of the Solar World Flame Sigil: Spell Vow",
     "kind": "spell",
     "rank": "Unique",
     "tier": 3,
@@ -4024,7 +4190,7 @@ export const SKILLS = [
     "element": "fire",
     "target": "enemy",
     "power": 38,
-    "description": "World Flame Sigil is a structured spell formula with a flame-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Fire. Mechanically, it targets an enemy target, carries 38 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
+    "description": "Oath of the Solar World Flame Sigil: Spell Vow keeps the previous World Flame Sigil mechanics while using the improved ranked naming style. Oath of the Inferno World Flame Sigil: Spell Vow is a structured spell formula with a flame-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Magic Shop library and is tagged for Magic, Unique, Fire. Mechanically, it targets an enemy target, carries 38 base power, and uses heat, pressure, smoke, and lingering burn to pressure weaknesses or bypass simple defenses. It costs 24 mana and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is especially useful against enemies weak to heat or when you need burn pressure over several turns.",
     "tags": [
       "Magic",
       "Unique",
@@ -4032,11 +4198,12 @@ export const SKILLS = [
     ],
     "source": "v50 Magic Shop",
     "price": 380,
-    "starting": false
+    "starting": false,
+    "previousName": "World Flame Sigil"
   },
   {
     "id": "v50_sword_2",
-    "name": "Blade Rush",
+    "name": "Steel Blade Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4046,7 +4213,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Blade Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Sword. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Steel Blade Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Sword. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4054,11 +4221,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Blade Rush"
   },
   {
     "id": "v50_shield_2",
-    "name": "Bulwark Rush",
+    "name": "Iron Bulwark Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4068,7 +4236,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Bulwark Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Shield. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Iron Bulwark Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Shield. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4084,11 +4252,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Bulwark Rush"
   },
   {
     "id": "v50_heavy_weapon_2",
-    "name": "Colossus Rush",
+    "name": "Blade Colossus Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4098,7 +4267,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Colossus Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Heavy Weapon. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Blade Colossus Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Heavy Weapon. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4106,11 +4275,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Colossus Rush"
   },
   {
     "id": "v50_catalyst_2",
-    "name": "Focus Core Rush",
+    "name": "Fang Focus Core Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4120,7 +4290,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Focus Core Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Catalyst. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Fang Focus Core Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Catalyst. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4128,11 +4298,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Focus Core Rush"
   },
   {
     "id": "v50_unarmed_2",
-    "name": "Iron Fist Rush",
+    "name": "Valor Iron Fist Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4142,7 +4313,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Iron Fist Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Unarmed. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Valor Iron Fist Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Unarmed. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Burst",
@@ -4150,11 +4321,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Iron Fist Rush"
   },
   {
     "id": "v50_spear_2",
-    "name": "Lancer Rush",
+    "name": "Rift Lancer Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4164,7 +4336,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Lancer Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Spear. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Rift Lancer Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Spear. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Burst",
@@ -4172,11 +4344,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Lancer Rush"
   },
   {
     "id": "v50_bow_2",
-    "name": "Longshot Rush",
+    "name": "Steel Longshot Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4186,7 +4359,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Longshot Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Bow. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Steel Longshot Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Bow. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Burst",
@@ -4194,11 +4367,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Longshot Rush"
   },
   {
     "id": "v50_staff_2",
-    "name": "Mystic Staff Rush",
+    "name": "Iron Mystic Staff Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4208,7 +4382,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Mystic Staff Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Staff. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Iron Mystic Staff Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Staff. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4216,11 +4390,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Mystic Staff Rush"
   },
   {
     "id": "v50_dagger_2",
-    "name": "Shadowfang Rush",
+    "name": "Grave Shadowfang Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4230,7 +4405,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 14,
-    "description": "Shadowfang Rush is a trained combat technique with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Dagger. Mechanically, it targets an enemy target, carries 14 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Grave Shadowfang Rush is a trained combat technique with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Dagger. Mechanically, it targets an enemy target, carries 14 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Burst",
@@ -4238,11 +4413,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Shadowfang Rush"
   },
   {
     "id": "v50_axe_2",
-    "name": "Waraxe Rush",
+    "name": "Fang Waraxe Rush",
     "kind": "skill",
     "rank": "Common",
     "tier": 8,
@@ -4252,7 +4428,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 14,
-    "description": "Waraxe Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Axe. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Fang Waraxe Rush is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Burst, Axe. Mechanically, it targets an enemy target, carries 14 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 10 stamina and has a 2-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Burst",
@@ -4260,11 +4436,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 118,
-    "starting": false
+    "starting": false,
+    "previousName": "Waraxe Rush"
   },
   {
     "id": "v50_sword_1",
-    "name": "Blade Initiation",
+    "name": "Valor Blade Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4274,7 +4451,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Blade Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Sword. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Valor Blade Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Sword. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4282,11 +4459,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Blade Initiation"
   },
   {
     "id": "v50_shield_1",
-    "name": "Bulwark Initiation",
+    "name": "Rift Bulwark Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4296,7 +4474,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Bulwark Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Shield. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Rift Bulwark Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Shield. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4312,11 +4490,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Bulwark Initiation"
   },
   {
     "id": "v50_heavy_weapon_1",
-    "name": "Colossus Initiation",
+    "name": "Steel Colossus Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4326,7 +4505,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Colossus Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Heavy Weapon. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Steel Colossus Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Heavy Weapon. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4334,11 +4513,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Colossus Initiation"
   },
   {
     "id": "v50_catalyst_1",
-    "name": "Focus Core Initiation",
+    "name": "Iron Focus Core Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4348,7 +4528,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Focus Core Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Catalyst. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Iron Focus Core Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Catalyst. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4356,11 +4536,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Focus Core Initiation"
   },
   {
     "id": "v50_unarmed_1",
-    "name": "Iron Fist Initiation",
+    "name": "Blade Iron Fist Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4370,7 +4551,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Iron Fist Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Unarmed. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Blade Iron Fist Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Unarmed. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Starter",
@@ -4378,11 +4559,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Iron Fist Initiation"
   },
   {
     "id": "v50_spear_1",
-    "name": "Lancer Initiation",
+    "name": "Fang Lancer Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4392,7 +4574,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Lancer Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Spear. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Fang Lancer Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Spear. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Starter",
@@ -4400,11 +4582,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Lancer Initiation"
   },
   {
     "id": "v50_bow_1",
-    "name": "Longshot Initiation",
+    "name": "Valor Longshot Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4414,7 +4597,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Longshot Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Bow. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Valor Longshot Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Bow. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Starter",
@@ -4422,11 +4605,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Longshot Initiation"
   },
   {
     "id": "v50_staff_1",
-    "name": "Mystic Staff Initiation",
+    "name": "Rift Mystic Staff Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4436,7 +4620,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Mystic Staff Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Staff. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Rift Mystic Staff Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Staff. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4444,11 +4628,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Mystic Staff Initiation"
   },
   {
     "id": "v50_dagger_1",
-    "name": "Shadowfang Initiation",
+    "name": "Nocturne Shadowfang Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4458,7 +4643,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 10,
-    "description": "Shadowfang Initiation is a trained combat technique with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Dagger. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Nocturne Shadowfang Initiation is a trained combat technique with a dark-aspected theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Dagger. Mechanically, it targets an enemy target, carries 10 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Starter",
@@ -4466,11 +4651,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Shadowfang Initiation"
   },
   {
     "id": "v50_axe_1",
-    "name": "Waraxe Initiation",
+    "name": "Iron Waraxe Initiation",
     "kind": "skill",
     "rank": "Common",
     "tier": 10,
@@ -4480,7 +4666,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 10,
-    "description": "Waraxe Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Axe. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Iron Waraxe Initiation is a trained combat technique with a martial theme. As a Common ability, it is easy to fit into early builds. It comes from the v50 Physical Shop library and is tagged for Physical, Starter, Axe. Mechanically, it targets an enemy target, carries 10 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 6 stamina and has a 1-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Starter",
@@ -4488,11 +4674,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 74,
-    "starting": true
+    "starting": true,
+    "previousName": "Waraxe Initiation"
   },
   {
     "id": "v50_sword_3",
-    "name": "Blade Crest Art",
+    "name": "Blade Crest Art — Fang Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4502,7 +4689,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Blade Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Sword. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Blade Crest Art — Fang Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Sword. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4510,11 +4697,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Blade Crest Art"
   },
   {
     "id": "v50_shield_3",
-    "name": "Bulwark Crest Art",
+    "name": "Bulwark Crest Art — Fang Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4524,7 +4712,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Bulwark Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Shield. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Bulwark Crest Art — Fang Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Shield. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 3 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4540,11 +4728,12 @@ export const SKILLS = [
         "duration": 3,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Bulwark Crest Art"
   },
   {
     "id": "v50_heavy_weapon_3",
-    "name": "Colossus Crest Art",
+    "name": "Colossus Crest Art — Valor Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4554,7 +4743,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Colossus Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Heavy Weapon. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Colossus Crest Art — Valor Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Heavy Weapon. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4562,11 +4751,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Colossus Crest Art"
   },
   {
     "id": "v50_catalyst_3",
-    "name": "Focus Core Crest Art",
+    "name": "Core Crest Art — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4576,7 +4766,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Focus Core Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Catalyst. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Core Crest Art — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Catalyst. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4584,11 +4774,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Focus Core Crest Art"
   },
   {
     "id": "v50_unarmed_3",
-    "name": "Iron Fist Crest Art",
+    "name": "Fist Crest Art — Steel Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4598,7 +4789,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Iron Fist Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Unarmed. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Fist Crest Art — Steel Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Unarmed. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Extra",
@@ -4606,11 +4797,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Iron Fist Crest Art"
   },
   {
     "id": "v50_spear_3",
-    "name": "Lancer Crest Art",
+    "name": "Lancer Crest Art — Iron Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4620,7 +4812,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Lancer Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Spear. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Lancer Crest Art — Iron Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Spear. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Extra",
@@ -4628,11 +4820,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Lancer Crest Art"
   },
   {
     "id": "v50_bow_3",
-    "name": "Longshot Crest Art",
+    "name": "Longshot Crest Art — Blade Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4642,7 +4835,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Longshot Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Bow. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Longshot Crest Art — Blade Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Bow. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Extra",
@@ -4650,11 +4843,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Longshot Crest Art"
   },
   {
     "id": "v50_staff_3",
-    "name": "Mystic Staff Crest Art",
+    "name": "Staff Crest Art — Fang Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4664,7 +4858,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Mystic Staff Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Staff. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Staff Crest Art — Fang Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Staff. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4672,11 +4866,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Mystic Staff Crest Art"
   },
   {
     "id": "v50_dagger_3",
-    "name": "Shadowfang Crest Art",
+    "name": "Shadowfang Crest Art — Night Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4686,7 +4881,7 @@ export const SKILLS = [
     "element": "dark",
     "target": "enemy",
     "power": 24,
-    "description": "Shadowfang Crest Art is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Dagger. Mechanically, it targets an enemy target, carries 24 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Shadowfang Crest Art — Night Form is a trained combat technique with a dark-aspected theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Dagger. Mechanically, it targets an enemy target, carries 24 base power, and uses shadow, fear, curses, and life-draining pressure to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Extra",
@@ -4694,11 +4889,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Shadowfang Crest Art"
   },
   {
     "id": "v50_axe_3",
-    "name": "Waraxe Crest Art",
+    "name": "Waraxe Crest Art — Rift Form",
     "kind": "skill",
     "rank": "Extra",
     "tier": 6,
@@ -4708,7 +4904,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 24,
-    "description": "Waraxe Crest Art is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Axe. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Waraxe Crest Art — Rift Form is a trained combat technique with a martial theme. As an Extra ability, it is strong enough to define a mid-game combat pattern. It comes from the v50 Physical Shop library and is tagged for Physical, Extra, Axe. Mechanically, it targets an enemy target, carries 24 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 15 stamina and has a 3-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Extra",
@@ -4716,11 +4912,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 210,
-    "starting": false
+    "starting": false,
+    "previousName": "Waraxe Crest Art"
   },
   {
     "id": "v50_catalyst_5",
-    "name": "Cosmic Catalyst Surge",
+    "name": "Final Myth: Steel Cosmic Catalyst Surge: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4730,7 +4927,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Cosmic Catalyst Surge is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Catalyst. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Steel Cosmic Catalyst Surge: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Catalyst. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4738,11 +4935,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Cosmic Catalyst Surge"
   },
   {
     "id": "v50_staff_5",
-    "name": "Grand Magus Orbit",
+    "name": "Final Myth: Iron Grand Magus Orbit: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4752,7 +4950,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Grand Magus Orbit is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Staff. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Iron Grand Magus Orbit: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Staff. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4760,11 +4958,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Grand Magus Orbit"
   },
   {
     "id": "v50_spear_5",
-    "name": "Heaven-Piercing Phalanx",
+    "name": "Final Myth: Blade Heaven Piercing Phalanx: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4774,7 +4973,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Heaven-Piercing Phalanx is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Spear. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Blade Heaven Piercing Phalanx: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Spear. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4782,11 +4981,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Heaven-Piercing Phalanx"
   },
   {
     "id": "v50_heavy_weapon_5",
-    "name": "Mountain-Crushing Finale",
+    "name": "Final Myth: Fang Mountain Crushing Finale: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4796,7 +4996,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Mountain-Crushing Finale is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Heavy Weapon. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Fang Mountain Crushing Finale: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Heavy Weapon. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4804,11 +5004,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Mountain-Crushing Finale"
   },
   {
     "id": "v50_dagger_5",
-    "name": "Night-Crowned Assassination",
+    "name": "Final Myth: Valor Night Crowned Assassination: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4818,7 +5019,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Night-Crowned Assassination is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Dagger. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Valor Night Crowned Assassination: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Dagger. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4826,11 +5027,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Night-Crowned Assassination"
   },
   {
     "id": "v50_bow_5",
-    "name": "Starfall Arrow Dominion",
+    "name": "Final Myth: Rift Starfall Arrow Dominion: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4840,7 +5042,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Starfall Arrow Dominion is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Bow. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Rift Starfall Arrow Dominion: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Bow. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4848,11 +5050,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Starfall Arrow Dominion"
   },
   {
     "id": "v50_axe_5",
-    "name": "Titan Rend Execution",
+    "name": "Final Myth: Steel Titan Rend Execution: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4862,7 +5065,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Titan Rend Execution is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Axe. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Final Myth: Steel Titan Rend Execution: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Axe. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4870,11 +5073,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Titan Rend Execution"
   },
   {
     "id": "v50_shield_5",
-    "name": "World Bastion Protocol",
+    "name": "Final Myth: Iron World Bastion Protocol: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4884,7 +5088,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "World Bastion Protocol is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Shield. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Iron World Bastion Protocol: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Shield. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4900,11 +5104,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "World Bastion Protocol"
   },
   {
     "id": "v50_unarmed_5",
-    "name": "Worldbreaker Martial Soul",
+    "name": "Final Myth: Blade Worldbreaker Martial Soul: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4914,7 +5119,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Worldbreaker Martial Soul is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Unarmed. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Final Myth: Blade Worldbreaker Martial Soul: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Unarmed. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4922,11 +5127,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Worldbreaker Martial Soul"
   },
   {
     "id": "v50_sword_5",
-    "name": "Worldsplitter Edge",
+    "name": "Final Myth: Fang Worldsplitter Edge: V50 Physical Cataclysm",
     "kind": "skill",
     "rank": "Ultimate",
     "tier": 1,
@@ -4936,7 +5142,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 54,
-    "description": "Worldsplitter Edge is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Sword. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
+    "description": "Final Myth: Fang Worldsplitter Edge: V50 Physical Cataclysm is a trained combat technique with a martial theme. As an Ultimate ability, it is a capstone-grade technique meant to feel decisive. It comes from the v50 Physical Shop library and is tagged for Physical, Ultimate, Sword. Mechanically, it targets an enemy target, carries 54 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 30 stamina and has a 5-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It fits aggressive stamina rotations where the goal is to keep pressure on the enemy every round.",
     "tags": [
       "Physical",
       "Ultimate",
@@ -4944,11 +5150,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 650,
-    "starting": false
+    "starting": false,
+    "previousName": "Worldsplitter Edge"
   },
   {
     "id": "v50_catalyst_4",
-    "name": "Arcflash Conductor",
+    "name": "Oath of the Valor Arcflash Conductor: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -4958,7 +5165,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Arcflash Conductor is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Catalyst. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Valor Arcflash Conductor: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Catalyst. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Unique",
@@ -4966,11 +5173,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Arcflash Conductor"
   },
   {
     "id": "v50_axe_4",
-    "name": "Bloodbreak Maul",
+    "name": "Oath of the Rift Bloodbreak Maul: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -4980,7 +5188,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Bloodbreak Maul is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Axe. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Rift Bloodbreak Maul: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Axe. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Unique",
@@ -4988,11 +5196,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Bloodbreak Maul"
   },
   {
     "id": "v50_shield_4",
-    "name": "Guardian Wall Counter",
+    "name": "Oath of the Steel Guardian Wall Counter: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5002,7 +5211,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Guardian Wall Counter is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Shield. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Oath of the Steel Guardian Wall Counter: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Shield. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It also grants the user Guard for 4 turns. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Unique",
@@ -5018,11 +5227,12 @@ export const SKILLS = [
         "duration": 4,
         "chance": 100
       }
-    ]
+    ],
+    "previousName": "Guardian Wall Counter"
   },
   {
     "id": "v50_unarmed_4",
-    "name": "Heavenstep Combo",
+    "name": "Oath of the Iron Heavenstep Combo: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5032,7 +5242,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Heavenstep Combo is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Unarmed. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Oath of the Iron Heavenstep Combo: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Unarmed. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Physical",
       "Unique",
@@ -5040,11 +5250,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Heavenstep Combo"
   },
   {
     "id": "v50_sword_4",
-    "name": "Kingsguard Severance",
+    "name": "Oath of the Blade Kingsguard Severance: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5054,7 +5265,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Kingsguard Severance is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Sword. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
+    "description": "Oath of the Blade Kingsguard Severance: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Sword. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It is best used when an enemy is about to hit hard, letting you turn defense into tempo.",
     "tags": [
       "Physical",
       "Unique",
@@ -5062,11 +5273,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Kingsguard Severance"
   },
   {
     "id": "v50_dagger_4",
-    "name": "Phantom Step Art",
+    "name": "Oath of the Fang Phantom Step Art: Skill Vow 2",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5076,7 +5288,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Phantom Step Art is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Dagger. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
+    "description": "Oath of the Fang Phantom Step Art: Skill Vow keeps the previous Phantom Step Art mechanics while using the improved ranked naming style. Oath of the Fang Phantom Step Art: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Dagger. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It supports evasive play by improving momentum, positioning, or follow-up speed.",
     "tags": [
       "Physical",
       "Unique",
@@ -5084,11 +5296,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Phantom Step Art"
   },
   {
     "id": "v50_heavy_weapon_4",
-    "name": "Siegebreak Overrun",
+    "name": "Oath of the Valor Siegebreak Overrun: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5098,7 +5311,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Siegebreak Overrun is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Heavy Weapon. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Valor Siegebreak Overrun: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Heavy Weapon. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Unique",
@@ -5106,11 +5319,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Siegebreak Overrun"
   },
   {
     "id": "v50_spear_4",
-    "name": "Skypierce Rotation",
+    "name": "Oath of the Rift Skypierce Rotation: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5120,7 +5334,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Skypierce Rotation is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Spear. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Rift Skypierce Rotation: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Spear. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Unique",
@@ -5128,11 +5342,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Skypierce Rotation"
   },
   {
     "id": "v50_staff_4",
-    "name": "Spellstaff Breaker",
+    "name": "Oath of the Steel Spellstaff Breaker: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5142,7 +5357,7 @@ export const SKILLS = [
     "element": "physical",
     "target": "enemy",
     "power": 38,
-    "description": "Spellstaff Breaker is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Staff. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
+    "description": "Oath of the Steel Spellstaff Breaker: Skill Vow is a trained combat technique with a martial theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Staff. Mechanically, it targets an enemy target, carries 38 base power, and uses body mechanics, weapon leverage, and timing to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It gives the build another tactical option without replacing the core race/job identity.",
     "tags": [
       "Physical",
       "Unique",
@@ -5150,11 +5365,12 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Spellstaff Breaker"
   },
   {
     "id": "v50_bow_4",
-    "name": "Stormfeather Volley",
+    "name": "Oath of the Storm Stormfeather Volley: Skill Vow",
     "kind": "skill",
     "rank": "Unique",
     "tier": 3,
@@ -5164,7 +5380,7 @@ export const SKILLS = [
     "element": "lightning",
     "target": "enemy",
     "power": 38,
-    "description": "Stormfeather Volley is a trained combat technique with a lightning-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Bow. Mechanically, it targets an enemy target, carries 38 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
+    "description": "Oath of the Storm Stormfeather Volley: Skill Vow is a trained combat technique with a lightning-aspected theme. As an Unique ability, it is rare enough to shape an entire build plan. It comes from the v50 Physical Shop library and is tagged for Physical, Unique, Bow. Mechanically, it targets an enemy target, carries 38 base power, and uses speed, shock, and nerve-disrupting impact to pressure weaknesses or bypass simple defenses. It costs 22 stamina and has a 4-turn cooldown, so it should be timed around your resource flow. It has no added status effect, so its value comes from reliable damage, element matching, and clean cooldown timing. It works well as a ranged opener because it creates pressure without needing a long setup turn.",
     "tags": [
       "Physical",
       "Unique",
@@ -5172,7 +5388,8 @@ export const SKILLS = [
     ],
     "source": "v50 Physical Shop",
     "price": 374,
-    "starting": false
+    "starting": false,
+    "previousName": "Stormfeather Volley"
   }
 ];
 

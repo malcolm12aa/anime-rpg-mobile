@@ -1,5 +1,4 @@
-// Auto-generated from Excel import and updated in v0.6.0.
-// v0.6.0 applies category stat templates, unique descriptions, strengths, weaknesses, and duplicate cleanup metadata.
+// Auto-polished for v0.6.1 Naming Pass.
 
 export const RACES = [
   {
@@ -61,7 +60,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Human \u2014 misc common fantasy"
+    "roleIdentity": "Human — misc common fantasy"
   },
   {
     "id": "high_elf",
@@ -121,7 +120,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elves \u2014 misc common fantasy"
+    "roleIdentity": "Elves — misc common fantasy"
   },
   {
     "id": "race_003_dark_elves",
@@ -181,7 +180,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Elves \u2014 misc common fantasy"
+    "roleIdentity": "Dark Elves — misc common fantasy"
   },
   {
     "id": "iron_dwarf",
@@ -241,7 +240,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dwarves \u2014 misc common fantasy"
+    "roleIdentity": "Dwarves — misc common fantasy"
   },
   {
     "id": "race_005_halflings",
@@ -301,7 +300,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Halflings \u2014 misc common fantasy"
+    "roleIdentity": "Halflings — misc common fantasy"
   },
   {
     "id": "race_006_gnomes",
@@ -361,7 +360,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gnomes \u2014 misc common fantasy"
+    "roleIdentity": "Gnomes — misc common fantasy"
   },
   {
     "id": "race_007_fairies",
@@ -422,7 +421,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fairies \u2014 misc common fantasy"
+    "roleIdentity": "Fairies — misc common fantasy"
   },
   {
     "id": "sylph",
@@ -487,7 +486,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spirits \u2014 misc common fantasy"
+    "roleIdentity": "Spirits — misc common fantasy"
   },
   {
     "id": "race_009_angels",
@@ -552,7 +551,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Angels \u2014 misc common fantasy"
+    "roleIdentity": "Angels — misc common fantasy"
   },
   {
     "id": "demonkin",
@@ -617,7 +616,7 @@ export const RACES = [
     "overlapGroup": "misc_common_fantasy",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demons / Devils \u2014 misc common fantasy"
+    "roleIdentity": "Demons / Devils — misc common fantasy"
   },
   {
     "id": "beastkin",
@@ -677,7 +676,7 @@ export const RACES = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_012_catfolk_nekomimi",
@@ -737,7 +736,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Catfolk / Nekomimi \u2014 misc beastfolk"
+    "roleIdentity": "Catfolk / Nekomimi — misc beastfolk"
   },
   {
     "id": "race_013_dogfolk_inumimi",
@@ -798,7 +797,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dogfolk / Inumimi \u2014 misc beastfolk"
+    "roleIdentity": "Dogfolk / Inumimi — misc beastfolk"
   },
   {
     "id": "race_014_foxfolk_kitsune",
@@ -861,7 +860,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_015_rabbitfolk",
@@ -920,7 +919,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rabbitfolk \u2014 misc beastfolk"
+    "roleIdentity": "Rabbitfolk — misc beastfolk"
   },
   {
     "id": "race_016_bearfolk",
@@ -981,7 +980,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bearfolk \u2014 misc beastfolk"
+    "roleIdentity": "Bearfolk — misc beastfolk"
   },
   {
     "id": "race_017_lionfolk",
@@ -1043,7 +1042,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lionfolk \u2014 misc beastfolk"
+    "roleIdentity": "Lionfolk — misc beastfolk"
   },
   {
     "id": "race_018_tigerfolk",
@@ -1103,7 +1102,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tigerfolk \u2014 misc beastfolk"
+    "roleIdentity": "Tigerfolk — misc beastfolk"
   },
   {
     "id": "race_019_birdfolk_harpies",
@@ -1162,7 +1161,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Birdfolk / Harpies \u2014 misc beastfolk"
+    "roleIdentity": "Birdfolk / Harpies — misc beastfolk"
   },
   {
     "id": "race_020_lizardfolk",
@@ -1224,7 +1223,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lizardfolk \u2014 misc beastfolk"
+    "roleIdentity": "Lizardfolk — misc beastfolk"
   },
   {
     "id": "dragonoid",
@@ -1286,7 +1285,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonfolk / Dragonewts \u2014 misc beastfolk"
+    "roleIdentity": "Dragonfolk / Dragonewts — misc beastfolk"
   },
   {
     "id": "race_022_snakefolk_lamia",
@@ -1346,7 +1345,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Snakefolk / Lamia \u2014 misc beastfolk"
+    "roleIdentity": "Snakefolk / Lamia — misc beastfolk"
   },
   {
     "id": "race_023_minotaurs",
@@ -1408,7 +1407,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Minotaurs \u2014 misc beastfolk"
+    "roleIdentity": "Minotaurs — misc beastfolk"
   },
   {
     "id": "race_024_centaurs",
@@ -1468,7 +1467,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Centaurs \u2014 misc beastfolk"
+    "roleIdentity": "Centaurs — misc beastfolk"
   },
   {
     "id": "race_025_merfolk_mermaids",
@@ -1528,7 +1527,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merfolk / Mermaids \u2014 misc beastfolk"
+    "roleIdentity": "Merfolk / Mermaids — misc beastfolk"
   },
   {
     "id": "race_026_fishmen",
@@ -1588,7 +1587,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fishmen \u2014 misc beastfolk"
+    "roleIdentity": "Fishmen — misc beastfolk"
   },
   {
     "id": "race_027_minks",
@@ -1648,7 +1647,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Minks \u2014 misc beastfolk"
+    "roleIdentity": "Minks — misc beastfolk"
   },
   {
     "id": "race_028_arachne",
@@ -1708,7 +1707,7 @@ export const RACES = [
     "overlapGroup": "misc_beastfolk",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Arachne \u2014 misc beastfolk"
+    "roleIdentity": "Arachne — misc beastfolk"
   },
   {
     "id": "race_029_goblins",
@@ -1770,7 +1769,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblins \u2014 misc monster races"
+    "roleIdentity": "Goblins — misc monster races"
   },
   {
     "id": "race_030_hobgoblins",
@@ -1832,7 +1831,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hobgoblins \u2014 misc monster races"
+    "roleIdentity": "Hobgoblins — misc monster races"
   },
   {
     "id": "race_031_orcs",
@@ -1892,7 +1891,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Orcs \u2014 misc monster races"
+    "roleIdentity": "Orcs — misc monster races"
   },
   {
     "id": "race_032_ogres",
@@ -1952,7 +1951,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ogres \u2014 misc monster races"
+    "roleIdentity": "Ogres — misc monster races"
   },
   {
     "id": "race_033_oni",
@@ -2013,7 +2012,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni \u2014 misc monster races"
+    "roleIdentity": "Oni — misc monster races"
   },
   {
     "id": "race_034_trolls",
@@ -2072,7 +2071,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Trolls \u2014 misc monster races"
+    "roleIdentity": "Trolls — misc monster races"
   },
   {
     "id": "race_035_giants",
@@ -2131,7 +2130,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Giants \u2014 misc monster races"
+    "roleIdentity": "Giants — misc monster races"
   },
   {
     "id": "race_036_cyclopes",
@@ -2190,7 +2189,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cyclopes \u2014 misc monster races"
+    "roleIdentity": "Cyclopes — misc monster races"
   },
   {
     "id": "race_037_slimes",
@@ -2251,7 +2250,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slimes \u2014 misc monster races"
+    "roleIdentity": "Slimes — misc monster races"
   },
   {
     "id": "race_038_treants_ents",
@@ -2310,7 +2309,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Treants / Ents \u2014 misc monster races"
+    "roleIdentity": "Treants / Ents — misc monster races"
   },
   {
     "id": "golemforged",
@@ -2370,7 +2369,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Golems \u2014 misc monster races"
+    "roleIdentity": "Golems — misc monster races"
   },
   {
     "id": "race_040_homunculi",
@@ -2429,7 +2428,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Homunculi \u2014 misc monster races"
+    "roleIdentity": "Homunculi — misc monster races"
   },
   {
     "id": "race_041_automata_living_dolls",
@@ -2489,7 +2488,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Automata / Living Dolls \u2014 misc monster races"
+    "roleIdentity": "Automata / Living Dolls — misc monster races"
   },
   {
     "id": "undead",
@@ -2551,7 +2550,7 @@ export const RACES = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Undead \u2014 death magic"
+    "roleIdentity": "Undead — death magic"
   },
   {
     "id": "race_043_skeletons",
@@ -2613,7 +2612,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Skeletons \u2014 misc monster races"
+    "roleIdentity": "Skeletons — misc monster races"
   },
   {
     "id": "race_044_zombies",
@@ -2675,7 +2674,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Zombies \u2014 misc monster races"
+    "roleIdentity": "Zombies — misc monster races"
   },
   {
     "id": "race_045_liches",
@@ -2737,7 +2736,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Liches \u2014 misc monster races"
+    "roleIdentity": "Liches — misc monster races"
   },
   {
     "id": "race_046_vampires",
@@ -2799,7 +2798,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampires \u2014 misc monster races"
+    "roleIdentity": "Vampires — misc monster races"
   },
   {
     "id": "race_047_werewolves",
@@ -2858,7 +2857,7 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Werewolves \u2014 misc monster races"
+    "roleIdentity": "Werewolves — misc monster races"
   },
   {
     "id": "race_048_wraiths_ghosts",
@@ -2920,16 +2919,16 @@ export const RACES = [
     "overlapGroup": "misc_monster_races",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wraiths / Ghosts \u2014 misc monster races"
+    "roleIdentity": "Wraiths / Ghosts — misc monster races"
   },
   {
     "id": "race_049_yokai",
     "excelId": 49,
-    "name": "Y\u014dkai",
+    "name": "Yōkai",
     "category": "Japanese Mythology",
     "tier": "base",
     "maxLevel": 15,
-    "description": "Y\u014dkai are a iron-hearted Japanese Mythology lineage built around spirit-touched mythic bloodline. Their signature route favors WIS, DEX growth, letting them lean into mana economy while still carrying a clear drawback around expensive equipment demands. No other race uses this exact balance hook, making Y\u014dkai a distinct starting identity rather than a simple reskin.",
+    "description": "Yōkai are a iron-hearted Japanese Mythology lineage built around spirit-touched mythic bloodline. Their signature route favors WIS, DEX growth, letting them lean into mana economy while still carrying a clear drawback around expensive equipment demands. No other race uses this exact balance hook, making Yōkai a distinct starting identity rather than a simple reskin.",
     "stats": {
       "dex": 2,
       "wis": 2,
@@ -2945,11 +2944,11 @@ export const RACES = [
       "sk_quick_slash"
     ],
     "strengths": [
-      "Y\u014dkai-only star-threaded spiritual defense",
+      "Yōkai-only star-threaded spiritual defense",
       "Excels at burst windows through evasion windows"
     ],
     "weaknesses": [
-      "Y\u014dkai struggles when enemies exploit slow early class unlocks",
+      "Yōkai struggles when enemies exploit slow early class unlocks",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [
@@ -2981,7 +2980,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Y\u014dkai \u2014 misc japanese mythology"
+    "roleIdentity": "Yōkai — misc japanese mythology"
   },
   {
     "id": "race_050_kitsune",
@@ -3044,7 +3043,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kitsune \u2014 martial artist"
+    "roleIdentity": "Kitsune — martial artist"
   },
   {
     "id": "race_051_tanuki",
@@ -3105,7 +3104,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tanuki \u2014 martial artist"
+    "roleIdentity": "Tanuki — martial artist"
   },
   {
     "id": "race_052_tengu",
@@ -3167,7 +3166,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tengu \u2014 misc japanese mythology"
+    "roleIdentity": "Tengu — misc japanese mythology"
   },
   {
     "id": "race_053_kappa",
@@ -3227,7 +3226,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kappa \u2014 misc japanese mythology"
+    "roleIdentity": "Kappa — misc japanese mythology"
   },
   {
     "id": "race_054_yuki_onna",
@@ -3288,7 +3287,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "Yuki-Onna — martial artist"
   },
   {
     "id": "race_055_nekomata_bakeneko",
@@ -3349,7 +3348,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Nekomata / Bakeneko \u2014 misc japanese mythology"
+    "roleIdentity": "Nekomata / Bakeneko — misc japanese mythology"
   },
   {
     "id": "race_056_tsukumogami",
@@ -3410,7 +3409,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tsukumogami \u2014 misc japanese mythology"
+    "roleIdentity": "Tsukumogami — misc japanese mythology"
   },
   {
     "id": "race_057_shikigami",
@@ -3471,7 +3470,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Shikigami \u2014 martial artist"
+    "roleIdentity": "Shikigami — martial artist"
   },
   {
     "id": "race_058_kami",
@@ -3531,7 +3530,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kami \u2014 misc japanese mythology"
+    "roleIdentity": "Kami — misc japanese mythology"
   },
   {
     "id": "race_059_ayakashi",
@@ -3592,7 +3591,7 @@ export const RACES = [
     "overlapGroup": "misc_japanese_mythology",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ayakashi \u2014 misc japanese mythology"
+    "roleIdentity": "Ayakashi — misc japanese mythology"
   },
   {
     "id": "race_060_dragons",
@@ -3656,7 +3655,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragons \u2014 misc eastern cultivation"
+    "roleIdentity": "Dragons — misc eastern cultivation"
   },
   {
     "id": "race_061_dragonkin",
@@ -3720,7 +3719,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonkin \u2014 martial artist"
+    "roleIdentity": "Dragonkin — martial artist"
   },
   {
     "id": "celestian",
@@ -3783,7 +3782,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Celestials \u2014 misc eastern cultivation"
+    "roleIdentity": "Celestials — misc eastern cultivation"
   },
   {
     "id": "race_063_immortals",
@@ -3843,7 +3842,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Immortals \u2014 misc eastern cultivation"
+    "roleIdentity": "Immortals — misc eastern cultivation"
   },
   {
     "id": "race_064_asura",
@@ -3904,7 +3903,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Asura \u2014 misc eastern cultivation"
+    "roleIdentity": "Asura — misc eastern cultivation"
   },
   {
     "id": "race_065_rakshasa",
@@ -3965,7 +3964,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rakshasa \u2014 misc eastern cultivation"
+    "roleIdentity": "Rakshasa — misc eastern cultivation"
   },
   {
     "id": "race_066_naga",
@@ -4027,7 +4026,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Naga \u2014 misc eastern cultivation"
+    "roleIdentity": "Naga — misc eastern cultivation"
   },
   {
     "id": "race_067_garuda",
@@ -4088,7 +4087,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Garuda \u2014 misc eastern cultivation"
+    "roleIdentity": "Garuda — misc eastern cultivation"
   },
   {
     "id": "race_068_yaksha",
@@ -4148,7 +4147,7 @@ export const RACES = [
     "overlapGroup": "misc_eastern_cultivation",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yaksha \u2014 misc eastern cultivation"
+    "roleIdentity": "Yaksha — misc eastern cultivation"
   },
   {
     "id": "race_069_qilin_kirin",
@@ -4208,7 +4207,7 @@ export const RACES = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "Qilin / Kirin — martial artist"
   }
 ];
 
@@ -4216,12 +4215,12 @@ export const RACE_PATHS = [
   {
     "id": "race_path_10000_awakened_human",
     "excelId": 10000,
-    "name": "Awakened Human",
+    "name": "Human Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "human",
-    "description": "Awakened Human is a advanced race evolution that refines the human bloodline into a ashen-born form. It pushes WIS, STR higher, specializes in hybrid class routing, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Human Dawnmarked is a distinct advanced race evolution for Human. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -4268,12 +4267,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Human balanced class routing",
-      "Excels at defensive play through weapon damage"
+      "Human Dawnmarked specializes in misc race evolution",
+      "Transforms Human into a distinct progression route with tailored growth",
+      "Awakened Human balanced class routing"
     ],
     "weaknesses": [
-      "Awakened Human lacks a natural immunity",
-      "Requires careful build planning when not using spiritual defense"
+      "Human Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Human lacks a natural immunity"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -4281,7 +4282,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Human \u2014 misc race evolution"
+    "roleIdentity": "Awakened Human — misc race evolution"
   },
   {
     "id": "race_path_10001_elder_human",
@@ -4351,7 +4352,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Human \u2014 misc race evolution"
+    "roleIdentity": "Elder Human — misc race evolution"
   },
   {
     "id": "race_path_10002_human_sovereign",
@@ -4421,7 +4422,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Human Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Human Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10003_origin_human",
@@ -4493,17 +4494,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Human \u2014 misc race evolution"
+    "roleIdentity": "Origin Human — misc race evolution"
   },
   {
     "id": "race_path_10004_human_bloodline",
     "excelId": 10004,
-    "name": "Human Bloodline",
+    "name": "Human Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "human",
-    "description": "Human Bloodline is a advanced race evolution that refines the human bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in anti-magic pressure, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Human Elder Mantle is a distinct advanced race evolution for Human. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -4550,12 +4551,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Human Bloodline balanced class routing",
-      "Excels at event survival through weapon damage"
+      "Human Elder Mantle specializes in misc race evolution",
+      "Transforms Human into a distinct progression route with tailored growth",
+      "Human Bloodline balanced class routing"
     ],
     "weaknesses": [
-      "Human Bloodline lacks a natural immunity",
-      "Requires careful build planning when not using spiritual defense"
+      "Human Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Human Bloodline lacks a natural immunity"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -4563,7 +4566,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Human Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Human Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10005_mythic_human",
@@ -4633,7 +4636,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Human \u2014 misc race evolution"
+    "roleIdentity": "Mythic Human — misc race evolution"
   },
   {
     "id": "race_path_10006_ancient_human_avatar",
@@ -4703,7 +4706,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Human Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Human Avatar — misc race evolution"
   },
   {
     "id": "race_path_10007_world_born_human",
@@ -4775,17 +4778,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Human \u2014 misc race evolution"
+    "roleIdentity": "World-Born Human — misc race evolution"
   },
   {
     "id": "race_path_10008_awakened_elve",
     "excelId": 10008,
-    "name": "Awakened Elve",
+    "name": "Elve Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "high_elf",
-    "description": "Awakened Elve is a advanced race evolution that refines the high elf bloodline into a silver-veined form. It pushes INT, DEX higher, specializes in bleed or poison setup, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Elve Emberhalo is a distinct advanced race evolution for Elve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -4832,12 +4835,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Elve precise spell aim",
-      "Excels at opening-turn tempo through evasion windows"
+      "Elve Emberhalo specializes in misc race evolution",
+      "Transforms Elve into a distinct progression route with tailored growth",
+      "Awakened Elve precise spell aim"
     ],
     "weaknesses": [
-      "Awakened Elve fragile under heavy blows",
-      "Requires careful build planning when not using spell shaping"
+      "Elve Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Elve fragile under heavy blows"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -4845,7 +4850,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Elve \u2014 misc race evolution"
+    "roleIdentity": "Awakened Elve — misc race evolution"
   },
   {
     "id": "race_path_10009_elder_elve",
@@ -4915,7 +4920,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Elve \u2014 misc race evolution"
+    "roleIdentity": "Elder Elve — misc race evolution"
   },
   {
     "id": "race_path_10010_elve_sovereign",
@@ -4985,7 +4990,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elve Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Elve Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10011_origin_elve",
@@ -5057,17 +5062,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Elve \u2014 misc race evolution"
+    "roleIdentity": "Origin Elve — misc race evolution"
   },
   {
     "id": "race_path_10012_elve_bloodline",
     "excelId": 10012,
-    "name": "Elve Bloodline",
+    "name": "Elve Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "high_elf",
-    "description": "Elve Bloodline is a advanced race evolution that refines the high elf bloodline into a crystal-cored form. It pushes INT, DEX higher, specializes in bleed or poison setup, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Elve Astral Inheritance is a distinct advanced race evolution for Elve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -5114,12 +5119,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Elve Bloodline precise spell aim",
-      "Excels at party support through evasion windows"
+      "Elve Astral Inheritance specializes in misc race evolution",
+      "Transforms Elve into a distinct progression route with tailored growth",
+      "Elve Bloodline precise spell aim"
     ],
     "weaknesses": [
-      "Elve Bloodline fragile under heavy blows",
-      "Requires careful build planning when not using spell shaping"
+      "Elve Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Elve Bloodline fragile under heavy blows"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -5127,7 +5134,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elve Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Elve Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10013_mythic_elve",
@@ -5197,7 +5204,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Elve \u2014 misc race evolution"
+    "roleIdentity": "Mythic Elve — misc race evolution"
   },
   {
     "id": "race_path_10014_ancient_elve_avatar",
@@ -5267,7 +5274,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Elve Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Elve Avatar — misc race evolution"
   },
   {
     "id": "race_path_10015_world_born_elve",
@@ -5339,17 +5346,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Elve \u2014 misc race evolution"
+    "roleIdentity": "World-Born Elve — misc race evolution"
   },
   {
     "id": "race_path_10016_awakened_dark_elve",
     "excelId": 10016,
-    "name": "Awakened Dark Elve",
+    "name": "Dark Elve Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_003_dark_elves",
-    "description": "Awakened Dark Elve is a advanced race evolution that refines the race 003 dark elves bloodline into a silver-veined form. It pushes INT, DEX higher, specializes in critical attacks, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dark Elve Ashenwake is a distinct advanced race evolution for Dark Elve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -5396,12 +5403,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dark Elve precise spell aim",
-      "Excels at burst windows through evasion windows"
+      "Dark Elve Ashenwake specializes in misc race evolution",
+      "Transforms Dark Elve into a distinct progression route with tailored growth",
+      "Awakened Dark Elve precise spell aim"
     ],
     "weaknesses": [
-      "Awakened Dark Elve fragile under heavy blows",
-      "Requires careful build planning when not using spell shaping"
+      "Dark Elve Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dark Elve fragile under heavy blows"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -5409,7 +5418,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dark Elve \u2014 misc race evolution"
+    "roleIdentity": "Awakened Dark Elve — misc race evolution"
   },
   {
     "id": "race_path_10017_elder_dark_elve",
@@ -5479,7 +5488,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dark Elve \u2014 misc race evolution"
+    "roleIdentity": "Elder Dark Elve — misc race evolution"
   },
   {
     "id": "race_path_10018_dark_elve_sovereign",
@@ -5549,7 +5558,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Elve Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Dark Elve Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10019_origin_dark_elve",
@@ -5621,17 +5630,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dark Elve \u2014 misc race evolution"
+    "roleIdentity": "Origin Dark Elve — misc race evolution"
   },
   {
     "id": "race_path_10020_dark_elve_bloodline",
     "excelId": 10020,
-    "name": "Dark Elve Bloodline",
+    "name": "Dark Elve Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_003_dark_elves",
-    "description": "Dark Elve Bloodline is a advanced race evolution that refines the race 003 dark elves bloodline into a rune-carved form. It pushes INT, DEX higher, specializes in mana economy, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dark Elve Celestial Pattern is a distinct advanced race evolution for Dark Elve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -5678,12 +5687,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dark Elve Bloodline precise spell aim",
-      "Excels at resistance stacking through evasion windows"
+      "Dark Elve Celestial Pattern specializes in misc race evolution",
+      "Transforms Dark Elve into a distinct progression route with tailored growth",
+      "Dark Elve Bloodline precise spell aim"
     ],
     "weaknesses": [
-      "Dark Elve Bloodline fragile under heavy blows",
-      "Requires careful build planning when not using spell shaping"
+      "Dark Elve Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dark Elve Bloodline fragile under heavy blows"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -5691,7 +5702,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dark Elve Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Dark Elve Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10021_mythic_dark_elve",
@@ -5761,7 +5772,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dark Elve \u2014 misc race evolution"
+    "roleIdentity": "Mythic Dark Elve — misc race evolution"
   },
   {
     "id": "race_path_10022_ancient_dark_elve_avatar",
@@ -5831,7 +5842,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dark Elve Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Dark Elve Avatar — misc race evolution"
   },
   {
     "id": "race_path_10023_world_born_dark_elve",
@@ -5903,17 +5914,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dark Elve \u2014 misc race evolution"
+    "roleIdentity": "World-Born Dark Elve — misc race evolution"
   },
   {
     "id": "race_path_10024_awakened_dwarve",
     "excelId": 10024,
-    "name": "Awakened Dwarve",
+    "name": "Dwarve Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "iron_dwarf",
-    "description": "Awakened Dwarve is a advanced race evolution that refines the iron dwarf bloodline into a rune-carved form. It pushes CON, STR higher, specializes in boss endurance, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dwarve Dawnmarked is a distinct advanced race evolution for Dwarve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 1,
@@ -5960,12 +5971,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dwarve stubborn defense",
-      "Excels at mana economy through weapon damage"
+      "Dwarve Dawnmarked specializes in misc race evolution",
+      "Transforms Dwarve into a distinct progression route with tailored growth",
+      "Awakened Dwarve stubborn defense"
     ],
     "weaknesses": [
-      "Awakened Dwarve slow repositioning",
-      "Requires careful build planning when not using survival tempo"
+      "Dwarve Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dwarve slow repositioning"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -5973,7 +5986,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dwarve \u2014 misc race evolution"
+    "roleIdentity": "Awakened Dwarve — misc race evolution"
   },
   {
     "id": "race_path_10025_elder_dwarve",
@@ -6043,7 +6056,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dwarve \u2014 misc race evolution"
+    "roleIdentity": "Elder Dwarve — misc race evolution"
   },
   {
     "id": "race_path_10026_dwarve_sovereign",
@@ -6113,7 +6126,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dwarve Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Dwarve Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10027_origin_dwarve",
@@ -6185,17 +6198,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dwarve \u2014 misc race evolution"
+    "roleIdentity": "Origin Dwarve — misc race evolution"
   },
   {
     "id": "race_path_10028_dwarve_bloodline",
     "excelId": 10028,
-    "name": "Dwarve Bloodline",
+    "name": "Dwarve Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "iron_dwarf",
-    "description": "Dwarve Bloodline is a advanced race evolution that refines the iron dwarf bloodline into a void-touched form. It pushes CON, STR higher, specializes in defensive play, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dwarve Elder Mantle is a distinct advanced race evolution for Dwarve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 1,
@@ -6242,12 +6255,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dwarve Bloodline stubborn defense",
-      "Excels at stamina cycling through weapon damage"
+      "Dwarve Elder Mantle specializes in misc race evolution",
+      "Transforms Dwarve into a distinct progression route with tailored growth",
+      "Dwarve Bloodline stubborn defense"
     ],
     "weaknesses": [
-      "Dwarve Bloodline slow repositioning",
-      "Requires careful build planning when not using survival tempo"
+      "Dwarve Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dwarve Bloodline slow repositioning"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -6255,7 +6270,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dwarve Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Dwarve Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10029_mythic_dwarve",
@@ -6325,7 +6340,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dwarve \u2014 misc race evolution"
+    "roleIdentity": "Mythic Dwarve — misc race evolution"
   },
   {
     "id": "race_path_10030_ancient_dwarve_avatar",
@@ -6395,7 +6410,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dwarve Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Dwarve Avatar — misc race evolution"
   },
   {
     "id": "race_path_10031_world_born_dwarve",
@@ -6467,17 +6482,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dwarve \u2014 misc race evolution"
+    "roleIdentity": "World-Born Dwarve — misc race evolution"
   },
   {
     "id": "race_path_10032_awakened_halfling",
     "excelId": 10032,
-    "name": "Awakened Halfling",
+    "name": "Halfling Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_005_halflings",
-    "description": "Awakened Halfling is a advanced race evolution that refines the race 005 halflings bloodline into a rune-carved form. It pushes DEX, CHA higher, specializes in mana economy, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Halfling Emberhalo is a distinct advanced race evolution for Halfling. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 1,
       "dex": 7,
@@ -6524,12 +6539,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Halfling lucky evasive play",
-      "Excels at opening-turn tempo through social/contract effects"
+      "Halfling Emberhalo specializes in misc race evolution",
+      "Transforms Halfling into a distinct progression route with tailored growth",
+      "Awakened Halfling lucky evasive play"
     ],
     "weaknesses": [
-      "Awakened Halfling low raw power",
-      "Requires careful build planning when not using speed control"
+      "Halfling Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Halfling low raw power"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -6537,7 +6554,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Halfling \u2014 misc race evolution"
+    "roleIdentity": "Awakened Halfling — misc race evolution"
   },
   {
     "id": "race_path_10033_elder_halfling",
@@ -6607,7 +6624,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Halfling \u2014 misc race evolution"
+    "roleIdentity": "Elder Halfling — misc race evolution"
   },
   {
     "id": "race_path_10034_halfling_sovereign",
@@ -6677,7 +6694,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Halfling Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Halfling Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10035_origin_halfling",
@@ -6749,17 +6766,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Halfling \u2014 misc race evolution"
+    "roleIdentity": "Origin Halfling — misc race evolution"
   },
   {
     "id": "race_path_10036_halfling_bloodline",
     "excelId": 10036,
-    "name": "Halfling Bloodline",
+    "name": "Halfling Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_005_halflings",
-    "description": "Halfling Bloodline is a advanced race evolution that refines the race 005 halflings bloodline into a ashen-born form. It pushes DEX, CHA higher, specializes in anti-magic pressure, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Halfling Astral Inheritance is a distinct advanced race evolution for Halfling. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 1,
       "dex": 7,
@@ -6806,12 +6823,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Halfling Bloodline lucky evasive play",
-      "Excels at defensive play through social/contract effects"
+      "Halfling Astral Inheritance specializes in misc race evolution",
+      "Transforms Halfling into a distinct progression route with tailored growth",
+      "Halfling Bloodline lucky evasive play"
     ],
     "weaknesses": [
-      "Halfling Bloodline low raw power",
-      "Requires careful build planning when not using speed control"
+      "Halfling Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Halfling Bloodline low raw power"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -6819,7 +6838,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Halfling Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Halfling Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10037_mythic_halfling",
@@ -6889,7 +6908,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Halfling \u2014 misc race evolution"
+    "roleIdentity": "Mythic Halfling — misc race evolution"
   },
   {
     "id": "race_path_10038_ancient_halfling_avatar",
@@ -6959,7 +6978,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Halfling Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Halfling Avatar — misc race evolution"
   },
   {
     "id": "race_path_10039_world_born_halfling",
@@ -7031,17 +7050,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Halfling \u2014 misc race evolution"
+    "roleIdentity": "World-Born Halfling — misc race evolution"
   },
   {
     "id": "race_path_10040_awakened_gnome",
     "excelId": 10040,
-    "name": "Awakened Gnome",
+    "name": "Gnome Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_006_gnomes",
-    "description": "Awakened Gnome is a advanced race evolution that refines the race 006 gnomes bloodline into a crystal-cored form. It pushes INT, DEX higher, specializes in anti-magic pressure, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Gnome Ashenwake is a distinct advanced race evolution for Gnome. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 1,
       "dex": 5,
@@ -7088,12 +7107,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Gnome gadget magic",
-      "Excels at anti-magic pressure through evasion windows"
+      "Gnome Ashenwake specializes in misc race evolution",
+      "Transforms Gnome into a distinct progression route with tailored growth",
+      "Awakened Gnome gadget magic"
     ],
     "weaknesses": [
-      "Awakened Gnome low weapon reach",
-      "Requires careful build planning when not using spell shaping"
+      "Gnome Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Gnome low weapon reach"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -7101,7 +7122,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Gnome \u2014 misc race evolution"
+    "roleIdentity": "Awakened Gnome — misc race evolution"
   },
   {
     "id": "race_path_10041_elder_gnome",
@@ -7171,7 +7192,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Gnome \u2014 misc race evolution"
+    "roleIdentity": "Elder Gnome — misc race evolution"
   },
   {
     "id": "race_path_10042_gnome_sovereign",
@@ -7241,7 +7262,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gnome Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Gnome Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10043_origin_gnome",
@@ -7313,17 +7334,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Gnome \u2014 misc race evolution"
+    "roleIdentity": "Origin Gnome — misc race evolution"
   },
   {
     "id": "race_path_10044_gnome_bloodline",
     "excelId": 10044,
-    "name": "Gnome Bloodline",
+    "name": "Gnome Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_006_gnomes",
-    "description": "Gnome Bloodline is a advanced race evolution that refines the race 006 gnomes bloodline into a ashen-born form. It pushes INT, DEX higher, specializes in resource recovery, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Gnome Celestial Pattern is a distinct advanced race evolution for Gnome. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 1,
       "dex": 5,
@@ -7370,12 +7391,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Gnome Bloodline gadget magic",
-      "Excels at opening-turn tempo through evasion windows"
+      "Gnome Celestial Pattern specializes in misc race evolution",
+      "Transforms Gnome into a distinct progression route with tailored growth",
+      "Gnome Bloodline gadget magic"
     ],
     "weaknesses": [
-      "Gnome Bloodline low weapon reach",
-      "Requires careful build planning when not using spell shaping"
+      "Gnome Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Gnome Bloodline low weapon reach"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -7383,7 +7406,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Gnome Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Gnome Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10045_mythic_gnome",
@@ -7453,7 +7476,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Gnome \u2014 misc race evolution"
+    "roleIdentity": "Mythic Gnome — misc race evolution"
   },
   {
     "id": "race_path_10046_ancient_gnome_avatar",
@@ -7523,7 +7546,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Gnome Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Gnome Avatar — misc race evolution"
   },
   {
     "id": "race_path_10047_world_born_gnome",
@@ -7595,17 +7618,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Gnome \u2014 misc race evolution"
+    "roleIdentity": "World-Born Gnome — misc race evolution"
   },
   {
     "id": "race_path_10048_awakened_fairie",
     "excelId": 10048,
-    "name": "Awakened Fairie",
+    "name": "Fairie Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_007_fairies",
-    "description": "Awakened Fairie is a advanced race evolution that refines the race 007 fairies bloodline into a mist-wrapped form. It pushes WIS, STR higher, specializes in resistance stacking, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Fairie Dawnmarked is a distinct advanced race evolution for Fairie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -7652,12 +7675,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Fairie-only iron-hearted spiritual defense",
-      "Excels at status control through weapon damage"
+      "Fairie Dawnmarked specializes in misc race evolution",
+      "Transforms Fairie into a distinct progression route with tailored growth",
+      "Awakened Fairie-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Fairie struggles when enemies exploit narrow counter-elements",
-      "Requires careful build planning when not using spiritual defense"
+      "Fairie Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Fairie struggles when enemies exploit narrow counter-elements"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -7665,7 +7690,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Fairie \u2014 misc race evolution"
+    "roleIdentity": "Awakened Fairie — misc race evolution"
   },
   {
     "id": "race_path_10049_elder_fairie",
@@ -7735,7 +7760,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Fairie \u2014 misc race evolution"
+    "roleIdentity": "Elder Fairie — misc race evolution"
   },
   {
     "id": "race_path_10050_fairie_sovereign",
@@ -7805,7 +7830,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fairie Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Fairie Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10051_origin_fairie",
@@ -7877,17 +7902,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Fairie \u2014 misc race evolution"
+    "roleIdentity": "Origin Fairie — misc race evolution"
   },
   {
     "id": "race_path_10052_fairie_bloodline",
     "excelId": 10052,
-    "name": "Fairie Bloodline",
+    "name": "Fairie Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_007_fairies",
-    "description": "Fairie Bloodline is a advanced race evolution that refines the race 007 fairies bloodline into a sun-forged form. It pushes WIS, STR higher, specializes in status control, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Fairie Elder Mantle is a distinct advanced race evolution for Fairie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -7934,12 +7959,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Fairie Bloodline-only iron-hearted spiritual defense",
-      "Excels at anti-magic pressure through weapon damage"
+      "Fairie Elder Mantle specializes in misc race evolution",
+      "Transforms Fairie into a distinct progression route with tailored growth",
+      "Fairie Bloodline-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Fairie Bloodline struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Fairie Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Fairie Bloodline struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -7947,7 +7974,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fairie Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Fairie Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10053_mythic_fairie",
@@ -8017,7 +8044,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Fairie \u2014 misc race evolution"
+    "roleIdentity": "Mythic Fairie — misc race evolution"
   },
   {
     "id": "race_path_10054_ancient_fairie_avatar",
@@ -8087,7 +8114,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Fairie Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Fairie Avatar — misc race evolution"
   },
   {
     "id": "race_path_10055_world_born_fairie",
@@ -8159,17 +8186,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Fairie \u2014 misc race evolution"
+    "roleIdentity": "World-Born Fairie — misc race evolution"
   },
   {
     "id": "race_path_10056_awakened_spirit",
     "excelId": 10056,
-    "name": "Awakened Spirit",
+    "name": "Spirit Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "sylph",
-    "description": "Awakened Spirit is a advanced race evolution that refines the sylph bloodline into a silver-veined form. It pushes WIS, INT higher, specializes in resistance stacking, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Spirit Emberhalo is a distinct advanced race evolution for Spirit. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -8216,12 +8243,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Spirit ethereal resistance",
-      "Excels at stamina cycling through mana burst"
+      "Spirit Emberhalo specializes in misc race evolution",
+      "Transforms Spirit into a distinct progression route with tailored growth",
+      "Awakened Spirit ethereal resistance"
     ],
     "weaknesses": [
-      "Awakened Spirit weak to sealing magic",
-      "Requires careful build planning when not using spiritual defense"
+      "Spirit Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Spirit weak to sealing magic"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -8229,7 +8258,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Spirit \u2014 misc race evolution"
+    "roleIdentity": "Awakened Spirit — misc race evolution"
   },
   {
     "id": "race_path_10057_elder_spirit",
@@ -8299,7 +8328,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Spirit \u2014 misc race evolution"
+    "roleIdentity": "Elder Spirit — misc race evolution"
   },
   {
     "id": "race_path_10058_spirit_sovereign",
@@ -8369,7 +8398,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spirit Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Spirit Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10059_origin_spirit",
@@ -8441,17 +8470,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Spirit \u2014 misc race evolution"
+    "roleIdentity": "Origin Spirit — misc race evolution"
   },
   {
     "id": "race_path_10060_spirit_bloodline",
     "excelId": 10060,
-    "name": "Spirit Bloodline",
+    "name": "Spirit Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "sylph",
-    "description": "Spirit Bloodline is a advanced race evolution that refines the sylph bloodline into a sun-forged form. It pushes WIS, INT higher, specializes in mana economy, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Spirit Astral Inheritance is a distinct advanced race evolution for Spirit. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -8498,12 +8527,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Spirit Bloodline ethereal resistance",
-      "Excels at hybrid class routing through mana burst"
+      "Spirit Astral Inheritance specializes in misc race evolution",
+      "Transforms Spirit into a distinct progression route with tailored growth",
+      "Spirit Bloodline ethereal resistance"
     ],
     "weaknesses": [
-      "Spirit Bloodline weak to sealing magic",
-      "Requires careful build planning when not using spiritual defense"
+      "Spirit Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Spirit Bloodline weak to sealing magic"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -8511,7 +8542,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Spirit Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Spirit Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10061_mythic_spirit",
@@ -8581,7 +8612,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Spirit \u2014 misc race evolution"
+    "roleIdentity": "Mythic Spirit — misc race evolution"
   },
   {
     "id": "race_path_10062_ancient_spirit_avatar",
@@ -8651,7 +8682,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Spirit Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Spirit Avatar — misc race evolution"
   },
   {
     "id": "race_path_10063_world_born_spirit",
@@ -8723,17 +8754,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Spirit \u2014 misc race evolution"
+    "roleIdentity": "World-Born Spirit — misc race evolution"
   },
   {
     "id": "race_path_10064_awakened_angel",
     "excelId": 10064,
-    "name": "Awakened Angel",
+    "name": "Angel Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_009_angels",
-    "description": "Awakened Angel is a advanced race evolution that refines the race 009 angels bloodline into a wild-oathed form. It pushes WIS, CHA higher, specializes in bleed or poison setup, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Angel Ashenwake is a distinct advanced race evolution for Angel. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -8780,12 +8811,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Angel radiant healing",
-      "Excels at party support through social/contract effects"
+      "Angel Ashenwake specializes in misc race evolution",
+      "Transforms Angel into a distinct progression route with tailored growth",
+      "Awakened Angel radiant healing"
     ],
     "weaknesses": [
-      "Awakened Angel dark-element vulnerability",
-      "Requires careful build planning when not using spiritual defense"
+      "Angel Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Angel dark-element vulnerability"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -8793,7 +8826,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Angel \u2014 misc race evolution"
+    "roleIdentity": "Awakened Angel — misc race evolution"
   },
   {
     "id": "race_path_10065_elder_angel",
@@ -8863,7 +8896,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Angel \u2014 misc race evolution"
+    "roleIdentity": "Elder Angel — misc race evolution"
   },
   {
     "id": "race_path_10066_angel_sovereign",
@@ -8933,7 +8966,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Angel Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Angel Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10067_origin_angel",
@@ -9005,17 +9038,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Angel \u2014 misc race evolution"
+    "roleIdentity": "Origin Angel — misc race evolution"
   },
   {
     "id": "race_path_10068_angel_bloodline",
     "excelId": 10068,
-    "name": "Angel Bloodline",
+    "name": "Angel Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_009_angels",
-    "description": "Angel Bloodline is a advanced race evolution that refines the race 009 angels bloodline into a mist-wrapped form. It pushes WIS, CHA higher, specializes in status control, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Angel Celestial Pattern is a distinct advanced race evolution for Angel. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -9062,12 +9095,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Angel Bloodline radiant healing",
-      "Excels at party support through social/contract effects"
+      "Angel Celestial Pattern specializes in misc race evolution",
+      "Transforms Angel into a distinct progression route with tailored growth",
+      "Angel Bloodline radiant healing"
     ],
     "weaknesses": [
-      "Angel Bloodline dark-element vulnerability",
-      "Requires careful build planning when not using spiritual defense"
+      "Angel Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Angel Bloodline dark-element vulnerability"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -9075,7 +9110,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Angel Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Angel Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10069_mythic_angel",
@@ -9145,7 +9180,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Angel \u2014 misc race evolution"
+    "roleIdentity": "Mythic Angel — misc race evolution"
   },
   {
     "id": "race_path_10070_ancient_angel_avatar",
@@ -9215,7 +9250,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Angel Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Angel Avatar — misc race evolution"
   },
   {
     "id": "race_path_10071_world_born_angel",
@@ -9287,17 +9322,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Angel \u2014 misc race evolution"
+    "roleIdentity": "World-Born Angel — misc race evolution"
   },
   {
     "id": "race_path_10072_awakened_demons_devil",
     "excelId": 10072,
-    "name": "Awakened Demons / Devil",
+    "name": "Demons / Devil Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "demonkin",
-    "description": "Awakened Demons / Devil is a advanced race evolution that refines the demonkin bloodline into a ashen-born form. It pushes CHA, INT higher, specializes in defensive play, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Demons / Devil Dawnmarked is a distinct advanced race evolution for Demons / Devil. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 4,
       "dex": 3,
@@ -9344,12 +9379,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Demons / Devil infernal contracts",
-      "Excels at opening-turn tempo through mana burst"
+      "Demons / Devil Dawnmarked specializes in misc race evolution",
+      "Transforms Demons / Devil into a distinct progression route with tailored growth",
+      "Awakened Demons / Devil infernal contracts"
     ],
     "weaknesses": [
-      "Awakened Demons / Devil radiant judgment weakness",
-      "Requires careful build planning when not using aura pressure"
+      "Demons / Devil Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Demons / Devil radiant judgment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -9357,7 +9394,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Demons / Devil \u2014 misc race evolution"
+    "roleIdentity": "Awakened Demons / Devil — misc race evolution"
   },
   {
     "id": "race_path_10073_elder_demons_devil",
@@ -9427,7 +9464,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Demons / Devil \u2014 misc race evolution"
+    "roleIdentity": "Elder Demons / Devil — misc race evolution"
   },
   {
     "id": "race_path_10074_demons_devil_sovereign",
@@ -9497,7 +9534,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demons / Devil Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Demons / Devil Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10075_origin_demons_devil",
@@ -9569,17 +9606,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Demons / Devil \u2014 misc race evolution"
+    "roleIdentity": "Origin Demons / Devil — misc race evolution"
   },
   {
     "id": "race_path_10076_demons_devil_bloodline",
     "excelId": 10076,
-    "name": "Demons / Devil Bloodline",
+    "name": "Demons / Devil Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "demonkin",
-    "description": "Demons / Devil Bloodline is a advanced race evolution that refines the demonkin bloodline into a sun-forged form. It pushes CHA, INT higher, specializes in boss endurance, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Demons / Devil Elder Mantle is a distinct advanced race evolution for Demons / Devil. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 4,
       "dex": 3,
@@ -9626,12 +9663,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Demons / Devil Bloodline infernal contracts",
-      "Excels at mana economy through mana burst"
+      "Demons / Devil Elder Mantle specializes in misc race evolution",
+      "Transforms Demons / Devil into a distinct progression route with tailored growth",
+      "Demons / Devil Bloodline infernal contracts"
     ],
     "weaknesses": [
-      "Demons / Devil Bloodline radiant judgment weakness",
-      "Requires careful build planning when not using aura pressure"
+      "Demons / Devil Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Demons / Devil Bloodline radiant judgment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -9639,7 +9678,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Demons / Devil Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Demons / Devil Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10077_mythic_demons_devil",
@@ -9709,7 +9748,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Demons / Devil \u2014 misc race evolution"
+    "roleIdentity": "Mythic Demons / Devil — misc race evolution"
   },
   {
     "id": "race_path_10078_ancient_demons_devil_avatar",
@@ -9779,7 +9818,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Demons / Devil Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Demons / Devil Avatar — misc race evolution"
   },
   {
     "id": "race_path_10079_world_born_demons_devil",
@@ -9851,17 +9890,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Demons / Devil \u2014 misc race evolution"
+    "roleIdentity": "World-Born Demons / Devil — misc race evolution"
   },
   {
     "id": "race_path_10080_awakened_beastmen_beastkin",
     "excelId": 10080,
-    "name": "Awakened Beastmen / Beastkin",
+    "name": "Beastmen / Beastkin Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "beastkin",
-    "description": "Awakened Beastmen / Beastkin is a advanced race evolution that refines the beastkin bloodline into a mist-wrapped form. It pushes WIS, STR higher, specializes in defensive play, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Beastmen / Beastkin Emberhalo is a distinct advanced race evolution for Beastmen / Beastkin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -9908,12 +9947,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Beastmen / Beastkin-only sun-forged spiritual defense",
-      "Excels at bleed or poison setup through weapon damage"
+      "Beastmen / Beastkin Emberhalo specializes in summoner tamer",
+      "Transforms Beastmen / Beastkin into a distinct progression route with tailored growth",
+      "Awakened Beastmen / Beastkin-only sun-forged spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Beastmen / Beastkin struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Beastmen / Beastkin Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Beastmen / Beastkin struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -9921,7 +9962,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "Awakened Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_path_10081_elder_beastmen_beastkin",
@@ -9991,7 +10032,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "Elder Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_path_10082_beastmen_beastkin_sovereign",
@@ -10061,7 +10102,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Beastmen / Beastkin Sovereign \u2014 summoner tamer"
+    "roleIdentity": "Beastmen / Beastkin Sovereign — summoner tamer"
   },
   {
     "id": "race_path_10083_origin_beastmen_beastkin",
@@ -10133,17 +10174,17 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "Origin Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_path_10084_beastmen_beastkin_bloodline",
     "excelId": 10084,
-    "name": "Beastmen / Beastkin Bloodline",
+    "name": "Beastmen / Beastkin Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "beastkin",
-    "description": "Beastmen / Beastkin Bloodline is a advanced race evolution that refines the beastkin bloodline into a void-touched form. It pushes WIS, STR higher, specializes in mana economy, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Beastmen / Beastkin Astral Inheritance is a distinct advanced race evolution for Beastmen / Beastkin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -10190,12 +10231,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Beastmen / Beastkin Bloodline-only mist-wrapped spiritual defense",
-      "Excels at mana economy through weapon damage"
+      "Beastmen / Beastkin Astral Inheritance specializes in summoner tamer",
+      "Transforms Beastmen / Beastkin into a distinct progression route with tailored growth",
+      "Beastmen / Beastkin Bloodline-only mist-wrapped spiritual defense"
     ],
     "weaknesses": [
-      "Beastmen / Beastkin Bloodline struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Beastmen / Beastkin Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Beastmen / Beastkin Bloodline struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -10203,7 +10246,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Beastmen / Beastkin Bloodline \u2014 summoner tamer"
+    "roleIdentity": "Beastmen / Beastkin Bloodline — summoner tamer"
   },
   {
     "id": "race_path_10085_mythic_beastmen_beastkin",
@@ -10273,7 +10316,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "Mythic Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_path_10086_ancient_beastmen_beastkin_avatar",
@@ -10343,7 +10386,7 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Beastmen / Beastkin Avatar \u2014 summoner tamer"
+    "roleIdentity": "Ancient Beastmen / Beastkin Avatar — summoner tamer"
   },
   {
     "id": "race_path_10087_world_born_beastmen_beastkin",
@@ -10415,17 +10458,17 @@ export const RACE_PATHS = [
     "overlapGroup": "summoner_tamer",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Beastmen / Beastkin \u2014 summoner tamer"
+    "roleIdentity": "World-Born Beastmen / Beastkin — summoner tamer"
   },
   {
     "id": "race_path_10088_awakened_catfolk_nekomimi",
     "excelId": 10088,
-    "name": "Awakened Catfolk / Nekomimi",
+    "name": "Catfolk / Nekomimi Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_012_catfolk_nekomimi",
-    "description": "Awakened Catfolk / Nekomimi is a advanced race evolution that refines the race 012 catfolk nekomimi bloodline into a moon-marked form. It pushes DEX, CHA higher, specializes in party support, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Catfolk / Nekomimi Ashenwake is a distinct advanced race evolution for Catfolk / Nekomimi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -10472,12 +10515,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Catfolk / Nekomimi critical footwork",
-      "Excels at party support through social/contract effects"
+      "Catfolk / Nekomimi Ashenwake specializes in misc race evolution",
+      "Transforms Catfolk / Nekomimi into a distinct progression route with tailored growth",
+      "Awakened Catfolk / Nekomimi critical footwork"
     ],
     "weaknesses": [
-      "Awakened Catfolk / Nekomimi poor sustained defense",
-      "Requires careful build planning when not using speed control"
+      "Catfolk / Nekomimi Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Catfolk / Nekomimi poor sustained defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -10485,7 +10530,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Catfolk / Nekomimi \u2014 misc race evolution"
+    "roleIdentity": "Awakened Catfolk / Nekomimi — misc race evolution"
   },
   {
     "id": "race_path_10089_elder_catfolk_nekomimi",
@@ -10555,7 +10600,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Catfolk / Nekomimi \u2014 misc race evolution"
+    "roleIdentity": "Elder Catfolk / Nekomimi — misc race evolution"
   },
   {
     "id": "race_path_10090_catfolk_nekomimi_sovereign",
@@ -10625,7 +10670,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Catfolk / Nekomimi Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Catfolk / Nekomimi Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10091_origin_catfolk_nekomimi",
@@ -10697,17 +10742,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Catfolk / Nekomimi \u2014 misc race evolution"
+    "roleIdentity": "Origin Catfolk / Nekomimi — misc race evolution"
   },
   {
     "id": "race_path_10092_catfolk_nekomimi_bloodline",
     "excelId": 10092,
-    "name": "Catfolk / Nekomimi Bloodline",
+    "name": "Catfolk / Nekomimi Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_012_catfolk_nekomimi",
-    "description": "Catfolk / Nekomimi Bloodline is a advanced race evolution that refines the race 012 catfolk nekomimi bloodline into a ashen-born form. It pushes DEX, CHA higher, specializes in party support, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Catfolk / Nekomimi Celestial Pattern is a distinct advanced race evolution for Catfolk / Nekomimi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -10754,12 +10799,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Catfolk / Nekomimi Bloodline critical footwork",
-      "Excels at bleed or poison setup through social/contract effects"
+      "Catfolk / Nekomimi Celestial Pattern specializes in misc race evolution",
+      "Transforms Catfolk / Nekomimi into a distinct progression route with tailored growth",
+      "Catfolk / Nekomimi Bloodline critical footwork"
     ],
     "weaknesses": [
-      "Catfolk / Nekomimi Bloodline poor sustained defense",
-      "Requires careful build planning when not using speed control"
+      "Catfolk / Nekomimi Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Catfolk / Nekomimi Bloodline poor sustained defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -10767,7 +10814,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Catfolk / Nekomimi Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Catfolk / Nekomimi Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10093_mythic_catfolk_nekomimi",
@@ -10837,7 +10884,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Catfolk / Nekomimi \u2014 misc race evolution"
+    "roleIdentity": "Mythic Catfolk / Nekomimi — misc race evolution"
   },
   {
     "id": "race_path_10094_ancient_catfolk_nekomimi_avatar",
@@ -10907,7 +10954,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Catfolk / Nekomimi Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Catfolk / Nekomimi Avatar — misc race evolution"
   },
   {
     "id": "race_path_10095_world_born_catfolk_nekomimi",
@@ -10979,17 +11026,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Catfolk / Nekomimi \u2014 misc race evolution"
+    "roleIdentity": "World-Born Catfolk / Nekomimi — misc race evolution"
   },
   {
     "id": "race_path_10096_awakened_dogfolk_inumimi",
     "excelId": 10096,
-    "name": "Awakened Dogfolk / Inumimi",
+    "name": "Dogfolk / Inumimi Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_013_dogfolk_inumimi",
-    "description": "Awakened Dogfolk / Inumimi is a advanced race evolution that refines the race 013 dogfolk inumimi bloodline into a iron-hearted form. It pushes WIS, DEX higher, specializes in stamina cycling, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dogfolk / Inumimi Dawnmarked is a distinct advanced race evolution for Dogfolk / Inumimi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -11036,12 +11083,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dogfolk / Inumimi tracking instincts",
-      "Excels at resource recovery through evasion windows"
+      "Dogfolk / Inumimi Dawnmarked specializes in misc race evolution",
+      "Transforms Dogfolk / Inumimi into a distinct progression route with tailored growth",
+      "Awakened Dogfolk / Inumimi tracking instincts"
     ],
     "weaknesses": [
-      "Awakened Dogfolk / Inumimi predictable attack routes",
-      "Requires careful build planning when not using spiritual defense"
+      "Dogfolk / Inumimi Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dogfolk / Inumimi predictable attack routes"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -11049,7 +11098,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dogfolk / Inumimi \u2014 misc race evolution"
+    "roleIdentity": "Awakened Dogfolk / Inumimi — misc race evolution"
   },
   {
     "id": "race_path_10097_elder_dogfolk_inumimi",
@@ -11119,7 +11168,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dogfolk / Inumimi \u2014 misc race evolution"
+    "roleIdentity": "Elder Dogfolk / Inumimi — misc race evolution"
   },
   {
     "id": "race_path_10098_dogfolk_inumimi_sovereign",
@@ -11189,7 +11238,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dogfolk / Inumimi Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Dogfolk / Inumimi Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10099_origin_dogfolk_inumimi",
@@ -11261,17 +11310,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dogfolk / Inumimi \u2014 misc race evolution"
+    "roleIdentity": "Origin Dogfolk / Inumimi — misc race evolution"
   },
   {
     "id": "race_path_10100_dogfolk_inumimi_bloodline",
     "excelId": 10100,
-    "name": "Dogfolk / Inumimi Bloodline",
+    "name": "Dogfolk / Inumimi Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_013_dogfolk_inumimi",
-    "description": "Dogfolk / Inumimi Bloodline is a advanced race evolution that refines the race 013 dogfolk inumimi bloodline into a thorn-bound form. It pushes WIS, DEX higher, specializes in burst windows, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dogfolk / Inumimi Elder Mantle is a distinct advanced race evolution for Dogfolk / Inumimi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -11318,12 +11367,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dogfolk / Inumimi Bloodline tracking instincts",
-      "Excels at mana economy through evasion windows"
+      "Dogfolk / Inumimi Elder Mantle specializes in misc race evolution",
+      "Transforms Dogfolk / Inumimi into a distinct progression route with tailored growth",
+      "Dogfolk / Inumimi Bloodline tracking instincts"
     ],
     "weaknesses": [
-      "Dogfolk / Inumimi Bloodline predictable attack routes",
-      "Requires careful build planning when not using spiritual defense"
+      "Dogfolk / Inumimi Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dogfolk / Inumimi Bloodline predictable attack routes"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -11331,7 +11382,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dogfolk / Inumimi Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Dogfolk / Inumimi Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10101_mythic_dogfolk_inumimi",
@@ -11401,7 +11452,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dogfolk / Inumimi \u2014 misc race evolution"
+    "roleIdentity": "Mythic Dogfolk / Inumimi — misc race evolution"
   },
   {
     "id": "race_path_10102_ancient_dogfolk_inumimi_avatar",
@@ -11471,7 +11522,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dogfolk / Inumimi Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Dogfolk / Inumimi Avatar — misc race evolution"
   },
   {
     "id": "race_path_10103_world_born_dogfolk_inumimi",
@@ -11543,17 +11594,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dogfolk / Inumimi \u2014 misc race evolution"
+    "roleIdentity": "World-Born Dogfolk / Inumimi — misc race evolution"
   },
   {
     "id": "race_path_10104_awakened_foxfolk_kitsune",
     "excelId": 10104,
-    "name": "Awakened Foxfolk / Kitsune",
+    "name": "Foxfolk / Kitsune Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_014_foxfolk_kitsune",
-    "description": "Awakened Foxfolk / Kitsune is a advanced race evolution that refines the race 014 foxfolk kitsune bloodline into a crystal-cored form. It pushes CHA, INT higher, specializes in rare path hunting, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Foxfolk / Kitsune Emberhalo is a distinct advanced race evolution for Foxfolk / Kitsune. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -11600,12 +11651,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Foxfolk / Kitsune illusion weaving",
-      "Excels at event survival through mana burst"
+      "Foxfolk / Kitsune Emberhalo specializes in martial artist",
+      "Transforms Foxfolk / Kitsune into a distinct progression route with tailored growth",
+      "Awakened Foxfolk / Kitsune illusion weaving"
     ],
     "weaknesses": [
-      "Awakened Foxfolk / Kitsune weak to truth-sight effects",
-      "Requires careful build planning when not using aura pressure"
+      "Foxfolk / Kitsune Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Foxfolk / Kitsune weak to truth-sight effects"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -11613,7 +11666,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "Awakened Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_path_10105_elder_foxfolk_kitsune",
@@ -11683,7 +11736,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "Elder Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_path_10106_foxfolk_kitsune_sovereign",
@@ -11753,7 +11806,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Foxfolk / Kitsune Sovereign \u2014 martial artist"
+    "roleIdentity": "Foxfolk / Kitsune Sovereign — martial artist"
   },
   {
     "id": "race_path_10107_origin_foxfolk_kitsune",
@@ -11825,17 +11878,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "Origin Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_path_10108_foxfolk_kitsune_bloodline",
     "excelId": 10108,
-    "name": "Foxfolk / Kitsune Bloodline",
+    "name": "Foxfolk / Kitsune Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_014_foxfolk_kitsune",
-    "description": "Foxfolk / Kitsune Bloodline is a advanced race evolution that refines the race 014 foxfolk kitsune bloodline into a star-threaded form. It pushes CHA, INT higher, specializes in event survival, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Foxfolk / Kitsune Astral Inheritance is a distinct advanced race evolution for Foxfolk / Kitsune. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -11882,12 +11935,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Foxfolk / Kitsune Bloodline illusion weaving",
-      "Excels at defensive play through mana burst"
+      "Foxfolk / Kitsune Astral Inheritance specializes in martial artist",
+      "Transforms Foxfolk / Kitsune into a distinct progression route with tailored growth",
+      "Foxfolk / Kitsune Bloodline illusion weaving"
     ],
     "weaknesses": [
-      "Foxfolk / Kitsune Bloodline weak to truth-sight effects",
-      "Requires careful build planning when not using aura pressure"
+      "Foxfolk / Kitsune Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Foxfolk / Kitsune Bloodline weak to truth-sight effects"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -11895,7 +11950,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Foxfolk / Kitsune Bloodline \u2014 martial artist"
+    "roleIdentity": "Foxfolk / Kitsune Bloodline — martial artist"
   },
   {
     "id": "race_path_10109_mythic_foxfolk_kitsune",
@@ -11965,7 +12020,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "Mythic Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_path_10110_ancient_foxfolk_kitsune_avatar",
@@ -12035,7 +12090,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Foxfolk / Kitsune Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Foxfolk / Kitsune Avatar — martial artist"
   },
   {
     "id": "race_path_10111_world_born_foxfolk_kitsune",
@@ -12107,17 +12162,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Foxfolk / Kitsune \u2014 martial artist"
+    "roleIdentity": "World-Born Foxfolk / Kitsune — martial artist"
   },
   {
     "id": "race_path_10112_awakened_rabbitfolk",
     "excelId": 10112,
-    "name": "Awakened Rabbitfolk",
+    "name": "Rabbitfolk Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_015_rabbitfolk",
-    "description": "Awakened Rabbitfolk is a advanced race evolution that refines the race 015 rabbitfolk bloodline into a moon-marked form. It pushes DEX, WIS higher, specializes in rare path hunting, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Rabbitfolk Ashenwake is a distinct advanced race evolution for Rabbitfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 9,
@@ -12164,12 +12219,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Rabbitfolk burst movement",
-      "Excels at anti-magic pressure through healing synergy"
+      "Rabbitfolk Ashenwake specializes in misc race evolution",
+      "Transforms Rabbitfolk into a distinct progression route with tailored growth",
+      "Awakened Rabbitfolk burst movement"
     ],
     "weaknesses": [
-      "Awakened Rabbitfolk low brace strength",
-      "Requires careful build planning when not using speed control"
+      "Rabbitfolk Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Rabbitfolk low brace strength"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -12177,7 +12234,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Rabbitfolk \u2014 misc race evolution"
+    "roleIdentity": "Awakened Rabbitfolk — misc race evolution"
   },
   {
     "id": "race_path_10113_elder_rabbitfolk",
@@ -12247,7 +12304,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Rabbitfolk \u2014 misc race evolution"
+    "roleIdentity": "Elder Rabbitfolk — misc race evolution"
   },
   {
     "id": "race_path_10114_rabbitfolk_sovereign",
@@ -12317,7 +12374,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rabbitfolk Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Rabbitfolk Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10115_origin_rabbitfolk",
@@ -12389,17 +12446,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Rabbitfolk \u2014 misc race evolution"
+    "roleIdentity": "Origin Rabbitfolk — misc race evolution"
   },
   {
     "id": "race_path_10116_rabbitfolk_bloodline",
     "excelId": 10116,
-    "name": "Rabbitfolk Bloodline",
+    "name": "Rabbitfolk Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_015_rabbitfolk",
-    "description": "Rabbitfolk Bloodline is a advanced race evolution that refines the race 015 rabbitfolk bloodline into a mirror-souled form. It pushes DEX, WIS higher, specializes in opening-turn tempo, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Rabbitfolk Celestial Pattern is a distinct advanced race evolution for Rabbitfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 9,
@@ -12446,12 +12503,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Rabbitfolk Bloodline burst movement",
-      "Excels at burst windows through healing synergy"
+      "Rabbitfolk Celestial Pattern specializes in misc race evolution",
+      "Transforms Rabbitfolk into a distinct progression route with tailored growth",
+      "Rabbitfolk Bloodline burst movement"
     ],
     "weaknesses": [
-      "Rabbitfolk Bloodline low brace strength",
-      "Requires careful build planning when not using speed control"
+      "Rabbitfolk Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Rabbitfolk Bloodline low brace strength"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -12459,7 +12518,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rabbitfolk Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Rabbitfolk Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10117_mythic_rabbitfolk",
@@ -12529,7 +12588,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Rabbitfolk \u2014 misc race evolution"
+    "roleIdentity": "Mythic Rabbitfolk — misc race evolution"
   },
   {
     "id": "race_path_10118_ancient_rabbitfolk_avatar",
@@ -12599,7 +12658,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Rabbitfolk Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Rabbitfolk Avatar — misc race evolution"
   },
   {
     "id": "race_path_10119_world_born_rabbitfolk",
@@ -12671,17 +12730,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Rabbitfolk \u2014 misc race evolution"
+    "roleIdentity": "World-Born Rabbitfolk — misc race evolution"
   },
   {
     "id": "race_path_10120_awakened_bearfolk",
     "excelId": 10120,
-    "name": "Awakened Bearfolk",
+    "name": "Bearfolk Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_016_bearfolk",
-    "description": "Awakened Bearfolk is a advanced race evolution that refines the race 016 bearfolk bloodline into a thorn-bound form. It pushes CON, STR higher, specializes in defensive play, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Bearfolk Dawnmarked is a distinct advanced race evolution for Bearfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 1,
@@ -12728,12 +12787,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Bearfolk grappling power",
-      "Excels at party support through weapon damage"
+      "Bearfolk Dawnmarked specializes in misc race evolution",
+      "Transforms Bearfolk into a distinct progression route with tailored growth",
+      "Awakened Bearfolk grappling power"
     ],
     "weaknesses": [
-      "Awakened Bearfolk weak ranged pressure",
-      "Requires careful build planning when not using survival tempo"
+      "Bearfolk Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Bearfolk weak ranged pressure"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -12741,7 +12802,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Bearfolk \u2014 misc race evolution"
+    "roleIdentity": "Awakened Bearfolk — misc race evolution"
   },
   {
     "id": "race_path_10121_elder_bearfolk",
@@ -12811,7 +12872,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Bearfolk \u2014 misc race evolution"
+    "roleIdentity": "Elder Bearfolk — misc race evolution"
   },
   {
     "id": "race_path_10122_bearfolk_sovereign",
@@ -12881,7 +12942,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bearfolk Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Bearfolk Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10123_origin_bearfolk",
@@ -12953,17 +13014,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Bearfolk \u2014 misc race evolution"
+    "roleIdentity": "Origin Bearfolk — misc race evolution"
   },
   {
     "id": "race_path_10124_bearfolk_bloodline",
     "excelId": 10124,
-    "name": "Bearfolk Bloodline",
+    "name": "Bearfolk Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_016_bearfolk",
-    "description": "Bearfolk Bloodline is a advanced race evolution that refines the race 016 bearfolk bloodline into a wild-oathed form. It pushes CON, STR higher, specializes in anti-magic pressure, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Bearfolk Elder Mantle is a distinct advanced race evolution for Bearfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 1,
@@ -13010,12 +13071,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Bearfolk Bloodline grappling power",
-      "Excels at resistance stacking through weapon damage"
+      "Bearfolk Elder Mantle specializes in misc race evolution",
+      "Transforms Bearfolk into a distinct progression route with tailored growth",
+      "Bearfolk Bloodline grappling power"
     ],
     "weaknesses": [
-      "Bearfolk Bloodline weak ranged pressure",
-      "Requires careful build planning when not using survival tempo"
+      "Bearfolk Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Bearfolk Bloodline weak ranged pressure"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -13023,7 +13086,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Bearfolk Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Bearfolk Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10125_mythic_bearfolk",
@@ -13093,7 +13156,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Bearfolk \u2014 misc race evolution"
+    "roleIdentity": "Mythic Bearfolk — misc race evolution"
   },
   {
     "id": "race_path_10126_ancient_bearfolk_avatar",
@@ -13163,7 +13226,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Bearfolk Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Bearfolk Avatar — misc race evolution"
   },
   {
     "id": "race_path_10127_world_born_bearfolk",
@@ -13235,17 +13298,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Bearfolk \u2014 misc race evolution"
+    "roleIdentity": "World-Born Bearfolk — misc race evolution"
   },
   {
     "id": "race_path_10128_awakened_lionfolk",
     "excelId": 10128,
-    "name": "Awakened Lionfolk",
+    "name": "Lionfolk Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_017_lionfolk",
-    "description": "Awakened Lionfolk is a advanced race evolution that refines the race 017 lionfolk bloodline into a silver-veined form. It pushes STR, CHA higher, specializes in anti-magic pressure, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Lionfolk Emberhalo is a distinct advanced race evolution for Lionfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 3,
@@ -13292,12 +13355,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Lionfolk commanding presence",
-      "Excels at boss endurance through social/contract effects"
+      "Lionfolk Emberhalo specializes in misc race evolution",
+      "Transforms Lionfolk into a distinct progression route with tailored growth",
+      "Awakened Lionfolk commanding presence"
     ],
     "weaknesses": [
-      "Awakened Lionfolk poor stealth",
-      "Requires careful build planning when not using power scaling"
+      "Lionfolk Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Lionfolk poor stealth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -13305,7 +13370,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Lionfolk \u2014 misc race evolution"
+    "roleIdentity": "Awakened Lionfolk — misc race evolution"
   },
   {
     "id": "race_path_10129_elder_lionfolk",
@@ -13375,7 +13440,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Lionfolk \u2014 misc race evolution"
+    "roleIdentity": "Elder Lionfolk — misc race evolution"
   },
   {
     "id": "race_path_10130_lionfolk_sovereign",
@@ -13445,7 +13510,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lionfolk Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Lionfolk Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10131_origin_lionfolk",
@@ -13517,17 +13582,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Lionfolk \u2014 misc race evolution"
+    "roleIdentity": "Origin Lionfolk — misc race evolution"
   },
   {
     "id": "race_path_10132_lionfolk_bloodline",
     "excelId": 10132,
-    "name": "Lionfolk Bloodline",
+    "name": "Lionfolk Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_017_lionfolk",
-    "description": "Lionfolk Bloodline is a advanced race evolution that refines the race 017 lionfolk bloodline into a thorn-bound form. It pushes STR, CHA higher, specializes in boss endurance, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Lionfolk Astral Inheritance is a distinct advanced race evolution for Lionfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 3,
@@ -13574,12 +13639,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Lionfolk Bloodline commanding presence",
-      "Excels at opening-turn tempo through social/contract effects"
+      "Lionfolk Astral Inheritance specializes in misc race evolution",
+      "Transforms Lionfolk into a distinct progression route with tailored growth",
+      "Lionfolk Bloodline commanding presence"
     ],
     "weaknesses": [
-      "Lionfolk Bloodline poor stealth",
-      "Requires careful build planning when not using power scaling"
+      "Lionfolk Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Lionfolk Bloodline poor stealth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -13587,7 +13654,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lionfolk Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Lionfolk Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10133_mythic_lionfolk",
@@ -13657,7 +13724,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Lionfolk \u2014 misc race evolution"
+    "roleIdentity": "Mythic Lionfolk — misc race evolution"
   },
   {
     "id": "race_path_10134_ancient_lionfolk_avatar",
@@ -13727,7 +13794,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Lionfolk Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Lionfolk Avatar — misc race evolution"
   },
   {
     "id": "race_path_10135_world_born_lionfolk",
@@ -13799,17 +13866,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Lionfolk \u2014 misc race evolution"
+    "roleIdentity": "World-Born Lionfolk — misc race evolution"
   },
   {
     "id": "race_path_10136_awakened_tigerfolk",
     "excelId": 10136,
-    "name": "Awakened Tigerfolk",
+    "name": "Tigerfolk Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_018_tigerfolk",
-    "description": "Awakened Tigerfolk is a advanced race evolution that refines the race 018 tigerfolk bloodline into a star-threaded form. It pushes STR, DEX higher, specializes in boss endurance, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tigerfolk Ashenwake is a distinct advanced race evolution for Tigerfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 7,
@@ -13856,12 +13923,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Tigerfolk burst pounce damage",
-      "Excels at status control through evasion windows"
+      "Tigerfolk Ashenwake specializes in misc race evolution",
+      "Transforms Tigerfolk into a distinct progression route with tailored growth",
+      "Awakened Tigerfolk burst pounce damage"
     ],
     "weaknesses": [
-      "Awakened Tigerfolk resource-hungry aggression",
-      "Requires careful build planning when not using power scaling"
+      "Tigerfolk Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Tigerfolk resource-hungry aggression"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -13869,7 +13938,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Tigerfolk \u2014 misc race evolution"
+    "roleIdentity": "Awakened Tigerfolk — misc race evolution"
   },
   {
     "id": "race_path_10137_elder_tigerfolk",
@@ -13939,7 +14008,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Tigerfolk \u2014 misc race evolution"
+    "roleIdentity": "Elder Tigerfolk — misc race evolution"
   },
   {
     "id": "race_path_10138_tigerfolk_sovereign",
@@ -14009,7 +14078,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tigerfolk Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Tigerfolk Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10139_origin_tigerfolk",
@@ -14081,17 +14150,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Tigerfolk \u2014 misc race evolution"
+    "roleIdentity": "Origin Tigerfolk — misc race evolution"
   },
   {
     "id": "race_path_10140_tigerfolk_bloodline",
     "excelId": 10140,
-    "name": "Tigerfolk Bloodline",
+    "name": "Tigerfolk Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_018_tigerfolk",
-    "description": "Tigerfolk Bloodline is a advanced race evolution that refines the race 018 tigerfolk bloodline into a wild-oathed form. It pushes STR, DEX higher, specializes in opening-turn tempo, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tigerfolk Celestial Pattern is a distinct advanced race evolution for Tigerfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 7,
       "dex": 7,
@@ -14138,12 +14207,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Tigerfolk Bloodline burst pounce damage",
-      "Excels at boss endurance through evasion windows"
+      "Tigerfolk Celestial Pattern specializes in misc race evolution",
+      "Transforms Tigerfolk into a distinct progression route with tailored growth",
+      "Tigerfolk Bloodline burst pounce damage"
     ],
     "weaknesses": [
-      "Tigerfolk Bloodline resource-hungry aggression",
-      "Requires careful build planning when not using power scaling"
+      "Tigerfolk Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Tigerfolk Bloodline resource-hungry aggression"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -14151,7 +14222,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tigerfolk Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Tigerfolk Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10141_mythic_tigerfolk",
@@ -14221,7 +14292,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Tigerfolk \u2014 misc race evolution"
+    "roleIdentity": "Mythic Tigerfolk — misc race evolution"
   },
   {
     "id": "race_path_10142_ancient_tigerfolk_avatar",
@@ -14291,7 +14362,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Tigerfolk Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Tigerfolk Avatar — misc race evolution"
   },
   {
     "id": "race_path_10143_world_born_tigerfolk",
@@ -14363,17 +14434,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Tigerfolk \u2014 misc race evolution"
+    "roleIdentity": "World-Born Tigerfolk — misc race evolution"
   },
   {
     "id": "race_path_10144_awakened_birdfolk_harpie",
     "excelId": 10144,
-    "name": "Awakened Birdfolk / Harpie",
+    "name": "Birdfolk / Harpie Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_019_birdfolk_harpies",
-    "description": "Awakened Birdfolk / Harpie is a advanced race evolution that refines the race 019 birdfolk harpies bloodline into a ashen-born form. It pushes DEX, WIS higher, specializes in defensive play, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Birdfolk / Harpie Dawnmarked is a distinct advanced race evolution for Birdfolk / Harpie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -14420,12 +14491,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Birdfolk / Harpie aerial mobility",
-      "Excels at stamina cycling through healing synergy"
+      "Birdfolk / Harpie Dawnmarked specializes in misc race evolution",
+      "Transforms Birdfolk / Harpie into a distinct progression route with tailored growth",
+      "Awakened Birdfolk / Harpie aerial mobility"
     ],
     "weaknesses": [
-      "Awakened Birdfolk / Harpie earth-binding weakness",
-      "Requires careful build planning when not using speed control"
+      "Birdfolk / Harpie Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Birdfolk / Harpie earth-binding weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -14433,7 +14506,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Birdfolk / Harpie \u2014 misc race evolution"
+    "roleIdentity": "Awakened Birdfolk / Harpie — misc race evolution"
   },
   {
     "id": "race_path_10145_elder_birdfolk_harpie",
@@ -14503,7 +14576,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Birdfolk / Harpie \u2014 misc race evolution"
+    "roleIdentity": "Elder Birdfolk / Harpie — misc race evolution"
   },
   {
     "id": "race_path_10146_birdfolk_harpie_sovereign",
@@ -14573,7 +14646,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Birdfolk / Harpie Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Birdfolk / Harpie Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10147_origin_birdfolk_harpie",
@@ -14645,17 +14718,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Birdfolk / Harpie \u2014 misc race evolution"
+    "roleIdentity": "Origin Birdfolk / Harpie — misc race evolution"
   },
   {
     "id": "race_path_10148_birdfolk_harpie_bloodline",
     "excelId": 10148,
-    "name": "Birdfolk / Harpie Bloodline",
+    "name": "Birdfolk / Harpie Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_019_birdfolk_harpies",
-    "description": "Birdfolk / Harpie Bloodline is a advanced race evolution that refines the race 019 birdfolk harpies bloodline into a rune-carved form. It pushes DEX, WIS higher, specializes in burst windows, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Birdfolk / Harpie Elder Mantle is a distinct advanced race evolution for Birdfolk / Harpie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -14702,12 +14775,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Birdfolk / Harpie Bloodline aerial mobility",
-      "Excels at rare path hunting through healing synergy"
+      "Birdfolk / Harpie Elder Mantle specializes in misc race evolution",
+      "Transforms Birdfolk / Harpie into a distinct progression route with tailored growth",
+      "Birdfolk / Harpie Bloodline aerial mobility"
     ],
     "weaknesses": [
-      "Birdfolk / Harpie Bloodline earth-binding weakness",
-      "Requires careful build planning when not using speed control"
+      "Birdfolk / Harpie Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Birdfolk / Harpie Bloodline earth-binding weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -14715,7 +14790,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Birdfolk / Harpie Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Birdfolk / Harpie Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10149_mythic_birdfolk_harpie",
@@ -14785,7 +14860,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Birdfolk / Harpie \u2014 misc race evolution"
+    "roleIdentity": "Mythic Birdfolk / Harpie — misc race evolution"
   },
   {
     "id": "race_path_10150_ancient_birdfolk_harpie_avatar",
@@ -14855,7 +14930,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Birdfolk / Harpie Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Birdfolk / Harpie Avatar — misc race evolution"
   },
   {
     "id": "race_path_10151_world_born_birdfolk_harpie",
@@ -14927,17 +15002,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Birdfolk / Harpie \u2014 misc race evolution"
+    "roleIdentity": "World-Born Birdfolk / Harpie — misc race evolution"
   },
   {
     "id": "race_path_10152_awakened_lizardfolk",
     "excelId": 10152,
-    "name": "Awakened Lizardfolk",
+    "name": "Lizardfolk Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_020_lizardfolk",
-    "description": "Awakened Lizardfolk is a advanced race evolution that refines the race 020 lizardfolk bloodline into a storm-breathed form. It pushes CON, STR higher, specializes in status control, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Lizardfolk Emberhalo is a distinct advanced race evolution for Lizardfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -14984,12 +15059,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Lizardfolk scaled defense",
-      "Excels at party support through weapon damage"
+      "Lizardfolk Emberhalo specializes in misc race evolution",
+      "Transforms Lizardfolk into a distinct progression route with tailored growth",
+      "Awakened Lizardfolk scaled defense"
     ],
     "weaknesses": [
-      "Awakened Lizardfolk cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Lizardfolk Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Lizardfolk cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -14997,7 +15074,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Lizardfolk \u2014 misc race evolution"
+    "roleIdentity": "Awakened Lizardfolk — misc race evolution"
   },
   {
     "id": "race_path_10153_elder_lizardfolk",
@@ -15067,7 +15144,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Lizardfolk \u2014 misc race evolution"
+    "roleIdentity": "Elder Lizardfolk — misc race evolution"
   },
   {
     "id": "race_path_10154_lizardfolk_sovereign",
@@ -15137,7 +15214,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lizardfolk Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Lizardfolk Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10155_origin_lizardfolk",
@@ -15209,17 +15286,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Lizardfolk \u2014 misc race evolution"
+    "roleIdentity": "Origin Lizardfolk — misc race evolution"
   },
   {
     "id": "race_path_10156_lizardfolk_bloodline",
     "excelId": 10156,
-    "name": "Lizardfolk Bloodline",
+    "name": "Lizardfolk Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_020_lizardfolk",
-    "description": "Lizardfolk Bloodline is a advanced race evolution that refines the race 020 lizardfolk bloodline into a iron-hearted form. It pushes CON, STR higher, specializes in stamina cycling, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Lizardfolk Astral Inheritance is a distinct advanced race evolution for Lizardfolk. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -15266,12 +15343,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Lizardfolk Bloodline scaled defense",
-      "Excels at resource recovery through weapon damage"
+      "Lizardfolk Astral Inheritance specializes in misc race evolution",
+      "Transforms Lizardfolk into a distinct progression route with tailored growth",
+      "Lizardfolk Bloodline scaled defense"
     ],
     "weaknesses": [
-      "Lizardfolk Bloodline cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Lizardfolk Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Lizardfolk Bloodline cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -15279,7 +15358,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Lizardfolk Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Lizardfolk Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10157_mythic_lizardfolk",
@@ -15349,7 +15428,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Lizardfolk \u2014 misc race evolution"
+    "roleIdentity": "Mythic Lizardfolk — misc race evolution"
   },
   {
     "id": "race_path_10158_ancient_lizardfolk_avatar",
@@ -15419,7 +15498,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Lizardfolk Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Lizardfolk Avatar — misc race evolution"
   },
   {
     "id": "race_path_10159_world_born_lizardfolk",
@@ -15491,17 +15570,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Lizardfolk \u2014 misc race evolution"
+    "roleIdentity": "World-Born Lizardfolk — misc race evolution"
   },
   {
     "id": "race_path_10160_awakened_dragonfolk_dragonewt",
     "excelId": 10160,
-    "name": "Awakened Dragonfolk / Dragonewt",
+    "name": "Dragonfolk / Dragonewt Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "dragonoid",
-    "description": "Awakened Dragonfolk / Dragonewt is a advanced race evolution that refines the dragonoid bloodline into a ember-crowned form. It pushes CON, STR higher, specializes in stamina cycling, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragonfolk / Dragonewt Ashenwake is a distinct advanced race evolution for Dragonfolk / Dragonewt. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -15548,12 +15627,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dragonfolk / Dragonewt scaled defense",
-      "Excels at critical attacks through weapon damage"
+      "Dragonfolk / Dragonewt Ashenwake specializes in misc race evolution",
+      "Transforms Dragonfolk / Dragonewt into a distinct progression route with tailored growth",
+      "Awakened Dragonfolk / Dragonewt scaled defense"
     ],
     "weaknesses": [
-      "Awakened Dragonfolk / Dragonewt cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragonfolk / Dragonewt Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dragonfolk / Dragonewt cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -15561,7 +15642,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dragonfolk / Dragonewt \u2014 misc race evolution"
+    "roleIdentity": "Awakened Dragonfolk / Dragonewt — misc race evolution"
   },
   {
     "id": "race_path_10161_elder_dragonfolk_dragonewt",
@@ -15631,7 +15712,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dragonfolk / Dragonewt \u2014 misc race evolution"
+    "roleIdentity": "Elder Dragonfolk / Dragonewt — misc race evolution"
   },
   {
     "id": "race_path_10162_dragonfolk_dragonewt_sovereign",
@@ -15701,7 +15782,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonfolk / Dragonewt Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Dragonfolk / Dragonewt Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10163_origin_dragonfolk_dragonewt",
@@ -15773,17 +15854,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dragonfolk / Dragonewt \u2014 misc race evolution"
+    "roleIdentity": "Origin Dragonfolk / Dragonewt — misc race evolution"
   },
   {
     "id": "race_path_10164_dragonfolk_dragonewt_bloodline",
     "excelId": 10164,
-    "name": "Dragonfolk / Dragonewt Bloodline",
+    "name": "Dragonfolk / Dragonewt Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "dragonoid",
-    "description": "Dragonfolk / Dragonewt Bloodline is a advanced race evolution that refines the dragonoid bloodline into a silver-veined form. It pushes CON, STR higher, specializes in bleed or poison setup, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragonfolk / Dragonewt Celestial Pattern is a distinct advanced race evolution for Dragonfolk / Dragonewt. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -15830,12 +15911,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dragonfolk / Dragonewt Bloodline scaled defense",
-      "Excels at resistance stacking through weapon damage"
+      "Dragonfolk / Dragonewt Celestial Pattern specializes in misc race evolution",
+      "Transforms Dragonfolk / Dragonewt into a distinct progression route with tailored growth",
+      "Dragonfolk / Dragonewt Bloodline scaled defense"
     ],
     "weaknesses": [
-      "Dragonfolk / Dragonewt Bloodline cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragonfolk / Dragonewt Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dragonfolk / Dragonewt Bloodline cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -15843,7 +15926,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonfolk / Dragonewt Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Dragonfolk / Dragonewt Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10165_mythic_dragonfolk_dragonewt",
@@ -15913,7 +15996,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dragonfolk / Dragonewt \u2014 misc race evolution"
+    "roleIdentity": "Mythic Dragonfolk / Dragonewt — misc race evolution"
   },
   {
     "id": "race_path_10166_ancient_dragonfolk_dragonewt_avatar",
@@ -15983,7 +16066,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dragonfolk / Dragonewt Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Dragonfolk / Dragonewt Avatar — misc race evolution"
   },
   {
     "id": "race_path_10167_world_born_dragonfolk_dragonewt",
@@ -16055,17 +16138,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dragonfolk / Dragonewt \u2014 misc race evolution"
+    "roleIdentity": "World-Born Dragonfolk / Dragonewt — misc race evolution"
   },
   {
     "id": "race_path_10168_awakened_snakefolk_lamia",
     "excelId": 10168,
-    "name": "Awakened Snakefolk / Lamia",
+    "name": "Snakefolk / Lamia Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_022_snakefolk_lamia",
-    "description": "Awakened Snakefolk / Lamia is a advanced race evolution that refines the race 022 snakefolk lamia bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Snakefolk / Lamia Dawnmarked is a distinct advanced race evolution for Snakefolk / Lamia. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -16112,12 +16195,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Snakefolk / Lamia-only thorn-bound spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Snakefolk / Lamia Dawnmarked specializes in misc race evolution",
+      "Transforms Snakefolk / Lamia into a distinct progression route with tailored growth",
+      "Awakened Snakefolk / Lamia-only thorn-bound spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Snakefolk / Lamia struggles when enemies exploit overreliance on signature stats",
-      "Requires careful build planning when not using spiritual defense"
+      "Snakefolk / Lamia Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Snakefolk / Lamia struggles when enemies exploit overreliance on signature stats"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -16125,7 +16210,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Snakefolk / Lamia \u2014 misc race evolution"
+    "roleIdentity": "Awakened Snakefolk / Lamia — misc race evolution"
   },
   {
     "id": "race_path_10169_elder_snakefolk_lamia",
@@ -16195,7 +16280,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Snakefolk / Lamia \u2014 misc race evolution"
+    "roleIdentity": "Elder Snakefolk / Lamia — misc race evolution"
   },
   {
     "id": "race_path_10170_snakefolk_lamia_sovereign",
@@ -16265,7 +16350,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Snakefolk / Lamia Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Snakefolk / Lamia Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10171_origin_snakefolk_lamia",
@@ -16337,17 +16422,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Snakefolk / Lamia \u2014 misc race evolution"
+    "roleIdentity": "Origin Snakefolk / Lamia — misc race evolution"
   },
   {
     "id": "race_path_10172_snakefolk_lamia_bloodline",
     "excelId": 10172,
-    "name": "Snakefolk / Lamia Bloodline",
+    "name": "Snakefolk / Lamia Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_022_snakefolk_lamia",
-    "description": "Snakefolk / Lamia Bloodline is a advanced race evolution that refines the race 022 snakefolk lamia bloodline into a ember-crowned form. It pushes WIS, STR higher, specializes in party support, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Snakefolk / Lamia Elder Mantle is a distinct advanced race evolution for Snakefolk / Lamia. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -16394,12 +16479,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Snakefolk / Lamia Bloodline-only crystal-cored spiritual defense",
-      "Excels at opening-turn tempo through weapon damage"
+      "Snakefolk / Lamia Elder Mantle specializes in misc race evolution",
+      "Transforms Snakefolk / Lamia into a distinct progression route with tailored growth",
+      "Snakefolk / Lamia Bloodline-only crystal-cored spiritual defense"
     ],
     "weaknesses": [
-      "Snakefolk / Lamia Bloodline struggles when enemies exploit narrow counter-elements",
-      "Requires careful build planning when not using spiritual defense"
+      "Snakefolk / Lamia Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Snakefolk / Lamia Bloodline struggles when enemies exploit narrow counter-elements"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -16407,7 +16494,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Snakefolk / Lamia Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Snakefolk / Lamia Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10173_mythic_snakefolk_lamia",
@@ -16477,7 +16564,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Snakefolk / Lamia \u2014 misc race evolution"
+    "roleIdentity": "Mythic Snakefolk / Lamia — misc race evolution"
   },
   {
     "id": "race_path_10174_ancient_snakefolk_lamia_avatar",
@@ -16547,7 +16634,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Snakefolk / Lamia Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Snakefolk / Lamia Avatar — misc race evolution"
   },
   {
     "id": "race_path_10175_world_born_snakefolk_lamia",
@@ -16619,17 +16706,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Snakefolk / Lamia \u2014 misc race evolution"
+    "roleIdentity": "World-Born Snakefolk / Lamia — misc race evolution"
   },
   {
     "id": "race_path_10176_awakened_minotaur",
     "excelId": 10176,
-    "name": "Awakened Minotaur",
+    "name": "Minotaur Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_023_minotaurs",
-    "description": "Awakened Minotaur is a advanced race evolution that refines the race 023 minotaurs bloodline into a thorn-bound form. It pushes STR, CON higher, specializes in opening-turn tempo, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Minotaur Emberhalo is a distinct advanced race evolution for Minotaur. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -16675,12 +16762,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Minotaur overwhelming strength",
-      "Excels at defensive play through boss durability"
+      "Minotaur Emberhalo specializes in misc race evolution",
+      "Transforms Minotaur into a distinct progression route with tailored growth",
+      "Awakened Minotaur overwhelming strength"
     ],
     "weaknesses": [
-      "Awakened Minotaur poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Minotaur Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Minotaur poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -16688,7 +16777,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Minotaur \u2014 misc race evolution"
+    "roleIdentity": "Awakened Minotaur — misc race evolution"
   },
   {
     "id": "race_path_10177_elder_minotaur",
@@ -16757,7 +16846,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Minotaur \u2014 misc race evolution"
+    "roleIdentity": "Elder Minotaur — misc race evolution"
   },
   {
     "id": "race_path_10178_minotaur_sovereign",
@@ -16826,7 +16915,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Minotaur Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Minotaur Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10179_origin_minotaur",
@@ -16897,17 +16986,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Minotaur \u2014 misc race evolution"
+    "roleIdentity": "Origin Minotaur — misc race evolution"
   },
   {
     "id": "race_path_10180_minotaur_bloodline",
     "excelId": 10180,
-    "name": "Minotaur Bloodline",
+    "name": "Minotaur Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_023_minotaurs",
-    "description": "Minotaur Bloodline is a advanced race evolution that refines the race 023 minotaurs bloodline into a mirror-souled form. It pushes STR, CON higher, specializes in mana economy, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Minotaur Astral Inheritance is a distinct advanced race evolution for Minotaur. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -16953,12 +17042,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Minotaur Bloodline overwhelming strength",
-      "Excels at anti-magic pressure through boss durability"
+      "Minotaur Astral Inheritance specializes in misc race evolution",
+      "Transforms Minotaur into a distinct progression route with tailored growth",
+      "Minotaur Bloodline overwhelming strength"
     ],
     "weaknesses": [
-      "Minotaur Bloodline poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Minotaur Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Minotaur Bloodline poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -16966,7 +17057,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Minotaur Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Minotaur Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10181_mythic_minotaur",
@@ -17035,7 +17126,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Minotaur \u2014 misc race evolution"
+    "roleIdentity": "Mythic Minotaur — misc race evolution"
   },
   {
     "id": "race_path_10182_ancient_minotaur_avatar",
@@ -17104,7 +17195,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Minotaur Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Minotaur Avatar — misc race evolution"
   },
   {
     "id": "race_path_10183_world_born_minotaur",
@@ -17175,17 +17266,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Minotaur \u2014 misc race evolution"
+    "roleIdentity": "World-Born Minotaur — misc race evolution"
   },
   {
     "id": "race_path_10184_awakened_centaur",
     "excelId": 10184,
-    "name": "Awakened Centaur",
+    "name": "Centaur Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_024_centaurs",
-    "description": "Awakened Centaur is a advanced race evolution that refines the race 024 centaurs bloodline into a mirror-souled form. It pushes WIS, STR higher, specializes in mana economy, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Centaur Ashenwake is a distinct advanced race evolution for Centaur. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -17232,12 +17323,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Centaur-only crystal-cored spiritual defense",
-      "Excels at defensive play through weapon damage"
+      "Centaur Ashenwake specializes in misc race evolution",
+      "Transforms Centaur into a distinct progression route with tailored growth",
+      "Awakened Centaur-only crystal-cored spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Centaur struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Centaur Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Centaur struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -17245,7 +17338,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Centaur \u2014 misc race evolution"
+    "roleIdentity": "Awakened Centaur — misc race evolution"
   },
   {
     "id": "race_path_10185_elder_centaur",
@@ -17315,7 +17408,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Centaur \u2014 misc race evolution"
+    "roleIdentity": "Elder Centaur — misc race evolution"
   },
   {
     "id": "race_path_10186_centaur_sovereign",
@@ -17385,7 +17478,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Centaur Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Centaur Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10187_origin_centaur",
@@ -17457,17 +17550,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Centaur \u2014 misc race evolution"
+    "roleIdentity": "Origin Centaur — misc race evolution"
   },
   {
     "id": "race_path_10188_centaur_bloodline",
     "excelId": 10188,
-    "name": "Centaur Bloodline",
+    "name": "Centaur Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_024_centaurs",
-    "description": "Centaur Bloodline is a advanced race evolution that refines the race 024 centaurs bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in mana economy, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Centaur Celestial Pattern is a distinct advanced race evolution for Centaur. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -17514,12 +17607,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Centaur Bloodline-only thorn-bound spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Centaur Celestial Pattern specializes in misc race evolution",
+      "Transforms Centaur into a distinct progression route with tailored growth",
+      "Centaur Bloodline-only thorn-bound spiritual defense"
     ],
     "weaknesses": [
-      "Centaur Bloodline struggles when enemies exploit slow early class unlocks",
-      "Requires careful build planning when not using spiritual defense"
+      "Centaur Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Centaur Bloodline struggles when enemies exploit slow early class unlocks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -17527,7 +17622,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Centaur Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Centaur Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10189_mythic_centaur",
@@ -17597,7 +17692,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Centaur \u2014 misc race evolution"
+    "roleIdentity": "Mythic Centaur — misc race evolution"
   },
   {
     "id": "race_path_10190_ancient_centaur_avatar",
@@ -17667,7 +17762,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Centaur Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Centaur Avatar — misc race evolution"
   },
   {
     "id": "race_path_10191_world_born_centaur",
@@ -17739,17 +17834,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Centaur \u2014 misc race evolution"
+    "roleIdentity": "World-Born Centaur — misc race evolution"
   },
   {
     "id": "race_path_10192_awakened_merfolk_mermaid",
     "excelId": 10192,
-    "name": "Awakened Merfolk / Mermaid",
+    "name": "Merfolk / Mermaid Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_025_merfolk_mermaids",
-    "description": "Awakened Merfolk / Mermaid is a advanced race evolution that refines the race 025 merfolk mermaids bloodline into a rune-carved form. It pushes WIS, STR higher, specializes in resource recovery, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Merfolk / Mermaid Dawnmarked is a distinct advanced race evolution for Merfolk / Mermaid. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -17796,12 +17891,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Merfolk / Mermaid-only silver-veined spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Merfolk / Mermaid Dawnmarked specializes in misc race evolution",
+      "Transforms Merfolk / Mermaid into a distinct progression route with tailored growth",
+      "Awakened Merfolk / Mermaid-only silver-veined spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Merfolk / Mermaid struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Merfolk / Mermaid Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Merfolk / Mermaid struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -17809,7 +17906,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Merfolk / Mermaid \u2014 misc race evolution"
+    "roleIdentity": "Awakened Merfolk / Mermaid — misc race evolution"
   },
   {
     "id": "race_path_10193_elder_merfolk_mermaid",
@@ -17879,7 +17976,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Merfolk / Mermaid \u2014 misc race evolution"
+    "roleIdentity": "Elder Merfolk / Mermaid — misc race evolution"
   },
   {
     "id": "race_path_10194_merfolk_mermaid_sovereign",
@@ -17949,7 +18046,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merfolk / Mermaid Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Merfolk / Mermaid Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10195_origin_merfolk_mermaid",
@@ -18021,17 +18118,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Merfolk / Mermaid \u2014 misc race evolution"
+    "roleIdentity": "Origin Merfolk / Mermaid — misc race evolution"
   },
   {
     "id": "race_path_10196_merfolk_mermaid_bloodline",
     "excelId": 10196,
-    "name": "Merfolk / Mermaid Bloodline",
+    "name": "Merfolk / Mermaid Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_025_merfolk_mermaids",
-    "description": "Merfolk / Mermaid Bloodline is a advanced race evolution that refines the race 025 merfolk mermaids bloodline into a storm-breathed form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Merfolk / Mermaid Elder Mantle is a distinct advanced race evolution for Merfolk / Mermaid. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -18078,12 +18175,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Merfolk / Mermaid Bloodline-only jade-boned spiritual defense",
-      "Excels at opening-turn tempo through weapon damage"
+      "Merfolk / Mermaid Elder Mantle specializes in misc race evolution",
+      "Transforms Merfolk / Mermaid into a distinct progression route with tailored growth",
+      "Merfolk / Mermaid Bloodline-only jade-boned spiritual defense"
     ],
     "weaknesses": [
-      "Merfolk / Mermaid Bloodline struggles when enemies exploit predictable weakness checks",
-      "Requires careful build planning when not using spiritual defense"
+      "Merfolk / Mermaid Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Merfolk / Mermaid Bloodline struggles when enemies exploit predictable weakness checks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -18091,7 +18190,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Merfolk / Mermaid Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Merfolk / Mermaid Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10197_mythic_merfolk_mermaid",
@@ -18161,7 +18260,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Merfolk / Mermaid \u2014 misc race evolution"
+    "roleIdentity": "Mythic Merfolk / Mermaid — misc race evolution"
   },
   {
     "id": "race_path_10198_ancient_merfolk_mermaid_avatar",
@@ -18231,7 +18330,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Merfolk / Mermaid Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Merfolk / Mermaid Avatar — misc race evolution"
   },
   {
     "id": "race_path_10199_world_born_merfolk_mermaid",
@@ -18303,17 +18402,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Merfolk / Mermaid \u2014 misc race evolution"
+    "roleIdentity": "World-Born Merfolk / Mermaid — misc race evolution"
   },
   {
     "id": "race_path_10200_awakened_fishmen",
     "excelId": 10200,
-    "name": "Awakened Fishmen",
+    "name": "Fishmen Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_026_fishmen",
-    "description": "Awakened Fishmen is a advanced race evolution that refines the race 026 fishmen bloodline into a mist-wrapped form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Fishmen Emberhalo is a distinct advanced race evolution for Fishmen. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -18360,12 +18459,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Fishmen-only wild-oathed spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Fishmen Emberhalo specializes in misc race evolution",
+      "Transforms Fishmen into a distinct progression route with tailored growth",
+      "Awakened Fishmen-only wild-oathed spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Fishmen struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Fishmen Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Fishmen struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -18373,7 +18474,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Fishmen \u2014 misc race evolution"
+    "roleIdentity": "Awakened Fishmen — misc race evolution"
   },
   {
     "id": "race_path_10201_elder_fishmen",
@@ -18443,7 +18544,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Fishmen \u2014 misc race evolution"
+    "roleIdentity": "Elder Fishmen — misc race evolution"
   },
   {
     "id": "race_path_10202_fishmen_sovereign",
@@ -18513,7 +18614,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fishmen Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Fishmen Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10203_origin_fishmen",
@@ -18585,17 +18686,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Fishmen \u2014 misc race evolution"
+    "roleIdentity": "Origin Fishmen — misc race evolution"
   },
   {
     "id": "race_path_10204_fishmen_bloodline",
     "excelId": 10204,
-    "name": "Fishmen Bloodline",
+    "name": "Fishmen Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_026_fishmen",
-    "description": "Fishmen Bloodline is a advanced race evolution that refines the race 026 fishmen bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Fishmen Astral Inheritance is a distinct advanced race evolution for Fishmen. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -18642,12 +18743,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Fishmen Bloodline-only iron-hearted spiritual defense",
-      "Excels at burst windows through weapon damage"
+      "Fishmen Astral Inheritance specializes in misc race evolution",
+      "Transforms Fishmen into a distinct progression route with tailored growth",
+      "Fishmen Bloodline-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Fishmen Bloodline struggles when enemies exploit weakness to specialized bosses",
-      "Requires careful build planning when not using spiritual defense"
+      "Fishmen Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Fishmen Bloodline struggles when enemies exploit weakness to specialized bosses"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -18655,7 +18758,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Fishmen Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Fishmen Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10205_mythic_fishmen",
@@ -18725,7 +18828,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Fishmen \u2014 misc race evolution"
+    "roleIdentity": "Mythic Fishmen — misc race evolution"
   },
   {
     "id": "race_path_10206_ancient_fishmen_avatar",
@@ -18795,7 +18898,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Fishmen Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Fishmen Avatar — misc race evolution"
   },
   {
     "id": "race_path_10207_world_born_fishmen",
@@ -18867,17 +18970,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Fishmen \u2014 misc race evolution"
+    "roleIdentity": "World-Born Fishmen — misc race evolution"
   },
   {
     "id": "race_path_10208_awakened_mink",
     "excelId": 10208,
-    "name": "Awakened Mink",
+    "name": "Mink Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_027_minks",
-    "description": "Awakened Mink is a advanced race evolution that refines the race 027 minks bloodline into a sun-forged form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Mink Ashenwake is a distinct advanced race evolution for Mink. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -18924,12 +19027,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Mink-only iron-hearted spiritual defense",
-      "Excels at opening-turn tempo through weapon damage"
+      "Mink Ashenwake specializes in misc race evolution",
+      "Transforms Mink into a distinct progression route with tailored growth",
+      "Awakened Mink-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Mink struggles when enemies exploit low recovery after burst turns",
-      "Requires careful build planning when not using spiritual defense"
+      "Mink Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Mink struggles when enemies exploit low recovery after burst turns"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -18937,7 +19042,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Mink \u2014 misc race evolution"
+    "roleIdentity": "Awakened Mink — misc race evolution"
   },
   {
     "id": "race_path_10209_elder_mink",
@@ -19007,7 +19112,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Mink \u2014 misc race evolution"
+    "roleIdentity": "Elder Mink — misc race evolution"
   },
   {
     "id": "race_path_10210_mink_sovereign",
@@ -19077,7 +19182,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mink Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Mink Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10211_origin_mink",
@@ -19149,17 +19254,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Mink \u2014 misc race evolution"
+    "roleIdentity": "Origin Mink — misc race evolution"
   },
   {
     "id": "race_path_10212_mink_bloodline",
     "excelId": 10212,
-    "name": "Mink Bloodline",
+    "name": "Mink Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_027_minks",
-    "description": "Mink Bloodline is a advanced race evolution that refines the race 027 minks bloodline into a sun-forged form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Mink Celestial Pattern is a distinct advanced race evolution for Mink. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -19206,12 +19311,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Mink Bloodline-only silver-veined spiritual defense",
-      "Excels at hybrid class routing through weapon damage"
+      "Mink Celestial Pattern specializes in misc race evolution",
+      "Transforms Mink into a distinct progression route with tailored growth",
+      "Mink Bloodline-only silver-veined spiritual defense"
     ],
     "weaknesses": [
-      "Mink Bloodline struggles when enemies exploit slow early class unlocks",
-      "Requires careful build planning when not using spiritual defense"
+      "Mink Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Mink Bloodline struggles when enemies exploit slow early class unlocks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -19219,7 +19326,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mink Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Mink Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10213_mythic_mink",
@@ -19289,7 +19396,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Mink \u2014 misc race evolution"
+    "roleIdentity": "Mythic Mink — misc race evolution"
   },
   {
     "id": "race_path_10214_ancient_mink_avatar",
@@ -19359,7 +19466,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Mink Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Mink Avatar — misc race evolution"
   },
   {
     "id": "race_path_10215_world_born_mink",
@@ -19431,17 +19538,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Mink \u2014 misc race evolution"
+    "roleIdentity": "World-Born Mink — misc race evolution"
   },
   {
     "id": "race_path_10216_awakened_arachne",
     "excelId": 10216,
-    "name": "Awakened Arachne",
+    "name": "Arachne Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_028_arachne",
-    "description": "Awakened Arachne is a advanced race evolution that refines the race 028 arachne bloodline into a star-threaded form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Arachne Dawnmarked is a distinct advanced race evolution for Arachne. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -19488,12 +19595,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Arachne-only jade-boned spiritual defense",
-      "Excels at resource recovery through weapon damage"
+      "Arachne Dawnmarked specializes in misc race evolution",
+      "Transforms Arachne into a distinct progression route with tailored growth",
+      "Awakened Arachne-only jade-boned spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Arachne struggles when enemies exploit slow early class unlocks",
-      "Requires careful build planning when not using spiritual defense"
+      "Arachne Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Arachne struggles when enemies exploit slow early class unlocks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -19501,7 +19610,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Arachne \u2014 misc race evolution"
+    "roleIdentity": "Awakened Arachne — misc race evolution"
   },
   {
     "id": "race_path_10217_elder_arachne",
@@ -19571,7 +19680,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Arachne \u2014 misc race evolution"
+    "roleIdentity": "Elder Arachne — misc race evolution"
   },
   {
     "id": "race_path_10218_arachne_sovereign",
@@ -19641,7 +19750,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Arachne Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Arachne Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10219_origin_arachne",
@@ -19713,17 +19822,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Arachne \u2014 misc race evolution"
+    "roleIdentity": "Origin Arachne — misc race evolution"
   },
   {
     "id": "race_path_10220_arachne_bloodline",
     "excelId": 10220,
-    "name": "Arachne Bloodline",
+    "name": "Arachne Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_028_arachne",
-    "description": "Arachne Bloodline is a advanced race evolution that refines the race 028 arachne bloodline into a rune-carved form. It pushes WIS, STR higher, specializes in anti-magic pressure, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Arachne Elder Mantle is a distinct advanced race evolution for Arachne. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -19770,12 +19879,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Arachne Bloodline-only ember-crowned spiritual defense",
-      "Excels at opening-turn tempo through weapon damage"
+      "Arachne Elder Mantle specializes in misc race evolution",
+      "Transforms Arachne into a distinct progression route with tailored growth",
+      "Arachne Bloodline-only ember-crowned spiritual defense"
     ],
     "weaknesses": [
-      "Arachne Bloodline struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Arachne Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Arachne Bloodline struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -19783,7 +19894,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Arachne Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Arachne Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10221_mythic_arachne",
@@ -19853,7 +19964,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Arachne \u2014 misc race evolution"
+    "roleIdentity": "Mythic Arachne — misc race evolution"
   },
   {
     "id": "race_path_10222_ancient_arachne_avatar",
@@ -19923,7 +20034,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Arachne Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Arachne Avatar — misc race evolution"
   },
   {
     "id": "race_path_10223_world_born_arachne",
@@ -19995,17 +20106,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Arachne \u2014 misc race evolution"
+    "roleIdentity": "World-Born Arachne — misc race evolution"
   },
   {
     "id": "race_path_10224_awakened_goblin",
     "excelId": 10224,
-    "name": "Awakened Goblin",
+    "name": "Goblin Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_029_goblins",
-    "description": "Awakened Goblin is a advanced race evolution that refines the race 029 goblins bloodline into a sun-forged form. It pushes DEX, INT higher, specializes in critical attacks, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Goblin Emberhalo is a distinct advanced race evolution for Goblin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 7,
@@ -20052,12 +20163,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Goblin trap instincts",
-      "Excels at resistance stacking through mana burst"
+      "Goblin Emberhalo specializes in misc race evolution",
+      "Transforms Goblin into a distinct progression route with tailored growth",
+      "Awakened Goblin trap instincts"
     ],
     "weaknesses": [
-      "Awakened Goblin low morale defense",
-      "Requires careful build planning when not using speed control"
+      "Goblin Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Goblin low morale defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -20065,7 +20178,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Goblin \u2014 misc race evolution"
+    "roleIdentity": "Awakened Goblin — misc race evolution"
   },
   {
     "id": "race_path_10225_elder_goblin",
@@ -20135,7 +20248,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Goblin \u2014 misc race evolution"
+    "roleIdentity": "Elder Goblin — misc race evolution"
   },
   {
     "id": "race_path_10226_goblin_sovereign",
@@ -20205,7 +20318,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Goblin Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10227_origin_goblin",
@@ -20277,17 +20390,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Goblin \u2014 misc race evolution"
+    "roleIdentity": "Origin Goblin — misc race evolution"
   },
   {
     "id": "race_path_10228_goblin_bloodline",
     "excelId": 10228,
-    "name": "Goblin Bloodline",
+    "name": "Goblin Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_029_goblins",
-    "description": "Goblin Bloodline is a advanced race evolution that refines the race 029 goblins bloodline into a ember-crowned form. It pushes DEX, INT higher, specializes in critical attacks, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Goblin Astral Inheritance is a distinct advanced race evolution for Goblin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 7,
@@ -20334,12 +20447,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Goblin Bloodline trap instincts",
-      "Excels at critical attacks through mana burst"
+      "Goblin Astral Inheritance specializes in misc race evolution",
+      "Transforms Goblin into a distinct progression route with tailored growth",
+      "Goblin Bloodline trap instincts"
     ],
     "weaknesses": [
-      "Goblin Bloodline low morale defense",
-      "Requires careful build planning when not using speed control"
+      "Goblin Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Goblin Bloodline low morale defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -20347,7 +20462,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Goblin Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Goblin Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10229_mythic_goblin",
@@ -20417,7 +20532,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Goblin \u2014 misc race evolution"
+    "roleIdentity": "Mythic Goblin — misc race evolution"
   },
   {
     "id": "race_path_10230_ancient_goblin_avatar",
@@ -20487,7 +20602,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Goblin Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Goblin Avatar — misc race evolution"
   },
   {
     "id": "race_path_10231_world_born_goblin",
@@ -20559,17 +20674,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Goblin \u2014 misc race evolution"
+    "roleIdentity": "World-Born Goblin — misc race evolution"
   },
   {
     "id": "race_path_10232_awakened_hobgoblin",
     "excelId": 10232,
-    "name": "Awakened Hobgoblin",
+    "name": "Hobgoblin Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_030_hobgoblins",
-    "description": "Awakened Hobgoblin is a advanced race evolution that refines the race 030 hobgoblins bloodline into a iron-hearted form. It pushes DEX, INT higher, specializes in burst windows, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Hobgoblin Ashenwake is a distinct advanced race evolution for Hobgoblin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 7,
@@ -20616,12 +20731,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Hobgoblin trap instincts",
-      "Excels at rare path hunting through mana burst"
+      "Hobgoblin Ashenwake specializes in misc race evolution",
+      "Transforms Hobgoblin into a distinct progression route with tailored growth",
+      "Awakened Hobgoblin trap instincts"
     ],
     "weaknesses": [
-      "Awakened Hobgoblin low morale defense",
-      "Requires careful build planning when not using speed control"
+      "Hobgoblin Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Hobgoblin low morale defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -20629,7 +20746,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Hobgoblin \u2014 misc race evolution"
+    "roleIdentity": "Awakened Hobgoblin — misc race evolution"
   },
   {
     "id": "race_path_10233_elder_hobgoblin",
@@ -20699,7 +20816,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Hobgoblin \u2014 misc race evolution"
+    "roleIdentity": "Elder Hobgoblin — misc race evolution"
   },
   {
     "id": "race_path_10234_hobgoblin_sovereign",
@@ -20769,7 +20886,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hobgoblin Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Hobgoblin Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10235_origin_hobgoblin",
@@ -20841,17 +20958,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Hobgoblin \u2014 misc race evolution"
+    "roleIdentity": "Origin Hobgoblin — misc race evolution"
   },
   {
     "id": "race_path_10236_hobgoblin_bloodline",
     "excelId": 10236,
-    "name": "Hobgoblin Bloodline",
+    "name": "Hobgoblin Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_030_hobgoblins",
-    "description": "Hobgoblin Bloodline is a advanced race evolution that refines the race 030 hobgoblins bloodline into a ashen-born form. It pushes DEX, INT higher, specializes in stamina cycling, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Hobgoblin Celestial Pattern is a distinct advanced race evolution for Hobgoblin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 7,
@@ -20898,12 +21015,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Hobgoblin Bloodline trap instincts",
-      "Excels at hybrid class routing through mana burst"
+      "Hobgoblin Celestial Pattern specializes in misc race evolution",
+      "Transforms Hobgoblin into a distinct progression route with tailored growth",
+      "Hobgoblin Bloodline trap instincts"
     ],
     "weaknesses": [
-      "Hobgoblin Bloodline low morale defense",
-      "Requires careful build planning when not using speed control"
+      "Hobgoblin Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Hobgoblin Bloodline low morale defense"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -20911,7 +21030,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Hobgoblin Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Hobgoblin Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10237_mythic_hobgoblin",
@@ -20981,7 +21100,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Hobgoblin \u2014 misc race evolution"
+    "roleIdentity": "Mythic Hobgoblin — misc race evolution"
   },
   {
     "id": "race_path_10238_ancient_hobgoblin_avatar",
@@ -21051,7 +21170,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Hobgoblin Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Hobgoblin Avatar — misc race evolution"
   },
   {
     "id": "race_path_10239_world_born_hobgoblin",
@@ -21123,17 +21242,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Hobgoblin \u2014 misc race evolution"
+    "roleIdentity": "World-Born Hobgoblin — misc race evolution"
   },
   {
     "id": "race_path_10240_awakened_orc",
     "excelId": 10240,
-    "name": "Awakened Orc",
+    "name": "Orc Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_031_orcs",
-    "description": "Awakened Orc is a advanced race evolution that refines the race 031 orcs bloodline into a crystal-cored form. It pushes STR, CON higher, specializes in bleed or poison setup, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Orc Dawnmarked is a distinct advanced race evolution for Orc. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -21179,12 +21298,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Orc overwhelming strength",
-      "Excels at resistance stacking through boss durability"
+      "Orc Dawnmarked specializes in misc race evolution",
+      "Transforms Orc into a distinct progression route with tailored growth",
+      "Awakened Orc overwhelming strength"
     ],
     "weaknesses": [
-      "Awakened Orc poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Orc Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Orc poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -21192,7 +21313,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Orc \u2014 misc race evolution"
+    "roleIdentity": "Awakened Orc — misc race evolution"
   },
   {
     "id": "race_path_10241_elder_orc",
@@ -21261,7 +21382,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Orc \u2014 misc race evolution"
+    "roleIdentity": "Elder Orc — misc race evolution"
   },
   {
     "id": "race_path_10242_orc_sovereign",
@@ -21330,7 +21451,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Orc Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Orc Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10243_origin_orc",
@@ -21401,17 +21522,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Orc \u2014 misc race evolution"
+    "roleIdentity": "Origin Orc — misc race evolution"
   },
   {
     "id": "race_path_10244_orc_bloodline",
     "excelId": 10244,
-    "name": "Orc Bloodline",
+    "name": "Orc Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_031_orcs",
-    "description": "Orc Bloodline is a advanced race evolution that refines the race 031 orcs bloodline into a crystal-cored form. It pushes STR, CON higher, specializes in mana economy, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Orc Elder Mantle is a distinct advanced race evolution for Orc. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -21457,12 +21578,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Orc Bloodline overwhelming strength",
-      "Excels at hybrid class routing through boss durability"
+      "Orc Elder Mantle specializes in misc race evolution",
+      "Transforms Orc into a distinct progression route with tailored growth",
+      "Orc Bloodline overwhelming strength"
     ],
     "weaknesses": [
-      "Orc Bloodline poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Orc Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Orc Bloodline poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -21470,7 +21593,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Orc Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Orc Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10245_mythic_orc",
@@ -21539,7 +21662,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Orc \u2014 misc race evolution"
+    "roleIdentity": "Mythic Orc — misc race evolution"
   },
   {
     "id": "race_path_10246_ancient_orc_avatar",
@@ -21608,7 +21731,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Orc Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Orc Avatar — misc race evolution"
   },
   {
     "id": "race_path_10247_world_born_orc",
@@ -21679,17 +21802,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Orc \u2014 misc race evolution"
+    "roleIdentity": "World-Born Orc — misc race evolution"
   },
   {
     "id": "race_path_10248_awakened_ogre",
     "excelId": 10248,
-    "name": "Awakened Ogre",
+    "name": "Ogre Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_032_ogres",
-    "description": "Awakened Ogre is a advanced race evolution that refines the race 032 ogres bloodline into a sun-forged form. It pushes STR, CON higher, specializes in hybrid class routing, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Ogre Emberhalo is a distinct advanced race evolution for Ogre. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -21735,12 +21858,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Ogre overwhelming strength",
-      "Excels at stamina cycling through boss durability"
+      "Ogre Emberhalo specializes in misc race evolution",
+      "Transforms Ogre into a distinct progression route with tailored growth",
+      "Awakened Ogre overwhelming strength"
     ],
     "weaknesses": [
-      "Awakened Ogre poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Ogre Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Ogre poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -21748,7 +21873,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Ogre \u2014 misc race evolution"
+    "roleIdentity": "Awakened Ogre — misc race evolution"
   },
   {
     "id": "race_path_10249_elder_ogre",
@@ -21817,7 +21942,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Ogre \u2014 misc race evolution"
+    "roleIdentity": "Elder Ogre — misc race evolution"
   },
   {
     "id": "race_path_10250_ogre_sovereign",
@@ -21886,7 +22011,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ogre Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Ogre Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10251_origin_ogre",
@@ -21957,17 +22082,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Ogre \u2014 misc race evolution"
+    "roleIdentity": "Origin Ogre — misc race evolution"
   },
   {
     "id": "race_path_10252_ogre_bloodline",
     "excelId": 10252,
-    "name": "Ogre Bloodline",
+    "name": "Ogre Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_032_ogres",
-    "description": "Ogre Bloodline is a advanced race evolution that refines the race 032 ogres bloodline into a thorn-bound form. It pushes STR, CON higher, specializes in rare path hunting, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Ogre Astral Inheritance is a distinct advanced race evolution for Ogre. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -22013,12 +22138,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Ogre Bloodline overwhelming strength",
-      "Excels at burst windows through boss durability"
+      "Ogre Astral Inheritance specializes in misc race evolution",
+      "Transforms Ogre into a distinct progression route with tailored growth",
+      "Ogre Bloodline overwhelming strength"
     ],
     "weaknesses": [
-      "Ogre Bloodline poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Ogre Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Ogre Bloodline poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -22026,7 +22153,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ogre Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Ogre Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10253_mythic_ogre",
@@ -22095,7 +22222,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Ogre \u2014 misc race evolution"
+    "roleIdentity": "Mythic Ogre — misc race evolution"
   },
   {
     "id": "race_path_10254_ancient_ogre_avatar",
@@ -22164,7 +22291,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Ogre Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Ogre Avatar — misc race evolution"
   },
   {
     "id": "race_path_10255_world_born_ogre",
@@ -22235,17 +22362,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Ogre \u2014 misc race evolution"
+    "roleIdentity": "World-Born Ogre — misc race evolution"
   },
   {
     "id": "race_path_10256_awakened_oni",
     "excelId": 10256,
-    "name": "Awakened Oni",
+    "name": "Oni Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_033_oni",
-    "description": "Awakened Oni is a advanced race evolution that refines the race 033 oni bloodline into a crystal-cored form. It pushes STR, CON higher, specializes in defensive play, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Oni Ashenwake is a distinct advanced race evolution for Oni. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -22291,12 +22418,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Oni overwhelming strength",
-      "Excels at defensive play through boss durability"
+      "Oni Ashenwake specializes in misc race evolution",
+      "Transforms Oni into a distinct progression route with tailored growth",
+      "Awakened Oni overwhelming strength"
     ],
     "weaknesses": [
-      "Awakened Oni poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Oni Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Oni poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -22304,7 +22433,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Oni \u2014 misc race evolution"
+    "roleIdentity": "Awakened Oni — misc race evolution"
   },
   {
     "id": "race_path_10257_elder_oni",
@@ -22373,7 +22502,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Oni \u2014 misc race evolution"
+    "roleIdentity": "Elder Oni — misc race evolution"
   },
   {
     "id": "race_path_10258_oni_sovereign",
@@ -22442,7 +22571,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Oni Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10259_origin_oni",
@@ -22513,17 +22642,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Oni \u2014 misc race evolution"
+    "roleIdentity": "Origin Oni — misc race evolution"
   },
   {
     "id": "race_path_10260_oni_bloodline",
     "excelId": 10260,
-    "name": "Oni Bloodline",
+    "name": "Oni Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_033_oni",
-    "description": "Oni Bloodline is a advanced race evolution that refines the race 033 oni bloodline into a sun-forged form. It pushes STR, CON higher, specializes in opening-turn tempo, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Oni Celestial Pattern is a distinct advanced race evolution for Oni. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 9,
       "int": 1,
@@ -22569,12 +22698,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Oni Bloodline overwhelming strength",
-      "Excels at anti-magic pressure through boss durability"
+      "Oni Celestial Pattern specializes in misc race evolution",
+      "Transforms Oni into a distinct progression route with tailored growth",
+      "Oni Bloodline overwhelming strength"
     ],
     "weaknesses": [
-      "Oni Bloodline poor casting speed",
-      "Requires careful build planning when not using power scaling"
+      "Oni Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Oni Bloodline poor casting speed"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -22582,7 +22713,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Oni Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Oni Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10261_mythic_oni",
@@ -22651,7 +22782,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Oni \u2014 misc race evolution"
+    "roleIdentity": "Mythic Oni — misc race evolution"
   },
   {
     "id": "race_path_10262_ancient_oni_avatar",
@@ -22720,7 +22851,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Oni Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Oni Avatar — misc race evolution"
   },
   {
     "id": "race_path_10263_world_born_oni",
@@ -22791,17 +22922,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Oni \u2014 misc race evolution"
+    "roleIdentity": "World-Born Oni — misc race evolution"
   },
   {
     "id": "race_path_10264_awakened_troll",
     "excelId": 10264,
-    "name": "Awakened Troll",
+    "name": "Troll Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_034_trolls",
-    "description": "Awakened Troll is a advanced race evolution that refines the race 034 trolls bloodline into a star-threaded form. It pushes CON, STR higher, specializes in party support, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Troll Dawnmarked is a distinct advanced race evolution for Troll. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -22847,12 +22978,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Troll regenerative endurance",
-      "Excels at status control through weapon damage"
+      "Troll Dawnmarked specializes in misc race evolution",
+      "Transforms Troll into a distinct progression route with tailored growth",
+      "Awakened Troll regenerative endurance"
     ],
     "weaknesses": [
-      "Awakened Troll fire punishment",
-      "Requires careful build planning when not using survival tempo"
+      "Troll Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Troll fire punishment"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -22860,7 +22993,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Troll \u2014 misc race evolution"
+    "roleIdentity": "Awakened Troll — misc race evolution"
   },
   {
     "id": "race_path_10265_elder_troll",
@@ -22929,7 +23062,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Troll \u2014 misc race evolution"
+    "roleIdentity": "Elder Troll — misc race evolution"
   },
   {
     "id": "race_path_10266_troll_sovereign",
@@ -22998,7 +23131,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Troll Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Troll Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10267_origin_troll",
@@ -23069,17 +23202,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Troll \u2014 misc race evolution"
+    "roleIdentity": "Origin Troll — misc race evolution"
   },
   {
     "id": "race_path_10268_troll_bloodline",
     "excelId": 10268,
-    "name": "Troll Bloodline",
+    "name": "Troll Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_034_trolls",
-    "description": "Troll Bloodline is a advanced race evolution that refines the race 034 trolls bloodline into a jade-boned form. It pushes CON, STR higher, specializes in critical attacks, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Troll Elder Mantle is a distinct advanced race evolution for Troll. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -23125,12 +23258,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Troll Bloodline regenerative endurance",
-      "Excels at mana economy through weapon damage"
+      "Troll Elder Mantle specializes in misc race evolution",
+      "Transforms Troll into a distinct progression route with tailored growth",
+      "Troll Bloodline regenerative endurance"
     ],
     "weaknesses": [
-      "Troll Bloodline fire punishment",
-      "Requires careful build planning when not using survival tempo"
+      "Troll Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Troll Bloodline fire punishment"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -23138,7 +23273,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Troll Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Troll Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10269_mythic_troll",
@@ -23207,7 +23342,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Troll \u2014 misc race evolution"
+    "roleIdentity": "Mythic Troll — misc race evolution"
   },
   {
     "id": "race_path_10270_ancient_troll_avatar",
@@ -23276,7 +23411,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Troll Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Troll Avatar — misc race evolution"
   },
   {
     "id": "race_path_10271_world_born_troll",
@@ -23347,17 +23482,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Troll \u2014 misc race evolution"
+    "roleIdentity": "World-Born Troll — misc race evolution"
   },
   {
     "id": "race_path_10272_awakened_giant",
     "excelId": 10272,
-    "name": "Awakened Giant",
+    "name": "Giant Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_035_giants",
-    "description": "Awakened Giant is a advanced race evolution that refines the race 035 giants bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in defensive play, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Giant Emberhalo is a distinct advanced race evolution for Giant. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -23404,12 +23539,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Giant-only wild-oathed spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Giant Emberhalo specializes in misc race evolution",
+      "Transforms Giant into a distinct progression route with tailored growth",
+      "Awakened Giant-only wild-oathed spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Giant struggles when enemies exploit awkward item scaling",
-      "Requires careful build planning when not using spiritual defense"
+      "Giant Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Giant struggles when enemies exploit awkward item scaling"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -23417,7 +23554,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Giant \u2014 misc race evolution"
+    "roleIdentity": "Awakened Giant — misc race evolution"
   },
   {
     "id": "race_path_10273_elder_giant",
@@ -23487,7 +23624,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Giant \u2014 misc race evolution"
+    "roleIdentity": "Elder Giant — misc race evolution"
   },
   {
     "id": "race_path_10274_giant_sovereign",
@@ -23557,7 +23694,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Giant Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Giant Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10275_origin_giant",
@@ -23629,17 +23766,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Giant \u2014 misc race evolution"
+    "roleIdentity": "Origin Giant — misc race evolution"
   },
   {
     "id": "race_path_10276_giant_bloodline",
     "excelId": 10276,
-    "name": "Giant Bloodline",
+    "name": "Giant Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_035_giants",
-    "description": "Giant Bloodline is a advanced race evolution that refines the race 035 giants bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Giant Astral Inheritance is a distinct advanced race evolution for Giant. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -23686,12 +23823,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Giant Bloodline-only moon-marked spiritual defense",
-      "Excels at hybrid class routing through weapon damage"
+      "Giant Astral Inheritance specializes in misc race evolution",
+      "Transforms Giant into a distinct progression route with tailored growth",
+      "Giant Bloodline-only moon-marked spiritual defense"
     ],
     "weaknesses": [
-      "Giant Bloodline struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Giant Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Giant Bloodline struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -23699,7 +23838,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Giant Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Giant Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10277_mythic_giant",
@@ -23769,7 +23908,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Giant \u2014 misc race evolution"
+    "roleIdentity": "Mythic Giant — misc race evolution"
   },
   {
     "id": "race_path_10278_ancient_giant_avatar",
@@ -23839,7 +23978,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Giant Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Giant Avatar — misc race evolution"
   },
   {
     "id": "race_path_10279_world_born_giant",
@@ -23911,17 +24050,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Giant \u2014 misc race evolution"
+    "roleIdentity": "World-Born Giant — misc race evolution"
   },
   {
     "id": "race_path_10280_awakened_cyclope",
     "excelId": 10280,
-    "name": "Awakened Cyclope",
+    "name": "Cyclope Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_036_cyclopes",
-    "description": "Awakened Cyclope is a advanced race evolution that refines the race 036 cyclopes bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in burst windows, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Cyclope Ashenwake is a distinct advanced race evolution for Cyclope. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -23968,12 +24107,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Cyclope-only storm-breathed spiritual defense",
-      "Excels at bleed or poison setup through weapon damage"
+      "Cyclope Ashenwake specializes in misc race evolution",
+      "Transforms Cyclope into a distinct progression route with tailored growth",
+      "Awakened Cyclope-only storm-breathed spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Cyclope struggles when enemies exploit awkward item scaling",
-      "Requires careful build planning when not using spiritual defense"
+      "Cyclope Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Cyclope struggles when enemies exploit awkward item scaling"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -23981,7 +24122,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Cyclope \u2014 misc race evolution"
+    "roleIdentity": "Awakened Cyclope — misc race evolution"
   },
   {
     "id": "race_path_10281_elder_cyclope",
@@ -24051,7 +24192,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Cyclope \u2014 misc race evolution"
+    "roleIdentity": "Elder Cyclope — misc race evolution"
   },
   {
     "id": "race_path_10282_cyclope_sovereign",
@@ -24121,7 +24262,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cyclope Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Cyclope Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10283_origin_cyclope",
@@ -24193,17 +24334,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Cyclope \u2014 misc race evolution"
+    "roleIdentity": "Origin Cyclope — misc race evolution"
   },
   {
     "id": "race_path_10284_cyclope_bloodline",
     "excelId": 10284,
-    "name": "Cyclope Bloodline",
+    "name": "Cyclope Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_036_cyclopes",
-    "description": "Cyclope Bloodline is a advanced race evolution that refines the race 036 cyclopes bloodline into a sun-forged form. It pushes WIS, STR higher, specializes in opening-turn tempo, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Cyclope Celestial Pattern is a distinct advanced race evolution for Cyclope. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -24250,12 +24391,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Cyclope Bloodline-only iron-hearted spiritual defense",
-      "Excels at bleed or poison setup through weapon damage"
+      "Cyclope Celestial Pattern specializes in misc race evolution",
+      "Transforms Cyclope into a distinct progression route with tailored growth",
+      "Cyclope Bloodline-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Cyclope Bloodline struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Cyclope Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Cyclope Bloodline struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -24263,7 +24406,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Cyclope Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Cyclope Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10285_mythic_cyclope",
@@ -24333,7 +24476,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Cyclope \u2014 misc race evolution"
+    "roleIdentity": "Mythic Cyclope — misc race evolution"
   },
   {
     "id": "race_path_10286_ancient_cyclope_avatar",
@@ -24403,7 +24546,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Cyclope Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Cyclope Avatar — misc race evolution"
   },
   {
     "id": "race_path_10287_world_born_cyclope",
@@ -24475,17 +24618,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Cyclope \u2014 misc race evolution"
+    "roleIdentity": "World-Born Cyclope — misc race evolution"
   },
   {
     "id": "race_path_10288_awakened_slime",
     "excelId": 10288,
-    "name": "Awakened Slime",
+    "name": "Slime Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_037_slimes",
-    "description": "Awakened Slime is a advanced race evolution that refines the race 037 slimes bloodline into a crystal-cored form. It pushes CON, WIS higher, specializes in resistance stacking, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Slime Dawnmarked is a distinct advanced race evolution for Slime. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 1,
@@ -24532,12 +24675,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Slime body adaptation",
-      "Excels at party support through healing synergy"
+      "Slime Dawnmarked specializes in misc race evolution",
+      "Transforms Slime into a distinct progression route with tailored growth",
+      "Awakened Slime body adaptation"
     ],
     "weaknesses": [
-      "Awakened Slime lightning disruption",
-      "Requires careful build planning when not using survival tempo"
+      "Slime Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Slime lightning disruption"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -24545,7 +24690,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Slime \u2014 misc race evolution"
+    "roleIdentity": "Awakened Slime — misc race evolution"
   },
   {
     "id": "race_path_10289_elder_slime",
@@ -24615,7 +24760,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Slime \u2014 misc race evolution"
+    "roleIdentity": "Elder Slime — misc race evolution"
   },
   {
     "id": "race_path_10290_slime_sovereign",
@@ -24685,7 +24830,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Slime Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10291_origin_slime",
@@ -24757,17 +24902,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Slime \u2014 misc race evolution"
+    "roleIdentity": "Origin Slime — misc race evolution"
   },
   {
     "id": "race_path_10292_slime_bloodline",
     "excelId": 10292,
-    "name": "Slime Bloodline",
+    "name": "Slime Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_037_slimes",
-    "description": "Slime Bloodline is a advanced race evolution that refines the race 037 slimes bloodline into a rune-carved form. It pushes CON, WIS higher, specializes in defensive play, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Slime Elder Mantle is a distinct advanced race evolution for Slime. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 1,
@@ -24814,12 +24959,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Slime Bloodline body adaptation",
-      "Excels at anti-magic pressure through healing synergy"
+      "Slime Elder Mantle specializes in misc race evolution",
+      "Transforms Slime into a distinct progression route with tailored growth",
+      "Slime Bloodline body adaptation"
     ],
     "weaknesses": [
-      "Slime Bloodline lightning disruption",
-      "Requires careful build planning when not using survival tempo"
+      "Slime Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Slime Bloodline lightning disruption"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -24827,7 +24974,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Slime Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Slime Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10293_mythic_slime",
@@ -24897,7 +25044,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Slime \u2014 misc race evolution"
+    "roleIdentity": "Mythic Slime — misc race evolution"
   },
   {
     "id": "race_path_10294_ancient_slime_avatar",
@@ -24967,7 +25114,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Slime Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Slime Avatar — misc race evolution"
   },
   {
     "id": "race_path_10295_world_born_slime",
@@ -25039,17 +25186,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Slime \u2014 misc race evolution"
+    "roleIdentity": "World-Born Slime — misc race evolution"
   },
   {
     "id": "race_path_10296_awakened_treants_ent",
     "excelId": 10296,
-    "name": "Awakened Treants / Ent",
+    "name": "Treants / Ent Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_038_treants_ents",
-    "description": "Awakened Treants / Ent is a advanced race evolution that refines the race 038 treants ents bloodline into a mirror-souled form. It pushes WIS, STR higher, specializes in party support, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Treants / Ent Emberhalo is a distinct advanced race evolution for Treants / Ent. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -25096,12 +25243,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Treants / Ent-only sun-forged spiritual defense",
-      "Excels at critical attacks through weapon damage"
+      "Treants / Ent Emberhalo specializes in misc race evolution",
+      "Transforms Treants / Ent into a distinct progression route with tailored growth",
+      "Awakened Treants / Ent-only sun-forged spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Treants / Ent struggles when enemies exploit low recovery after burst turns",
-      "Requires careful build planning when not using spiritual defense"
+      "Treants / Ent Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Treants / Ent struggles when enemies exploit low recovery after burst turns"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -25109,7 +25258,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Treants / Ent \u2014 misc race evolution"
+    "roleIdentity": "Awakened Treants / Ent — misc race evolution"
   },
   {
     "id": "race_path_10297_elder_treants_ent",
@@ -25179,7 +25328,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Treants / Ent \u2014 misc race evolution"
+    "roleIdentity": "Elder Treants / Ent — misc race evolution"
   },
   {
     "id": "race_path_10298_treants_ent_sovereign",
@@ -25249,7 +25398,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Treants / Ent Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Treants / Ent Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10299_origin_treants_ent",
@@ -25321,17 +25470,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Treants / Ent \u2014 misc race evolution"
+    "roleIdentity": "Origin Treants / Ent — misc race evolution"
   },
   {
     "id": "race_path_10300_treants_ent_bloodline",
     "excelId": 10300,
-    "name": "Treants / Ent Bloodline",
+    "name": "Treants / Ent Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_038_treants_ents",
-    "description": "Treants / Ent Bloodline is a advanced race evolution that refines the race 038 treants ents bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in hybrid class routing, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Treants / Ent Astral Inheritance is a distinct advanced race evolution for Treants / Ent. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -25378,12 +25527,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Treants / Ent Bloodline-only mist-wrapped spiritual defense",
-      "Excels at hybrid class routing through weapon damage"
+      "Treants / Ent Astral Inheritance specializes in misc race evolution",
+      "Transforms Treants / Ent into a distinct progression route with tailored growth",
+      "Treants / Ent Bloodline-only mist-wrapped spiritual defense"
     ],
     "weaknesses": [
-      "Treants / Ent Bloodline struggles when enemies exploit weakness to specialized bosses",
-      "Requires careful build planning when not using spiritual defense"
+      "Treants / Ent Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Treants / Ent Bloodline struggles when enemies exploit weakness to specialized bosses"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -25391,7 +25542,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Treants / Ent Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Treants / Ent Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10301_mythic_treants_ent",
@@ -25461,7 +25612,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Treants / Ent \u2014 misc race evolution"
+    "roleIdentity": "Mythic Treants / Ent — misc race evolution"
   },
   {
     "id": "race_path_10302_ancient_treants_ent_avatar",
@@ -25531,7 +25682,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Treants / Ent Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Treants / Ent Avatar — misc race evolution"
   },
   {
     "id": "race_path_10303_world_born_treants_ent",
@@ -25603,17 +25754,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Treants / Ent \u2014 misc race evolution"
+    "roleIdentity": "World-Born Treants / Ent — misc race evolution"
   },
   {
     "id": "race_path_10304_awakened_golem",
     "excelId": 10304,
-    "name": "Awakened Golem",
+    "name": "Golem Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "golemforged",
-    "description": "Awakened Golem is a advanced race evolution that refines the golemforged bloodline into a ember-crowned form. It pushes WIS, STR higher, specializes in party support, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Golem Ashenwake is a distinct advanced race evolution for Golem. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -25660,12 +25811,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Golem-only iron-hearted spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Golem Ashenwake specializes in misc race evolution",
+      "Transforms Golem into a distinct progression route with tailored growth",
+      "Awakened Golem-only iron-hearted spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Golem struggles when enemies exploit slow early class unlocks",
-      "Requires careful build planning when not using spiritual defense"
+      "Golem Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Golem struggles when enemies exploit slow early class unlocks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -25673,7 +25826,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Golem \u2014 misc race evolution"
+    "roleIdentity": "Awakened Golem — misc race evolution"
   },
   {
     "id": "race_path_10305_elder_golem",
@@ -25743,7 +25896,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Golem \u2014 misc race evolution"
+    "roleIdentity": "Elder Golem — misc race evolution"
   },
   {
     "id": "race_path_10306_golem_sovereign",
@@ -25813,7 +25966,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Golem Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Golem Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10307_origin_golem",
@@ -25885,17 +26038,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Golem \u2014 misc race evolution"
+    "roleIdentity": "Origin Golem — misc race evolution"
   },
   {
     "id": "race_path_10308_golem_bloodline",
     "excelId": 10308,
-    "name": "Golem Bloodline",
+    "name": "Golem Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "golemforged",
-    "description": "Golem Bloodline is a advanced race evolution that refines the golemforged bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in opening-turn tempo, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Golem Celestial Pattern is a distinct advanced race evolution for Golem. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -25942,12 +26095,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Golem Bloodline-only storm-breathed spiritual defense",
-      "Excels at resistance stacking through weapon damage"
+      "Golem Celestial Pattern specializes in misc race evolution",
+      "Transforms Golem into a distinct progression route with tailored growth",
+      "Golem Bloodline-only storm-breathed spiritual defense"
     ],
     "weaknesses": [
-      "Golem Bloodline struggles when enemies exploit predictable weakness checks",
-      "Requires careful build planning when not using spiritual defense"
+      "Golem Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Golem Bloodline struggles when enemies exploit predictable weakness checks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -25955,7 +26110,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Golem Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Golem Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10309_mythic_golem",
@@ -26025,7 +26180,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Golem \u2014 misc race evolution"
+    "roleIdentity": "Mythic Golem — misc race evolution"
   },
   {
     "id": "race_path_10310_ancient_golem_avatar",
@@ -26095,7 +26250,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Golem Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Golem Avatar — misc race evolution"
   },
   {
     "id": "race_path_10311_world_born_golem",
@@ -26167,17 +26322,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Golem \u2014 misc race evolution"
+    "roleIdentity": "World-Born Golem — misc race evolution"
   },
   {
     "id": "race_path_10312_awakened_homunculi",
     "excelId": 10312,
-    "name": "Awakened Homunculi",
+    "name": "Homunculi Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_040_homunculi",
-    "description": "Awakened Homunculi is a advanced race evolution that refines the race 040 homunculi bloodline into a jade-boned form. It pushes WIS, STR higher, specializes in opening-turn tempo, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Homunculi Dawnmarked is a distinct advanced race evolution for Homunculi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -26224,12 +26379,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Homunculi-only silver-veined spiritual defense",
-      "Excels at boss endurance through weapon damage"
+      "Homunculi Dawnmarked specializes in misc race evolution",
+      "Transforms Homunculi into a distinct progression route with tailored growth",
+      "Awakened Homunculi-only silver-veined spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Homunculi struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Homunculi Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Homunculi struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -26237,7 +26394,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Homunculi \u2014 misc race evolution"
+    "roleIdentity": "Awakened Homunculi — misc race evolution"
   },
   {
     "id": "race_path_10313_elder_homunculi",
@@ -26307,7 +26464,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Homunculi \u2014 misc race evolution"
+    "roleIdentity": "Elder Homunculi — misc race evolution"
   },
   {
     "id": "race_path_10314_homunculi_sovereign",
@@ -26377,7 +26534,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Homunculi Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Homunculi Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10315_origin_homunculi",
@@ -26449,17 +26606,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Homunculi \u2014 misc race evolution"
+    "roleIdentity": "Origin Homunculi — misc race evolution"
   },
   {
     "id": "race_path_10316_homunculi_bloodline",
     "excelId": 10316,
-    "name": "Homunculi Bloodline",
+    "name": "Homunculi Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_040_homunculi",
-    "description": "Homunculi Bloodline is a advanced race evolution that refines the race 040 homunculi bloodline into a rune-carved form. It pushes WIS, STR higher, specializes in status control, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Homunculi Elder Mantle is a distinct advanced race evolution for Homunculi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -26506,12 +26663,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Homunculi Bloodline-only ashen-born spiritual defense",
-      "Excels at bleed or poison setup through weapon damage"
+      "Homunculi Elder Mantle specializes in misc race evolution",
+      "Transforms Homunculi into a distinct progression route with tailored growth",
+      "Homunculi Bloodline-only ashen-born spiritual defense"
     ],
     "weaknesses": [
-      "Homunculi Bloodline struggles when enemies exploit slow early class unlocks",
-      "Requires careful build planning when not using spiritual defense"
+      "Homunculi Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Homunculi Bloodline struggles when enemies exploit slow early class unlocks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -26519,7 +26678,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Homunculi Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Homunculi Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10317_mythic_homunculi",
@@ -26589,7 +26748,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Homunculi \u2014 misc race evolution"
+    "roleIdentity": "Mythic Homunculi — misc race evolution"
   },
   {
     "id": "race_path_10318_ancient_homunculi_avatar",
@@ -26659,7 +26818,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Homunculi Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Homunculi Avatar — misc race evolution"
   },
   {
     "id": "race_path_10319_world_born_homunculi",
@@ -26731,17 +26890,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Homunculi \u2014 misc race evolution"
+    "roleIdentity": "World-Born Homunculi — misc race evolution"
   },
   {
     "id": "race_path_10320_awakened_automata_living_doll",
     "excelId": 10320,
-    "name": "Awakened Automata / Living Doll",
+    "name": "Automata / Living Doll Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_041_automata_living_dolls",
-    "description": "Awakened Automata / Living Doll is a advanced race evolution that refines the race 041 automata living dolls bloodline into a mist-wrapped form. It pushes WIS, STR higher, specializes in party support, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Automata / Living Doll Emberhalo is a distinct advanced race evolution for Automata / Living Doll. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -26788,12 +26947,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Automata / Living Doll-only thorn-bound spiritual defense",
-      "Excels at status control through weapon damage"
+      "Automata / Living Doll Emberhalo specializes in misc race evolution",
+      "Transforms Automata / Living Doll into a distinct progression route with tailored growth",
+      "Awakened Automata / Living Doll-only thorn-bound spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Automata / Living Doll struggles when enemies exploit overreliance on signature stats",
-      "Requires careful build planning when not using spiritual defense"
+      "Automata / Living Doll Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Automata / Living Doll struggles when enemies exploit overreliance on signature stats"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -26801,7 +26962,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Automata / Living Doll \u2014 misc race evolution"
+    "roleIdentity": "Awakened Automata / Living Doll — misc race evolution"
   },
   {
     "id": "race_path_10321_elder_automata_living_doll",
@@ -26871,7 +27032,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Automata / Living Doll \u2014 misc race evolution"
+    "roleIdentity": "Elder Automata / Living Doll — misc race evolution"
   },
   {
     "id": "race_path_10322_automata_living_doll_sovereign",
@@ -26941,7 +27102,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Automata / Living Doll Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Automata / Living Doll Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10323_origin_automata_living_doll",
@@ -27013,17 +27174,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Automata / Living Doll \u2014 misc race evolution"
+    "roleIdentity": "Origin Automata / Living Doll — misc race evolution"
   },
   {
     "id": "race_path_10324_automata_living_doll_bloodline",
     "excelId": 10324,
-    "name": "Automata / Living Doll Bloodline",
+    "name": "Automata / Living Doll Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_041_automata_living_dolls",
-    "description": "Automata / Living Doll Bloodline is a advanced race evolution that refines the race 041 automata living dolls bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Automata / Living Doll Astral Inheritance is a distinct advanced race evolution for Automata / Living Doll. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -27070,12 +27231,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Automata / Living Doll Bloodline-only rune-carved spiritual defense",
-      "Excels at resource recovery through weapon damage"
+      "Automata / Living Doll Astral Inheritance specializes in misc race evolution",
+      "Transforms Automata / Living Doll into a distinct progression route with tailored growth",
+      "Automata / Living Doll Bloodline-only rune-carved spiritual defense"
     ],
     "weaknesses": [
-      "Automata / Living Doll Bloodline struggles when enemies exploit predictable weakness checks",
-      "Requires careful build planning when not using spiritual defense"
+      "Automata / Living Doll Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Automata / Living Doll Bloodline struggles when enemies exploit predictable weakness checks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -27083,7 +27246,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Automata / Living Doll Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Automata / Living Doll Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10325_mythic_automata_living_doll",
@@ -27153,7 +27316,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Automata / Living Doll \u2014 misc race evolution"
+    "roleIdentity": "Mythic Automata / Living Doll — misc race evolution"
   },
   {
     "id": "race_path_10326_ancient_automata_living_doll_avatar",
@@ -27223,7 +27386,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Automata / Living Doll Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Automata / Living Doll Avatar — misc race evolution"
   },
   {
     "id": "race_path_10327_world_born_automata_living_doll",
@@ -27295,17 +27458,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Automata / Living Doll \u2014 misc race evolution"
+    "roleIdentity": "World-Born Automata / Living Doll — misc race evolution"
   },
   {
     "id": "race_path_10328_awakened_undead",
     "excelId": 10328,
-    "name": "Awakened Undead",
+    "name": "Undead Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "undead",
-    "description": "Awakened Undead is a advanced race evolution that refines the undead bloodline into a ember-crowned form. It pushes CON, INT higher, specializes in boss endurance, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Undead Ashenwake is a distinct advanced race evolution for Undead. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -27352,12 +27515,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Undead dark endurance",
-      "Excels at boss endurance through mana burst"
+      "Undead Ashenwake specializes in death magic",
+      "Transforms Undead into a distinct progression route with tailored growth",
+      "Awakened Undead dark endurance"
     ],
     "weaknesses": [
-      "Awakened Undead holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Undead Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Undead holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -27365,7 +27530,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Undead \u2014 death magic"
+    "roleIdentity": "Awakened Undead — death magic"
   },
   {
     "id": "race_path_10329_elder_undead",
@@ -27435,7 +27600,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Undead \u2014 death magic"
+    "roleIdentity": "Elder Undead — death magic"
   },
   {
     "id": "race_path_10330_undead_sovereign",
@@ -27505,7 +27670,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Undead Sovereign \u2014 death magic"
+    "roleIdentity": "Undead Sovereign — death magic"
   },
   {
     "id": "race_path_10331_origin_undead",
@@ -27577,17 +27742,17 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Undead \u2014 death magic"
+    "roleIdentity": "Origin Undead — death magic"
   },
   {
     "id": "race_path_10332_undead_bloodline",
     "excelId": 10332,
-    "name": "Undead Bloodline",
+    "name": "Undead Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "undead",
-    "description": "Undead Bloodline is a advanced race evolution that refines the undead bloodline into a silver-veined form. It pushes CON, INT higher, specializes in anti-magic pressure, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Undead Celestial Pattern is a distinct advanced race evolution for Undead. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -27634,12 +27799,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Undead Bloodline dark endurance",
-      "Excels at party support through mana burst"
+      "Undead Celestial Pattern specializes in death magic",
+      "Transforms Undead into a distinct progression route with tailored growth",
+      "Undead Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Undead Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Undead Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Undead Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -27647,7 +27814,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Undead Bloodline \u2014 death magic"
+    "roleIdentity": "Undead Bloodline — death magic"
   },
   {
     "id": "race_path_10333_mythic_undead",
@@ -27717,7 +27884,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Undead \u2014 death magic"
+    "roleIdentity": "Mythic Undead — death magic"
   },
   {
     "id": "race_path_10334_ancient_undead_avatar",
@@ -27787,7 +27954,7 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Undead Avatar \u2014 death magic"
+    "roleIdentity": "Ancient Undead Avatar — death magic"
   },
   {
     "id": "race_path_10335_world_born_undead",
@@ -27859,17 +28026,17 @@ export const RACE_PATHS = [
     "overlapGroup": "death_magic",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Undead \u2014 death magic"
+    "roleIdentity": "World-Born Undead — death magic"
   },
   {
     "id": "race_path_10336_awakened_skeleton",
     "excelId": 10336,
-    "name": "Awakened Skeleton",
+    "name": "Skeleton Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_043_skeletons",
-    "description": "Awakened Skeleton is a advanced race evolution that refines the race 043 skeletons bloodline into a crystal-cored form. It pushes CON, INT higher, specializes in resistance stacking, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Skeleton Dawnmarked is a distinct advanced race evolution for Skeleton. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -27916,12 +28083,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Skeleton dark endurance",
-      "Excels at hybrid class routing through mana burst"
+      "Skeleton Dawnmarked specializes in misc race evolution",
+      "Transforms Skeleton into a distinct progression route with tailored growth",
+      "Awakened Skeleton dark endurance"
     ],
     "weaknesses": [
-      "Awakened Skeleton holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Skeleton Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Skeleton holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -27929,7 +28098,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Skeleton \u2014 misc race evolution"
+    "roleIdentity": "Awakened Skeleton — misc race evolution"
   },
   {
     "id": "race_path_10337_elder_skeleton",
@@ -27999,7 +28168,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Skeleton \u2014 misc race evolution"
+    "roleIdentity": "Elder Skeleton — misc race evolution"
   },
   {
     "id": "race_path_10338_skeleton_sovereign",
@@ -28069,7 +28238,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Skeleton Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Skeleton Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10339_origin_skeleton",
@@ -28141,17 +28310,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Skeleton \u2014 misc race evolution"
+    "roleIdentity": "Origin Skeleton — misc race evolution"
   },
   {
     "id": "race_path_10340_skeleton_bloodline",
     "excelId": 10340,
-    "name": "Skeleton Bloodline",
+    "name": "Skeleton Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_043_skeletons",
-    "description": "Skeleton Bloodline is a advanced race evolution that refines the race 043 skeletons bloodline into a void-touched form. It pushes CON, INT higher, specializes in resistance stacking, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Skeleton Elder Mantle is a distinct advanced race evolution for Skeleton. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -28198,12 +28367,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Skeleton Bloodline dark endurance",
-      "Excels at mana economy through mana burst"
+      "Skeleton Elder Mantle specializes in misc race evolution",
+      "Transforms Skeleton into a distinct progression route with tailored growth",
+      "Skeleton Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Skeleton Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Skeleton Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Skeleton Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -28211,7 +28382,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Skeleton Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Skeleton Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10341_mythic_skeleton",
@@ -28281,7 +28452,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Skeleton \u2014 misc race evolution"
+    "roleIdentity": "Mythic Skeleton — misc race evolution"
   },
   {
     "id": "race_path_10342_ancient_skeleton_avatar",
@@ -28351,7 +28522,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Skeleton Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Skeleton Avatar — misc race evolution"
   },
   {
     "id": "race_path_10343_world_born_skeleton",
@@ -28423,17 +28594,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Skeleton \u2014 misc race evolution"
+    "roleIdentity": "World-Born Skeleton — misc race evolution"
   },
   {
     "id": "race_path_10344_awakened_zombie",
     "excelId": 10344,
-    "name": "Awakened Zombie",
+    "name": "Zombie Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_044_zombies",
-    "description": "Awakened Zombie is a advanced race evolution that refines the race 044 zombies bloodline into a mirror-souled form. It pushes CON, INT higher, specializes in status control, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Zombie Emberhalo is a distinct advanced race evolution for Zombie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -28480,12 +28651,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Zombie dark endurance",
-      "Excels at party support through mana burst"
+      "Zombie Emberhalo specializes in misc race evolution",
+      "Transforms Zombie into a distinct progression route with tailored growth",
+      "Awakened Zombie dark endurance"
     ],
     "weaknesses": [
-      "Awakened Zombie holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Zombie Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Zombie holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -28493,7 +28666,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Zombie \u2014 misc race evolution"
+    "roleIdentity": "Awakened Zombie — misc race evolution"
   },
   {
     "id": "race_path_10345_elder_zombie",
@@ -28563,7 +28736,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Zombie \u2014 misc race evolution"
+    "roleIdentity": "Elder Zombie — misc race evolution"
   },
   {
     "id": "race_path_10346_zombie_sovereign",
@@ -28633,7 +28806,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Zombie Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Zombie Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10347_origin_zombie",
@@ -28705,17 +28878,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Zombie \u2014 misc race evolution"
+    "roleIdentity": "Origin Zombie — misc race evolution"
   },
   {
     "id": "race_path_10348_zombie_bloodline",
     "excelId": 10348,
-    "name": "Zombie Bloodline",
+    "name": "Zombie Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_044_zombies",
-    "description": "Zombie Bloodline is a advanced race evolution that refines the race 044 zombies bloodline into a mirror-souled form. It pushes CON, INT higher, specializes in burst windows, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Zombie Astral Inheritance is a distinct advanced race evolution for Zombie. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -28762,12 +28935,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Zombie Bloodline dark endurance",
-      "Excels at party support through mana burst"
+      "Zombie Astral Inheritance specializes in misc race evolution",
+      "Transforms Zombie into a distinct progression route with tailored growth",
+      "Zombie Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Zombie Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Zombie Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Zombie Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -28775,7 +28950,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Zombie Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Zombie Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10349_mythic_zombie",
@@ -28845,7 +29020,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Zombie \u2014 misc race evolution"
+    "roleIdentity": "Mythic Zombie — misc race evolution"
   },
   {
     "id": "race_path_10350_ancient_zombie_avatar",
@@ -28915,7 +29090,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Zombie Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Zombie Avatar — misc race evolution"
   },
   {
     "id": "race_path_10351_world_born_zombie",
@@ -28987,17 +29162,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Zombie \u2014 misc race evolution"
+    "roleIdentity": "World-Born Zombie — misc race evolution"
   },
   {
     "id": "race_path_10352_awakened_liche",
     "excelId": 10352,
-    "name": "Awakened Liche",
+    "name": "Liche Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_045_liches",
-    "description": "Awakened Liche is a advanced race evolution that refines the race 045 liches bloodline into a moon-marked form. It pushes CON, INT higher, specializes in hybrid class routing, and pays for that power through difficult resource balance. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Liche Ashenwake is a distinct advanced race evolution for Liche. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -29044,12 +29219,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Liche dark endurance",
-      "Excels at opening-turn tempo through mana burst"
+      "Liche Ashenwake specializes in misc race evolution",
+      "Transforms Liche into a distinct progression route with tailored growth",
+      "Awakened Liche dark endurance"
     ],
     "weaknesses": [
-      "Awakened Liche holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Liche Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Liche holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -29057,7 +29234,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Liche \u2014 misc race evolution"
+    "roleIdentity": "Awakened Liche — misc race evolution"
   },
   {
     "id": "race_path_10353_elder_liche",
@@ -29127,7 +29304,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Liche \u2014 misc race evolution"
+    "roleIdentity": "Elder Liche — misc race evolution"
   },
   {
     "id": "race_path_10354_liche_sovereign",
@@ -29197,7 +29374,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Liche Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Liche Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10355_origin_liche",
@@ -29269,17 +29446,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Liche \u2014 misc race evolution"
+    "roleIdentity": "Origin Liche — misc race evolution"
   },
   {
     "id": "race_path_10356_liche_bloodline",
     "excelId": 10356,
-    "name": "Liche Bloodline",
+    "name": "Liche Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_045_liches",
-    "description": "Liche Bloodline is a advanced race evolution that refines the race 045 liches bloodline into a jade-boned form. It pushes CON, INT higher, specializes in critical attacks, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Liche Celestial Pattern is a distinct advanced race evolution for Liche. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -29326,12 +29503,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Liche Bloodline dark endurance",
-      "Excels at mana economy through mana burst"
+      "Liche Celestial Pattern specializes in misc race evolution",
+      "Transforms Liche into a distinct progression route with tailored growth",
+      "Liche Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Liche Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Liche Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Liche Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -29339,7 +29518,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Liche Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Liche Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10357_mythic_liche",
@@ -29409,7 +29588,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Liche \u2014 misc race evolution"
+    "roleIdentity": "Mythic Liche — misc race evolution"
   },
   {
     "id": "race_path_10358_ancient_liche_avatar",
@@ -29479,7 +29658,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Liche Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Liche Avatar — misc race evolution"
   },
   {
     "id": "race_path_10359_world_born_liche",
@@ -29551,17 +29730,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Liche \u2014 misc race evolution"
+    "roleIdentity": "World-Born Liche — misc race evolution"
   },
   {
     "id": "race_path_10360_awakened_vampire",
     "excelId": 10360,
-    "name": "Awakened Vampire",
+    "name": "Vampire Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_046_vampires",
-    "description": "Awakened Vampire is a advanced race evolution that refines the race 046 vampires bloodline into a ashen-born form. It pushes CON, INT higher, specializes in resource recovery, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Vampire Dawnmarked is a distinct advanced race evolution for Vampire. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -29608,12 +29787,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Vampire dark endurance",
-      "Excels at party support through mana burst"
+      "Vampire Dawnmarked specializes in misc race evolution",
+      "Transforms Vampire into a distinct progression route with tailored growth",
+      "Awakened Vampire dark endurance"
     ],
     "weaknesses": [
-      "Awakened Vampire holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Vampire Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Vampire holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -29621,7 +29802,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Vampire \u2014 misc race evolution"
+    "roleIdentity": "Awakened Vampire — misc race evolution"
   },
   {
     "id": "race_path_10361_elder_vampire",
@@ -29691,7 +29872,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Vampire \u2014 misc race evolution"
+    "roleIdentity": "Elder Vampire — misc race evolution"
   },
   {
     "id": "race_path_10362_vampire_sovereign",
@@ -29761,7 +29942,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Vampire Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10363_origin_vampire",
@@ -29833,17 +30014,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Vampire \u2014 misc race evolution"
+    "roleIdentity": "Origin Vampire — misc race evolution"
   },
   {
     "id": "race_path_10364_vampire_bloodline",
     "excelId": 10364,
-    "name": "Vampire Bloodline",
+    "name": "Vampire Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_046_vampires",
-    "description": "Vampire Bloodline is a advanced race evolution that refines the race 046 vampires bloodline into a silver-veined form. It pushes CON, INT higher, specializes in stamina cycling, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Vampire Elder Mantle is a distinct advanced race evolution for Vampire. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -29890,12 +30071,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Vampire Bloodline dark endurance",
-      "Excels at opening-turn tempo through mana burst"
+      "Vampire Elder Mantle specializes in misc race evolution",
+      "Transforms Vampire into a distinct progression route with tailored growth",
+      "Vampire Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Vampire Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Vampire Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Vampire Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -29903,7 +30086,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Vampire Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Vampire Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10365_mythic_vampire",
@@ -29973,7 +30156,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Vampire \u2014 misc race evolution"
+    "roleIdentity": "Mythic Vampire — misc race evolution"
   },
   {
     "id": "race_path_10366_ancient_vampire_avatar",
@@ -30043,7 +30226,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Vampire Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Vampire Avatar — misc race evolution"
   },
   {
     "id": "race_path_10367_world_born_vampire",
@@ -30115,17 +30298,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Vampire \u2014 misc race evolution"
+    "roleIdentity": "World-Born Vampire — misc race evolution"
   },
   {
     "id": "race_path_10368_awakened_werewolve",
     "excelId": 10368,
-    "name": "Awakened Werewolve",
+    "name": "Werewolve Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_047_werewolves",
-    "description": "Awakened Werewolve is a advanced race evolution that refines the race 047 werewolves bloodline into a wild-oathed form. It pushes WIS, STR higher, specializes in bleed or poison setup, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Werewolve Emberhalo is a distinct advanced race evolution for Werewolve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -30172,12 +30355,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Werewolve-only silver-veined spiritual defense",
-      "Excels at hybrid class routing through weapon damage"
+      "Werewolve Emberhalo specializes in misc race evolution",
+      "Transforms Werewolve into a distinct progression route with tailored growth",
+      "Awakened Werewolve-only silver-veined spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Werewolve struggles when enemies exploit overreliance on signature stats",
-      "Requires careful build planning when not using spiritual defense"
+      "Werewolve Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Werewolve struggles when enemies exploit overreliance on signature stats"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -30185,7 +30370,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Werewolve \u2014 misc race evolution"
+    "roleIdentity": "Awakened Werewolve — misc race evolution"
   },
   {
     "id": "race_path_10369_elder_werewolve",
@@ -30255,7 +30440,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Werewolve \u2014 misc race evolution"
+    "roleIdentity": "Elder Werewolve — misc race evolution"
   },
   {
     "id": "race_path_10370_werewolve_sovereign",
@@ -30325,7 +30510,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Werewolve Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Werewolve Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10371_origin_werewolve",
@@ -30397,17 +30582,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Werewolve \u2014 misc race evolution"
+    "roleIdentity": "Origin Werewolve — misc race evolution"
   },
   {
     "id": "race_path_10372_werewolve_bloodline",
     "excelId": 10372,
-    "name": "Werewolve Bloodline",
+    "name": "Werewolve Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_047_werewolves",
-    "description": "Werewolve Bloodline is a advanced race evolution that refines the race 047 werewolves bloodline into a void-touched form. It pushes WIS, STR higher, specializes in boss endurance, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Werewolve Astral Inheritance is a distinct advanced race evolution for Werewolve. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -30454,12 +30639,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Werewolve Bloodline-only void-touched spiritual defense",
-      "Excels at status control through weapon damage"
+      "Werewolve Astral Inheritance specializes in misc race evolution",
+      "Transforms Werewolve into a distinct progression route with tailored growth",
+      "Werewolve Bloodline-only void-touched spiritual defense"
     ],
     "weaknesses": [
-      "Werewolve Bloodline struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Werewolve Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Werewolve Bloodline struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -30467,7 +30654,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Werewolve Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Werewolve Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10373_mythic_werewolve",
@@ -30537,7 +30724,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Werewolve \u2014 misc race evolution"
+    "roleIdentity": "Mythic Werewolve — misc race evolution"
   },
   {
     "id": "race_path_10374_ancient_werewolve_avatar",
@@ -30607,7 +30794,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Werewolve Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Werewolve Avatar — misc race evolution"
   },
   {
     "id": "race_path_10375_world_born_werewolve",
@@ -30679,17 +30866,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Werewolve \u2014 misc race evolution"
+    "roleIdentity": "World-Born Werewolve — misc race evolution"
   },
   {
     "id": "race_path_10376_awakened_wraiths_ghost",
     "excelId": 10376,
-    "name": "Awakened Wraiths / Ghost",
+    "name": "Wraiths / Ghost Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_048_wraiths_ghosts",
-    "description": "Awakened Wraiths / Ghost is a advanced race evolution that refines the race 048 wraiths ghosts bloodline into a void-touched form. It pushes CON, INT higher, specializes in opening-turn tempo, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Wraiths / Ghost Ashenwake is a distinct advanced race evolution for Wraiths / Ghost. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -30736,12 +30923,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Wraiths / Ghost dark endurance",
-      "Excels at defensive play through mana burst"
+      "Wraiths / Ghost Ashenwake specializes in misc race evolution",
+      "Transforms Wraiths / Ghost into a distinct progression route with tailored growth",
+      "Awakened Wraiths / Ghost dark endurance"
     ],
     "weaknesses": [
-      "Awakened Wraiths / Ghost holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Wraiths / Ghost Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Wraiths / Ghost holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -30749,7 +30938,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Wraiths / Ghost \u2014 misc race evolution"
+    "roleIdentity": "Awakened Wraiths / Ghost — misc race evolution"
   },
   {
     "id": "race_path_10377_elder_wraiths_ghost",
@@ -30819,7 +31008,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Wraiths / Ghost \u2014 misc race evolution"
+    "roleIdentity": "Elder Wraiths / Ghost — misc race evolution"
   },
   {
     "id": "race_path_10378_wraiths_ghost_sovereign",
@@ -30889,7 +31078,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wraiths / Ghost Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Wraiths / Ghost Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10379_origin_wraiths_ghost",
@@ -30961,17 +31150,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Wraiths / Ghost \u2014 misc race evolution"
+    "roleIdentity": "Origin Wraiths / Ghost — misc race evolution"
   },
   {
     "id": "race_path_10380_wraiths_ghost_bloodline",
     "excelId": 10380,
-    "name": "Wraiths / Ghost Bloodline",
+    "name": "Wraiths / Ghost Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_048_wraiths_ghosts",
-    "description": "Wraiths / Ghost Bloodline is a advanced race evolution that refines the race 048 wraiths ghosts bloodline into a sun-forged form. It pushes CON, INT higher, specializes in event survival, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Wraiths / Ghost Celestial Pattern is a distinct advanced race evolution for Wraiths / Ghost. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -31018,12 +31207,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Wraiths / Ghost Bloodline dark endurance",
-      "Excels at resistance stacking through mana burst"
+      "Wraiths / Ghost Celestial Pattern specializes in misc race evolution",
+      "Transforms Wraiths / Ghost into a distinct progression route with tailored growth",
+      "Wraiths / Ghost Bloodline dark endurance"
     ],
     "weaknesses": [
-      "Wraiths / Ghost Bloodline holy damage weakness",
-      "Requires careful build planning when not using survival tempo"
+      "Wraiths / Ghost Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Wraiths / Ghost Bloodline holy damage weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -31031,7 +31222,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Wraiths / Ghost Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Wraiths / Ghost Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10381_mythic_wraiths_ghost",
@@ -31101,7 +31292,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Wraiths / Ghost \u2014 misc race evolution"
+    "roleIdentity": "Mythic Wraiths / Ghost — misc race evolution"
   },
   {
     "id": "race_path_10382_ancient_wraiths_ghost_avatar",
@@ -31171,7 +31362,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Wraiths / Ghost Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Wraiths / Ghost Avatar — misc race evolution"
   },
   {
     "id": "race_path_10383_world_born_wraiths_ghost",
@@ -31243,17 +31434,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Wraiths / Ghost \u2014 misc race evolution"
+    "roleIdentity": "World-Born Wraiths / Ghost — misc race evolution"
   },
   {
     "id": "race_path_10384_awakened_yokai",
     "excelId": 10384,
-    "name": "Awakened Y\u014dkai",
+    "name": "Yōkai Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_049_yokai",
-    "description": "Awakened Y\u014dkai is a advanced race evolution that refines the race 049 yokai bloodline into a void-touched form. It pushes WIS, STR higher, specializes in burst windows, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yōkai Dawnmarked is a distinct advanced race evolution for Yōkai. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -31278,7 +31469,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": null,
       "stage": 0,
@@ -31300,12 +31491,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Y\u014dkai-only void-touched spiritual defense",
-      "Excels at resource recovery through weapon damage"
+      "Yōkai Dawnmarked specializes in misc race evolution",
+      "Transforms Yōkai into a distinct progression route with tailored growth",
+      "Awakened Yōkai-only void-touched spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Y\u014dkai struggles when enemies exploit awkward item scaling",
-      "Requires careful build planning when not using spiritual defense"
+      "Yōkai Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Yōkai struggles when enemies exploit awkward item scaling"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -31313,17 +31506,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Y\u014dkai \u2014 misc race evolution"
+    "roleIdentity": "Awakened Yōkai — misc race evolution"
   },
   {
     "id": "race_path_10385_elder_yokai",
     "excelId": 10385,
-    "name": "Elder Y\u014dkai",
+    "name": "Elder Yōkai",
     "category": "Race Evolution",
     "tier": "specialist",
     "maxLevel": 10,
     "from": "race_path_10384_awakened_yokai",
-    "description": "Elder Y\u014dkai is a specialist race evolution that refines the race path 10384 awakened yokai bloodline into a ashen-born form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Elder Yōkai is a specialist race evolution that refines the race path 10384 awakened yokai bloodline into a ashen-born form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -31348,7 +31541,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10384,
       "stage": 1,
@@ -31370,11 +31563,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Elder Y\u014dkai-only sun-forged spiritual defense",
+      "Elder Yōkai-only sun-forged spiritual defense",
       "Excels at defensive play through weapon damage"
     ],
     "weaknesses": [
-      "Elder Y\u014dkai struggles when enemies exploit slow early class unlocks",
+      "Elder Yōkai struggles when enemies exploit slow early class unlocks",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31383,17 +31576,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Y\u014dkai \u2014 misc race evolution"
+    "roleIdentity": "Elder Yōkai — misc race evolution"
   },
   {
     "id": "race_path_10386_yokai_sovereign",
     "excelId": 10386,
-    "name": "Y\u014dkai Sovereign",
+    "name": "Yōkai Sovereign",
     "category": "Race Evolution",
     "tier": "rare",
     "maxLevel": 5,
     "from": "race_path_10385_elder_yokai",
-    "description": "Y\u014dkai Sovereign is a rare race evolution that refines the race path 10385 elder yokai bloodline into a crystal-cored form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yōkai Sovereign is a rare race evolution that refines the race path 10385 elder yokai bloodline into a crystal-cored form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -31418,7 +31611,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10385,
       "stage": 2,
@@ -31440,11 +31633,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Y\u014dkai Sovereign-only jade-boned spiritual defense",
+      "Yōkai Sovereign-only jade-boned spiritual defense",
       "Excels at mana economy through weapon damage"
     ],
     "weaknesses": [
-      "Y\u014dkai Sovereign struggles when enemies exploit poor matchups into elite control",
+      "Yōkai Sovereign struggles when enemies exploit poor matchups into elite control",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31453,17 +31646,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Y\u014dkai Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Yōkai Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10387_origin_yokai",
     "excelId": 10387,
-    "name": "Origin Y\u014dkai",
+    "name": "Origin Yōkai",
     "category": "Race Evolution",
     "tier": "hidden",
     "maxLevel": 5,
     "from": "race_path_10386_yokai_sovereign",
-    "description": "Origin Y\u014dkai is a hidden race evolution that refines the race path 10386 yokai sovereign bloodline into a crystal-cored form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Origin Yōkai is a hidden race evolution that refines the race path 10386 yokai sovereign bloodline into a crystal-cored form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -31490,7 +31683,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10386,
       "stage": 3,
@@ -31512,11 +31705,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Origin Y\u014dkai-only ember-crowned spiritual defense",
+      "Origin Yōkai-only ember-crowned spiritual defense",
       "Excels at opening-turn tempo through weapon damage"
     ],
     "weaknesses": [
-      "Origin Y\u014dkai struggles when enemies exploit slow early class unlocks",
+      "Origin Yōkai struggles when enemies exploit slow early class unlocks",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31525,17 +31718,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Y\u014dkai \u2014 misc race evolution"
+    "roleIdentity": "Origin Yōkai — misc race evolution"
   },
   {
     "id": "race_path_10388_yokai_bloodline",
     "excelId": 10388,
-    "name": "Y\u014dkai Bloodline",
+    "name": "Yōkai Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_049_yokai",
-    "description": "Y\u014dkai Bloodline is a advanced race evolution that refines the race 049 yokai bloodline into a storm-breathed form. It pushes WIS, STR higher, specializes in anti-magic pressure, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yōkai Elder Mantle is a distinct advanced race evolution for Yōkai. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -31560,7 +31753,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": null,
       "stage": 0,
@@ -31582,12 +31775,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Y\u014dkai Bloodline-only moon-marked spiritual defense",
-      "Excels at status control through weapon damage"
+      "Yōkai Elder Mantle specializes in misc race evolution",
+      "Transforms Yōkai into a distinct progression route with tailored growth",
+      "Yōkai Bloodline-only moon-marked spiritual defense"
     ],
     "weaknesses": [
-      "Y\u014dkai Bloodline struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Yōkai Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Yōkai Bloodline struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -31595,17 +31790,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Y\u014dkai Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Yōkai Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10389_mythic_yokai",
     "excelId": 10389,
-    "name": "Mythic Y\u014dkai",
+    "name": "Mythic Yōkai",
     "category": "Race Evolution",
     "tier": "specialist",
     "maxLevel": 10,
     "from": "race_path_10388_yokai_bloodline",
-    "description": "Mythic Y\u014dkai is a specialist race evolution that refines the race path 10388 yokai bloodline bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in bleed or poison setup, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Mythic Yōkai is a specialist race evolution that refines the race path 10388 yokai bloodline bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in bleed or poison setup, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -31630,7 +31825,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10388,
       "stage": 1,
@@ -31652,11 +31847,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Mythic Y\u014dkai-only storm-breathed spiritual defense",
+      "Mythic Yōkai-only storm-breathed spiritual defense",
       "Excels at anti-magic pressure through weapon damage"
     ],
     "weaknesses": [
-      "Mythic Y\u014dkai struggles when enemies exploit poor matchups into elite control",
+      "Mythic Yōkai struggles when enemies exploit poor matchups into elite control",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31665,17 +31860,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Y\u014dkai \u2014 misc race evolution"
+    "roleIdentity": "Mythic Yōkai — misc race evolution"
   },
   {
     "id": "race_path_10390_ancient_yokai_avatar",
     "excelId": 10390,
-    "name": "Ancient Y\u014dkai Avatar",
+    "name": "Ancient Yōkai Avatar",
     "category": "Race Evolution",
     "tier": "rare",
     "maxLevel": 5,
     "from": "race_path_10389_mythic_yokai",
-    "description": "Ancient Y\u014dkai Avatar is a rare race evolution that refines the race path 10389 mythic yokai bloodline into a silver-veined form. It pushes WIS, STR higher, specializes in hybrid class routing, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Ancient Yōkai Avatar is a rare race evolution that refines the race path 10389 mythic yokai bloodline into a silver-veined form. It pushes WIS, STR higher, specializes in hybrid class routing, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -31700,7 +31895,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10389,
       "stage": 2,
@@ -31722,11 +31917,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Ancient Y\u014dkai Avatar-only storm-breathed spiritual defense",
+      "Ancient Yōkai Avatar-only storm-breathed spiritual defense",
       "Excels at burst windows through weapon damage"
     ],
     "weaknesses": [
-      "Ancient Y\u014dkai Avatar struggles when enemies exploit expensive equipment demands",
+      "Ancient Yōkai Avatar struggles when enemies exploit expensive equipment demands",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31735,17 +31930,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Y\u014dkai Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Yōkai Avatar — misc race evolution"
   },
   {
     "id": "race_path_10391_world_born_yokai",
     "excelId": 10391,
-    "name": "World-Born Y\u014dkai",
+    "name": "World-Born Yōkai",
     "category": "Race Evolution",
     "tier": "hidden",
     "maxLevel": 5,
     "from": "race_path_10390_ancient_yokai_avatar",
-    "description": "World-Born Y\u014dkai is a hidden race evolution that refines the race path 10390 ancient yokai avatar bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in boss endurance, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "World-Born Yōkai is a hidden race evolution that refines the race path 10390 ancient yokai avatar bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in boss endurance, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
     "stats": {
       "str": 4,
       "dex": 4,
@@ -31772,7 +31967,7 @@ export const RACE_PATHS = [
     },
     "registryRequirement": {
       "raceEvolution": true,
-      "raceName": "Y\u014dkai",
+      "raceName": "Yōkai",
       "raceId": 49,
       "previousJobId": 10390,
       "stage": 3,
@@ -31794,11 +31989,11 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "World-Born Y\u014dkai-only ashen-born spiritual defense",
+      "World-Born Yōkai-only ashen-born spiritual defense",
       "Excels at party support through weapon damage"
     ],
     "weaknesses": [
-      "World-Born Y\u014dkai struggles when enemies exploit expensive equipment demands",
+      "World-Born Yōkai struggles when enemies exploit expensive equipment demands",
       "Requires careful build planning when not using spiritual defense"
     ],
     "resists": [],
@@ -31807,17 +32002,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Y\u014dkai \u2014 misc race evolution"
+    "roleIdentity": "World-Born Yōkai — misc race evolution"
   },
   {
     "id": "race_path_10392_awakened_kitsune",
     "excelId": 10392,
-    "name": "Awakened Kitsune",
+    "name": "Kitsune Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_050_kitsune",
-    "description": "Awakened Kitsune is a advanced race evolution that refines the race 050 kitsune bloodline into a ashen-born form. It pushes CHA, INT higher, specializes in defensive play, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kitsune Emberhalo is a distinct advanced race evolution for Kitsune. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -31864,12 +32059,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Kitsune illusion weaving",
-      "Excels at burst windows through mana burst"
+      "Kitsune Emberhalo specializes in martial artist",
+      "Transforms Kitsune into a distinct progression route with tailored growth",
+      "Awakened Kitsune illusion weaving"
     ],
     "weaknesses": [
-      "Awakened Kitsune weak to truth-sight effects",
-      "Requires careful build planning when not using aura pressure"
+      "Kitsune Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Kitsune weak to truth-sight effects"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -31877,7 +32074,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Kitsune \u2014 martial artist"
+    "roleIdentity": "Awakened Kitsune — martial artist"
   },
   {
     "id": "race_path_10393_elder_kitsune",
@@ -31947,7 +32144,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Kitsune \u2014 martial artist"
+    "roleIdentity": "Elder Kitsune — martial artist"
   },
   {
     "id": "race_path_10394_kitsune_sovereign",
@@ -32017,7 +32214,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kitsune Sovereign \u2014 martial artist"
+    "roleIdentity": "Kitsune Sovereign — martial artist"
   },
   {
     "id": "race_path_10395_origin_kitsune",
@@ -32089,17 +32286,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Kitsune \u2014 martial artist"
+    "roleIdentity": "Origin Kitsune — martial artist"
   },
   {
     "id": "race_path_10396_kitsune_bloodline",
     "excelId": 10396,
-    "name": "Kitsune Bloodline",
+    "name": "Kitsune Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_050_kitsune",
-    "description": "Kitsune Bloodline is a advanced race evolution that refines the race 050 kitsune bloodline into a mist-wrapped form. It pushes CHA, INT higher, specializes in party support, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kitsune Astral Inheritance is a distinct advanced race evolution for Kitsune. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -32146,12 +32343,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Kitsune Bloodline illusion weaving",
-      "Excels at boss endurance through mana burst"
+      "Kitsune Astral Inheritance specializes in martial artist",
+      "Transforms Kitsune into a distinct progression route with tailored growth",
+      "Kitsune Bloodline illusion weaving"
     ],
     "weaknesses": [
-      "Kitsune Bloodline weak to truth-sight effects",
-      "Requires careful build planning when not using aura pressure"
+      "Kitsune Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Kitsune Bloodline weak to truth-sight effects"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -32159,7 +32358,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kitsune Bloodline \u2014 martial artist"
+    "roleIdentity": "Kitsune Bloodline — martial artist"
   },
   {
     "id": "race_path_10397_mythic_kitsune",
@@ -32229,7 +32428,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Kitsune \u2014 martial artist"
+    "roleIdentity": "Mythic Kitsune — martial artist"
   },
   {
     "id": "race_path_10398_ancient_kitsune_avatar",
@@ -32299,7 +32498,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Kitsune Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Kitsune Avatar — martial artist"
   },
   {
     "id": "race_path_10399_world_born_kitsune",
@@ -32371,17 +32570,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Kitsune \u2014 martial artist"
+    "roleIdentity": "World-Born Kitsune — martial artist"
   },
   {
     "id": "race_path_10400_awakened_tanuki",
     "excelId": 10400,
-    "name": "Awakened Tanuki",
+    "name": "Tanuki Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_051_tanuki",
-    "description": "Awakened Tanuki is a advanced race evolution that refines the race 051 tanuki bloodline into a thorn-bound form. It pushes WIS, DEX higher, specializes in resistance stacking, and pays for that power through overreliance on signature stats. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tanuki Ashenwake is a distinct advanced race evolution for Tanuki. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -32428,12 +32627,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Tanuki folklore tricks",
-      "Excels at opening-turn tempo through evasion windows"
+      "Tanuki Ashenwake specializes in martial artist",
+      "Transforms Tanuki into a distinct progression route with tailored growth",
+      "Awakened Tanuki folklore tricks"
     ],
     "weaknesses": [
-      "Awakened Tanuki ritual banishment weakness",
-      "Requires careful build planning when not using spiritual defense"
+      "Tanuki Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Tanuki ritual banishment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -32441,7 +32642,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Tanuki \u2014 martial artist"
+    "roleIdentity": "Awakened Tanuki — martial artist"
   },
   {
     "id": "race_path_10401_elder_tanuki",
@@ -32511,7 +32712,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Tanuki \u2014 martial artist"
+    "roleIdentity": "Elder Tanuki — martial artist"
   },
   {
     "id": "race_path_10402_tanuki_sovereign",
@@ -32581,7 +32782,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tanuki Sovereign \u2014 martial artist"
+    "roleIdentity": "Tanuki Sovereign — martial artist"
   },
   {
     "id": "race_path_10403_origin_tanuki",
@@ -32653,17 +32854,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Tanuki \u2014 martial artist"
+    "roleIdentity": "Origin Tanuki — martial artist"
   },
   {
     "id": "race_path_10404_tanuki_bloodline",
     "excelId": 10404,
-    "name": "Tanuki Bloodline",
+    "name": "Tanuki Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_051_tanuki",
-    "description": "Tanuki Bloodline is a advanced race evolution that refines the race 051 tanuki bloodline into a jade-boned form. It pushes WIS, DEX higher, specializes in party support, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tanuki Celestial Pattern is a distinct advanced race evolution for Tanuki. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -32710,12 +32911,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Tanuki Bloodline folklore tricks",
-      "Excels at defensive play through evasion windows"
+      "Tanuki Celestial Pattern specializes in martial artist",
+      "Transforms Tanuki into a distinct progression route with tailored growth",
+      "Tanuki Bloodline folklore tricks"
     ],
     "weaknesses": [
-      "Tanuki Bloodline ritual banishment weakness",
-      "Requires careful build planning when not using spiritual defense"
+      "Tanuki Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Tanuki Bloodline ritual banishment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -32723,7 +32926,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tanuki Bloodline \u2014 martial artist"
+    "roleIdentity": "Tanuki Bloodline — martial artist"
   },
   {
     "id": "race_path_10405_mythic_tanuki",
@@ -32793,7 +32996,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Tanuki \u2014 martial artist"
+    "roleIdentity": "Mythic Tanuki — martial artist"
   },
   {
     "id": "race_path_10406_ancient_tanuki_avatar",
@@ -32863,7 +33066,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Tanuki Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Tanuki Avatar — martial artist"
   },
   {
     "id": "race_path_10407_world_born_tanuki",
@@ -32935,17 +33138,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Tanuki \u2014 martial artist"
+    "roleIdentity": "World-Born Tanuki — martial artist"
   },
   {
     "id": "race_path_10408_awakened_tengu",
     "excelId": 10408,
-    "name": "Awakened Tengu",
+    "name": "Tengu Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_052_tengu",
-    "description": "Awakened Tengu is a advanced race evolution that refines the race 052 tengu bloodline into a ember-crowned form. It pushes DEX, WIS higher, specializes in hybrid class routing, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tengu Dawnmarked is a distinct advanced race evolution for Tengu. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -32992,12 +33195,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Tengu aerial mobility",
-      "Excels at bleed or poison setup through healing synergy"
+      "Tengu Dawnmarked specializes in misc race evolution",
+      "Transforms Tengu into a distinct progression route with tailored growth",
+      "Awakened Tengu aerial mobility"
     ],
     "weaknesses": [
-      "Awakened Tengu earth-binding weakness",
-      "Requires careful build planning when not using speed control"
+      "Tengu Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Tengu earth-binding weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -33005,7 +33210,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Tengu \u2014 misc race evolution"
+    "roleIdentity": "Awakened Tengu — misc race evolution"
   },
   {
     "id": "race_path_10409_elder_tengu",
@@ -33075,7 +33280,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Tengu \u2014 misc race evolution"
+    "roleIdentity": "Elder Tengu — misc race evolution"
   },
   {
     "id": "race_path_10410_tengu_sovereign",
@@ -33145,7 +33350,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tengu Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Tengu Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10411_origin_tengu",
@@ -33217,17 +33422,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Tengu \u2014 misc race evolution"
+    "roleIdentity": "Origin Tengu — misc race evolution"
   },
   {
     "id": "race_path_10412_tengu_bloodline",
     "excelId": 10412,
-    "name": "Tengu Bloodline",
+    "name": "Tengu Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_052_tengu",
-    "description": "Tengu Bloodline is a advanced race evolution that refines the race 052 tengu bloodline into a ashen-born form. It pushes DEX, WIS higher, specializes in anti-magic pressure, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tengu Elder Mantle is a distinct advanced race evolution for Tengu. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 8,
@@ -33274,12 +33479,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Tengu Bloodline aerial mobility",
-      "Excels at stamina cycling through healing synergy"
+      "Tengu Elder Mantle specializes in misc race evolution",
+      "Transforms Tengu into a distinct progression route with tailored growth",
+      "Tengu Bloodline aerial mobility"
     ],
     "weaknesses": [
-      "Tengu Bloodline earth-binding weakness",
-      "Requires careful build planning when not using speed control"
+      "Tengu Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Tengu Bloodline earth-binding weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -33287,7 +33494,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tengu Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Tengu Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10413_mythic_tengu",
@@ -33357,7 +33564,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Tengu \u2014 misc race evolution"
+    "roleIdentity": "Mythic Tengu — misc race evolution"
   },
   {
     "id": "race_path_10414_ancient_tengu_avatar",
@@ -33427,7 +33634,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Tengu Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Tengu Avatar — misc race evolution"
   },
   {
     "id": "race_path_10415_world_born_tengu",
@@ -33499,17 +33706,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Tengu \u2014 misc race evolution"
+    "roleIdentity": "World-Born Tengu — misc race evolution"
   },
   {
     "id": "race_path_10416_awakened_kappa",
     "excelId": 10416,
-    "name": "Awakened Kappa",
+    "name": "Kappa Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_053_kappa",
-    "description": "Awakened Kappa is a advanced race evolution that refines the race 053 kappa bloodline into a sun-forged form. It pushes WIS, DEX higher, specializes in status control, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kappa Emberhalo is a distinct advanced race evolution for Kappa. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -33556,12 +33763,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Kappa folklore tricks",
-      "Excels at bleed or poison setup through evasion windows"
+      "Kappa Emberhalo specializes in misc race evolution",
+      "Transforms Kappa into a distinct progression route with tailored growth",
+      "Awakened Kappa folklore tricks"
     ],
     "weaknesses": [
-      "Awakened Kappa ritual banishment weakness",
-      "Requires careful build planning when not using spiritual defense"
+      "Kappa Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Kappa ritual banishment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -33569,7 +33778,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Kappa \u2014 misc race evolution"
+    "roleIdentity": "Awakened Kappa — misc race evolution"
   },
   {
     "id": "race_path_10417_elder_kappa",
@@ -33639,7 +33848,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Kappa \u2014 misc race evolution"
+    "roleIdentity": "Elder Kappa — misc race evolution"
   },
   {
     "id": "race_path_10418_kappa_sovereign",
@@ -33709,7 +33918,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kappa Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Kappa Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10419_origin_kappa",
@@ -33781,17 +33990,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Kappa \u2014 misc race evolution"
+    "roleIdentity": "Origin Kappa — misc race evolution"
   },
   {
     "id": "race_path_10420_kappa_bloodline",
     "excelId": 10420,
-    "name": "Kappa Bloodline",
+    "name": "Kappa Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_053_kappa",
-    "description": "Kappa Bloodline is a advanced race evolution that refines the race 053 kappa bloodline into a storm-breathed form. It pushes WIS, DEX higher, specializes in bleed or poison setup, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kappa Astral Inheritance is a distinct advanced race evolution for Kappa. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -33838,12 +34047,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Kappa Bloodline folklore tricks",
-      "Excels at critical attacks through evasion windows"
+      "Kappa Astral Inheritance specializes in misc race evolution",
+      "Transforms Kappa into a distinct progression route with tailored growth",
+      "Kappa Bloodline folklore tricks"
     ],
     "weaknesses": [
-      "Kappa Bloodline ritual banishment weakness",
-      "Requires careful build planning when not using spiritual defense"
+      "Kappa Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Kappa Bloodline ritual banishment weakness"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -33851,7 +34062,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kappa Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Kappa Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10421_mythic_kappa",
@@ -33921,7 +34132,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Kappa \u2014 misc race evolution"
+    "roleIdentity": "Mythic Kappa — misc race evolution"
   },
   {
     "id": "race_path_10422_ancient_kappa_avatar",
@@ -33991,7 +34202,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Kappa Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Kappa Avatar — misc race evolution"
   },
   {
     "id": "race_path_10423_world_born_kappa",
@@ -34063,17 +34274,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Kappa \u2014 misc race evolution"
+    "roleIdentity": "World-Born Kappa — misc race evolution"
   },
   {
     "id": "race_path_10424_awakened_yuki_onna",
     "excelId": 10424,
-    "name": "Awakened Yuki-Onna",
+    "name": "Yuki-Onna Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_054_yuki_onna",
-    "description": "Awakened Yuki-Onna is a advanced race evolution that refines the race 054 yuki onna bloodline into a mirror-souled form. It pushes WIS, STR higher, specializes in hybrid class routing, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yuki-Onna Ashenwake is a distinct advanced race evolution for Yuki-Onna. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -34120,12 +34331,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Yuki-Onna-only sun-forged spiritual defense",
-      "Excels at rare path hunting through weapon damage"
+      "Yuki-Onna Ashenwake specializes in martial artist",
+      "Transforms Yuki-Onna into a distinct progression route with tailored growth",
+      "Awakened Yuki-Onna-only sun-forged spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Yuki-Onna struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Yuki-Onna Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Yuki-Onna struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -34133,7 +34346,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "Awakened Yuki-Onna — martial artist"
   },
   {
     "id": "race_path_10425_elder_yuki_onna",
@@ -34203,7 +34416,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "Elder Yuki-Onna — martial artist"
   },
   {
     "id": "race_path_10426_yuki_onna_sovereign",
@@ -34273,7 +34486,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yuki-Onna Sovereign \u2014 martial artist"
+    "roleIdentity": "Yuki-Onna Sovereign — martial artist"
   },
   {
     "id": "race_path_10427_origin_yuki_onna",
@@ -34345,17 +34558,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "Origin Yuki-Onna — martial artist"
   },
   {
     "id": "race_path_10428_yuki_onna_bloodline",
     "excelId": 10428,
-    "name": "Yuki-Onna Bloodline",
+    "name": "Yuki-Onna Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_054_yuki_onna",
-    "description": "Yuki-Onna Bloodline is a advanced race evolution that refines the race 054 yuki onna bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in mana economy, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yuki-Onna Celestial Pattern is a distinct advanced race evolution for Yuki-Onna. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -34402,12 +34615,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Yuki-Onna Bloodline-only void-touched spiritual defense",
-      "Excels at bleed or poison setup through weapon damage"
+      "Yuki-Onna Celestial Pattern specializes in martial artist",
+      "Transforms Yuki-Onna into a distinct progression route with tailored growth",
+      "Yuki-Onna Bloodline-only void-touched spiritual defense"
     ],
     "weaknesses": [
-      "Yuki-Onna Bloodline struggles when enemies exploit overreliance on signature stats",
-      "Requires careful build planning when not using spiritual defense"
+      "Yuki-Onna Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Yuki-Onna Bloodline struggles when enemies exploit overreliance on signature stats"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -34415,7 +34630,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yuki-Onna Bloodline \u2014 martial artist"
+    "roleIdentity": "Yuki-Onna Bloodline — martial artist"
   },
   {
     "id": "race_path_10429_mythic_yuki_onna",
@@ -34485,7 +34700,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "Mythic Yuki-Onna — martial artist"
   },
   {
     "id": "race_path_10430_ancient_yuki_onna_avatar",
@@ -34555,7 +34770,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Yuki-Onna Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Yuki-Onna Avatar — martial artist"
   },
   {
     "id": "race_path_10431_world_born_yuki_onna",
@@ -34627,17 +34842,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Yuki-Onna \u2014 martial artist"
+    "roleIdentity": "World-Born Yuki-Onna — martial artist"
   },
   {
     "id": "race_path_10432_awakened_nekomata_bakeneko",
     "excelId": 10432,
-    "name": "Awakened Nekomata / Bakeneko",
+    "name": "Nekomata / Bakeneko Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_055_nekomata_bakeneko",
-    "description": "Awakened Nekomata / Bakeneko is a advanced race evolution that refines the race 055 nekomata bakeneko bloodline into a star-threaded form. It pushes WIS, STR higher, specializes in stamina cycling, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Nekomata / Bakeneko Dawnmarked is a distinct advanced race evolution for Nekomata / Bakeneko. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -34684,12 +34899,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Nekomata / Bakeneko-only sun-forged spiritual defense",
-      "Excels at event survival through weapon damage"
+      "Nekomata / Bakeneko Dawnmarked specializes in misc race evolution",
+      "Transforms Nekomata / Bakeneko into a distinct progression route with tailored growth",
+      "Awakened Nekomata / Bakeneko-only sun-forged spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Nekomata / Bakeneko struggles when enemies exploit predictable weakness checks",
-      "Requires careful build planning when not using spiritual defense"
+      "Nekomata / Bakeneko Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Nekomata / Bakeneko struggles when enemies exploit predictable weakness checks"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -34697,7 +34914,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Nekomata / Bakeneko \u2014 misc race evolution"
+    "roleIdentity": "Awakened Nekomata / Bakeneko — misc race evolution"
   },
   {
     "id": "race_path_10433_elder_nekomata_bakeneko",
@@ -34767,7 +34984,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Nekomata / Bakeneko \u2014 misc race evolution"
+    "roleIdentity": "Elder Nekomata / Bakeneko — misc race evolution"
   },
   {
     "id": "race_path_10434_nekomata_bakeneko_sovereign",
@@ -34837,7 +35054,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Nekomata / Bakeneko Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Nekomata / Bakeneko Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10435_origin_nekomata_bakeneko",
@@ -34909,17 +35126,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Nekomata / Bakeneko \u2014 misc race evolution"
+    "roleIdentity": "Origin Nekomata / Bakeneko — misc race evolution"
   },
   {
     "id": "race_path_10436_nekomata_bakeneko_bloodline",
     "excelId": 10436,
-    "name": "Nekomata / Bakeneko Bloodline",
+    "name": "Nekomata / Bakeneko Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_055_nekomata_bakeneko",
-    "description": "Nekomata / Bakeneko Bloodline is a advanced race evolution that refines the race 055 nekomata bakeneko bloodline into a moon-marked form. It pushes WIS, STR higher, specializes in boss endurance, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Nekomata / Bakeneko Elder Mantle is a distinct advanced race evolution for Nekomata / Bakeneko. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -34966,12 +35183,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Nekomata / Bakeneko Bloodline-only sun-forged spiritual defense",
-      "Excels at party support through weapon damage"
+      "Nekomata / Bakeneko Elder Mantle specializes in misc race evolution",
+      "Transforms Nekomata / Bakeneko into a distinct progression route with tailored growth",
+      "Nekomata / Bakeneko Bloodline-only sun-forged spiritual defense"
     ],
     "weaknesses": [
-      "Nekomata / Bakeneko Bloodline struggles when enemies exploit expensive equipment demands",
-      "Requires careful build planning when not using spiritual defense"
+      "Nekomata / Bakeneko Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Nekomata / Bakeneko Bloodline struggles when enemies exploit expensive equipment demands"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -34979,7 +35198,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Nekomata / Bakeneko Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Nekomata / Bakeneko Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10437_mythic_nekomata_bakeneko",
@@ -35049,7 +35268,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Nekomata / Bakeneko \u2014 misc race evolution"
+    "roleIdentity": "Mythic Nekomata / Bakeneko — misc race evolution"
   },
   {
     "id": "race_path_10438_ancient_nekomata_bakeneko_avatar",
@@ -35119,7 +35338,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Nekomata / Bakeneko Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Nekomata / Bakeneko Avatar — misc race evolution"
   },
   {
     "id": "race_path_10439_world_born_nekomata_bakeneko",
@@ -35191,17 +35410,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Nekomata / Bakeneko \u2014 misc race evolution"
+    "roleIdentity": "World-Born Nekomata / Bakeneko — misc race evolution"
   },
   {
     "id": "race_path_10440_awakened_tsukumogami",
     "excelId": 10440,
-    "name": "Awakened Tsukumogami",
+    "name": "Tsukumogami Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_056_tsukumogami",
-    "description": "Awakened Tsukumogami is a advanced race evolution that refines the race 056 tsukumogami bloodline into a void-touched form. It pushes WIS, STR higher, specializes in status control, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tsukumogami Emberhalo is a distinct advanced race evolution for Tsukumogami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -35248,12 +35467,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Tsukumogami-only mirror-souled spiritual defense",
-      "Excels at burst windows through weapon damage"
+      "Tsukumogami Emberhalo specializes in misc race evolution",
+      "Transforms Tsukumogami into a distinct progression route with tailored growth",
+      "Awakened Tsukumogami-only mirror-souled spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Tsukumogami struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Tsukumogami Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Tsukumogami struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -35261,7 +35482,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Tsukumogami \u2014 misc race evolution"
+    "roleIdentity": "Awakened Tsukumogami — misc race evolution"
   },
   {
     "id": "race_path_10441_elder_tsukumogami",
@@ -35331,7 +35552,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Tsukumogami \u2014 misc race evolution"
+    "roleIdentity": "Elder Tsukumogami — misc race evolution"
   },
   {
     "id": "race_path_10442_tsukumogami_sovereign",
@@ -35401,7 +35622,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tsukumogami Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Tsukumogami Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10443_origin_tsukumogami",
@@ -35473,17 +35694,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Tsukumogami \u2014 misc race evolution"
+    "roleIdentity": "Origin Tsukumogami — misc race evolution"
   },
   {
     "id": "race_path_10444_tsukumogami_bloodline",
     "excelId": 10444,
-    "name": "Tsukumogami Bloodline",
+    "name": "Tsukumogami Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_056_tsukumogami",
-    "description": "Tsukumogami Bloodline is a advanced race evolution that refines the race 056 tsukumogami bloodline into a ashen-born form. It pushes WIS, STR higher, specializes in defensive play, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Tsukumogami Astral Inheritance is a distinct advanced race evolution for Tsukumogami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -35530,12 +35751,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Tsukumogami Bloodline-only star-threaded spiritual defense",
-      "Excels at stamina cycling through weapon damage"
+      "Tsukumogami Astral Inheritance specializes in misc race evolution",
+      "Transforms Tsukumogami into a distinct progression route with tailored growth",
+      "Tsukumogami Bloodline-only star-threaded spiritual defense"
     ],
     "weaknesses": [
-      "Tsukumogami Bloodline struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Tsukumogami Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Tsukumogami Bloodline struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -35543,7 +35766,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Tsukumogami Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Tsukumogami Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10445_mythic_tsukumogami",
@@ -35613,7 +35836,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Tsukumogami \u2014 misc race evolution"
+    "roleIdentity": "Mythic Tsukumogami — misc race evolution"
   },
   {
     "id": "race_path_10446_ancient_tsukumogami_avatar",
@@ -35683,7 +35906,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Tsukumogami Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Tsukumogami Avatar — misc race evolution"
   },
   {
     "id": "race_path_10447_world_born_tsukumogami",
@@ -35755,17 +35978,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Tsukumogami \u2014 misc race evolution"
+    "roleIdentity": "World-Born Tsukumogami — misc race evolution"
   },
   {
     "id": "race_path_10448_awakened_shikigami",
     "excelId": 10448,
-    "name": "Awakened Shikigami",
+    "name": "Shikigami Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_057_shikigami",
-    "description": "Awakened Shikigami is a advanced race evolution that refines the race 057 shikigami bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in burst windows, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Shikigami Ashenwake is a distinct advanced race evolution for Shikigami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -35812,12 +36035,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Shikigami-only thorn-bound spiritual defense",
-      "Excels at resource recovery through weapon damage"
+      "Shikigami Ashenwake specializes in martial artist",
+      "Transforms Shikigami into a distinct progression route with tailored growth",
+      "Awakened Shikigami-only thorn-bound spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Shikigami struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Shikigami Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Shikigami struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -35825,7 +36050,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Shikigami \u2014 martial artist"
+    "roleIdentity": "Awakened Shikigami — martial artist"
   },
   {
     "id": "race_path_10449_elder_shikigami",
@@ -35895,7 +36120,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Shikigami \u2014 martial artist"
+    "roleIdentity": "Elder Shikigami — martial artist"
   },
   {
     "id": "race_path_10450_shikigami_sovereign",
@@ -35965,7 +36190,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Shikigami Sovereign \u2014 martial artist"
+    "roleIdentity": "Shikigami Sovereign — martial artist"
   },
   {
     "id": "race_path_10451_origin_shikigami",
@@ -36037,17 +36262,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Shikigami \u2014 martial artist"
+    "roleIdentity": "Origin Shikigami — martial artist"
   },
   {
     "id": "race_path_10452_shikigami_bloodline",
     "excelId": 10452,
-    "name": "Shikigami Bloodline",
+    "name": "Shikigami Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_057_shikigami",
-    "description": "Shikigami Bloodline is a advanced race evolution that refines the race 057 shikigami bloodline into a ashen-born form. It pushes WIS, STR higher, specializes in resource recovery, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Shikigami Celestial Pattern is a distinct advanced race evolution for Shikigami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -36094,12 +36319,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Shikigami Bloodline-only ashen-born spiritual defense",
-      "Excels at mana economy through weapon damage"
+      "Shikigami Celestial Pattern specializes in martial artist",
+      "Transforms Shikigami into a distinct progression route with tailored growth",
+      "Shikigami Bloodline-only ashen-born spiritual defense"
     ],
     "weaknesses": [
-      "Shikigami Bloodline struggles when enemies exploit overreliance on signature stats",
-      "Requires careful build planning when not using spiritual defense"
+      "Shikigami Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Shikigami Bloodline struggles when enemies exploit overreliance on signature stats"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -36107,7 +36334,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Shikigami Bloodline \u2014 martial artist"
+    "roleIdentity": "Shikigami Bloodline — martial artist"
   },
   {
     "id": "race_path_10453_mythic_shikigami",
@@ -36177,7 +36404,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Shikigami \u2014 martial artist"
+    "roleIdentity": "Mythic Shikigami — martial artist"
   },
   {
     "id": "race_path_10454_ancient_shikigami_avatar",
@@ -36247,7 +36474,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Shikigami Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Shikigami Avatar — martial artist"
   },
   {
     "id": "race_path_10455_world_born_shikigami",
@@ -36319,17 +36546,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Shikigami \u2014 martial artist"
+    "roleIdentity": "World-Born Shikigami — martial artist"
   },
   {
     "id": "race_path_10456_awakened_kami",
     "excelId": 10456,
-    "name": "Awakened Kami",
+    "name": "Kami Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_058_kami",
-    "description": "Awakened Kami is a advanced race evolution that refines the race 058 kami bloodline into a storm-breathed form. It pushes WIS, STR higher, specializes in anti-magic pressure, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kami Dawnmarked is a distinct advanced race evolution for Kami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -36376,12 +36603,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Kami-only void-touched spiritual defense",
-      "Excels at boss endurance through weapon damage"
+      "Kami Dawnmarked specializes in misc race evolution",
+      "Transforms Kami into a distinct progression route with tailored growth",
+      "Awakened Kami-only void-touched spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Kami struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Kami Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Kami struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -36389,7 +36618,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Kami \u2014 misc race evolution"
+    "roleIdentity": "Awakened Kami — misc race evolution"
   },
   {
     "id": "race_path_10457_elder_kami",
@@ -36459,7 +36688,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Kami \u2014 misc race evolution"
+    "roleIdentity": "Elder Kami — misc race evolution"
   },
   {
     "id": "race_path_10458_kami_sovereign",
@@ -36529,7 +36758,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kami Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Kami Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10459_origin_kami",
@@ -36601,17 +36830,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Kami \u2014 misc race evolution"
+    "roleIdentity": "Origin Kami — misc race evolution"
   },
   {
     "id": "race_path_10460_kami_bloodline",
     "excelId": 10460,
-    "name": "Kami Bloodline",
+    "name": "Kami Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_058_kami",
-    "description": "Kami Bloodline is a advanced race evolution that refines the race 058 kami bloodline into a star-threaded form. It pushes WIS, STR higher, specializes in opening-turn tempo, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Kami Elder Mantle is a distinct advanced race evolution for Kami. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -36658,12 +36887,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Kami Bloodline-only moon-marked spiritual defense",
-      "Excels at defensive play through weapon damage"
+      "Kami Elder Mantle specializes in misc race evolution",
+      "Transforms Kami into a distinct progression route with tailored growth",
+      "Kami Bloodline-only moon-marked spiritual defense"
     ],
     "weaknesses": [
-      "Kami Bloodline struggles when enemies exploit low recovery after burst turns",
-      "Requires careful build planning when not using spiritual defense"
+      "Kami Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Kami Bloodline struggles when enemies exploit low recovery after burst turns"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -36671,7 +36902,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Kami Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Kami Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10461_mythic_kami",
@@ -36741,7 +36972,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Kami \u2014 misc race evolution"
+    "roleIdentity": "Mythic Kami — misc race evolution"
   },
   {
     "id": "race_path_10462_ancient_kami_avatar",
@@ -36811,7 +37042,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Kami Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Kami Avatar — misc race evolution"
   },
   {
     "id": "race_path_10463_world_born_kami",
@@ -36883,17 +37114,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Kami \u2014 misc race evolution"
+    "roleIdentity": "World-Born Kami — misc race evolution"
   },
   {
     "id": "race_path_10464_awakened_ayakashi",
     "excelId": 10464,
-    "name": "Awakened Ayakashi",
+    "name": "Ayakashi Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_059_ayakashi",
-    "description": "Awakened Ayakashi is a advanced race evolution that refines the race 059 ayakashi bloodline into a void-touched form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Ayakashi Emberhalo is a distinct advanced race evolution for Ayakashi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -36940,12 +37171,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Ayakashi-only mist-wrapped spiritual defense",
-      "Excels at stamina cycling through weapon damage"
+      "Ayakashi Emberhalo specializes in misc race evolution",
+      "Transforms Ayakashi into a distinct progression route with tailored growth",
+      "Awakened Ayakashi-only mist-wrapped spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Ayakashi struggles when enemies exploit low recovery after burst turns",
-      "Requires careful build planning when not using spiritual defense"
+      "Ayakashi Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Ayakashi struggles when enemies exploit low recovery after burst turns"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -36953,7 +37186,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Ayakashi \u2014 misc race evolution"
+    "roleIdentity": "Awakened Ayakashi — misc race evolution"
   },
   {
     "id": "race_path_10465_elder_ayakashi",
@@ -37023,7 +37256,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Ayakashi \u2014 misc race evolution"
+    "roleIdentity": "Elder Ayakashi — misc race evolution"
   },
   {
     "id": "race_path_10466_ayakashi_sovereign",
@@ -37093,7 +37326,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ayakashi Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Ayakashi Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10467_origin_ayakashi",
@@ -37165,17 +37398,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Ayakashi \u2014 misc race evolution"
+    "roleIdentity": "Origin Ayakashi — misc race evolution"
   },
   {
     "id": "race_path_10468_ayakashi_bloodline",
     "excelId": 10468,
-    "name": "Ayakashi Bloodline",
+    "name": "Ayakashi Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_059_ayakashi",
-    "description": "Ayakashi Bloodline is a advanced race evolution that refines the race 059 ayakashi bloodline into a star-threaded form. It pushes WIS, STR higher, specializes in boss endurance, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Ayakashi Astral Inheritance is a distinct advanced race evolution for Ayakashi. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -37222,12 +37455,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Ayakashi Bloodline-only ember-crowned spiritual defense",
-      "Excels at anti-magic pressure through weapon damage"
+      "Ayakashi Astral Inheritance specializes in misc race evolution",
+      "Transforms Ayakashi into a distinct progression route with tailored growth",
+      "Ayakashi Bloodline-only ember-crowned spiritual defense"
     ],
     "weaknesses": [
-      "Ayakashi Bloodline struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Ayakashi Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Ayakashi Bloodline struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -37235,7 +37470,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ayakashi Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Ayakashi Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10469_mythic_ayakashi",
@@ -37305,7 +37540,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Ayakashi \u2014 misc race evolution"
+    "roleIdentity": "Mythic Ayakashi — misc race evolution"
   },
   {
     "id": "race_path_10470_ancient_ayakashi_avatar",
@@ -37375,7 +37610,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Ayakashi Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Ayakashi Avatar — misc race evolution"
   },
   {
     "id": "race_path_10471_world_born_ayakashi",
@@ -37447,17 +37682,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Ayakashi \u2014 misc race evolution"
+    "roleIdentity": "World-Born Ayakashi — misc race evolution"
   },
   {
     "id": "race_path_10472_awakened_dragon",
     "excelId": 10472,
-    "name": "Awakened Dragon",
+    "name": "Dragon Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_060_dragons",
-    "description": "Awakened Dragon is a advanced race evolution that refines the race 060 dragons bloodline into a wild-oathed form. It pushes CON, STR higher, specializes in party support, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragon Ashenwake is a distinct advanced race evolution for Dragon. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -37504,12 +37739,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dragon scaled defense",
-      "Excels at critical attacks through weapon damage"
+      "Dragon Ashenwake specializes in misc race evolution",
+      "Transforms Dragon into a distinct progression route with tailored growth",
+      "Awakened Dragon scaled defense"
     ],
     "weaknesses": [
-      "Awakened Dragon cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragon Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dragon cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -37517,7 +37754,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dragon \u2014 misc race evolution"
+    "roleIdentity": "Awakened Dragon — misc race evolution"
   },
   {
     "id": "race_path_10473_elder_dragon",
@@ -37587,7 +37824,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dragon \u2014 misc race evolution"
+    "roleIdentity": "Elder Dragon — misc race evolution"
   },
   {
     "id": "race_path_10474_dragon_sovereign",
@@ -37657,7 +37894,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Dragon Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10475_origin_dragon",
@@ -37729,17 +37966,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dragon \u2014 misc race evolution"
+    "roleIdentity": "Origin Dragon — misc race evolution"
   },
   {
     "id": "race_path_10476_dragon_bloodline",
     "excelId": 10476,
-    "name": "Dragon Bloodline",
+    "name": "Dragon Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_060_dragons",
-    "description": "Dragon Bloodline is a advanced race evolution that refines the race 060 dragons bloodline into a mirror-souled form. It pushes CON, STR higher, specializes in stamina cycling, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragon Celestial Pattern is a distinct advanced race evolution for Dragon. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -37786,12 +38023,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dragon Bloodline scaled defense",
-      "Excels at status control through weapon damage"
+      "Dragon Celestial Pattern specializes in misc race evolution",
+      "Transforms Dragon into a distinct progression route with tailored growth",
+      "Dragon Bloodline scaled defense"
     ],
     "weaknesses": [
-      "Dragon Bloodline cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragon Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dragon Bloodline cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -37799,7 +38038,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragon Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Dragon Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10477_mythic_dragon",
@@ -37869,7 +38108,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dragon \u2014 misc race evolution"
+    "roleIdentity": "Mythic Dragon — misc race evolution"
   },
   {
     "id": "race_path_10478_ancient_dragon_avatar",
@@ -37939,7 +38178,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dragon Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Dragon Avatar — misc race evolution"
   },
   {
     "id": "race_path_10479_world_born_dragon",
@@ -38011,17 +38250,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dragon \u2014 misc race evolution"
+    "roleIdentity": "World-Born Dragon — misc race evolution"
   },
   {
     "id": "race_path_10480_awakened_dragonkin",
     "excelId": 10480,
-    "name": "Awakened Dragonkin",
+    "name": "Dragonkin Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_061_dragonkin",
-    "description": "Awakened Dragonkin is a advanced race evolution that refines the race 061 dragonkin bloodline into a ember-crowned form. It pushes CON, STR higher, specializes in status control, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragonkin Dawnmarked is a distinct advanced race evolution for Dragonkin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -38068,12 +38307,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Dragonkin scaled defense",
-      "Excels at defensive play through weapon damage"
+      "Dragonkin Dawnmarked specializes in martial artist",
+      "Transforms Dragonkin into a distinct progression route with tailored growth",
+      "Awakened Dragonkin scaled defense"
     ],
     "weaknesses": [
-      "Awakened Dragonkin cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragonkin Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Dragonkin cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -38081,7 +38322,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Dragonkin \u2014 martial artist"
+    "roleIdentity": "Awakened Dragonkin — martial artist"
   },
   {
     "id": "race_path_10481_elder_dragonkin",
@@ -38151,7 +38392,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Dragonkin \u2014 martial artist"
+    "roleIdentity": "Elder Dragonkin — martial artist"
   },
   {
     "id": "race_path_10482_dragonkin_sovereign",
@@ -38221,7 +38462,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonkin Sovereign \u2014 martial artist"
+    "roleIdentity": "Dragonkin Sovereign — martial artist"
   },
   {
     "id": "race_path_10483_origin_dragonkin",
@@ -38293,17 +38534,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Dragonkin \u2014 martial artist"
+    "roleIdentity": "Origin Dragonkin — martial artist"
   },
   {
     "id": "race_path_10484_dragonkin_bloodline",
     "excelId": 10484,
-    "name": "Dragonkin Bloodline",
+    "name": "Dragonkin Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_061_dragonkin",
-    "description": "Dragonkin Bloodline is a advanced race evolution that refines the race 061 dragonkin bloodline into a storm-breathed form. It pushes CON, STR higher, specializes in stamina cycling, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Dragonkin Elder Mantle is a distinct advanced race evolution for Dragonkin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 5,
       "dex": 3,
@@ -38350,12 +38591,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Dragonkin Bloodline scaled defense",
-      "Excels at party support through weapon damage"
+      "Dragonkin Elder Mantle specializes in martial artist",
+      "Transforms Dragonkin into a distinct progression route with tailored growth",
+      "Dragonkin Bloodline scaled defense"
     ],
     "weaknesses": [
-      "Dragonkin Bloodline cold or lightning counters",
-      "Requires careful build planning when not using survival tempo"
+      "Dragonkin Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Dragonkin Bloodline cold or lightning counters"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -38363,7 +38606,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Dragonkin Bloodline \u2014 martial artist"
+    "roleIdentity": "Dragonkin Bloodline — martial artist"
   },
   {
     "id": "race_path_10485_mythic_dragonkin",
@@ -38433,7 +38676,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Dragonkin \u2014 martial artist"
+    "roleIdentity": "Mythic Dragonkin — martial artist"
   },
   {
     "id": "race_path_10486_ancient_dragonkin_avatar",
@@ -38503,7 +38746,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Dragonkin Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Dragonkin Avatar — martial artist"
   },
   {
     "id": "race_path_10487_world_born_dragonkin",
@@ -38575,17 +38818,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Dragonkin \u2014 martial artist"
+    "roleIdentity": "World-Born Dragonkin — martial artist"
   },
   {
     "id": "race_path_10488_awakened_celestial",
     "excelId": 10488,
-    "name": "Awakened Celestial",
+    "name": "Celestial Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "celestian",
-    "description": "Awakened Celestial is a advanced race evolution that refines the celestian bloodline into a ember-crowned form. It pushes WIS, CHA higher, specializes in rare path hunting, and pays for that power through awkward item scaling. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Celestial Emberhalo is a distinct advanced race evolution for Celestial. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -38632,12 +38875,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Celestial radiant healing",
-      "Excels at defensive play through social/contract effects"
+      "Celestial Emberhalo specializes in misc race evolution",
+      "Transforms Celestial into a distinct progression route with tailored growth",
+      "Awakened Celestial radiant healing"
     ],
     "weaknesses": [
-      "Awakened Celestial dark-element vulnerability",
-      "Requires careful build planning when not using spiritual defense"
+      "Celestial Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Celestial dark-element vulnerability"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -38645,7 +38890,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Celestial \u2014 misc race evolution"
+    "roleIdentity": "Awakened Celestial — misc race evolution"
   },
   {
     "id": "race_path_10489_elder_celestial",
@@ -38715,7 +38960,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Celestial \u2014 misc race evolution"
+    "roleIdentity": "Elder Celestial — misc race evolution"
   },
   {
     "id": "race_path_10490_celestial_sovereign",
@@ -38785,7 +39030,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Celestial Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Celestial Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10491_origin_celestial",
@@ -38857,17 +39102,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Celestial \u2014 misc race evolution"
+    "roleIdentity": "Origin Celestial — misc race evolution"
   },
   {
     "id": "race_path_10492_celestial_bloodline",
     "excelId": 10492,
-    "name": "Celestial Bloodline",
+    "name": "Celestial Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "celestian",
-    "description": "Celestial Bloodline is a advanced race evolution that refines the celestian bloodline into a ashen-born form. It pushes WIS, CHA higher, specializes in boss endurance, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Celestial Astral Inheritance is a distinct advanced race evolution for Celestial. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -38914,12 +39159,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Celestial Bloodline radiant healing",
-      "Excels at bleed or poison setup through social/contract effects"
+      "Celestial Astral Inheritance specializes in misc race evolution",
+      "Transforms Celestial into a distinct progression route with tailored growth",
+      "Celestial Bloodline radiant healing"
     ],
     "weaknesses": [
-      "Celestial Bloodline dark-element vulnerability",
-      "Requires careful build planning when not using spiritual defense"
+      "Celestial Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Celestial Bloodline dark-element vulnerability"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -38927,7 +39174,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Celestial Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Celestial Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10493_mythic_celestial",
@@ -38997,7 +39244,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Celestial \u2014 misc race evolution"
+    "roleIdentity": "Mythic Celestial — misc race evolution"
   },
   {
     "id": "race_path_10494_ancient_celestial_avatar",
@@ -39067,7 +39314,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Celestial Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Celestial Avatar — misc race evolution"
   },
   {
     "id": "race_path_10495_world_born_celestial",
@@ -39139,17 +39386,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Celestial \u2014 misc race evolution"
+    "roleIdentity": "World-Born Celestial — misc race evolution"
   },
   {
     "id": "race_path_10496_awakened_immortal",
     "excelId": 10496,
-    "name": "Awakened Immortal",
+    "name": "Immortal Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_063_immortals",
-    "description": "Awakened Immortal is a advanced race evolution that refines the race 063 immortals bloodline into a moon-marked form. It pushes WIS, INT higher, specializes in bleed or poison setup, and pays for that power through narrow counter-elements. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Immortal Ashenwake is a distinct advanced race evolution for Immortal. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 4,
@@ -39196,12 +39443,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Immortal inner energy control",
-      "Excels at bleed or poison setup through mana burst"
+      "Immortal Ashenwake specializes in misc race evolution",
+      "Transforms Immortal into a distinct progression route with tailored growth",
+      "Awakened Immortal inner energy control"
     ],
     "weaknesses": [
-      "Awakened Immortal slow early growth",
-      "Requires careful build planning when not using spiritual defense"
+      "Immortal Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Immortal slow early growth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -39209,7 +39458,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Immortal \u2014 misc race evolution"
+    "roleIdentity": "Awakened Immortal — misc race evolution"
   },
   {
     "id": "race_path_10497_elder_immortal",
@@ -39279,7 +39528,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Immortal \u2014 misc race evolution"
+    "roleIdentity": "Elder Immortal — misc race evolution"
   },
   {
     "id": "race_path_10498_immortal_sovereign",
@@ -39349,7 +39598,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Immortal Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Immortal Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10499_origin_immortal",
@@ -39421,17 +39670,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Immortal \u2014 misc race evolution"
+    "roleIdentity": "Origin Immortal — misc race evolution"
   },
   {
     "id": "race_path_10500_immortal_bloodline",
     "excelId": 10500,
-    "name": "Immortal Bloodline",
+    "name": "Immortal Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_063_immortals",
-    "description": "Immortal Bloodline is a advanced race evolution that refines the race 063 immortals bloodline into a ashen-born form. It pushes WIS, INT higher, specializes in resistance stacking, and pays for that power through slow early class unlocks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Immortal Celestial Pattern is a distinct advanced race evolution for Immortal. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 4,
@@ -39478,12 +39727,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Immortal Bloodline inner energy control",
-      "Excels at boss endurance through mana burst"
+      "Immortal Celestial Pattern specializes in misc race evolution",
+      "Transforms Immortal into a distinct progression route with tailored growth",
+      "Immortal Bloodline inner energy control"
     ],
     "weaknesses": [
-      "Immortal Bloodline slow early growth",
-      "Requires careful build planning when not using spiritual defense"
+      "Immortal Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Immortal Bloodline slow early growth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -39491,7 +39742,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Immortal Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Immortal Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10501_mythic_immortal",
@@ -39561,7 +39812,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Immortal \u2014 misc race evolution"
+    "roleIdentity": "Mythic Immortal — misc race evolution"
   },
   {
     "id": "race_path_10502_ancient_immortal_avatar",
@@ -39631,7 +39882,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Immortal Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Immortal Avatar — misc race evolution"
   },
   {
     "id": "race_path_10503_world_born_immortal",
@@ -39703,17 +39954,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Immortal \u2014 misc race evolution"
+    "roleIdentity": "World-Born Immortal — misc race evolution"
   },
   {
     "id": "race_path_10504_awakened_asura",
     "excelId": 10504,
-    "name": "Awakened Asura",
+    "name": "Asura Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_064_asura",
-    "description": "Awakened Asura is a advanced race evolution that refines the race 064 asura bloodline into a iron-hearted form. It pushes WIS, STR higher, specializes in resource recovery, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Asura Dawnmarked is a distinct advanced race evolution for Asura. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -39760,12 +40011,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Asura-only storm-breathed spiritual defense",
-      "Excels at hybrid class routing through weapon damage"
+      "Asura Dawnmarked specializes in misc race evolution",
+      "Transforms Asura into a distinct progression route with tailored growth",
+      "Awakened Asura-only storm-breathed spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Asura struggles when enemies exploit narrow counter-elements",
-      "Requires careful build planning when not using spiritual defense"
+      "Asura Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Asura struggles when enemies exploit narrow counter-elements"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -39773,7 +40026,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Asura \u2014 misc race evolution"
+    "roleIdentity": "Awakened Asura — misc race evolution"
   },
   {
     "id": "race_path_10505_elder_asura",
@@ -39843,7 +40096,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Asura \u2014 misc race evolution"
+    "roleIdentity": "Elder Asura — misc race evolution"
   },
   {
     "id": "race_path_10506_asura_sovereign",
@@ -39913,7 +40166,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Asura Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Asura Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10507_origin_asura",
@@ -39985,17 +40238,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Asura \u2014 misc race evolution"
+    "roleIdentity": "Origin Asura — misc race evolution"
   },
   {
     "id": "race_path_10508_asura_bloodline",
     "excelId": 10508,
-    "name": "Asura Bloodline",
+    "name": "Asura Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_064_asura",
-    "description": "Asura Bloodline is a advanced race evolution that refines the race 064 asura bloodline into a thorn-bound form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Asura Elder Mantle is a distinct advanced race evolution for Asura. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -40042,12 +40295,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Asura Bloodline-only ember-crowned spiritual defense",
-      "Excels at opening-turn tempo through weapon damage"
+      "Asura Elder Mantle specializes in misc race evolution",
+      "Transforms Asura into a distinct progression route with tailored growth",
+      "Asura Bloodline-only ember-crowned spiritual defense"
     ],
     "weaknesses": [
-      "Asura Bloodline struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Asura Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Asura Bloodline struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -40055,7 +40310,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Asura Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Asura Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10509_mythic_asura",
@@ -40125,7 +40380,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Asura \u2014 misc race evolution"
+    "roleIdentity": "Mythic Asura — misc race evolution"
   },
   {
     "id": "race_path_10510_ancient_asura_avatar",
@@ -40195,7 +40450,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Asura Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Asura Avatar — misc race evolution"
   },
   {
     "id": "race_path_10511_world_born_asura",
@@ -40267,17 +40522,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Asura \u2014 misc race evolution"
+    "roleIdentity": "World-Born Asura — misc race evolution"
   },
   {
     "id": "race_path_10512_awakened_rakshasa",
     "excelId": 10512,
-    "name": "Awakened Rakshasa",
+    "name": "Rakshasa Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_065_rakshasa",
-    "description": "Awakened Rakshasa is a advanced race evolution that refines the race 065 rakshasa bloodline into a jade-boned form. It pushes WIS, STR higher, specializes in bleed or poison setup, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Rakshasa Emberhalo is a distinct advanced race evolution for Rakshasa. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -40324,12 +40579,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Rakshasa-only thorn-bound spiritual defense",
-      "Excels at critical attacks through weapon damage"
+      "Rakshasa Emberhalo specializes in misc race evolution",
+      "Transforms Rakshasa into a distinct progression route with tailored growth",
+      "Awakened Rakshasa-only thorn-bound spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Rakshasa struggles when enemies exploit fragile morale against its counter element",
-      "Requires careful build planning when not using spiritual defense"
+      "Rakshasa Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Rakshasa struggles when enemies exploit fragile morale against its counter element"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -40337,7 +40594,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Rakshasa \u2014 misc race evolution"
+    "roleIdentity": "Awakened Rakshasa — misc race evolution"
   },
   {
     "id": "race_path_10513_elder_rakshasa",
@@ -40407,7 +40664,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Rakshasa \u2014 misc race evolution"
+    "roleIdentity": "Elder Rakshasa — misc race evolution"
   },
   {
     "id": "race_path_10514_rakshasa_sovereign",
@@ -40477,7 +40734,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rakshasa Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Rakshasa Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10515_origin_rakshasa",
@@ -40549,17 +40806,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Rakshasa \u2014 misc race evolution"
+    "roleIdentity": "Origin Rakshasa — misc race evolution"
   },
   {
     "id": "race_path_10516_rakshasa_bloodline",
     "excelId": 10516,
-    "name": "Rakshasa Bloodline",
+    "name": "Rakshasa Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_065_rakshasa",
-    "description": "Rakshasa Bloodline is a advanced race evolution that refines the race 065 rakshasa bloodline into a crystal-cored form. It pushes WIS, STR higher, specializes in resistance stacking, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Rakshasa Astral Inheritance is a distinct advanced race evolution for Rakshasa. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -40606,12 +40863,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Rakshasa Bloodline-only star-threaded spiritual defense",
-      "Excels at resistance stacking through weapon damage"
+      "Rakshasa Astral Inheritance specializes in misc race evolution",
+      "Transforms Rakshasa into a distinct progression route with tailored growth",
+      "Rakshasa Bloodline-only star-threaded spiritual defense"
     ],
     "weaknesses": [
-      "Rakshasa Bloodline struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Rakshasa Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Rakshasa Bloodline struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -40619,7 +40878,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Rakshasa Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Rakshasa Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10517_mythic_rakshasa",
@@ -40689,7 +40948,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Rakshasa \u2014 misc race evolution"
+    "roleIdentity": "Mythic Rakshasa — misc race evolution"
   },
   {
     "id": "race_path_10518_ancient_rakshasa_avatar",
@@ -40759,7 +41018,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Rakshasa Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Rakshasa Avatar — misc race evolution"
   },
   {
     "id": "race_path_10519_world_born_rakshasa",
@@ -40831,17 +41090,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Rakshasa \u2014 misc race evolution"
+    "roleIdentity": "World-Born Rakshasa — misc race evolution"
   },
   {
     "id": "race_path_10520_awakened_naga",
     "excelId": 10520,
-    "name": "Awakened Naga",
+    "name": "Naga Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_066_naga",
-    "description": "Awakened Naga is a advanced race evolution that refines the race 066 naga bloodline into a wild-oathed form. It pushes DEX, CHA higher, specializes in hybrid class routing, and pays for that power through limited fallback roles. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Naga Ashenwake is a distinct advanced race evolution for Naga. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -40888,12 +41147,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Naga poison arts",
-      "Excels at anti-magic pressure through social/contract effects"
+      "Naga Ashenwake specializes in misc race evolution",
+      "Transforms Naga into a distinct progression route with tailored growth",
+      "Awakened Naga poison arts"
     ],
     "weaknesses": [
-      "Awakened Naga weak to frost control",
-      "Requires careful build planning when not using speed control"
+      "Naga Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Naga weak to frost control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -40901,7 +41162,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Naga \u2014 misc race evolution"
+    "roleIdentity": "Awakened Naga — misc race evolution"
   },
   {
     "id": "race_path_10521_elder_naga",
@@ -40971,7 +41232,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Naga \u2014 misc race evolution"
+    "roleIdentity": "Elder Naga — misc race evolution"
   },
   {
     "id": "race_path_10522_naga_sovereign",
@@ -41041,7 +41302,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Naga Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Naga Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10523_origin_naga",
@@ -41113,17 +41374,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Naga \u2014 misc race evolution"
+    "roleIdentity": "Origin Naga — misc race evolution"
   },
   {
     "id": "race_path_10524_naga_bloodline",
     "excelId": 10524,
-    "name": "Naga Bloodline",
+    "name": "Naga Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_066_naga",
-    "description": "Naga Bloodline is a advanced race evolution that refines the race 066 naga bloodline into a thorn-bound form. It pushes DEX, CHA higher, specializes in boss endurance, and pays for that power through expensive equipment demands. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Naga Celestial Pattern is a distinct advanced race evolution for Naga. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 5,
@@ -41170,12 +41431,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Naga Bloodline poison arts",
-      "Excels at resistance stacking through social/contract effects"
+      "Naga Celestial Pattern specializes in misc race evolution",
+      "Transforms Naga into a distinct progression route with tailored growth",
+      "Naga Bloodline poison arts"
     ],
     "weaknesses": [
-      "Naga Bloodline weak to frost control",
-      "Requires careful build planning when not using speed control"
+      "Naga Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Naga Bloodline weak to frost control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -41183,7 +41446,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Naga Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Naga Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10525_mythic_naga",
@@ -41253,7 +41516,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Naga \u2014 misc race evolution"
+    "roleIdentity": "Mythic Naga — misc race evolution"
   },
   {
     "id": "race_path_10526_ancient_naga_avatar",
@@ -41323,7 +41586,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Naga Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Naga Avatar — misc race evolution"
   },
   {
     "id": "race_path_10527_world_born_naga",
@@ -41395,17 +41658,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Naga \u2014 misc race evolution"
+    "roleIdentity": "World-Born Naga — misc race evolution"
   },
   {
     "id": "race_path_10528_awakened_garuda",
     "excelId": 10528,
-    "name": "Awakened Garuda",
+    "name": "Garuda Dawnmarked",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_067_garuda",
-    "description": "Awakened Garuda is a advanced race evolution that refines the race 067 garuda bloodline into a mist-wrapped form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Garuda Dawnmarked is a distinct advanced race evolution for Garuda. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -41452,12 +41715,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Garuda-only mirror-souled spiritual defense",
-      "Excels at critical attacks through weapon damage"
+      "Garuda Dawnmarked specializes in misc race evolution",
+      "Transforms Garuda into a distinct progression route with tailored growth",
+      "Awakened Garuda-only mirror-souled spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Garuda struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Garuda Dawnmarked rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Garuda struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -41465,7 +41730,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Garuda \u2014 misc race evolution"
+    "roleIdentity": "Awakened Garuda — misc race evolution"
   },
   {
     "id": "race_path_10529_elder_garuda",
@@ -41535,7 +41800,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Garuda \u2014 misc race evolution"
+    "roleIdentity": "Elder Garuda — misc race evolution"
   },
   {
     "id": "race_path_10530_garuda_sovereign",
@@ -41605,7 +41870,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Garuda Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Garuda Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10531_origin_garuda",
@@ -41677,17 +41942,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Garuda \u2014 misc race evolution"
+    "roleIdentity": "Origin Garuda — misc race evolution"
   },
   {
     "id": "race_path_10532_garuda_bloodline",
     "excelId": 10532,
-    "name": "Garuda Bloodline",
+    "name": "Garuda Elder Mantle",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_067_garuda",
-    "description": "Garuda Bloodline is a advanced race evolution that refines the race 067 garuda bloodline into a storm-breathed form. It pushes WIS, STR higher, specializes in event survival, and pays for that power through predictable weakness checks. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Garuda Elder Mantle is a distinct advanced race evolution for Garuda. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -41734,12 +41999,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Garuda Bloodline-only mirror-souled spiritual defense",
-      "Excels at status control through weapon damage"
+      "Garuda Elder Mantle specializes in misc race evolution",
+      "Transforms Garuda into a distinct progression route with tailored growth",
+      "Garuda Bloodline-only mirror-souled spiritual defense"
     ],
     "weaknesses": [
-      "Garuda Bloodline struggles when enemies exploit expensive equipment demands",
-      "Requires careful build planning when not using spiritual defense"
+      "Garuda Elder Mantle rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Garuda Bloodline struggles when enemies exploit expensive equipment demands"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -41747,7 +42014,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Garuda Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Garuda Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10533_mythic_garuda",
@@ -41817,7 +42084,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Garuda \u2014 misc race evolution"
+    "roleIdentity": "Mythic Garuda — misc race evolution"
   },
   {
     "id": "race_path_10534_ancient_garuda_avatar",
@@ -41887,7 +42154,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Garuda Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Garuda Avatar — misc race evolution"
   },
   {
     "id": "race_path_10535_world_born_garuda",
@@ -41959,17 +42226,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Garuda \u2014 misc race evolution"
+    "roleIdentity": "World-Born Garuda — misc race evolution"
   },
   {
     "id": "race_path_10536_awakened_yaksha",
     "excelId": 10536,
-    "name": "Awakened Yaksha",
+    "name": "Yaksha Emberhalo",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_068_yaksha",
-    "description": "Awakened Yaksha is a advanced race evolution that refines the race 068 yaksha bloodline into a void-touched form. It pushes WIS, STR higher, specializes in critical attacks, and pays for that power through poor matchups into elite control. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yaksha Emberhalo is a distinct advanced race evolution for Yaksha. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -42016,12 +42283,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Yaksha-only wild-oathed spiritual defense",
-      "Excels at anti-magic pressure through weapon damage"
+      "Yaksha Emberhalo specializes in misc race evolution",
+      "Transforms Yaksha into a distinct progression route with tailored growth",
+      "Awakened Yaksha-only wild-oathed spiritual defense"
     ],
     "weaknesses": [
-      "Awakened Yaksha struggles when enemies exploit limited fallback roles",
-      "Requires careful build planning when not using spiritual defense"
+      "Yaksha Emberhalo rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Yaksha struggles when enemies exploit limited fallback roles"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -42029,7 +42298,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Yaksha \u2014 misc race evolution"
+    "roleIdentity": "Awakened Yaksha — misc race evolution"
   },
   {
     "id": "race_path_10537_elder_yaksha",
@@ -42099,7 +42368,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Yaksha \u2014 misc race evolution"
+    "roleIdentity": "Elder Yaksha — misc race evolution"
   },
   {
     "id": "race_path_10538_yaksha_sovereign",
@@ -42169,7 +42438,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yaksha Sovereign \u2014 misc race evolution"
+    "roleIdentity": "Yaksha Sovereign — misc race evolution"
   },
   {
     "id": "race_path_10539_origin_yaksha",
@@ -42241,17 +42510,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Yaksha \u2014 misc race evolution"
+    "roleIdentity": "Origin Yaksha — misc race evolution"
   },
   {
     "id": "race_path_10540_yaksha_bloodline",
     "excelId": 10540,
-    "name": "Yaksha Bloodline",
+    "name": "Yaksha Astral Inheritance",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_068_yaksha",
-    "description": "Yaksha Bloodline is a advanced race evolution that refines the race 068 yaksha bloodline into a jade-boned form. It pushes WIS, STR higher, specializes in bleed or poison setup, and pays for that power through weakness to specialized bosses. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Yaksha Astral Inheritance is a distinct advanced race evolution for Yaksha. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 3,
@@ -42298,12 +42567,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Yaksha Bloodline-only ember-crowned spiritual defense",
-      "Excels at stamina cycling through weapon damage"
+      "Yaksha Astral Inheritance specializes in misc race evolution",
+      "Transforms Yaksha into a distinct progression route with tailored growth",
+      "Yaksha Bloodline-only ember-crowned spiritual defense"
     ],
     "weaknesses": [
-      "Yaksha Bloodline struggles when enemies exploit poor matchups into elite control",
-      "Requires careful build planning when not using spiritual defense"
+      "Yaksha Astral Inheritance rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Yaksha Bloodline struggles when enemies exploit poor matchups into elite control"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -42311,7 +42582,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Yaksha Bloodline \u2014 misc race evolution"
+    "roleIdentity": "Yaksha Bloodline — misc race evolution"
   },
   {
     "id": "race_path_10541_mythic_yaksha",
@@ -42381,7 +42652,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Yaksha \u2014 misc race evolution"
+    "roleIdentity": "Mythic Yaksha — misc race evolution"
   },
   {
     "id": "race_path_10542_ancient_yaksha_avatar",
@@ -42451,7 +42722,7 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Yaksha Avatar \u2014 misc race evolution"
+    "roleIdentity": "Ancient Yaksha Avatar — misc race evolution"
   },
   {
     "id": "race_path_10543_world_born_yaksha",
@@ -42523,17 +42794,17 @@ export const RACE_PATHS = [
     "overlapGroup": "misc_race_evolution",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Yaksha \u2014 misc race evolution"
+    "roleIdentity": "World-Born Yaksha — misc race evolution"
   },
   {
     "id": "race_path_10544_awakened_qilin_kirin",
     "excelId": 10544,
-    "name": "Awakened Qilin / Kirin",
+    "name": "Qilin / Kirin Ashenwake",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_069_qilin_kirin",
-    "description": "Awakened Qilin / Kirin is a advanced race evolution that refines the race 069 qilin kirin bloodline into a crystal-cored form. It pushes WIS, INT higher, specializes in bleed or poison setup, and pays for that power through low recovery after burst turns. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Qilin / Kirin Ashenwake is a distinct advanced race evolution for Qilin / Kirin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 4,
@@ -42580,12 +42851,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Awakened Qilin / Kirin inner energy control",
-      "Excels at anti-magic pressure through mana burst"
+      "Qilin / Kirin Ashenwake specializes in martial artist",
+      "Transforms Qilin / Kirin into a distinct progression route with tailored growth",
+      "Awakened Qilin / Kirin inner energy control"
     ],
     "weaknesses": [
-      "Awakened Qilin / Kirin slow early growth",
-      "Requires careful build planning when not using spiritual defense"
+      "Qilin / Kirin Ashenwake rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Awakened Qilin / Kirin slow early growth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -42593,7 +42866,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Awakened Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "Awakened Qilin / Kirin — martial artist"
   },
   {
     "id": "race_path_10545_elder_qilin_kirin",
@@ -42663,7 +42936,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Elder Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "Elder Qilin / Kirin — martial artist"
   },
   {
     "id": "race_path_10546_qilin_kirin_sovereign",
@@ -42733,7 +43006,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Qilin / Kirin Sovereign \u2014 martial artist"
+    "roleIdentity": "Qilin / Kirin Sovereign — martial artist"
   },
   {
     "id": "race_path_10547_origin_qilin_kirin",
@@ -42805,17 +43078,17 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Origin Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "Origin Qilin / Kirin — martial artist"
   },
   {
     "id": "race_path_10548_qilin_kirin_bloodline",
     "excelId": 10548,
-    "name": "Qilin / Kirin Bloodline",
+    "name": "Qilin / Kirin Celestial Pattern",
     "category": "Race Evolution",
     "tier": "advanced",
     "maxLevel": 10,
     "from": "race_069_qilin_kirin",
-    "description": "Qilin / Kirin Bloodline is a advanced race evolution that refines the race 069 qilin kirin bloodline into a thorn-bound form. It pushes WIS, INT higher, specializes in burst windows, and pays for that power through fragile morale against its counter element. This path is meant to feel like a true transformation with its own battlefield rhythm and unlock fantasy.",
+    "description": "Qilin / Kirin Celestial Pattern is a distinct advanced race evolution for Qilin / Kirin. It reshapes the original heritage into a focused identity with its own growth pattern, battlefield role, and long-term build direction. This path is designed to feel different from other evolutions instead of acting like a generic upgrade.",
     "stats": {
       "str": 3,
       "dex": 4,
@@ -42862,12 +43135,14 @@ export const RACE_PATHS = [
       }
     ],
     "strengths": [
-      "Qilin / Kirin Bloodline inner energy control",
-      "Excels at resistance stacking through mana burst"
+      "Qilin / Kirin Celestial Pattern specializes in martial artist",
+      "Transforms Qilin / Kirin into a distinct progression route with tailored growth",
+      "Qilin / Kirin Bloodline inner energy control"
     ],
     "weaknesses": [
-      "Qilin / Kirin Bloodline slow early growth",
-      "Requires careful build planning when not using spiritual defense"
+      "Qilin / Kirin Celestial Pattern rewards focused class planning and can feel weaker without matching jobs",
+      "Requires commitment to its unlock path before its identity fully comes online",
+      "Qilin / Kirin Bloodline slow early growth"
     ],
     "resists": [],
     "weaknessesElements": [],
@@ -42875,7 +43150,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Qilin / Kirin Bloodline \u2014 martial artist"
+    "roleIdentity": "Qilin / Kirin Bloodline — martial artist"
   },
   {
     "id": "race_path_10549_mythic_qilin_kirin",
@@ -42945,7 +43220,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Mythic Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "Mythic Qilin / Kirin — martial artist"
   },
   {
     "id": "race_path_10550_ancient_qilin_kirin_avatar",
@@ -43015,7 +43290,7 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "Ancient Qilin / Kirin Avatar \u2014 martial artist"
+    "roleIdentity": "Ancient Qilin / Kirin Avatar — martial artist"
   },
   {
     "id": "race_path_10551_world_born_qilin_kirin",
@@ -43087,6 +43362,6 @@ export const RACE_PATHS = [
     "overlapGroup": "martial_artist",
     "deprecatedOverlap": false,
     "registryVisible": true,
-    "roleIdentity": "World-Born Qilin / Kirin \u2014 martial artist"
+    "roleIdentity": "World-Born Qilin / Kirin — martial artist"
   }
 ];

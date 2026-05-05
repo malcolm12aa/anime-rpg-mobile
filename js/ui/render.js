@@ -24,5 +24,6 @@ export function render(state) {
   const root = app();
   const screen = screens[state.screen] ?? notFound;
   root.innerHTML = screen(state);
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // v0.6.1: do not force-scroll after every render.
+  // This keeps filters, shop tabs, purchases, level buttons, and combat actions from jumping back to the top.
 }

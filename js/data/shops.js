@@ -22,5 +22,12 @@ export const SHOPS = [
     name: "Roadside Outfitter",
     description: "Light gear for rogues, rangers, monks, and fast dungeon runners.",
     stock: ["wolf_mask", "wolf_jacket", "wolf_claws", "wolf_talisman", "hunter_bow", "swift_boots", "stamina_tonic", "cleanse_salve"]
+  },
+  {
+    id: "skill_spell_library",
+    name: "Skill / Spell Library",
+    description: "Learn imported skills, spells, passives, and intrinsic abilities from the Excel ability libraries.",
+    stock: [],
+    abilityShop: true
   }
 ];

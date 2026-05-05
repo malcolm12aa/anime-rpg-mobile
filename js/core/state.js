@@ -1,6 +1,6 @@
 import { CONFIG } from "../config.js";
-import { RACES } from "../data/races.js";
-import { JOBS } from "../data/jobs.js";
+import { RACES, RACE_PATHS } from "../data/races.js";
+import { JOBS, JOB_PATHS } from "../data/jobs.js";
 import { SKILLS } from "../data/skills.js";
 import { SYNERGIES } from "../data/synergies.js";
 import { EQUIPMENT_SLOTS } from "../data/items.js";
@@ -78,6 +78,25 @@ export function createPlayer(name, raceId, jobId) {
   return player;
 }
 
+function syncSavedClassLabels(player) {
+  const raceData = [...RACES, ...RACE_PATHS];
+  const jobData = [...JOBS, ...JOB_PATHS];
+  for (const cls of player.raceLevels ?? []) {
+    const data = byId(raceData, cls.id);
+    if (!data) continue;
+    cls.name = data.name;
+    cls.tier = data.tier;
+    cls.maxLevel = data.maxLevel;
+  }
+  for (const cls of player.jobLevels ?? []) {
+    const data = byId(jobData, cls.id);
+    if (!data) continue;
+    cls.name = data.name;
+    cls.tier = data.tier;
+    cls.maxLevel = data.maxLevel;
+  }
+}
+
 export function hydrateState(raw) {
   const state = { ...createInitialState(), ...deepClone(raw) };
   state.version = CONFIG.version;
@@ -98,6 +117,7 @@ export function hydrateState(raw) {
     state.player.unspentClassLevels ??= 0;
     state.player.equipment ??= Object.fromEntries(EQUIPMENT_SLOTS.map(slot => [slot, null]));
     for (const slot of EQUIPMENT_SLOTS) state.player.equipment[slot] ??= null;
+    syncSavedClassLabels(state.player);
   }
   state.log ??= [];
   return state;

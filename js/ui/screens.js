@@ -60,7 +60,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.5.1 skill/spell shop filter fix and detailed ability descriptions.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished evolution names, ability names, shop tabs, and scroll behavior.</p>
   </section>`;
 }
 
@@ -529,10 +529,12 @@ function setBonusRows(player) {
 
 export function shopScreen(state) {
   const shop = byId(SHOPS, state.ui.selectedShop) ?? SHOPS[0];
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Shop</h1><p class="subtitle">Gold: <span class="kpi">${state.player.gold}</span>. Buy items, equipment, and Excel-imported abilities.</p></div>
-    <div class="actions">${SHOPS.map(s => button(s.name, "selectShop", s.id, s.id === shop.id ? "ghost" : "secondary")).join("")}</div>
-    <section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>
-    ${abilityShopSection(state)}
+  const shopBody = shop.abilityShop
+    ? abilityShopSection(state)
+    : `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>`;
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Shop</h1><p class="subtitle">Gold: <span class="kpi">${state.player.gold}</span>. Pick a shop tab below to buy supplies, gear, or Excel-imported abilities.</p></div>
+    <div class="actions shop-tabs">${SHOPS.map(s => button(s.name, "selectShop", s.id, s.id === shop.id ? "ghost" : "secondary")).join("")}</div>
+    ${shopBody}
   </section>`;
 }
 
