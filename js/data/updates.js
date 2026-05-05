@@ -1,5 +1,15 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.6.2.1 — Data Restore Hotfix",
+    date: "2026-05-05",
+    notes: [
+      "Restored the full imported race data file so RACES exports correctly.",
+      "Restored the full imported job data file so JOBS exports correctly.",
+      "Kept the v0.6.2 Basic Abilities / Falna-style status scaling update intact.",
+      "If the live site still shows the old build, refresh the browser cache after uploading this package."
+    ]
+  },
+  {
     version: "v0.6.2 — Basic Abilities / Status Scaling",
     date: "2026-05-05",
     notes: [
