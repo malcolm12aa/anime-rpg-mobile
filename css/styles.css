@@ -415,3 +415,7 @@ pre {
     grid-template-columns: 1fr;
   }
 }
+
+
+.balance-note, .active-bonus { color: var(--good); }
+.locked-card { opacity: .72; }
