@@ -11,6 +11,7 @@ import { spendClassPoint, addAdvancedClass, gainXp, syncResourcesToStats } from 
 import { recruitMember, prepareRecruitOffer } from "../systems/party.js";
 import { checkAchievements } from "../systems/achievements.js";
 import { claimQuestReward } from "../systems/quests.js";
+import { evolveAbility } from "../systems/ability-evolution.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
 
 export function handleAction(state, action, value) {
@@ -136,13 +137,16 @@ export function handleAction(state, action, value) {
       };
       break;
     case "resetAbilityFilters":
-      state.ui.abilityFilters = { search: "", library: "all", kind: "all", rank: "all" };
+      state.ui.abilityFilters = { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" };
       break;
     case "toggleDevMenu":
       state.ui.devMenuOpen = !state.ui.devMenuOpen;
       break;
     case "claimQuest":
       claimQuestReward(state, value);
+      break;
+    case "evolveAbility":
+      evolveAbility(state, value);
       break;
     case "devAdjust":
       devAdjust(state, value);
@@ -168,7 +172,7 @@ export function handleInput(state, name, value) {
   }
   if (name?.startsWith("ability.")) {
     const key = name.split(".")[1];
-    state.ui.abilityFilters ??= { search: "", library: "all", kind: "all", rank: "all" };
+    state.ui.abilityFilters ??= { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" };
     state.ui.abilityFilters[key] = value;
   }
   if (name?.startsWith("creation.")) {

@@ -1,7 +1,13 @@
+import { EXPANDED_SKILLS } from "./expanded-skills.js";
+import { EXPANDED_SPELLS } from "./expanded-spells.js";
+import { EXPANDED_PASSIVES } from "./expanded-passives.js";
+import { EXPANDED_RESISTS } from "./expanded-resists.js";
+import { EXPANDED_ABILITY_LIBRARIES } from "./expanded-ability-libraries.js";
+
 // Auto-polished for v0.6.1 Skill/Spell Naming Pass.
 // IDs stay the same so saves and class ability links keep working.
 
-export const SKILLS = [
+const BASE_SKILLS = [
   {
     "id": "human_resolve",
     "name": "Lineage Art: Iron Human Resolve",
@@ -5393,7 +5399,7 @@ export const SKILLS = [
   }
 ];
 
-export const SKILL_SHOP_LIBRARIES = [
+const BASE_SKILL_SHOP_LIBRARIES = [
   {
     "id": "advanced_skill_library",
     "name": "Advanced Skill Library",
@@ -5648,3 +5654,17 @@ export const ABILITY_FILTER_OPTIONS = {
     "Unique"
   ]
 };
+
+
+export const SKILLS = [
+  ...BASE_SKILLS,
+  ...EXPANDED_SKILLS,
+  ...EXPANDED_SPELLS,
+  ...EXPANDED_PASSIVES,
+  ...EXPANDED_RESISTS
+];
+
+export const SKILL_SHOP_LIBRARIES = [
+  ...BASE_SKILL_SHOP_LIBRARIES,
+  ...EXPANDED_ABILITY_LIBRARIES
+];

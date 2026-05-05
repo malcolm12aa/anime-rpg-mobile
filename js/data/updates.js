@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.8.0 — Class & Ability Expansion",
+    date: "2026-05-05",
+    notes: [
+      "Added original race evolution expansions inspired by high-rank class systems.",
+      "Added original job upgrade expansions including saint, slayer, crafter, caster, chef, thief, and dungeon-builder style paths.",
+      "Added a new ability taxonomy with Intrinsic, Common, Extra, Unique, Ultimate, and Resist rank logic.",
+      "Added expanded skills, spells, passives, and resist abilities with rank-scaled naming.",
+      "Added Ability Evolution chains that merge known abilities into Extra, Unique, and Ultimate abilities.",
+      "Expanded the Skill / Spell / Ability Shop filters with element, origin, and unlock method filters."
+    ]
+  },
+  {
     version: "v0.7.0 — Quest, Identity, Battle, and Boss Systems",
     date: "2026-05-05",
     notes: [

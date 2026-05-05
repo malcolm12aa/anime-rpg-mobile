@@ -12,6 +12,8 @@ import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, R
 import { getSaveSlots } from "../core/save.js";
 import { getRaceIdentity, getJobIdentity, getEnemyIdentity } from "../systems/identity.js";
 import { getQuestBoard } from "../systems/quests.js";
+import { getAbilityEvolutionOptions } from "../systems/ability-evolution.js";
+import { getAbilityNamingProfile } from "../systems/ability-naming.js";
 import { byId, titleCase, formatStat } from "../core/utils.js";
 import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvailableAdvancements, getActiveSynergies, getEquippedSetBonuses, getEquippedTitleBonus } from "../systems/leveling.js";
 import { canSeeRegistryEntry, getRequirementText, getUnlockRequirementMarkup, getUnlockStatus, getVisibleTreeForPlayer } from "../systems/unlocks.js";
@@ -63,7 +65,7 @@ export function mainMenu(state) {
 function newsCard() {
   return `<section class="card">
     <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished naming/shop tabs, v0.6.2 Basic Abilities, and v0.6.3 race/job layout polish, and v0.7.0 quest/identity/boss systems.</p>
+    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished naming/shop tabs, v0.6.2 Basic Abilities, and v0.6.3 race/job layout polish, v0.7.0 quest/identity/boss systems, and v0.8.0 class/ability expansion systems.</p>
   </section>`;
 }
 
@@ -619,7 +621,38 @@ export function classRegistryScreen(state) {
 
 
 export function skillsScreen(state) {
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Skills & Spells</h1><p class="subtitle">Physical skills use stamina. Magic spells use mana. Cooldowns matter in long boss fights.</p></div>${skillList(state.player)}</section>`;
+  return `<section class="screen">${nav(state)}
+    <div class="hero"><h1>Skills, Spells & Ability Evolution</h1><p class="subtitle">Physical skills use stamina. Magic spells use mana. Passives and resist abilities support your build identity. Ability Evolution lets known abilities merge into Extra, Unique, and Ultimate powers.</p></div>
+    <section class="card"><h2>Known Abilities</h2>${skillList(state.player)}</section>
+    ${abilityEvolutionSection(state)}
+  </section>`;
+}
+
+function abilityEvolutionSection(state) {
+  const chains = getAbilityEvolutionOptions(state);
+  const visible = chains.filter(chain => chain.canEvolve || chain.missingInputs.length <= 2 || chain.alreadyKnown).slice(0, 40);
+  return `<section class="card ability-evolution-lab">
+    <div class="row between"><div><h2>Ability Evolution Lab</h2><p class="small">Fuse known abilities into stronger original Build Your Legend powers. Inputs are kept unless a chain says otherwise.</p></div><span class="pill">${visible.length}/${chains.length} chains</span></div>
+    <div class="grid auto">${visible.map(abilityEvolutionCard).join("") || `<article class="card"><h3>No evolutions visible yet</h3><p>Learn more abilities from classes, shops, bosses, or race evolutions.</p></article>`}</div>
+  </section>`;
+}
+
+function abilityEvolutionCard(chain) {
+  const out = chain.outputSkill ?? { name: chain.output, rank: "Unknown", kind: "ability", element: "unknown", description: "Unknown output." };
+  const profile = getAbilityNamingProfile(out);
+  const inputs = chain.inputSkills.map(skill => `<span class="pill ${chain.missingInputs.includes(skill.id) ? "missing-input" : ""}">${escapeHtml(skill.name)}</span>`).join(" ");
+  const reqs = chain.requirementRows.length
+    ? chain.requirementRows.map(row => `<div class="requirement-row ${row.met ? "met" : "missing"}"><span>${row.met ? "✓" : "✕"}</span><span>${escapeHtml(row.label)}</span><span class="small">${row.current}/${row.required}</span></div>`).join("")
+    : `<p class="small">No extra cost.</p>`;
+  return `<article class="card evolution-card ${chain.canEvolve ? "selected" : ""}">
+    <h3>${escapeHtml(chain.name)}</h3>
+    <p>${escapeHtml(chain.description)}</p>
+    <p><span class="pill">Output: ${escapeHtml(out.name)}</span> <span class="pill">${escapeHtml(out.rank)}</span> <span class="pill">${escapeHtml(out.kind)}</span> <span class="pill">${escapeHtml(out.element)}</span></p>
+    <p class="small"><strong>Inputs:</strong> ${inputs}</p>
+    <div class="requirement-list">${reqs}</div>
+    <p class="small"><strong>Naming Rule:</strong> ${escapeHtml(profile.rule.pattern)} — ${escapeHtml(profile.guidance)}</p>
+    ${chain.alreadyKnown ? `<span class="pill">Already Known</span>` : button(chain.canEvolve ? "Evolve Ability" : "Requirements Missing", "evolveAbility", chain.id, chain.canEvolve ? "" : "ghost")}
+  </article>`;
 }
 
 export function inventoryScreen(state) {
@@ -660,10 +693,14 @@ export function shopScreen(state) {
 }
 
 function abilityShopSection(state) {
-  const filters = { search: "", library: "all", kind: "all", rank: "all", ...(state.ui.abilityFilters ?? {}) };
+  const filters = { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all", ...(state.ui.abilityFilters ?? {}) };
+  const pricedSkills = SKILLS.filter(s => Number(s.price ?? 0) > 0);
   const libraryOptions = ["all", ...SKILL_SHOP_LIBRARIES.map(lib => lib.id)];
-  const kindOptions = ["all", ...[...new Set(SKILLS.filter(s => Number(s.price ?? 0) > 0).map(s => s.kind))].sort()];
-  const rankOptions = ["all", ...[...new Set(SKILLS.filter(s => Number(s.price ?? 0) > 0).map(s => s.rank))].sort()];
+  const kindOptions = ["all", ...[...new Set(pricedSkills.map(s => s.kind ?? "skill"))].sort()];
+  const rankOptions = ["all", ...[...new Set(pricedSkills.map(s => s.rank ?? "Common"))].sort()];
+  const elementOptions = ["all", ...[...new Set(pricedSkills.map(s => s.element ?? "physical"))].sort()];
+  const originOptions = ["all", ...[...new Set(pricedSkills.map(s => s.origin ?? "shop"))].sort()];
+  const acquisitionOptions = ["all", ...[...new Set(pricedSkills.map(s => s.acquisition ?? "Shop"))].sort()];
   const stockIds = new Set(SKILL_SHOP_LIBRARIES
     .filter(lib => filters.library === "all" || lib.id === filters.library)
     .flatMap(lib => lib.stock ?? []));
@@ -671,27 +708,33 @@ function abilityShopSection(state) {
   const filtered = SKILLS.filter(skill => {
     if (!stockIds.has(skill.id)) return false;
     if (Number(skill.price ?? 0) <= 0) return false;
-    if (filters.kind !== "all" && skill.kind !== filters.kind) return false;
-    if (filters.rank !== "all" && skill.rank !== filters.rank) return false;
+    if (filters.kind !== "all" && (skill.kind ?? "skill") !== filters.kind) return false;
+    if (filters.rank !== "all" && (skill.rank ?? "Common") !== filters.rank) return false;
+    if (filters.element !== "all" && (skill.element ?? "physical") !== filters.element) return false;
+    if (filters.origin !== "all" && (skill.origin ?? "shop") !== filters.origin) return false;
+    if (filters.acquisition !== "all" && (skill.acquisition ?? "Shop") !== filters.acquisition) return false;
     if (search) {
-      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${skill.description} ${skill.source ?? ""} ${(skill.tags ?? []).join(" ")}`;
+      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${skill.description} ${skill.source ?? ""} ${skill.origin ?? ""} ${skill.acquisition ?? ""} ${(skill.tags ?? []).join(" ")}`;
       if (!matchesSearchText(haystack, search)) return false;
     }
     return true;
-  });
-  const visible = filtered.slice(0, 80);
+  }).sort((a, b) => (Number(a.price ?? 0) - Number(b.price ?? 0)) || String(a.name).localeCompare(String(b.name)));
+  const visible = filtered.slice(0, 100);
   return `<section class="card ability-shop">
-    <div class="row between"><div><h2>Skill / Spell Shop Libraries</h2><p class="small">Imported from the Excel Ability Shops sheet. Physical skills use stamina. Magic spells use mana. Passive/intrinsic abilities are shown when available.</p></div><span class="pill">${visible.length}/${filtered.length} shown</span></div>
-    <div class="filter-grid">
-      <label>Search Abilities<input data-input="ability.search" value="${escapeHtml(filters.search)}" placeholder="fire, sword, heal, passive..." /></label>
+    <div class="row between"><div><h2>Skill / Spell / Ability Libraries</h2><p class="small">v0.8.0 expands the shop with skills, spells, passives, resist abilities, origin tags, acquisition tags, and rank-based naming rules.</p></div><span class="pill">${visible.length}/${filtered.length} shown</span></div>
+    <div class="filter-grid ability-filter-grid">
+      <label>Search Abilities<input data-input="ability.search" value="${escapeHtml(filters.search)}" placeholder="fire, sword, heal, passive, fusion..." /></label>
       ${selectField("Library", "ability.library", libraryOptions, filters.library)}
       ${selectField("Kind", "ability.kind", kindOptions, filters.kind)}
       ${selectField("Rank", "ability.rank", rankOptions, filters.rank)}
+      ${selectField("Element", "ability.element", elementOptions, filters.element)}
+      ${selectField("Origin", "ability.origin", originOptions, filters.origin)}
+      ${selectField("Unlock Method", "ability.acquisition", acquisitionOptions, filters.acquisition)}
     </div>
     <div class="actions">${button("Reset Ability Filters", "resetAbilityFilters", "", "secondary")}</div>
-    <p class="small"><strong>Active filters:</strong> Search “${escapeHtml(filters.search || "any")}” · Library ${escapeHtml(titleCase(filters.library))} · Kind ${escapeHtml(titleCase(filters.kind))} · Rank ${escapeHtml(titleCase(filters.rank))}</p>
-    ${filtered.length > visible.length ? `<p class="small">Large ability list capped at 80 cards for mobile performance. Use filters to narrow it down.</p>` : ""}
-    <div class="grid auto">${visible.map(skill => abilityShopCard(skill, state.player)).join("") || `<article class="card"><h3>No abilities found</h3><p>Try a different search, library, kind, or rank filter.</p></article>`}</div>
+    <p class="small"><strong>Active filters:</strong> Search “${escapeHtml(filters.search || "any")}" · Library ${escapeHtml(titleCase(filters.library))} · Kind ${escapeHtml(titleCase(filters.kind))} · Rank ${escapeHtml(titleCase(filters.rank))} · Element ${escapeHtml(titleCase(filters.element))} · Origin ${escapeHtml(titleCase(filters.origin))} · Unlock ${escapeHtml(titleCase(filters.acquisition))}</p>
+    ${filtered.length > visible.length ? `<p class="small">Large ability list capped at 100 cards for mobile performance. Use filters to narrow it down.</p>` : ""}
+    <div class="grid auto">${visible.map(skill => abilityShopCard(skill, state.player)).join("") || `<article class="card"><h3>No abilities found</h3><p>Try a different search, library, kind, rank, element, origin, or unlock filter.</p></article>`}</div>
   </section>`;
 }
 
@@ -701,7 +744,7 @@ function abilityShopCard(skill, player) {
   const tags = (skill.tags ?? []).slice(0, 4).map(tag => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ");
   return `<article class="card skill-shop-card ${known ? "selected" : ""}">
     <h3>${escapeHtml(skill.name)}</h3>
-    <p><span class="pill">${escapeHtml(skill.kind)}</span> <span class="pill">${escapeHtml(skill.rank)}</span> <span class="pill">${escapeHtml(skill.element)}</span> <span class="pill">${price} gold</span></p>
+    <p><span class="pill">${escapeHtml(skill.kind)}</span> <span class="pill">${escapeHtml(skill.rank)}</span> <span class="pill">${escapeHtml(skill.element)}</span> <span class="pill">${escapeHtml(skill.origin ?? "shop")}</span> <span class="pill">${escapeHtml(skill.acquisition ?? "Shop")}</span> <span class="pill">${price} gold</span></p>
     <p>${escapeHtml(skill.description)}</p>
     <p class="small">Cost: ${skill.resource === "none" ? "Passive" : `${skill.cost} ${skill.resource}`} · Cooldown: ${skill.cooldown} · Source: ${escapeHtml(skill.source ?? "Ability Library")}</p>
     <p class="small">${tags}</p>

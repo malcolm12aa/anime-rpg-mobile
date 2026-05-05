@@ -1,3 +1,5 @@
+import { JOB_UPGRADE_EXPANSION } from "./job-upgrade-expansion.js";
+
 // Auto-polished for v0.6.1 Naming Pass.
 
 export const JOBS = [
@@ -3583,7 +3585,7 @@ export const JOBS = [
   }
 ];
 
-export const JOB_PATHS = [
+const BASE_JOB_PATHS = [
   {
     "id": "job_path_1073_warrior_vanguard",
     "excelId": 1073,
@@ -36896,4 +36898,10 @@ export const JOB_PATHS = [
     "registryVisible": true,
     "roleIdentity": "Hidden Origin Bounty Hunter — ranged striker"
   }
+];
+
+
+export const JOB_PATHS = [
+  ...BASE_JOB_PATHS,
+  ...JOB_UPGRADE_EXPANSION
 ];

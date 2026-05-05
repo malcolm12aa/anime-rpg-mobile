@@ -586,3 +586,27 @@ pre {
 .quest-meter span {
   background: linear-gradient(90deg, #72df9f, #d9a441);
 }
+
+
+/* v0.8.0 Ability Expansion */
+.ability-evolution-lab {
+  border-color: rgba(217, 164, 65, .28);
+}
+.evolution-card {
+  min-height: 260px;
+}
+.evolution-card.selected {
+  border-color: rgba(114, 223, 159, .35);
+  box-shadow: 0 0 0 1px rgba(114, 223, 159, .14), 0 10px 24px rgba(0,0,0,.18);
+}
+.missing-input {
+  color: var(--danger);
+  border: 1px solid rgba(255, 107, 107, .35);
+}
+.ability-filter-grid {
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+}
+.skill-shop-card .pill,
+.evolution-card .pill {
+  margin: 2px 2px 2px 0;
+}

@@ -1,3 +1,5 @@
+import { RACE_EVOLUTION_EXPANSION } from "./race-evolution-expansion.js";
+
 // Auto-polished for v0.6.1 Naming Pass.
 
 export const RACES = [
@@ -4211,7 +4213,7 @@ export const RACES = [
   }
 ];
 
-export const RACE_PATHS = [
+const BASE_RACE_PATHS = [
   {
     "id": "race_path_10000_awakened_human",
     "excelId": 10000,
@@ -43364,4 +43366,10 @@ export const RACE_PATHS = [
     "registryVisible": true,
     "roleIdentity": "World-Born Qilin / Kirin — martial artist"
   }
+];
+
+
+export const RACE_PATHS = [
+  ...BASE_RACE_PATHS,
+  ...RACE_EVOLUTION_EXPANSION
 ];

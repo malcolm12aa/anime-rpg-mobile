@@ -26,7 +26,7 @@ export function createInitialState() {
       currentEvent: null,
       offeredRecruit: null,
       registryFilters: { search: "", kind: "all", category: "all", tier: "all" },
-      abilityFilters: { search: "", library: "all", kind: "all", rank: "all" },
+      abilityFilters: { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" },
       questFilters: { category: "All" },
       devMenuOpen: false,
       creationFilters: {
