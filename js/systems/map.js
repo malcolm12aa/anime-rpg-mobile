@@ -62,6 +62,10 @@ export function createEnemyForFloor(floor) {
   return enemy;
 }
 
+function findModifier(id) {
+  return BATTLE_MODIFIERS.find(mod => mod.id === id) ?? BATTLE_MODIFIERS.find(mod => mod.name?.toLowerCase().replace(/\s+/g, "_") === id) ?? BATTLE_MODIFIERS[0];
+}
+
 function prepareBattleRoom(state, floor) {
   const modifier = deepClone(weightedChoice(BATTLE_MODIFIERS));
   state.run.battleModifier = modifier;
@@ -118,6 +122,9 @@ function scaleEnemy(enemy, floor, multiplier = 1) {
   enemy.statusEffects = [];
   enemy.enemyIdentity = getEnemyIdentity(enemy, floor);
   enemy.enemyType ??= pickEnemyType(enemy, floor);
+  enemy.raceLevels = [{ id: enemy.enemyIdentity.race.toLowerCase().replace(/\s+/g, "_"), name: enemy.enemyIdentity.race, level: Math.max(1, Math.floor(floor * 0.55)), maxLevel: 15 }];
+  enemy.jobLevels = [{ id: enemy.enemyIdentity.job.toLowerCase().replace(/\s+/g, "_"), name: enemy.enemyIdentity.job, level: Math.max(1, Math.floor(floor * 0.45)), maxLevel: 15 }];
+  enemy.totalLevel = enemy.raceLevels[0].level + enemy.jobLevels[0].level;
   return enemy;
 }
 
@@ -163,7 +170,20 @@ export function resolveRandomEvent(state) {
     state.meta.highestFloor = Math.max(state.meta.highestFloor ?? 0, state.run.floor);
     addLog(state, `The portal throws you to floor ${state.run.floor}${damage ? ` and deals ${damage} damage` : ""}.`);
   }
+  if (event.type === "weather") {
+    state.run.battleModifier = findModifier(event.modifierId);
+    addLog(state, `<strong>Weather changed:</strong> ${state.run.battleModifier.name} will affect the next battle.`);
+  }
+  if (event.type === "training" || event.type === "library" || event.type === "warning") {
+    if (event.type === "training") state.player.unspentClassLevels = (state.player.unspentClassLevels ?? 0) + 1;
+    addLog(state, event.type === "training" ? "Training grants +1 unspent class level point." : "You record new unlock clues in your tracker.");
+  }
   grantEventReward(state, event);
+  if (event.type === "ambush") {
+    prepareBattleRoom(state, state.run.floor);
+    startBattle(state, createEnemyForFloor(state.run.floor), "ambush");
+    return;
+  }
   if (event.type === "shop") {
     state.ui.selectedShop = event.shopId ?? choice(SHOPS).id;
     state.screen = "shop";

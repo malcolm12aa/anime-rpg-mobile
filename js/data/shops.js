@@ -8,7 +8,8 @@ export const SHOPS = [
   {
     id: "blacksmith",
     name: "Old Anvil Blacksmith",
-    description: "Weapons and armor for race/job builds.",
+    description: "Weapons, armor, forging services, rune slots, scaling improvements, and set-piece crafting.",
+    craftingStation: "blacksmith",
     stock: ["iron_sword", "hunter_bow", "training_shield", "chain_vest", "swift_boots", "ember_helm", "ember_cuirass", "ember_gauntlets", "ember_boots"]
   },
   {
@@ -22,6 +23,14 @@ export const SHOPS = [
     name: "Roadside Outfitter",
     description: "Light gear for rogues, rangers, monks, and fast dungeon runners.",
     stock: ["wolf_mask", "wolf_jacket", "wolf_claws", "wolf_talisman", "hunter_bow", "swift_boots", "stamina_tonic", "cleanse_salve"]
+  },
+
+  {
+    id: "alchemy_lab",
+    name: "Alchemy Shop",
+    description: "Craft potions, bombs, elixirs, cures, mana crystals, and stamina tonics from dungeon materials.",
+    stock: ["minor_potion", "mana_vial", "stamina_tonic", "cleanse_salve", "greater_potion", "mana_crystal", "stamina_elixir", "cure_all"],
+    craftingStation: "alchemy"
   },
   {
     id: "skill_spell_library",

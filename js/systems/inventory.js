@@ -1,6 +1,7 @@
 import { ITEMS, EQUIPMENT_SLOTS } from "../data/items.js";
 import { byId, addInventory, removeInventory, addLog, clamp } from "../core/utils.js";
 import { computeStats, syncResourcesToStats } from "./leveling.js";
+import { getGeneratedLoot } from "./loot.js";
 
 export function useItem(state, itemId, inBattle = false) {
   const item = byId(ITEMS, itemId);
@@ -17,7 +18,7 @@ export function useItem(state, itemId, inBattle = false) {
       state.player[effect.resource] = clamp(state.player[effect.resource] + effect.amount, 0, max);
     }
     if (effect.type === "cleanse") {
-      state.player.statusEffects = (state.player.statusEffects ?? []).filter(s => !["poison", "burn", "bleed", "frozen"].includes(s.id));
+      state.player.statusEffects = (state.player.statusEffects ?? []).filter(s => !["poison", "burn", "bleed", "frozen", "weakened", "stunned"].includes(s.id));
     }
   }
   addLog(state, `Used ${item.name}.`);
@@ -44,4 +45,15 @@ export function unequipSlot(state, slot) {
   addInventory(state.player, itemId, 1);
   syncResourcesToStats(state.player);
   addLog(state, `Unequipped ${byId(ITEMS, itemId)?.name ?? itemId}.`);
+}
+
+
+export function equipLoot(state, lootId) {
+  const loot = getGeneratedLoot(state.player, lootId);
+  if (!loot || loot.type !== "equipment") return addLog(state, "Generated loot not found.");
+  const slot = loot.slot;
+  const old = state.player.equipment[slot];
+  state.player.equipment[slot] = `loot:${loot.id}`;
+  syncResourcesToStats(state.player);
+  addLog(state, `Equipped generated loot: ${loot.name}. ${old ? "Previous item was replaced in that slot." : ""}`);
 }

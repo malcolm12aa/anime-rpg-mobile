@@ -5,12 +5,13 @@ import { finalizeCharacter } from "../systems/character-creation.js";
 import { startRun, leaveRun } from "../systems/run-manager.js";
 import { exploreNextFloor, restAtCamp } from "../systems/map.js";
 import { playerBasicAttack, playerUseSkill, playerUseItem } from "../systems/battle.js";
-import { useItem, equipItem, unequipSlot } from "../systems/inventory.js";
+import { useItem, equipItem, equipLoot, unequipSlot } from "../systems/inventory.js";
 import { buyItem, buyAbility } from "../systems/shop.js";
 import { spendClassPoint, addAdvancedClass, gainXp, syncResourcesToStats } from "../systems/leveling.js";
 import { recruitMember, prepareRecruitOffer } from "../systems/party.js";
 import { checkAchievements } from "../systems/achievements.js";
 import { claimQuestReward } from "../systems/quests.js";
+import { craftRecipe, upgradeEquippedGear, addRuneSlot, improveScaling } from "../systems/crafting.js";
 import { evolveAbility } from "../systems/ability-evolution.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
 
@@ -87,6 +88,21 @@ export function handleAction(state, action, value) {
       break;
     case "equipItem":
       equipItem(state, value);
+      break;
+    case "equipLoot":
+      equipLoot(state, value);
+      break;
+    case "craftRecipe":
+      craftRecipe(state, value);
+      break;
+    case "upgradeEquippedGear":
+      upgradeEquippedGear(state);
+      break;
+    case "addRuneSlot":
+      addRuneSlot(state);
+      break;
+    case "improveScaling":
+      improveScaling(state);
       break;
     case "unequipSlot":
       unequipSlot(state, value);

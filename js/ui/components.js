@@ -17,7 +17,10 @@ export function nav(state) {
     ${button("Skills", "go", "skills", "secondary")}
     ${button("Inventory", "go", "inventory", "secondary")}
     ${button("Shop", "go", "shop", "secondary")}
+    ${button("Crafting", "go", "crafting", "secondary")}
     ${button("Map", "go", "map", "secondary")}
+    ${button("Build", "go", "build-summary", "secondary")}
+    ${button("Tracker", "go", "unlock-tracker", "secondary")}
     ${button("Achievements", "go", "achievements", "secondary")}
     ${button("Quests", "go", "quests", "secondary")}
     ${button("Updates", "go", "updates", "secondary")}

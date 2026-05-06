@@ -8,9 +8,14 @@ import { MAPS } from "../data/maps.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
 import { UPDATE_NOTES } from "../data/updates.js";
 import { QUEST_CATEGORIES } from "../data/quests.js";
+import { CRAFTING_RECIPES, CRAFTING_STATIONS } from "../data/crafting.js";
 import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, REGISTRY_TIERS } from "../data/class-registry.js";
 import { getSaveSlots } from "../core/save.js";
 import { getRaceIdentity, getJobIdentity, getEnemyIdentity } from "../systems/identity.js";
+import { canCraftRecipe, materialCostText } from "../systems/crafting.js";
+import { describeGeneratedLoot, getGeneratedLoot } from "../systems/loot.js";
+import { getBuildSummary } from "../systems/build-summary.js";
+import { getUnlockTracker } from "../systems/unlock-tracker.js";
 import { getQuestBoard } from "../systems/quests.js";
 import { getAbilityEvolutionOptions } from "../systems/ability-evolution.js";
 import { getAbilityNamingProfile } from "../systems/ability-naming.js";
@@ -657,25 +662,41 @@ function abilityEvolutionCard(chain) {
 
 export function inventoryScreen(state) {
   const p = state.player;
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Inventory & Equipment</h1><p class="subtitle">Equip gear to modify stats. Wearing multiple pieces from a set unlocks set bonuses.</p></div>
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Inventory & Equipment</h1><p class="subtitle">Equip gear to modify stats. Wearing multiple pieces from a set unlocks set bonuses. v0.9.0 adds generated loot with rarity and affixes.</p></div>
     <section class="grid two"><div class="card"><h2>Equipment</h2>${equipmentRows(p)}</div><div class="card"><h2>Inventory</h2>${inventoryList(p)}</div></section>
+    <section class="card"><h2>Generated Loot</h2>${generatedLootRows(p)}</section>
     <section class="card"><h2>Set Bonuses</h2>${setBonusRows(p)}</section>
   </section>`;
 }
 
+function resolveEquippedItem(player, itemRef) {
+  if (typeof itemRef === "string" && itemRef.startsWith("loot:")) return getGeneratedLoot(player, itemRef);
+  return byId(ITEMS, itemRef);
+}
+
 function equipmentRows(p) {
   return EQUIPMENT_SLOTS.map(slot => {
-    const item = byId(ITEMS, p.equipment?.[slot]);
+    const itemRef = p.equipment?.[slot];
+    const item = resolveEquippedItem(p, itemRef);
+    const upgrade = typeof itemRef === "string" && !itemRef.startsWith("loot:") ? (p.itemUpgrades?.[itemRef] ?? {}) : null;
     const set = item?.set ? `<span class="pill">${titleCase(item.set)}</span>` : "";
-    return `<div class="item-row"><div><strong>${titleCase(slot)}</strong><p class="small">${item ? `${item.name} ${set}` : "Empty"}</p></div>${item ? button("Unequip", "unequipSlot", slot, "secondary") : ""}</div>`;
+    const affix = item?.rarity ? `<span class="pill">${escapeHtml(item.rarity)}</span> <span class="pill">${escapeHtml(item.affix)}</span>` : "";
+    const upgradeText = upgrade ? `<span class="pill">+${upgrade.level ?? 0}</span> <span class="pill">Runes ${upgrade.runeSlots ?? 0}</span> <span class="pill">Scaling ${upgrade.scaling ?? 0}</span>` : "";
+    return `<div class="item-row"><div><strong>${titleCase(slot)}</strong><p class="small">${item ? `${escapeHtml(item.name)} ${set} ${affix} ${upgradeText}` : "Empty"}</p></div>${item ? button("Unequip", "unequipSlot", slot, "secondary") : ""}</div>`;
   }).join("");
+}
+
+function generatedLootRows(player) {
+  const loot = player.loot ?? [];
+  if (!loot.length) return `<p class="small">No generated loot yet. Defeat enemies, open treasure chests, or clear boss rooms to find rarity/affix gear.</p>`;
+  return `<div class="grid auto">${loot.map(item => `<article class="card loot-card"><h3>${escapeHtml(item.name)}</h3><p><span class="pill">${escapeHtml(item.rarity)}</span> <span class="pill">${escapeHtml(item.affix)}</span> <span class="pill">${escapeHtml(titleCase(item.slot))}</span></p><p>${escapeHtml(item.description)}</p><p class="small">${escapeHtml(describeGeneratedLoot(item))}</p>${button("Equip Loot", "equipLoot", item.id, "secondary")}</article>`).join("")}</div>`;
 }
 
 function setBonusRows(player) {
   const active = getEquippedSetBonuses(player);
   const counts = {};
-  for (const itemId of Object.values(player.equipment ?? {})) {
-    const item = byId(ITEMS, itemId);
+  for (const itemRef of Object.values(player.equipment ?? {})) {
+    const item = resolveEquippedItem(player, itemRef);
     if (item?.set) counts[item.set] = (counts[item.set] ?? 0) + 1;
   }
   return SET_BONUSES.map(set => `<article class="mini-card"><h3>${set.name} <span class="pill">${counts[set.id] ?? 0} pieces</span></h3>${set.thresholds.map(t => `<p class="small ${active.some(a => a.setId === set.id && a.pieces >= t.pieces) ? "active-bonus" : ""}">${t.pieces} pieces: ${t.description}</p>`).join("")}</article>`).join("");
@@ -685,11 +706,29 @@ export function shopScreen(state) {
   const shop = byId(SHOPS, state.ui.selectedShop) ?? SHOPS[0];
   const shopBody = shop.abilityShop
     ? abilityShopSection(state)
-    : `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>`;
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Shop</h1><p class="subtitle">Gold: <span class="kpi">${state.player.gold}</span>. Pick a shop tab below to buy supplies, gear, or Excel-imported abilities.</p></div>
+    : shop.craftingStation
+      ? `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>${craftingStationSection(state, shop.craftingStation)}`
+      : `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>`;
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Shop</h1><p class="subtitle">Gold: <span class="kpi">${state.player.gold}</span>. Pick a shop tab below to buy supplies, gear, abilities, or crafting services.</p></div>
     <div class="actions shop-tabs">${SHOPS.map(s => button(s.name, "selectShop", s.id, s.id === shop.id ? "ghost" : "secondary")).join("")}</div>
     ${shopBody}
   </section>`;
+}
+
+
+function craftingStationSection(state, stationId) {
+  const station = CRAFTING_STATIONS.find(item => item.id === stationId);
+  const recipes = CRAFTING_RECIPES.filter(recipe => recipe.station === stationId);
+  const forgeActions = stationId === "blacksmith" ? `<section class="card forge-actions"><h2>Forging Services</h2><p class="small">These services affect the first normal equipped item found in your equipment slots. Generated loot can be equipped, but cannot be forged yet.</p><div class="actions">${button("Upgrade Equipped Gear", "upgradeEquippedGear", "", "secondary")} ${button("Add Rune Slot", "addRuneSlot", "", "secondary")} ${button("Improve Scaling", "improveScaling", "", "secondary")}</div></section>` : "";
+  return `<section class="card crafting-station"><div class="row between"><div><h2>${escapeHtml(station?.name ?? titleCase(stationId))} Crafting</h2><p>${escapeHtml(station?.description ?? "Craft recipes from gathered materials.")}</p></div><span class="pill">${recipes.length} recipes</span></div><div class="grid auto">${recipes.map(recipe => craftingRecipeCard(state, recipe)).join("")}</div></section>${forgeActions}`;
+}
+
+function craftingRecipeCard(state, recipe) {
+  const check = canCraftRecipe(state.player, recipe);
+  const output = byId(ITEMS, recipe.output.itemId);
+  const gold = recipe.cost?.gold ?? 0;
+  const materialText = materialCostText(recipe.cost?.materials ?? {});
+  return `<article class="card crafting-recipe ${check.ok ? "" : "locked-card"}"><h3>${escapeHtml(recipe.name)}</h3><p><span class="pill">${escapeHtml(recipe.category)}</span> <span class="pill">${gold} gold</span></p><p>${escapeHtml(recipe.description)}</p><p class="small"><strong>Output:</strong> ${escapeHtml(output?.name ?? recipe.output.itemId)} x${recipe.output.qty ?? 1}</p><p class="small"><strong>Materials:</strong> ${escapeHtml(materialText)}</p><div class="actions">${button(check.ok ? "Craft" : check.reason, "craftRecipe", recipe.id, check.ok ? "" : "ghost")}</div></article>`;
 }
 
 function abilityShopSection(state) {
@@ -778,7 +817,7 @@ export function battleScreen(state) {
   return `<section class="screen">${nav(state)}<div class="hero"><h1>Battle</h1><p class="subtitle">Round ${state.combat.round}. Turn: <span class="kpi">${state.combat.turn}</span></p></div>
     <section class="combat-layout">
       <div class="card"><h2 class="player-name">${p.name}</h2>${resourceBars(p, stats)}<p>${statusPills(p.statusEffects)}</p><div class="actions">${button("Attack", "attack")} ${button("Inventory", "go", "inventory", "secondary")}</div><h3>Skills</h3>${skillList(p, "battle")}</div>
-      <div class="card"><h2 class="enemy-name">${enemy.name}</h2>${bar("HP", enemy.hp, enemy.maxHp, "hp")}<p><span class="pill">${enemy.element}</span> <span class="pill">${escapeHtml(enemy.enemyType ?? "Enemy")}</span> <span class="pill">${escapeHtml(enemy.enemyIdentity?.label ?? getEnemyIdentity(enemy, state.run?.floor ?? 1).label)}</span> ${statusPills(enemy.statusEffects)}</p><p class="small">Weak: ${(enemy.weaknessesElements ?? []).join(", ") || "Unknown"} · Resist: ${(enemy.resists ?? []).join(", ") || "None"}</p>${state.combat.modifier ? `<div class="modifier-card"><h3>Battle Modifier</h3><p><strong>${escapeHtml(state.combat.modifier.name)}</strong> — ${escapeHtml(state.combat.modifier.description)}</p></div>` : ""}${enemy.bossMechanics ? bossMechanicsCard(enemy) : ""}<div class="intent-card"><h3>Enemy Intent</h3><p>${intent?.text ?? "The enemy is watching you."}</p><span class="pill">${intent?.element ?? "unknown"}</span></div><h3>Battle Items</h3>${inventoryList(p, "battle")}</div>
+      <div class="card"><h2 class="enemy-name">${enemy.name}</h2>${bar("HP", enemy.hp, enemy.maxHp, "hp")}<p><span class="pill">${enemy.element}</span> <span class="pill">${escapeHtml(enemy.enemyType ?? "Enemy")}</span> <span class="pill">${escapeHtml(enemy.enemyIdentity?.label ?? getEnemyIdentity(enemy, state.run?.floor ?? 1).label)}</span> <span class="pill">Lv ${enemy.totalLevel ?? "?"}</span> ${statusPills(enemy.statusEffects)}</p><p class="small">Race Lv: ${(enemy.raceLevels ?? []).map(c => `${c.name} ${c.level}`).join(", ") || "?"} · Job Lv: ${(enemy.jobLevels ?? []).map(c => `${c.name} ${c.level}`).join(", ") || "?"}</p><p class="small">Weak: ${(enemy.weaknessesElements ?? []).join(", ") || "Unknown"} · Resist: ${(enemy.resists ?? []).join(", ") || "None"}</p>${state.combat.modifier ? `<div class="modifier-card"><h3>Battle Modifier</h3><p><strong>${escapeHtml(state.combat.modifier.name)}</strong> — ${escapeHtml(state.combat.modifier.description)}</p></div>` : ""}${enemy.bossMechanics ? bossMechanicsCard(enemy) : ""}<div class="intent-card"><h3>Enemy Intent</h3><p>${intent?.text ?? "The enemy is watching you."}</p><span class="pill">${intent?.element ?? "unknown"}</span></div><h3>Battle Items</h3>${inventoryList(p, "battle")}</div>
     </section>
     ${combatLog(state)}
   </section>`;
@@ -813,6 +852,47 @@ function questCard(quest) {
     <p class="small">Progress: ${quest.progress.current}/${quest.progress.required} · Rewards: ${escapeHtml(rewardText)}</p>
     <div class="actions">${action}</div>
   </article>`;
+}
+
+
+export function craftingScreen(state) {
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Crafting & Forging</h1><p class="subtitle">Blacksmithing upgrades gear, opens rune slots, improves scaling, and crafts set pieces. Alchemy creates potions, bombs, elixirs, cures, mana crystals, and stamina tonics.</p></div>
+    ${craftingStationSection(state, "blacksmith")}
+    ${craftingStationSection(state, "alchemy")}
+  </section>`;
+}
+
+export function buildSummaryScreen(state) {
+  const summary = getBuildSummary(state);
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Character Build Summary</h1><p class="subtitle">A readable explanation of what your current race/job build is becoming and what to aim for next.</p></div>
+    <section class="grid two">
+      <div class="card"><h2>Class Path</h2><p><strong>Race Path:</strong> ${escapeHtml(summary.racePath)}</p><p><strong>Job Path:</strong> ${escapeHtml(summary.jobPath)}</p><p><strong>Total Level:</strong> ${summary.totalLevel}</p><p><strong>Main Role:</strong> ${escapeHtml(summary.mainRole)}</p></div>
+      <div class="card"><h2>Combat Identity</h2><p><strong>Weapon Type:</strong> ${escapeHtml(summary.weaponType)}</p><p><strong>Main Skill Type:</strong> ${escapeHtml(summary.mainSkillType)}</p><p><strong>Main Spell School:</strong> ${escapeHtml(summary.mainSpellSchool)}</p><p><strong>Synergies:</strong> ${escapeHtml(summary.synergies.join(", ") || "None")}</p></div>
+    </section>
+    <section class="grid two"><div class="card"><h2>Strongest Stats</h2><p>${escapeHtml(summary.strongest)}</p></div><div class="card"><h2>Weakest Stats</h2><p>${escapeHtml(summary.weakest)}</p></div></section>
+    <section class="grid two"><div class="card"><h2>Unique Abilities</h2><p>${escapeHtml(summary.uniqueAbilities.join(", ") || "None unlocked yet")}</p></div><div class="card"><h2>Ultimate Abilities</h2><p>${escapeHtml(summary.ultimateAbilities.join(", ") || "None unlocked yet")}</p></div></section>
+    <section class="card"><h2>Recommended Next Goals</h2><ul>${summary.nextGoals.map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}</ul></section>
+  </section>`;
+}
+
+export function unlockTrackerScreen(state) {
+  const tracker = getUnlockTracker(state);
+  const rows = [
+    ["Race Stage Progress", tracker.raceStages],
+    ["Job Stage Progress", tracker.jobStages],
+    ["Valid Race Upgrades", tracker.validRaceUpgrades],
+    ["Valid Job Upgrades", tracker.validJobUpgrades],
+    ["Ability Evolution Chains", tracker.abilityChains],
+    ["Special Requirement Examples", tracker.specialExamples]
+  ];
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Unlock Tracker</h1><p class="subtitle">Shows what you are close to unlocking, including class upgrades, ability evolutions, and special requirement-style goals like World Flame Sigil or Phantom Step Art.</p></div>
+    ${rows.map(([title, list]) => `<section class="card"><div class="row between"><h2>${escapeHtml(title)}</h2><span class="pill">${list.length}</span></div>${list.length ? list.map(unlockTrackerCard).join("") : `<p class="small">Nothing close in this category yet.</p>`}</section>`).join("")}
+  </section>`;
+}
+
+function unlockTrackerCard(item) {
+  const missing = (item.missing ?? []).length ? `<ul>${item.missing.map(m => `<li>${escapeHtml(m)}</li>`).join("")}</ul>` : `<p class="small active-bonus">Ready or already valid.</p>`;
+  return `<article class="mini-card unlock-tracker-card"><div class="row between"><h3>${escapeHtml(item.name)}</h3><span class="pill">${item.pct ?? 0}%</span></div><p>${escapeHtml(item.description ?? item.text ?? "Progress tracker")}</p><div class="ability-meter quest-meter"><span style="width:${Math.max(0, Math.min(100, item.pct ?? 0))}%"></span></div><p class="small">Progress: ${item.current ?? 0}/${item.required ?? 1}${item.output ? ` · Output: ${escapeHtml(item.output)}` : ""}</p>${missing}</article>`;
 }
 
 export function eventScreen(state) {

@@ -31,6 +31,30 @@ export const ITEMS = [
   { id: "wolf_claws", name: "Wolf Road Claws", type: "equipment", slot: "arms", set: "wolf_road", price: 165, description: "Clawed gloves for close-range stamina builds.", stats: { str: 1, dex: 2 } },
   { id: "wolf_talisman", name: "Wolf Road Talisman", type: "equipment", slot: "accessory5", set: "wolf_road", price: 155, description: "A talisman that sharpens instinct.", stats: { dex: 1, wis: 1 } },
 
+
+  { id: "iron_ore", name: "Iron Ore", type: "material", price: 12, description: "Raw ore dropped by armored enemies and mining events. Used for forging upgrades." },
+  { id: "steel_ingot", name: "Steel Ingot", type: "material", price: 35, description: "Refined metal used for stronger weapons, armor, and set-piece crafting." },
+  { id: "monster_hide", name: "Monster Hide", type: "material", price: 18, description: "Tough hide used for bows, leather armor, stamina gear, and outfitter crafts." },
+  { id: "rune_shard", name: "Rune Shard", type: "material", price: 45, description: "A broken rune fragment used to open rune slots and craft magic equipment." },
+  { id: "moon_thread", name: "Moon Thread", type: "material", price: 40, description: "Silvery thread used for robes, charms, and light gear." },
+  { id: "alchemy_herb", name: "Alchemy Herb", type: "material", price: 10, description: "A common herb used in potions, elixirs, and cures." },
+  { id: "slime_jelly", name: "Slime Jelly", type: "material", price: 14, description: "A stabilizing reagent used for potions, bombs, and mana compounds." },
+  { id: "frost_salt", name: "Frost Salt", type: "material", price: 28, description: "Cold mineral salt used for stamina elixirs and ice-aspected crafting." },
+  { id: "storm_crystal", name: "Storm Crystal", type: "material", price: 55, description: "A charged crystal used for scaling improvements, storm gear, and mana crystals." },
+  { id: "holy_water", name: "Holy Water", type: "material", price: 35, description: "Blessed water used for cures, cleanse items, and holy gear." },
+  { id: "cursed_ash", name: "Cursed Ash", type: "material", price: 38, description: "A dark reagent used for bombs, curse items, and risky alchemy." },
+
+  { id: "rune_sword", name: "Rune-Etched Sword", type: "equipment", slot: "weapon1", price: 180, description: "A crafted blade with shallow rune grooves for hybrid skills and spells.", stats: { str: 2, int: 2 } },
+  { id: "storm_bow", name: "Stormstring Bow", type: "equipment", slot: "weapon1", price: 190, description: "A crafted bow strung with charged fiber, ideal for speed and ranged pressure.", stats: { dex: 3, int: 1 } },
+  { id: "guardian_plate", name: "Guardian Plate", type: "equipment", slot: "chest", price: 240, description: "Crafted armor made for endurance tanks and shield-based jobs.", stats: { con: 4, str: 1 } },
+  { id: "arcane_catalyst", name: "Arcane Catalyst", type: "equipment", slot: "weapon2", price: 220, description: "A crafted off-hand catalyst for spell schools, rune magic, and hybrid casting.", stats: { int: 3, wis: 1 } },
+
+  { id: "greater_potion", name: "Greater Potion", type: "consumable", price: 70, description: "Restore 85 HP.", effects: [{ type: "healFlat", amount: 85 }] },
+  { id: "mana_crystal", name: "Mana Crystal", type: "consumable", price: 80, description: "Restore 80 mana.", effects: [{ type: "restore", resource: "mana", amount: 80 }] },
+  { id: "stamina_elixir", name: "Stamina Elixir", type: "consumable", price: 75, description: "Restore 80 stamina.", effects: [{ type: "restore", resource: "stamina", amount: 80 }] },
+  { id: "cure_all", name: "Cure-All Draught", type: "consumable", price: 90, description: "Remove poison, burn, bleed, frozen, weakened, and stunned.", effects: [{ type: "cleanse" }] },
+  { id: "fire_bomb_item", name: "Fire Bomb", type: "consumable", price: 65, description: "A crafted bomb for alchemist builds. Currently used as a valuable battle supply and crafting output.", effects: [{ type: "healFlat", amount: 0 }] },
+  { id: "guard_elixir", name: "Guardian Elixir", type: "consumable", price: 85, description: "Restore HP and stamina before tough fights.", effects: [{ type: "healFlat", amount: 35 }, { type: "restore", resource: "stamina", amount: 45 }] },
   { id: "ember_gem", name: "Ember Gem", type: "material", price: 60, description: "A warm monster core used for future crafting." },
   { id: "relic_dust", name: "Relic Dust", type: "material", price: 0, description: "Permanent progression dust used for secret unlocks." }
 ];

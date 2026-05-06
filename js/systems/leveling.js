@@ -5,6 +5,7 @@ import { ITEMS, SET_BONUSES } from "../data/items.js";
 import { SKILLS } from "../data/skills.js";
 import { SYNERGIES } from "../data/synergies.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
+import { getGeneratedLoot } from "./loot.js";
 import { addLog, byId, clamp } from "../core/utils.js";
 import { canUnlockPath, getUnlockableAdvancements, getUnlockStatus, getClassDataById } from "./unlocks.js";
 import { emptyBasicAbilities, legacyStatsToBasicAbilities, addBasicAbilityPoints, buildBasicAbilityPacket, scaleDerivedStatsFromBasicAbilities } from "./basic-abilities.js";
@@ -112,11 +113,19 @@ export function computeStats(player) {
     addStats(stats, synergy.stats ?? {});
     addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(synergy.stats ?? {}, 0.7));
   }
-  for (const itemId of Object.values(player.equipment ?? {})) {
-    const item = byId(ITEMS, itemId);
+  for (const itemRef of Object.values(player.equipment ?? {})) {
+    const item = typeof itemRef === "string" && itemRef.startsWith("loot:") ? getGeneratedLoot(player, itemRef) : byId(ITEMS, itemRef);
     if (!item?.stats) continue;
+    const upgrade = typeof itemRef === "string" && !itemRef.startsWith("loot:") ? (player.itemUpgrades?.[itemRef] ?? {}) : {};
+    const upgradeStats = {};
+    for (const [key, value] of Object.entries(item.stats ?? {})) {
+      upgradeStats[key] = Math.ceil((upgrade.level ?? 0) * (Math.max(1, Math.abs(value)) * 0.25 + 1)) + Math.ceil((upgrade.scaling ?? 0) * (Math.max(1, Math.abs(value)) * 0.4 + 1));
+    }
+    if (upgrade.runeSlots) upgradeStats.int = (upgradeStats.int ?? 0) + upgrade.runeSlots;
     addStats(stats, item.stats);
+    addStats(stats, upgradeStats);
     addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(item.stats, 0.7));
+    addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(upgradeStats, 0.7));
   }
   for (const bonus of getEquippedSetBonuses(player)) {
     addStats(stats, bonus.stats ?? {});

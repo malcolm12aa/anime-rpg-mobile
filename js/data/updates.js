@@ -1,5 +1,19 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.0 — Crafting, Loot, Build Planning, and Map Events",
+    date: "2026-05-05",
+    notes: [
+      "Expanded the Blacksmith into a forging system with equipment crafting, upgrades, rune slots, scaling improvements, and set-piece crafting.",
+      "Added an Alchemy Shop for potions, bombs, elixirs, cures, mana crystals, and stamina tonics.",
+      "Added crafting materials from enemies and map events, including ore, ingots, hides, herbs, crystals, rune shards, and reagents.",
+      "Expanded random map events with merchants, treasure chests, ambushes, shrines, weather changes, secret paths, boss warnings, cursed altars, training masters, and ancient libraries.",
+      "Enemies now receive race/job level identity similar to the player character.",
+      "Added loot rarity and affix generation: Common, Uncommon, Rare, Epic, Legendary, Mythic, and World-Class loot with affixes like Burning, Frozen, Vampiric, Guardian, Arcane, Storm-Touched, Cursed, and Holy.",
+      "Added a Build Summary screen that explains race path, job path, role, weapon type, skill type, spell school, strongest/weakest stats, Unique abilities, Ultimate abilities, and recommended next goals.",
+      "Added an Unlock Tracker screen for class upgrades, ability evolutions, and special requirement-style unlock planning."
+    ]
+  },
+  {
     version: "v0.8.0 — Class & Ability Expansion",
     date: "2026-05-05",
     notes: [

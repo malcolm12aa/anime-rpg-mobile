@@ -65,7 +65,9 @@ export function createPlayer(name, raceId, jobId) {
     mana: 1,
     stamina: 1,
     baseStats: { str: 4, dex: 4, int: 4, wis: 4, con: 4, cha: 4 },
-    inventory: { minor_potion: 3, mana_vial: 1, stamina_tonic: 1, camp_ration: 2 },
+    inventory: { minor_potion: 3, mana_vial: 1, stamina_tonic: 1, camp_ration: 2, iron_ore: 2, alchemy_herb: 2, slime_jelly: 1 },
+    loot: [],
+    itemUpgrades: {},
     equipment,
     skills: skillIds,
     cooldowns: {},
@@ -114,6 +116,8 @@ export function hydrateState(raw) {
   state.quests.daily ??= { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 };
   if (state.player) {
     state.player.inventory ??= {};
+    state.player.loot ??= [];
+    state.player.itemUpgrades ??= {};
     state.player.cooldowns ??= {};
     state.player.statusEffects ??= [];
     state.player.party ??= [];

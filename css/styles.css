@@ -610,3 +610,31 @@ pre {
 .evolution-card .pill {
   margin: 2px 2px 2px 0;
 }
+
+/* v0.9.0 Crafting / Loot / Build Planning */
+.crafting-station, .forge-actions {
+  border-color: rgba(217,164,65,.24);
+}
+.crafting-recipe.locked-card button,
+.unlock-tracker-card button { opacity: .78; }
+.loot-card {
+  border-color: rgba(139,211,255,.22);
+}
+.loot-card h3 {
+  color: var(--accent-2);
+}
+.unlock-tracker-card.complete,
+.quest-card.complete {
+  border-color: rgba(114,223,159,.35);
+}
+.modifier-card, .boss-mechanics-card {
+  background: rgba(16,13,24,.78);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.forge-actions .actions button,
+.crafting-station .actions button {
+  min-width: 160px;
+}
