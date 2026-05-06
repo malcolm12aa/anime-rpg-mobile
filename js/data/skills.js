@@ -3,6 +3,7 @@ import { EXPANDED_SPELLS } from "./expanded-spells.js";
 import { EXPANDED_PASSIVES } from "./expanded-passives.js";
 import { EXPANDED_RESISTS } from "./expanded-resists.js";
 import { EXPANDED_ABILITY_LIBRARIES } from "./expanded-ability-libraries.js";
+import { DND_INSPIRED_ABILITIES, DND_ABILITY_LIBRARY } from "./dnd-inspired-abilities.js";
 
 // Auto-polished for v0.6.1 Skill/Spell Naming Pass.
 // IDs stay the same so saves and class ability links keep working.
@@ -5661,10 +5662,12 @@ export const SKILLS = [
   ...EXPANDED_SKILLS,
   ...EXPANDED_SPELLS,
   ...EXPANDED_PASSIVES,
-  ...EXPANDED_RESISTS
+  ...EXPANDED_RESISTS,
+  ...DND_INSPIRED_ABILITIES
 ];
 
 export const SKILL_SHOP_LIBRARIES = [
   ...BASE_SKILL_SHOP_LIBRARIES,
-  ...EXPANDED_ABILITY_LIBRARIES
+  ...EXPANDED_ABILITY_LIBRARIES,
+  DND_ABILITY_LIBRARY
 ];

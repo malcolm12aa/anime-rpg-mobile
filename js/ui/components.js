@@ -100,8 +100,11 @@ export function inventoryList(player, mode = "normal") {
     if (!item) return "";
     const action = item.type === "consumable" ? (mode === "battle" ? "battleItem" : "useItem") : item.type === "equipment" ? "equipItem" : "";
     const setText = item.set ? `<span class="pill">Set: ${titleCase(item.set)}</span>` : "";
+    const rarityText = item.rarity ? `<span class="pill">${item.rarity}</span>` : "";
+    const scalingText = item.scalingStats ? `<p class="small"><strong>Status Scaling:</strong> ${Object.entries(item.scalingStats).map(([k,v]) => `${titleCase(k)} ${v}`).join(" · ")}</p>` : "";
+    const armorText = item.armorBonus ? `<p class="small"><strong>Armor Bonus:</strong> ${item.armorBonus}</p>` : "";
     return `<div class="item-row card">
-      <div><strong>${item.name}</strong> <span class="pill">x${qty}</span> ${setText}<p>${item.description}</p></div>
+      <div><strong>${item.name}</strong> <span class="pill">x${qty}</span> ${rarityText} ${setText}<p>${item.description}</p>${scalingText}${armorText}</div>
       ${action ? button(item.type === "equipment" ? "Equip" : "Use", action, item.id, "secondary") : `<span class="pill">Material</span>`}
     </div>`;
   }).join("");
@@ -117,6 +120,7 @@ export function skillList(player, mode = "normal") {
     const cost = isPassive ? "Passive" : (skill.resource ? `${skill.cost} ${skill.resource}` : "Free");
     const icon = abilityIcon(skill);
     const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${tag}</span>`).join(" ");
+    const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
     return `<article class="ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${isPassive ? "passive-card" : ""}">
       <div class="ability-card-head">
         <div class="ability-icon">${icon}</div>
@@ -126,6 +130,7 @@ export function skillList(player, mode = "normal") {
       <div class="ability-stat-row"><span>Cost</span><strong>${cost}</strong></div>
       <div class="ability-stat-row"><span>Cooldown</span><strong>${skill.cooldown ?? 0}${cd ? ` · ${cd} left` : ""}</strong></div>
       <div class="ability-stat-row"><span>Power</span><strong>${skill.power ?? 0}</strong></div>
+      <div class="ability-stat-row"><span>Status Scaling</span><strong>${scaling}</strong></div>
       ${tags ? `<div class="ability-tags">${tags}</div>` : ""}
       ${mode === "battle" && !isPassive ? `<button ${disabled} data-action="skill" data-value="${skill.id}">${cd ? "Cooldown" : "Use Ability"}</button>` : (isPassive ? `<span class="pill passive-pill">Passive</span>` : "")}
     </article>`;

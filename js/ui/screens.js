@@ -771,6 +771,7 @@ function abilityShopCard(skill, player) {
   const price = Number(skill.price ?? 0);
   const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
   const cost = skill.resource === "none" ? "Passive" : `${skill.cost} ${skill.resource}`;
+  const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
   return `<article class="card skill-shop-card ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${known ? "selected" : ""}">
     <div class="ability-card-head">
       <div class="ability-icon">${abilityShopIcon(skill)}</div>
@@ -781,6 +782,7 @@ function abilityShopCard(skill, player) {
       <div><span>Cost</span><strong>${escapeHtml(cost)}</strong></div>
       <div><span>Cooldown</span><strong>${skill.cooldown}</strong></div>
       <div><span>Price</span><strong>${price} gold</strong></div>
+      <div><span>Scaling</span><strong>${escapeHtml(scaling)}</strong></div>
       <div><span>Source</span><strong>${escapeHtml(skill.origin ?? "Shop")}</strong></div>
     </div>
     <p class="small"><strong>Unlock:</strong> ${escapeHtml(skill.acquisition ?? "Shop")} · ${escapeHtml(skill.source ?? "Ability Library")}</p>
@@ -803,8 +805,13 @@ function abilityShopIcon(skill = {}) {
 
 function shopItem(itemId, gold) {
   const item = byId(ITEMS, itemId);
+  if (!item) return "";
   const set = item.set ? `<span class="pill">Set: ${titleCase(item.set)}</span>` : "";
-  return `<div class="item-row card"><div><strong>${item.name}</strong> <span class="pill">${item.price} gold</span> ${set}<p>${item.description}</p></div>${button(gold >= item.price ? "Buy" : "Too Expensive", "buyItem", item.id, gold >= item.price ? "" : "ghost")}</div>`;
+  const rarity = item.rarity ? `<span class="pill">${escapeHtml(item.rarity)}</span>` : "";
+  const scaling = item.scalingStats ? `<p class="small"><strong>Status Scaling:</strong> ${escapeHtml(Object.entries(item.scalingStats).map(([k,v]) => `${titleCase(k)} ${v}`).join(" · "))}</p>` : "";
+  const armor = item.armorBonus ? `<p class="small"><strong>Armor Bonus:</strong> ${escapeHtml(item.armorBonus)}</p>` : "";
+  const statLine = item.stats ? `<p class="small"><strong>Bonus Stats:</strong> ${escapeHtml(statsText(item.stats))}</p>` : "";
+  return `<div class="item-row card"><div><strong>${escapeHtml(item.name)}</strong> <span class="pill">${item.price} gold</span> ${rarity} ${set}<p>${escapeHtml(item.description)}</p>${statLine}${scaling}${armor}</div>${button(gold >= item.price ? "Buy" : "Too Expensive", "buyItem", item.id, gold >= item.price ? "" : "ghost")}</div>`;
 }
 
 export function mapScreen(state) {

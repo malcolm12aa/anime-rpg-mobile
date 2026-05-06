@@ -157,9 +157,11 @@ function executeSkill(state, attacker, defender, skill, isPlayer) {
   let totalDamage = 0;
   if (skill.power > 0) {
     const offensive = skill.kind === "spell" ? (attackerStats.magic ?? attackerStats.int ?? 3) : (attackerStats.attack ?? attackerStats.str ?? 3);
-    const base = randInt(2, 8) + skill.power + Math.floor(offensive * 0.9);
+    const scalingBonus = statusScalingBonus(skill, attackerStats);
+    const base = randInt(2, 8) + skill.power + Math.floor(offensive * 0.9) + scalingBonus;
     totalDamage = dealDamage(attacker, defender, base, skill.element, attackerStats, defenderStats, state.combat?.modifier);
-    addLog(state, `${attacker.name} uses <strong>${skill.name}</strong> for <strong>${totalDamage}</strong> ${skill.element} damage.`);
+    const scalingText = scalingBonus ? ` <span class="small">(+${scalingBonus} status scaling)</span>` : "";
+    addLog(state, `${attacker.name} uses <strong>${skill.name}</strong> for <strong>${totalDamage}</strong> ${skill.element} damage.${scalingText}`);
   } else {
     addLog(state, `${attacker.name} uses <strong>${skill.name}</strong>.`);
   }
@@ -194,6 +196,18 @@ function executeSkill(state, attacker, defender, skill, isPlayer) {
   }
 }
 
+function statusScalingBonus(skill, stats = {}) {
+  const scaling = skill.scaling ?? skill.statusScaling ?? null;
+  if (!scaling) return 0;
+  const totals = stats.basicAbilities?.total ?? {};
+  let bonus = 0;
+  for (const [ability, ratio] of Object.entries(scaling)) {
+    const value = Number(totals[ability] ?? stats[ability] ?? 0);
+    const scale = Number(ratio ?? 0);
+    if (Number.isFinite(value) && Number.isFinite(scale)) bonus += value * scale;
+  }
+  return Math.max(0, Math.floor(bonus));
+}
 
 function applyBossMechanics(state, enemy) {
   if (!enemy.bossMechanics || !state.combat) return;

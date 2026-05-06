@@ -1,6 +1,7 @@
 import { ITEMS, EQUIPMENT_SLOTS } from "../data/items.js";
 import { byId, addInventory, removeInventory, addLog, clamp } from "../core/utils.js";
 import { computeStats, syncResourcesToStats } from "./leveling.js";
+import { applyStatus } from "./effects.js";
 import { getGeneratedLoot } from "./loot.js";
 
 export function useItem(state, itemId, inBattle = false) {
@@ -19,6 +20,18 @@ export function useItem(state, itemId, inBattle = false) {
     }
     if (effect.type === "cleanse") {
       state.player.statusEffects = (state.player.statusEffects ?? []).filter(s => !["poison", "burn", "bleed", "frozen", "weakened", "stunned"].includes(s.id));
+    }
+    if (effect.type === "statusSelf") {
+      applyStatus(state.player, effect.status, effect.duration ?? 2);
+    }
+    if (inBattle && state.combat?.enemy && effect.type === "damageEnemy") {
+      const enemy = state.combat.enemy;
+      const damage = Math.max(1, Math.floor(effect.amount ?? 0));
+      enemy.hp = clamp(enemy.hp - damage, 0, enemy.maxHp ?? 9999);
+      addLog(state, `${item.name} hits ${enemy.name} for ${damage} ${effect.element ?? "item"} damage.`);
+    }
+    if (inBattle && state.combat?.enemy && effect.type === "statusEnemy") {
+      if (Math.random() * 100 < (effect.chance ?? 100)) applyStatus(state.combat.enemy, effect.status, effect.duration ?? 2);
     }
   }
   addLog(state, `Used ${item.name}.`);

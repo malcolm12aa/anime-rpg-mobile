@@ -1,5 +1,26 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.4.1 — Shop Content Hotfix",
+    date: "2026-05-06",
+    notes: [
+      "Restored the updated shop stock lists so D&D-inspired weapons, armor, consumables, and abilities appear in the Shop screen.",
+      "Restored js/data/dnd-inspired-items.js and js/data/dnd-inspired-abilities.js imports into the active item and ability data files.",
+      "General Store, Blacksmith, Blue Candle Arcanist, Roadside Outfitter, Alchemy Shop, and Skill / Spell Library now point to the new v0.9.4 content.",
+      "This is a content-linking hotfix; no gameplay systems were removed."
+    ]
+  },
+  {
+    version: "v0.9.4 — Tabletop-Inspired Ability and Item Expansion",
+    date: "2026-05-06",
+    notes: [
+      "Added 50 original skills, spells, passives, resist abilities, and ultimate abilities inspired by classic tabletop spell roles.",
+      "Added 50 original items inspired by classic tabletop RPG equipment: 20 weapons, 15 armor pieces, and 15 consumables.",
+      "Added explicit status scaling to the new abilities so Basic Abilities like Magic, Strength, Dexterity, Agility, and Endurance affect damage bonuses.",
+      "Added weapon status-scaling tags and armor bonus descriptions so gear identity is easier to read.",
+      "Added a new Tabletop Arcana Archive ability library and expanded shop stock across General Store, Blacksmith, Arcanist, Outfitter, and Alchemy."
+    ]
+  },
+  {
     version: "v0.9.3 — Dark Guild Interface UI Update",
     date: "2026-05-06",
     notes: [

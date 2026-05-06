@@ -1,4 +1,5 @@
-export const ITEMS = [
+import { DND_INSPIRED_ITEMS, DND_INSPIRED_SET_BONUSES } from "./dnd-inspired-items.js";
+const BASE_ITEMS = [
   { id: "minor_potion", name: "Minor Potion", type: "consumable", price: 25, description: "Restore 35 HP.", effects: [{ type: "healFlat", amount: 35 }] },
   { id: "mana_vial", name: "Mana Vial", type: "consumable", price: 30, description: "Restore 30 mana.", effects: [{ type: "restore", resource: "mana", amount: 30 }] },
   { id: "stamina_tonic", name: "Stamina Tonic", type: "consumable", price: 25, description: "Restore 30 stamina.", effects: [{ type: "restore", resource: "stamina", amount: 30 }] },
@@ -59,7 +60,9 @@ export const ITEMS = [
   { id: "relic_dust", name: "Relic Dust", type: "material", price: 0, description: "Permanent progression dust used for secret unlocks." }
 ];
 
-export const SET_BONUSES = [
+export const ITEMS = [...BASE_ITEMS, ...DND_INSPIRED_ITEMS];
+
+const BASE_SET_BONUSES = [
   {
     id: "ember_knight",
     name: "Ember Knight Set",
@@ -85,5 +88,7 @@ export const SET_BONUSES = [
     ]
   }
 ];
+
+export const SET_BONUSES = [...BASE_SET_BONUSES, ...DND_INSPIRED_SET_BONUSES];
 
 export const EQUIPMENT_SLOTS = ["head", "chest", "arms", "legs", "weapon1", "weapon2", "accessory1", "accessory2", "accessory3", "accessory4", "accessory5"];
