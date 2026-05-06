@@ -50,88 +50,75 @@ const JOB_CATEGORY_OPTIONS = uniqueSorted(JOBS.map(item => item.category));
 const JOB_TIER_OPTIONS = uniqueSorted(JOBS.map(item => item.tier));
 
 export function mainMenu(state) {
-  return `<section class="screen">
-    <div class="hero">
+  const slots = getSaveSlots();
+  const latestSave = slots
+    .filter(slot => slot.exists && slot.savedAt)
+    .sort((a, b) => String(b.savedAt).localeCompare(String(a.savedAt)))[0] ?? slots.find(slot => slot.exists);
+  const hasSave = Boolean(latestSave);
+  const continueButton = hasSave
+    ? button(`Continue Slot ${latestSave.slot}`, "loadSlot", latestSave.slot)
+    : button("Continue", "openLoadMenu", "", "ghost");
+  const latestText = hasSave
+    ? `${escapeHtml(latestSave.title ? `${latestSave.title} ` : "")}${escapeHtml(latestSave.name)} · Lv ${latestSave.totalLevel} · ${escapeHtml(latestSave.raceName)} / ${escapeHtml(latestSave.jobName)}`
+    : "No save found yet. Start a new legend to create your first save slot.";
+
+  return `<section class="screen main-menu-screen">
+    <div class="hero main-menu-hero">
       <p class="version">${CONFIG.version}</p>
       <h1 class="title">${CONFIG.title}</h1>
-      <p class="subtitle">An original fantasy text RPG with light anime-style class progression, roguelike dungeon runs, and YGGDRASIL-inspired race/job levels.</p>
-      <div class="actions">
-        ${button("Open Full New Game Builder", "go", "character-create")}
+      <p class="subtitle">A static web text RPG of race evolutions, job upgrades, roguelike dungeon runs, crafting, loot, quests, and build planning.</p>
+      <div class="main-menu-actions">
+        ${continueButton}
+        ${button("New Game", "go", "character-create", "secondary")}
         ${button("Load Game", "openLoadMenu", "", "secondary")}
-        ${button("Class Registry", "go", "class-registry", "secondary")}
-        ${button("Update Notes", "go", "updates", "secondary")}
+        ${button("Update Notes", "go", "updates", "ghost")}
       </div>
+      <p class="small main-menu-save-line"><strong>Latest Save:</strong> ${latestText}</p>
     </div>
-    ${newGameQuickBuilder(state)}
+    ${mainMenuCards(hasSave, latestSave)}
+    ${mainMenuFeatureGrid()}
     ${newsCard()}
   </section>`;
 }
 
+function mainMenuCards(hasSave, latestSave) {
+  const latestDate = latestSave?.savedAt ? new Date(latestSave.savedAt).toLocaleString() : "No save yet";
+  return `<section class="grid three main-menu-card-grid">
+    <article class="card main-menu-card primary-menu-card">
+      <span class="layout-label">Start</span>
+      <h2>New Legend</h2>
+      <p>Create your race, choose your first job, then enter the Guild Hub. Filters stay inside the full builder so the title screen stays clean.</p>
+      ${button("Start New Game", "go", "character-create")}
+    </article>
+    <article class="card main-menu-card">
+      <span class="layout-label">Continue</span>
+      <h2>Save Slots</h2>
+      <p>${hasSave ? `Latest save: ${escapeHtml(latestSave.name)} · saved ${escapeHtml(latestDate)}.` : "Use the five-slot save menu to load or manage characters on this browser."}</p>
+      ${button("Open Save / Load", "openLoadMenu", "", "secondary")}
+    </article>
+    <article class="card main-menu-card">
+      <span class="layout-label">Explore</span>
+      <h2>Class Registry</h2>
+      <p>Browse imported races, race evolutions, base jobs, advanced paths, hidden jobs, and upgrade routes before building.</p>
+      ${button("Open Registry", "go", "class-registry", "secondary")}
+    </article>
+  </section>`;
+}
+
+function mainMenuFeatureGrid() {
+  return `<section class="grid auto main-menu-feature-grid">
+    <article class="card feature-card"><h3>Roguelike Runs</h3><p>Random encounters, map events, bosses, modifiers, loot rarity, affixes, and material drops.</p></article>
+    <article class="card feature-card"><h3>Race & Job Growth</h3><p>Total Level = Race Levels + Job Levels, with evolutions, upgrades, hidden paths, and Basic Ability scaling.</p></article>
+    <article class="card feature-card"><h3>Crafting & Loot</h3><p>Forge equipment, add rune slots, craft potions, brew bombs, and build toward set bonuses.</p></article>
+    <article class="card feature-card"><h3>Build Planning</h3><p>Use the Build Summary and Unlock Tracker after starting a character to plan future upgrades.</p></article>
+  </section>`;
+}
+
 function newsCard() {
-  return `<section class="card">
-    <h2>Improvement Build</h2>
-    <p>Total Level = Race Levels + Job Levels. This version adds the Excel race/job data import, 5 save slots, class trees, synergies, set bonuses, achievements, enemy intent, expanded events, recruit personality, update notes, v0.4.0 real unlock conditions, and v0.6.1 polished naming/shop tabs, v0.6.2 Basic Abilities, and v0.6.3 race/job layout polish, v0.7.0 quest/identity/boss systems, and v0.8.0 class/ability expansion systems.</p>
+  return `<section class="card main-menu-news">
+    <h2>Latest Build</h2>
+    <p>This version keeps the full character builder available, but moves all race/job filtering out of the title screen for a cleaner main menu experience.</p>
   </section>`;
-}
-
-function newGameQuickBuilder(state) {
-  // This is the same filter system used by Character Creation, exposed directly on
-  // the Main Menu so players can find a race/job before committing to New Game.
-  const cc = state.characterCreation;
-  const filters = { ...CREATION_FILTER_DEFAULTS, ...(state.ui.creationFilters ?? {}) };
-  const filteredRaces = filterCreationChoices(RACES, filters, "race");
-  const filteredJobs = filterCreationChoices(JOBS, filters, "job");
-  const raceLimit = 8;
-  const jobLimit = 8;
-  const selectedRaceVisible = filteredRaces.some(item => item.id === cc.raceId);
-  const selectedJobVisible = filteredJobs.some(item => item.id === cc.jobId);
-
-  return `<section class="card new-game-quick-builder">
-    <div class="row between">
-      <div>
-        <h2>New Game Quick Builder</h2>
-        <p class="small">Search and filter the imported Excel races/jobs before starting. The Main Menu shows compact results; open the full builder for larger cards and more detail.</p>
-      </div>
-      <span class="pill">Selected build ready</span>
-    </div>
-    <section class="grid two">
-      <div class="card"><label>Character Name</label><input data-input="characterName" value="${escapeHtml(cc.name)}" maxlength="24" /></div>
-      ${creationPreview(cc)}
-    </section>
-    <section class="card quick-filter-card">
-      <div class="row between"><h3>Race Filters</h3><span class="pill">${filteredRaces.length}/${RACES.length} shown</span></div>
-      ${creationFilterPanel("race", filters, filteredRaces.length, RACES.length)}
-    </section>
-    ${selectedRaceVisible ? "" : selectedChoiceNotice("race", cc.raceId, RACES)}
-    <div class="grid auto compact-choice-grid">
-      ${filteredRaces.slice(0, raceLimit).map(compactChoiceCard(cc.raceId, "selectRace", "race")).join("") || emptyFilterCard("races")}
-    </div>
-    ${filteredRaces.length > raceLimit ? `<p class="small">Showing first ${raceLimit} race matches on the Main Menu. Use search/filter more or open the full builder to browse everything.</p>` : ""}
-    <section class="card quick-filter-card">
-      <div class="row between"><h3>Job Filters</h3><span class="pill">${filteredJobs.length}/${JOBS.length} shown</span></div>
-      ${creationFilterPanel("job", filters, filteredJobs.length, JOBS.length)}
-    </section>
-    ${selectedJobVisible ? "" : selectedChoiceNotice("job", cc.jobId, JOBS)}
-    <div class="grid auto compact-choice-grid">
-      ${filteredJobs.slice(0, jobLimit).map(compactChoiceCard(cc.jobId, "selectJob", "job")).join("") || emptyFilterCard("jobs")}
-    </div>
-    ${filteredJobs.length > jobLimit ? `<p class="small">Showing first ${jobLimit} job matches on the Main Menu. Use search/filter more or open the full builder to browse everything.</p>` : ""}
-    <div class="actions">
-      ${button("Start Selected Build", "startCharacter")}
-      ${button("Open Full Builder", "go", "character-create", "secondary")}
-      ${button("Reset Filters", "resetCreationFilters", "", "ghost")}
-    </div>
-  </section>`;
-}
-
-function compactChoiceCard(selectedId, action, type) {
-  return item => classProfileCard(item, {
-    type,
-    selected: selectedId === item.id,
-    compact: true,
-    action,
-    actionLabel: selectedId === item.id ? "Selected" : `Choose ${titleCase(type)}`
-  });
 }
 
 function classProfileCard(item, { type = "race", selected = false, compact = false, action = "", actionLabel = "Choose", level = null } = {}) {

@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.1 — Main Menu Cleanup",
+    date: "2026-05-06",
+    notes: [
+      "Removed the New Game Quick Builder from the Main Menu.",
+      "Rebuilt the Main Menu as a cleaner title-screen style layout.",
+      "Added clearer Continue, New Game, Save/Load, Class Registry, and Update Notes actions.",
+      "Kept race/job filters inside the full character creation builder instead of crowding the title screen.",
+      "Added quick feature cards for roguelike runs, race/job growth, crafting/loot, and build planning."
+    ]
+  },
+  {
     version: "v0.9.0 — Crafting, Loot, Build Planning, and Map Events",
     date: "2026-05-05",
     notes: [
