@@ -6,6 +6,9 @@ import { JOBS, JOB_PATHS } from "../data/jobs.js";
 import { addInventory, addLog, byId, choice, randInt, titleCase } from "../core/utils.js";
 import { gainXp, getTotalLevel } from "./leveling.js";
 
+const ACTIVE_LEGEND_QUESTS = 6;
+const ACTIVE_LEGEND_ACHIEVEMENTS = 6;
+
 const DEFAULT_ENGINE = () => ({
   generatedQuestCount: 0,
   generatedAchievementCount: 0,
@@ -13,6 +16,10 @@ const DEFAULT_ENGINE = () => ({
   achievements: [],
   claimedQuests: [],
   unlockedAchievements: [],
+  completedQuestKeys: [],
+  completedAchievementKeys: [],
+  completedQuestHistory: [],
+  completedAchievementHistory: [],
   lastProfileKey: ""
 });
 
@@ -24,6 +31,10 @@ export function ensureLegendEngineState(state) {
   state.legendEngine.achievements ??= [];
   state.legendEngine.claimedQuests ??= [];
   state.legendEngine.unlockedAchievements ??= [];
+  state.legendEngine.completedQuestKeys ??= [];
+  state.legendEngine.completedAchievementKeys ??= [];
+  state.legendEngine.completedQuestHistory ??= [];
+  state.legendEngine.completedAchievementHistory ??= [];
   state.legendEngine.lastProfileKey ??= "";
   state.meta ??= {};
   state.meta.abilityUses ??= {};
@@ -144,7 +155,8 @@ function titleWordFromProfile(profile) {
 
 function questAmount(frame, profile) {
   const levelBump = Math.floor((profile.totalLevel ?? 1) / 12);
-  if (frame.targetType === "totalLevel") return Math.max(frame.baseAmount, profile.totalLevel + 3);
+  if (frame.targetType === "totalLevel") return Math.max(2, Math.min(8, 2 + Math.floor((profile.totalLevel ?? 1) / 20)));
+  if (frame.targetType === "highestRaceLevel" || frame.targetType === "highestJobLevel") return Math.max(2, Math.min(8, 2 + Math.floor((profile.totalLevel ?? 1) / 25)));
   if (frame.targetType === "bossKills") return Math.max(1, Math.min(5, 1 + Math.floor((profile.totalLevel ?? 1) / 25)));
   return Math.max(1, frame.baseAmount + levelBump);
 }
@@ -163,8 +175,8 @@ function buildQuestDescription(frame, profile, amount) {
   switch (frame.targetType) {
     case "weaponBattles": return `Win ${amount} battles while using an equipped ${titleCase(profile.keyWeapon)} or related weapon path. Tuned for ${raceJob}.`;
     case "elementUses": return `Use ${titleCase(profile.keyElement)} abilities ${amount} times to advance your elemental training.`;
-    case "totalLevel": return `Reach Total Level ${amount} through race and job growth.`;
-    case "highestRaceLevel": return `Raise any race stage to Level ${amount} and strengthen your bloodline identity.`;
+    case "totalLevel": return `Gain ${amount} total race/job level(s) from this contract.`;
+    case "highestRaceLevel": return `Raise any race stage by ${amount} level(s) and strengthen your bloodline identity.`;
     case "enemyKills": return `Defeat ${amount} enemies across dungeon runs.`;
     case "bossKills": return `Defeat ${amount} boss enemy to prove the build can handle mechanics.`;
     case "roomsCleared": return `Clear ${amount} dungeon rooms or encounters in your career.`;
@@ -184,23 +196,45 @@ function buildQuestRewards(frame, amount, profile) {
   return rewards;
 }
 
+function legendKeyFor(frame, profile) {
+  return `${frame.id}:${frame.targetType === "elementUses" ? profile.keyElement : ""}:${frame.targetType === "weaponBattles" ? profile.keyWeapon : ""}`;
+}
+
+function questKey(quest = {}) {
+  return `${quest.frameId}:${quest.target?.element ?? ""}:${quest.target?.weapon ?? ""}`;
+}
+
+function achievementKey(achievement = {}) {
+  return `${achievement.frameId}:${achievement.target?.element ?? ""}:${achievement.target?.weapon ?? ""}`;
+}
+
+function trimHistory(engine) {
+  engine.completedQuestKeys = [...new Set(engine.completedQuestKeys ?? [])].slice(-24);
+  engine.completedAchievementKeys = [...new Set(engine.completedAchievementKeys ?? [])].slice(-24);
+  engine.completedQuestHistory = (engine.completedQuestHistory ?? []).slice(-20);
+  engine.completedAchievementHistory = (engine.completedAchievementHistory ?? []).slice(-20);
+}
+
 function createQuestFromFrame(state, frame, profile, index) {
   const amount = questAmount(frame, profile);
   const engine = ensureLegendEngineState(state);
   engine.generatedQuestCount += 1;
+  const target = {
+    type: frame.targetType,
+    amount,
+    element: frame.targetType === "elementUses" ? profile.keyElement : undefined,
+    weapon: frame.targetType === "weaponBattles" ? profile.keyWeapon : undefined
+  };
+  target.start = currentForTarget(state, target);
   return {
     id: `legend_q_${frame.id}_${engine.generatedQuestCount}`,
     frameId: frame.id,
+    key: legendKeyFor(frame, profile),
     dynamic: true,
     category: frame.category,
     name: buildQuestName(frame, profile, index),
     description: buildQuestDescription(frame, profile, amount),
-    target: {
-      type: frame.targetType,
-      amount,
-      element: frame.targetType === "elementUses" ? profile.keyElement : undefined,
-      weapon: frame.targetType === "weaponBattles" ? profile.keyWeapon : undefined
-    },
+    target,
     rewards: buildQuestRewards(frame, amount, profile),
     profile: {
       raceName: profile.raceName,
@@ -213,27 +247,47 @@ function createQuestFromFrame(state, frame, profile, index) {
   };
 }
 
-export function generateLegendQuests(state, count = 3) {
+export function generateLegendQuests(state, count = 3, options = {}) {
   const engine = ensureLegendEngineState(state);
+  if (!state.player) return [];
   const profile = getLegendProfile(state);
-  const existingKeys = new Set(engine.quests.map(q => `${q.frameId}:${q.target?.element ?? ""}:${q.target?.weapon ?? ""}`));
+  const active = engine.quests.filter(q => !engine.claimedQuests.includes(q.id));
+  const existingKeys = new Set(active.map(q => q.key ?? questKey(q)));
+  const completedKeys = new Set(engine.completedQuestKeys ?? []);
   const preferred = [...LEGEND_QUEST_FRAMES].sort((a, b) => {
     const aMatch = a.targetType === "elementUses" && profile.knownElements.length ? -2 : a.targetType === "weaponBattles" && (profile.equippedWeapons.length || profile.weaponPrescriptions.length) ? -1 : 0;
     const bMatch = b.targetType === "elementUses" && profile.knownElements.length ? -2 : b.targetType === "weaponBattles" && (profile.equippedWeapons.length || profile.weaponPrescriptions.length) ? -1 : 0;
     return aMatch - bMatch;
   });
   const added = [];
-  for (const frame of preferred) {
-    if (added.length >= count) break;
-    const key = `${frame.id}:${frame.targetType === "elementUses" ? profile.keyElement : ""}:${frame.targetType === "weaponBattles" ? profile.keyWeapon : ""}`;
-    if (existingKeys.has(key) && engine.quests.length < 12) continue;
-    added.push(createQuestFromFrame(state, frame, profile, added.length));
-    existingKeys.add(key);
+
+  function tryFill(ignoreCompleted = false) {
+    for (const frame of preferred) {
+      if (added.length >= count) break;
+      const key = legendKeyFor(frame, profile);
+      if (existingKeys.has(key)) continue;
+      if (!ignoreCompleted && completedKeys.has(key)) continue;
+      const quest = createQuestFromFrame(state, frame, profile, active.length + added.length);
+      added.push(quest);
+      existingKeys.add(key);
+    }
   }
-  engine.quests.unshift(...added);
-  engine.quests = engine.quests.slice(0, 18);
-  engine.lastProfileKey = profile.profileKey;
-  addLog(state, `<strong>Legend Engine:</strong> Generated ${added.length} build-based quest contract(s).`);
+
+  tryFill(false);
+  if (added.length < count && completedKeys.size >= LEGEND_QUEST_FRAMES.length) {
+    engine.completedQuestKeys = [];
+    completedKeys.clear();
+    tryFill(true);
+  }
+  if (added.length < count) tryFill(true);
+
+  if (added.length) {
+    engine.quests.unshift(...added);
+    engine.quests = engine.quests.filter(q => !engine.claimedQuests.includes(q.id)).slice(0, ACTIVE_LEGEND_QUESTS);
+    engine.lastProfileKey = profile.profileKey;
+    if (!options.silent) addLog(state, `<strong>Legend Engine:</strong> Added ${added.length} build-based quest contract(s) to the Quest Board.`);
+  }
+  trimHistory(engine);
   return added;
 }
 
@@ -260,7 +314,9 @@ function currentForTarget(state, target = {}) {
 }
 
 export function getLegendQuestProgress(state, quest) {
-  const current = currentForTarget(state, quest.target);
+  const rawCurrent = currentForTarget(state, quest.target);
+  const start = Number(quest.target?.start ?? 0);
+  const current = Math.max(0, rawCurrent - start);
   const required = quest.target?.amount ?? 1;
   return { current, required, complete: current >= required, pct: Math.max(0, Math.min(100, Math.floor((current / Math.max(1, required)) * 100))) };
 }
@@ -281,13 +337,14 @@ export function claimLegendQuestReward(state, questId) {
   const progress = getLegendQuestProgress(state, quest);
   if (!progress.complete) return addLog(state, `${quest.name} is not complete yet.`);
   if (engine.claimedQuests.includes(quest.id)) return addLog(state, "Legend Engine reward already claimed.");
-  const rewards = quest.rewards ?? {};
-  if (rewards.gold) state.player.gold += rewards.gold;
-  if (rewards.xp) gainXp(state, rewards.xp);
-  if (rewards.relicDust) state.meta.relicDust = (state.meta.relicDust ?? 0) + rewards.relicDust;
-  for (const [itemId, qty] of Object.entries(rewards.items ?? {})) addInventory(state.player, itemId, qty);
+  applyLegendQuestRewards(state, quest);
   engine.claimedQuests.push(quest.id);
-  addLog(state, `<strong>Legend Engine Quest Complete:</strong> ${quest.name}. Rewards claimed.`);
+  const key = quest.key ?? questKey(quest);
+  if (!engine.completedQuestKeys.includes(key)) engine.completedQuestKeys.push(key);
+  engine.completedQuestHistory.push({ id: quest.id, name: quest.name, key, completedAt: Date.now() });
+  engine.quests = engine.quests.filter(q => q.id !== quest.id);
+  addLog(state, `<strong>Legend Engine Quest Complete:</strong> ${quest.name}. Rewards claimed and replaced.`);
+  ensureLegendEngineRotation(state);
 }
 
 function achievementName(frame, profile, index) {
@@ -321,51 +378,77 @@ function createAchievementFromFrame(state, frame, profile, index) {
   const engine = ensureLegendEngineState(state);
   engine.generatedAchievementCount += 1;
   const amount = frame.targetType === "elementUses" ? Math.max(frame.amount, 15 + Math.floor(profile.totalLevel / 2)) : frame.amount;
+  const target = {
+    type: frame.targetType,
+    amount,
+    element: frame.targetType === "elementUses" ? profile.keyElement : undefined,
+    weapon: frame.targetType === "weaponBattles" ? profile.keyWeapon : undefined
+  };
+  target.start = currentForTarget(state, target);
   return {
     id: `legend_a_${frame.id}_${engine.generatedAchievementCount}`,
     frameId: frame.id,
+    key: legendKeyFor(frame, profile),
     dynamic: true,
     name: achievementName(frame, profile, index),
     title: achievementTitle(frame, profile, index),
     difficulty: frame.difficulty,
     bonus: frame.bonus,
     description: achievementDescription(frame, profile, amount),
-    target: {
-      type: frame.targetType,
-      amount,
-      element: frame.targetType === "elementUses" ? profile.keyElement : undefined,
-      weapon: frame.targetType === "weaponBattles" ? profile.keyWeapon : undefined
-    },
+    target,
     createdAt: Date.now()
   };
 }
 
-export function generateLegendAchievements(state, count = 3) {
+export function generateLegendAchievements(state, count = 3, options = {}) {
   const engine = ensureLegendEngineState(state);
+  if (!state.player) return [];
   const profile = getLegendProfile(state);
-  const existing = new Set(engine.achievements.map(a => `${a.frameId}:${a.target?.element ?? ""}:${a.target?.weapon ?? ""}`));
+  const active = engine.achievements.filter(a => !engine.unlockedAchievements.includes(a.id) && !state.player?.achievements?.includes(a.id));
+  const existing = new Set(active.map(a => a.key ?? achievementKey(a)));
+  const completedKeys = new Set(engine.completedAchievementKeys ?? []);
   const added = [];
-  for (const frame of LEGEND_ACHIEVEMENT_FRAMES) {
-    if (added.length >= count) break;
-    const key = `${frame.id}:${frame.targetType === "elementUses" ? profile.keyElement : ""}:${frame.targetType === "weaponBattles" ? profile.keyWeapon : ""}`;
-    if (existing.has(key) && engine.achievements.length < 12) continue;
-    added.push(createAchievementFromFrame(state, frame, profile, added.length));
-    existing.add(key);
+
+  function tryFill(ignoreCompleted = false) {
+    for (const frame of LEGEND_ACHIEVEMENT_FRAMES) {
+      if (added.length >= count) break;
+      const key = legendKeyFor(frame, profile);
+      if (existing.has(key)) continue;
+      if (!ignoreCompleted && completedKeys.has(key)) continue;
+      const achievement = createAchievementFromFrame(state, frame, profile, active.length + added.length);
+      added.push(achievement);
+      existing.add(key);
+    }
   }
-  engine.achievements.unshift(...added);
-  engine.achievements = engine.achievements.slice(0, 18);
-  addLog(state, `<strong>Legend Engine:</strong> Generated ${added.length} achievement/title milestone(s).`);
-  checkLegendAchievements(state);
+
+  tryFill(false);
+  if (added.length < count && completedKeys.size >= LEGEND_ACHIEVEMENT_FRAMES.length) {
+    engine.completedAchievementKeys = [];
+    completedKeys.clear();
+    tryFill(true);
+  }
+  if (added.length < count) tryFill(true);
+
+  if (added.length) {
+    engine.achievements.unshift(...added);
+    engine.achievements = engine.achievements
+      .filter(a => !engine.unlockedAchievements.includes(a.id) && !state.player?.achievements?.includes(a.id))
+      .slice(0, ACTIVE_LEGEND_ACHIEVEMENTS);
+    if (!options.silent) addLog(state, `<strong>Legend Engine:</strong> Added ${added.length} achievement/title milestone(s) to Achievements.`);
+  }
+  trimHistory(engine);
   return added;
 }
 
 export function getLegendAchievements(state) {
   const engine = ensureLegendEngineState(state);
-  return engine.achievements.map(achievement => ({
-    ...achievement,
-    progress: getLegendQuestProgress(state, achievement),
-    unlocked: engine.unlockedAchievements.includes(achievement.id) || state.player?.achievements?.includes(achievement.id)
-  }));
+  return engine.achievements
+    .filter(achievement => !engine.unlockedAchievements.includes(achievement.id) && !state.player?.achievements?.includes(achievement.id))
+    .map(achievement => ({
+      ...achievement,
+      progress: getLegendQuestProgress(state, achievement),
+      unlocked: false
+    }));
 }
 
 export function checkLegendAchievements(state) {
@@ -377,6 +460,9 @@ export function checkLegendAchievements(state) {
     const progress = getLegendQuestProgress(state, achievement);
     if (!progress.complete) continue;
     engine.unlockedAchievements.push(achievement.id);
+    const key = achievement.key ?? achievementKey(achievement);
+    if (!engine.completedAchievementKeys.includes(key)) engine.completedAchievementKeys.push(key);
+    engine.completedAchievementHistory.push({ id: achievement.id, name: achievement.name, title: achievement.title, key, completedAt: Date.now() });
     state.player.achievements ??= [];
     if (!state.player.achievements.includes(achievement.id)) state.player.achievements.push(achievement.id);
     state.player.legendTitles ??= [];
@@ -398,9 +484,87 @@ export function checkLegendAchievements(state) {
 
 export function getLegendTitleByAchievementId(state, id) {
   ensureLegendEngineState(state);
+  const savedTitle = (state.player?.legendTitles ?? []).find(title => title.achievementId === id);
+  if (savedTitle) return savedTitle;
   const achievement = state.legendEngine.achievements.find(a => a.id === id);
   if (!achievement) return null;
-  return (state.player?.legendTitles ?? []).find(title => title.achievementId === id) ?? null;
+  return null;
+}
+
+
+function applyLegendQuestRewards(state, quest) {
+  const rewards = quest.rewards ?? {};
+  if (rewards.gold) state.player.gold += rewards.gold;
+  if (rewards.xp) gainXp(state, rewards.xp);
+  if (rewards.relicDust) state.meta.relicDust = (state.meta.relicDust ?? 0) + rewards.relicDust;
+  for (const [itemId, qty] of Object.entries(rewards.items ?? {})) addInventory(state.player, itemId, qty);
+}
+
+function rotateCompletedLegendQuests(state) {
+  const engine = ensureLegendEngineState(state);
+  const completed = [];
+  for (const quest of engine.quests) {
+    if (engine.claimedQuests.includes(quest.id)) continue;
+    const progress = getLegendQuestProgress(state, quest);
+    if (!progress.complete) continue;
+    applyLegendQuestRewards(state, quest);
+    engine.claimedQuests.push(quest.id);
+    const key = quest.key ?? questKey(quest);
+    if (!engine.completedQuestKeys.includes(key)) engine.completedQuestKeys.push(key);
+    engine.completedQuestHistory.push({ id: quest.id, name: quest.name, key, completedAt: Date.now() });
+    completed.push(quest);
+    addLog(state, `<strong>Background Quest Complete:</strong> ${quest.name}. Rewards granted and a new contract will replace it.`);
+  }
+  if (completed.length) engine.quests = engine.quests.filter(q => !engine.claimedQuests.includes(q.id));
+  trimHistory(engine);
+  return completed;
+}
+
+function archiveUnlockedLegendAchievements(state) {
+  const engine = ensureLegendEngineState(state);
+  const before = engine.achievements.length;
+  engine.achievements = engine.achievements.filter(achievement => !engine.unlockedAchievements.includes(achievement.id) && !state.player?.achievements?.includes(achievement.id));
+  trimHistory(engine);
+  return Math.max(0, before - engine.achievements.length);
+}
+
+export function ensureLegendEngineRotation(state, options = {}) {
+  if (!state.player) return { questsAdded: 0, achievementsAdded: 0, questsCompleted: 0, achievementsCompleted: 0 };
+  const engine = ensureLegendEngineState(state);
+  let questsCompleted = rotateCompletedLegendQuests(state).length;
+  let achievementsCompleted = checkLegendAchievements(state).length;
+  let archivedAchievements = archiveUnlockedLegendAchievements(state);
+  let questsAdded = 0;
+  let achievementsAdded = 0;
+
+  for (let safety = 0; safety < 4; safety += 1) {
+    const activeQuestCount = engine.quests.filter(q => !engine.claimedQuests.includes(q.id)).length;
+    const activeAchievementCount = engine.achievements.filter(a => !engine.unlockedAchievements.includes(a.id) && !state.player?.achievements?.includes(a.id)).length;
+    questsAdded += generateLegendQuests(state, Math.max(0, ACTIVE_LEGEND_QUESTS - activeQuestCount), { silent: true }).length;
+    achievementsAdded += generateLegendAchievements(state, Math.max(0, ACTIVE_LEGEND_ACHIEVEMENTS - activeAchievementCount), { silent: true }).length;
+
+    const newQuestCompletions = rotateCompletedLegendQuests(state).length;
+    const newAchievementCompletions = checkLegendAchievements(state).length;
+    const newlyArchived = archiveUnlockedLegendAchievements(state);
+    questsCompleted += newQuestCompletions;
+    achievementsCompleted += newAchievementCompletions;
+    archivedAchievements += newlyArchived;
+
+    const fullQuests = engine.quests.filter(q => !engine.claimedQuests.includes(q.id)).length >= ACTIVE_LEGEND_QUESTS;
+    const fullAchievements = engine.achievements.filter(a => !engine.unlockedAchievements.includes(a.id) && !state.player?.achievements?.includes(a.id)).length >= ACTIVE_LEGEND_ACHIEVEMENTS;
+    if (fullQuests && fullAchievements && !newQuestCompletions && !newAchievementCompletions && !newlyArchived) break;
+  }
+
+  const changed = questsCompleted + achievementsCompleted + archivedAchievements + questsAdded + achievementsAdded;
+  if (changed && !options.silent) {
+    const parts = [];
+    if (questsCompleted) parts.push(`${questsCompleted} quest(s) completed`);
+    if (achievementsCompleted) parts.push(`${achievementsCompleted} achievement/title goal(s) unlocked`);
+    if (questsAdded) parts.push(`${questsAdded} quest(s) added`);
+    if (achievementsAdded) parts.push(`${achievementsAdded} achievement goal(s) added`);
+    addLog(state, `<strong>Legend Engine:</strong> ${parts.join(" · ")}.`);
+  }
+  return { questsAdded, achievementsAdded, questsCompleted, achievementsCompleted };
 }
 
 export function trackLegendAbilityUse(state, skill) {

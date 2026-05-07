@@ -1,6 +1,7 @@
 import { QUESTS, QUEST_CATEGORIES } from "../data/quests.js";
 import { addInventory, addLog } from "../core/utils.js";
 import { gainXp } from "./leveling.js";
+import { getLegendQuests, claimLegendQuestReward } from "./legend-engine.js";
 
 function todayKey() {
   return new Date().toISOString().slice(0, 10);
@@ -64,21 +65,27 @@ export function getQuestProgress(state, quest) {
 
 export function getQuestBoard(state, category = "All") {
   ensureQuestState(state);
-  return QUESTS
+  const staticQuests = QUESTS
     .filter(quest => category === "All" || quest.category === category)
     .filter(quest => quest.visibility !== "secret" || getQuestProgress(state, quest).complete || (state.meta?.bossKills ?? 0) > 0 || (state.meta?.relicDust ?? 0) > 0)
     .map(quest => ({
       ...quest,
+      dynamic: false,
       displayName: quest.visibility === "secret" && !getQuestProgress(state, quest).complete ? quest.name : (quest.revealedName ?? quest.name),
       progress: getQuestProgress(state, quest),
       claimed: (state.quests.claimed ?? []).includes(quest.id)
     }));
+  const dynamicQuests = getLegendQuests(state)
+    .filter(quest => !quest.claimed)
+    .filter(quest => category === "All" || quest.category === category)
+    .map(quest => ({ ...quest, displayName: quest.name, dynamic: true }));
+  return [...staticQuests, ...dynamicQuests];
 }
 
 export function claimQuestReward(state, questId) {
   ensureQuestState(state);
   const quest = QUESTS.find(item => item.id === questId);
-  if (!quest) return addLog(state, "Quest not found.");
+  if (!quest) return claimLegendQuestReward(state, questId);
   const progress = getQuestProgress(state, quest);
   if (!progress.complete) return addLog(state, `${quest.revealedName ?? quest.name} is not complete yet.`);
   if (state.quests.claimed.includes(quest.id)) return addLog(state, "Quest reward already claimed.");

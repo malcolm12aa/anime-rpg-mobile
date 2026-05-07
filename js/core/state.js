@@ -47,7 +47,7 @@ export function createInitialState() {
     },
     meta: baseMeta(),
     quests: { claimed: [], daily: { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 } },
-    legendEngine: { generatedQuestCount: 0, generatedAchievementCount: 0, quests: [], achievements: [], claimedQuests: [], unlockedAchievements: [], lastProfileKey: "" },
+    legendEngine: { generatedQuestCount: 0, generatedAchievementCount: 0, quests: [], achievements: [], claimedQuests: [], unlockedAchievements: [], completedQuestKeys: [], completedAchievementKeys: [], completedQuestHistory: [], completedAchievementHistory: [], lastProfileKey: "" },
     log: []
   };
 }
@@ -135,6 +135,10 @@ export function hydrateState(raw) {
     achievements: [],
     claimedQuests: [],
     unlockedAchievements: [],
+    completedQuestKeys: [],
+    completedAchievementKeys: [],
+    completedQuestHistory: [],
+    completedAchievementHistory: [],
     lastProfileKey: "",
     ...(state.legendEngine ?? {})
   };
@@ -142,6 +146,10 @@ export function hydrateState(raw) {
   state.legendEngine.achievements ??= [];
   state.legendEngine.claimedQuests ??= [];
   state.legendEngine.unlockedAchievements ??= [];
+  state.legendEngine.completedQuestKeys ??= [];
+  state.legendEngine.completedAchievementKeys ??= [];
+  state.legendEngine.completedQuestHistory ??= [];
+  state.legendEngine.completedAchievementHistory ??= [];
   state.quests = { claimed: [], daily: { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 }, ...(state.quests ?? {}) };
   state.quests.claimed ??= [];
   state.quests.daily ??= { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 };

@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.10 — Background Legend Rotation",
+    date: "2026-05-07",
+    notes: [
+      "Changed the Legend Engine from a manual screen into a background director system.",
+      "Generated quests now appear directly on the Quest Board and are replaced after completion.",
+      "Generated achievement/title goals now appear directly in Achievements & Titles and rotate after unlocking.",
+      "Completed generated quests auto-grant rewards before the replacement contract is added.",
+      "Generated quest and achievement goals now use a progress baseline so replacements require new progress instead of instantly completing from old stats.",
+      "Removed Legend Engine buttons from Hub, Navigation, Quest Board, and Achievements so it feels like a hidden guild system."
+    ]
+  },
+  {
     version: "v0.9.9 — Legend Engine",
     date: "2026-05-07",
     notes: [

@@ -1,8 +1,12 @@
 # Build Your Legend
 
-Current package: **v0.8.0 — Class & Ability Expansion**
+Current package: **v0.9.10 — Background Legend Rotation**
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
+
+## v0.9.10 — Background Legend Rotation
+
+The Legend Engine now runs quietly in the background. It adds generated quests directly to the Quest Board and generated achievement/title goals directly to the Achievements & Titles tab. When a generated quest or achievement is completed, the game grants the reward/title, archives the completed goal, and replaces it with a new build-aware goal.
 
 ## v0.9.9 — Legend Engine
 

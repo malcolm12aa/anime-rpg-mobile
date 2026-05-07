@@ -27,7 +27,6 @@ export function nav(state) {
     ${navGroup("Adventure", [
       button("Map", "go", "map", "secondary"),
       button("Quests", "go", "quests", "secondary"),
-      button("Legend Engine", "go", "legend-engine", "secondary"),
       button("Tracker", "go", "unlock-tracker", "secondary"),
       button("Achievements", "go", "achievements", "secondary")
     ])}

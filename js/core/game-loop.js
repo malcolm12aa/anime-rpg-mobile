@@ -11,7 +11,7 @@ import { spendClassPoint, addAdvancedClass, gainXp, syncResourcesToStats } from 
 import { recruitMember, prepareRecruitOffer } from "../systems/party.js";
 import { checkAchievements } from "../systems/achievements.js";
 import { claimQuestReward } from "../systems/quests.js";
-import { generateLegendQuests, generateLegendAchievements, claimLegendQuestReward, getLegendTitleByAchievementId, checkLegendAchievements } from "../systems/legend-engine.js";
+import { claimLegendQuestReward, getLegendTitleByAchievementId, ensureLegendEngineRotation } from "../systems/legend-engine.js";
 import { craftRecipe, upgradeEquippedGear, addRuneSlot, improveScaling } from "../systems/crafting.js";
 import { evolveAbility } from "../systems/ability-evolution.js";
 import { ACHIEVEMENTS } from "../data/achievements.js";
@@ -168,12 +168,6 @@ export function handleAction(state, action, value) {
     case "claimQuest":
       claimQuestReward(state, value);
       break;
-    case "generateLegendQuests":
-      generateLegendQuests(state, 3);
-      break;
-    case "generateLegendAchievements":
-      generateLegendAchievements(state, 3);
-      break;
     case "claimLegendQuest":
       claimLegendQuestReward(state, value);
       break;
@@ -187,7 +181,7 @@ export function handleAction(state, action, value) {
       console.warn("Unknown action", action, value);
   }
   checkAchievements(state);
-  checkLegendAchievements(state);
+  ensureLegendEngineRotation(state);
   return state;
 }
 
