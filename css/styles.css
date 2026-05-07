@@ -1383,3 +1383,130 @@ input, select {
   .legend-card p,
   .legend-achievement-card p { font-size: 0.92rem; }
 }
+
+/* v1.0.0 Roguelike Dungeon Map Update */
+.dungeon-map-screen .dungeon-hero,
+.dungeon-event-screen .dungeon-hero {
+  border-color: rgba(197, 141, 62, 0.45);
+  background:
+    radial-gradient(circle at top left, rgba(197, 141, 62, 0.16), transparent 34%),
+    linear-gradient(135deg, rgba(15, 14, 18, 0.96), rgba(35, 25, 22, 0.94));
+}
+
+.dungeon-status-grid,
+.dungeon-route-board,
+.dungeon-supplies-card,
+.dungeon-goals-card,
+.run-summary-card {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.dungeon-node-lanes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.dungeon-node-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(197, 141, 62, 0.28);
+  background:
+    linear-gradient(180deg, rgba(22, 22, 28, 0.97), rgba(13, 13, 17, 0.98));
+}
+
+.dungeon-node-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: rgba(197, 141, 62, 0.55);
+}
+
+.dungeon-node-card.node-battle::before { background: rgba(206, 84, 62, 0.85); }
+.dungeon-node-card.node-elite::before,
+.dungeon-node-card.node-boss::before { background: rgba(220, 54, 54, 0.95); }
+.dungeon-node-card.node-treasure::before { background: rgba(232, 183, 76, 0.95); }
+.dungeon-node-card.node-shrine::before,
+.dungeon-node-card.node-secret::before { background: rgba(147, 102, 255, 0.85); }
+.dungeon-node-card.node-rest::before { background: rgba(75, 183, 124, 0.9); }
+.dungeon-node-card.node-merchant::before { background: rgba(72, 191, 190, 0.9); }
+.dungeon-node-card.node-cursed_altar::before { background: rgba(125, 25, 25, 1); }
+.dungeon-node-card.node-forge::before { background: rgba(166, 121, 72, 0.95); }
+.dungeon-node-card.node-alchemy::before { background: rgba(84, 184, 104, 0.9); }
+
+.dungeon-node-top {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+
+.node-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.node-meta-grid,
+.supply-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.7rem 0;
+}
+
+.supply-pill,
+.danger-pill {
+  white-space: normal;
+}
+
+.danger-meter span,
+.quest-meter span {
+  display: block;
+  height: 100%;
+}
+
+.dungeon-danger-card.danger-low { border-color: rgba(78, 181, 123, 0.45); }
+.dungeon-danger-card.danger-medium { border-color: rgba(230, 180, 75, 0.55); }
+.dungeon-danger-card.danger-high { border-color: rgba(224, 116, 65, 0.65); }
+.dungeon-danger-card.danger-extreme { border-color: rgba(224, 55, 55, 0.8); box-shadow: 0 0 24px rgba(224, 55, 55, 0.12); }
+
+.run-goal-card.complete {
+  border-color: rgba(91, 205, 140, 0.65);
+  background: rgba(42, 90, 62, 0.16);
+}
+
+.dungeon-choice-grid {
+  align-items: stretch;
+}
+
+.dungeon-choice-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.summary-kpis .mini-card {
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (max-width: 720px) {
+  .dungeon-node-lanes,
+  .dungeon-status-grid,
+  .summary-kpis {
+    grid-template-columns: 1fr;
+  }
+  .dungeon-node-top {
+    align-items: flex-start;
+  }
+}

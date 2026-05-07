@@ -36,6 +36,7 @@ export function createInitialState() {
       saveMenuMode: "load",
       currentEvent: null,
       offeredRecruit: null,
+      runSummary: null,
       registryFilters: { search: "", kind: "all", category: "all", tier: "all", focus: "all" },
       abilityFilters: { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" },
       questFilters: { category: "All" },
@@ -114,6 +115,35 @@ function syncSavedClassLabels(player) {
   }
 }
 
+
+function hydrateRun(run) {
+  if (!run) return null;
+  run.routeStep ??= 0;
+  run.danger ??= 15;
+  run.biomeId ??= "goblin_warrens";
+  run.routeNodes ??= [];
+  run.currentNode ??= null;
+  run.supplies ??= { torchlight: 3, keys: 1, rations: 2, scoutTokens: 1, wardStones: 1, lockpicks: 2 };
+  run.goals ??= [];
+  run.summary = {
+    nodesCleared: 0,
+    battlesWon: 0,
+    elitesDefeated: 0,
+    bossesDefeated: 0,
+    eventsResolved: 0,
+    treasuresOpened: 0,
+    secretsFound: 0,
+    highDangerClears: 0,
+    nodesWithoutRest: 0,
+    goldEarned: 0,
+    xpEarned: 0,
+    itemsFound: 0,
+    lastResult: "Run active",
+    ...(run.summary ?? {})
+  };
+  return run;
+}
+
 export function hydrateState(raw) {
   const state = { ...createInitialState(), ...deepClone(raw) };
   state.version = CONFIG.version;
@@ -169,6 +199,7 @@ export function hydrateState(raw) {
     for (const slot of EQUIPMENT_SLOTS) state.player.equipment[slot] ??= null;
     syncSavedClassLabels(state.player);
   }
+  state.run = hydrateRun(state.run);
   state.log ??= [];
   return state;
 }

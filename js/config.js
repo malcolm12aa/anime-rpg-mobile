@@ -1,6 +1,6 @@
 export const CONFIG = Object.freeze({
   title: "Build Your Legend",
-  version: "0.9.10-background-legend-rotation",
+  version: "1.0.0-roguelike-dungeon-map",
   storageKey: "build-your-legend-save-v1",
   saveSlotCount: 5,
   maxOverallLevel: 100,

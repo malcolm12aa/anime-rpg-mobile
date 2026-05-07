@@ -3,7 +3,7 @@ import { saveGame, loadGame, deleteSave } from "./save.js";
 import { addLog } from "./utils.js";
 import { finalizeCharacter } from "../systems/character-creation.js";
 import { startRun, leaveRun } from "../systems/run-manager.js";
-import { exploreNextFloor, restAtCamp } from "../systems/map.js";
+import { exploreNextFloor, restAtCamp, enterDungeonNode, chooseDungeonEventOption } from "../systems/map.js";
 import { playerBasicAttack, playerUseSkill, playerUseItem } from "../systems/battle.js";
 import { useItem, equipItem, equipLoot, unequipSlot } from "../systems/inventory.js";
 import { buyItem, buyAbility } from "../systems/shop.js";
@@ -72,8 +72,15 @@ export function handleAction(state, action, value) {
     case "explore":
       exploreNextFloor(state);
       break;
+    case "enterNode":
+      enterDungeonNode(state, value);
+      break;
+    case "eventChoice":
+      chooseDungeonEventOption(state, value);
+      break;
     case "rest":
       restAtCamp(state);
+      if (state.run) state.run.danger = Math.max(0, (state.run.danger ?? 0) - 8);
       break;
     case "attack":
       playerBasicAttack(state);

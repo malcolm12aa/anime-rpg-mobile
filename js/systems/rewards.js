@@ -11,10 +11,15 @@ export function grantBattleRewards(state, enemy) {
   const gold = randInt(minGold, maxGold);
   state.player.gold += gold;
   gainXp(state, enemy.xp ?? 25);
+  if (state.run?.summary) {
+    state.run.summary.goldEarned = (state.run.summary.goldEarned ?? 0) + gold;
+    state.run.summary.xpEarned = (state.run.summary.xpEarned ?? 0) + (enemy.xp ?? 25);
+  }
   let itemText = "";
   if (chance(28) || state.player.statusEffects?.some(s => s.id === "lucky")) {
     const itemId = choice(REWARD_ITEMS);
     addInventory(state.player, itemId, 1);
+    if (state.run?.summary) state.run.summary.itemsFound = (state.run.summary.itemsFound ?? 0) + 1;
     itemText = ` Found ${byId(ITEMS, itemId)?.name ?? itemId}.`;
   }
   if (chance(state.combat?.type === "boss" ? 80 : state.combat?.type === "elite" ? 55 : 24)) {
@@ -46,7 +51,10 @@ export function grantEventReward(state, event) {
   }
   if (event.materialDrop) grantMaterialDrop(state, state.run?.floor ?? 1, event.materialDrop);
   if (event.lootDrop) grantGeneratedLoot(state, state.run?.floor ?? 1, event.lootBonus ?? 0);
-  if (event.xp) gainXp(state, event.xp);
+  if (event.xp) {
+    gainXp(state, event.xp);
+    if (state.run?.summary) state.run.summary.xpEarned = (state.run.summary.xpEarned ?? 0) + event.xp;
+  }
   if (event.relicDust) {
     state.meta.relicDust += event.relicDust;
     addLog(state, `Gained ${event.relicDust} Relic Dust.`);

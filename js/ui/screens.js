@@ -15,6 +15,7 @@ import { getRaceIdentity, getJobIdentity, getEnemyIdentity } from "../systems/id
 import { canCraftRecipe, materialCostText } from "../systems/crafting.js";
 import { describeGeneratedLoot, getGeneratedLoot } from "../systems/loot.js";
 import { getBuildSummary } from "../systems/build-summary.js";
+import { ensureDungeonRunState, getActiveDungeonNodes, getDungeonBiome, getDangerLabel, getRunGoals } from "../systems/map.js";
 import { getUnlockTracker } from "../systems/unlock-tracker.js";
 import { getQuestBoard } from "../systems/quests.js";
 import { getLegendProfile, getLegendQuests, getLegendAchievements } from "../systems/legend-engine.js";
@@ -471,6 +472,7 @@ export function hub(state) {
       <div class="card"><h2>${escapeHtml(p.title)} ${escapeHtml(p.name)}</h2><p>Total Level <span class="kpi">${getTotalLevel(p)}</span> · Gold <span class="kpi">${p.gold}</span> · Relic Dust <span class="kpi">${state.meta.relicDust}</span></p>${resourceBars(p, stats)}</div>
       <div class="card"><h2>Next Goal</h2><p>Gain XP in the dungeon, then spend class points on race or job levels. Maxed base classes can unlock advanced paths.</p><p class="small"><strong>Active Synergies:</strong> ${synergies.length ? synergies.map(s => s.name).join(", ") : "None"}</p><div class="actions">${button("Enter Dungeon", "startRun")} ${button("Quest Board", "go", "quests", "secondary")} ${button("Status / Class", "go", "status", "secondary")}</div></div>
     </section>
+    ${runSummaryCard(state)}
     ${partyCard(p)}
     ${combatLog(state)}
   </section>`;
@@ -919,12 +921,97 @@ function shopItemIcon(item = {}) {
 export function mapScreen(state) {
   const map = byId(MAPS, state.run?.mapId) ?? MAPS[0];
   if (!state.run) {
-    return `<section class="screen">${nav(state)}<div class="hero"><h1>Map / Dungeon</h1><p class="subtitle">No run active. Start a run from the hub.</p></div><div class="actions">${button("Start Run", "startRun")}</div></section>`;
+    return `<section class="screen">${nav(state)}<div class="hero dungeon-hero"><h1>Map / Dungeon</h1><p class="subtitle">No run active. Start a roguelike route board from the hub.</p></div>${runSummaryCard(state)}<div class="actions">${button("Start Run", "startRun")}</div></section>`;
   }
-  const modifier = state.run.battleModifier;
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>${map.name}</h1><p class="subtitle">Floor ${state.run.floor}/${map.maxFloor}. Boss floors: ${map.bossFloors.join(", ")}.</p></div>
-    <section class="grid two"><div class="card"><h2>Run Progress</h2><p>Rooms cleared: <span class="kpi">${state.run.roomsCleared}</span></p><p>Possible rooms: battles, elites, bosses, merchants, shrines, portals, traps, lore discoveries, training rooms, and recruit events.</p>${modifier ? `<div class="modifier-card"><h3>Current Battle Modifier</h3><p><strong>${escapeHtml(modifier.name)}</strong> — ${escapeHtml(modifier.description)}</p></div>` : ""}</div><div class="card"><h2>Actions</h2><div class="actions">${button("Explore Next Floor", "explore")} ${button("Rest Briefly", "rest", "", "secondary")} ${button("Leave Run", "leaveRun", "", "ghost")}</div></div></section>
+  ensureDungeonRunState(state);
+  const run = state.run;
+  const nextFloor = Math.min(map.maxFloor, (run.floor ?? 0) + 1);
+  const biome = getDungeonBiome(nextFloor);
+  const danger = getDangerLabel(run.danger ?? 0);
+  const modifier = run.battleModifier;
+  const nodes = getActiveDungeonNodes(state);
+  const goals = getRunGoals(state);
+  return `<section class="screen dungeon-map-screen">${nav(state)}
+    <div class="hero dungeon-hero">
+      <span class="layout-label">Roguelike Route Board</span>
+      <h1>${escapeHtml(map.name)}</h1>
+      <p class="subtitle">Floor ${run.floor}/${map.maxFloor} · Next: ${escapeHtml(biome.name)} · Boss floors: ${map.bossFloors.join(", ")}.</p>
+    </div>
+    <section class="grid two dungeon-status-grid">
+      <article class="card dungeon-biome-card">
+        <div class="row between"><h2>${escapeHtml(biome.name)}</h2><span class="pill">Floors ${biome.floors[0]}-${biome.floors[1]}</span></div>
+        <p>${escapeHtml(biome.modifierHint)}</p>
+        <p class="small"><strong>Enemy Theme:</strong> ${escapeHtml(biome.enemyTheme)}</p>
+        <p class="small"><strong>Loot Theme:</strong> ${escapeHtml(biome.lootTheme)}</p>
+        <p class="small"><strong>Boosted:</strong> ${escapeHtml(biome.boostedElements.join(" / "))} · <strong>Counter:</strong> ${escapeHtml(biome.counterElements.join(" / "))}</p>
+      </article>
+      <article class="card danger-card dungeon-danger-card danger-${escapeHtml(danger.tone)}">
+        <div class="row between"><h2>Danger Meter</h2><span class="pill">${escapeHtml(danger.label)}</span></div>
+        <div class="ability-meter danger-meter"><span style="width:${Math.max(0, Math.min(100, run.danger ?? 0))}%"></span></div>
+        <p><strong>${run.danger ?? 0}%</strong> — ${escapeHtml(danger.text)}</p>
+        <p class="small">High danger creates stronger enemies, better loot, curses, ambushes, and elite routes.</p>
+      </article>
+    </section>
+    <section class="card dungeon-route-board">
+      <div class="row between"><h2>Choose Your Route</h2><span class="pill">${nodes.length} path(s)</span></div>
+      <div class="dungeon-node-lanes">${nodes.length ? nodes.map(dungeonNodeCard).join("") : `<article class="card selected"><h3>Tower Route Cleared</h3><p>You reached the end of this dungeon route. Leave the run to bank the summary, then start another route from the Hub.</p>${button("Leave Run", "leaveRun", "", "secondary")}</article>`}</div>
+    </section>
+    <section class="grid two">
+      <article class="card dungeon-supplies-card"><h2>Dungeon Supplies</h2>${dungeonSupplies(run.supplies)}<p class="small">Supplies unlock safer event choices. Shops and treasure rooms can refill them.</p></article>
+      <article class="card dungeon-goals-card"><h2>Run Goals</h2>${goals.map(runGoalCard).join("")}</article>
+    </section>
+    <section class="grid two">
+      <article class="card"><h2>Run Progress</h2><p>Rooms cleared: <span class="kpi">${run.roomsCleared}</span></p><p>Route step: <span class="kpi">${run.routeStep ?? 0}</span></p><p>Highest floor this run: <span class="kpi">${run.highestFloor ?? 0}</span></p></article>
+      <article class="card"><h2>Actions</h2><div class="actions">${button("Auto Pick First Route", "explore", "", "secondary")} ${button("Rest Briefly", "rest", "", "secondary")} ${button("Leave Run", "leaveRun", "", "ghost")}</div>${modifier ? `<div class="modifier-card"><h3>Current Battle Modifier</h3><p><strong>${escapeHtml(modifier.name)}</strong> — ${escapeHtml(modifier.description)}</p></div>` : ""}</article>
+    </section>
     ${combatLog(state)}
+  </section>`;
+}
+
+function dungeonNodeCard(node) {
+  return `<article class="card dungeon-node-card node-${escapeHtml(node.type)}">
+    <div class="dungeon-node-top"><span class="node-icon">${escapeHtml(node.icon ?? "◆")}</span><div><span class="layout-label">${escapeHtml(node.label)}</span><h3>${escapeHtml(node.name)}</h3></div></div>
+    <p>${escapeHtml(node.summary)}</p>
+    <div class="node-meta-grid">
+      <span class="pill danger-pill">Danger: ${escapeHtml(node.dangerLabel)} ${node.danger >= 0 ? "+" : ""}${node.danger}</span>
+      <span class="pill">Floor ${node.floor}</span>
+    </div>
+    <p class="small"><strong>Reward:</strong> ${escapeHtml(node.rewardPreview)}</p>
+    <p class="small"><strong>Recommended:</strong> ${escapeHtml(node.recommended)}</p>
+    <p class="small warn"><strong>Warning:</strong> ${escapeHtml(node.warning)}</p>
+    ${button(node.type === "boss" ? "Challenge Boss" : "Enter Node", "enterNode", node.id)}
+  </article>`;
+}
+
+function dungeonSupplies(supplies = {}) {
+  const labels = { torchlight: "Torchlight", keys: "Keys", rations: "Rations", scoutTokens: "Scout Tokens", wardStones: "Ward Stones", lockpicks: "Lockpicks" };
+  return `<div class="supply-grid">${Object.entries(labels).map(([key, label]) => `<span class="pill supply-pill"><strong>${escapeHtml(label)}</strong>: ${supplies[key] ?? 0}</span>`).join("")}</div>`;
+}
+
+function runGoalCard(goal) {
+  return `<article class="mini-card run-goal-card ${goal.complete ? "complete" : ""}">
+    <div class="row between"><strong>${escapeHtml(goal.name)}</strong><span class="pill">${goal.current}/${goal.required}</span></div>
+    <div class="ability-meter quest-meter"><span style="width:${goal.pct}%"></span></div>
+    <p class="small">${escapeHtml(goal.description)} Reward: ${escapeHtml(goal.reward)}</p>
+  </article>`;
+}
+
+function runSummaryCard(state) {
+  const summary = state.ui?.runSummary;
+  if (!summary) return "";
+  return `<section class="card run-summary-card">
+    <div class="row between"><h2>Dungeon Run Summary</h2><span class="pill active-bonus">${escapeHtml(summary.result ?? "Run Complete")}</span></div>
+    <div class="grid auto summary-kpis">
+      <div class="mini-card"><strong>Floors Reached</strong><span class="kpi">${summary.highestFloor ?? summary.floor ?? 0}</span></div>
+      <div class="mini-card"><strong>Nodes Cleared</strong><span class="kpi">${summary.nodesCleared ?? summary.roomsCleared ?? 0}</span></div>
+      <div class="mini-card"><strong>Battles Won</strong><span class="kpi">${summary.battlesWon ?? 0}</span></div>
+      <div class="mini-card"><strong>Bosses</strong><span class="kpi">${summary.bossesDefeated ?? 0}</span></div>
+      <div class="mini-card"><strong>Gold Earned</strong><span class="kpi">${summary.goldEarned ?? 0}</span></div>
+      <div class="mini-card"><strong>EXP Earned</strong><span class="kpi">${summary.xpEarned ?? 0}</span></div>
+      <div class="mini-card"><strong>Items Found</strong><span class="kpi">${summary.itemsFound ?? 0}</span></div>
+      <div class="mini-card"><strong>Final Danger</strong><span class="kpi">${summary.danger ?? 0}%</span></div>
+    </div>
+    <p class="small"><strong>Last Result:</strong> ${escapeHtml(summary.lastResult ?? "Returned to the hub.")}</p>
   </section>`;
 }
 
@@ -1067,7 +1154,19 @@ function unlockTrackerCard(item) {
 
 export function eventScreen(state) {
   const event = state.ui.currentEvent;
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>${event?.name ?? "Dungeon Event"}</h1><p class="subtitle">${event?.text ?? "The dungeon shifts around you."}</p></div><div class="actions">${button("Continue", "go", "map")}</div>${combatLog(state)}</section>`;
+  const choices = event?.choices ?? [];
+  const node = event?.dungeonNode;
+  return `<section class="screen dungeon-event-screen">${nav(state)}
+    <div class="hero dungeon-hero"><span class="layout-label">Dungeon Event</span><h1>${event?.name ?? "Dungeon Event"}</h1><p class="subtitle">${event?.text ?? "The dungeon shifts around you."}</p></div>
+    ${node ? `<section class="card"><div class="row between"><h2>${escapeHtml(node.label ?? "Route Node")}</h2><span class="pill">Floor ${node.floor ?? "?"}</span></div><p class="small"><strong>Reward Preview:</strong> ${escapeHtml(node.rewardPreview ?? "Unknown")}</p><p class="small"><strong>Warning:</strong> ${escapeHtml(node.warning ?? "Choose carefully.")}</p></section>` : ""}
+    ${choices.length ? `<section class="grid auto dungeon-choice-grid">${choices.map(eventChoiceCard).join("")}</section>` : `<div class="actions">${button("Continue", "go", "map")}</div>`}
+    ${combatLog(state)}
+  </section>`;
+}
+
+function eventChoiceCard(choice) {
+  const req = choice.requirement ? `<span class="pill">Needs ${escapeHtml(titleCase(choice.requirement))}</span>` : "";
+  return `<article class="card dungeon-choice-card"><div class="row between"><h3>${escapeHtml(choice.label)}</h3>${req}</div><p>${escapeHtml(choice.text ?? "Resolve this choice.")}</p>${choice.effects?.danger ? `<p class="small"><strong>Danger:</strong> ${choice.effects.danger > 0 ? "+" : ""}${choice.effects.danger}</p>` : ""}${button("Choose", "eventChoice", choice.id, choice.id === "leave" ? "ghost" : "secondary")}</article>`;
 }
 
 export function recruitScreen(state) {

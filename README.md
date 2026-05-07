@@ -1,5 +1,10 @@
 # Build Your Legend
 
+## Latest Update
+
+**v1.0.0 — Roguelike Dungeon Map Update** adds a node-based dungeon route board, biome floors, danger meter, dungeon supplies, event choices, boss gates, run goals, and run summaries.
+
+
 Current package: **v0.9.10 — Background Legend Rotation**
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.

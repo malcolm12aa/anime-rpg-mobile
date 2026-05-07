@@ -336,7 +336,18 @@ function checkBattleEnd(state) {
       addLog(state, `<strong>Boss defeated:</strong> secret class requirements may have changed.`);
     }
     grantBattleRewards(state, enemy);
+    if (state.run?.summary) {
+      state.run.summary.nodesCleared = (state.run.summary.nodesCleared ?? 0) + 1;
+      state.run.summary.nodesWithoutRest = (state.run.summary.nodesWithoutRest ?? 0) + 1;
+      state.run.summary.battlesWon = (state.run.summary.battlesWon ?? 0) + 1;
+      if ((state.run.danger ?? 0) >= 50) state.run.summary.highDangerClears = (state.run.summary.highDangerClears ?? 0) + 1;
+      if (state.combat.type === "elite") state.run.summary.elitesDefeated = (state.run.summary.elitesDefeated ?? 0) + 1;
+      if (state.combat.type === "boss") state.run.summary.bossesDefeated = (state.run.summary.bossesDefeated ?? 0) + 1;
+      state.run.summary.lastResult = `${enemy.name} defeated`;
+      state.run.currentNode = null;
+    }
     state.run.roomsCleared += 1;
+    state.run.danger = Math.max(0, Math.min(100, (state.run.danger ?? 0) + (state.combat.type === "boss" ? -18 : state.combat.type === "elite" ? 8 : 4)));
     state.combat = null;
     state.screen = "map";
     return true;

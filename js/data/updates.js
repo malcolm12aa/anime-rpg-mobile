@@ -1,5 +1,18 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.0.0 — Roguelike Dungeon Map",
+    date: "2026-05-07",
+    notes: [
+      "Rebuilt the Map / Dungeon tab into a node-based roguelike route board.",
+      "Added dungeon biomes every 10 floors with enemy, element, loot, and modifier flavor.",
+      "Added route node types: battles, elites, boss gates, treasure, merchants, rest camps, shrines, cursed altars, trials, secret paths, forge rooms, and alchemy groves.",
+      "Added a Danger Meter that rises or falls based on route choices and affects risk/reward pacing.",
+      "Added dungeon supplies: torchlight, keys, rations, scout tokens, ward stones, and lockpicks.",
+      "Added map events with player choices and consequences.",
+      "Added run goals and a dungeon run summary after retreat or defeat."
+    ]
+  },
+  {
     version: "v0.9.10 — Background Legend Rotation",
     date: "2026-05-07",
     notes: [
