@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.4.2 — Item Card Layout Fix",
+    date: "2026-05-06",
+    notes: [
+      "Rebuilt shop item cards to match the Skill / Spell / Ability card style.",
+      "Added item icons, rarity/type labels, slots, set tags, price, bonus stats, status scaling, armor bonuses, and consumable effect rows.",
+      "Rebuilt inventory item cards with the same readable card layout.",
+      "Fixed desktop text overflow so long names, tags, scaling lines, and descriptions wrap inside cards instead of falling off the layout.",
+      "Added safer mobile stacking for item cards and long metadata rows."
+    ]
+  },
+  {
     version: "v0.9.4.1 — Shop Content Hotfix",
     date: "2026-05-06",
     notes: [

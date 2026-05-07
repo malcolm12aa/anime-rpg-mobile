@@ -3,6 +3,7 @@ import { SKILLS } from "../data/skills.js";
 import { byId, formatStat, titleCase } from "../core/utils.js";
 import { BASIC_ABILITIES, formatBasicAbility } from "../systems/basic-abilities.js";
 import { STATUS_INFO } from "../systems/effects.js";
+import { escapeHtml } from "./dom.js";
 
 export function button(label, action, value = "", cls = "") {
   return `<button class="${cls}" data-action="${action}" data-value="${value}">${label}</button>`;
@@ -95,19 +96,85 @@ export function statusPills(list = []) {
 export function inventoryList(player, mode = "normal") {
   const entries = Object.entries(player.inventory ?? {});
   if (!entries.length) return `<p class="small">Inventory is empty.</p>`;
-  return entries.map(([itemId, qty]) => {
+  return `<div class="item-card-grid inventory-card-grid">${entries.map(([itemId, qty]) => {
     const item = byId(ITEMS, itemId);
     if (!item) return "";
     const action = item.type === "consumable" ? (mode === "battle" ? "battleItem" : "useItem") : item.type === "equipment" ? "equipItem" : "";
-    const setText = item.set ? `<span class="pill">Set: ${titleCase(item.set)}</span>` : "";
-    const rarityText = item.rarity ? `<span class="pill">${item.rarity}</span>` : "";
-    const scalingText = item.scalingStats ? `<p class="small"><strong>Status Scaling:</strong> ${Object.entries(item.scalingStats).map(([k,v]) => `${titleCase(k)} ${v}`).join(" · ")}</p>` : "";
-    const armorText = item.armorBonus ? `<p class="small"><strong>Armor Bonus:</strong> ${item.armorBonus}</p>` : "";
-    return `<div class="item-row card">
-      <div><strong>${item.name}</strong> <span class="pill">x${qty}</span> ${rarityText} ${setText}<p>${item.description}</p>${scalingText}${armorText}</div>
-      ${action ? button(item.type === "equipment" ? "Equip" : "Use", action, item.id, "secondary") : `<span class="pill">Material</span>`}
-    </div>`;
-  }).join("");
+    const isEquipment = item.type === "equipment";
+    const isConsumable = item.type === "consumable";
+    const rarity = item.rarity ?? (item.type === "material" ? "Material" : "Common");
+    const setText = item.set ? `<span class="pill item-tag">Set: ${titleCase(item.set)}</span>` : "";
+    const slotText = item.slot ? `<span class="pill item-tag">${titleCase(item.slot)}</span>` : "";
+    const itemTags = [item.type, item.kind, item.element, ...(item.tags ?? [])].filter(Boolean).slice(0, 5)
+      .map(tag => `<span class="pill item-tag">${escapeHtml(titleCase(String(tag)))}</span>`).join(" ");
+    const scalingText = itemScalingText(item);
+    const bonusText = itemBonusText(item);
+    const armorText = item.armorBonus ? `<div class="item-stat-row"><span>Armor Bonus</span><strong>${escapeHtml(item.armorBonus)}</strong></div>` : "";
+    const effectText = isConsumable ? consumableEffectText(item) : "";
+    return `<article class="item-card rarity-${rarityClass(rarity)} ${isEquipment ? "equipment-card" : ""} ${isConsumable ? "consumable-card" : ""}">
+      <div class="item-card-head">
+        <div class="item-icon">${itemIcon(item)}</div>
+        <div class="item-title-block">
+          <h3>${escapeHtml(item.name)}</h3>
+          <p class="small"><span class="item-rarity-label">${escapeHtml(rarity)}</span> · ${escapeHtml(titleCase(item.type ?? "item"))} · Qty ${qty}</p>
+        </div>
+      </div>
+      <p class="item-description">${escapeHtml(item.description ?? "No description listed.")}</p>
+      <div class="item-tags">${slotText}${setText}${itemTags}</div>
+      <div class="item-shop-meta">
+        ${bonusText}
+        ${scalingText}
+        ${armorText}
+        ${effectText}
+      </div>
+      ${action ? button(item.type === "equipment" ? "Equip Item" : "Use Item", action, item.id, "secondary") : `<span class="pill passive-pill">Material</span>`}
+    </article>`;
+  }).join("")}</div>`;
+}
+
+function itemBonusText(item = {}) {
+  if (!item.stats) return "";
+  return `<div class="item-stat-row"><span>Bonus Stats</span><strong>${escapeHtml(Object.entries(item.stats).map(([k, v]) => `${v >= 0 ? "+" : ""}${v} ${formatStat(k)}`).join(" · "))}</strong></div>`;
+}
+
+function itemScalingText(item = {}) {
+  const scaling = item.scalingStats ?? item.scaling;
+  if (!scaling) return "";
+  return `<div class="item-stat-row"><span>Status Scaling</span><strong>${escapeHtml(Object.entries(scaling).map(([k, v]) => `${titleCase(k)} × ${Number(v).toFixed ? Number(v).toFixed(2) : v}`).join(" · "))}</strong></div>`;
+}
+
+function consumableEffectText(item = {}) {
+  const effects = (item.effects ?? []).map(effect => {
+    if (effect.type === "healFlat") return `Heal ${effect.amount ?? 0} HP`;
+    if (effect.type === "restore") return `Restore ${effect.amount ?? 0} ${titleCase(effect.resource ?? "resource")}`;
+    if (effect.type === "cleanse") return "Cleanse status effects";
+    if (effect.type === "damageEnemy") return `Deal ${effect.amount ?? 0} ${titleCase(effect.element ?? "item")} damage`;
+    if (effect.type === "statusSelf") return `Gain ${titleCase(effect.status ?? "status")}`;
+    if (effect.type === "statusEnemy") return `Inflict ${titleCase(effect.status ?? "status")}`;
+    return titleCase(effect.type ?? "effect");
+  });
+  if (!effects.length) return "";
+  return `<div class="item-stat-row"><span>Effect</span><strong>${escapeHtml(effects.join(" · "))}</strong></div>`;
+}
+
+function rarityClass(rarity = "common") {
+  return String(rarity).toLowerCase().replace(/[^a-z0-9]+/g, "-") || "common";
+}
+
+function itemIcon(item = {}) {
+  const text = `${item.name ?? ""} ${item.type ?? ""} ${item.slot ?? ""} ${item.description ?? ""}`.toLowerCase();
+  if (text.includes("potion") || text.includes("draught") || text.includes("elixir") || text.includes("tonic") || text.includes("vial")) return "🧪";
+  if (text.includes("bomb")) return "💣";
+  if (text.includes("sword") || text.includes("blade") || text.includes("rapier") || text.includes("sabre") || text.includes("scimitar")) return "⚔️";
+  if (text.includes("bow") || text.includes("crossbow")) return "🏹";
+  if (text.includes("staff") || text.includes("wand") || text.includes("rod") || text.includes("grimoire") || text.includes("catalyst") || text.includes("orb")) return "✦";
+  if (text.includes("shield")) return "🛡";
+  if (text.includes("helm") || text.includes("circlet") || text.includes("hood")) return "⛑";
+  if (text.includes("robe") || text.includes("armor") || text.includes("plate") || text.includes("vest") || text.includes("mantle")) return "◈";
+  if (text.includes("boots") || text.includes("greaves")) return "🥾";
+  if (text.includes("ring") || text.includes("charm") || text.includes("badge") || text.includes("talisman")) return "◇";
+  if (item.type === "material") return "◆";
+  return "✧";
 }
 
 export function skillList(player, mode = "normal") {

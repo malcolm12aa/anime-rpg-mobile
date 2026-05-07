@@ -696,8 +696,8 @@ export function shopScreen(state) {
   const shopBody = shop.abilityShop
     ? abilityShopSection(state)
     : shop.craftingStation
-      ? `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>${craftingStationSection(state, shop.craftingStation)}`
-      : `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p>${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</section>`;
+      ? `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p><div class="item-card-grid shop-item-grid">${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</div></section>${craftingStationSection(state, shop.craftingStation)}`
+      : `<section class="card"><h2>${shop.name}</h2><p>${shop.description}</p><div class="item-card-grid shop-item-grid">${shop.stock.map(itemId => shopItem(itemId, state.player.gold)).join("")}</div></section>`;
   return `<section class="screen">${nav(state)}<div class="hero"><h1>Shop</h1><p class="subtitle">Gold: <span class="kpi">${state.player.gold}</span>. Pick a shop tab below to buy supplies, gear, abilities, or crafting services.</p></div>
     <div class="actions shop-tabs">${SHOPS.map(s => button(s.name, "selectShop", s.id, s.id === shop.id ? "ghost" : "secondary")).join("")}</div>
     ${shopBody}
@@ -806,12 +806,63 @@ function abilityShopIcon(skill = {}) {
 function shopItem(itemId, gold) {
   const item = byId(ITEMS, itemId);
   if (!item) return "";
-  const set = item.set ? `<span class="pill">Set: ${titleCase(item.set)}</span>` : "";
-  const rarity = item.rarity ? `<span class="pill">${escapeHtml(item.rarity)}</span>` : "";
-  const scaling = item.scalingStats ? `<p class="small"><strong>Status Scaling:</strong> ${escapeHtml(Object.entries(item.scalingStats).map(([k,v]) => `${titleCase(k)} ${v}`).join(" · "))}</p>` : "";
-  const armor = item.armorBonus ? `<p class="small"><strong>Armor Bonus:</strong> ${escapeHtml(item.armorBonus)}</p>` : "";
-  const statLine = item.stats ? `<p class="small"><strong>Bonus Stats:</strong> ${escapeHtml(statsText(item.stats))}</p>` : "";
-  return `<div class="item-row card"><div><strong>${escapeHtml(item.name)}</strong> <span class="pill">${item.price} gold</span> ${rarity} ${set}<p>${escapeHtml(item.description)}</p>${statLine}${scaling}${armor}</div>${button(gold >= item.price ? "Buy" : "Too Expensive", "buyItem", item.id, gold >= item.price ? "" : "ghost")}</div>`;
+  const price = Number(item.price ?? 0);
+  const canBuy = gold >= price;
+  const rarity = item.rarity ?? (item.type === "material" ? "Material" : "Common");
+  const set = item.set ? `<span class="pill item-tag">Set: ${escapeHtml(titleCase(item.set))}</span>` : "";
+  const slot = item.slot ? `<span class="pill item-tag">${escapeHtml(titleCase(item.slot))}</span>` : "";
+  const tags = [item.type, item.kind, item.element, ...(item.tags ?? [])].filter(Boolean).slice(0, 5)
+    .map(tag => `<span class="pill item-tag">${escapeHtml(titleCase(String(tag)))}</span>`).join(" ");
+  const statLine = item.stats ? `<div class="item-stat-row"><span>Bonus Stats</span><strong>${escapeHtml(statsText(item.stats))}</strong></div>` : "";
+  const scaling = item.scalingStats ? `<div class="item-stat-row"><span>Status Scaling</span><strong>${escapeHtml(Object.entries(item.scalingStats).map(([k,v]) => `${titleCase(k)} × ${Number(v).toFixed ? Number(v).toFixed(2) : v}`).join(" · "))}</strong></div>` : "";
+  const armor = item.armorBonus ? `<div class="item-stat-row"><span>Armor Bonus</span><strong>${escapeHtml(item.armorBonus)}</strong></div>` : "";
+  const effect = item.type === "consumable" ? `<div class="item-stat-row"><span>Effect</span><strong>${escapeHtml(shopItemEffectText(item))}</strong></div>` : "";
+  return `<article class="item-card shop-item-card rarity-${itemRarityClass(rarity)} ${canBuy ? "" : "locked-card"}">
+    <div class="item-card-head">
+      <div class="item-icon">${shopItemIcon(item)}</div>
+      <div class="item-title-block">
+        <h3>${escapeHtml(item.name)}</h3>
+        <p class="small"><span class="item-rarity-label">${escapeHtml(rarity)}</span> · ${escapeHtml(titleCase(item.type ?? "item"))} · ${price} gold</p>
+      </div>
+    </div>
+    <p class="item-description">${escapeHtml(item.description ?? "No item description listed.")}</p>
+    <div class="item-tags">${slot}${set}${tags}</div>
+    <div class="item-shop-meta">${statLine}${scaling}${armor}${effect}</div>
+    ${button(canBuy ? "Buy Item" : "Too Expensive", "buyItem", item.id, canBuy ? "" : "ghost")}
+  </article>`;
+}
+
+function shopItemEffectText(item = {}) {
+  const effects = (item.effects ?? []).map(effect => {
+    if (effect.type === "healFlat") return `Heal ${effect.amount ?? 0} HP`;
+    if (effect.type === "restore") return `Restore ${effect.amount ?? 0} ${titleCase(effect.resource ?? "resource")}`;
+    if (effect.type === "cleanse") return "Cleanse harmful effects";
+    if (effect.type === "damageEnemy") return `Deal ${effect.amount ?? 0} ${titleCase(effect.element ?? "item")} damage`;
+    if (effect.type === "statusSelf") return `Gain ${titleCase(effect.status ?? "status")}`;
+    if (effect.type === "statusEnemy") return `Inflict ${titleCase(effect.status ?? "status")}`;
+    return titleCase(effect.type ?? "effect");
+  });
+  return effects.join(" · ") || "No direct use effect";
+}
+
+function itemRarityClass(rarity = "common") {
+  return String(rarity).toLowerCase().replace(/[^a-z0-9]+/g, "-") || "common";
+}
+
+function shopItemIcon(item = {}) {
+  const text = `${item.name ?? ""} ${item.type ?? ""} ${item.slot ?? ""} ${item.description ?? ""}`.toLowerCase();
+  if (text.includes("potion") || text.includes("draught") || text.includes("elixir") || text.includes("tonic") || text.includes("vial")) return "🧪";
+  if (text.includes("bomb")) return "💣";
+  if (text.includes("sword") || text.includes("blade") || text.includes("rapier") || text.includes("sabre") || text.includes("scimitar")) return "⚔️";
+  if (text.includes("bow") || text.includes("crossbow")) return "🏹";
+  if (text.includes("staff") || text.includes("wand") || text.includes("rod") || text.includes("grimoire") || text.includes("catalyst") || text.includes("orb")) return "✦";
+  if (text.includes("shield")) return "🛡";
+  if (text.includes("helm") || text.includes("circlet") || text.includes("hood")) return "⛑";
+  if (text.includes("robe") || text.includes("armor") || text.includes("plate") || text.includes("vest") || text.includes("mantle")) return "◈";
+  if (text.includes("boots") || text.includes("greaves")) return "🥾";
+  if (text.includes("ring") || text.includes("charm") || text.includes("badge") || text.includes("talisman")) return "◇";
+  if (item.type === "material") return "◆";
+  return "✧";
 }
 
 export function mapScreen(state) {
