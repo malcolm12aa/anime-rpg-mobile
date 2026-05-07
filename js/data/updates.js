@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.6 — Leveling Passive Traits & Mastery Bonuses",
+    date: "2026-05-07",
+    notes: [
+      "Added unique one-of-a-kind Passive Traits for races and race evolution stages.",
+      "Added unique one-of-a-kind Passive Mastery Bonuses for jobs and job upgrade stages.",
+      "Passive bonuses now scale with the class stage level and total character level.",
+      "Passive scaling now contributes to Basic Ability background totals and derived combat stats.",
+      "Status / Class cards now show each passive name, current bonus, and scaling details.",
+      "Added a Leveling Passives section to the Status / Class screen for quick build review."
+    ]
+  },
+  {
     version: "v0.9.5 — Race / Job Retag & Build Focus Balance",
     date: "2026-05-06",
     notes: [

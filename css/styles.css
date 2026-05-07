@@ -1289,3 +1289,26 @@ input, select {
     text-align: left;
   }
 }
+
+/* v0.9.6 Leveling Passives */
+.passive-scaling-block {
+  border-color: rgba(217, 164, 65, 0.24);
+  background: rgba(217, 164, 65, 0.055);
+}
+.passive-scaling-block .pill,
+.passive-bonus-card .pill {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.passive-bonus-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.passive-bonus-card {
+  border-left: 3px solid rgba(217, 164, 65, 0.55);
+}
+.passive-bonus-card p,
+.passive-scaling-block p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}

@@ -9,6 +9,7 @@ import { getGeneratedLoot } from "./loot.js";
 import { addLog, byId, clamp } from "../core/utils.js";
 import { canUnlockPath, getUnlockableAdvancements, getUnlockStatus, getClassDataById } from "./unlocks.js";
 import { emptyBasicAbilities, legacyStatsToBasicAbilities, addBasicAbilityPoints, buildBasicAbilityPacket, scaleDerivedStatsFromBasicAbilities } from "./basic-abilities.js";
+import { getRacePassiveBonus, getJobMasteryBonus } from "./passive-scaling.js";
 
 export function getTotalLevel(player) {
   if (!player) return 0;
@@ -77,6 +78,8 @@ export function computeStats(player) {
   const totalBasic = emptyBasicAbilities();
   const currentBasic = emptyBasicAbilities();
   const externalBasic = emptyBasicAbilities();
+  const overall = getTotalLevel(player);
+  const passiveBonuses = [];
 
   // Base body/soul foundation contributes only to hidden stacked power.
   addBasicAbilityPoints(totalBasic, legacyStatsToBasicAbilities(player.baseStats ?? {}, 0.45));
@@ -86,13 +89,26 @@ export function computeStats(player) {
   const currentRace = raceTrack.at(-1)?.id;
   const currentJob = jobTrack.at(-1)?.id;
 
-  for (const cls of [...raceTrack, ...jobTrack]) {
+  for (const entry of [
+    ...raceTrack.map(cls => ({ cls, track: "race" })),
+    ...jobTrack.map(cls => ({ cls, track: "job" }))
+  ]) {
+    const { cls, track } = entry;
     const data = getClassData(cls.id);
     if (!data) continue;
 
     // Keep legacy stats for compatibility with older systems and filters.
     addStats(stats, data.stats ?? {});
     addStats(stats, data.levelGrowth ?? {}, Math.max(0, cls.level - 1));
+
+    // Unique leveling passives: every race stage has a Passive Trait and every job stage has a Mastery Bonus.
+    // These scale from the class stage level plus the player's total character level.
+    const passive = track === "race"
+      ? getRacePassiveBonus(data, cls.level, overall)
+      : getJobMasteryBonus(data, cls.level, overall);
+    addStats(stats, passive.stats ?? {});
+    addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(passive.stats ?? {}, 0.85));
+    passiveBonuses.push({ ...passive, className: cls.name, track });
 
     // Falna-style Basic Abilities: every class stage has its own visible growth.
     // Previous stages stay in the hidden stacked total; the current race/job stage is what the Status screen shows.
@@ -137,12 +153,12 @@ export function computeStats(player) {
     addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(titleBonus.stats ?? {}, 0.7));
   }
 
-  const overall = getTotalLevel(player);
   const basicAbilities = buildBasicAbilityPacket({ total: totalBasic, current: currentBasic, external: externalBasic });
   const derived = scaleDerivedStatsFromBasicAbilities(basicAbilities, overall);
   Object.assign(stats, derived);
   stats.basicAbilities = basicAbilities;
-  stats.scalingModel = "Basic Abilities";
+  stats.passiveBonuses = passiveBonuses;
+  stats.scalingModel = "Basic Abilities + Leveling Passives";
   return stats;
 }
 

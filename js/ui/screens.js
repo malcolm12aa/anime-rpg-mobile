@@ -123,10 +123,12 @@ function newsCard() {
   </section>`;
 }
 
-function classProfileCard(item, { type = "race", selected = false, compact = false, action = "", actionLabel = "Choose", level = null } = {}) {
+function classProfileCard(item, { type = "race", selected = false, compact = false, action = "", actionLabel = "Choose", level = null, totalLevel = null } = {}) {
   const isJob = type === "job" || String(item.kind ?? "").toLowerCase().includes("job");
   const headingLabel = isJob ? "Job" : "Race";
-  const identity = isJob ? getJobIdentity(item) : getRaceIdentity(item);
+  const stageLevel = level?.level ?? 1;
+  const characterLevel = totalLevel ?? stageLevel;
+  const identity = isJob ? getJobIdentity(item, stageLevel, characterLevel) : getRaceIdentity(item, stageLevel, characterLevel);
   const tags = getDisplayTags(item, isJob, identity);
   const maxLevel = item.maxLevel ?? item.maxLv ?? "?";
   const description = item.description || `${headingLabel} option from the imported class data.`;
@@ -141,12 +143,12 @@ function classProfileCard(item, { type = "race", selected = false, compact = fal
         <div class="class-profile-section"><strong>Main Role</strong><p>${escapeHtml(identity.mainRole)}</p></div>
         <div class="class-profile-section"><strong>Allowed Skill Types</strong><p>${escapeHtml(identity.allowedSkillTypes.join(", "))}</p></div>
         <div class="class-profile-section"><strong>Preferred Spell Schools</strong><p>${escapeHtml(identity.preferredSpellSchools.join(", "))}</p></div>
-        <div class="class-profile-section"><strong>Passive Mastery Bonus</strong><p>${escapeHtml(identity.passiveMasteryBonus)}</p></div>
+        <div class="class-profile-section passive-scaling-block"><strong>Leveling Passive Mastery</strong><p><span class="pill active-bonus">${escapeHtml(identity.passiveMasteryName)}</span></p><p>${escapeHtml(identity.passiveMasteryBonus)}</p><p class="small">${escapeHtml(identity.passiveMasteryScaling)}</p><p class="small"><strong>Current bonus:</strong> ${escapeHtml(identity.passiveMasteryBonusText)}</p></div>
         <div class="class-profile-section"><strong>Upgrade Path</strong><p>${escapeHtml(identity.upgradePath)}</p></div>
         <div class="class-profile-section"><strong>Signature Ability</strong><p>${escapeHtml(identity.signatureAbility)}</p></div>
       </div>`
     : `<div class="identity-grid">
-        <div class="class-profile-section"><strong>Passive Trait</strong><p>${escapeHtml(identity.passiveTrait)}</p></div>
+        <div class="class-profile-section passive-scaling-block"><strong>Leveling Passive Trait</strong><p><span class="pill active-bonus">${escapeHtml(identity.passiveName)}</span></p><p>${escapeHtml(identity.passiveTrait)}</p><p class="small">${escapeHtml(identity.passiveScaling)}</p><p class="small"><strong>Current bonus:</strong> ${escapeHtml(identity.passiveBonus)}</p></div>
         <div class="class-profile-section"><strong>Intrinsic Skill / Spell</strong><p>${escapeHtml(identity.intrinsicSkill)}</p></div>
         <div class="class-profile-section"><strong>Evolution Bonus</strong><p>${escapeHtml(identity.evolutionBonus)}</p></div>
         <div class="class-profile-section"><strong>Weakness / Limitation</strong><p>${escapeHtml(identity.limitation)}</p></div>
@@ -468,7 +470,8 @@ export function statusScreen(state) {
       <div class="card"><h2>${escapeHtml(p.title)} ${escapeHtml(p.name)}</h2>${resourceBars(p, stats)}<p>Status: ${statusPills(p.statusEffects)}</p></div>
       <div class="card"><h2>Basic Abilities</h2><p class="small">Visible values reset to I 0 after each race evolution or job upgrade. Stacked totals stay in the background and power derived combat stats.</p>${statGrid(stats)}${titleBonus ? `<p class="small"><strong>Equipped title bonus:</strong> ${escapeHtml(titleBonus.title)} (${escapeHtml(titleCase(titleBonus.difficulty))}) · ${escapeHtml(statsText(titleBonus.stats))}</p>` : `<p class="small"><strong>Equipped title bonus:</strong> None yet.</p>`}</div>
     </section>
-    <section class="card"><h2>Current Build</h2>${classRows(p.raceLevels, "Race")}${classRows(p.jobLevels, "Job")}</section>
+    <section class="card"><h2>Current Build</h2>${classRows(p.raceLevels, "Race", getTotalLevel(p))}${classRows(p.jobLevels, "Job", getTotalLevel(p))}</section>
+    <section class="card"><h2>Leveling Passives</h2>${passiveBonusRows(stats)}</section>
     <section class="card"><h2>Build Synergies</h2>${synergies.length ? synergies.map(s => `<article class="mini-card"><h3>${s.name}</h3><p>${s.description}</p><p class="small">Bonus: ${statsText(s.stats)}</p></article>`).join("") : `<p class="small">No active race/job synergy yet.</p>`}</section>
     <section class="grid two">
       <div class="card"><h2>Spend Race Levels</h2>${progressRows(p.raceLevels, "race")}</div>
@@ -485,7 +488,14 @@ export function statusScreen(state) {
   </section>`;
 }
 
-function classRows(classes, label) {
+
+function passiveBonusRows(stats) {
+  const rows = stats.passiveBonuses ?? [];
+  if (!rows.length) return `<p class="small">No leveling passive bonuses active yet.</p>`;
+  return `<div class="grid auto passive-bonus-grid">${rows.map(passive => `<article class="mini-card passive-bonus-card"><div class="row between"><strong>${escapeHtml(passive.name)}</strong><span class="pill">${escapeHtml(titleCase(passive.track))}</span></div><p class="small">${escapeHtml(passive.className)} · Stage Lv ${passive.stageLevel} · Character Lv ${passive.totalLevel}</p><p>${escapeHtml(passive.summary)}</p><p class="small active-bonus"><strong>Current bonus:</strong> ${escapeHtml(passive.bonusText)}</p><p class="small">${escapeHtml(passive.scalingText)}</p></article>`).join("")}</div>`;
+}
+
+function classRows(classes, label, totalLevel = 1) {
   const type = label.toLowerCase() === "job" ? "job" : "race";
   return `<h3>${label} Levels</h3><div class="class-row-stack">${classes.map(cls => {
     const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === cls.id) ?? cls;
@@ -493,7 +503,7 @@ function classRows(classes, label) {
       ...(data?.startingSkills ?? []),
       ...(data?.learns ?? []).map(learn => learn.skillId)
     ].slice(0, 6).map(id => byId(SKILLS, id)?.name ?? titleCase(id)).join(", ");
-    return `${classProfileCard({ ...data, name: cls.name, tier: cls.tier, maxLevel: cls.maxLevel }, { type, level: cls })}<div class="linked-abilities-note small"><strong>Linked abilities:</strong> ${escapeHtml(abilityNames || "None")}</div>`;
+    return `${classProfileCard({ ...data, name: cls.name, tier: cls.tier, maxLevel: cls.maxLevel }, { type, level: cls, totalLevel })}<div class="linked-abilities-note small"><strong>Linked abilities:</strong> ${escapeHtml(abilityNames || "None")}</div>`;
   }).join("")}</div>`;
 }
 

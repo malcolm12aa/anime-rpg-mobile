@@ -1,5 +1,6 @@
 import { byId, titleCase } from "../core/utils.js";
 import { SKILLS } from "../data/skills.js";
+import { getRacePassiveInfo, getJobMasteryInfo } from "./passive-scaling.js";
 
 const WEAPON_SETS = {
   blade: ["Sword", "Katana", "Dagger", "Rapier"],
@@ -87,33 +88,41 @@ function firstSkillName(item) {
   return byId(SKILLS, id)?.name ?? (id ? titleCase(id) : "Unwritten Technique");
 }
 
-export function getRaceIdentity(race) {
+export function getRaceIdentity(race, stageLevel = 1, totalLevel = stageLevel) {
   const name = race?.name ?? "Unknown Race";
   const category = titleCase(race?.category ?? "Origin");
   const focus = pickSpellSchoolKey(race);
   const intrinsicName = firstSkillName(race);
+  const passive = getRacePassiveInfo(race, stageLevel, totalLevel);
   return {
-    passiveTrait: race?.passiveTrait ?? `${name} Instinct — starts with a natural ${category.toLowerCase()} adaptation that reinforces its strongest Basic Ability and gives the race a unique opening identity.`,
+    passiveTrait: race?.passiveTrait ?? passive.summary,
+    passiveName: passive.name,
+    passiveScaling: passive.scalingText,
+    passiveBonus: passive.bonusText,
     intrinsicSkill: race?.intrinsicSkill ?? intrinsicName,
-    evolutionBonus: race?.evolutionBonus ?? `When this race evolves, its current visible Basic Abilities reset to I 0 while its hidden stacked totals remain, and its ${category} identity gains a stronger specialty bonus.`,
+    evolutionBonus: race?.evolutionBonus ?? `When this race evolves, its current visible Basic Abilities reset to I 0 while its hidden stacked totals remain, and ${passive.name} changes into the next bloodline-stage passive without losing background value.`,
     limitation: race?.limitation ?? (race?.weaknesses?.[0] ? `${race.weaknesses[0]} This limitation shapes how the race should choose jobs and equipment.` : "Has no free universal answer; it must cover its weak matchups through job choice, gear, and party support."),
     uniqueUnlockPath: race?.uniqueUnlockPath ?? `Advance by reaching the race level cap, clearing race-themed quests, and proving the bloodline/species identity through dungeon achievements.`,
     tags: [category, titleCase(race?.tier ?? "base"), `Focus: ${titleCase(race?.buildFocus ?? focus)}`]
   };
 }
 
-export function getJobIdentity(job) {
+export function getJobIdentity(job, stageLevel = 1, totalLevel = stageLevel) {
   const name = job?.name ?? "Unknown Job";
   const role = job?.mainRole ?? pickRole(job);
   const weaponKey = pickWeaponKey(job);
   const schoolKey = pickSpellSchoolKey(job);
   const signature = job?.signatureAbility ?? firstSkillName(job);
+  const mastery = getJobMasteryInfo(job, stageLevel, totalLevel);
   return {
     mainRole: role,
     allowedSkillTypes: job?.allowedSkillTypes ?? allowedSkillTypesForRole(role, job),
     preferredWeapons: job?.preferredWeapons ?? WEAPON_SETS[weaponKey],
     preferredSpellSchools: job?.preferredSpellSchools ?? SPELL_SCHOOLS[schoolKey],
-    passiveMasteryBonus: job?.passiveMasteryBonus ?? `${name} Mastery — improves the job's ${role.toLowerCase()} identity as job levels rise and makes its preferred tools more reliable.`,
+    passiveMasteryBonus: job?.passiveMasteryBonus ?? mastery.summary,
+    passiveMasteryName: mastery.name,
+    passiveMasteryScaling: mastery.scalingText,
+    passiveMasteryBonusText: mastery.bonusText,
     upgradePath: job?.upgradePath ?? `Unlock stronger forms by reaching the job cap, completing job quests, and meeting role-specific combat requirements.`,
     signatureAbility: signature,
     tags: [role, titleCase(job?.tier ?? "base"), `Focus: ${titleCase(job?.buildFocus ?? "balanced")}`, ...allowedSkillTypesForRole(role, job).slice(0, 2)]
