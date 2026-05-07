@@ -1,8 +1,31 @@
 export const UPDATE_NOTES = [
   {
-    version: "v0.9.6 — Leveling Passive Traits & Mastery Bonuses",
-    date: "2026-05-07",
-    notes: [
+    "version": "v0.9.8 — Description Cleanup, Prescriptions & Mastery Gates",
+    "date": "2026-05-07",
+    "notes": [
+      "Shortened race, job, and ability descriptions so cards stay easier to read.",
+      "Added ability prescriptions and weapon prescriptions to races, evolutions, jobs, and job upgrades.",
+      "Added Element Mastery passives and made stronger elemental abilities require matching mastery before use.",
+      "Made selected advanced physical skills require matching equipped weapon types.",
+      "Reviewed ability scaling so every ability exposes Basic Ability scaling from Strength, Endurance, Dexterity, Agility, and/or Magic.",
+      "Added weapon-type metadata to equipment so weapon-locked skills can check equipped weapons."
+    ]
+  },
+  {
+    "version": "v0.9.7 — Excel Naming Pass",
+    "date": "2026-05-07",
+    "notes": [
+      "Renamed every race, race evolution, base job, and job upgrade using the attached redone Excel workbook.",
+      "Kept all IDs stable so existing save files, unlock rules, class paths, and ability links do not break.",
+      "Imported workbook wording for unique descriptions, strengths, weaknesses, tags/focus, status bias, passive trait text, intrinsic skill text, job weapon lists, job roles, spell schools, mastery bonuses, signature abilities, and route notes.",
+      "Updated race/job cards to prefer the workbook status-bias text and show workbook tags cleanly.",
+      "Added a naming-pass report for quick verification."
+    ]
+  },
+  {
+    "version": "v0.9.6 — Leveling Passive Traits & Mastery Bonuses",
+    "date": "2026-05-07",
+    "notes": [
       "Added unique one-of-a-kind Passive Traits for races and race evolution stages.",
       "Added unique one-of-a-kind Passive Mastery Bonuses for jobs and job upgrade stages.",
       "Passive bonuses now scale with the class stage level and total character level.",
@@ -12,9 +35,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.5 — Race / Job Retag & Build Focus Balance",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.5 — Race / Job Retag & Build Focus Balance",
+    "date": "2026-05-06",
+    "notes": [
       "Retagged every race, race evolution, job, and job upgrade with explicit build-focus metadata.",
       "Balanced the focus filters so Physical, Magic, Defense, Speed, Support, and Balanced all have strong options.",
       "Added clearer gameplay tags to class cards and registry entries.",
@@ -23,9 +46,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.4.2 — Item Card Layout Fix",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.4.2 — Item Card Layout Fix",
+    "date": "2026-05-06",
+    "notes": [
       "Rebuilt shop item cards to match the Skill / Spell / Ability card style.",
       "Added item icons, rarity/type labels, slots, set tags, price, bonus stats, status scaling, armor bonuses, and consumable effect rows.",
       "Rebuilt inventory item cards with the same readable card layout.",
@@ -34,9 +57,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.4.1 — Shop Content Hotfix",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.4.1 — Shop Content Hotfix",
+    "date": "2026-05-06",
+    "notes": [
       "Restored the updated shop stock lists so D&D-inspired weapons, armor, consumables, and abilities appear in the Shop screen.",
       "Restored js/data/dnd-inspired-items.js and js/data/dnd-inspired-abilities.js imports into the active item and ability data files.",
       "General Store, Blacksmith, Blue Candle Arcanist, Roadside Outfitter, Alchemy Shop, and Skill / Spell Library now point to the new v0.9.4 content.",
@@ -44,9 +67,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.4 — Tabletop-Inspired Ability and Item Expansion",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.4 — Tabletop-Inspired Ability and Item Expansion",
+    "date": "2026-05-06",
+    "notes": [
       "Added 50 original skills, spells, passives, resist abilities, and ultimate abilities inspired by classic tabletop spell roles.",
       "Added 50 original items inspired by classic tabletop RPG equipment: 20 weapons, 15 armor pieces, and 15 consumables.",
       "Added explicit status scaling to the new abilities so Basic Abilities like Magic, Strength, Dexterity, Agility, and Endurance affect damage bonuses.",
@@ -55,9 +78,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.3 — Dark Guild Interface UI Update",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.3 — Dark Guild Interface UI Update",
+    "date": "2026-05-06",
+    "notes": [
       "Changed the visual style into a cleaner Dark Guild Interface with dark stone panels, warm bronze trim, parchment text accents, and subtle arcane highlights.",
       "Grouped navigation into Character, Adventure, and Town sections so the game feels less crowded.",
       "Upgraded the main menu into a stronger fantasy title screen with a crest, clean action buttons, feature cards, and latest-save text.",
@@ -66,9 +89,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.1 — Main Menu Cleanup",
-    date: "2026-05-06",
-    notes: [
+    "version": "v0.9.1 — Main Menu Cleanup",
+    "date": "2026-05-06",
+    "notes": [
       "Removed the New Game Quick Builder from the Main Menu.",
       "Rebuilt the Main Menu as a cleaner title-screen style layout.",
       "Added clearer Continue, New Game, Save/Load, Class Registry, and Update Notes actions.",
@@ -77,9 +100,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.9.0 — Crafting, Loot, Build Planning, and Map Events",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.9.0 — Crafting, Loot, Build Planning, and Map Events",
+    "date": "2026-05-05",
+    "notes": [
       "Expanded the Blacksmith into a forging system with equipment crafting, upgrades, rune slots, scaling improvements, and set-piece crafting.",
       "Added an Alchemy Shop for potions, bombs, elixirs, cures, mana crystals, and stamina tonics.",
       "Added crafting materials from enemies and map events, including ore, ingots, hides, herbs, crystals, rune shards, and reagents.",
@@ -91,9 +114,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.8.0 — Class & Ability Expansion",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.8.0 — Class & Ability Expansion",
+    "date": "2026-05-05",
+    "notes": [
       "Added original race evolution expansions inspired by high-rank class systems.",
       "Added original job upgrade expansions including saint, slayer, crafter, caster, chef, thief, and dungeon-builder style paths.",
       "Added a new ability taxonomy with Intrinsic, Common, Extra, Unique, Ultimate, and Resist rank logic.",
@@ -103,9 +126,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.7.0 — Quest, Identity, Battle, and Boss Systems",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.7.0 — Quest, Identity, Battle, and Boss Systems",
+    "date": "2026-05-05",
+    "notes": [
       "Added a Quest Board with Main, Side, Daily, Race, Job, Recruit, Hunting, Collection, Boss, and Secret quest categories.",
       "Added race identity text: passive trait, intrinsic skill/spell, evolution bonus, limitation, and unique unlock path.",
       "Added job identity text: main role, allowed skill types, preferred weapons, spell schools, mastery bonus, upgrade path, and signature ability.",
@@ -115,9 +138,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.6.3 — Race / Job Text Layout Update",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.6.3 — Race / Job Text Layout Update",
+    "date": "2026-05-05",
+    "notes": [
       "Redesigned race cards to show Race, Max Level, Status, Tags, Unique Description, Strengths, and Weaknesses.",
       "Redesigned job cards to show Job, Max Level, Status, Weapon/s, Tags, Unique Description, Strengths, and Weaknesses.",
       "Added job weapon recommendations based on each job name, category, strengths, and description.",
@@ -125,9 +148,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.6.2.1 — Data Restore Hotfix",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.6.2.1 — Data Restore Hotfix",
+    "date": "2026-05-05",
+    "notes": [
       "Restored the full imported race data file so RACES exports correctly.",
       "Restored the full imported job data file so JOBS exports correctly.",
       "Kept the v0.6.2 Basic Abilities / Falna-style status scaling update intact.",
@@ -135,9 +158,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.6.2 — Basic Abilities / Status Scaling",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.6.2 — Basic Abilities / Status Scaling",
+    "date": "2026-05-05",
+    "notes": [
       "Changed the visible status system to five Basic Abilities: Strength, Endurance, Dexterity, Agility, and Magic.",
       "Added rank display from I 0–99 through S 900–999.",
       "Added hidden background stacking so previous race/job stages keep contributing after visible values reset.",
@@ -146,9 +169,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.6.1 — Naming, Shop Tabs, and Scroll Fix",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.6.1 — Naming, Shop Tabs, and Scroll Fix",
+    "date": "2026-05-05",
+    "notes": [
       "Renamed generic race evolution names so they no longer use plain Awakened/Bloodline labels.",
       "Renamed generic job upgrade names so they no longer use plain Vanguard/Adept labels.",
       "Renamed skills and spells by rank, with Unique, Hidden, Rare, and Ultimate abilities using more legendary naming patterns.",
@@ -157,9 +180,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.6.0 — Balance Pass",
-    date: "2026-05-05",
-    notes: [
+    "version": "v0.6.0 — Balance Pass",
+    "date": "2026-05-05",
+    "notes": [
       "Generated category-based stat templates for imported races, race evolutions, jobs, and job paths.",
       "Rebalanced every imported race/job using its category, tier, and name keywords.",
       "Added unique descriptions, strengths, and weaknesses for every race/job entry.",
@@ -169,9 +192,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.5.1 — Shop Filter & Ability Description Fix",
-    date: "2026-05-04",
-    notes: [
+    "version": "v0.5.1 — Shop Filter & Ability Description Fix",
+    "date": "2026-05-04",
+    "notes": [
       "Fixed the Skill / Spell Shop filters so search, library, kind, and rank update the shop results immediately.",
       "Improved search matching so multi-word ability searches and partial terms work more reliably.",
       "Rewrote all active ability descriptions with more detailed, unique mechanical and flavor text.",
@@ -179,9 +202,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.5.0 — Ability Linking",
-    date: "2026-05-04",
-    notes: [
+    "version": "v0.5.0 — Ability Linking",
+    "date": "2026-05-04",
+    "notes": [
       "Connected imported Excel race/job classes to starting abilities and level-up learn tables.",
       "Added Excel skill/spell shop libraries to the Shop screen with search, library, kind, and rank filters.",
       "Added starting abilities from the Excel Ability Shops sheet.",
@@ -190,9 +213,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.4.0 — Unlock System",
-    date: "2026-05-04",
-    notes: [
+    "version": "v0.4.0 — Unlock System",
+    "date": "2026-05-04",
+    "notes": [
       "Converted imported Excel class requirements into real unlock checks.",
       "Progression now only shows race/job upgrades that are valid to unlock right now.",
       "Hidden and secret race/job paths are concealed until their requirements are met.",
@@ -201,9 +224,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.3.2 — New Game Menu Filters",
-    date: "2026-05-03",
-    notes: [
+    "version": "v0.3.2 — New Game Menu Filters",
+    "date": "2026-05-03",
+    "notes": [
       "Added the race and job filter system directly to the Main Menu as a New Game Quick Builder.",
       "You can now search and filter races/jobs before opening the full character creation screen.",
       "Added compact race/job result cards on the Main Menu so the imported Excel list is easier to browse.",
@@ -212,9 +235,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.3.1 — Race & Job Filter Update",
-    date: "2026-05-03",
-    notes: [
+    "version": "v0.3.1 — Race & Job Filter Update",
+    "date": "2026-05-03",
+    "notes": [
       "Added race filters to Character Creation: search, category, tier, and build focus.",
       "Added job filters to Character Creation: search, category, tier, and build focus.",
       "Added result counts so large imported lists are easier to browse on mobile.",
@@ -223,9 +246,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.3.0 — Excel Data Import",
-    date: "2026-05-03",
-    notes: [
+    "version": "v0.3.0 — Excel Data Import",
+    "date": "2026-05-03",
+    "notes": [
       "Imported 69 races from the Excel race summary.",
       "Imported 73 base jobs and 584 job progression paths from the Excel job summary.",
       "Imported 552 race evolution paths from the Excel race-evolution rows.",
@@ -234,9 +257,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.2.0 — Improvement Pass",
-    date: "2026-05-03",
-    notes: [
+    "version": "v0.2.0 — Improvement Pass",
+    "date": "2026-05-03",
+    "notes": [
       "Added a 5-slot save/load menu using browser localStorage.",
       "Added character creation stat preview with race/job synergy detection.",
       "Added race evolution tree and job class tree previews.",
@@ -250,9 +273,9 @@ export const UPDATE_NOTES = [
     ]
   },
   {
-    version: "v0.1.0 — Foundation Release",
-    date: "2026-05-03",
-    notes: [
+    "version": "v0.1.0 — Foundation Release",
+    "date": "2026-05-03",
+    "notes": [
       "Added main menu, character creation, hub, map, battle, shops, inventory, and progression screens.",
       "Added 10 starting races and 10 starting jobs.",
       "Added Total Level = Race Levels + Job Levels.",

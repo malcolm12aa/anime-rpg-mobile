@@ -134,6 +134,8 @@ function classProfileCard(item, { type = "race", selected = false, compact = fal
   const description = item.description || `${headingLabel} option from the imported class data.`;
   const status = getStatusSummary(item);
   const weapons = isJob ? (identity.preferredWeapons ?? getWeaponOptions(item).split(", ")).join(", ") : "";
+  const abilityPrescription = formatAbilityPrescription(item);
+  const weaponPrescription = formatWeaponPrescription(item);
   const strengths = formatTraitList(item.strengths, isJob ? "Specializes in a focused combat role." : "Flexible growth path with clear identity.");
   const weaknesses = formatTraitList(item.weaknesses, isJob ? "Requires the right weapons and resource support." : "Needs careful class pairing to cover weak points.");
   const levelLine = level ? `<span class="pill">Level ${level.level}/${level.maxLevel}</span>` : "";
@@ -162,6 +164,10 @@ function classProfileCard(item, { type = "race", selected = false, compact = fal
     <div class="class-profile-section"><strong>Status</strong><p>${escapeHtml(status)}</p></div>
     ${isJob ? `<div class="class-profile-section"><strong>Weapon/s</strong><p>${escapeHtml(weapons)}</p></div>` : ""}
     <div class="class-profile-section"><strong>Tags</strong><p>${tags}</p></div>
+    <div class="identity-grid prescription-grid">
+      <div class="class-profile-section prescription-card"><strong>Ability Prescription</strong>${abilityPrescription}</div>
+      <div class="class-profile-section prescription-card"><strong>Weapon Prescription</strong>${weaponPrescription}</div>
+    </div>
     ${identityBlock}
     <div class="class-profile-section"><strong>Unique Description</strong><p>${escapeHtml(description)}</p></div>
     <div class="class-profile-traits">
@@ -170,6 +176,26 @@ function classProfileCard(item, { type = "race", selected = false, compact = fal
     </div>
     ${actionButton}
   </article>`;
+}
+
+function formatAbilityPrescription(item = {}) {
+  const rx = item.abilityPrescription ?? {};
+  const ids = item.recommendedAbilityIds ?? rx.recommendedAbilityIds ?? [];
+  const names = ids.slice(0, 5).map(id => byId(SKILLS, id)?.name ?? titleCase(id));
+  const basics = (rx.basicAbilities ?? []).map(titleCase).join(" + ");
+  const elements = (rx.preferredElements ?? []).map(titleCase).join(" / ");
+  return `<p>${escapeHtml(rx.note ?? "Use abilities that match this class focus.")}</p>
+    <p class="small"><strong>Recommended:</strong> ${escapeHtml(names.join(", ") || "Any matching ability")}</p>
+    <p class="small"><strong>Scaling:</strong> ${escapeHtml(basics || "Balanced")} ${elements ? `· ${escapeHtml(elements)}` : ""}</p>`;
+}
+
+function formatWeaponPrescription(item = {}) {
+  const rx = item.weaponPrescription ?? {};
+  const primary = rx.primary ?? item.recommendedWeaponTypes ?? [];
+  const backup = rx.backup ?? [];
+  return `<p>${escapeHtml(rx.note ?? "Equip weapons that match this class role.")}</p>
+    <p class="small"><strong>Primary:</strong> ${escapeHtml(primary.join(", ") || "Flexible")}</p>
+    <p class="small"><strong>Backup:</strong> ${escapeHtml(backup.join(", ") || "Any")}</p>`;
 }
 
 function formatTraitList(list = [], fallback = "None listed.") {
@@ -193,6 +219,7 @@ function getDisplayTags(item, isJob, identity = null) {
 }
 
 function getStatusSummary(item) {
+  if (item.statusBias) return item.statusBias;
   const scores = getBasicAbilityBias(item);
   const top = Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 3);
   const labelMap = { strength: "Strength", endurance: "Endurance", dexterity: "Dexterity", agility: "Agility", magic: "Magic" };
@@ -786,6 +813,7 @@ function abilityShopCard(skill, player) {
   const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
   const cost = skill.resource === "none" ? "Passive" : `${skill.cost} ${skill.resource}`;
   const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
+  const requirement = abilityRequirementText(skill);
   return `<article class="card skill-shop-card ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${known ? "selected" : ""}">
     <div class="ability-card-head">
       <div class="ability-icon">${abilityShopIcon(skill)}</div>
@@ -797,12 +825,20 @@ function abilityShopCard(skill, player) {
       <div><span>Cooldown</span><strong>${skill.cooldown}</strong></div>
       <div><span>Price</span><strong>${price} gold</strong></div>
       <div><span>Scaling</span><strong>${escapeHtml(scaling)}</strong></div>
+      ${requirement ? `<div><span>Requires</span><strong>${escapeHtml(requirement)}</strong></div>` : ""}
       <div><span>Source</span><strong>${escapeHtml(skill.origin ?? "Shop")}</strong></div>
     </div>
     <p class="small"><strong>Unlock:</strong> ${escapeHtml(skill.acquisition ?? "Shop")} · ${escapeHtml(skill.source ?? "Ability Library")}</p>
     ${tags ? `<div class="ability-tags">${tags}</div>` : ""}
     ${known ? `<span class="pill passive-pill">Known</span>` : button(player.gold >= price ? "Buy Ability" : "Too Expensive", "buyAbility", skill.id, player.gold >= price ? "" : "ghost")}
   </article>`;
+}
+
+function abilityRequirementText(skill = {}) {
+  const rows = [];
+  if (skill.requiredMastery) rows.push(skill.masteryRequirementText ?? `${titleCase(skill.requiredMastery)} Element Mastery`);
+  if ((skill.requiresWeaponType ?? []).length) rows.push(skill.weaponRequirementText ?? `Equipped ${skill.requiresWeaponType.join(" / ")}`);
+  return rows.join(" · ");
 }
 
 function abilityShopIcon(skill = {}) {

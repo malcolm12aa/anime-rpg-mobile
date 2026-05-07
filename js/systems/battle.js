@@ -5,6 +5,7 @@ import { computeStats, syncResourcesToStats } from "./leveling.js";
 import { applyStatus, damageModsFromStatuses, getElementMultiplier, isTurnSkipped, tickStatuses } from "./effects.js";
 import { grantBattleRewards } from "./rewards.js";
 import { useItem } from "./inventory.js";
+import { getGeneratedLoot } from "./loot.js";
 import { endRunDefeat } from "./run-manager.js";
 import { trackQuestProgress } from "./quests.js";
 
@@ -60,6 +61,10 @@ export function playerUseSkill(state, skillId) {
   if (!state.combat || state.combat.turn !== "player") return;
   const skill = byId(SKILLS, skillId);
   if (!skill) return addLog(state, "That skill is not available yet.");
+  if (!(state.player.skills ?? []).includes(skill.id)) return addLog(state, `${skill.name} has not been learned.`);
+  if (skill.kind === "passive" || skill.resource === "none") return addLog(state, `${skill.name} is a passive ability and cannot be activated directly.`);
+  const requirement = getSkillRequirementFailure(state.player, skill);
+  if (requirement) return addLog(state, requirement);
   if ((state.player.cooldowns?.[skill.id] ?? 0) > 0) return addLog(state, `${skill.name} is still on cooldown.`);
   if (!payResource(state.player, skill)) return addLog(state, `Not enough ${skill.resource}.`);
   state.player.cooldowns[skill.id] = skill.cooldown;
@@ -72,6 +77,62 @@ export function playerUseItem(state, itemId) {
   const item = byId(ITEMS, itemId);
   if (!item || item.type !== "consumable") return;
   if (useItem(state, itemId, true)) afterPlayerAction(state);
+}
+
+function getKnownElementMasteries(player) {
+  const known = new Set(player?.skills ?? []);
+  const masteries = new Set();
+  for (const skillId of known) {
+    const skill = byId(SKILLS, skillId);
+    if (skill?.grantsElementMastery) masteries.add(String(skill.grantsElementMastery).toLowerCase());
+  }
+  return masteries;
+}
+
+function resolveEquippedBattleItem(player, itemRef) {
+  if (typeof itemRef === "string" && itemRef.startsWith("loot:")) return getGeneratedLoot(player, itemRef);
+  return byId(ITEMS, itemRef);
+}
+
+function equippedWeaponTypes(player) {
+  const out = new Set();
+  for (const itemRef of Object.values(player?.equipment ?? {})) {
+    const item = resolveEquippedBattleItem(player, itemRef);
+    if (!item) continue;
+    if (item.weaponType) out.add(String(item.weaponType).toLowerCase());
+    for (const tag of item.tags ?? []) out.add(String(tag).toLowerCase());
+    const text = `${item.name ?? ""} ${item.kind ?? ""} ${item.slot ?? ""}`.toLowerCase();
+    if (text.includes("sword") || text.includes("blade") || text.includes("katana")) out.add("sword");
+    if (text.includes("bow")) out.add(text.includes("crossbow") ? "crossbow" : "bow");
+    if (text.includes("dagger")) out.add("dagger");
+    if (text.includes("rapier")) out.add("rapier");
+    if (text.includes("staff")) out.add("staff");
+    if (text.includes("wand")) out.add("wand");
+    if (text.includes("shield")) out.add("shield");
+    if (text.includes("mace") || text.includes("maul") || text.includes("hammer")) out.add("mace");
+    if (text.includes("spear") || text.includes("pike") || text.includes("lance")) out.add("spear");
+    if (text.includes("axe")) out.add("axe");
+    if (text.includes("catalyst") || text.includes("orb") || text.includes("grimoire")) out.add("catalyst");
+  }
+  return out;
+}
+
+function getSkillRequirementFailure(player, skill) {
+  if (skill.requiredMastery) {
+    const element = String(skill.requiredMastery).toLowerCase();
+    if (!getKnownElementMasteries(player).has(element)) {
+      const mastery = byId(SKILLS, skill.masterySkillId ?? `mastery_${element}`);
+      return `${skill.name} requires ${mastery?.name ?? `${element} Element Mastery`}. Buy or learn that mastery first.`;
+    }
+  }
+  if ((skill.requiresWeaponType ?? []).length) {
+    const equipped = equippedWeaponTypes(player);
+    const allowed = (skill.requiresWeaponType ?? []).map(type => String(type).toLowerCase());
+    if (!allowed.some(type => equipped.has(type))) {
+      return `${skill.name} requires an equipped ${skill.requiresWeaponType.slice(0, 3).join(" / ")}.`;
+    }
+  }
+  return "";
 }
 
 function afterPlayerAction(state) {

@@ -4,6 +4,7 @@ import { byId, formatStat, titleCase } from "../core/utils.js";
 import { BASIC_ABILITIES, formatBasicAbility } from "../systems/basic-abilities.js";
 import { STATUS_INFO } from "../systems/effects.js";
 import { escapeHtml } from "./dom.js";
+import { getGeneratedLoot } from "../systems/loot.js";
 
 export function button(label, action, value = "", cls = "") {
   return `<button class="${cls}" data-action="${action}" data-value="${value}">${label}</button>`;
@@ -186,22 +187,77 @@ export function skillList(player, mode = "normal") {
     const isPassive = skill.kind === "passive" || skill.resource === "none";
     const cost = isPassive ? "Passive" : (skill.resource ? `${skill.cost} ${skill.resource}` : "Free");
     const icon = abilityIcon(skill);
-    const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${tag}</span>`).join(" ");
+    const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
     const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
-    return `<article class="ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${isPassive ? "passive-card" : ""}">
+    const requirementText = abilityRequirementText(skill);
+    const missingRequirement = mode === "battle" && !isPassive ? missingAbilityRequirement(player, skill) : "";
+    const battleDisabled = (cd > 0 || Boolean(missingRequirement)) ? "disabled" : "";
+    return `<article class="ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${isPassive ? "passive-card" : ""} ${missingRequirement ? "locked-card" : ""}">
       <div class="ability-card-head">
         <div class="ability-icon">${icon}</div>
-        <div><h3>${skill.name}</h3><p class="small">${skill.rank ?? "Common"} · ${skill.kind ?? "ability"} · ${skill.element ?? "neutral"}</p></div>
+        <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank ?? "Common")} · ${escapeHtml(skill.kind ?? "ability")} · ${escapeHtml(skill.element ?? "neutral")}</p></div>
       </div>
-      <p class="ability-description">${skill.description}</p>
-      <div class="ability-stat-row"><span>Cost</span><strong>${cost}</strong></div>
+      <p class="ability-description">${escapeHtml(skill.description)}</p>
+      <div class="ability-stat-row"><span>Cost</span><strong>${escapeHtml(cost)}</strong></div>
       <div class="ability-stat-row"><span>Cooldown</span><strong>${skill.cooldown ?? 0}${cd ? ` · ${cd} left` : ""}</strong></div>
       <div class="ability-stat-row"><span>Power</span><strong>${skill.power ?? 0}</strong></div>
-      <div class="ability-stat-row"><span>Status Scaling</span><strong>${scaling}</strong></div>
+      <div class="ability-stat-row"><span>Status Scaling</span><strong>${escapeHtml(scaling)}</strong></div>
+      ${requirementText ? `<div class="ability-stat-row requirement-row"><span>Requires</span><strong>${escapeHtml(requirementText)}</strong></div>` : ""}
+      ${missingRequirement ? `<p class="small missing-requirement">${escapeHtml(missingRequirement)}</p>` : ""}
       ${tags ? `<div class="ability-tags">${tags}</div>` : ""}
-      ${mode === "battle" && !isPassive ? `<button ${disabled} data-action="skill" data-value="${skill.id}">${cd ? "Cooldown" : "Use Ability"}</button>` : (isPassive ? `<span class="pill passive-pill">Passive</span>` : "")}
+      ${mode === "battle" && !isPassive ? `<button ${battleDisabled} data-action="skill" data-value="${skill.id}">${cd ? "Cooldown" : (missingRequirement ? "Requirement Missing" : "Use Ability")}</button>` : (isPassive ? `<span class="pill passive-pill">Passive</span>` : "")}
     </article>`;
   }).join("")}</div>`;
+}
+
+function abilityRequirementText(skill = {}) {
+  const rows = [];
+  if (skill.requiredMastery) rows.push(skill.masteryRequirementText ?? `${titleCase(skill.requiredMastery)} Element Mastery`);
+  if ((skill.requiresWeaponType ?? []).length) rows.push(skill.weaponRequirementText ?? `Equipped ${skill.requiresWeaponType.join(" / ")}`);
+  return rows.join(" · ");
+}
+
+function knownElementMasteries(player) {
+  const known = new Set(player?.skills ?? []);
+  const masteries = new Set();
+  for (const skillId of known) {
+    const skill = byId(SKILLS, skillId);
+    if (skill?.grantsElementMastery) masteries.add(String(skill.grantsElementMastery).toLowerCase());
+  }
+  return masteries;
+}
+
+function resolveEquippedItem(player, itemRef) {
+  if (typeof itemRef === "string" && itemRef.startsWith("loot:")) return getGeneratedLoot(player, itemRef);
+  return byId(ITEMS, itemRef);
+}
+
+function equippedWeaponTypes(player) {
+  const out = new Set();
+  for (const itemRef of Object.values(player?.equipment ?? {})) {
+    const item = resolveEquippedItem(player, itemRef);
+    if (!item) continue;
+    if (item.weaponType) out.add(String(item.weaponType).toLowerCase());
+    for (const tag of item.tags ?? []) out.add(String(tag).toLowerCase());
+    const text = `${item.name ?? ""} ${item.kind ?? ""} ${item.slot ?? ""}`.toLowerCase();
+    for (const token of ["sword", "katana", "bow", "crossbow", "dagger", "rapier", "staff", "wand", "shield", "mace", "maul", "hammer", "spear", "pike", "lance", "axe", "catalyst", "orb", "grimoire"]) {
+      if (text.includes(token)) out.add(token === "katana" ? "sword" : token === "pike" || token === "lance" ? "spear" : token === "maul" || token === "hammer" ? "mace" : token === "orb" || token === "grimoire" ? "catalyst" : token);
+    }
+  }
+  return out;
+}
+
+function missingAbilityRequirement(player, skill = {}) {
+  if (skill.requiredMastery && !knownElementMasteries(player).has(String(skill.requiredMastery).toLowerCase())) {
+    const mastery = byId(SKILLS, skill.masterySkillId ?? `mastery_${skill.requiredMastery}`);
+    return `Missing ${mastery?.name ?? `${titleCase(skill.requiredMastery)} Element Mastery`}.`;
+  }
+  if ((skill.requiresWeaponType ?? []).length) {
+    const equipped = equippedWeaponTypes(player);
+    const allowed = (skill.requiresWeaponType ?? []).map(type => String(type).toLowerCase());
+    if (!allowed.some(type => equipped.has(type))) return `Equip ${skill.requiresWeaponType.slice(0, 3).join(" / ")} first.`;
+  }
+  return "";
 }
 
 function abilityIcon(skill = {}) {

@@ -1312,3 +1312,34 @@ input, select {
   overflow-wrap: anywhere;
   word-break: normal;
 }
+
+/* v0.9.8 Description Cleanup + Prescriptions + Mastery Gates */
+.prescription-grid {
+  margin-top: .75rem;
+}
+.prescription-card p,
+.ability-card p,
+.skill-shop-card p,
+.class-profile-card p,
+.item-card p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.requirement-row strong,
+.missing-requirement {
+  color: var(--warning, #f6c177);
+}
+.missing-requirement {
+  border-left: 3px solid var(--warning, #f6c177);
+  padding-left: .6rem;
+}
+.ability-stat-row.requirement-row {
+  border-color: rgba(246, 193, 119, .35);
+  background: rgba(246, 193, 119, .06);
+}
+.prescription-card {
+  background: linear-gradient(180deg, rgba(246, 193, 119, .07), rgba(120, 90, 45, .04));
+}
+.prescription-card strong:first-child {
+  color: var(--accent, #f6c177);
+}

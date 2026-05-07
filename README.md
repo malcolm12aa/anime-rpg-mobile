@@ -4,6 +4,15 @@ Current package: **v0.8.0 — Class & Ability Expansion**
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
 
+## v0.9.8 — Description Cleanup, Prescriptions & Mastery Gates
+
+- Shortened race, job, and ability descriptions for cleaner cards.
+- Added ability and weapon prescriptions to race/job cards.
+- Added Element Mastery passives in the Skill / Spell Library.
+- Stronger elemental abilities now require matching Element Mastery.
+- Selected advanced physical skills require matching equipped weapon types.
+- Reviewed ability scaling so all abilities use the Basic Abilities model.
+
 ## v0.5.1 Shop Filter & Ability Descriptions
 
 Added in this package:
