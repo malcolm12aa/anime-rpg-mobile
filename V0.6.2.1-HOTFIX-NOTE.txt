@@ -1,0 +1,1 @@
+This hotfix restores js/data/races.js and js/data/jobs.js. If your GitHub repo shows these files as blank, replace them from this package.

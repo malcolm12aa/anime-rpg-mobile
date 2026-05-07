@@ -98,7 +98,7 @@ export function getRaceIdentity(race) {
     evolutionBonus: race?.evolutionBonus ?? `When this race evolves, its current visible Basic Abilities reset to I 0 while its hidden stacked totals remain, and its ${category} identity gains a stronger specialty bonus.`,
     limitation: race?.limitation ?? (race?.weaknesses?.[0] ? `${race.weaknesses[0]} This limitation shapes how the race should choose jobs and equipment.` : "Has no free universal answer; it must cover its weak matchups through job choice, gear, and party support."),
     uniqueUnlockPath: race?.uniqueUnlockPath ?? `Advance by reaching the race level cap, clearing race-themed quests, and proving the bloodline/species identity through dungeon achievements.`,
-    tags: [category, titleCase(race?.tier ?? "base"), titleCase(focus)]
+    tags: [category, titleCase(race?.tier ?? "base"), `Focus: ${titleCase(race?.buildFocus ?? focus)}`]
   };
 }
 
@@ -116,7 +116,7 @@ export function getJobIdentity(job) {
     passiveMasteryBonus: job?.passiveMasteryBonus ?? `${name} Mastery — improves the job's ${role.toLowerCase()} identity as job levels rise and makes its preferred tools more reliable.`,
     upgradePath: job?.upgradePath ?? `Unlock stronger forms by reaching the job cap, completing job quests, and meeting role-specific combat requirements.`,
     signatureAbility: signature,
-    tags: [role, titleCase(job?.tier ?? "base"), ...allowedSkillTypesForRole(role, job).slice(0, 2)]
+    tags: [role, titleCase(job?.tier ?? "base"), `Focus: ${titleCase(job?.buildFocus ?? "balanced")}`, ...allowedSkillTypesForRole(role, job).slice(0, 2)]
   };
 }
 

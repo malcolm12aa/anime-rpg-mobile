@@ -25,7 +25,7 @@ export function createInitialState() {
       saveMenuMode: "load",
       currentEvent: null,
       offeredRecruit: null,
-      registryFilters: { search: "", kind: "all", category: "all", tier: "all" },
+      registryFilters: { search: "", kind: "all", category: "all", tier: "all", focus: "all" },
       abilityFilters: { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" },
       questFilters: { category: "All" },
       devMenuOpen: false,

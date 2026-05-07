@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.5 — Race / Job Retag & Build Focus Balance",
+    date: "2026-05-06",
+    notes: [
+      "Retagged every race, race evolution, job, and job upgrade with explicit build-focus metadata.",
+      "Balanced the focus filters so Physical, Magic, Defense, Speed, Support, and Balanced all have strong options.",
+      "Added clearer gameplay tags to class cards and registry entries.",
+      "Gently rebalanced legacy stat templates so each class better matches its assigned focus.",
+      "Updated Character Creation and Class Registry filters to use the new buildFocus metadata instead of only guessing from names."
+    ]
+  },
+  {
     version: "v0.9.4.2 — Item Card Layout Fix",
     date: "2026-05-06",
     notes: [

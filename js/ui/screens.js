@@ -9,7 +9,7 @@ import { ACHIEVEMENTS } from "../data/achievements.js";
 import { UPDATE_NOTES } from "../data/updates.js";
 import { QUEST_CATEGORIES } from "../data/quests.js";
 import { CRAFTING_RECIPES, CRAFTING_STATIONS } from "../data/crafting.js";
-import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, REGISTRY_TIERS } from "../data/class-registry.js";
+import { CLASS_REGISTRY, REGISTRY_TOTALS, REGISTRY_CATEGORIES, REGISTRY_KINDS, REGISTRY_TIERS, REGISTRY_FOCI } from "../data/class-registry.js";
 import { getSaveSlots } from "../core/save.js";
 import { getRaceIdentity, getJobIdentity, getEnemyIdentity } from "../systems/identity.js";
 import { canCraftRecipe, materialCostText } from "../systems/crafting.js";
@@ -184,9 +184,10 @@ function getDisplayTags(item, isJob, identity = null) {
     item.roleIdentity ? `Role: ${titleCase(item.roleIdentity)}` : "",
     item.overlapGroup ? `Group: ${titleCase(item.overlapGroup)}` : "",
     isJob ? "Weapon Locked" : "Bloodline / Species",
+    ...(item.tags ?? []),
     ...(identity?.tags ?? [])
   ].filter(Boolean);
-  return tags.slice(0, 7).map(tag => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ");
+  return [...new Set(tags)].slice(0, 10).map(tag => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ");
 }
 
 function getStatusSummary(item) {
@@ -333,7 +334,7 @@ function filterCreationChoices(list, filters, type) {
     if (tier !== "all" && item.tier !== tier) return false;
     if (focus !== "all" && getBuildFocus(item) !== focus) return false;
     if (search) {
-      const haystack = `${item.name} ${item.category ?? ""} ${item.tier ?? ""} ${item.description ?? ""} ${(item.strengths ?? []).join(" ")} ${(item.weaknesses ?? []).join(" ")}`.toLowerCase();
+      const haystack = `${item.name} ${item.category ?? ""} ${item.tier ?? ""} ${item.buildFocus ?? ""} ${(item.tags ?? []).join(" ")} ${item.description ?? ""} ${(item.strengths ?? []).join(" ")} ${(item.weaknesses ?? []).join(" ")}`.toLowerCase();
       if (!matchesSearchText(haystack, search)) return false;
     }
     return true;
@@ -373,6 +374,7 @@ function matchesSearchText(haystack, search) {
 }
 
 export function getBuildFocus(item) {
+  if (["physical", "magic", "defense", "speed", "support", "balanced"].includes(item?.buildFocus)) return item.buildFocus;
   const stats = item.stats ?? {};
   const growth = item.levelGrowth ?? {};
   const score = key => (stats[key] ?? 0) + (growth[key] ?? 0);
@@ -580,7 +582,7 @@ function registryCard(entry) {
 }
 
 export function classRegistryScreen(state) {
-  const filters = { search: "", kind: "all", category: "all", tier: "all", ...(state.ui.registryFilters ?? {}) };
+  const filters = { search: "", kind: "all", category: "all", tier: "all", focus: "all", ...(state.ui.registryFilters ?? {}) };
   const search = filters.search.trim().toLowerCase();
   const hiddenTotal = CLASS_REGISTRY.filter(entry => String(entry.tier).toLowerCase() === "hidden").length;
   const filtered = CLASS_REGISTRY.filter(entry => {
@@ -588,8 +590,9 @@ export function classRegistryScreen(state) {
     if (filters.kind !== "all" && entry.kind !== filters.kind) return false;
     if (filters.category !== "all" && entry.category !== filters.category) return false;
     if (filters.tier !== "all" && entry.tier !== filters.tier) return false;
+    if (filters.focus !== "all" && getBuildFocus(entry) !== filters.focus) return false;
     if (search) {
-      const haystack = `${entry.name} ${entry.category} ${entry.kind} ${entry.tier} ${entry.description}`.toLowerCase();
+      const haystack = `${entry.name} ${entry.category} ${entry.kind} ${entry.tier} ${entry.buildFocus ?? ""} ${(entry.tags ?? []).join(" ")} ${entry.description}`.toLowerCase();
       if (!haystack.includes(search)) return false;
     }
     return true;
@@ -604,6 +607,7 @@ export function classRegistryScreen(state) {
         <label>Search<input data-input="registry.search" value="${escapeHtml(filters.search)}" placeholder="Search race, job, category, tier..." /></label>
         ${selectField("Type", "registry.kind", REGISTRY_KINDS, filters.kind)}
         ${selectField("Tier", "registry.tier", REGISTRY_TIERS, filters.tier)}
+        ${selectField("Build Focus", "registry.focus", REGISTRY_FOCI, filters.focus)}
         ${selectField("Category / World", "registry.category", REGISTRY_CATEGORIES, filters.category)}
       </div>
       <div class="actions">${button("Reset Filters", "resetRegistryFilters", "", "secondary")} ${button("Back", "go", backTarget, "ghost")}</div>

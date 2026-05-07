@@ -144,7 +144,7 @@ export function handleAction(state, action, value) {
       break;
     }
     case "resetRegistryFilters":
-      state.ui.registryFilters = { search: "", kind: "all", category: "all", tier: "all" };
+      state.ui.registryFilters = { search: "", kind: "all", category: "all", tier: "all", focus: "all" };
       break;
     case "resetCreationFilters":
       state.ui.creationFilters = {
@@ -178,7 +178,7 @@ export function handleInput(state, name, value) {
   if (name === "characterName") state.characterCreation.name = value;
   if (name?.startsWith("registry.")) {
     const key = name.split(".")[1];
-    state.ui.registryFilters ??= { search: "", kind: "all", category: "all", tier: "all" };
+    state.ui.registryFilters ??= { search: "", kind: "all", category: "all", tier: "all", focus: "all" };
     state.ui.registryFilters[key] = value;
   }
   if (name?.startsWith("quest.")) {

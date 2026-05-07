@@ -23,7 +23,10 @@ function withKind(kind, track, entry) {
     registryVisible: entry.registryVisible !== false,
     balanceTemplate: entry.balanceTemplate ?? "",
     overlapGroup: entry.overlapGroup ?? "",
-    roleIdentity: entry.roleIdentity ?? ""
+    roleIdentity: entry.roleIdentity ?? "",
+    buildFocus: entry.buildFocus ?? "balanced",
+    focusProfile: entry.focusProfile ?? "",
+    tags: entry.tags ?? []
   };
 }
 
@@ -48,3 +51,5 @@ export const REGISTRY_CATEGORIES = [
   "all",
   ...Array.from(new Set(CLASS_REGISTRY.map(entry => entry.category))).sort((a, b) => a.localeCompare(b))
 ];
+
+export const REGISTRY_FOCI = ["all", "physical", "magic", "defense", "speed", "support", "balanced"];
