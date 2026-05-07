@@ -8,6 +8,7 @@ import { useItem } from "./inventory.js";
 import { getGeneratedLoot } from "./loot.js";
 import { endRunDefeat } from "./run-manager.js";
 import { trackQuestProgress } from "./quests.js";
+import { trackLegendAbilityUse, trackLegendWeaponUse } from "./legend-engine.js";
 
 function createEnemyIntent(enemy, combat = null) {
   if (enemy.bossMechanics && combat?.round && combat.round % 4 === 0) {
@@ -53,6 +54,7 @@ export function playerBasicAttack(state) {
   const enemy = state.combat.enemy;
   const base = randInt(4, 8) + playerStats.attack;
   const damage = dealDamage(state.player, enemy, base, "physical", playerStats, enemy.stats, state.combat.modifier);
+  trackLegendWeaponUse(state);
   addLog(state, `<span class="player-name">${state.player.name}</span> attacks for <strong>${damage}</strong> damage.`);
   afterPlayerAction(state);
 }
@@ -68,6 +70,7 @@ export function playerUseSkill(state, skillId) {
   if ((state.player.cooldowns?.[skill.id] ?? 0) > 0) return addLog(state, `${skill.name} is still on cooldown.`);
   if (!payResource(state.player, skill)) return addLog(state, `Not enough ${skill.resource}.`);
   state.player.cooldowns[skill.id] = skill.cooldown;
+  trackLegendAbilityUse(state, skill);
   executeSkill(state, state.player, state.combat.enemy, skill, true);
   afterPlayerAction(state);
 }

@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v0.9.9 — Legend Engine",
+    date: "2026-05-07",
+    notes: [
+      "Added a lightweight in-game Legend Engine that creates dynamic quests, achievements, and titles without needing a server or real AI model.",
+      "Generated quests now use the player race, job, total level, build focus, equipped weapons, known elements, and Element Mastery data.",
+      "Generated achievements create unlockable titles with stat bonuses and save to the player profile.",
+      "Added tracking for ability use, elemental ability use, spell use, and equipped weapon battle progress.",
+      "Added a new Legend Engine screen under Adventure navigation and linked it from the Quest Board.",
+      "Dynamic quest rewards can grant gold, EXP, Relic Dust, and supplies."
+    ]
+  },
+  {
     "version": "v0.9.8 — Description Cleanup, Prescriptions & Mastery Gates",
     "date": "2026-05-07",
     "notes": [

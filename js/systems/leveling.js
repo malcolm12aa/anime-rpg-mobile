@@ -47,13 +47,23 @@ export function getActiveSynergies(player) {
 export function getEquippedTitleBonus(player) {
   if (!player?.title) return null;
   const achievement = ACHIEVEMENTS.find(item => item.title === player.title);
-  if (!achievement) return null;
+  if (achievement) {
+    return {
+      title: achievement.title,
+      achievementId: achievement.id,
+      difficulty: achievement.difficulty ?? "common",
+      stats: achievement.bonus ?? {},
+      description: achievement.description ?? ""
+    };
+  }
+  const legendTitle = (player.legendTitles ?? []).find(item => item.title === player.title);
+  if (!legendTitle) return null;
   return {
-    title: achievement.title,
-    achievementId: achievement.id,
-    difficulty: achievement.difficulty ?? "common",
-    stats: achievement.bonus ?? {},
-    description: achievement.description ?? ""
+    title: legendTitle.title,
+    achievementId: legendTitle.achievementId,
+    difficulty: legendTitle.difficulty ?? "dynamic",
+    stats: legendTitle.stats ?? {},
+    description: legendTitle.description ?? "Legend Engine generated title."
   };
 }
 

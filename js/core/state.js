@@ -8,7 +8,18 @@ import { byId, deepClone } from "./utils.js";
 import { computeStats } from "../systems/leveling.js";
 
 function baseMeta() {
-  return { totalRuns: 0, bossKills: 0, eliteKills: 0, enemyKills: 0, highestFloor: 0, relicDust: 0 };
+  return {
+    totalRuns: 0,
+    bossKills: 0,
+    eliteKills: 0,
+    enemyKills: 0,
+    highestFloor: 0,
+    relicDust: 0,
+    abilityUses: {},
+    elementUses: {},
+    skillKindUses: {},
+    weaponBattles: {}
+  };
 }
 
 export function createInitialState() {
@@ -36,6 +47,7 @@ export function createInitialState() {
     },
     meta: baseMeta(),
     quests: { claimed: [], daily: { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 } },
+    legendEngine: { generatedQuestCount: 0, generatedAchievementCount: 0, quests: [], achievements: [], claimedQuests: [], unlockedAchievements: [], lastProfileKey: "" },
     log: []
   };
 }
@@ -73,7 +85,8 @@ export function createPlayer(name, raceId, jobId) {
     cooldowns: {},
     statusEffects: [],
     party: [],
-    defeatedBosses: []
+    defeatedBosses: [],
+    legendTitles: []
   };
   const stats = computeStats(player);
   player.hp = stats.maxHp;
@@ -111,6 +124,24 @@ export function hydrateState(raw) {
   state.ui.devMenuOpen ??= false;
   state.ui.creationFilters = { ...createInitialState().ui.creationFilters, ...(state.ui.creationFilters ?? {}) };
   state.meta = { ...baseMeta(), ...(state.meta ?? {}) };
+  state.meta.abilityUses ??= {};
+  state.meta.elementUses ??= {};
+  state.meta.skillKindUses ??= {};
+  state.meta.weaponBattles ??= {};
+  state.legendEngine = {
+    generatedQuestCount: 0,
+    generatedAchievementCount: 0,
+    quests: [],
+    achievements: [],
+    claimedQuests: [],
+    unlockedAchievements: [],
+    lastProfileKey: "",
+    ...(state.legendEngine ?? {})
+  };
+  state.legendEngine.quests ??= [];
+  state.legendEngine.achievements ??= [];
+  state.legendEngine.claimedQuests ??= [];
+  state.legendEngine.unlockedAchievements ??= [];
   state.quests = { claimed: [], daily: { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 }, ...(state.quests ?? {}) };
   state.quests.claimed ??= [];
   state.quests.daily ??= { date: new Date().toISOString().slice(0, 10), roomsCleared: 0, enemyKills: 0 };
@@ -123,6 +154,7 @@ export function hydrateState(raw) {
     state.player.party ??= [];
     state.player.defeatedBosses ??= [];
     state.player.achievements ??= [];
+    state.player.legendTitles ??= [];
     state.player.title ??= "Wanderer";
     state.player.unspentClassLevels ??= 0;
     state.player.equipment ??= Object.fromEntries(EQUIPMENT_SLOTS.map(slot => [slot, null]));

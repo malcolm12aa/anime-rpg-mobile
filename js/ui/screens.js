@@ -17,6 +17,7 @@ import { describeGeneratedLoot, getGeneratedLoot } from "../systems/loot.js";
 import { getBuildSummary } from "../systems/build-summary.js";
 import { getUnlockTracker } from "../systems/unlock-tracker.js";
 import { getQuestBoard } from "../systems/quests.js";
+import { getLegendProfile, getLegendQuests, getLegendAchievements } from "../systems/legend-engine.js";
 import { getAbilityEvolutionOptions } from "../systems/ability-evolution.js";
 import { getAbilityNamingProfile } from "../systems/ability-naming.js";
 import { byId, titleCase, formatStat } from "../core/utils.js";
@@ -468,7 +469,7 @@ export function hub(state) {
     <div class="hero"><h1>Guild Hub</h1><p class="subtitle">Prepare, spend class levels, recruit allies, buy supplies, or enter the shifting tower.</p></div>
     <section class="grid two">
       <div class="card"><h2>${escapeHtml(p.title)} ${escapeHtml(p.name)}</h2><p>Total Level <span class="kpi">${getTotalLevel(p)}</span> · Gold <span class="kpi">${p.gold}</span> · Relic Dust <span class="kpi">${state.meta.relicDust}</span></p>${resourceBars(p, stats)}</div>
-      <div class="card"><h2>Next Goal</h2><p>Gain XP in the dungeon, then spend class points on race or job levels. Maxed base classes can unlock advanced paths.</p><p class="small"><strong>Active Synergies:</strong> ${synergies.length ? synergies.map(s => s.name).join(", ") : "None"}</p><div class="actions">${button("Enter Dungeon", "startRun")} ${button("Quest Board", "go", "quests", "secondary")} ${button("Status / Class", "go", "status", "secondary")}</div></div>
+      <div class="card"><h2>Next Goal</h2><p>Gain XP in the dungeon, then spend class points on race or job levels. Maxed base classes can unlock advanced paths.</p><p class="small"><strong>Active Synergies:</strong> ${synergies.length ? synergies.map(s => s.name).join(", ") : "None"}</p><div class="actions">${button("Enter Dungeon", "startRun")} ${button("Quest Board", "go", "quests", "secondary")} ${button("Legend Engine", "go", "legend-engine", "secondary")} ${button("Status / Class", "go", "status", "secondary")}</div></div>
     </section>
     ${partyCard(p)}
     ${combatLog(state)}
@@ -954,7 +955,7 @@ export function questBoardScreen(state) {
   const quests = getQuestBoard(state, category);
   const grouped = category === "All" ? QUEST_CATEGORIES.map(cat => [cat, quests.filter(q => q.category === cat)]).filter(([, list]) => list.length) : [[category, quests]];
   return `<section class="screen">${nav(state)}
-    <div class="hero"><h1>Quest Board</h1><p class="subtitle">Main, side, daily, race, job, recruit, hunting, collection, boss, and secret quests give clear goals and rewards for normal gameplay.</p></div>
+    <div class="hero"><h1>Quest Board</h1><p class="subtitle">Main, side, daily, race, job, recruit, hunting, collection, boss, and secret quests give clear goals and rewards for normal gameplay.</p><div class="actions">${button("Open Legend Engine", "go", "legend-engine", "secondary")}</div></div>
     <section class="card"><h2>Quest Filters</h2><div class="filter-grid">${selectField("Quest Type", "quest.category", categoryOptions, category)}</div></section>
     ${grouped.map(([cat, list]) => `<section class="card"><div class="row between"><h2>${escapeHtml(cat)}</h2><span class="pill">${list.length} quest(s)</span></div><div class="quest-list">${list.map(questCard).join("")}</div></section>`).join("") || `<section class="card"><h2>No quests shown</h2><p>Change the filter or progress farther in the tower.</p></section>`}
   </section>`;
@@ -970,6 +971,66 @@ function questCard(quest) {
     <p class="small">Progress: ${quest.progress.current}/${quest.progress.required} · Rewards: ${escapeHtml(rewardText)}</p>
     <div class="actions">${action}</div>
   </article>`;
+}
+
+
+export function legendEngineScreen(state) {
+  const profile = getLegendProfile(state);
+  const quests = getLegendQuests(state);
+  const achievements = getLegendAchievements(state);
+  const activeQuests = quests.filter(q => !q.claimed).slice(0, 9);
+  const titleRows = (state.player.legendTitles ?? []).slice(0, 8);
+  return `<section class="screen">${nav(state)}
+    <div class="hero legend-engine-hero"><h1>Legend Engine</h1><p class="subtitle">A lightweight in-game AI director that creates quests, achievements, and titles from your current race, job, level, weapon path, abilities, and element mastery.</p>
+      <div class="actions">${button("Generate 3 Quests", "generateLegendQuests")} ${button("Generate 3 Achievements", "generateLegendAchievements", "", "secondary")}</div>
+    </div>
+    <section class="grid two">
+      <article class="card legend-profile-card"><h2>Build Signal</h2><p><strong>Race:</strong> ${escapeHtml(profile.raceName)}</p><p><strong>Job:</strong> ${escapeHtml(profile.jobName)}</p><p><strong>Total Level:</strong> ${profile.totalLevel}</p><p><strong>Build Focus:</strong> ${escapeHtml(profile.raceFocus)} / ${escapeHtml(profile.jobFocus)}</p></article>
+      <article class="card legend-profile-card"><h2>Generation Inputs</h2><p><strong>Weapons:</strong> ${escapeHtml([...(profile.equippedWeapons ?? []), ...(profile.weaponPrescriptions ?? [])].slice(0, 5).join(", ") || "No weapon path detected yet")}</p><p><strong>Elements:</strong> ${escapeHtml((profile.knownElements ?? []).join(", ") || "No element use recorded yet")}</p><p><strong>Masteries:</strong> ${escapeHtml((profile.masteries ?? []).join(", ") || "No masteries learned yet")}</p></article>
+    </section>
+    <section class="card"><div class="row between"><h2>Dynamic Quest Contracts</h2><span class="pill">${quests.length} generated</span></div>
+      ${activeQuests.length ? `<div class="quest-list legend-list">${activeQuests.map(legendQuestCard).join("")}</div>` : `<p class="small">No generated contracts yet. Press Generate 3 Quests to create build-aware goals.</p>`}
+    </section>
+    <section class="card"><div class="row between"><h2>Dynamic Achievements & Titles</h2><span class="pill">${achievements.length} generated</span></div>
+      ${achievements.length ? `<div class="grid auto legend-list">${achievements.slice(0, 12).map(legendAchievementCard).join("")}</div>` : `<p class="small">No generated achievements yet. Press Generate 3 Achievements to create title milestones.</p>`}
+    </section>
+    <section class="card"><h2>Unlocked Legend Titles</h2>${titleRows.length ? `<div class="grid auto">${titleRows.map(title => `<article class="mini-card"><h3>${escapeHtml(title.title)}</h3><p>${escapeHtml(title.description ?? "Legend Engine title.")}</p><p class="small"><strong>Bonus:</strong> ${escapeHtml(statsText(title.stats ?? {}))}</p>${button(state.player.title === title.title ? "Equipped" : "Equip Title", "selectTitle", title.achievementId, state.player.title === title.title ? "ghost" : "secondary")}</article>`).join("")}</div>` : `<p class="small">Generated achievement titles will appear here after they unlock.</p>`}</section>
+  </section>`;
+}
+
+function legendQuestCard(quest) {
+  const rewardText = rewardSummary(quest.rewards ?? {});
+  const action = quest.claimed ? `<span class="pill active-bonus">Claimed</span>` : quest.progress.complete ? button("Claim Reward", "claimLegendQuest", quest.id) : `<span class="pill">In Progress</span>`;
+  return `<article class="mini-card quest-card legend-card ${quest.progress.complete ? "complete" : ""}">
+    <div class="row between"><h3>${escapeHtml(quest.name)}</h3><span class="pill">${escapeHtml(quest.category)}</span></div>
+    <p>${escapeHtml(quest.description)}</p>
+    <div class="ability-meter quest-meter"><span style="width:${quest.progress.pct}%"></span></div>
+    <p class="small">Progress: ${quest.progress.current}/${quest.progress.required} · Rewards: ${escapeHtml(rewardText)}</p>
+    <p class="small"><strong>Generated From:</strong> ${escapeHtml(quest.profile?.raceName ?? "Race")} / ${escapeHtml(quest.profile?.jobName ?? "Job")}</p>
+    <div class="actions">${action}</div>
+  </article>`;
+}
+
+function legendAchievementCard(achievement) {
+  const unlocked = achievement.unlocked;
+  return `<article class="card legend-achievement-card ${unlocked ? "selected" : "locked-card"}">
+    <div class="row between"><h3>${escapeHtml(achievement.name)}</h3><span class="pill">${escapeHtml(titleCase(achievement.difficulty ?? "dynamic"))}</span></div>
+    <p>${escapeHtml(achievement.description)}</p>
+    <div class="ability-meter quest-meter"><span style="width:${achievement.progress.pct}%"></span></div>
+    <p class="small">Progress: ${achievement.progress.current}/${achievement.progress.required}</p>
+    <p><span class="pill">Title: ${escapeHtml(achievement.title)}</span></p>
+    <p class="small"><strong>Title Bonus:</strong> ${escapeHtml(statsText(achievement.bonus ?? {}))}</p>
+    ${unlocked ? button("Equip Title", "selectTitle", achievement.id, "secondary") : `<p class="small">Locked</p>`}
+  </article>`;
+}
+
+function rewardSummary(rewards = {}) {
+  const rows = [];
+  if (rewards.gold) rows.push(`${rewards.gold} Gold`);
+  if (rewards.xp) rows.push(`${rewards.xp} EXP`);
+  if (rewards.relicDust) rows.push(`${rewards.relicDust} Relic Dust`);
+  for (const [itemId, qty] of Object.entries(rewards.items ?? {})) rows.push(`${itemId} x${qty}`);
+  return rows.join(" · ") || "No listed reward";
 }
 
 
@@ -1028,7 +1089,9 @@ export function recruitScreen(state) {
 export function achievementsScreen(state) {
   const p = state.player;
   const titleBonus = getEquippedTitleBonus(p);
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Achievements & Titles</h1><p class="subtitle">Unlocked achievements grant titles with stat bonuses. Harder achievements give stronger title bonuses. Current title: <span class="kpi">${escapeHtml(p.title ?? "Wanderer")}</span>${titleBonus ? ` · Bonus: ${escapeHtml(statsText(titleBonus.stats))}` : ""}</p></div>
+  const legendAchievements = getLegendAchievements(state);
+  return `<section class="screen">${nav(state)}<div class="hero"><h1>Achievements & Titles</h1><p class="subtitle">Unlocked achievements grant titles with stat bonuses. Harder achievements give stronger title bonuses. Current title: <span class="kpi">${escapeHtml(p.title ?? "Wanderer")}</span>${titleBonus ? ` · Bonus: ${escapeHtml(statsText(titleBonus.stats))}` : ""}</p><div class="actions">${button("Open Legend Engine", "go", "legend-engine", "secondary")}</div></div>
+    <section class="card"><div class="row between"><h2>Legend Engine Titles</h2><span class="pill">${legendAchievements.length} generated</span></div>${legendAchievements.length ? `<div class="grid auto">${legendAchievements.slice(0, 6).map(legendAchievementCard).join("")}</div>` : `<p class="small">No dynamic achievements generated yet. Use the Legend Engine to create build-based title goals.</p>`}</section>
     <section class="grid auto">${ACHIEVEMENTS.map(a => achievementCard(p, a)).join("")}</section>
   </section>`;
 }

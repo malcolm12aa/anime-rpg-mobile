@@ -1343,3 +1343,43 @@ input, select {
 .prescription-card strong:first-child {
   color: var(--accent, #f6c177);
 }
+
+/* v0.9.9 Legend Engine */
+.legend-engine-hero {
+  border-color: rgba(196, 159, 91, 0.45);
+  background:
+    radial-gradient(circle at top left, rgba(112, 83, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(40, 30, 19, 0.96), rgba(17, 20, 31, 0.96));
+}
+.legend-profile-card,
+.legend-card,
+.legend-achievement-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.legend-list {
+  gap: 1rem;
+}
+.legend-card h3,
+.legend-achievement-card h3 {
+  overflow-wrap: anywhere;
+  line-height: 1.15;
+}
+.legend-achievement-card.selected {
+  border-color: rgba(244, 205, 116, 0.75);
+  box-shadow: 0 0 0 1px rgba(244, 205, 116, 0.28), 0 18px 42px rgba(0, 0, 0, 0.35);
+}
+.legend-card.complete {
+  border-color: rgba(87, 224, 162, 0.65);
+}
+.legend-engine-hero .actions,
+.legend-card .actions {
+  flex-wrap: wrap;
+}
+@media (max-width: 720px) {
+  .legend-engine-hero .actions button { width: 100%; }
+  .legend-profile-card p,
+  .legend-card p,
+  .legend-achievement-card p { font-size: 0.92rem; }
+}

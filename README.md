@@ -4,6 +4,11 @@ Current package: **v0.8.0 — Class & Ability Expansion**
 
 A modular, static, mobile-friendly text RPG foundation for GitHub Pages with Excel-imported race/job registry data, Character Creation filters, and Main Menu quick filters.
 
+## v0.9.9 — Legend Engine
+
+This version adds a lightweight in-game AI director called the **Legend Engine**. It generates dynamic quests, achievements, and title milestones from your current race, job, build focus, level, weapon path, known elements, and Element Mastery progress. It works fully in browser, so it stays compatible with GitHub Pages.
+
+
 ## v0.9.8 — Description Cleanup, Prescriptions & Mastery Gates
 
 - Shortened race, job, and ability descriptions for cleaner cards.
