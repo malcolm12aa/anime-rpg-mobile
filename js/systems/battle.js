@@ -43,6 +43,8 @@ export function startBattle(state, enemy, battleType = "normal") {
     bossPhaseFlags: {},
     message: `${enemy.name} blocks the path!`
   };
+  state.ui.battleTab = "recommended";
+  state.ui.battleResult = null;
   state.screen = "battle";
   addLog(state, `<strong>${battleType.toUpperCase()} battle:</strong> ${enemy.name} appears.`);
   if (state.combat.modifier) addLog(state, `<strong>Battle Modifier:</strong> ${state.combat.modifier.name} is active.`);
@@ -57,6 +59,35 @@ export function playerBasicAttack(state) {
   trackLegendWeaponUse(state);
   addLog(state, `<span class="player-name">${state.player.name}</span> attacks for <strong>${damage}</strong> damage.`);
   afterPlayerAction(state);
+}
+
+export function playerDefend(state) {
+  if (!state.combat || state.combat.turn !== "player") return;
+  const stats = computeStats(state.player);
+  applyStatus(state.player, "guard", 2);
+  state.player.stamina = clamp((state.player.stamina ?? 0) + 14, 0, stats.maxStamina);
+  state.player.mana = clamp((state.player.mana ?? 0) + 4, 0, stats.maxMana);
+  addLog(state, `<strong>${state.player.name} defends.</strong> Guard is active and stamina recovers.`);
+  afterPlayerAction(state);
+}
+
+export function playerFlee(state) {
+  if (!state.combat || state.combat.turn !== "player") return;
+  const enemyName = state.combat.enemy?.name ?? "the enemy";
+  state.run && (state.run.danger = Math.min(100, (state.run.danger ?? 0) + 10));
+  state.combat = null;
+  state.ui.battleResult = {
+    outcome: "Escaped",
+    enemyName,
+    battleType: "flee",
+    xp: 0,
+    danger: state.run?.danger ?? 0,
+    runActive: Boolean(state.run),
+    message: `You escaped from ${enemyName}. The dungeon danger rises.`,
+    logLines: (state.log ?? []).slice(0, 6).map(l => l.text)
+  };
+  state.screen = "battle-result";
+  addLog(state, `<strong>Flee:</strong> You escape from ${enemyName}, but the dungeon grows more dangerous.`);
 }
 
 export function playerUseSkill(state, skillId) {
@@ -147,21 +178,28 @@ function afterPlayerAction(state) {
 }
 
 function partyAct(state) {
+  const tactic = state.ui?.allyTactic ?? "auto";
+  if (tactic === "guard" && (state.player.party ?? []).length) {
+    applyStatus(state.player, "guard", 1);
+    addLog(state, "Allies tighten formation and help you Guard.");
+  }
   for (const member of state.player.party ?? []) {
     if (state.combat.enemy.hp <= 0) return;
     const skill = byId(SKILLS, member.skill) ?? byId(SKILLS, "power_strike");
     const stats = member.stats;
-    const base = Math.floor((skill.power ?? 10) * 0.65 + (stats.str ?? 2) + (stats.dex ?? 2) + (stats.int ?? 0));
+    const tacticDamage = tactic === "burst" ? 1.22 : tactic === "guard" ? 0.82 : 1;
+    const base = Math.floor(((skill.power ?? 10) * 0.65 + (stats.str ?? 2) + (stats.dex ?? 2) + (stats.int ?? 0)) * tacticDamage);
     const damage = dealDamage(member, state.combat.enemy, base, skill.element, stats, state.combat.enemy.stats, state.combat.modifier);
     addLog(state, `${member.name} uses ${skill.name} for ${damage} damage.`);
-    if (skill.effects?.some(e => e.type === "heal") && chance(40)) {
+    const supportBoost = tactic === "support" ? 20 : 0;
+    if (skill.effects?.some(e => e.type === "heal") && chance(40 + supportBoost)) {
       const playerStats = computeStats(state.player);
-      const heal = Math.floor(playerStats.maxHp * 0.18);
+      const heal = Math.floor(playerStats.maxHp * (tactic === "support" ? 0.24 : 0.18));
       state.player.hp = clamp(state.player.hp + heal, 0, playerStats.maxHp);
       addLog(state, `${member.name} heals you for ${heal} HP.`);
     }
-    if (member.role === "Support" && chance(30)) {
-      applyStatus(state.player, "focus", 2);
+    if (member.role === "Support" && chance(30 + supportBoost)) {
+      applyStatus(state.player, "focus", tactic === "support" ? 3 : 2);
       addLog(state, `${member.name}'s support grants Focus.`);
     }
   }
@@ -336,6 +374,7 @@ function checkBattleEnd(state) {
       addLog(state, `<strong>Boss defeated:</strong> secret class requirements may have changed.`);
     }
     grantBattleRewards(state, enemy);
+    const resultLogLines = (state.log ?? []).slice(0, 8).map(l => l.text);
     if (state.run?.summary) {
       state.run.summary.nodesCleared = (state.run.summary.nodesCleared ?? 0) + 1;
       state.run.summary.nodesWithoutRest = (state.run.summary.nodesWithoutRest ?? 0) + 1;
@@ -348,8 +387,20 @@ function checkBattleEnd(state) {
     }
     state.run.roomsCleared += 1;
     state.run.danger = Math.max(0, Math.min(100, (state.run.danger ?? 0) + (state.combat.type === "boss" ? -18 : state.combat.type === "elite" ? 8 : 4)));
+    const runActive = Boolean(state.run);
+    state.ui.battleResult = {
+      outcome: state.combat.type === "boss" ? "Boss Victory" : "Victory",
+      enemyName: enemy.name,
+      battleType: state.combat.type,
+      xp: enemy.xp ?? 25,
+      danger: state.run?.danger ?? 0,
+      runActive,
+      message: `${enemy.name} was defeated. Review rewards and continue when ready.`,
+      logLines: resultLogLines,
+      runSummary: state.run?.summary ? { ...(state.run.summary ?? {}) } : null
+    };
     state.combat = null;
-    state.screen = "map";
+    state.screen = "battle-result";
     return true;
   }
   if (state.player.hp <= 0) {

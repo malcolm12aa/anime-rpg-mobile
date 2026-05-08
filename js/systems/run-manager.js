@@ -64,7 +64,18 @@ export function endRunDefeat(state) {
   state.player.hp = Math.max(1, Math.floor(stats.maxHp * 0.55));
   state.player.mana = Math.floor(stats.maxMana * 0.45);
   state.player.stamina = Math.floor(stats.maxStamina * 0.45);
-  state.screen = "hub";
+  state.ui.battleResult = {
+    outcome: "Defeat",
+    enemyName: "Dungeon Encounter",
+    battleType: "defeat",
+    xp: 0,
+    danger: state.ui.runSummary?.danger ?? 0,
+    runActive: false,
+    message: `You were defeated and lost ${lost} gold. The run ended.`,
+    logLines: (state.log ?? []).slice(0, 8).map(l => l.text),
+    runSummary: state.ui.runSummary
+  };
+  state.screen = "battle-result";
   addLog(state, `<strong>Defeat:</strong> dungeon progress was lost and ${lost} gold scattered into the tower.`);
 }
 

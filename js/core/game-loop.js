@@ -4,7 +4,7 @@ import { addLog } from "./utils.js";
 import { finalizeCharacter } from "../systems/character-creation.js";
 import { startRun, leaveRun } from "../systems/run-manager.js";
 import { exploreNextFloor, restAtCamp, enterDungeonNode, chooseDungeonEventOption } from "../systems/map.js";
-import { playerBasicAttack, playerUseSkill, playerUseItem } from "../systems/battle.js";
+import { playerBasicAttack, playerUseSkill, playerUseItem, playerDefend, playerFlee } from "../systems/battle.js";
 import { useItem, equipItem, equipLoot, unequipSlot } from "../systems/inventory.js";
 import { buyItem, buyAbility } from "../systems/shop.js";
 import { spendClassPoint, addAdvancedClass, addBasicClass, gainXp, syncResourcesToStats } from "../systems/leveling.js";
@@ -84,6 +84,23 @@ export function handleAction(state, action, value) {
       break;
     case "attack":
       playerBasicAttack(state);
+      break;
+    case "defend":
+      playerDefend(state);
+      break;
+    case "fleeBattle":
+      playerFlee(state);
+      break;
+    case "setBattleTab":
+      state.ui.battleTab = value || "recommended";
+      break;
+    case "setAllyTactic":
+      state.ui.allyTactic = value || "auto";
+      addLog(state, `<strong>Ally Tactic:</strong> ${state.ui.allyTactic}.`);
+      break;
+    case "continueBattleResult":
+      state.ui.battleResult = null;
+      state.screen = value === "map" && state.run ? "map" : "hub";
       break;
     case "skill":
       playerUseSkill(state, value);

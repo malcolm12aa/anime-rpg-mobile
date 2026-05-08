@@ -1,5 +1,18 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.1.2 — Tactical Battle UI Cleanup",
+    date: "2026-05-07",
+    notes: [
+      "Rebuilt the Battle screen into a cleaner tactical battle board with enemy situation on the left and player actions on the right.",
+      "Added compact enemy, player, and ally cards with expandable details instead of showing every detail at once.",
+      "Added clear enemy intent cards with tactical recommendations and color-coded threat styles.",
+      "Added action tabs for recommended actions, attack, skills, spells, items, defense, and allies.",
+      "Added compact battle ability cards with resource cost, cooldown, damage preview, matchup preview, requirements, and collapsible details.",
+      "Added Defend, Flee, ally tactics, boss phase panels, weakness-window guidance, status help, and a collapsible battle log.",
+      "Added a separate battle result screen for victory, boss victory, escape, and defeat flow."
+    ]
+  },
+  {
     version: "v1.1.1 — Class Registry & Progression Rules",
     date: "2026-05-07",
     notes: [

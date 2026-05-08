@@ -1552,3 +1552,316 @@ input, select {
   overflow-wrap: anywhere;
   min-width: 0;
 }
+
+/* v1.1.2 Tactical Battle UI Cleanup + Boss Combat Polish */
+.tactical-battle-screen {
+  --battle-red: #ff7272;
+  --battle-gold: #f0c36a;
+  --battle-blue: #8bd3ff;
+  --battle-purple: #b795ff;
+}
+.tactical-battle-hero {
+  border-color: rgba(240, 195, 106, .38);
+  background:
+    radial-gradient(circle at top left, rgba(240, 195, 106, .15), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(139, 211, 255, .10), transparent 35%),
+    linear-gradient(135deg, rgba(18, 16, 24, .98), rgba(36, 26, 23, .96));
+}
+.battle-turn-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .85rem;
+}
+.battle-turn-strip span {
+  background: rgba(255,255,255,.065);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 999px;
+  padding: .45rem .7rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.battle-turn-strip strong { color: var(--text); }
+.battle-board.two-column-battle {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr);
+  gap: var(--gap);
+  align-items: start;
+}
+.battle-left-column,
+.battle-right-column {
+  display: grid;
+  gap: var(--gap);
+  min-width: 0;
+}
+.enemy-combat-card,
+.player-combat-card,
+.ally-combat-card,
+.enemy-intent-card,
+.battle-action-panel,
+.battlefield-modifier-card,
+.boss-phase-card,
+.battle-result-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.battle-card-head,
+.ability-card-head {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  min-width: 0;
+}
+.battle-title-block,
+.item-title-block,
+.ability-card-head > div:last-child {
+  min-width: 0;
+}
+.battle-title-block h2,
+.battle-ability-card h3,
+.battle-result-card h2,
+.enemy-combat-card h2,
+.player-combat-card h2 {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.15;
+}
+.battle-avatar,
+.ability-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: .9rem;
+  flex: 0 0 auto;
+  background: rgba(255,255,255,.075);
+  border: 1px solid rgba(255,255,255,.12);
+  font-size: 1.25rem;
+}
+.enemy-avatar { background: rgba(255, 114, 114, .12); }
+.player-avatar { background: rgba(139, 211, 255, .12); }
+.boss-enemy-card {
+  border-color: rgba(255, 114, 114, .46);
+  box-shadow: 0 18px 38px rgba(109, 24, 24, .16);
+}
+.battle-matchup-row,
+.battle-status-row,
+.battle-tab-row,
+.ally-tactics-row,
+.ability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: .65rem 0;
+}
+.weakness-pill { color: #bff4ff; border: 1px solid rgba(139, 211, 255, .25); }
+.resist-pill { color: #ffc4c4; border: 1px solid rgba(255, 114, 114, .22); }
+.battle-details-panel {
+  margin-top: .65rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: .55rem;
+}
+.battle-details-panel summary,
+.battle-log-panel summary,
+.status-help-panel summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 800;
+}
+.enemy-intent-card {
+  position: relative;
+  overflow: hidden;
+}
+.enemy-intent-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--battle-gold);
+}
+.enemy-intent-card.intent-danger::before { background: var(--danger); }
+.enemy-intent-card.intent-curse::before { background: var(--battle-purple); }
+.enemy-intent-card.intent-spell::before { background: var(--battle-blue); }
+.enemy-intent-card.intent-heal::before { background: var(--good); }
+.enemy-intent-card.intent-guard::before { background: var(--battle-gold); }
+.recommendation-strip,
+.weakness-window-card {
+  margin-top: .75rem;
+  border: 1px solid rgba(240, 195, 106, .22);
+  background: rgba(240, 195, 106, .08);
+  border-radius: 14px;
+  padding: .7rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.battlefield-modifier-card {
+  border-color: rgba(139, 211, 255, .24);
+}
+.ally-card-grid {
+  display: grid;
+  gap: .55rem;
+}
+.ally-mini-card {
+  background: rgba(16, 13, 24, .88);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 14px;
+  padding: .7rem;
+}
+.recommended-action-list {
+  display: grid;
+  gap: .5rem;
+}
+.recommendation-row {
+  display: grid;
+  gap: .15rem;
+  background: rgba(16, 13, 24, .86);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px;
+  padding: .65rem .75rem;
+}
+.recommendation-row strong { color: var(--text); }
+.recommendation-row span { color: var(--muted); font-size: .9rem; }
+.battle-tab-button {
+  flex: 1 1 105px;
+  min-height: 38px;
+  padding: .55rem .7rem;
+}
+.battle-tab-button.active {
+  background: linear-gradient(180deg, #f0c96a, #c58c2d);
+  color: #1b1208;
+}
+.compact-action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: .75rem;
+  align-items: stretch;
+}
+.battle-ability-card {
+  display: grid;
+  gap: .58rem;
+  min-width: 0;
+  overflow: hidden;
+  background: rgba(16, 13, 24, .92);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: .85rem;
+}
+.battle-ability-card.selected {
+  border-color: rgba(240, 195, 106, .55);
+  box-shadow: 0 0 0 1px rgba(240, 195, 106, .18);
+}
+.battle-ability-card p,
+.battle-ability-card strong,
+.battle-ability-card span,
+.battle-ability-card h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.battle-ability-card .ability-stat-row,
+.battle-result-card .ability-stat-row {
+  display: grid;
+  grid-template-columns: minmax(70px, .7fr) minmax(0, 1.3fr);
+  gap: .5rem;
+  align-items: start;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px;
+  padding: .48rem .6rem;
+}
+.battle-ability-card .ability-stat-row span { color: var(--muted); }
+.battle-ability-card .ability-stat-row strong { color: var(--text); text-align: right; }
+.missing-requirement { color: #ffc2c2 !important; }
+.battle-log-panel {
+  max-height: none;
+  overflow: visible;
+}
+.battle-log-panel summary {
+  display: grid;
+  gap: .25rem;
+}
+.battle-log-panel summary small {
+  color: var(--muted);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.battle-log-lines {
+  max-height: 260px;
+  overflow: auto;
+  margin-top: .6rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.boss-phase-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .45rem;
+  margin: .75rem 0;
+}
+.boss-phase-track span {
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 999px;
+  padding: .42rem .5rem;
+  color: var(--muted);
+  background: rgba(255,255,255,.04);
+}
+.boss-phase-track span.active {
+  color: #ffe2e2;
+  background: rgba(255, 114, 114, .13);
+  border-color: rgba(255, 114, 114, .35);
+}
+.status-tooltip {
+  cursor: help;
+}
+.status-help-panel {
+  margin-top: .5rem;
+}
+.battle-result-hero.victory {
+  border-color: rgba(114, 223, 159, .55);
+  background: linear-gradient(135deg, rgba(19, 52, 38, .94), rgba(14, 13, 20, .96));
+}
+.battle-result-hero.defeat {
+  border-color: rgba(255, 114, 114, .55);
+  background: linear-gradient(135deg, rgba(62, 20, 20, .94), rgba(14, 13, 20, .96));
+}
+.battle-result-log {
+  max-height: 280px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.result-actions button {
+  flex: 1 1 180px;
+}
+@media (min-width: 920px) {
+  .battle-action-panel {
+    position: sticky;
+    top: 92px;
+  }
+}
+@media (max-width: 900px) {
+  .battle-board.two-column-battle,
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+  .battle-left-column { order: 1; }
+  .battle-right-column { order: 2; }
+}
+@media (max-width: 720px) {
+  .tactical-battle-screen { padding-bottom: 74px; }
+  .battle-action-panel {
+    position: sticky;
+    bottom: max(8px, env(safe-area-inset-bottom));
+    z-index: 8;
+    box-shadow: 0 -12px 36px rgba(0,0,0,.35);
+    border-color: rgba(240, 195, 106, .28);
+  }
+  .battle-tab-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .25rem; }
+  .battle-tab-button { flex: 0 0 auto; }
+  .compact-action-grid { grid-template-columns: 1fr; }
+  .battle-ability-card .ability-stat-row { grid-template-columns: 1fr; }
+  .battle-ability-card .ability-stat-row strong { text-align: left; }
+  .battle-turn-strip span { width: 100%; }
+  .boss-phase-track { grid-template-columns: 1fr; }
+}

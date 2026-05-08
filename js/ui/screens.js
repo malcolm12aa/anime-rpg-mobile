@@ -26,6 +26,7 @@ import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvail
 import { canSeeRegistryEntry, getRequirementText, getUnlockRequirementMarkup, getUnlockStatus, getVisibleTreeForPlayer } from "../systems/unlocks.js";
 import { isAchievementUnlocked } from "../systems/achievements.js";
 import { prepareRecruitOffer } from "../systems/party.js";
+import { STATUS_INFO } from "../systems/effects.js";
 import { button, nav, bar, statGrid, statusPills, inventoryList, skillList, combatLog } from "./components.js";
 import { escapeHtml } from "./dom.js";
 
@@ -1186,21 +1187,542 @@ function runSummaryCard(state) {
 export function battleScreen(state) {
   const p = state.player;
   const stats = computeStats(p);
-  const enemy = state.combat.enemy;
+  const enemy = state.combat?.enemy;
+  if (!p || !enemy) return battleResultScreen(state);
   const intent = state.combat.enemyIntent;
-  return `<section class="screen">${nav(state)}<div class="hero"><h1>Battle</h1><p class="subtitle">Round ${state.combat.round}. Turn: <span class="kpi">${state.combat.turn}</span></p></div>
-    <section class="combat-layout">
-      <div class="card"><h2 class="player-name">${p.name}</h2>${resourceBars(p, stats)}<p>${statusPills(p.statusEffects)}</p><div class="actions">${button("Attack", "attack")} ${button("Inventory", "go", "inventory", "secondary")}</div><h3>Skills</h3>${skillList(p, "battle")}</div>
-      <div class="card"><h2 class="enemy-name">${enemy.name}</h2>${bar("HP", enemy.hp, enemy.maxHp, "hp")}<p><span class="pill">${enemy.element}</span> <span class="pill">${escapeHtml(enemy.enemyType ?? "Enemy")}</span> <span class="pill">${escapeHtml(enemy.enemyIdentity?.label ?? getEnemyIdentity(enemy, state.run?.floor ?? 1).label)}</span> <span class="pill">Lv ${enemy.totalLevel ?? "?"}</span> ${statusPills(enemy.statusEffects)}</p><p class="small">Race Lv: ${(enemy.raceLevels ?? []).map(c => `${c.name} ${c.level}`).join(", ") || "?"} · Job Lv: ${(enemy.jobLevels ?? []).map(c => `${c.name} ${c.level}`).join(", ") || "?"}</p><p class="small">Weak: ${(enemy.weaknessesElements ?? []).join(", ") || "Unknown"} · Resist: ${(enemy.resists ?? []).join(", ") || "None"}</p>${state.combat.modifier ? `<div class="modifier-card"><h3>Battle Modifier</h3><p><strong>${escapeHtml(state.combat.modifier.name)}</strong> — ${escapeHtml(state.combat.modifier.description)}</p></div>` : ""}${enemy.bossMechanics ? bossMechanicsCard(enemy) : ""}<div class="intent-card"><h3>Enemy Intent</h3><p>${intent?.text ?? "The enemy is watching you."}</p><span class="pill">${intent?.element ?? "unknown"}</span></div><h3>Battle Items</h3>${inventoryList(p, "battle")}</div>
+  const activeTab = state.ui?.battleTab ?? "recommended";
+  const modifier = state.combat.modifier;
+  return `<section class="screen tactical-battle-screen">${nav(state)}
+    <div class="hero tactical-battle-hero">
+      <div class="row between">
+        <div>
+          <h1>${enemy.bossMechanics ? "Boss Battle" : "Tactical Battle"}</h1>
+          <p class="subtitle">Show what matters this turn. Deeper stats, mechanics, and logs are tucked into expandable panels.</p>
+        </div>
+        <span class="pill active-bonus">${escapeHtml(String(state.combat.type ?? "Battle").toUpperCase())}</span>
+      </div>
+      ${battleTurnStrip(state, enemy, modifier)}
+    </div>
+    <section class="battle-board two-column-battle">
+      <div class="battle-left-column">
+        ${enemyCombatCard(enemy, state)}
+        ${enemyIntentCard(enemy, intent, state)}
+        ${modifier ? battlefieldModifierCard(modifier) : ""}
+        ${enemy.bossMechanics ? bossMechanicsCard(enemy, state) : ""}
+        ${battleLogPanel(state)}
+      </div>
+      <div class="battle-right-column">
+        ${playerCombatCard(p, stats)}
+        ${allyCombatCards(p, state)}
+        ${recommendedActionsCard(p, enemy, state)}
+        ${battleActionPanel(p, enemy, state, activeTab)}
+      </div>
     </section>
-    ${combatLog(state)}
   </section>`;
 }
 
-function bossMechanicsCard(enemy) {
+function battleTurnStrip(state, enemy, modifier) {
+  const danger = state.run?.danger ?? 0;
+  const objective = enemy.bossMechanics ? "Break the boss phase" : "Defeat the enemy";
+  return `<div class="battle-turn-strip">
+    <span>Round <strong>${state.combat.round}</strong></span>
+    <span>Turn <strong>${escapeHtml(titleCase(state.combat.turn ?? "player"))}</strong></span>
+    <span>Danger <strong>${danger}%</strong></span>
+    <span>Field <strong>${escapeHtml(modifier?.name ?? "Clear Field")}</strong></span>
+    <span>Objective <strong>${escapeHtml(objective)}</strong></span>
+  </div>`;
+}
+
+function enemyCombatCard(enemy, state) {
+  const identity = enemy.enemyIdentity?.label ?? getEnemyIdentity(enemy, state.run?.floor ?? 1).label;
+  const hpPct = Math.round(((enemy.hp ?? 0) / Math.max(1, enemy.maxHp ?? 1)) * 100);
+  const weak = (enemy.weaknessesElements ?? []).join(", ") || "Unknown";
+  const resist = (enemy.resists ?? []).join(", ") || "None";
+  const detailRows = [
+    `<strong>Race Lv:</strong> ${(enemy.raceLevels ?? []).map(c => `${escapeHtml(c.name)} ${c.level}`).join(", ") || "?"}`,
+    `<strong>Job Lv:</strong> ${(enemy.jobLevels ?? []).map(c => `${escapeHtml(c.name)} ${c.level}`).join(", ") || "?"}`,
+    `<strong>Statuses:</strong> ${statusPills(enemy.statusEffects)}`,
+    `<strong>Mechanics:</strong> ${enemy.bossMechanics ? "Boss phase enemy with threshold mechanics." : "Standard enemy pattern."}`,
+    `<strong>Loot Signal:</strong> ${(enemy.rewardDust ? `${enemy.rewardDust} Relic Dust · ` : "")}${enemy.xp ?? 25} EXP · gold range ${(enemy.gold ?? [8,20]).join("-")}`
+  ];
+  return `<article class="card enemy-combat-card ${enemy.bossMechanics ? "boss-enemy-card" : ""}">
+    <div class="battle-card-head">
+      <div class="battle-avatar enemy-avatar">${enemy.bossMechanics ? "👑" : "💀"}</div>
+      <div class="battle-title-block">
+        <div class="row between"><h2 class="enemy-name">${escapeHtml(enemy.name)}</h2><span class="pill">HP ${hpPct}%</span></div>
+        <p class="small">Lv ${enemy.totalLevel ?? "?"} · ${escapeHtml(enemy.enemyType ?? "Enemy")} · ${escapeHtml(identity)} · ${escapeHtml(enemy.element ?? "physical")}</p>
+      </div>
+    </div>
+    ${bar("HP", enemy.hp, enemy.maxHp, "hp")}
+    <div class="battle-matchup-row">
+      <span class="pill weakness-pill">Weak: ${escapeHtml(weak)}</span>
+      <span class="pill resist-pill">Resist: ${escapeHtml(resist)}</span>
+    </div>
+    <details class="battle-details-panel">
+      <summary>Enemy Details</summary>
+      ${detailRows.map(row => `<p class="small">${row}</p>`).join("")}
+      ${statusHelpPanel(enemy.statusEffects)}
+    </details>
+  </article>`;
+}
+
+function enemyIntentCard(enemy, intent, state) {
+  const severity = intentSeverity(intent);
+  const recommended = intentRecommendation(intent, enemy, state);
+  return `<article class="card enemy-intent-card intent-${severity}">
+    <div class="row between"><h2>Enemy Intent</h2><span class="pill">${escapeHtml(intent?.name ?? titleCase(intent?.type ?? "Unknown"))}</span></div>
+    <p>${escapeHtml(intent?.text ?? "The enemy is watching you.")}</p>
+    <div class="recommendation-strip"><strong>Recommended:</strong> ${escapeHtml(recommended)}</div>
+  </article>`;
+}
+
+function intentSeverity(intent = {}) {
+  const text = `${intent.type ?? ""} ${intent.name ?? ""} ${intent.text ?? ""}`.toLowerCase();
+  if (text.includes("boss") || text.includes("charge") || text.includes("heavy")) return "danger";
+  if (text.includes("curse") || text.includes("weaken") || text.includes("poison") || text.includes("burn")) return "curse";
+  if (text.includes("heal") || text.includes("mend")) return "heal";
+  if (text.includes("guard") || text.includes("buff") || text.includes("focus")) return "guard";
+  if (text.includes("spell") || text.includes("bolt") || text.includes("magic")) return "spell";
+  return "attack";
+}
+
+function intentRecommendation(intent = {}, enemy = {}, state = {}) {
+  const severity = intentSeverity(intent);
+  if (severity === "danger") return "Defend, stun, weaken, or use Guard before the hit lands.";
+  if (severity === "curse") return "Cleanse after it lands, apply pressure, or defeat the enemy before the debuff cycle starts.";
+  if (severity === "heal" || severity === "guard") return "Burst now, use a weakness element, or apply Bleed/Burn to punish the setup.";
+  const weak = (enemy.weaknessesElements ?? [])[0];
+  if (weak) return `Use ${titleCase(weak)} damage if you have it, or build resources for a stronger turn.`;
+  return "Attack, build Focus, or use your strongest available ability.";
+}
+
+function battlefieldModifierCard(modifier) {
+  return `<article class="card battlefield-modifier-card">
+    <div class="row between"><h2>Battlefield</h2><span class="pill">Modifier</span></div>
+    <p><strong>${escapeHtml(modifier.name)}</strong> — ${escapeHtml(modifier.description)}</p>
+  </article>`;
+}
+
+function playerCombatCard(player, stats) {
+  const combatStats = [`Attack ${stats.attack}`, `Spell ${stats.magic}`, `Defense ${stats.defense}`, `Speed ${stats.speed}`];
+  return `<article class="card player-combat-card">
+    <div class="battle-card-head">
+      <div class="battle-avatar player-avatar">🛡️</div>
+      <div class="battle-title-block">
+        <h2 class="player-name">${escapeHtml(player.name)}</h2>
+        <p class="small">${escapeHtml(player.raceLevels?.at(-1)?.name ?? "Race")} / ${escapeHtml(player.jobLevels?.at(-1)?.name ?? "Job")} · Lv ${getTotalLevel(player)}</p>
+      </div>
+    </div>
+    ${resourceBars(player, stats)}
+    <div class="battle-status-row">${statusPills(player.statusEffects)}</div>
+    <details class="battle-details-panel">
+      <summary>Combat Stats</summary>
+      <p class="small">${combatStats.map(escapeHtml).join(" · ")}</p>
+      ${statusHelpPanel(player.statusEffects)}
+    </details>
+  </article>`;
+}
+
+function allyCombatCards(player, state) {
+  const allies = player.party ?? [];
+  if (!allies.length) return `<article class="card ally-combat-card"><h2>Allies</h2><p class="small">No recruited allies are active. Recruit allies to add support, tank, or damage pressure.</p></article>`;
+  const tactic = state.ui?.allyTactic ?? "auto";
+  return `<article class="card ally-combat-card">
+    <div class="row between"><h2>Allies</h2><span class="pill">Tactic: ${escapeHtml(titleCase(tactic))}</span></div>
+    <div class="ally-card-grid">${allies.map(member => {
+      const hp = member.hp ?? member.stats?.maxHp ?? 80;
+      const maxHp = member.stats?.maxHp ?? hp ?? 80;
+      return `<div class="ally-mini-card">
+        <div class="row between"><strong>${escapeHtml(member.name)}</strong><span class="pill">${escapeHtml(member.role ?? "Ally")}</span></div>
+        ${bar("HP", hp, maxHp, "hp")}
+        <p class="small">Auto skill: ${escapeHtml(byId(SKILLS, member.skill)?.name ?? "Basic Assist")}</p>
+      </div>`;
+    }).join("")}</div>
+    <div class="battle-tab-row ally-tactics-row">
+      ${battleTabButton("Auto", "setAllyTactic", "auto", tactic === "auto")}
+      ${battleTabButton("Guard You", "setAllyTactic", "guard", tactic === "guard")}
+      ${battleTabButton("Burst", "setAllyTactic", "burst", tactic === "burst")}
+      ${battleTabButton("Support", "setAllyTactic", "support", tactic === "support")}
+    </div>
+  </article>`;
+}
+
+function recommendedActionsCard(player, enemy, state) {
+  const recs = getBattleRecommendations(player, enemy, state).slice(0, 3);
+  return `<article class="card recommended-actions-card">
+    <div class="row between"><h2>Recommended Actions</h2><span class="pill">This Turn</span></div>
+    <div class="recommended-action-list">${recs.map(rec => `<div class="recommendation-row"><strong>${escapeHtml(rec.title)}</strong><span>${escapeHtml(rec.reason)}</span></div>`).join("")}</div>
+  </article>`;
+}
+
+function getBattleRecommendations(player, enemy, state) {
+  const stats = computeStats(player);
+  const recs = [];
+  const intent = state.combat?.enemyIntent;
+  if (["danger", "attack"].includes(intentSeverity(intent)) && (intent?.type === "bossCharge" || String(intent?.text ?? "").toLowerCase().includes("heavy"))) {
+    recs.push({ title: "Defend", reason: "Enemy intent suggests a high-damage turn." });
+  }
+  if ((player.hp ?? 0) / Math.max(1, stats.maxHp) <= 0.35) {
+    recs.push({ title: "Use Healing", reason: "HP is below 35%. A potion or healing spell is safer." });
+  }
+  const weakSkill = findUsableSkill(player, skill => (enemy.weaknessesElements ?? []).includes(skill.element));
+  if (weakSkill) recs.push({ title: weakSkill.name, reason: `${titleCase(weakSkill.element)} matches an enemy weakness.` });
+  if ((player.stamina ?? 0) / Math.max(1, stats.maxStamina) <= 0.25 && hasItem(player, "stamina")) recs.push({ title: "Restore Stamina", reason: "Stamina is low and stamina skills may lock out soon." });
+  if ((player.mana ?? 0) / Math.max(1, stats.maxMana) <= 0.25 && hasItem(player, "mana")) recs.push({ title: "Restore Mana", reason: "Mana is low and spells may lock out soon." });
+  const strongest = findUsableSkill(player, skill => (skill.power ?? 0) > 0);
+  if (strongest) recs.push({ title: strongest.name, reason: "Highest ready damage option available." });
+  recs.push({ title: "Basic Attack", reason: "No resource cost and tracks weapon battle progress." });
+  return recs;
+}
+
+function findUsableSkill(player, predicate) {
+  return (player.skills ?? [])
+    .map(id => byId(SKILLS, id))
+    .filter(Boolean)
+    .filter(skill => skill.kind !== "passive" && skill.resource !== "none" && (player.cooldowns?.[skill.id] ?? 0) <= 0)
+    .filter(skill => !skill.cost || (player[skill.resource] ?? 0) >= skill.cost)
+    .filter(predicate)
+    .sort((a, b) => (b.power ?? 0) - (a.power ?? 0))[0];
+}
+
+function hasItem(player, resource) {
+  return Object.entries(player.inventory ?? {}).some(([itemId, qty]) => qty > 0 && (byId(ITEMS, itemId)?.effects ?? []).some(effect => effect.type === "restore" && effect.resource === resource));
+}
+
+function battleActionPanel(player, enemy, state, activeTab = "recommended") {
+  const tabs = [
+    ["recommended", "Recommended"],
+    ["attack", "Attack"],
+    ["skills", "Skills"],
+    ["spells", "Spells"],
+    ["items", "Items"],
+    ["defense", "Defend"],
+    ["allies", "Allies"]
+  ];
+  return `<article class="card battle-action-panel">
+    <div class="row between"><h2>Actions</h2><span class="pill">${escapeHtml(titleCase(activeTab))}</span></div>
+    <div class="battle-tab-row">${tabs.map(([id, label]) => battleTabButton(label, "setBattleTab", id, activeTab === id)).join("")}</div>
+    <div class="battle-tab-content">${battleTabContent(player, enemy, state, activeTab)}</div>
+  </article>`;
+}
+
+function battleTabButton(label, action, value, active) {
+  return `<button class="battle-tab-button ${active ? "active" : "secondary"}" data-action="${action}" data-value="${value}">${label}</button>`;
+}
+
+function battleTabContent(player, enemy, state, activeTab) {
+  if (activeTab === "attack") return attackTabContent(player, enemy, state);
+  if (activeTab === "skills") return battleAbilityCards(player, enemy, "skills");
+  if (activeTab === "spells") return battleAbilityCards(player, enemy, "spells");
+  if (activeTab === "items") return battleItemCards(player);
+  if (activeTab === "defense") return defenseTabContent(state);
+  if (activeTab === "allies") return allyCommandPanel(player, state);
+  return recommendedTabContent(player, enemy, state);
+}
+
+function recommendedTabContent(player, enemy, state) {
+  const recSkill = findUsableSkill(player, skill => (enemy.weaknessesElements ?? []).includes(skill.element)) ?? findUsableSkill(player, skill => (skill.power ?? 0) > 0);
+  return `<div class="compact-action-grid">
+    ${attackActionCard(player, enemy, state)}
+    ${recSkill ? compactAbilityCard(player, enemy, recSkill, "Recommended") : ""}
+    ${defendActionCard()}
+    ${quickItemCard(player)}
+  </div>`;
+}
+
+function attackTabContent(player, enemy, state) {
+  return `<div class="compact-action-grid">
+    ${attackActionCard(player, enemy, state)}
+    ${defendActionCard()}
+    <article class="battle-ability-card compact-action-card"><h3>Flee Battle</h3><p class="small">Escape this encounter, return to the route board, raise danger, and lose some tempo.</p>${button("Flee", "fleeBattle", "", "ghost")}</article>
+  </div>`;
+}
+
+function defenseTabContent(state) {
+  const intent = state.combat?.enemyIntent;
+  return `<div class="compact-action-grid">
+    ${defendActionCard()}
+    <article class="battle-ability-card compact-action-card"><h3>Read Intent</h3><p class="small">${escapeHtml(intent?.text ?? "No enemy intent detected.")}</p><p class="small"><strong>Plan:</strong> ${escapeHtml(intentRecommendation(intent, state.combat?.enemy ?? {}, state))}</p></article>
+  </div>`;
+}
+
+function allyCommandPanel(player, state) {
+  if (!(player.party ?? []).length) return `<p class="small">No allies are active. Recruit party members to unlock ally tactics.</p>`;
+  const tactic = state.ui?.allyTactic ?? "auto";
+  return `<div class="compact-action-grid">
+    ${["auto", "guard", "burst", "support"].map(t => `<article class="battle-ability-card compact-action-card ${tactic === t ? "selected" : ""}"><h3>${escapeHtml(titleCase(t))}</h3><p class="small">${escapeHtml(allyTacticText(t))}</p>${button(tactic === t ? "Selected" : "Set Tactic", "setAllyTactic", t, tactic === t ? "ghost" : "secondary")}</article>`).join("")}
+  </div>`;
+}
+
+function allyTacticText(tactic) {
+  if (tactic === "guard") return "Allies prioritize protecting the player and maintaining Guard.";
+  if (tactic === "burst") return "Allies prioritize damage and pressure during their automatic action.";
+  if (tactic === "support") return "Allies prioritize Focus, healing, and sustain when possible.";
+  return "Allies follow their normal role behavior.";
+}
+
+function attackActionCard(player, enemy, state) {
+  const stats = computeStats(player);
+  const preview = Math.max(1, Math.floor((stats.attack ?? 0) + 6 - ((enemy.stats?.defense ?? enemy.stats?.con ?? 0) * 0.25)));
+  return `<article class="battle-ability-card compact-action-card">
+    <div class="ability-card-head"><div class="ability-icon">⚔️</div><div><h3>Basic Attack</h3><p class="small">Physical · Weapon Progress</p></div></div>
+    <div class="ability-stat-row"><span>Preview</span><strong>~${preview} damage</strong></div>
+    <p class="small">No resource cost. Counts toward weapon battle goals.</p>
+    ${button("Attack", "attack")}
+  </article>`;
+}
+
+function defendActionCard() {
+  return `<article class="battle-ability-card compact-action-card">
+    <div class="ability-card-head"><div class="ability-icon">🛡️</div><div><h3>Defend</h3><p class="small">Guard · Resource Recovery</p></div></div>
+    <div class="ability-stat-row"><span>Effect</span><strong>Guard + restore stamina</strong></div>
+    <p class="small">Best when the enemy intent warns of a heavy strike or boss mechanic.</p>
+    ${button("Defend", "defend", "", "secondary")}
+  </article>`;
+}
+
+function quickItemCard(player) {
+  const entries = Object.entries(player.inventory ?? {}).filter(([, qty]) => qty > 0).map(([id]) => byId(ITEMS, id)).filter(item => item?.type === "consumable");
+  const item = entries.find(i => /potion|draught|salve|cure/i.test(i.name)) ?? entries[0];
+  if (!item) return `<article class="battle-ability-card compact-action-card"><h3>No Quick Item</h3><p class="small">No consumables are available.</p></article>`;
+  return `<article class="battle-ability-card compact-action-card">
+    <div class="ability-card-head"><div class="ability-icon">🧪</div><div><h3>${escapeHtml(item.name)}</h3><p class="small">Consumable · Qty ${player.inventory?.[item.id] ?? 0}</p></div></div>
+    <p class="small">${escapeHtml(item.description ?? "Use this item in battle.")}</p>
+    ${button("Use Item", "battleItem", item.id, "secondary")}
+  </article>`;
+}
+
+function battleAbilityCards(player, enemy, kind) {
+  const skills = (player.skills ?? []).map(id => byId(SKILLS, id)).filter(Boolean)
+    .filter(skill => skill.kind !== "passive" && skill.resource !== "none")
+    .filter(skill => kind === "spells"
+      ? (skill.kind === "spell" || skill.resource === "mana")
+      : (skill.kind !== "spell" && skill.resource !== "mana"));
+  if (!skills.length) return `<p class="small">No ${kind} available.</p>`;
+  return `<div class="compact-action-grid">${skills.map(skill => compactAbilityCard(player, enemy, skill)).join("")}</div>`;
+}
+
+function compactAbilityCard(player, enemy, skill, label = "") {
+  const cd = player.cooldowns?.[skill.id] ?? 0;
+  const isPassive = skill.kind === "passive" || skill.resource === "none";
+  const missing = !isPassive ? battleMissingAbilityRequirement(player, skill) : "";
+  const enough = isPassive || !skill.resource || (player[skill.resource] ?? 0) >= (skill.cost ?? 0);
+  const disabled = cd > 0 || missing || !enough;
+  const elements = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean);
+  const matchup = elementMatchupText(skill, enemy);
+  const preview = previewAbilityDamage(player, enemy, skill);
+  const tags = [skill.rank, skill.kind, ...elements].filter(Boolean).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(titleCase(String(tag)))}</span>`).join(" ");
+  return `<article class="battle-ability-card ${disabled ? "locked-card" : ""}">
+    <div class="ability-card-head">
+      <div class="ability-icon">${battleAbilityIcon(skill)}</div>
+      <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${label ? `${escapeHtml(label)} · ` : ""}${escapeHtml(skill.rank ?? "Common")} · ${escapeHtml(skill.kind ?? "ability")}</p></div>
+    </div>
+    <div class="ability-tags">${tags}</div>
+    <div class="ability-stat-row"><span>Cost</span><strong>${isPassive ? "Passive" : `${skill.cost ?? 0} ${skill.resource ?? "free"}`}</strong></div>
+    <div class="ability-stat-row"><span>CD</span><strong>${cd ? `${cd} left` : "Ready"}</strong></div>
+    <div class="ability-stat-row"><span>Preview</span><strong>${preview}</strong></div>
+    <div class="ability-stat-row"><span>Matchup</span><strong>${escapeHtml(matchup)}</strong></div>
+    ${missing ? `<p class="small missing-requirement">${escapeHtml(missing)}</p>` : !enough ? `<p class="small missing-requirement">Not enough ${escapeHtml(skill.resource ?? "resource")}.</p>` : ""}
+    <details class="battle-details-panel"><summary>Details</summary><p class="small">${escapeHtml(shortenText(skill.description ?? "No description.", 170))}</p>${battleScalingLine(skill)}</details>
+    <button ${disabled ? "disabled" : ""} data-action="skill" data-value="${skill.id}">${cd ? "Cooldown" : missing ? "Requirement Missing" : !enough ? "No Resource" : "Use"}</button>
+  </article>`;
+}
+
+function battleItemCards(player) {
+  const entries = Object.entries(player.inventory ?? {}).filter(([, qty]) => qty > 0).map(([id, qty]) => [byId(ITEMS, id), qty]).filter(([item]) => item?.type === "consumable");
+  if (!entries.length) return `<p class="small">No consumables available.</p>`;
+  return `<div class="compact-action-grid">${entries.map(([item, qty]) => `<article class="battle-ability-card battle-item-action-card">
+    <div class="ability-card-head"><div class="ability-icon">${battleItemIcon(item)}</div><div><h3>${escapeHtml(item.name)}</h3><p class="small">Consumable · Qty ${qty}</p></div></div>
+    <p class="small">${escapeHtml(shortenText(item.description ?? "Use this item.", 150))}</p>
+    <div class="ability-stat-row"><span>Effect</span><strong>${escapeHtml(compactItemEffectText(item))}</strong></div>
+    ${button("Use Item", "battleItem", item.id, "secondary")}
+  </article>`).join("")}</div>`;
+}
+
+function battleMissingAbilityRequirement(player, skill = {}) {
+  if (skill.requiredMastery && !battleKnownElementMasteries(player).has(String(skill.requiredMastery).toLowerCase())) {
+    return `Missing ${skill.masteryRequirementText ?? `${titleCase(skill.requiredMastery)} Element Mastery`}.`;
+  }
+  if ((skill.requiresWeaponType ?? []).length) {
+    const equipped = battleEquippedWeaponTypes(player);
+    const allowed = (skill.requiresWeaponType ?? []).map(type => String(type).toLowerCase());
+    if (!allowed.some(type => equipped.has(type))) return `Equip ${skill.requiresWeaponType.slice(0, 3).join(" / ")} first.`;
+  }
+  return "";
+}
+
+function battleKnownElementMasteries(player) {
+  const masteries = new Set();
+  for (const skillId of player?.skills ?? []) {
+    const skill = byId(SKILLS, skillId);
+    if (skill?.grantsElementMastery) masteries.add(String(skill.grantsElementMastery).toLowerCase());
+  }
+  return masteries;
+}
+
+function battleEquippedWeaponTypes(player) {
+  const out = new Set();
+  for (const itemRef of Object.values(player?.equipment ?? {})) {
+    const item = typeof itemRef === "string" && itemRef.startsWith("loot:") ? getGeneratedLoot(player, itemRef) : byId(ITEMS, itemRef);
+    if (!item) continue;
+    if (item.weaponType) out.add(String(item.weaponType).toLowerCase());
+    for (const tag of item.tags ?? []) out.add(String(tag).toLowerCase());
+    const text = `${item.name ?? ""} ${item.kind ?? ""} ${item.slot ?? ""}`.toLowerCase();
+    for (const token of ["sword", "katana", "bow", "crossbow", "dagger", "rapier", "staff", "wand", "shield", "mace", "maul", "hammer", "spear", "pike", "lance", "axe", "catalyst", "orb", "grimoire"]) {
+      if (text.includes(token)) out.add(token === "katana" ? "sword" : token === "pike" || token === "lance" ? "spear" : token === "maul" || token === "hammer" ? "mace" : token === "orb" || token === "grimoire" ? "catalyst" : token);
+    }
+  }
+  return out;
+}
+
+function previewAbilityDamage(player, enemy, skill) {
+  if (!(skill.power > 0)) return "Utility";
+  const stats = computeStats(player);
+  const scalingBonus = Object.entries(skill.scaling ?? skill.statusScaling ?? {}).reduce((total, [ability, ratio]) => {
+    const value = Number(stats.basicAbilities?.total?.[ability] ?? stats[ability] ?? 0);
+    return total + value * Number(ratio ?? 0);
+  }, 0);
+  const offensive = skill.kind === "spell" ? stats.magic : stats.attack;
+  const defense = Math.floor((enemy.stats?.defense ?? enemy.stats?.con ?? 0) * 0.45);
+  const elementMod = elementMultiplierForEnemy(skill.element, enemy);
+  const approx = Math.max(1, Math.floor(((skill.power ?? 0) + Math.floor((offensive ?? 0) * 0.9) + Math.floor(scalingBonus) + 5 - defense) * elementMod));
+  return `~${approx} damage`;
+}
+
+function elementMultiplierForEnemy(element, enemy) {
+  let multiplier = 1;
+  if ((enemy.weaknessesElements ?? []).includes(element)) multiplier += 0.45;
+  if ((enemy.resists ?? []).includes(element)) multiplier -= 0.35;
+  return Math.max(0.35, Math.min(1.75, multiplier));
+}
+
+function elementMatchupText(skill, enemy) {
+  const elements = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean);
+  if (!elements.length) return "Neutral";
+  const weak = elements.filter(el => (enemy.weaknessesElements ?? []).includes(el));
+  const resist = elements.filter(el => (enemy.resists ?? []).includes(el));
+  if (weak.length) return `Weakness: ${weak.map(titleCase).join(" / ")}`;
+  if (resist.length) return `Resisted: ${resist.map(titleCase).join(" / ")}`;
+  return "Neutral";
+}
+
+function battleScalingLine(skill) {
+  const scaling = skill.scaling ?? skill.statusScaling;
+  if (!scaling) return `<p class="small">Scaling: default class scaling.</p>`;
+  return `<p class="small">Scaling: ${escapeHtml(Object.entries(scaling).map(([k, v]) => `${titleCase(k)} × ${Number(v).toFixed(3)}`).join(" · "))}</p>`;
+}
+
+function compactItemEffectText(item = {}) {
+  const effects = (item.effects ?? []).map(effect => {
+    if (effect.type === "healFlat") return `Heal ${effect.amount ?? 0} HP`;
+    if (effect.type === "restore") return `Restore ${effect.amount ?? 0} ${titleCase(effect.resource ?? "resource")}`;
+    if (effect.type === "cleanse") return "Cleanse statuses";
+    if (effect.type === "damageEnemy") return `Deal ${effect.amount ?? 0} damage`;
+    return titleCase(effect.type ?? "effect");
+  });
+  return effects.join(" · ") || "Battle utility";
+}
+
+function battleAbilityIcon(skill = {}) {
+  const text = `${skill.name ?? ""} ${skill.element ?? ""} ${skill.kind ?? ""}`.toLowerCase();
+  if (text.includes("fire") || text.includes("flame") || text.includes("ember")) return "🔥";
+  if (text.includes("ice") || text.includes("frost") || text.includes("snow")) return "❄️";
+  if (text.includes("lightning") || text.includes("storm") || text.includes("thunder")) return "⚡";
+  if (text.includes("water") || text.includes("tide") || text.includes("rain")) return "💧";
+  if (text.includes("wind") || text.includes("gale") || text.includes("sky")) return "🌪️";
+  if (text.includes("earth") || text.includes("stone") || text.includes("root")) return "🪨";
+  if (text.includes("heal") || text.includes("mend") || text.includes("holy")) return "✚";
+  if (text.includes("guard") || text.includes("shield")) return "🛡️";
+  if (text.includes("ultimate")) return "👑";
+  return skill.kind === "spell" ? "✦" : "⚔️";
+}
+
+function battleItemIcon(item = {}) {
+  const text = `${item.name ?? ""} ${item.description ?? ""}`.toLowerCase();
+  if (text.includes("potion") || text.includes("elixir") || text.includes("tonic") || text.includes("vial") || text.includes("draught")) return "🧪";
+  if (text.includes("bomb")) return "💣";
+  if (text.includes("salve") || text.includes("cure")) return "✚";
+  return "✧";
+}
+
+function statusHelpPanel(statuses = []) {
+  const unique = [...new Set((statuses ?? []).map(s => s.id))];
+  if (!unique.length) return "";
+  return `<details class="status-help-panel"><summary>Status Help</summary>${unique.map(id => {
+    const info = STATUS_INFO[id] ?? { name: titleCase(id), icon: "•", text: "Status effect." };
+    return `<p class="small">${info.icon} <strong>${escapeHtml(info.name)}</strong>: ${escapeHtml(info.text)}</p>`;
+  }).join("")}</details>`;
+}
+
+function battleLogPanel(state) {
+  const lines = (state.log ?? []).slice(0, 16);
+  const latest = lines[0]?.text ?? "No battle log yet.";
+  return `<details class="card battle-log-panel">
+    <summary><span>Battle Log</span><small>Latest: ${stripHtmlAndShorten(latest, 86)}</small></summary>
+    <div class="battle-log-lines">${lines.map(l => `<div class="log-line">${l.text}</div>`).join("") || `<div class="log-line">No log entries yet.</div>`}</div>
+  </details>`;
+}
+
+function stripHtmlAndShorten(text, max = 100) {
+  return escapeHtml(shortenText(String(text ?? "").replace(/<[^>]*>/g, ""), max));
+}
+
+function shortenText(text, max = 150) {
+  const clean = String(text ?? "").replace(/\s+/g, " ").trim();
+  return clean.length > max ? `${clean.slice(0, max - 1)}…` : clean;
+}
+
+function bossMechanicsCard(enemy, state) {
   const mechanics = enemy.bossMechanics ?? [];
   if (!mechanics.length) return "";
-  return `<div class="boss-mechanics-card"><h3>Boss Mechanics</h3>${mechanics.map(mech => `<p class="small"><strong>${escapeHtml(mech.name)}</strong>: ${escapeHtml(mech.description)}</p>`).join("")}</div>`;
+  const hpPct = (enemy.hp ?? 0) / Math.max(1, enemy.maxHp ?? 1);
+  const flags = state.combat?.bossPhaseFlags ?? {};
+  const currentPhase = hpPct <= 0.3 ? "Enrage Phase" : hpPct <= 0.5 ? "Cleanse Phase" : hpPct <= 0.7 ? "Shield Phase" : "Opening Phase";
+  return `<article class="card boss-mechanics-card boss-phase-card">
+    <div class="row between"><h2>Boss Mechanics</h2><span class="pill danger-pill">${escapeHtml(currentPhase)}</span></div>
+    <div class="boss-phase-track">
+      <span class="${hpPct <= 0.7 ? "active" : ""}">70% Shield</span>
+      <span class="${hpPct <= 0.5 ? "active" : ""}">50% Cleanse</span>
+      <span class="${hpPct <= 0.3 ? "active" : ""}">30% Enrage</span>
+    </div>
+    ${mechanics.map(mech => `<p class="small"><strong>${escapeHtml(mech.name)}</strong>: ${escapeHtml(mech.description)}</p>`).join("")}
+    <div class="weakness-window-card"><strong>Weakness Window:</strong> After a charged or heavy intent, use the enemy weakness element, stun, or your highest preview damage ability.</div>
+    <p class="small">Triggered: ${Object.keys(flags).length ? Object.keys(flags).map(titleCase).join(" · ") : "None yet"}</p>
+  </article>`;
+}
+
+export function battleResultScreen(state) {
+  const result = state.ui?.battleResult;
+  if (!result) return `<section class="screen">${nav(state)}<div class="hero"><h1>Battle Result</h1><p class="subtitle">No recent battle result found.</p></div>${button("Return to Hub", "go", "hub")}</section>`;
+  const summary = result.runSummary ?? state.ui?.runSummary;
+  const lines = result.logLines ?? (state.log ?? []).slice(0, 8).map(l => l.text);
+  const isVictory = String(result.outcome ?? "").toLowerCase().includes("victory");
+  return `<section class="screen battle-result-screen">${nav(state)}
+    <div class="hero battle-result-hero ${isVictory ? "victory" : "defeat"}">
+      <h1>${escapeHtml(result.outcome ?? "Battle Complete")}</h1>
+      <p class="subtitle">${escapeHtml(result.message ?? "The fight has ended.")}</p>
+    </div>
+    <section class="grid two">
+      <article class="card battle-result-card">
+        <h2>Result</h2>
+        <div class="grid auto summary-kpis">
+          <div class="mini-card"><strong>Enemy</strong><span class="kpi">${escapeHtml(result.enemyName ?? "Unknown")}</span></div>
+          <div class="mini-card"><strong>Battle Type</strong><span class="kpi">${escapeHtml(titleCase(result.battleType ?? "battle"))}</span></div>
+          <div class="mini-card"><strong>EXP Signal</strong><span class="kpi">${result.xp ?? 0}</span></div>
+          <div class="mini-card"><strong>Danger</strong><span class="kpi">${result.danger ?? state.run?.danger ?? 0}%</span></div>
+        </div>
+        <div class="actions result-actions">
+          ${result.runActive ? button("Continue Dungeon", "continueBattleResult", "map") : ""}
+          ${button("Return to Hub", "continueBattleResult", "hub", result.runActive ? "secondary" : "")}
+        </div>
+      </article>
+      <article class="card battle-result-card">
+        <h2>Progress & Rewards</h2>
+        <div class="battle-result-log">${lines.map(line => `<div class="log-line">${line}</div>`).join("")}</div>
+        ${summary ? `<p class="small"><strong>Run Summary:</strong> Nodes ${summary.nodesCleared ?? 0} · Battles ${summary.battlesWon ?? 0} · Bosses ${summary.bossesDefeated ?? 0} · Gold ${summary.goldEarned ?? 0} · EXP ${summary.xpEarned ?? 0}</p>` : ""}
+      </article>
+    </section>
+  </section>`;
 }
 
 export function questBoardScreen(state) {

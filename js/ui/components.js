@@ -91,7 +91,10 @@ export function statGrid(stats) {
 
 export function statusPills(list = []) {
   if (!list.length) return `<span class="pill">No status effects</span>`;
-  return list.map(s => `<span class="pill status">${STATUS_INFO[s.id]?.icon ?? "•"} ${STATUS_INFO[s.id]?.name ?? titleCase(s.id)} ${s.duration}</span>`).join(" ");
+  return list.map(s => {
+    const info = STATUS_INFO[s.id] ?? { icon: "•", name: titleCase(s.id), text: "Status effect." };
+    return `<span class="pill status status-tooltip" title="${escapeHtml(info.text ?? "Status effect.")}" aria-label="${escapeHtml(`${info.name}: ${info.text ?? "Status effect."}`)}">${info.icon ?? "•"} ${escapeHtml(info.name ?? titleCase(s.id))} x${s.duration}</span>`;
+  }).join(" ");
 }
 
 export function inventoryList(player, mode = "normal") {

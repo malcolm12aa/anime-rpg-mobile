@@ -247,3 +247,7 @@ Upload/replace the files in your GitHub repository root the same way as before. 
 - New basic races/jobs can only be added after the current race/job stage is maxed.
 - Race evolutions and job upgrades can only be taken from the current maxed stage.
 - Ability cards in the registry show scaling, effects, weapon requirements, and Element Mastery gates.
+
+## v1.1.2 — Tactical Battle UI Cleanup
+
+Battle now uses a cleaner tactical board with compact enemy/player cards, action tabs, recommended actions, damage previews, boss phase panels, ally tactics, a collapsible log, and a separate result screen.

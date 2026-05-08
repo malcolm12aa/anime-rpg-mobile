@@ -37,6 +37,9 @@ export function createInitialState() {
       currentEvent: null,
       offeredRecruit: null,
       runSummary: null,
+      battleResult: null,
+      battleTab: "recommended",
+      allyTactic: "auto",
       registryFilters: { search: "", kind: "all", category: "all", tier: "all", focus: "all" },
       abilityFilters: { search: "", library: "all", kind: "all", rank: "all", element: "all", origin: "all", acquisition: "all" },
       questFilters: { category: "All" },
@@ -152,6 +155,9 @@ export function hydrateState(raw) {
   state.ui.abilityFilters = { ...createInitialState().ui.abilityFilters, ...(state.ui.abilityFilters ?? {}) };
   state.ui.questFilters = { ...createInitialState().ui.questFilters, ...(state.ui.questFilters ?? {}) };
   state.ui.devMenuOpen ??= false;
+  state.ui.battleResult ??= null;
+  state.ui.battleTab ??= "recommended";
+  state.ui.allyTactic ??= "auto";
   state.ui.creationFilters = { ...createInitialState().ui.creationFilters, ...(state.ui.creationFilters ?? {}) };
   state.meta = { ...baseMeta(), ...(state.meta ?? {}) };
   state.meta.abilityUses ??= {};

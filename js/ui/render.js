@@ -1,5 +1,5 @@
 import { app } from "./dom.js";
-import { mainMenu, saveMenu, characterCreate, hub, statusScreen, progressionScreen, classRegistryScreen, skillsScreen, inventoryScreen, shopScreen, mapScreen, battleScreen, eventScreen, recruitScreen, achievementsScreen, questBoardScreen, craftingScreen, buildSummaryScreen, unlockTrackerScreen, updatesScreen, notFound } from "./screens.js";
+import { mainMenu, saveMenu, characterCreate, hub, statusScreen, progressionScreen, classRegistryScreen, skillsScreen, inventoryScreen, shopScreen, mapScreen, battleScreen, battleResultScreen, eventScreen, recruitScreen, achievementsScreen, questBoardScreen, craftingScreen, buildSummaryScreen, unlockTrackerScreen, updatesScreen, notFound } from "./screens.js";
 
 const screens = {
   "main-menu": mainMenu,
@@ -14,6 +14,7 @@ const screens = {
   shop: shopScreen,
   map: mapScreen,
   battle: battleScreen,
+  "battle-result": battleResultScreen,
   event: eventScreen,
   recruit: recruitScreen,
   achievements: achievementsScreen,
