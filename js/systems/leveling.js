@@ -163,6 +163,14 @@ export function computeStats(player) {
     addBasicAbilityPoints(externalBasic, legacyStatsToBasicAbilities(titleBonus.stats ?? {}, 0.7));
   }
 
+  // v1.1.3: learned abilities can now grant flat Basic Ability bonuses using
+  // Strength / Endurance / Dexterity / Agility / Magic instead of old INT/WIS/etc. labels.
+  for (const skillId of player.skills ?? []) {
+    const skill = byId(SKILLS, skillId);
+    const abilityBonus = skill?.basicAbilityBonus ?? skill?.bonusStats ?? {};
+    addBasicAbilityPoints(externalBasic, abilityBonus, 1);
+  }
+
   const basicAbilities = buildBasicAbilityPacket({ total: totalBasic, current: currentBasic, external: externalBasic });
   const derived = scaleDerivedStatsFromBasicAbilities(basicAbilities, overall);
   Object.assign(stats, derived);

@@ -684,6 +684,12 @@ function abilityScalingSummary(skill = {}) {
   return entries.length ? entries.map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default Basic Ability scaling";
 }
 
+function abilityBonusStatSummary(skill = {}) {
+  const bonus = skill.basicAbilityBonus ?? skill.bonusStats ?? {};
+  const entries = Object.entries(bonus).filter(([, value]) => Number(value ?? 0) !== 0);
+  return entries.length ? entries.map(([key, value]) => `${titleCase(key)} +${Number(value)}`).join(" · ") : "None";
+}
+
 function abilityEffectSummary(skill = {}) {
   const effects = (skill.effects ?? []).slice(0, 4).map(effect => {
     if (effect.type === "status") return `Inflict ${titleCase(effect.status ?? "status")} ${effect.chance ? `${effect.chance}%` : ""}`.trim();
@@ -761,7 +767,8 @@ function abilityRegistryCard(entry) {
     <div class="ability-stat-row"><span>Cost</span><strong>${skill.resource === "none" ? "Passive" : `${skill.cost ?? 0} ${skill.resource ?? "resource"}`}</strong></div>
     <div class="ability-stat-row"><span>Cooldown</span><strong>${skill.cooldown ?? 0}</strong></div>
     <div class="ability-stat-row"><span>Power</span><strong>${skill.power ?? 0}</strong></div>
-    <div class="ability-stat-row"><span>Scaling</span><strong>${escapeHtml(abilityScalingSummary(skill))}</strong></div>
+    <div class="ability-stat-row"><span>Basic Scaling</span><strong>${escapeHtml(abilityScalingSummary(skill))}</strong></div>
+    <div class="ability-stat-row"><span>Bonus Stats</span><strong>${escapeHtml(abilityBonusStatSummary(skill))}</strong></div>
     <div class="ability-stat-row"><span>Effects</span><strong>${escapeHtml(abilityEffectSummary(skill))}</strong></div>
     <div class="ability-stat-row requirement-row"><span>Requirements</span><strong>${escapeHtml(abilityRequirementSummary(skill))}</strong></div>
     ${tags ? `<div class="ability-tags">${tags}</div>` : ""}
@@ -938,7 +945,7 @@ function abilityShopSection(state) {
   const libraryOptions = ["all", ...SKILL_SHOP_LIBRARIES.map(lib => lib.id)];
   const kindOptions = ["all", ...[...new Set(pricedSkills.map(s => s.kind ?? "skill"))].sort()];
   const rankOptions = ["all", ...[...new Set(pricedSkills.map(s => s.rank ?? "Common"))].sort()];
-  const elementOptions = ["all", ...[...new Set(pricedSkills.map(s => s.element ?? "physical"))].sort()];
+  const elementOptions = ["all", ...[...new Set(pricedSkills.map(s => s.element ?? "fire"))].sort()];
   const originOptions = ["all", ...[...new Set(pricedSkills.map(s => s.origin ?? "shop"))].sort()];
   const acquisitionOptions = ["all", ...[...new Set(pricedSkills.map(s => s.acquisition ?? "Shop"))].sort()];
   const stockIds = new Set(SKILL_SHOP_LIBRARIES
@@ -950,7 +957,7 @@ function abilityShopSection(state) {
     if (Number(skill.price ?? 0) <= 0) return false;
     if (filters.kind !== "all" && (skill.kind ?? "skill") !== filters.kind) return false;
     if (filters.rank !== "all" && (skill.rank ?? "Common") !== filters.rank) return false;
-    if (filters.element !== "all" && (skill.element ?? "physical") !== filters.element) return false;
+    if (filters.element !== "all" && (skill.element ?? "fire") !== filters.element) return false;
     if (filters.origin !== "all" && (skill.origin ?? "shop") !== filters.origin) return false;
     if (filters.acquisition !== "all" && (skill.acquisition ?? "Shop") !== filters.acquisition) return false;
     if (search) {
@@ -983,7 +990,7 @@ function abilityShopCard(skill, player) {
   const price = Number(skill.price ?? 0);
   const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
   const cost = skill.resource === "none" ? "Passive" : `${skill.cost} ${skill.resource}`;
-  const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
+  const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default Basic Ability scaling";
   const elementLine = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean).join(" + ") || "neutral";
   const requirement = abilityRequirementText(skill);
   return `<article class="card skill-shop-card ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${known ? "selected" : ""}">
@@ -996,7 +1003,8 @@ function abilityShopCard(skill, player) {
       <div><span>Cost</span><strong>${escapeHtml(cost)}</strong></div>
       <div><span>Cooldown</span><strong>${skill.cooldown}</strong></div>
       <div><span>Price</span><strong>${price} gold</strong></div>
-      <div><span>Scaling</span><strong>${escapeHtml(scaling)}</strong></div>
+      <div><span>Basic Scaling</span><strong>${escapeHtml(scaling)}</strong></div>
+      <div><span>Bonus Stats</span><strong>${escapeHtml(abilityBonusStatSummary(skill))}</strong></div>
       ${requirement ? `<div><span>Requires</span><strong>${escapeHtml(requirement)}</strong></div>` : ""}
       <div><span>Source</span><strong>${escapeHtml(skill.origin ?? "Shop")}</strong></div>
     </div>
@@ -1250,7 +1258,7 @@ function enemyCombatCard(enemy, state) {
       <div class="battle-avatar enemy-avatar">${enemy.bossMechanics ? "👑" : "💀"}</div>
       <div class="battle-title-block">
         <div class="row between"><h2 class="enemy-name">${escapeHtml(enemy.name)}</h2><span class="pill">HP ${hpPct}%</span></div>
-        <p class="small">Lv ${enemy.totalLevel ?? "?"} · ${escapeHtml(enemy.enemyType ?? "Enemy")} · ${escapeHtml(identity)} · ${escapeHtml(enemy.element ?? "physical")}</p>
+        <p class="small">Lv ${enemy.totalLevel ?? "?"} · ${escapeHtml(enemy.enemyType ?? "Enemy")} · ${escapeHtml(identity)} · ${escapeHtml(enemy.element ?? "fire")}</p>
       </div>
     </div>
     ${bar("HP", enemy.hp, enemy.maxHp, "hp")}
@@ -1608,8 +1616,8 @@ function elementMatchupText(skill, enemy) {
 
 function battleScalingLine(skill) {
   const scaling = skill.scaling ?? skill.statusScaling;
-  if (!scaling) return `<p class="small">Scaling: default class scaling.</p>`;
-  return `<p class="small">Scaling: ${escapeHtml(Object.entries(scaling).map(([k, v]) => `${titleCase(k)} × ${Number(v).toFixed(3)}`).join(" · "))}</p>`;
+  if (!scaling) return `<p class="small">Basic Scaling: default Basic Ability scaling.</p>`;
+  return `<p class="small">Basic Scaling: ${escapeHtml(Object.entries(scaling).map(([k, v]) => `${titleCase(k)} × ${Number(v).toFixed(3)}`).join(" · "))}</p>`;
 }
 
 function compactItemEffectText(item = {}) {

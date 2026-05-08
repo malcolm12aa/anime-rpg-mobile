@@ -12,7 +12,7 @@ import { trackLegendAbilityUse, trackLegendWeaponUse } from "./legend-engine.js"
 
 function createEnemyIntent(enemy, combat = null) {
   if (enemy.bossMechanics && combat?.round && combat.round % 4 === 0) {
-    return { type: "bossCharge", name: "Boss Charge", element: enemy.element ?? "physical", text: `${enemy.name} is charging a boss mechanic. Guard, burst, or exploit a weakness now.` };
+    return { type: "bossCharge", name: "Boss Charge", element: enemy.element ?? "fire", text: `${enemy.name} is charging a boss mechanic. Guard, burst, or exploit a weakness now.` };
   }
   const skillId = choice(enemy.skills ?? []);
   const skill = byId(SKILLS, skillId);
@@ -28,7 +28,7 @@ function createEnemyIntent(enemy, combat = null) {
         : `${enemy.name} is preparing ${skill.name}.`
     };
   }
-  return { type: "attack", name: "Basic Attack", element: "physical", text: `${enemy.name} intends to attack directly.` };
+  return { type: "attack", name: "Basic Attack", element: "fire", text: `${enemy.name} intends to attack directly.` };
 }
 
 export function startBattle(state, enemy, battleType = "normal") {
@@ -221,7 +221,7 @@ function enemyTurn(state) {
   const intent = state.combat.enemyIntent ?? createEnemyIntent(enemy, state.combat);
   if (intent.type === "bossCharge") {
     const base = randInt(10, 18) + Math.floor((enemy.stats.str ?? enemy.stats.int ?? 4) * 2.2);
-    const damage = dealDamage(enemy, player, base, enemy.element ?? "physical", enemy.stats, playerStats, state.combat.modifier);
+    const damage = dealDamage(enemy, player, base, enemy.element ?? "fire", enemy.stats, playerStats, state.combat.modifier);
     addLog(state, `<strong>${enemy.name}'s charged mechanic lands</strong> for ${damage} damage.`);
   } else if (intent.type === "skill") {
     const skill = byId(SKILLS, intent.skillId);

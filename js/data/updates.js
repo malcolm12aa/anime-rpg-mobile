@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.1.3 — Ability Balance & Basic Ability Scaling",
+    date: "2026-05-08",
+    notes: [
+      "Removed Physical as an ability element; old physical abilities now become martial weapon techniques assigned across Fire, Ice, Lightning, Wind, Earth, and Water.",
+      "Normalized ability scaling and bonus stat keys to the five Basic Abilities: Strength, Endurance, Dexterity, Agility, and Magic.",
+      "Added 346 new balanced fantasy abilities: 142 skills and 204 spells.",
+      "Balanced skills to 408 total: 68 per element and 102 per core rank.",
+      "Balanced spells to 492 total: 82 per element and 123 per core rank.",
+      "Ability Registry and Shop cards now show Basic Scaling and Bonus Stats using Basic Ability names instead of old INT/WIS/CON labels."
+    ]
+  },
+  {
     version: "v1.1.2.1 — Legend Rotation Quest/Achievement Hotfix",
     date: "2026-05-08",
     notes: [

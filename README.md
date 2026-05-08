@@ -1,14 +1,25 @@
 # Build Your Legend
 
+## v1.1.3 — Ability Balance & Basic Ability Scaling
+
+This update cleans up the full ability system. Physical is no longer treated as an element; old physical abilities are now martial weapon techniques and every skill/spell is assigned to one of six real elements: Fire, Ice, Lightning, Wind, Earth, or Water.
+
+- Added 346 new fantasy abilities to finish balance gaps.
+- Skills: 408 total, 68 per element, 102 per core rank.
+- Spells: 492 total, 82 per element, 123 per core rank.
+- Core ranks are now evenly represented: Common, Extra, Unique, and Ultimate.
+- Ability scaling and bonus stats now use Basic Abilities: Strength, Endurance, Dexterity, Agility, and Magic.
+- Ability Registry and Shop cards now show Basic Scaling and Bonus Stats clearly.
+
 ## v1.1.0 — Fantasy Ability Expansion
 
 Adds 300 new fantasy abilities to the Skill / Spell Library:
 
-- 100 elemental physical skills spread across Fire, Ice, Lightning, Wind, Earth, and Water.
+- 100 elemental martial skills spread across Fire, Ice, Lightning, Wind, Earth, and Water.
 - 100 elemental spells spread across Fire, Ice, Lightning, Wind, Earth, and Water.
 - 100 multi-element skills and spells with dual-element tags.
 - All new abilities include Basic Ability scaling.
-- Many physical skills require equipped weapon types.
+- Many martial skills require equipped weapon types.
 - Stronger elemental abilities require matching Element Mastery.
 
 ## Latest Update

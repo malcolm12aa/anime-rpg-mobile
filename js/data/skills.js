@@ -1,8 +1,11 @@
 // v1.1.0 — Fantasy Ability Expansion loaded on top of v0.9.8 ability cleanup.
 import { FANTASY_ABILITY_EXPANSION, FANTASY_ABILITY_LIBRARIES } from "./fantasy-ability-expansion.js";
+import { BALANCED_ABILITY_EXPANSION, BALANCED_ABILITY_LIBRARIES, normalizeAbilityForV113 } from "./ability-balance-v113.js";
 export const ABILITY_FILTER_OPTIONS = {
   "libraries": [
     "all",
+    "balanced_elemental_skill_library",
+    "balanced_elemental_spell_library",
     "fantasy_elemental_skill_codex",
     "fantasy_elemental_spell_grimoire",
     "multi_element_myth_codex",
@@ -30,16 +33,14 @@ export const ABILITY_FILTER_OPTIONS = {
     "all",
     "Common",
     "Extra",
-    "Hidden",
-    "Intrinsic",
-    "Rare",
-    "Ultimate",
-    "Unique"
+    "Unique",
+    "Ultimate"
   ]
 };
 
 export const SKILLS = [
   ...FANTASY_ABILITY_EXPANSION,
+  ...BALANCED_ABILITY_EXPANSION,
   {
     "id": "human_resolve",
     "name": "Lineage Art: Iron Human Resolve",
@@ -11191,9 +11192,10 @@ export const SKILLS = [
     },
     "description": "☠ Unlocks stronger Poison abilities and improves their Basic Ability scaling."
   }
-];
+].map(normalizeAbilityForV113);
 
 export const SKILL_SHOP_LIBRARIES = [
+  ...BALANCED_ABILITY_LIBRARIES,
   ...FANTASY_ABILITY_LIBRARIES,
   {
     "id": "advanced_skill_library",
@@ -11358,8 +11360,8 @@ export const SKILL_SHOP_LIBRARIES = [
   },
   {
     "id": "v50_physical_shop",
-    "name": "v50 Physical Shop",
-    "description": "Excel-imported skill/spell library: v50 Physical Shop.",
+    "name": "v50 Martial Shop",
+    "description": "Excel-imported martial skill library: v50 Martial Shop. Physical elements are now treated as martial weapon techniques.",
     "stock": [
       "v50_sword_1",
       "v50_sword_2",
