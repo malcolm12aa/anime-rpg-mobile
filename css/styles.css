@@ -1510,3 +1510,45 @@ input, select {
     align-items: flex-start;
   }
 }
+
+
+/* v1.1.1 Class Registry & Progression Rules */
+.registry-full-grid {
+  align-items: stretch;
+}
+.compact-registry-card h3,
+.ability-registry-card h3 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.registry-tags,
+.ability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0;
+}
+.registry-requirements {
+  margin-top: 0.65rem;
+}
+.current-stage {
+  border-color: rgba(245, 197, 106, 0.55);
+}
+.previous-stage {
+  opacity: 0.86;
+}
+.basic-class-add-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  max-height: 34rem;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+.basic-class-add-card p {
+  overflow-wrap: anywhere;
+}
+.ability-registry-card .ability-stat-row strong {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}

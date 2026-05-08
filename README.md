@@ -238,3 +238,12 @@ Upload/replace the files in your GitHub repository root the same way as before. 
 - Job cards now use the requested layout: Job, Max Level, Status, Weapon/s, Tags, Unique Description, Strengths, and Weaknesses.
 - Job weapon recommendations are generated from each job name/category/description so weapon restrictions match the role.
 - Current Build and Class Registry screens now use the same cleaner layout.
+
+
+## v1.1.1 — Class Registry & Progression Rules
+
+- Class Registry now includes all races, race evolutions, jobs, job upgrades, skills, spells, passives, and abilities.
+- Hidden and secret race/job paths show their requirements for planning.
+- New basic races/jobs can only be added after the current race/job stage is maxed.
+- Race evolutions and job upgrades can only be taken from the current maxed stage.
+- Ability cards in the registry show scaling, effects, weapon requirements, and Element Mastery gates.

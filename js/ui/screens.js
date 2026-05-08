@@ -22,7 +22,7 @@ import { getLegendProfile, getLegendQuests, getLegendAchievements } from "../sys
 import { getAbilityEvolutionOptions } from "../systems/ability-evolution.js";
 import { getAbilityNamingProfile } from "../systems/ability-naming.js";
 import { byId, titleCase, formatStat } from "../core/utils.js";
-import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvailableAdvancements, getActiveSynergies, getEquippedSetBonuses, getEquippedTitleBonus } from "../systems/leveling.js";
+import { computeStats, computeCreationPreview, getTotalLevel, xpToNext, getAvailableAdvancements, getAvailableBasicClasses, isCurrentClassMaxed, getActiveSynergies, getEquippedSetBonuses, getEquippedTitleBonus } from "../systems/leveling.js";
 import { canSeeRegistryEntry, getRequirementText, getUnlockRequirementMarkup, getUnlockStatus, getVisibleTreeForPlayer } from "../systems/unlocks.js";
 import { isAchievementUnlocked } from "../systems/achievements.js";
 import { prepareRecruitOffer } from "../systems/party.js";
@@ -508,8 +508,12 @@ export function statusScreen(state) {
       <div class="card"><h2>Spend Job Levels</h2>${progressRows(p.jobLevels, "job")}</div>
     </section>
     <section class="grid two">
-      <div class="card"><h2>Valid Race Upgrades</h2>${advancementRows(raceAdv, "race")}</div>
-      <div class="card"><h2>Valid Job Upgrades</h2>${advancementRows(jobAdv, "job")}</div>
+      <div class="card"><h2>Valid Race Evolutions</h2>${advancementRows(raceAdv, "race", p)}</div>
+      <div class="card"><h2>Valid Job Upgrades</h2>${advancementRows(jobAdv, "job", p)}</div>
+    </section>
+    <section class="grid two">
+      <div class="card"><h2>Add New Basic Race</h2>${basicClassRows(state, "race")}</div>
+      <div class="card"><h2>Add New Basic Job</h2>${basicClassRows(state, "job")}</div>
     </section>
     <section class="grid two">
       <div class="card"><h2>Race Evolution Tree</h2>${classTree(state, "race")}</div>
@@ -543,24 +547,54 @@ export function progressionScreen(state) {
 }
 
 function progressRows(classes, track) {
-  return classes.map((cls, index) => `<div class="class-row card">
-    <div><strong>${cls.name}</strong> <span class="pill">${cls.tier}</span><p class="small">Level ${cls.level}/${cls.maxLevel}</p></div>
-    ${button("+ Level", "spendPoint", `${track}:${index}`, cls.level >= cls.maxLevel ? "ghost" : "secondary")}
-  </div>`).join("");
+  const currentIndex = classes.length - 1;
+  return classes.map((cls, index) => {
+    const isCurrent = index === currentIndex;
+    const isMaxed = (cls.level ?? 0) >= (cls.maxLevel ?? 1);
+    const action = isCurrent
+      ? button(isMaxed ? "Maxed" : "+ Level", "spendPoint", `${track}:${index}`, isMaxed ? "ghost" : "secondary")
+      : `<span class="pill">Previous Stage</span>`;
+    return `<div class="class-row card ${isCurrent ? "current-stage" : "previous-stage"}">
+      <div><strong>${escapeHtml(cls.name)}</strong> <span class="pill">${escapeHtml(cls.tier)}</span><p class="small">Level ${cls.level}/${cls.maxLevel}${isCurrent ? " · Current stage" : ""}</p></div>
+      ${action}
+    </div>`;
+  }).join("");
 }
 
 function reqText(req = {}) {
   return getRequirementText(req);
 }
 
-function advancementRows(paths, track) {
-  if (!paths.length) return `<p class="small">No valid upgrades right now. Level your current ${track} classes to their requirement caps, defeat bosses, or gather Relic Dust to reveal more paths.</p>`;
+function advancementRows(paths, track, player = null) {
+  if (!paths.length) {
+    const current = track === "race" ? player?.raceLevels?.at(-1) : player?.jobLevels?.at(-1);
+    const gate = current ? `Current ${track} stage: ${current.name} Lv. ${current.level}/${current.maxLevel}.` : "No current stage found.";
+    return `<p class="small">No valid ${track === "race" ? "evolutions" : "upgrades"} right now. ${escapeHtml(gate)} Max the current stage first, then meet boss, floor, gold, Relic Dust, or hidden requirements.</p>`;
+  }
   return paths.map(path => `<article class="card unlock-card">
     <h3>${escapeHtml(path.name)} <span class="pill">${escapeHtml(path.tier)}</span></h3><p>${escapeHtml(path.description)}</p>
-    <p class="small">From: ${escapeHtml(path.sourceName)} · Requirements: ${escapeHtml(reqText(path.requirements))}</p>
+    <p class="small">From current stage: ${escapeHtml(path.sourceName)} · Requirements: ${escapeHtml(reqText(path.requirements))}</p>
     <div class="requirement-list">${getUnlockRequirementMarkup(path.unlockStatus)}</div>
-    ${button("Unlock Path", "addClass", `${track}:${path.id}`)}
+    ${button(track === "race" ? "Evolve Race" : "Upgrade Job", "addClass", `${track}:${path.id}`)}
   </article>`).join("");
+}
+
+function basicClassRows(state, track) {
+  const player = state.player;
+  const current = track === "race" ? player?.raceLevels?.at(-1) : player?.jobLevels?.at(-1);
+  if (!current) return `<p class="small">No current ${track} stage found.</p>`;
+  if (!isCurrentClassMaxed(player, track)) {
+    return `<p class="small">Locked. Max your current ${track} stage first: <strong>${escapeHtml(current.name)}</strong> Lv. ${current.level}/${current.maxLevel}.</p>`;
+  }
+  const options = getAvailableBasicClasses(state, track);
+  if (!options.length) return `<p class="small">No new basic ${track} options remain, or the overall level cap has been reached.</p>`;
+  return `<p class="small">Current ${track} stage is maxed. You may add one new basic ${track} stage, then you must level that new stage before adding another.</p>
+    <div class="basic-class-add-grid">${options.map(item => `<article class="mini-card basic-class-add-card">
+      <div class="row between"><strong>${escapeHtml(item.name)}</strong><span class="pill">${escapeHtml(titleCase(getBuildFocus(item)))}</span></div>
+      <p class="small">Max Lv ${item.maxLevel} · ${escapeHtml(item.category ?? "Base")}</p>
+      <p>${escapeHtml(item.description ?? "Basic class option.")}</p>
+      ${button(`Add ${track === "race" ? "Race" : "Job"}`, "addBasicClass", `${track}:${item.id}`, "secondary")}
+    </article>`).join("")}</div>`;
 }
 
 
@@ -573,9 +607,9 @@ function classTree(state, track) {
     return `<div class="tree-node known"><strong>${escapeHtml(node.name)}</strong> <span class="pill">${escapeHtml(node.tier)}</span><div class="small">Level ${node.level}/${node.maxLevel}</div>
       <div class="tree-children">
         ${children.length ? children.map(child => {
-          if (child.mystery) return `<div class="tree-child secret locked">↳ ???? <span class="pill">Hidden</span><div class="small">${escapeHtml(child.requirement)}</div></div>`;
           const status = child.unlockStatus ?? getUnlockStatus(state, track, child);
-          return `<div class="tree-child ${status.met ? "unlockable" : "locked"}">↳ ${escapeHtml(child.name)} <span class="pill">${escapeHtml(child.tier)}</span><div class="small">${status.met ? "Ready to unlock" : `Req: ${escapeHtml(reqText(child.requirements))}`}</div></div>`;
+          const hiddenLabel = child.hidden ? ` <span class="pill">Hidden</span>` : "";
+          return `<div class="tree-child ${status.met ? "unlockable" : "locked"}">↳ ${escapeHtml(child.name)} <span class="pill">${escapeHtml(child.tier)}</span>${hiddenLabel}<div class="small">${status.met ? "Ready to unlock" : `Req: ${escapeHtml(reqText(child.requirements))}`}</div></div>`;
         }).join("") : `<div class="small">No visible path from this class yet.</div>`}
       </div>
     </div>`;
@@ -588,17 +622,16 @@ function selectField(label, inputName, values, selected) {
 }
 
 function registryRequirementText(entry) {
+  if (entry.track === "ability") return abilityRequirementSummary(entry.skill ?? entry);
   const req = entry.requirements ?? {};
-  const text = getRequirementText(req, { fallback: "Excel requirement converted into v0.4 unlock checks" });
+  const text = getRequirementText(req, { fallback: "No extra requirement" });
   return text || "none";
 }
-
 
 function registryStatsText(entry) {
   const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id);
   return statsText(data?.stats ?? {});
 }
-
 
 function registryAbilityText(entry) {
   const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id);
@@ -610,51 +643,185 @@ function registryAbilityText(entry) {
   return names.join(", ") || "No linked ability yet";
 }
 
+function abilityKindLabel(skill = {}) {
+  const kind = String(skill.kind ?? "ability").toLowerCase();
+  if (kind === "skill") return "Skill";
+  if (kind === "spell") return "Spell";
+  if (kind === "passive") return "Passive";
+  if (kind === "resist") return "Resist";
+  if (kind === "support") return "Support";
+  if (kind === "hybrid") return "Hybrid";
+  return "Ability";
+}
+
+function abilityFocus(skill = {}) {
+  const scaling = skill.scaling ?? skill.statusScaling ?? {};
+  const strength = (scaling.strength ?? 0) + (scaling.endurance ?? 0);
+  const speed = (scaling.dexterity ?? 0) + (scaling.agility ?? 0);
+  const magic = scaling.magic ?? 0;
+  const text = `${skill.name ?? ""} ${skill.kind ?? ""} ${skill.description ?? ""} ${(skill.tags ?? []).join(" ")}`.toLowerCase();
+  if (text.match(/heal|mend|support|ward|barrier|buff|cleanse|restore/)) return "support";
+  if (scaling.endurance && scaling.endurance >= Math.max(scaling.strength ?? 0, speed, magic)) return "defense";
+  if (magic >= Math.max(strength, speed) && magic > 0) return "magic";
+  if (speed >= Math.max(strength, magic) && speed > 0) return "speed";
+  if (strength > 0) return "physical";
+  return "balanced";
+}
+
+function abilityRequirementSummary(skill = {}) {
+  const rows = [];
+  if (skill.requiredMastery) rows.push(skill.masteryRequirementText ?? `${titleCase(skill.requiredMastery)} Element Mastery`);
+  if ((skill.requiresWeaponType ?? []).length) rows.push(skill.weaponRequirementText ?? `Equipped ${skill.requiresWeaponType.join(" / ")}`);
+  if (skill.price) rows.push(`${skill.price} gold in the Skill / Spell Library`);
+  if (skill.acquisition) rows.push(`Acquisition: ${skill.acquisition}`);
+  return rows.join(" · ") || "Learn from starting classes, shops, quests, bosses, or ability evolution.";
+}
+
+function abilityScalingSummary(skill = {}) {
+  const scaling = skill.scaling ?? skill.statusScaling ?? {};
+  const entries = Object.entries(scaling);
+  return entries.length ? entries.map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default Basic Ability scaling";
+}
+
+function abilityEffectSummary(skill = {}) {
+  const effects = (skill.effects ?? []).slice(0, 4).map(effect => {
+    if (effect.type === "status") return `Inflict ${titleCase(effect.status ?? "status")} ${effect.chance ? `${effect.chance}%` : ""}`.trim();
+    if (effect.type === "statusSelf") return `Gain ${titleCase(effect.status ?? "status")}`;
+    if (effect.type === "heal") return `Heal ${Math.round((effect.scale ?? 0) * 100)}%`;
+    if (effect.type === "restore") return `Restore ${effect.amount ?? 0} ${titleCase(effect.resource ?? "resource")}`;
+    if (effect.type === "drain") return `Drain ${Math.round((effect.ratio ?? 0) * 100)}%`;
+    return titleCase(effect.type ?? "effect");
+  });
+  return effects.join(" · ") || "No extra effect listed.";
+}
+
+function abilityRegistryEntries() {
+  return SKILLS.map(skill => ({
+    track: "ability",
+    kind: abilityKindLabel(skill),
+    id: skill.id,
+    excelId: skill.source ?? "Ability",
+    name: skill.name,
+    category: skill.source ?? skill.element ?? "Ability",
+    tier: skill.rank ?? "Common",
+    buildFocus: abilityFocus(skill),
+    description: skill.description ?? "No description listed.",
+    tags: [skill.element, ...(skill.secondaryElements ?? []), ...(skill.tags ?? [])].filter(Boolean),
+    skill
+  }));
+}
+
+function combinedRegistryEntries() {
+  return [...CLASS_REGISTRY, ...abilityRegistryEntries()];
+}
+
+function registryOptionList(entries, field, base = []) {
+  return ["all", ...[...new Set([...base.filter(value => value !== "all"), ...entries.map(entry => entry[field]).filter(Boolean)])].sort((a, b) => String(a).localeCompare(String(b)))];
+}
+
 function registryCard(entry) {
+  if (entry.track === "ability") return abilityRegistryCard(entry);
   const data = [...RACES, ...RACE_PATHS, ...JOBS, ...JOB_PATHS].find(item => item.id === entry.id) ?? entry;
-  const isJob = entry.track === "job" || String(entry.kind).toLowerCase().includes("job");
-  return `<article class="card registry-card">
+  const status = statefulUnlockStatusMarkup(entry, data);
+  const tags = [data.category, data.tier, `Focus: ${titleCase(getBuildFocus(data))}`, ...(data.tags ?? [])]
+    .filter(Boolean).slice(0, 8).map(tag => `<span class="pill">${escapeHtml(titleCase(String(tag)))}</span>`).join(" ");
+  const fromText = data.from ? `<span class="pill">From: ${escapeHtml(data.from)}</span>` : `<span class="pill">Basic</span>`;
+  return `<article class="card registry-card compact-registry-card">
     <div class="row between"><span class="pill">Excel ${escapeHtml(entry.excelId)}</span><span class="pill">${escapeHtml(entry.kind)}</span></div>
-    ${classProfileCard({ ...entry, ...data, kind: entry.kind }, { type: isJob ? "job" : "race" })}
+    <h3>${escapeHtml(data.name)}</h3>
+    <p class="small"><span class="pill">${escapeHtml(data.tier ?? "base")}</span> <span class="pill">Max Lv ${escapeHtml(data.maxLevel ?? "?")}</span> ${fromText}</p>
+    <p>${escapeHtml(data.description ?? "No description listed.")}</p>
+    <div class="ability-tags registry-tags">${tags}</div>
     <p class="small"><strong>Abilities:</strong> ${escapeHtml(registryAbilityText(entry))}</p>
+    <p class="small"><strong>Stats:</strong> ${escapeHtml(registryStatsText(entry))}</p>
     <p class="small"><strong>Requirement:</strong> ${escapeHtml(registryRequirementText(entry))}</p>
+    ${status}
   </article>`;
 }
 
+function statefulUnlockStatusMarkup(entry, data) {
+  if (!currentRegistryState?.player || !data?.from) return "";
+  const status = getUnlockStatus(currentRegistryState, entry.track, data);
+  return `<div class="requirement-list registry-requirements">${getUnlockRequirementMarkup(status)}</div>`;
+}
+
+let currentRegistryState = null;
+
+function abilityRegistryCard(entry) {
+  const skill = entry.skill;
+  const elementLine = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean).map(titleCase).join(" + ") || "Neutral";
+  const tags = (entry.tags ?? []).slice(0, 8).map(tag => `<span class="pill ability-tag">${escapeHtml(titleCase(String(tag)))}</span>`).join(" ");
+  return `<article class="card registry-card ability-registry-card rank-${String(skill.rank ?? "common").toLowerCase()}">
+    <div class="ability-card-head">
+      <div class="ability-icon">${abilityRegistryIcon(skill)}</div>
+      <div><span class="layout-label">${escapeHtml(entry.kind)}</span><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank ?? "Common")} · ${escapeHtml(elementLine)} · ${escapeHtml(skill.resource ?? "none")}</p></div>
+    </div>
+    <p class="ability-description">${escapeHtml(skill.description ?? "No description listed.")}</p>
+    <div class="ability-stat-row"><span>Cost</span><strong>${skill.resource === "none" ? "Passive" : `${skill.cost ?? 0} ${skill.resource ?? "resource"}`}</strong></div>
+    <div class="ability-stat-row"><span>Cooldown</span><strong>${skill.cooldown ?? 0}</strong></div>
+    <div class="ability-stat-row"><span>Power</span><strong>${skill.power ?? 0}</strong></div>
+    <div class="ability-stat-row"><span>Scaling</span><strong>${escapeHtml(abilityScalingSummary(skill))}</strong></div>
+    <div class="ability-stat-row"><span>Effects</span><strong>${escapeHtml(abilityEffectSummary(skill))}</strong></div>
+    <div class="ability-stat-row requirement-row"><span>Requirements</span><strong>${escapeHtml(abilityRequirementSummary(skill))}</strong></div>
+    ${tags ? `<div class="ability-tags">${tags}</div>` : ""}
+  </article>`;
+}
+
+function abilityRegistryIcon(skill = {}) {
+  const text = `${skill.name ?? ""} ${skill.element ?? ""} ${skill.kind ?? ""}`.toLowerCase();
+  if (text.includes("fire") || text.includes("flame") || text.includes("burn")) return "🔥";
+  if (text.includes("ice") || text.includes("frost") || text.includes("frozen")) return "❄️";
+  if (text.includes("lightning") || text.includes("storm") || text.includes("thunder")) return "⚡";
+  if (text.includes("water") || text.includes("tide") || text.includes("rain")) return "💧";
+  if (text.includes("earth") || text.includes("stone") || text.includes("root")) return "⛰";
+  if (text.includes("wind") || text.includes("gale") || text.includes("sky")) return "🌪";
+  if (text.includes("dark") || text.includes("shadow") || text.includes("curse")) return "☾";
+  if (text.includes("light") || text.includes("holy") || text.includes("heal")) return "✚";
+  if (text.includes("poison") || text.includes("venom")) return "☠";
+  if (text.includes("passive") || skill.kind === "passive") return "◇";
+  return "◆";
+}
+
 export function classRegistryScreen(state) {
+  currentRegistryState = state;
   const filters = { search: "", kind: "all", category: "all", tier: "all", focus: "all", ...(state.ui.registryFilters ?? {}) };
   const search = filters.search.trim().toLowerCase();
+  const allEntries = combinedRegistryEntries();
   const hiddenTotal = CLASS_REGISTRY.filter(entry => String(entry.tier).toLowerCase() === "hidden").length;
-  const filtered = CLASS_REGISTRY.filter(entry => {
-    if (!canSeeRegistryEntry(state, entry)) return false;
+  const abilityTotal = SKILLS.length;
+  const kindOptions = registryOptionList(allEntries, "kind", REGISTRY_KINDS);
+  const tierOptions = registryOptionList(allEntries, "tier", REGISTRY_TIERS);
+  const categoryOptions = registryOptionList(allEntries, "category", REGISTRY_CATEGORIES);
+  const filtered = allEntries.filter(entry => {
+    if (entry.track !== "ability" && !canSeeRegistryEntry(state, entry)) return false;
     if (filters.kind !== "all" && entry.kind !== filters.kind) return false;
     if (filters.category !== "all" && entry.category !== filters.category) return false;
     if (filters.tier !== "all" && entry.tier !== filters.tier) return false;
     if (filters.focus !== "all" && getBuildFocus(entry) !== filters.focus) return false;
     if (search) {
-      const haystack = `${entry.name} ${entry.category} ${entry.kind} ${entry.tier} ${entry.buildFocus ?? ""} ${(entry.tags ?? []).join(" ")} ${entry.description}`.toLowerCase();
-      if (!haystack.includes(search)) return false;
+      const haystack = `${entry.name} ${entry.category} ${entry.kind} ${entry.tier} ${entry.buildFocus ?? ""} ${(entry.tags ?? []).join(" ")} ${entry.description} ${registryRequirementText(entry)}`.toLowerCase();
+      if (!matchesSearchText(haystack, search)) return false;
     }
     return true;
   });
-  const visible = filtered.slice(0, 120);
   const backTarget = state.player ? "hub" : "main-menu";
-  return `<section class="screen">${nav(state)}
-    <div class="hero"><h1>Class Registry</h1><p class="subtitle">Excel import loaded: <span class="kpi">${REGISTRY_TOTALS.races}</span> races, <span class="kpi">${REGISTRY_TOTALS.racePaths}</span> race evolutions, <span class="kpi">${REGISTRY_TOTALS.baseJobs}</span> base jobs, and <span class="kpi">${REGISTRY_TOTALS.jobPaths}</span> job paths. Showing ${visible.length} of ${filtered.length} matching entries. Hidden/secret classes stay concealed until their unlock requirements are met. Concealed hidden entries: <span class="kpi">${hiddenTotal}</span>. Exact duplicate/overlap cleanup entries are hidden from normal browsing.</p></div>
+  const html = `<section class="screen">${nav(state)}
+    <div class="hero"><h1>Class Registry</h1><p class="subtitle">Full compendium loaded: <span class="kpi">${REGISTRY_TOTALS.races}</span> races, <span class="kpi">${REGISTRY_TOTALS.racePaths}</span> race evolutions, <span class="kpi">${REGISTRY_TOTALS.baseJobs}</span> base jobs, <span class="kpi">${REGISTRY_TOTALS.jobPaths}</span> job paths, and <span class="kpi">${abilityTotal}</span> abilities. Showing ${filtered.length} of ${allEntries.length} matching entries. Hidden/secret entries now show their names and requirements for planning. Hidden class entries: <span class="kpi">${hiddenTotal}</span>.</p></div>
     <section class="card">
       <h2>Filters</h2>
       <div class="filter-grid">
-        <label>Search<input data-input="registry.search" value="${escapeHtml(filters.search)}" placeholder="Search race, job, category, tier..." /></label>
-        ${selectField("Type", "registry.kind", REGISTRY_KINDS, filters.kind)}
-        ${selectField("Tier", "registry.tier", REGISTRY_TIERS, filters.tier)}
+        <label>Search<input data-input="registry.search" value="${escapeHtml(filters.search)}" placeholder="Search race, job, ability, requirement, element..." /></label>
+        ${selectField("Type", "registry.kind", kindOptions, filters.kind)}
+        ${selectField("Tier / Rank", "registry.tier", tierOptions, filters.tier)}
         ${selectField("Build Focus", "registry.focus", REGISTRY_FOCI, filters.focus)}
-        ${selectField("Category / World", "registry.category", REGISTRY_CATEGORIES, filters.category)}
+        ${selectField("Category / Source", "registry.category", categoryOptions, filters.category)}
       </div>
       <div class="actions">${button("Reset Filters", "resetRegistryFilters", "", "secondary")} ${button("Back", "go", backTarget, "ghost")}</div>
     </section>
-    ${filtered.length > visible.length ? `<section class="card"><p class="small">Large result set capped at 120 cards for mobile performance. Use search or filters to narrow the registry.</p></section>` : ""}
-    <section class="grid auto">${visible.map(registryCard).join("") || `<article class="card"><h3>No matches</h3><p>Try a different search or reset the filters.</p></article>`}</section>
+    <section class="grid auto registry-full-grid">${filtered.map(registryCard).join("") || `<article class="card"><h3>No matches</h3><p>Try a different search or reset the filters.</p></article>`}</section>
   </section>`;
+  currentRegistryState = null;
+  return html;
 }
 
 

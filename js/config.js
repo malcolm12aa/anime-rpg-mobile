@@ -1,6 +1,6 @@
 export const CONFIG = Object.freeze({
   title: "Build Your Legend",
-  version: "1.1.0-fantasy-ability-expansion",
+  version: "1.1.1-class-registry-progression-rules",
   storageKey: "build-your-legend-save-v1",
   saveSlotCount: 5,
   maxOverallLevel: 100,

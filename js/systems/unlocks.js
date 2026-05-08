@@ -70,6 +70,23 @@ export function getUnlockStatus(state, trackName, path) {
     met: Boolean(source)
   });
 
+  const track = getTrackClasses(player, trackName);
+  const currentStage = track.at(-1);
+  if (source) {
+    checks.push({
+      key: "currentStage",
+      label: `Current ${trackName} stage is ${source.name}`,
+      met: currentStage?.id === source.id
+    });
+    checks.push({
+      key: "sourceMaxed",
+      label: `${source.name} maxed at Lv. ${source.maxLevel}`,
+      met: (source.level ?? 0) >= (source.maxLevel ?? 1),
+      current: source.level ?? 0,
+      required: source.maxLevel ?? 1
+    });
+  }
+
   const classLevel = Number(requirementValue(req, "classLevel", "sourceLevel", "level") ?? 0);
   if (classLevel > 0) {
     checks.push({
@@ -179,14 +196,14 @@ export function getUnlockableAdvancements(state, trackName) {
   const player = state?.player;
   if (!player) return [];
   const track = getTrackClasses(player, trackName);
+  const current = track.at(-1);
+  if (!current || (current.level ?? 0) < (current.maxLevel ?? 1)) return [];
   const paths = getPathList(trackName);
   const result = [];
-  for (const cls of track) {
-    const classPaths = paths.filter(path => path.from === cls.id && !getOwnedClass(player, trackName, path.id) && !isDeprecatedOverlap(path));
-    for (const path of classPaths) {
-      const status = getUnlockStatus(state, trackName, path);
-      if (status.met) result.push({ ...path, sourceName: cls.name, canUnlock: true, sourceLevel: cls.level, unlockStatus: status });
-    }
+  const classPaths = paths.filter(path => path.from === current.id && !getOwnedClass(player, trackName, path.id) && !isDeprecatedOverlap(path));
+  for (const path of classPaths) {
+    const status = getUnlockStatus(state, trackName, path);
+    if (status.met) result.push({ ...path, sourceName: current.name, canUnlock: true, sourceLevel: current.level, unlockStatus: status });
   }
   return result;
 }
@@ -200,8 +217,7 @@ export function getVisibleTreeForPlayer(state, trackName) {
   for (const cls of owned) {
     const children = paths.filter(path => path.from === cls.id && !ownedIds.has(path.id) && !isDeprecatedOverlap(path)).map(path => {
       const status = getUnlockStatus(state, trackName, path);
-      if (isHiddenPath(path) && !status.met) return { mystery: true, from: cls.id, tier: path.tier, requirement: "Secret requirement not discovered yet." };
-      return { ...path, canUnlock: status.met, unlockStatus: status };
+      return { ...path, canUnlock: status.met, unlockStatus: status, hidden: isHiddenPath(path) };
     });
     visible.push({ ...cls, data: getClassDataById(cls.id), children });
   }
@@ -211,13 +227,9 @@ export function getVisibleTreeForPlayer(state, trackName) {
 export function canSeeRegistryEntry(state, entry) {
   if (!entry) return false;
   if (isDeprecatedOverlap(entry) && !isClassOwned(state?.player, entry.id)) return false;
-  if (String(entry.tier).toLowerCase() !== "hidden") return true;
-  if (!state?.player) return false;
-  if (isClassOwned(state.player, entry.id)) return true;
-  const trackName = entry.track ?? (entry.kind?.toLowerCase().includes("race") ? "race" : "job");
-  const data = getClassDataById(entry.id);
-  if (!data) return false;
-  return getUnlockStatus(state, trackName, data).met;
+  // v1.1.1: the Class Registry is now a full planning compendium. Hidden entries are visible
+  // with their requirements so the player can plan unlock routes instead of guessing.
+  return entry.registryVisible !== false;
 }
 
 export function getLockedRegistryName(entry) {

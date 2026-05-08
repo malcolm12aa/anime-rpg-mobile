@@ -203,6 +203,60 @@ export function syncResourcesToStats(player) {
   return stats;
 }
 
+export function getCurrentClass(player, trackName) {
+  const track = trackName === "race" ? (player?.raceLevels ?? []) : (player?.jobLevels ?? []);
+  return track.at(-1) ?? null;
+}
+
+export function isCurrentClassMaxed(player, trackName) {
+  const current = getCurrentClass(player, trackName);
+  return Boolean(current && (current.level ?? 0) >= (current.maxLevel ?? 1));
+}
+
+export function getAvailableBasicClasses(state, trackName) {
+  const player = state?.player;
+  if (!player || !isCurrentClassMaxed(player, trackName)) return [];
+  if (getTotalLevel(player) >= CONFIG.maxOverallLevel) return [];
+  const baseList = trackName === "race" ? RACES : JOBS;
+  const owned = new Set((trackName === "race" ? player.raceLevels : player.jobLevels).map(cls => cls.id));
+  return baseList
+    .filter(entry => String(entry.tier ?? "base").toLowerCase() === "base")
+    .filter(entry => entry.registryVisible !== false && !entry.deprecatedOverlap)
+    .filter(entry => !owned.has(entry.id));
+}
+
+export function addBasicClass(state, trackName, classId) {
+  const player = state.player;
+  if (!player) return;
+  const current = getCurrentClass(player, trackName);
+  if (!current) return addLog(state, `No current ${trackName} class found.`);
+  if ((current.level ?? 0) < (current.maxLevel ?? 1)) {
+    addLog(state, `Max your current ${trackName} stage first: ${current.name} Lv. ${current.level}/${current.maxLevel}.`);
+    return;
+  }
+  if (getTotalLevel(player) >= CONFIG.maxOverallLevel) {
+    addLog(state, `Overall level cap reached. You cannot add another ${trackName} class.`);
+    return;
+  }
+  const list = trackName === "race" ? RACES : JOBS;
+  const track = trackName === "race" ? player.raceLevels : player.jobLevels;
+  const entry = byId(list, classId);
+  if (!entry || String(entry.tier ?? "base").toLowerCase() !== "base") {
+    addLog(state, `That is not a valid basic ${trackName}.`);
+    return;
+  }
+  if (track.some(cls => cls.id === entry.id)) {
+    addLog(state, `${entry.name} is already part of your ${trackName} path.`);
+    return;
+  }
+  track.push({ id: entry.id, name: entry.name, tier: entry.tier, level: 1, maxLevel: entry.maxLevel });
+  for (const skillId of entry.startingSkills ?? []) {
+    if (!player.skills.includes(skillId)) player.skills.push(skillId);
+  }
+  syncResourcesToStats(player);
+  addLog(state, `<strong>New basic ${trackName} added:</strong> ${entry.name}. Level this stage before adding another path.`);
+}
+
 export function gainXp(state, amount) {
   const player = state.player;
   if (!player || getTotalLevel(player) >= CONFIG.maxOverallLevel) return;
@@ -220,7 +274,9 @@ export function spendClassPoint(state, trackName, index) {
   const player = state.player;
   const track = trackName === "race" ? player.raceLevels : player.jobLevels;
   const cls = track[Number(index)];
+  const currentIndex = track.length - 1;
   if (!cls || player.unspentClassLevels <= 0) return addLog(state, "No class point available.");
+  if (Number(index) !== currentIndex) return addLog(state, `Only your current ${trackName} stage can be leveled. Current stage: ${track[currentIndex]?.name ?? "unknown"}.`);
   if (cls.level >= cls.maxLevel) return addLog(state, `${cls.name} is already maxed.`);
   cls.level += 1;
   player.unspentClassLevels -= 1;
@@ -262,6 +318,19 @@ export function addAdvancedClass(state, trackName, pathId) {
   const status = getUnlockStatus(state, trackName, path);
   if (!source) {
     addLog(state, "That path belongs to a class you do not own yet.");
+    return;
+  }
+  const current = track.at(-1);
+  if (current?.id !== source.id) {
+    addLog(state, `You can only evolve or upgrade from your current ${trackName} stage: ${current?.name ?? "unknown"}.`);
+    return;
+  }
+  if ((source.level ?? 0) < (source.maxLevel ?? 1)) {
+    addLog(state, `Max ${source.name} first before choosing an evolution or upgrade: Lv. ${source.level}/${source.maxLevel}.`);
+    return;
+  }
+  if (getTotalLevel(player) >= CONFIG.maxOverallLevel) {
+    addLog(state, "Overall level cap reached. You cannot add another class path.");
     return;
   }
   if (track.some(cls => cls.id === path.id)) {

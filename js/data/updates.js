@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.1.1 — Class Registry & Progression Rules",
+    date: "2026-05-07",
+    notes: [
+      "Expanded the Class Registry into a full compendium that includes races, race evolutions, jobs, job upgrades, skills, spells, passives, and abilities.",
+      "Hidden and secret classes now show their names and requirements so players can plan unlock routes.",
+      "Added Add New Basic Race and Add New Basic Job options that only appear after the current race/job stage is maxed.",
+      "Race evolutions and job upgrades now only unlock from the current maxed race/job stage.",
+      "Older race/job stages are treated as completed history; only the current stage can receive new class levels.",
+      "Ability registry cards show cost, cooldown, power, element, scaling, effects, weapon requirements, and Element Mastery requirements."
+    ]
+  },
+  {
     version: "v1.1.0 — Fantasy Ability Expansion",
     date: "2026-05-07",
     notes: [

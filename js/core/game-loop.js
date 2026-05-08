@@ -7,7 +7,7 @@ import { exploreNextFloor, restAtCamp, enterDungeonNode, chooseDungeonEventOptio
 import { playerBasicAttack, playerUseSkill, playerUseItem } from "../systems/battle.js";
 import { useItem, equipItem, equipLoot, unequipSlot } from "../systems/inventory.js";
 import { buyItem, buyAbility } from "../systems/shop.js";
-import { spendClassPoint, addAdvancedClass, gainXp, syncResourcesToStats } from "../systems/leveling.js";
+import { spendClassPoint, addAdvancedClass, addBasicClass, gainXp, syncResourcesToStats } from "../systems/leveling.js";
 import { recruitMember, prepareRecruitOffer } from "../systems/party.js";
 import { checkAchievements } from "../systems/achievements.js";
 import { claimQuestReward } from "../systems/quests.js";
@@ -132,6 +132,11 @@ export function handleAction(state, action, value) {
     case "addClass": {
       const [track, pathId] = value.split(":");
       addAdvancedClass(state, track, pathId);
+      break;
+    }
+    case "addBasicClass": {
+      const [track, classId] = value.split(":");
+      addBasicClass(state, track, classId);
       break;
     }
     case "recruit":
