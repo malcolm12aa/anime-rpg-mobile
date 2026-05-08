@@ -1,5 +1,16 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.1.2.1 — Legend Rotation Quest/Achievement Hotfix",
+    date: "2026-05-08",
+    notes: [
+      "Fixed the background Legend Engine so generated quests and generated achievement/title goals refill when the Quest Board or Achievements screen opens.",
+      "Fixed prescription parsing so generated quest names no longer show [Object Object] from race/job weapon prescription objects.",
+      "Added a safe rotation lock to prevent duplicate generation loops when screens refresh.",
+      "Added Repair / Refill Goals buttons to Quest Board and Achievements for old saves that need their background generated goals rebuilt.",
+      "Generated quests still appear in the normal Quest Board, and generated achievements still appear in Achievements & Titles instead of a separate Legend Engine screen."
+    ]
+  },
+  {
     version: "v1.1.2 — Tactical Battle UI Cleanup",
     date: "2026-05-07",
     notes: [

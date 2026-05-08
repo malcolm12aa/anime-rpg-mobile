@@ -200,6 +200,11 @@ export function handleAction(state, action, value) {
     case "claimLegendQuest":
       claimLegendQuestReward(state, value);
       break;
+    case "refreshLegendEngine": {
+      const result = ensureLegendEngineRotation(state, { silent: true });
+      addLog(state, `<strong>Legend Engine repaired:</strong> ${result.questsAdded} quest(s) added · ${result.achievementsAdded} achievement goal(s) added · ${result.questsCompleted} quest(s) completed · ${result.achievementsCompleted} title goal(s) unlocked.`);
+      break;
+    }
     case "evolveAbility":
       evolveAbility(state, value);
       break;

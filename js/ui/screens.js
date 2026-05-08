@@ -1730,10 +1730,14 @@ export function questBoardScreen(state) {
   const category = filters.category ?? "All";
   const categoryOptions = ["All", ...QUEST_CATEGORIES];
   const quests = getQuestBoard(state, category);
+  const dynamicCount = quests.filter(q => q.dynamic).length;
   const grouped = category === "All" ? QUEST_CATEGORIES.map(cat => [cat, quests.filter(q => q.category === cat)]).filter(([, list]) => list.length) : [[category, quests]];
   return `<section class="screen">${nav(state)}
     <div class="hero"><h1>Quest Board</h1><p class="subtitle">Main, side, daily, race, job, recruit, hunting, collection, boss, secret, and background-generated Legend contracts. The Legend Engine quietly replaces completed generated quests.</p></div>
-    <section class="card"><h2>Quest Filters</h2><div class="filter-grid">${selectField("Quest Type", "quest.category", categoryOptions, category)}</div></section>
+    <section class="grid two">
+      <section class="card"><h2>Quest Filters</h2><div class="filter-grid">${selectField("Quest Type", "quest.category", categoryOptions, category)}</div></section>
+      <section class="card legend-status-card"><div class="row between"><h2>Background Legend Contracts</h2><span class="pill active-bonus">${dynamicCount} active</span></div><p class="small">Generated quests are automatically created from your race, job, weapons, elements, and dungeon progress. Completed generated quests grant rewards and rotate into new contracts.</p><div class="actions">${button("Repair / Refill Goals", "refreshLegendEngine", "", "secondary")}</div></section>
+    </section>
     ${grouped.map(([cat, list]) => `<section class="card"><div class="row between"><h2>${escapeHtml(cat)}</h2><span class="pill">${list.length} quest(s)</span></div><div class="quest-list">${list.map(questCard).join("")}</div></section>`).join("") || `<section class="card"><h2>No quests shown</h2><p>Change the filter or progress farther in the tower.</p></section>`}
   </section>`;
 }
@@ -1872,7 +1876,7 @@ export function achievementsScreen(state) {
   const legendAchievements = getLegendAchievements(state).slice(0, 6);
   const titleRows = (p.legendTitles ?? []).slice(0, 12);
   return `<section class="screen">${nav(state)}<div class="hero"><h1>Achievements & Titles</h1><p class="subtitle">Unlocked achievements grant titles with stat bonuses. Background Legend goals are generated automatically and replaced when completed. Current title: <span class="kpi">${escapeHtml(p.title ?? "Wanderer")}</span>${titleBonus ? ` · Bonus: ${escapeHtml(statsText(titleBonus.stats))}` : ""}</p></div>
-    <section class="card"><div class="row between"><h2>Background Legend Goals</h2><span class="pill">${legendAchievements.length} active</span></div>${legendAchievements.length ? `<div class="grid auto">${legendAchievements.map(legendAchievementCard).join("")}</div>` : `<p class="small">Background goals will appear after starting a character or progressing your build.</p>`}</section>
+    <section class="card legend-status-card"><div class="row between"><h2>Background Legend Goals</h2><span class="pill">${legendAchievements.length} active</span></div><p class="small">Generated achievement/title goals are created from your playstyle and replace themselves after completion.</p><div class="actions">${button("Repair / Refill Goals", "refreshLegendEngine", "", "secondary")}</div>${legendAchievements.length ? `<div class="grid auto">${legendAchievements.map(legendAchievementCard).join("")}</div>` : `<p class="small">Background goals will appear after starting a character or progressing your build.</p>`}</section>
     <section class="card"><div class="row between"><h2>Unlocked Generated Titles</h2><span class="pill">${titleRows.length} earned</span></div>${titleRows.length ? `<div class="grid auto">${titleRows.map(title => `<article class="mini-card legend-achievement-card selected"><h3>${escapeHtml(title.title)}</h3><p>${escapeHtml(title.description ?? "Generated title.")}</p><p class="small"><strong>Bonus:</strong> ${escapeHtml(statsText(title.stats ?? {}))}</p>${button(p.title === title.title ? "Equipped" : "Equip Title", "selectTitle", title.achievementId, p.title === title.title ? "ghost" : "secondary")}</article>`).join("")}</div>` : `<p class="small">Generated titles appear here after a background achievement is completed.</p>`}</section>
     <section class="grid auto">${ACHIEVEMENTS.map(a => achievementCard(p, a)).join("")}</section>
   </section>`;

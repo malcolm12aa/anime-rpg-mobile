@@ -51,10 +51,46 @@ export function ensureLegendEngineState(state) {
 function allRaceData() { return [...RACES, ...RACE_PATHS]; }
 function allJobData() { return [...JOBS, ...JOB_PATHS]; }
 
+function safeText(value) {
+  if (value == null) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value).trim();
+  if (typeof value === "object") {
+    if (value.name) return String(value.name).trim();
+    if (value.id) return String(value.id).trim();
+    if (value.primary) return safeList(value.primary).join(", ");
+    if (value.note) return String(value.note).trim();
+  }
+  return "";
+}
+
 function safeList(value) {
   if (!value) return [];
-  if (Array.isArray(value)) return value.filter(Boolean);
-  return String(value).split(/[,/]/).map(v => v.trim()).filter(Boolean);
+  if (Array.isArray(value)) return value.flatMap(safeList).filter(Boolean);
+  if (typeof value === "object") {
+    const gathered = [
+      ...safeList(value.primary),
+      ...safeList(value.backup),
+      ...safeList(value.preferredWeapons),
+      ...safeList(value.recommendedWeaponTypes),
+      ...safeList(value.preferredElements),
+      ...safeList(value.recommendedAbilityIds),
+      ...safeList(value.basicAbilities),
+      safeText(value.role),
+      safeText(value.note)
+    ];
+    return gathered.filter(Boolean);
+  }
+  return String(value)
+    .split(/[,/|]/)
+    .map(v => v.trim())
+    .filter(Boolean)
+    .filter(v => v.toLowerCase() !== "[object object]");
+}
+
+function cleanToken(value, fallback = "legend") {
+  const text = safeText(value).toLowerCase();
+  if (!text || text === "[object object]") return fallback;
+  return text.replace(/[^a-z0-9 _-]/g, "").trim() || fallback;
 }
 
 function currentRace(state) {
@@ -137,9 +173,9 @@ export function getLegendProfile(state) {
     equippedWeapons: weapons,
     knownElements: elements,
     masteries,
-    keyElement: elements[0] ?? masteries[0] ?? "arcane",
-    keyWeapon: weapons[0] ?? weaponPrescriptions[0]?.toLowerCase?.() ?? "weapon",
-    profileKey: [race?.id, job?.id, totalLevel, elements.slice(0, 2).join("-"), weapons.slice(0, 2).join("-")].join("|")
+    keyElement: cleanToken(elements[0] ?? masteries[0] ?? abilityPrescriptions.find(v => String(v).match(/fire|ice|lightning|wind|earth|water|arcane|light|dark/i)) ?? "arcane", "arcane"),
+    keyWeapon: cleanToken(weapons[0] ?? weaponPrescriptions.find(v => !String(v).match(/build around|scaling|ability|magic|strength|dexterity|endurance/i)) ?? "weapon", "weapon"),
+    profileKey: [race?.id, job?.id, totalLevel, elements.slice(0, 2).join("-"), weapons.slice(0, 2).join("-"), weaponPrescriptions.slice(0, 2).join("-")].join("|")
   };
 }
 
@@ -321,8 +357,15 @@ export function getLegendQuestProgress(state, quest) {
   return { current, required, complete: current >= required, pct: Math.max(0, Math.min(100, Math.floor((current / Math.max(1, required)) * 100))) };
 }
 
-export function getLegendQuests(state) {
-  const engine = ensureLegendEngineState(state);
+export function getLegendQuests(state, options = {}) {
+  let engine = ensureLegendEngineState(state);
+  if (state.player && options.prime !== false) {
+    const activeCount = engine.quests.filter(q => !engine.claimedQuests.includes(q.id)).length;
+    if (activeCount < ACTIVE_LEGEND_QUESTS || engine.quests.some(q => getLegendQuestProgress(state, q).complete)) {
+      ensureLegendEngineRotation(state, { silent: true });
+      engine = ensureLegendEngineState(state);
+    }
+  }
   return engine.quests.map(quest => ({
     ...quest,
     progress: getLegendQuestProgress(state, quest),
@@ -440,8 +483,15 @@ export function generateLegendAchievements(state, count = 3, options = {}) {
   return added;
 }
 
-export function getLegendAchievements(state) {
-  const engine = ensureLegendEngineState(state);
+export function getLegendAchievements(state, options = {}) {
+  let engine = ensureLegendEngineState(state);
+  if (state.player && options.prime !== false) {
+    const activeCount = engine.achievements.filter(a => !engine.unlockedAchievements.includes(a.id) && !state.player?.achievements?.includes(a.id)).length;
+    if (activeCount < ACTIVE_LEGEND_ACHIEVEMENTS || engine.achievements.some(a => getLegendQuestProgress(state, a).complete)) {
+      ensureLegendEngineRotation(state, { silent: true });
+      engine = ensureLegendEngineState(state);
+    }
+  }
   return engine.achievements
     .filter(achievement => !engine.unlockedAchievements.includes(achievement.id) && !state.player?.achievements?.includes(achievement.id))
     .map(achievement => ({
@@ -531,6 +581,9 @@ function archiveUnlockedLegendAchievements(state) {
 export function ensureLegendEngineRotation(state, options = {}) {
   if (!state.player) return { questsAdded: 0, achievementsAdded: 0, questsCompleted: 0, achievementsCompleted: 0 };
   const engine = ensureLegendEngineState(state);
+  if (engine._rotationLock) return { questsAdded: 0, achievementsAdded: 0, questsCompleted: 0, achievementsCompleted: 0 };
+  engine._rotationLock = true;
+  try {
   let questsCompleted = rotateCompletedLegendQuests(state).length;
   let achievementsCompleted = checkLegendAchievements(state).length;
   let archivedAchievements = archiveUnlockedLegendAchievements(state);
@@ -565,6 +618,9 @@ export function ensureLegendEngineRotation(state, options = {}) {
     addLog(state, `<strong>Legend Engine:</strong> ${parts.join(" · ")}.`);
   }
   return { questsAdded, achievementsAdded, questsCompleted, achievementsCompleted };
+  } finally {
+    delete engine._rotationLock;
+  }
 }
 
 export function trackLegendAbilityUse(state, skill) {
