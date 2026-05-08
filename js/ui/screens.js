@@ -119,9 +119,9 @@ function mainMenuFeatureGrid() {
 
 function newsCard() {
   return `<section class="card main-menu-news guild-notice">
-    <span class="layout-label">Dark Guild Interface</span>
+    <span class="layout-label">v1.1.0 Fantasy Ability Expansion</span>
     <h2>Latest Build</h2>
-    <p>A cleaner dark fantasy guild UI: grouped navigation, stronger title screen, parchment-style cards, arcane ability panels, dungeon warning accents, and mobile-friendly stacked layouts.</p>
+    <p>300 new fantasy abilities: elemental skills, elemental spells, and multi-element myth arts with mastery gates, weapon requirements, and Basic Ability scaling.</p>
   </section>`;
 }
 
@@ -786,7 +786,7 @@ function abilityShopSection(state) {
     if (filters.origin !== "all" && (skill.origin ?? "shop") !== filters.origin) return false;
     if (filters.acquisition !== "all" && (skill.acquisition ?? "Shop") !== filters.acquisition) return false;
     if (search) {
-      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${skill.description} ${skill.source ?? ""} ${skill.origin ?? ""} ${skill.acquisition ?? ""} ${(skill.tags ?? []).join(" ")}`;
+      const haystack = `${skill.name} ${skill.kind} ${skill.rank} ${skill.element} ${(skill.secondaryElements ?? []).join(" ")} ${skill.description} ${skill.source ?? ""} ${skill.origin ?? ""} ${skill.acquisition ?? ""} ${(skill.tags ?? []).join(" ")}`;
       if (!matchesSearchText(haystack, search)) return false;
     }
     return true;
@@ -816,11 +816,12 @@ function abilityShopCard(skill, player) {
   const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
   const cost = skill.resource === "none" ? "Passive" : `${skill.cost} ${skill.resource}`;
   const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
+  const elementLine = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean).join(" + ") || "neutral";
   const requirement = abilityRequirementText(skill);
   return `<article class="card skill-shop-card ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${known ? "selected" : ""}">
     <div class="ability-card-head">
       <div class="ability-icon">${abilityShopIcon(skill)}</div>
-      <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank)} · ${escapeHtml(skill.kind)} · ${escapeHtml(skill.element)}</p></div>
+      <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank)} · ${escapeHtml(skill.kind)} · ${escapeHtml(elementLine)}</p></div>
     </div>
     <p class="ability-description">${escapeHtml(skill.description)}</p>
     <div class="ability-shop-meta">

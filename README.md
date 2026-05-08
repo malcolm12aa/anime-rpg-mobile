@@ -1,5 +1,16 @@
 # Build Your Legend
 
+## v1.1.0 — Fantasy Ability Expansion
+
+Adds 300 new fantasy abilities to the Skill / Spell Library:
+
+- 100 elemental physical skills spread across Fire, Ice, Lightning, Wind, Earth, and Water.
+- 100 elemental spells spread across Fire, Ice, Lightning, Wind, Earth, and Water.
+- 100 multi-element skills and spells with dual-element tags.
+- All new abilities include Basic Ability scaling.
+- Many physical skills require equipped weapon types.
+- Stronger elemental abilities require matching Element Mastery.
+
 ## Latest Update
 
 **v1.0.0 — Roguelike Dungeon Map Update** adds a node-based dungeon route board, biome floors, danger meter, dungeon supplies, event choices, boss gates, run goals, and run summaries.

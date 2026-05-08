@@ -1,5 +1,17 @@
 export const UPDATE_NOTES = [
   {
+    version: "v1.1.0 — Fantasy Ability Expansion",
+    date: "2026-05-07",
+    notes: [
+      "Added 100 new elemental physical skills split across fire, ice, lightning, wind, earth, and water.",
+      "Added 100 new elemental spells split across the same six elements.",
+      "Added 100 multi-element fantasy skills and spells with dual-element tags and requirements.",
+      "All new abilities include Basic Ability scaling from Strength, Endurance, Dexterity, Agility, and/or Magic.",
+      "Many new physical skills require matching equipped weapon types, and stronger abilities require Element Mastery gates.",
+      "Added three new Skill / Spell Library codexes for filtering the new content."
+    ]
+  },
+  {
     version: "v1.0.0 — Roguelike Dungeon Map",
     date: "2026-05-07",
     notes: [

@@ -189,13 +189,14 @@ export function skillList(player, mode = "normal") {
     const icon = abilityIcon(skill);
     const tags = (skill.tags ?? []).slice(0, 5).map(tag => `<span class="pill ability-tag">${escapeHtml(tag)}</span>`).join(" ");
     const scaling = skill.scaling ? Object.entries(skill.scaling).map(([key, value]) => `${titleCase(key)} × ${Number(value).toFixed(3)}`).join(" · ") : "Default class scaling";
+    const elementLine = [skill.element, ...(skill.secondaryElements ?? [])].filter(Boolean).join(" + ") || "neutral";
     const requirementText = abilityRequirementText(skill);
     const missingRequirement = mode === "battle" && !isPassive ? missingAbilityRequirement(player, skill) : "";
     const battleDisabled = (cd > 0 || Boolean(missingRequirement)) ? "disabled" : "";
     return `<article class="ability-card rank-${String(skill.rank ?? "common").toLowerCase()} ${isPassive ? "passive-card" : ""} ${missingRequirement ? "locked-card" : ""}">
       <div class="ability-card-head">
         <div class="ability-icon">${icon}</div>
-        <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank ?? "Common")} · ${escapeHtml(skill.kind ?? "ability")} · ${escapeHtml(skill.element ?? "neutral")}</p></div>
+        <div><h3>${escapeHtml(skill.name)}</h3><p class="small">${escapeHtml(skill.rank ?? "Common")} · ${escapeHtml(skill.kind ?? "ability")} · ${escapeHtml(elementLine)}</p></div>
       </div>
       <p class="ability-description">${escapeHtml(skill.description)}</p>
       <div class="ability-stat-row"><span>Cost</span><strong>${escapeHtml(cost)}</strong></div>

@@ -1,7 +1,11 @@
-// v0.9.8 — Simplified ability text, Basic Ability scaling, weapon requirements, and Element Mastery gates.
+// v1.1.0 — Fantasy Ability Expansion loaded on top of v0.9.8 ability cleanup.
+import { FANTASY_ABILITY_EXPANSION, FANTASY_ABILITY_LIBRARIES } from "./fantasy-ability-expansion.js";
 export const ABILITY_FILTER_OPTIONS = {
   "libraries": [
     "all",
+    "fantasy_elemental_skill_codex",
+    "fantasy_elemental_spell_grimoire",
+    "multi_element_myth_codex",
     "advanced_skill_library",
     "advanced_spell_library",
     "dragonkin_dragon_evolution",
@@ -35,6 +39,7 @@ export const ABILITY_FILTER_OPTIONS = {
 };
 
 export const SKILLS = [
+  ...FANTASY_ABILITY_EXPANSION,
   {
     "id": "human_resolve",
     "name": "Lineage Art: Iron Human Resolve",
@@ -11189,6 +11194,7 @@ export const SKILLS = [
 ];
 
 export const SKILL_SHOP_LIBRARIES = [
+  ...FANTASY_ABILITY_LIBRARIES,
   {
     "id": "advanced_skill_library",
     "name": "Advanced Skill Library",
